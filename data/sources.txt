@@ -1,0 +1,225 @@
+SITES COMPOSANTS UI / REACT / TAILWIND
+
+━━━━━━━━━━━━━━━━━━
+🔥 PRINCIPAUX
+━━━━━━━━━━━━━━━━━━
+
+shadcn/ui
+https://ui.shadcn.com/
+
+21st.dev
+https://21st.dev/
+
+Magic UI
+https://magicui.design/
+
+Aceternity UI
+https://ui.aceternity.com/
+
+React Bits
+https://reactbits.dev/
+
+Origin UI
+https://originui.com/
+
+Cult UI
+https://www.cult-ui.com/
+
+Kokonut UI
+https://kokonutui.com/
+
+Motion Primitives
+https://motion-primitives.com/
+
+ReUI
+https://reui.io/
+
+━━━━━━━━━━━━━━━━━━
+🎨 TAILWIND
+━━━━━━━━━━━━━━━━━━
+
+Tailwind Plus
+https://tailwindcss.com/plus
+
+Headless UI
+https://headlessui.com/
+
+DaisyUI
+https://daisyui.com/
+
+Flowbite
+https://flowbite.com/
+
+Preline UI
+https://preline.co/
+
+HyperUI
+https://www.hyperui.dev/
+
+Meraki UI
+https://merakiui.com/
+
+Float UI
+https://floatui.com/
+
+Mamba UI
+https://mambaui.com/
+
+Tailblocks
+https://tailblocks.cc/
+
+Sailboat UI
+https://sailboatui.com/
+
+━━━━━━━━━━━━━━━━━━
+🧩 COMPONENTS REACT
+━━━━━━━━━━━━━━━━━━
+
+Radix UI
+https://www.radix-ui.com/
+
+Base UI
+https://base-ui.com/
+
+React Aria
+https://react-spectrum.adobe.com/react-aria/
+
+HeroUI
+https://www.heroui.com/
+
+Mantine
+https://mantine.dev/
+
+Material UI
+https://mui.com/
+
+Chakra UI
+https://chakra-ui.com/
+
+Ant Design
+https://ant.design/
+
+Park UI
+https://park-ui.com/
+
+Tremor
+https://www.tremor.so/
+
+━━━━━━━━━━━━━━━━━━
+🏗️ BLOCS / LANDING PAGES
+━━━━━━━━━━━━━━━━━━
+
+shadcnblocks
+https://www.shadcnblocks.com/
+
+Tailwind UI
+https://tailwindui.com/
+
+Cruip
+https://cruip.com/
+
+Landwind
+https://landwindui.com/
+
+Flowbite Blocks
+https://flowbite.com/blocks/
+
+Preline Examples
+https://preline.co/examples.html
+
+UI Incubator
+https://ui.incubator.com/
+
+━━━━━━━━━━━━━━━━━━
+✨ ANIMATIONS / EFFECTS
+━━━━━━━━━━━━━━━━━━
+
+Motion
+https://motion.dev/
+
+GSAP
+https://gsap.com/
+
+React Spring
+https://react-spring.dev/
+
+Lenis
+https://lenis.darkroom.engineering/
+
+LottieFiles
+https://lottiefiles.com/
+
+Three.js
+https://threejs.org/
+
+React Three Fiber
+https://r3f.docs.pmnd.rs/
+
+━━━━━━━━━━━━━━━━━━
+🌐 INSPIRATION UI / DESIGN
+━━━━━━━━━━━━━━━━━━
+
+Awwwards
+https://www.awwwards.com/
+
+Dribbble
+https://dribbble.com/
+
+Behance
+https://www.behance.net/
+
+Mobbin
+https://mobbin.com/
+
+Land-book
+https://land-book.com/
+
+Lapa Ninja
+https://www.lapa.ninja/
+
+Godly
+https://godly.website/
+
+━━━━━━━━━━━━━━━━━━
+🤖 UI / AI / GÉNÉRATION
+━━━━━━━━━━━━━━━━━━
+
+v0
+https://v0.dev/
+
+21st.dev
+https://21st.dev/
+
+shadcn/ui
+https://ui.shadcn.com/
+
+Magic UI
+https://magicui.design/
+
+Aceternity UI
+https://ui.aceternity.com/
+
+━━━━━━━━━━━━━━━━━━
+⭐ À REGARDER EN PRIORITÉ
+━━━━━━━━━━━━━━━━━━
+
+	1.	shadcn/ui
+    https://ui.shadcn.com/
+	2.	21st.dev
+    https://21st.dev/
+	3.	Magic UI
+    https://magicui.design/
+	4.	Aceternity UI
+    https://ui.aceternity.com/
+	5.	React Bits
+    https://reactbits.dev/
+	6.	Origin UI
+    https://originui.com/
+	7.	Cult UI
+    https://www.cult-ui.com/
+	8.	Kokonut UI
+    https://kokonutui.com/
+	9.	Motion Primitives
+    https://motion-primitives.com/
+	10.	shadcnblocks
+    https://www.shadcnblocks.com/

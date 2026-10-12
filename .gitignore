@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/*.tmp
+data/previews/*.tmp
+data/previews/*.tmp.jpg
+node_modules/
