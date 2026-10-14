@@ -1,5 +1,6 @@
 """Download explicitly selected, MIT-licensed components from official sources."""
 import json
+import re
 import sys
 import urllib.request
 from pathlib import Path
@@ -25,6 +26,32 @@ SELECTION = [
     ('magic-ui','ripple','Fonds','Boucle','Landing page','Créer un fond de section doux autour d’un point focal.'),
     ('magic-ui','retro-grid','Fonds','Défilement','Portfolio','Donner une identité visuelle à une section d’accueil technologique.'),
     ('magic-ui','word-rotate','Texte','Boucle','Landing page','Présenter plusieurs bénéfices dans un même titre, avec une pause lisible.'),
+    ('magic-ui', 'aurora-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'animated-shiny-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'hyper-text', 'Texte', 'Survol', 'Landing page', 'Décoder un titre au survol avec un effet de caractères aléatoires.'),
+    ('magic-ui', 'sparkles-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'morphing-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'spinning-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'typing-animation', 'Texte', 'Boucle', 'Landing page', 'Présenter plusieurs messages avec une saisie et un effacement animés.'),
+    ('magic-ui', 'line-shadow-text', 'Texte', 'Boucle', 'Landing page', 'Donner du rythme à un titre ou mettre en valeur un message.'),
+    ('magic-ui', 'text-animate', 'Texte', 'Entrée', 'Landing page', 'Révéler un titre mot par mot avec une transition floue.'),
+    ('magic-ui', 'rainbow-button', 'Boutons', 'Boucle', 'Application', 'Distinguer une action avec une bordure multicolore animée.'),
+    ('magic-ui', 'ripple-button', 'Boutons', 'Interaction', 'Application', 'Rendre une action visible avec un retour animé.'),
+    ('magic-ui', 'shiny-button', 'Boutons', 'Boucle', 'Application', 'Attirer l’attention sur une action avec un reflet lumineux.'),
+    ('magic-ui', 'pulsating-button', 'Boutons', 'Boucle', 'Application', 'Signaler une action principale avec une pulsation douce.'),
+    ('magic-ui', 'interactive-hover-button', 'Boutons', 'Survol', 'Application', 'Révéler une flèche et un fond coloré au survol du bouton.'),
+    ('magic-ui', 'meteors', 'Fonds', 'Boucle', 'Portfolio', 'Créer une ambiance animée derrière un contenu lisible.'),
+    ('magic-ui', 'flickering-grid', 'Fonds', 'Boucle', 'Portfolio', 'Créer une ambiance animée derrière un contenu lisible.'),
+    ('magic-ui', 'animated-grid-pattern', 'Fonds', 'Boucle', 'Portfolio', 'Créer une ambiance animée derrière un contenu lisible.'),
+    ('magic-ui', 'interactive-grid-pattern', 'Fonds', 'Survol', 'Portfolio', 'Éclairer les cases parcourues par le pointeur dans une grille.'),
+    ('magic-ui', 'light-rays', 'Fonds', 'Boucle', 'Portfolio', 'Créer une ambiance animée derrière un contenu lisible.'),
+    ('magic-ui', 'warp-background', 'Fonds', 'Boucle', 'Portfolio', 'Créer une ambiance animée derrière un contenu lisible.'),
+    ('magic-ui', 'shine-border', 'Cartes', 'Boucle', 'Landing page', 'Animer un reflet coloré le long du contour d’une carte.'),
+    ('magic-ui', 'glare-hover', 'Cartes', 'Survol', 'Landing page', 'Mettre en valeur un contenu avec un effet de lumière ou de profondeur.'),
+    ('magic-ui', 'neon-gradient-card', 'Cartes', 'Boucle', 'Landing page', 'Mettre en valeur une carte avec un halo néon animé.'),
+    ('magic-ui', 'lens', 'Cartes', 'Survol', 'Landing page', 'Explorer les détails d’une affiche avec une loupe interactive.'),
+    ('magic-ui', 'animated-circular-progress-bar', 'Chiffres', 'Boucle', 'Dashboard', 'Visualiser la progression vers un objectif.'),
+    ('magic-ui', 'blur-fade', 'Illustrations', 'Entrée', 'Portfolio', 'Révéler un contenu avec une transition douce.'),
 ]
 
 def fetch(url):
@@ -34,7 +61,7 @@ def fetch(url):
 def css_rule(selector, values):
     body=[]
     for key,value in values.items():
-        body.append(css_rule(key,value) if isinstance(value,dict) else key+':'+str(value)+';')
+        body.append(css_rule(key,value) if isinstance(value,dict) else re.sub(r'[A-Z]',lambda m:'-'+m.group().lower(),key)+':'+str(value)+';')
     return selector+'{'+''.join(body)+'}'
 
 if __name__=='__main__':

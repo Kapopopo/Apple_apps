@@ -1,6 +1,6 @@
 # Sources des démonstrations Atlas
 
-Les 18 composants de `src/vendor/` proviennent des registres officiels de Magic UI et du dépôt officiel de Motion Primitives. La provenance précise de chaque composant est enregistrée dans `../data/curation.json`.
+Les 44 composants de `src/vendor/` proviennent des registres officiels de Magic UI et du dépôt officiel de Motion Primitives. La provenance précise de chaque composant est enregistrée dans `../data/curation.json`.
 
 - Magic UI — copyright Magic UI — licence MIT dans `licenses/magic-ui.txt`.
 - Motion Primitives — copyright 2024 ibelick — licence MIT dans `licenses/motion-primitives.txt`.

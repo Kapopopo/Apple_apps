@@ -21,6 +21,7 @@ import {Ripple} from './vendor/ripple';
 import {RetroGrid} from './vendor/retro-grid';
 import {WordRotate} from './vendor/word-rotate';
 import './style.css';
+import {extraDemos} from './extra';
 
 const key=new URLSearchParams(location.search).get('demo')||'';
 function Reviews(){return <div className="reviews"><Marquee pauseOnHover className="[--duration:22s]">{[['M','Marie','Une expérience aussi simple que soignée.'],['A','Alex','Tout ce dont mon projet avait besoin.'],['L','Lina','Chaque détail fait la différence.']].map(([initial,name,text])=><figure className="review" key={name}><div className="review-person"><span>{initial}</span><b>{name}</b><span className="stars">★★★★★</span></div><p>{text}</p></figure>)}</Marquee><Marquee reverse pauseOnHover className="[--duration:25s]">{['Pensé pour les créateurs','Simple à personnaliser','Le souci du détail'].map(text=><div className="review-pill" key={text}><Check size={13}/>{text}</div>)}</Marquee></div>}
@@ -54,7 +55,7 @@ function App(){
   parent.postMessage({type:'atlas-demo-ready',demo:key},location.origin);
   return()=>window.removeEventListener('message',listener);
  },[]);
- const Demo=demos[key];
+ const Demo=demos[key]||extraDemos[key];
  return <MotionConfig reducedMotion="user"><main className={'demo-stage demo-'+key}>{!Demo?<p>Démonstration introuvable.</p>:playing?<Demo key={version}/>:<button className="resume" onClick={()=>setPlaying(true)}>▶ Reprendre l’animation</button>}</main></MotionConfig>;
 }
 createRoot(document.getElementById('root')!).render(<App/>);

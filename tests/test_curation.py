@@ -7,8 +7,8 @@ class CurationTests(unittest.TestCase):
     def test_every_live_demo_has_original_source_and_license(self):
         records=load_curation()
         ids={c['id']:c for s in load()['sources'] for c in s['components']}
-        self.assertEqual(len(records),18)
-        self.assertEqual(len({c['id'] for c in records}),18)
+        self.assertGreaterEqual(len(records),44)
+        self.assertEqual(len({c['id'] for c in records}),len(records))
         for c in records:
             self.assertIn(c['id'],ids)
             self.assertEqual(c['source_url'],ids[c['id']]['url'])

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-const packages=['react','react-dom','scheduler','motion','framer-motion','motion-dom','motion-utils','next-themes','lucide-react','clsx','tailwind-merge','class-variance-authority'];
+const packages=['react','react-dom','scheduler','motion','framer-motion','motion-dom','motion-utils','next-themes','lucide-react','clsx','tailwind-merge','class-variance-authority','@radix-ui/react-slot','@radix-ui/react-compose-refs'];
 const notices=[];
 for(const name of packages){
  const dir=path.join('node_modules',name);
