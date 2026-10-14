@@ -19,10 +19,10 @@ def wait(b,js,timeout=15):
 with Browser() as b:
     b.call('Emulation.setDeviceMetricsOverride',dict(width=1440,height=1050,deviceScaleFactor=1,mobile=False))
     b.navigate('http://127.0.0.1:8000')
-    wait(b,"document.querySelectorAll('.card').length===18")
+    wait(b,"document.querySelectorAll('.card').length===44")
     wait(b,"document.querySelector('iframe')?.dataset.ready==='true'")
     assert b.js("document.querySelectorAll('#results a').length")==0
-    assert b.js("document.querySelectorAll('iframe').length")==18
+    assert b.js("document.querySelectorAll('iframe').length")==44
     assert b.js("[...document.querySelectorAll('iframe')].every(f=>(f.getAttribute('src')||f.dataset.src).startsWith('/demos/'))")
     marquee="document.querySelector('iframe').contentDocument.querySelector('.animate-marquee')"
     wait(b,marquee)
@@ -34,8 +34,8 @@ with Browser() as b:
 
     b.js("[...document.querySelectorAll('.select-mini')].slice(0,5).forEach(b=>b.click())")
     assert b.js('selectedItems().length')==5
-    b.js("document.querySelector('#category-filter').value='Chiffres';document.querySelector('#category-filter').dispatchEvent(new Event('input'))")
-    assert b.js("document.querySelectorAll('.card').length")==2
+    b.js("document.querySelector('#demo-filter').value='live';document.querySelector('#category-filter').value='Indicateurs';document.querySelector('#category-filter').dispatchEvent(new Event('input'))")
+    assert b.js("document.querySelectorAll('.card').length")==3
     assert b.js('selectedItems().length')==5
     b.js("document.querySelector('#effect-filter').value='Interaction';document.querySelector('#effect-filter').dispatchEvent(new Event('input'))")
     assert b.js("document.querySelectorAll('.card').length")==1
@@ -76,12 +76,12 @@ with Browser() as b:
     assert b.js("document.querySelector('#prompt-output').value.includes('COMPOSANTS À INTÉGRER (5)')")
     b.js("document.querySelector('.close').click()")
     b.call('Page.reload')
-    wait(b,"typeof data !== 'undefined' && data && document.querySelectorAll('.card').length===18")
+    wait(b,"typeof data !== 'undefined' && data && document.querySelectorAll('.card').length===44")
     assert b.js('selectedItems().length')==5
     assert b.js("draft.project==='Un portfolio pour Camille'")
     print('PASS: six selections across filters, native counter interaction, full prompt, note, clipboard, download, removal, reload persistence',flush=True)
 
-    # All 18 demos render without navigation or third-party runtime resources.
+    # All curated demos render without navigation or third-party runtime resources.
     for c in load_curation():
         b.js(f"showDetail(byId({json.dumps(c['id'])}))")
         wait(b,"document.querySelector('#detail-preview iframe')?.dataset.ready==='true'")
@@ -94,6 +94,14 @@ with Browser() as b:
             selector=json.dumps(css_animations[c['demo']])
             name=b.js(f"(()=>{{const f={frame},el=f.contentDocument.querySelector({selector});return el?f.contentWindow.getComputedStyle(el).animationName:'none'}})()")
             assert name!='none',(c['demo'],name)
+        if c['demo'] in ['rainbow-button','ripple-button','shiny-button','pulsating-button','interactive-hover-button']:
+            b.js(f"{frame}.contentDocument.querySelector('button').click()")
+            wait(b,f"{frame}.contentDocument.body.innerText.includes('Votre projet est prêt')")
+        if c['demo'] in ['aurora-text','shine-border','neon-gradient-card','morphing-text','typing-animation']:
+            snapshot=f"JSON.stringify([...{frame}.contentDocument.querySelectorAll('.demo-stage *')].map(e=>{{const w={frame}.contentWindow;return [e.textContent,...['','::before','::after'].map(p=>{{const s=w.getComputedStyle(e,p);return [s.transform,s.opacity,s.filter,s.backgroundPosition]}})]}}))"
+            first=b.js(snapshot)
+            time.sleep(.8)
+            assert first!=b.js(snapshot),c['demo']
         if c['demo']=='accordion':
             b.js(f"{frame}.contentDocument.querySelector('.faq-trigger').click()")
             wait(b,f"{frame}.contentDocument.querySelector('.faq-trigger').getAttribute('aria-expanded')==='true'")
@@ -120,4 +128,4 @@ with Browser() as b:
     Path('/tmp/atlas-live-mobile.png').write_bytes(base64.b64decode(b.call('Page.captureScreenshot',{'format':'png'})['data']))
     b.js("document.querySelector('#open-prompt').click()")
     assert b.js("document.querySelector('dialog').scrollWidth<=document.querySelector('dialog').clientWidth")
-    print('PASS: all 18 demos run locally, hover tilt, accordion, tabs, button, mobile actions and prompt layout',flush=True)
+    print('PASS: all 44 demos run locally, hover tilt, accordion, tabs, button, mobile actions and prompt layout',flush=True)

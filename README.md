@@ -1,6 +1,6 @@
 # Component Atlas
 
-Un catalogue français avec **18 composants sélectionnés et animés directement dans la plateforme**, une sélection multiple persistante et un générateur de prompt. Les autres fiches du catalogue restent consultables avec leurs captures statiques.
+Un catalogue français avec **44 composants sélectionnés et animés directement dans la plateforme**, une sélection multiple persistante et un générateur de prompt. Les autres fiches du catalogue restent consultables avec leurs captures statiques.
 
 ## Démarrer
 
@@ -14,7 +14,7 @@ Ouvrir **http://localhost:8000**. Le serveur écoute uniquement sur l’interfac
 
 ## Utilisation
 
-1. **La sélection Atlas** présente 18 composants de Magic UI et Motion Primitives. Animations, clics et survols fonctionnent localement, sans redirection, y compris hors ligne.
+1. **La sélection Atlas** présente 44 composants de Magic UI et Motion Primitives. Animations, clics et survols fonctionnent localement, sans redirection, y compris hors ligne.
 2. Au survol d’une carte, **Agrandir** ouvre la démonstration interactive et **Sélectionner** l’ajoute au projet. Ces actions restent visibles sur écran tactile et accessibles au clavier.
 3. Sélectionner autant de composants que souhaité, en changeant de recherche ou de filtre. Les choix sont conservés dans le navigateur. **Ma sélection** les réunit.
 4. **Générer le prompt** permet de saisir un brief, une stack, un style et une consigne par composant. Le prompt inclut tous les composants, leurs sources exactes, leur rôle, leur animation et leurs consignes.
@@ -31,7 +31,7 @@ La sélection éditoriale figure dans `data/curation.json`. Chaque choix répond
 - **Magic UI** : Marquee, Shimmer Button, Dock, Number Ticker, Border Beam, Magic Card, Animated List, Orbiting Circles, Animated Gradient Text, Ripple, Retro Grid, Word Rotate.
 - **Motion Primitives** : Tilt, Accordion, Spotlight, Text Effect, Animated Background, Animated Number.
 
-Les composants originaux sont conservés dans `demos/src/vendor/`. Leur contenu de démonstration est adapté à Atlas dans `demos/src/main.tsx`. L’accordéon reçoit une adaptation de typage pour React 19, sans changement de comportement. Les licences MIT et mentions de dépendances sont conservées dans `demos/licenses/` et `web/demos/THIRD_PARTY_LICENSES.txt`.
+Les composants originaux sont conservés dans `demos/src/vendor/`. Leur contenu de démonstration est adapté à Atlas dans `demos/src/main.tsx` et `demos/src/extra.tsx`. L’accordéon reçoit une adaptation de typage pour React 19, sans changement de comportement. Les licences MIT et mentions de dépendances sont conservées dans `demos/licenses/` et `web/demos/THIRD_PARTY_LICENSES.txt`.
 
 Les démos sont exécutées dans des cadres locaux. Elles n’intègrent pas les sites tiers, n’utilisent pas de CDN et ne chargent pas de ressource distante. Les cadres sont chargés à proximité de la zone visible puis mis en pause hors écran. Les préférences de réduction des animations sont prises en compte par Motion et les styles ; leur adaptation reste à vérifier dans l’application finale. Retro Grid utilise WebGL avec le repli prévu dans son composant original.
 
@@ -68,7 +68,7 @@ python3 -m pip install -r requirements-preview.txt
 python3 scripts/capture_previews.py
 ```
 
-Le catalogue complet peut aussi demander des captures au serveur (deux simultanées maximum, file bornée). Elles sont statiques ; aucun lien de test externe n’est imposé dans le parcours utilisateur. Les erreurs restent signalées. `ATLAS_CHROME` permet de choisir le navigateur. Son sandbox est activé par défaut ; `ATLAS_CHROME_NO_SANDBOX=1` est disponible pour les conteneurs qui l’exigent. Cette dépendance n’est pas nécessaire pour les 18 démos locales.
+Le catalogue complet peut aussi demander des captures au serveur (deux simultanées maximum, file bornée). Elles sont statiques ; aucun lien de test externe n’est imposé dans le parcours utilisateur. Les erreurs restent signalées. `ATLAS_CHROME` permet de choisir le navigateur. Son sandbox est activé par défaut ; `ATLAS_CHROME_NO_SANDBOX=1` est disponible pour les conteneurs qui l’exigent. Cette dépendance n’est pas nécessaire pour les 44 démos locales.
 
 ## Serveur MCP
 
@@ -106,4 +106,16 @@ Avec le serveur lancé et la dépendance navigateur installée :
 python3 tests/browser_live.py
 ```
 
-Le test navigateur vérifie l’animation réelle, les 18 démos sans ressource distante, le survol 3D, les clics, plus de trois sélections à travers les filtres, la persistance, le prompt complet, sa copie et son export ainsi que la disposition mobile.
+Le test navigateur vérifie l’animation réelle, les 44 démos sans ressource distante, le survol 3D, les clics, plus de trois sélections à travers les filtres, la persistance, le prompt complet, sa copie et son export ainsi que la disposition mobile.
+
+### Types et références visuelles
+
+La recherche par type utilise le même vocabulaire français/anglais dans l’interface et le MCP (`taxonomy.py`). « graphique », « graphiques » et « chart » retrouvent les graphiques de données ; « carrousel », « carousel » et « caroussel » retrouvent les carrousels, y compris les diaporamas et défilements. Les curseurs de réglage sont classés séparément. Le type est affiché sur chaque carte.
+
+Saisir une recherche ou choisir un type depuis la sélection Atlas ouvre le catalogue complet, en conservant les autres filtres. Dans les favoris et la sélection personnelle, la recherche reste limitée à cette collection. Le compteur indique le total ; « Afficher plus de résultats » charge la suite.
+
+One Prompt Design ajoute 12 références visuelles avec aperçus locaux, sélection multiple et inclusion dans le prompt comme inspirations de direction artistique. Ce sont des visuels, pas de nouvelles démos React : les 44 animations locales restent disponibles. Les liens d’origine, auteurs et catégories sont conservés dans `data/reference_sources.json`, fusionné au catalogue sans être écrasé par une réindexation. Les prompts du site ne sont ni exécutés ni recopiés. Leurs droits ne sont pas assimilés aux licences MIT des composants UI.
+
+Pour actualiser cette sélection publique : `ATLAS_CHROME_NO_SANDBOX=1 python3 scripts/import_oneprompt.py` (Chrome, Internet ; omettre la variable lorsque le sandbox Chrome est disponible). Validation : `python3 -m unittest discover -s tests -v`, `node tests/test_prompt.cjs` et `ATLAS_CHROME_NO_SANDBOX=1 python3 tests/browser_search.py`.
+
+Les références One Prompt Design sont destinées aux **fonds de page ou de section**. La sélection commune accepte fonds et composants UI ensemble et affiche leur répartition. Le prompt indique les fonds en arrière-plan, les composants au premier plan, le contraste, le cadrage responsive et la préservation des clics. Les consignes de chaque élément permettent de préciser « fond du hero » ou « bouton au-dessus du fond du hero ». Plusieurs fonds sont répartis entre les sections ou proposés en variantes.
