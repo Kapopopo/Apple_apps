@@ -4,7 +4,7 @@ import sys
 from catalog import load, search
 from curation import enrich
 
-PROPERTIES = {'query': {'type': 'string', 'description': 'Mots du nom, type ou nom de bibliothèque'}, 'source': {'type': 'string', 'description': 'Identifiant de la bibliothèque'}, 'kind': {'type': 'string', 'enum': ['', 'Composant', 'Bloc', 'Animation']}, 'verified_only': {'type': 'boolean'}, 'limit': {'type': 'integer', 'minimum': 1, 'maximum': 100}}
+PROPERTIES = {'query': {'type': 'string', 'description': 'Mots du nom, type ou nom de bibliothèque'}, 'source': {'type': 'string', 'description': 'Identifiant de la bibliothèque'}, 'kind': {'type': 'string', 'enum': ['', 'Composant', 'Bloc', 'Animation', 'Référence visuelle']}, 'verified_only': {'type': 'boolean'}, 'limit': {'type': 'integer', 'minimum': 1, 'maximum': 100}}
 TOOLS = [
     dict(name='list_sources', description='Lister les bibliothèques du fichier fourni, leur couverture et leur statut.', inputSchema={'type': 'object', 'properties': {}, 'additionalProperties': False}),
     dict(name='search_components', description='Rechercher des composants et leurs liens officiels dans le catalogue local.', inputSchema={'type': 'object', 'properties': PROPERTIES, 'additionalProperties': False}),
@@ -47,7 +47,7 @@ def handle(request):
                 return error(id_, -32602, 'Invalid argument type: ' + key)
         if 'limit' in args and not 1 <= args['limit'] <= 100:
             return error(id_, -32602, 'limit must be between 1 and 100')
-        if args.get('kind', '') not in ['', 'Composant', 'Bloc', 'Animation']:
+        if args.get('kind', '') not in ['', 'Composant', 'Bloc', 'Animation', 'Référence visuelle']:
             return error(id_, -32602, 'Invalid kind')
         if name == 'list_sources':
             data = [dict((k, v) for k, v in s.items() if k != 'components') | {'component_count': len(s['components'])} for s in load()['sources']]

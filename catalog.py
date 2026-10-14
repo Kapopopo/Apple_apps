@@ -3,6 +3,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from taxonomy import classify
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'data' / 'catalog.json'
@@ -32,9 +33,13 @@ def source_list():
     return list(result.values())
 
 def load():
-    if DATA.exists():
-        return json.loads(DATA.read_text())
-    return dict(updated=None, sources=source_list())
+    catalog = json.loads(DATA.read_text()) if DATA.exists() else dict(updated=None, sources=source_list())
+    references = ROOT / 'data' / 'reference_sources.json'
+    if references.exists():
+        additions = json.loads(references.read_text())
+        ids = {s['id'] for s in additions}
+        catalog['sources'] = [s for s in catalog['sources'] if s['id'] not in ids] + additions
+    return catalog
 
 def rank(component, query=''):
     """Ranking measures discovery relevance, never untested quality."""
@@ -49,11 +54,11 @@ def rank(component, query=''):
         score += 10
         reasons.append('Accessibilité mentionnée dans la documentation (+10)')
     words = normalize(query).split()
-    haystack = normalize(' '.join([component['name'], component.get('kind', ''), component.get('source', '')]))
+    haystack = normalize(' '.join([classify(component)['search_terms'], component.get('kind', '')]))
     if words and matches(query, haystack):
         score += 30
         reasons.append('Correspond à tous les termes recherchés (+30)')
-    return dict(component, score=score, reasons=reasons)
+    return dict(classify(component), score=score, reasons=reasons)
 
 def search(query='', source='', kind='', verified_only=False, limit=2000):
     result = []
@@ -66,7 +71,7 @@ def search(query='', source='', kind='', verified_only=False, limit=2000):
                 continue
             if verified_only and not item.get('verified'):
                 continue
-            if query and not matches(query, item['name']+' '+item['kind']+' '+item['source']):
+            if query and not matches(query, item['search_terms']+' '+item['kind']):
                 continue
             result.append(item)
     return sorted(result, key=lambda c: (-c['score'], c['source'].lower(), c['name'].lower()))[:limit]
