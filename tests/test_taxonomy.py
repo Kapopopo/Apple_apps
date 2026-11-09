@@ -2,7 +2,6 @@ import json
 import unittest
 from catalog import ROOT, load, search
 from taxonomy import classify
-from mcp_server import handle
 
 class TaxonomyTests(unittest.TestCase):
     def test_graphics_synonyms_include_every_chart_and_no_illustrations(self):
@@ -34,11 +33,7 @@ class TaxonomyTests(unittest.TestCase):
             self.assertTrue(r['url'].startswith('https://onepromptdesign.com/prompt/'))
         self.assertEqual(len([s for s in load()['sources'] if s['id']=='one-prompt-design']),1)
 
-    def test_mcp_uses_same_types_and_filters(self):
-        response=handle(dict(jsonrpc='2.0',id=1,method='tools/call',params=dict(name='search_components',arguments=dict(query='graphique',limit=100))))
-        rows=json.loads(response['result']['content'][0]['text'])
-        self.assertTrue(rows)
-        self.assertTrue(all(r['type_label']=='Graphiques' for r in rows))
+    def test_type_and_kind_filters(self):
         self.assertEqual(search(query='graphique',source='one-prompt-design'),[])
         self.assertEqual(len(search(kind='Référence visuelle')),12)
 

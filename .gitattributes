@@ -1,0 +1,6 @@
+# Fins de ligne LF partout (code tiers du registre, scripts, specs), quel que soit core.autocrlf.
+* text=auto eol=lf
+*.jpg binary
+*.png binary
+*.webp binary
+*.woff2 binary
