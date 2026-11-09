@@ -1,0 +1,20 @@
+{
+  "name": "landing-produit",
+  "title": "Landing page produit",
+  "brief": "Page d'accueil d'un produit : hero accrocheur, preuve sociale, chiffres clés, offres et FAQ, appel à l'action final.",
+  "stack": "Next.js + React + TypeScript + Tailwind CSS + Motion",
+  "style": "Clair, généreux en espace, un accent de couleur, animations discrètes",
+  "theme": "panelui-web/theme",
+  "fonts": ["fontshare/plus-jakarta-sans"],
+  "easings": ["atlas/easings-standard"],
+  "blocks": [
+    { "id": "magic-ui/retro-grid", "note": "Fond de la section hero, derrière le titre." },
+    { "id": "magic-ui/word-rotate", "note": "Titre du hero : 3 bénéfices qui tournent." },
+    { "id": "magic-ui/shimmer-button", "note": "CTA principal du hero." },
+    { "id": "magic-ui/marquee", "note": "Logos clients puis témoignages, sous le hero." },
+    { "id": "magic-ui/number-ticker", "note": "Trois chiffres clés." },
+    { "id": "easyui/pricing", "note": "Section tarifs, 3 offres, l'offre du milieu mise en avant." },
+    { "id": "motion-primitives/accordion", "note": "FAQ avant le footer." }
+  ],
+  "preset": true
+}

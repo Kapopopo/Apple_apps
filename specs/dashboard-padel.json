@@ -1,0 +1,35 @@
+{
+  "name": "dashboard-padel",
+  "title": "Dashboard du club de padel",
+  "brief": "Tableau de bord pour un club de padel : réservations du jour, taux d’occupation des terrains, revenus et activité récente.",
+  "stack": "Next.js + React + TypeScript + Tailwind CSS",
+  "style": "Sombre, accents verts, lisible sur tablette",
+  "theme": "easyui/theme",
+  "fonts": [
+    "fontshare/manrope"
+  ],
+  "easings": [
+    "atlas/easings-standard"
+  ],
+  "blocks": [
+    {
+      "id": "easyui/stat-card",
+      "note": "Rangée de 4 KPI : réservations, occupation, revenus, nouveaux membres."
+    },
+    {
+      "id": "easyui/bar-chart",
+      "note": "Occupation par terrain sur 7 jours."
+    },
+    {
+      "id": "rare-ui/animated-counter",
+      "note": "Compteur de réservations du jour dans le header."
+    },
+    {
+      "id": "easyui/activity-feed",
+      "note": "Colonne de droite : dernières réservations et annulations."
+    }
+  ],
+  "preset": false,
+  "createdAt": "2026-11-05T00:39:34+00:00",
+  "updatedAt": "2026-11-05T00:39:34+00:00"
+}

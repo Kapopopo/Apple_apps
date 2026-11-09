@@ -1,0 +1,19 @@
+{
+  "name": "dashboard-saas",
+  "title": "Dashboard SaaS",
+  "brief": "Tableau de bord d'application : KPI, graphique principal, activité récente, tableau de données et notifications.",
+  "stack": "React + TypeScript + Tailwind CSS + Motion",
+  "style": "Sombre, dense mais lisible, accents bleus",
+  "theme": "easyui/theme",
+  "fonts": ["fontshare/manrope"],
+  "easings": ["atlas/easings-standard"],
+  "blocks": [
+    { "id": "kokonut-ui/metric-card", "note": "Rangée de 4 KPI en haut de page." },
+    { "id": "shadcn/chart-area-interactive", "note": "Graphique principal, période sélectionnable." },
+    { "id": "easyui/activity-heatmap", "note": "Activité des 6 derniers mois sous le graphique." },
+    { "id": "easyui/activity-feed", "note": "Colonne de droite : activité récente." },
+    { "id": "origin-ui/comp-466", "note": "Tableau des comptes / commandes en bas de page." },
+    { "id": "easyui/notification-stack", "note": "Notifications en haut à droite." }
+  ],
+  "preset": true
+}

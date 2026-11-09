@@ -1,0 +1,13 @@
+/* Scène neutre commune à tous les aperçus (hors Tailwind, pour ne pas dépendre d'une source). */
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; background: #fbfbfa; color: #17181a; -webkit-font-smoothing: antialiased; }
+html.dark body { background: #121314; color: #f3f3f1; }
+.atlas-stage { min-height: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; padding: 24px; overflow: auto; }
+.atlas-stage > * { max-width: 100%; }
+/* Vignette de galerie : pas de barres de défilement, légère réduction pour montrer le composant entier. */
+html.card, html.card body { overflow: hidden; }
+html.card .atlas-stage { zoom: 0.78; min-height: 128%; }
+.atlas-failure { height: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 20px; text-align: center; color: #6b6a65; font-size: 13px; }
+.atlas-failure strong { color: #2c2b28; font-size: 14px; }
+.atlas-failure p { margin: 0; max-width: 34ch; font-family: ui-monospace, monospace; font-size: 11px; word-break: break-word; }
+html.dark .atlas-failure strong { color: #ecebe7; }

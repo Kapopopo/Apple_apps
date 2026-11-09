@@ -1,0 +1,17 @@
+/* Équivalent Tailwind v4 des couleurs déclarées dans tailwind.config.js d'Easy UI (chargé via @config dans la source). */
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-raised: var(--surface-raised);
+  --color-border-hover: var(--border-hover);
+  --color-border-subtle: var(--border-subtle);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-glow: var(--accent-glow);
+  --color-accent-blue: var(--indicator-active);
+  --tracking-tight-heading: -0.035em;
+  --tracking-snug-heading: -0.02em;
+}

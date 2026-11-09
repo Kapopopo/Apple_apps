@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>Atlas · Builder</title><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/builder.css"><script src="/builder.js" defer></script></head>
+<body>
+<a class="skip" href="#grid">Aller à la galerie</a>
+<header class="appbar">
+  <a href="/builder" class="brand"><span class="brand-mark">a<span>•</span></span><span>atlas</span></a>
+  <nav class="pages" aria-label="Pages">
+    <a href="/builder" aria-current="page">Builder <small>composer une spec</small></a>
+    <a href="/">Catalogue <small>essayer les composants</small></a>
+  </nav>
+</header>
+<div class="layout">
+  <section class="gallery" aria-label="Registre">
+    <div class="filters">
+      <label class="search"><svg class="icon" aria-hidden="true"><use href="/icons.svg#search"/></svg><input id="q" type="search" placeholder="Rechercher dans le registre : bouton, graphique, sidebar, pricing…" aria-label="Rechercher dans le registre"></label>
+      <div class="types" id="types" role="group" aria-label="Type d’item"></div>
+      <div class="selects">
+        <select id="f-category" aria-label="Catégorie"><option value="">Toutes les catégories</option></select>
+        <select id="f-source" aria-label="Source"><option value="">Toutes les sources</option></select>
+        <select id="f-license" aria-label="Licence"><option value="">Toutes les licences</option><option value="open">Licence ouverte</option><option value="restricted">Licence avec conditions</option></select>
+        <select id="f-tag" aria-label="Tag"><option value="">Tous les tags</option></select>
+        <button id="reset" class="btn ghost small" hidden><svg class="icon" aria-hidden="true"><use href="/icons.svg#reset"/></svg>Réinitialiser</button>
+      </div>
+    </div>
+    <div class="gallery-head">
+      <p class="help" id="count" aria-live="polite">Chargement du registre…</p>
+      <div class="gallery-tools">
+        <label class="check"><input type="checkbox" id="f-light"> Aperçus sur fond clair</label>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <button class="btn more" id="more" hidden>Afficher plus</button>
+  </section>
+
+  <aside class="spec" aria-labelledby="spec-heading">
+    <div class="spec-scroll">
+      <div class="spec-head">
+        <h2 id="spec-heading">Nouvelle spec</h2>
+        <div class="spec-head-actions">
+          <label class="visually-hidden" for="load-spec">Ouvrir une spec ou un preset</label>
+          <select id="load-spec"><option value="">Ouvrir…</option></select>
+          <button class="btn ghost small" id="new-spec" title="Vider la spec en cours">Nouvelle</button>
+        </div>
+      </div>
+
+      <ol class="guide" id="guide">
+        <li>Nommez la spec et collez le brief du client.</li>
+        <li>Choisissez un thème et des blocs dans la galerie, puis ordonnez-les.</li>
+        <li>Enregistrez, puis lancez la commande dans Claude Code.</li>
+      </ol>
+
+      <section class="spec-section" aria-labelledby="h-project">
+        <h3 id="h-project">Projet</h3>
+        <div class="row">
+          <label class="field">Nom du fichier<input id="s-name" placeholder="dashboard-padel" autocomplete="off" spellcheck="false" aria-describedby="name-help"></label>
+          <label class="field">Titre<input id="s-title" placeholder="Dashboard padel"></label>
+        </div>
+        <p id="name-help" class="help">Enregistré dans specs/<span id="name-preview">nom</span>.json</p>
+        <label class="field">Brief<textarea id="s-brief" rows="2" placeholder="Pour qui, quelles pages, quel objectif…"></textarea></label>
+        <div class="row">
+          <label class="field">Stack<input id="s-stack" placeholder="Next.js + Tailwind"></label>
+          <label class="field">Direction visuelle<input id="s-style" placeholder="Sombre, accents verts"></label>
+        </div>
+      </section>
+
+      <section class="spec-section" aria-labelledby="h-style">
+        <h3 id="h-style">Style</h3>
+        <div class="slot-row"><span class="slot-label">Thème</span><div id="s-theme" class="slot"></div></div>
+        <div class="slot-row"><span class="slot-label">Polices</span><div id="s-fonts" class="slot chips"></div></div>
+        <div class="slot-row"><span class="slot-label">Easings</span><div id="s-easings" class="slot chips"></div></div>
+      </section>
+
+      <section class="spec-section" aria-labelledby="h-blocks">
+        <div class="section-title"><h3 id="h-blocks">Blocs <span class="count" id="s-count">0</span></h3><button class="btn ghost small" id="import-atlas" hidden></button></div>
+        <ol id="s-blocks" class="blocks"></ol>
+        <div id="s-attribution"></div>
+      </section>
+    </div>
+    <div class="spec-footer">
+      <div class="spec-actions">
+        <button class="btn primary" id="save"><svg class="icon" aria-hidden="true"><use href="/icons.svg#save"/></svg>Enregistrer la spec</button>
+        <button class="btn ghost small" id="save-preset">Comme preset</button>
+        <a class="btn ghost small" id="jump-spec" href="#spec-heading">Spec <span class="count" id="jump-count">0</span></a>
+      </div>
+      <div class="command">
+        <code id="mcp-command">/mcp__atlas__build-from-spec nom</code>
+        <button class="btn icon-only ghost small" id="copy-command" aria-label="Copier la commande Claude Code"><svg class="icon" aria-hidden="true"><use href="/icons.svg#copy"/></svg></button>
+      </div>
+    </div>
+  </aside>
+</div>
+<dialog id="detail" aria-labelledby="detail-title"><button class="btn icon-only ghost close" id="close-detail" aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="/icons.svg#x"/></svg></button><div id="detail-body"></div></dialog>
+<div id="toast" role="status"></div>
+</body>
+</html>
