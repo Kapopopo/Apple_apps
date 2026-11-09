@@ -1,6 +1,6 @@
 /**
  * Catégories françaises et vocabulaire de recherche bilingue.
- * CATALOG_RULES est un port exact de taxonomy.py (catalogue de liens, même classement que l'UI) ;
+ * CATALOG_RULES : catégories de base (héritées du catalogue de liens d'origine) ;
  * REGISTRY_RULES l'étend pour les noms des composants importés (otp, toast, kpi…).
  */
 export const normalize = (value: string) =>
@@ -84,16 +84,6 @@ const first = (rules: Rule[], text: string) => rules.find(([, pattern]) => patte
 export function classify(name: string, description = ''): string {
   const byName = first(REGISTRY_RULES, normalize(name).replace(/[-_]/g, ' '));
   return byName !== 'Autres composants' || !description ? byName : first(REGISTRY_RULES, normalize(description).replace(/[-_]/g, ' '));
-}
-
-/** Port exact de taxonomy.classify pour les fiches du catalogue de liens. */
-export function classifyCatalog<T extends { name?: string; url?: string; type_label?: string; source?: string; tags?: string[] }>(component: T): T & { type_label: string; search_terms: string } {
-  const slug = (component.url ?? '').replace(/\/+$/, '').split('/').pop() ?? '';
-  const name = normalize(`${component.name ?? ''} ${slug}`).replace(/-/g, ' ');
-  const overrides: Record<string, string> = { 'animated-list': 'Notifications', 'animated-background': 'Navigation', tilt: 'Cartes', spotlight: 'Cartes', 'blur-fade': 'Transitions' };
-  const label = component.type_label || overrides[slug] || first(CATALOG_RULES, name);
-  const terms = [component.name ?? '', component.source ?? '', label, VOCAB[label] ?? '', (component.tags ?? []).join(' ')].join(' ');
-  return { ...component, type_label: label, search_terms: normalize(terms) };
 }
 
 const SECTION_HINT = /\b(pricing|hero|footer|features?|testimonials?|cta|contact|login|sign ?up|signup)\b/;

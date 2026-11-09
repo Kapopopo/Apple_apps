@@ -105,3 +105,31 @@ export const css = {
 
 export const easings = { easeInSine, easeOutSine, easeInOutSine, easeInQuad, easeOutQuad, easeInOutQuad, easeInCubic, easeOutCubic, easeInOutCubic, easeInQuart, easeOutQuart, easeInOutQuart, easeInQuint, easeOutQuint, easeInOutQuint, easeInExpo, easeOutExpo, easeInOutExpo, easeInCirc, easeOutCirc, easeInOutCirc, easeInBack, easeOutBack, easeInOutBack, easeInElastic, easeOutElastic, easeInOutElastic, easeInBounce, easeOutBounce, easeInOutBounce } as const;
 export type EasingName = keyof typeof easings;
+
+/** Ressorts Motion : `transition={{ type: 'spring', ...spring.snappy }}`. */
+export const spring = {
+  /** Boutons, toggles, menus : réponse immédiate, sans rebond visible */
+  snappy: { stiffness: 400, damping: 30, mass: 1 },
+  /** Panneaux, drawers, changements de layout */
+  smooth: { stiffness: 200, damping: 26, mass: 1 },
+  /** Apparitions douces, cartes, toasts */
+  gentle: { stiffness: 120, damping: 14, mass: 1 },
+  /** Accents ludiques : badges, likes, compteurs */
+  bouncy: { stiffness: 300, damping: 12, mass: 1 },
+  /** Grandes surfaces : modales plein écran, sheets */
+  heavy: { stiffness: 180, damping: 30, mass: 2 },
+} as const;
+
+/** Durées de référence en millisecondes. */
+export const duration = {
+  /** Retour d’état (hover, press) */
+  instant: 100,
+  /** Petits éléments : tooltips, icônes */
+  fast: 150,
+  /** Valeur par défaut des transitions d’interface */
+  base: 200,
+  /** Panneaux, menus, accordéons */
+  moderate: 300,
+  /** Grandes surfaces, transitions de page */
+  slow: 500,
+} as const;

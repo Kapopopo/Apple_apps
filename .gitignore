@@ -16,3 +16,9 @@ previews/src/generated/
 specs/*.tmp
 # Captures de revue de design (impeccable)
 .impeccable/review/
+# Réglages Claude Code personnels
+.claude/settings.local.json
+# Versions précédentes des specs (filet de sécurité local)
+specs/.history/
+# Vignettes produites par l'audit des aperçus (regénérables)
+web/thumbs/

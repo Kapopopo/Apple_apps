@@ -17,10 +17,15 @@ export const ROOT = findRoot();
 export const REGISTRY = path.join(ROOT, 'registry');
 export const SPECS = path.join(ROOT, 'specs');
 export const PRESETS = path.join(SPECS, 'presets');
+/** Versions précédentes des specs (une copie par enregistrement ou suppression). */
+export const SPEC_HISTORY = path.join(SPECS, '.history');
 export const CACHE = path.join(ROOT, '.cache', 'sources');
 export const DATA = path.join(ROOT, 'data');
+export const WEB = path.join(ROOT, 'web');
+/** Vignettes produites par l'audit des aperçus (gitignorées, regénérables). */
+export const THUMBS = path.join(WEB, 'thumbs');
 
-export const KIND_DIRS = { component: 'items', section: 'items', screen: 'items', lib: 'items', theme: 'themes', font: 'fonts', easing: 'easings' } as const;
+export const KIND_DIRS = { component: 'items', section: 'items', screen: 'items', lib: 'items', theme: 'themes', font: 'fonts', easing: 'easings', sound: 'sounds' } as const;
 
 /** Refuse tout chemin qui sortirait du dossier parent (fichiers issus de sources externes). */
 export function safeJoin(base: string, rel: string): string {

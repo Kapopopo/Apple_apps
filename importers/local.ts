@@ -11,7 +11,7 @@ import type { FileMap } from '../shared/registry.js';
 import { walk } from './lib/graph.js';
 import { Collector } from './lib/collector.js';
 
-interface Curated { id: string; demo: string; category: string; interaction: string; usage: string; reason: string; source_url: string; code_source: string; license: string; integration: string }
+interface Curated { id: string; name: string; demo: string; category: string; interaction: string; usage: string; reason: string; source_url: string; code_source: string; license: string; integration: string }
 
 const LIBRARIES = {
   'magic-ui': { name: 'Magic UI', repo: 'https://github.com/magicuidesign/magicui', license: 'demos/licenses/magic-ui.txt' },
@@ -20,9 +20,6 @@ const LIBRARIES = {
 
 export function importLocal() {
   const curation: Curated[] = JSON.parse(fs.readFileSync(path.join(DATA, 'curation.json'), 'utf8'));
-  const catalog = JSON.parse(fs.readFileSync(path.join(DATA, 'catalog.json'), 'utf8'));
-  const names = new Map<string, { name: string; description?: string }>();
-  for (const s of catalog.sources) for (const c of s.components) names.set(c.id, c);
   const collectors = new Map<string, Collector>();
   const aliases = { '@/': 'demos/src/' };
   for (const item of curation) {
@@ -38,7 +35,7 @@ export function importLocal() {
     if (!fs.existsSync(path.join(ROOT, entry))) { collector.skip(id, `Fichier vendorisé absent : ${entry}`); continue; }
     const w = walk(ROOT, [entry], id, new Map(), aliases);
     const files: FileMap = new Map(w.files.map((rel) => [rel, fs.readFileSync(path.join(ROOT, rel), 'utf8')]));
-    const name = names.get(item.id)?.name ?? item.demo;
+    const name = item.name || item.demo;
     const copyright = licenseText.match(/^\s*Copyright[^\n]+/im)?.[0].trim();
     collector.write({
       id, name, type: refineType(name, 'component'), category: ({ Chiffres: 'Indicateurs', 'Témoignages': 'Carrousels' } as Record<string, string>)[item.category] ?? item.category,

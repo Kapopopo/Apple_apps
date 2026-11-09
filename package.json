@@ -5,8 +5,8 @@
   "type": "module",
   "description": "Registre local de composants, importers et serveur MCP de Component Atlas.",
   "scripts": {
+    "start": "tsx server/index.ts",
     "build": "tsc -p tsconfig.json",
-    "prepare": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "import": "tsx importers/run.ts",
     "import:github": "tsx importers/run.ts github",
@@ -14,7 +14,8 @@
     "import:fontshare": "tsx importers/run.ts fontshare",
     "import:easings": "tsx importers/run.ts easings",
     "index": "tsx importers/run.ts index",
-    "mcp": "node dist/mcp/index.js",
+    "bundle": "tsx scripts/bundle.ts",
+    "mcp": "tsx mcp/index.ts",
     "previews": "npm --prefix previews run build",
     "test": "node --import tsx --test tests/ts/*.test.ts"
   },

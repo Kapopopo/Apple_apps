@@ -1,6 +1,7 @@
 [
   {
     "id": "16b9654780c58ca8",
+    "name": "Marquee",
     "demo": "marquee",
     "category": "Témoignages",
     "interaction": "Défilement",
@@ -13,6 +14,7 @@
   },
   {
     "id": "86d534cfdb2841c0",
+    "name": "Tilt",
     "demo": "tilt",
     "category": "Cartes",
     "interaction": "Survol",
@@ -25,6 +27,7 @@
   },
   {
     "id": "2f57e5281d42adcc",
+    "name": "Shimmer Button",
     "demo": "shimmer-button",
     "category": "Boutons",
     "interaction": "Boucle",
@@ -37,6 +40,7 @@
   },
   {
     "id": "1d2f103c77b67e8a",
+    "name": "Accordion",
     "demo": "accordion",
     "category": "FAQ",
     "interaction": "Interaction",
@@ -49,6 +53,7 @@
   },
   {
     "id": "7cea5f752a35cc94",
+    "name": "Dock",
     "demo": "dock",
     "category": "Navigation",
     "interaction": "Survol",
@@ -61,6 +66,7 @@
   },
   {
     "id": "f3be58bded3059c7",
+    "name": "Spotlight",
     "demo": "spotlight",
     "category": "Cartes",
     "interaction": "Survol",
@@ -73,6 +79,7 @@
   },
   {
     "id": "58cf4d109f3587bf",
+    "name": "Number Ticker",
     "demo": "number-ticker",
     "category": "Chiffres",
     "interaction": "Entrée",
@@ -85,6 +92,7 @@
   },
   {
     "id": "9d442b96948a8d59",
+    "name": "Border Beam",
     "demo": "border-beam",
     "category": "Cartes",
     "interaction": "Boucle",
@@ -97,6 +105,7 @@
   },
   {
     "id": "f83c13e1de9495f6",
+    "name": "Text Effect",
     "demo": "text-effect",
     "category": "Texte",
     "interaction": "Entrée",
@@ -109,6 +118,7 @@
   },
   {
     "id": "54011923c087e460",
+    "name": "Magic Card",
     "demo": "magic-card",
     "category": "Cartes",
     "interaction": "Survol",
@@ -121,6 +131,7 @@
   },
   {
     "id": "57348184fab8edf2",
+    "name": "Animated List",
     "demo": "animated-list",
     "category": "Notifications",
     "interaction": "Entrée",
@@ -133,6 +144,7 @@
   },
   {
     "id": "4c4e3043b7c36ea1",
+    "name": "Animated Background",
     "demo": "animated-background",
     "category": "Navigation",
     "interaction": "Interaction",
@@ -145,6 +157,7 @@
   },
   {
     "id": "d70b7cce78b3405c",
+    "name": "Orbiting Circles",
     "demo": "orbiting-circles",
     "category": "Illustrations",
     "interaction": "Boucle",
@@ -157,6 +170,7 @@
   },
   {
     "id": "ffa95a0f985a25bf",
+    "name": "Animated Gradient Text",
     "demo": "animated-gradient-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -169,6 +183,7 @@
   },
   {
     "id": "38305db522046284",
+    "name": "Animated Number",
     "demo": "animated-number",
     "category": "Chiffres",
     "interaction": "Interaction",
@@ -181,6 +196,7 @@
   },
   {
     "id": "971ac18f00aefd8c",
+    "name": "Ripple",
     "demo": "ripple",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -193,6 +209,7 @@
   },
   {
     "id": "8a33d401edf66817",
+    "name": "Retro Grid",
     "demo": "retro-grid",
     "category": "Fonds",
     "interaction": "Défilement",
@@ -205,6 +222,7 @@
   },
   {
     "id": "343e5a545f264c57",
+    "name": "Word Rotate",
     "demo": "word-rotate",
     "category": "Texte",
     "interaction": "Boucle",
@@ -217,6 +235,7 @@
   },
   {
     "id": "fb8b9567b16aac2a",
+    "name": "Aurora Text",
     "demo": "aurora-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -229,6 +248,7 @@
   },
   {
     "id": "900fb3157c0af004",
+    "name": "Animated Shiny Text",
     "demo": "animated-shiny-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -241,6 +261,7 @@
   },
   {
     "id": "030f0e1fb61d5fff",
+    "name": "Hyper Text",
     "demo": "hyper-text",
     "category": "Texte",
     "interaction": "Survol",
@@ -253,6 +274,7 @@
   },
   {
     "id": "9b67ae68ed603890",
+    "name": "Sparkles Text",
     "demo": "sparkles-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -265,6 +287,7 @@
   },
   {
     "id": "f40938f180ac86fb",
+    "name": "Morphing Text",
     "demo": "morphing-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -277,6 +300,7 @@
   },
   {
     "id": "434f931f8f2afc13",
+    "name": "Spinning Text",
     "demo": "spinning-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -289,6 +313,7 @@
   },
   {
     "id": "76eadc5bd2749e4e",
+    "name": "Typing Animation",
     "demo": "typing-animation",
     "category": "Texte",
     "interaction": "Boucle",
@@ -301,6 +326,7 @@
   },
   {
     "id": "e3b3beece1ea49fa",
+    "name": "Line Shadow Text",
     "demo": "line-shadow-text",
     "category": "Texte",
     "interaction": "Boucle",
@@ -313,6 +339,7 @@
   },
   {
     "id": "17e3a76e38fc421d",
+    "name": "Text Animate",
     "demo": "text-animate",
     "category": "Texte",
     "interaction": "Entrée",
@@ -325,6 +352,7 @@
   },
   {
     "id": "8898272ea45616a6",
+    "name": "Rainbow Button",
     "demo": "rainbow-button",
     "category": "Boutons",
     "interaction": "Boucle",
@@ -337,6 +365,7 @@
   },
   {
     "id": "2f2ed643a4fc2c99",
+    "name": "Ripple Button",
     "demo": "ripple-button",
     "category": "Boutons",
     "interaction": "Interaction",
@@ -349,6 +378,7 @@
   },
   {
     "id": "3c091f4ae6be2499",
+    "name": "Shiny Button",
     "demo": "shiny-button",
     "category": "Boutons",
     "interaction": "Boucle",
@@ -361,6 +391,7 @@
   },
   {
     "id": "9fd47745f572839c",
+    "name": "Pulsating Button",
     "demo": "pulsating-button",
     "category": "Boutons",
     "interaction": "Boucle",
@@ -373,6 +404,7 @@
   },
   {
     "id": "7700d4fb78e6bc66",
+    "name": "Interactive Hover Button",
     "demo": "interactive-hover-button",
     "category": "Boutons",
     "interaction": "Survol",
@@ -385,6 +417,7 @@
   },
   {
     "id": "f4aec32e61704cca",
+    "name": "Meteors",
     "demo": "meteors",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -397,6 +430,7 @@
   },
   {
     "id": "c132450dccfdd6e3",
+    "name": "Flickering Grid",
     "demo": "flickering-grid",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -409,6 +443,7 @@
   },
   {
     "id": "5623c96f5fb857f2",
+    "name": "Animated Grid Pattern",
     "demo": "animated-grid-pattern",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -421,6 +456,7 @@
   },
   {
     "id": "f09e98ab5b8fd829",
+    "name": "Interactive Grid Pattern",
     "demo": "interactive-grid-pattern",
     "category": "Fonds",
     "interaction": "Survol",
@@ -433,6 +469,7 @@
   },
   {
     "id": "e55327b56e316a00",
+    "name": "Light Rays",
     "demo": "light-rays",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -445,6 +482,7 @@
   },
   {
     "id": "5ee996b37ac8f0eb",
+    "name": "Warp Background",
     "demo": "warp-background",
     "category": "Fonds",
     "interaction": "Boucle",
@@ -457,6 +495,7 @@
   },
   {
     "id": "8b24e2ee002fc226",
+    "name": "Shine Border",
     "demo": "shine-border",
     "category": "Cartes",
     "interaction": "Boucle",
@@ -469,6 +508,7 @@
   },
   {
     "id": "9b7500828582cb4b",
+    "name": "Glare Hover",
     "demo": "glare-hover",
     "category": "Cartes",
     "interaction": "Survol",
@@ -481,6 +521,7 @@
   },
   {
     "id": "561cc8fb8bbbf53b",
+    "name": "Neon Gradient Card",
     "demo": "neon-gradient-card",
     "category": "Cartes",
     "interaction": "Boucle",
@@ -493,6 +534,7 @@
   },
   {
     "id": "72b70dbec5fe9098",
+    "name": "Lens",
     "demo": "lens",
     "category": "Cartes",
     "interaction": "Survol",
@@ -505,6 +547,7 @@
   },
   {
     "id": "5a41a48b28ca581a",
+    "name": "Animated Circular Progress Bar",
     "demo": "animated-circular-progress-bar",
     "category": "Chiffres",
     "interaction": "Boucle",
@@ -517,6 +560,7 @@
   },
   {
     "id": "d49c1252e403b645",
+    "name": "Blur Fade",
     "demo": "blur-fade",
     "category": "Illustrations",
     "interaction": "Entrée",

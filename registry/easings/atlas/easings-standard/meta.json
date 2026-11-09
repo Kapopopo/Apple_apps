@@ -7,9 +7,11 @@
     "bezier",
     "css",
     "motion",
+    "spring",
+    "duration",
     "tokens"
   ],
-  "description": "30 courbes (Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce) en cubic-bezier CSS, tableaux Motion et fonctions JS.",
+  "description": "30 courbes (Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce) en cubic-bezier CSS, tableaux Motion et fonctions JS, 5 ressorts Motion (approximation CSS linear() incluse) et 5 durées de référence.",
   "framework": "agnostic",
   "dependencies": [],
   "registryDependencies": [],
@@ -18,7 +20,7 @@
   "sourceUrl": "https://robertpenner.com/easing/",
   "license": "BSD-3-Clause",
   "licenseStatus": "open",
-  "licenseNotes": "Fonctions dérivées des Easing Equations de Robert Penner (BSD-3-Clause). Valeurs cubic-bezier standard (approximations usuelles des mêmes courbes).",
+  "licenseNotes": "Fonctions dérivées des Easing Equations de Robert Penner (BSD-3-Clause). Valeurs cubic-bezier standard (approximations usuelles des mêmes courbes). Ressorts et durées : valeurs génériques définies par Atlas.",
   "attribution": "Easing Equations © 2001 Robert Penner (BSD-3-Clause).",
   "files": [
     {
@@ -43,7 +45,8 @@
         0,
         0.39,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutSine",
@@ -53,7 +56,8 @@
         1,
         0.88,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutSine",
@@ -63,7 +67,8 @@
         0,
         0.63,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInQuad",
@@ -73,7 +78,8 @@
         0,
         0.5,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutQuad",
@@ -83,7 +89,8 @@
         1,
         0.89,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutQuad",
@@ -93,7 +100,8 @@
         0,
         0.55,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInCubic",
@@ -103,7 +111,8 @@
         0,
         0.67,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutCubic",
@@ -113,7 +122,8 @@
         1,
         0.68,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutCubic",
@@ -123,7 +133,8 @@
         0,
         0.35,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInQuart",
@@ -133,7 +144,8 @@
         0,
         0.75,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutQuart",
@@ -143,7 +155,8 @@
         1,
         0.5,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutQuart",
@@ -153,7 +166,8 @@
         0,
         0.24,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInQuint",
@@ -163,7 +177,8 @@
         0,
         0.78,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutQuint",
@@ -173,7 +188,8 @@
         1,
         0.36,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutQuint",
@@ -183,7 +199,8 @@
         0,
         0.17,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInExpo",
@@ -193,7 +210,8 @@
         0,
         0.84,
         0
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutExpo",
@@ -203,7 +221,8 @@
         1,
         0.3,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutExpo",
@@ -213,7 +232,8 @@
         0,
         0.13,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInCirc",
@@ -223,7 +243,8 @@
         0,
         1,
         0.45
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutCirc",
@@ -233,7 +254,8 @@
         0.55,
         0.45,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutCirc",
@@ -243,7 +265,8 @@
         0,
         0.15,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInBack",
@@ -253,7 +276,8 @@
         0,
         0.66,
         -0.56
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeOutBack",
@@ -263,7 +287,8 @@
         1.56,
         0.64,
         1
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInOutBack",
@@ -273,39 +298,152 @@
         -0.6,
         0.32,
         1.6
-      ]
+      ],
+      "kind": "bezier"
     },
     {
       "name": "easeInElastic",
       "css": "/* easeInElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
     },
     {
       "name": "easeOutElastic",
       "css": "/* easeOutElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
     },
     {
       "name": "easeInOutElastic",
       "css": "/* easeInOutElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
     },
     {
       "name": "easeInBounce",
       "css": "/* easeInBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
     },
     {
       "name": "easeOutBounce",
       "css": "/* easeOutBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
     },
     {
       "name": "easeInOutBounce",
       "css": "/* easeInOutBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
-      "cubicBezier": null
+      "cubicBezier": null,
+      "kind": "bezier"
+    },
+    {
+      "name": "springSnappy",
+      "css": "linear(0, 0.018, 0.065, 0.132, 0.212, 0.298, 0.386, 0.473, 0.555, 0.631, 0.7, 0.762, 0.815, 0.862, 0.901, 0.933, 0.959, 0.98, 0.996, 1.008, 1.017, 1.023, 1.026, 1.028, 1.028, 1.028, 1.026, 1.024, 1.022, 1.019, 1.017, 1.014, 1.012, 1.01, 1.008, 1.006, 1.005, 1.004, 1.003, 1.002, 1)",
+      "cubicBezier": null,
+      "kind": "spring",
+      "spring": {
+        "stiffness": 400,
+        "damping": 30,
+        "mass": 1
+      },
+      "durationMs": 400,
+      "usage": "Boutons, toggles, menus : réponse immédiate, sans rebond visible"
+    },
+    {
+      "name": "springSmooth",
+      "css": "linear(0, 0.012, 0.045, 0.092, 0.148, 0.209, 0.273, 0.338, 0.401, 0.462, 0.519, 0.573, 0.623, 0.669, 0.71, 0.747, 0.781, 0.811, 0.838, 0.861, 0.882, 0.899, 0.915, 0.929, 0.94, 0.95, 0.959, 0.966, 0.972, 0.977, 0.982, 0.985, 0.989, 0.991, 0.993, 0.995, 0.996, 0.997, 0.998, 0.999, 1)",
+      "cubicBezier": null,
+      "kind": "spring",
+      "spring": {
+        "stiffness": 200,
+        "damping": 26,
+        "mass": 1
+      },
+      "durationMs": 470,
+      "usage": "Panneaux, drawers, changements de layout"
+    },
+    {
+      "name": "springGentle",
+      "css": "linear(0, 0.03, 0.107, 0.214, 0.335, 0.46, 0.581, 0.691, 0.788, 0.87, 0.936, 0.987, 1.024, 1.05, 1.065, 1.072, 1.073, 1.07, 1.063, 1.055, 1.046, 1.037, 1.028, 1.02, 1.014, 1.008, 1.003, 1, 0.998, 0.996, 0.995, 0.995, 0.995, 0.995, 0.996, 0.996, 0.997, 0.997, 0.998, 0.999, 1)",
+      "cubicBezier": null,
+      "kind": "spring",
+      "spring": {
+        "stiffness": 120,
+        "damping": 14,
+        "mass": 1
+      },
+      "durationMs": 950,
+      "usage": "Apparitions douces, cartes, toasts"
+    },
+    {
+      "name": "springBouncy",
+      "css": "linear(0, 0.093, 0.322, 0.609, 0.887, 1.109, 1.251, 1.31, 1.298, 1.237, 1.15, 1.06, 0.984, 0.932, 0.906, 0.903, 0.919, 0.945, 0.973, 0.999, 1.017, 1.028, 1.031, 1.027, 1.02, 1.011, 1.003, 0.996, 0.992, 0.99, 0.991, 0.993, 0.996, 0.998, 1.001, 1.002, 1.003, 1.003, 1.002, 1.002, 1)",
+      "cubicBezier": null,
+      "kind": "spring",
+      "spring": {
+        "stiffness": 300,
+        "damping": 12,
+        "mass": 1
+      },
+      "durationMs": 1060,
+      "usage": "Accents ludiques : badges, likes, compteurs"
+    },
+    {
+      "name": "springHeavy",
+      "css": "linear(0, 0.02, 0.071, 0.143, 0.227, 0.316, 0.406, 0.492, 0.573, 0.648, 0.714, 0.773, 0.823, 0.866, 0.902, 0.931, 0.954, 0.973, 0.987, 0.998, 1.006, 1.011, 1.015, 1.017, 1.017, 1.017, 1.016, 1.015, 1.014, 1.012, 1.011, 1.009, 1.008, 1.006, 1.005, 1.004, 1.003, 1.003, 1.002, 1.001, 1)",
+      "cubicBezier": null,
+      "kind": "spring",
+      "spring": {
+        "stiffness": 180,
+        "damping": 30,
+        "mass": 2
+      },
+      "durationMs": 890,
+      "usage": "Grandes surfaces : modales plein écran, sheets"
+    },
+    {
+      "name": "durationInstant",
+      "css": "100ms",
+      "cubicBezier": null,
+      "kind": "duration",
+      "durationMs": 100,
+      "usage": "Retour d’état (hover, press)"
+    },
+    {
+      "name": "durationFast",
+      "css": "150ms",
+      "cubicBezier": null,
+      "kind": "duration",
+      "durationMs": 150,
+      "usage": "Petits éléments : tooltips, icônes"
+    },
+    {
+      "name": "durationBase",
+      "css": "200ms",
+      "cubicBezier": null,
+      "kind": "duration",
+      "durationMs": 200,
+      "usage": "Valeur par défaut des transitions d’interface"
+    },
+    {
+      "name": "durationModerate",
+      "css": "300ms",
+      "cubicBezier": null,
+      "kind": "duration",
+      "durationMs": 300,
+      "usage": "Panneaux, menus, accordéons"
+    },
+    {
+      "name": "durationSlow",
+      "css": "500ms",
+      "cubicBezier": null,
+      "kind": "duration",
+      "durationMs": 500,
+      "usage": "Grandes surfaces, transitions de page"
     }
   ],
-  "contentHash": "794547b5c4bdde70",
-  "importedAt": "2026-11-05T00:16:49.479Z"
+  "contentHash": "8149c2a26110a0a5",
+  "importedAt": "2026-11-05T00:16:49.479Z",
+  "updatedAt": "2026-11-09T15:17:20.941Z"
 }

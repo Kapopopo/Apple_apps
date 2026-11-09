@@ -1,11 +1,12 @@
 /**
- * Format d'un item du registre (registry/<kind>/<sourceId>/<slug>/meta.json).
- * Partagé par les importers, le serveur MCP et les tests.
+ * Format d'un item du registre (registry/<kind>/<sourceId>/<slug>/meta.json) et d'une spec.
+ * Partagé par les importers, le serveur web, le serveur MCP et les tests.
  */
 import * as z from 'zod';
 
-/** `lib` : helpers (cn, hooks…) requis par d'autres items, masqués par défaut dans le builder. */
-export const ITEM_TYPES = ['component', 'section', 'screen', 'theme', 'font', 'easing', 'lib'] as const;
+/** `lib` : helpers (cn, hooks…) requis par d'autres items ; `sound` : sons d'interface (Web Audio). */
+export const ITEM_TYPES = ['component', 'section', 'screen', 'theme', 'font', 'easing', 'sound', 'lib'] as const;
+export const BLOCK_TYPES = ['component', 'section', 'screen', 'lib'] as const;
 export const FRAMEWORKS = ['react', 'react-native', 'agnostic'] as const;
 export const FILE_ROLES = ['source', 'style', 'demo', 'doc', 'theme', 'data'] as const;
 
@@ -48,12 +49,24 @@ export const ThemeTokens = z.object({
   /** Autres custom properties (ombres, espacements…). */
   other: z.record(z.string(), z.string()).default({}),
 });
+export type ThemeTokens = z.infer<typeof ThemeTokens>;
 
 export const EasingToken = z.object({
   name: z.string(),
+  /** Valeur CSS : cubic-bezier(), linear() (ressorts) ou durée. */
   css: z.string(),
   cubicBezier: z.tuple([z.number(), z.number(), z.number(), z.number()]).nullable(),
+  kind: z.enum(['bezier', 'spring', 'duration']).default('bezier'),
+  /** Ressort Motion : transition={{ type: 'spring', stiffness, damping, mass }}. */
+  spring: z.object({ stiffness: z.number(), damping: z.number(), mass: z.number() }).optional(),
+  durationMs: z.number().optional(),
+  /** Quand l'utiliser (ressorts, durées). */
+  usage: z.string().max(200).optional(),
 });
+export type EasingToken = z.infer<typeof EasingToken>;
+
+/** Sons d'interface : `react-bits` = une recette jouée par le moteur React Bits ; `bencho` = `play(nom)` de sounds.ts. */
+export const SoundInfo = z.object({ engine: z.enum(['react-bits', 'bencho']), names: z.array(z.string()).min(1) });
 
 export const Meta = z.object({
   id: z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/),
@@ -69,7 +82,8 @@ export const Meta = z.object({
   registryDependencies: z.array(z.string()).default([]),
   source: z.string(),
   sourceId: z.string(),
-  sourceUrl: z.string().url(),
+  /** Lien vers l'origine ; vide pour les créations personnelles (thèmes perso). */
+  sourceUrl: z.union([z.string().url(), z.literal('')]),
   sourcePath: z.string().optional(),
   sourceCommit: z.string().optional(),
   license: z.string(),
@@ -84,6 +98,7 @@ export const Meta = z.object({
   font: FontInfo.optional(),
   tokens: ThemeTokens.optional(),
   easings: z.array(EasingToken).optional(),
+  sound: SoundInfo.optional(),
   contentHash: z.string(),
   importedAt: z.string(),
   updatedAt: z.string().optional(),
@@ -91,22 +106,52 @@ export const Meta = z.object({
 export type Meta = z.infer<typeof Meta>;
 export type ItemType = (typeof ITEM_TYPES)[number];
 
-export const SpecBlock = z.object({ id: z.string(), note: z.string().max(2000).default('') });
+const ITEM_ID = /^[a-z0-9-]+\/[a-z0-9-]+$/;
+export const SpecBlock = z.object({
+  id: z.string().regex(ITEM_ID),
+  note: z.string().max(2000).default(''),
+  /** Page du site où placer le bloc (multi-pages) ; vide = page unique. */
+  page: z.string().max(60).optional(),
+});
+export const SPEC_NAME = /^[a-z0-9][a-z0-9-]{0,63}$/;
 export const Spec = z.object({
-  name: z.string().regex(/^[a-z0-9][a-z0-9-]{0,63}$/),
+  name: z.string().regex(SPEC_NAME),
   title: z.string().max(120).default(''),
   brief: z.string().max(5000).default(''),
   stack: z.string().max(300).default(''),
   style: z.string().max(1000).default(''),
-  theme: z.string().nullable().default(null),
-  fonts: z.array(z.string()).default([]),
-  easings: z.array(z.string()).default([]),
-  blocks: z.array(SpecBlock).default([]),
+  theme: z.string().regex(ITEM_ID).nullable().default(null),
+  fonts: z.array(z.string().regex(ITEM_ID)).max(20).default([]),
+  easings: z.array(z.string().regex(ITEM_ID)).max(20).default([]),
+  sounds: z.array(z.string().regex(ITEM_ID)).max(40).default([]),
+  blocks: z.array(SpecBlock).max(200).default([]),
   preset: z.boolean().default(false),
   createdAt: z.string().optional(),
   updatedAt: z.string().optional(),
 });
 export type Spec = z.infer<typeof Spec>;
+/** Entrée envoyée par le builder ou le MCP : aucun champ inconnu accepté. */
+export const SpecInput = Spec.omit({ createdAt: true, updatedAt: true }).extend({ blocks: z.array(SpecBlock.strict()).max(200).default([]) }).strict();
 
-/** Résumé stocké dans registry/index.json (sans contenu de fichier). */
-export type IndexEntry = Omit<Meta, 'files' | 'tokens' | 'easings'> & { dir: string; fileCount: number };
+/** Valeurs de licence communes à une source, stockées une fois dans l'index. */
+export interface SourceInfo {
+  name: string;
+  license: string;
+  licenseStatus: 'open' | 'restricted';
+  licenseNotes?: string;
+  attribution?: string;
+}
+
+/**
+ * Résumé stocké dans registry/index.json (sans contenu de fichier).
+ * `licenseNotes` / `attribution` ne sont présents que s'ils diffèrent de ceux de la source (voir hydrate()).
+ * `group` rapproche les équivalents entre sources ; `isNew` marque ce qui est arrivé après le premier import d'une source.
+ */
+export type IndexEntry = Omit<Meta, 'files' | 'tokens' | 'easings'> & { dir: string; fileCount: number; group?: string; isNew?: boolean };
+
+export interface RegistryIndex {
+  generatedAt: string;
+  count: number;
+  sources: Record<string, SourceInfo>;
+  items: IndexEntry[];
+}

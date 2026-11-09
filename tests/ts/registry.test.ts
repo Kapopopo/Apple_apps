@@ -12,7 +12,7 @@ const { checkLicense, detectLicense } = await import('../../shared/license.js');
 const { walk } = await import('../../importers/lib/graph.js');
 const { extractTheme } = await import('../../importers/lib/css-tokens.js');
 const { safeJoin } = await import('../../shared/paths.js');
-const { classify, classifyCatalog, matches } = await import('../../shared/taxonomy.js');
+const { classify, matches } = await import('../../shared/taxonomy.js');
 
 const MIT = `MIT License\n\nCopyright (c) 2026 Exemple\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.`;
 
@@ -87,11 +87,11 @@ test('thème : custom properties clair/sombre, typographie et rayons séparés',
   assert.ok(!css.includes('color: red'), 'les styles du site sont exclus');
 });
 
-test('taxonomie : catégories du catalogue inchangées, extensions du registre', () => {
-  assert.equal(classifyCatalog({ name: 'Images Slider' }).type_label, 'Carrousels');
-  assert.equal(classifyCatalog({ name: 'Range Slider' }).type_label, 'Curseurs');
-  assert.equal(classifyCatalog({ name: 'Chart Card' }).type_label, 'Graphiques');
-  assert.notEqual(classifyCatalog({ name: 'Typography' }).type_label, 'Graphiques');
+test('taxonomie : catégories françaises des items importés', () => {
+  assert.equal(classify('Images Slider'), 'Carrousels');
+  assert.equal(classify('Range Slider'), 'Curseurs');
+  assert.equal(classify('Chart Card'), 'Graphiques');
+  assert.notEqual(classify('Typography'), 'Graphiques');
   assert.equal(classify('otp-input'), 'Formulaires');
   assert.equal(classify('voice-note'), 'Médias');
   assert.equal(classify('mystery', 'A vertical navigation list'), 'Navigation');

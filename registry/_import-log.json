@@ -3254,6 +3254,43 @@
       "warnings": [],
       "commit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
       "license": "MIT"
+    },
+    {
+      "importer": "easings",
+      "source": "atlas",
+      "at": "2026-11-09T15:17:20.933Z",
+      "added": [],
+      "updated": [
+        "atlas/easings-standard"
+      ],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "local",
+      "source": "magic-ui",
+      "at": "2026-11-09T15:24:34.085Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 38,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "license": "MIT"
+    },
+    {
+      "importer": "local",
+      "source": "motion-primitives",
+      "at": "2026-11-09T15:24:34.092Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 6,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "license": "MIT"
     }
   ]
 }
