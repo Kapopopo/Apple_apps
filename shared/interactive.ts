@@ -7,7 +7,7 @@ import path from 'node:path';
 import { REGISTRY, WEB } from './paths.js';
 import type { IndexEntry } from './schema.js';
 
-export interface AuditResult { status: 'ok' | 'empty' | 'error'; message?: string; hash?: string; thumb?: boolean; at?: string }
+export interface AuditResult { status: 'ok' | 'empty' | 'error'; message?: string; hash?: string; chunk?: string; thumb?: boolean; brokenImages?: number; at?: string }
 export type PreviewState = 'interactive' | 'pending' | 'broken' | 'none';
 
 const AUDIT_FILE = path.join(REGISTRY, '_previews.json');
@@ -36,9 +36,10 @@ export function previewState(entry: Pick<IndexEntry, 'id' | 'preview' | 'framewo
   return result.status === 'ok' ? 'interactive' : 'broken';
 }
 
-/** URL de la vignette capturée par l'audit (versionnée par le hash pour le cache navigateur). */
+/** URL de la vignette capturée par l'audit (versionnée par la date de capture pour le cache navigateur). */
 export function thumbUrl(entry: Pick<IndexEntry, 'id' | 'contentHash'>, audit: Record<string, AuditResult> | null): string | undefined {
   const result = audit?.[entry.id];
   if (!result?.thumb || (result.hash && result.hash !== entry.contentHash)) return undefined;
-  return `/thumbs/${entry.id}.jpg?v=${result.hash ?? ''}`;
+  const at = result.at ? Date.parse(result.at) : NaN;
+  return `/thumbs/${entry.id}.jpg?v=${Number.isNaN(at) ? (result.hash ?? '0') : at.toString(36)}`;
 }

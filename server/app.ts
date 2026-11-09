@@ -5,8 +5,9 @@
 import http, { type IncomingMessage, type ServerResponse } from 'node:http';
 import path from 'node:path';
 import fs from 'node:fs';
+import { pathToFileURL } from 'node:url';
 import { ITEM_ID_PATTERN, shadcnItem, shadcnIndex } from './shadcn.js';
-import { REGISTRY, THUMBS, WEB } from '../shared/paths.js';
+import { REGISTRY, ROOT, THUMBS, WEB } from '../shared/paths.js';
 import { readMeta, readFiles } from '../shared/registry.js';
 import { deleteSpec, getSpec, listSpecs, renameSpec, saveSpec, specHistory, specVersion } from '../shared/specs.js';
 import { createTheme, deleteTheme, skinCss } from '../shared/themes.js';
@@ -15,7 +16,7 @@ import { HttpError, readJson, send, sendError, sendFile, sendJson, MIME } from '
 import { APP_POLICY, DEMO_POLICY, hostAllowed, previewPolicy, sameOrigin } from './security.js';
 
 const PAGES: Record<string, string> = { '/': 'index.html', '/builder': 'builder.html' };
-const ASSETS = new Set(['app.js', 'builder.js', 'prompt.js', 'theme.css', 'style.css', 'builder.css', 'icons.svg', 'favicon.svg']);
+const ASSETS = new Set(['app.js', 'builder.js', 'theme.css', 'style.css', 'builder.css', 'icons.svg', 'favicon.svg']);
 const appHeaders = { 'Content-Security-Policy': APP_POLICY };
 
 type Handler = (req: IncomingMessage, res: ServerResponse, url: URL) => Promise<void> | void;
@@ -34,6 +35,12 @@ async function api(req: IncomingMessage, res: ServerResponse, url: URL): Promise
   const p = url.pathname, method = req.method ?? 'GET';
   const preset = url.searchParams.get('preset') === '1';
   if (p === '/api/catalog' && method === 'GET') { sendJson(req, res, cataloguePayload()); return true; }
+  if (p === '/api/info' && method === 'GET') {
+    // Commande d'enregistrement du MCP pour un autre projet (chemins absolus de ce dépôt).
+    const loader = pathToFileURL(path.join(ROOT, 'node_modules', 'tsx', 'dist', 'loader.mjs')).href;
+    sendJson(req, res, { root: ROOT, mcp: { command: 'node', args: ['--import', loader, path.join(ROOT, 'mcp', 'index.ts')] } });
+    return true;
+  }
   if (p === '/api/registry' && method === 'GET') { sendJson(req, res, registryPayload()); return true; }
   if (p === '/api/registry/item' && method === 'GET') {
     const id = url.searchParams.get('id') ?? '';

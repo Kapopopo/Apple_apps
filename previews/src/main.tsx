@@ -1,5 +1,9 @@
 /**
  * Rendu d'un item du registre : /registry-previews/?id=<source/slug>&theme=light|dark
+ *   &card=1          vignette de galerie (réduite, sans défilement)
+ *   &page=1          aperçu composé du builder : hauteur naturelle transmise au parent (atlas-height)
+ *   &skin=<thème>    tokens d'un thème du registre appliqués par-dessus ceux de la source (/api/skin.css)
+ * Message accepté du parent : { type: 'atlas-skin', light, dark, radius } (éditeur de thème, en direct).
  * Chargé dans un iframe sandboxé (allow-scripts) : pas d'accès au stockage ni à la page parente.
  */
 import { Component, StrictMode, isValidElement, type ComponentType, type ErrorInfo, type ReactNode } from 'react';
@@ -10,11 +14,61 @@ import './base.css';
 const params = new URLSearchParams(location.search);
 const id = params.get('id') ?? '';
 const dark = params.get('theme') === 'dark';
+const pageMode = params.get('page') === '1';
+const skin = params.get('skin') ?? '';
 document.documentElement.classList.toggle('dark', dark);
 document.documentElement.dataset.theme = dark ? 'dark' : 'light';
 document.documentElement.classList.toggle('card', params.get('card') === '1');
+document.documentElement.classList.toggle('page', pageMode);
 
 const notify = (status: 'ready' | 'error', message?: string) => parent.postMessage({ type: 'atlas-preview', id, status, message }, '*');
+
+/* ---------- Skin : custom properties uniquement, valeurs simples (même règle que le serveur) ---------- */
+
+const VAR_NAME = /^--[a-z0-9-]{1,40}$/;
+const SAFE_VALUE = /^[#(),.%\w\s\-/]{1,100}$/;
+type Vars = Record<string, unknown>;
+const declarations = (vars: Vars) => Object.entries(vars ?? {}).filter(([k, v]) => VAR_NAME.test(k) && typeof v === 'string' && SAFE_VALUE.test(v) && !v.includes('/*')).map(([k, v]) => `  ${k}: ${v};`).join('\n');
+
+function applySkin(light: Vars, darkVars: Vars, radius?: unknown) {
+  const rootVars = { ...light, ...(typeof radius === 'string' ? { '--radius': radius } : {}) };
+  let style = document.getElementById('atlas-skin') as HTMLStyleElement | null;
+  if (!style) { style = document.createElement('style'); style.id = 'atlas-skin'; }
+  style.textContent = `:root {\n${declarations(rootVars)}\n}\n.dark, [data-theme="dark"] {\n${declarations(darkVars)}\n}\n`;
+  document.head.append(style); // toujours en dernier : l'emporte sur les feuilles de la source
+}
+
+window.addEventListener('message', (e) => {
+  if (e.source !== parent || e.data?.type !== 'atlas-skin') return;
+  applySkin(e.data.light, e.data.dark, e.data.radius);
+});
+
+function loadSkinSheet(): Promise<void> {
+  if (!/^[a-z0-9-]+\/[a-z0-9-]+$/.test(skin)) return Promise.resolve();
+  return new Promise((resolve) => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = `/api/skin.css?id=${encodeURIComponent(skin)}`;
+    link.onload = link.onerror = () => resolve();
+    document.head.append(link);
+  });
+}
+
+/* ---------- Mode page : hauteur transmise au builder ---------- */
+
+if (pageMode) {
+  let last = 0;
+  const report = () => {
+    const height = Math.ceil(document.documentElement.scrollHeight);
+    if (Math.abs(height - last) < 2) return;
+    last = height;
+    parent.postMessage({ type: 'atlas-height', id, height }, '*');
+  };
+  new ResizeObserver(report).observe(document.documentElement);
+  window.addEventListener('load', report);
+}
+
+/* ---------- Rendu ---------- */
 
 function Failure({ message }: { message: string }) {
   return <div className="atlas-failure"><strong>Aperçu indisponible</strong><p>{message}</p><small>Le code reste disponible dans le registre et via get_component.</small></div>;
@@ -45,6 +99,7 @@ async function boot() {
   try {
     await entry.css();
     for (const style of entry.styles) await style();
+    await loadSkinSheet();
     const mod = await entry.load();
     const Preview = pick(mod, entry.exportName);
     if (!Preview) throw new Error('Aucun composant exporté à afficher sans props.');

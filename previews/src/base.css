@@ -11,3 +11,6 @@ html.card .atlas-stage { zoom: 0.78; min-height: 128%; }
 .atlas-failure strong { color: #2c2b28; font-size: 14px; }
 .atlas-failure p { margin: 0; max-width: 34ch; font-family: ui-monospace, monospace; font-size: 11px; word-break: break-word; }
 html.dark .atlas-failure strong { color: #ecebe7; }
+/* Mode page (aperçu composé du builder) : hauteur naturelle, mesurée et transmise à la page parente. */
+html.page, html.page body, html.page #root { height: auto; min-height: 0; }
+html.page .atlas-stage { min-height: 160px; padding: 32px 24px; }

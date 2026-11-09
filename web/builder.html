@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>Atlas · Builder</title><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/builder.css"><script src="/builder.js" defer></script></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>Atlas · Builder</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/builder.css"><script type="module" src="/builder.js"></script></head>
 <body>
 <a class="skip" href="#grid">Aller à la galerie</a>
 <header class="appbar">
-  <a href="/builder" class="brand"><span class="brand-mark">a<span>•</span></span><span>atlas</span></a>
+  <a href="/" class="brand" aria-label="Atlas, catalogue"><span class="brand-mark">a<span>•</span></span><span>atlas</span></a>
   <nav class="pages" aria-label="Pages">
-    <a href="/builder" aria-current="page">Builder <small>composer une spec</small></a>
     <a href="/">Catalogue <small>essayer les composants</small></a>
+    <a href="/builder" aria-current="page">Builder <small>composer la spec</small></a>
   </nav>
 </header>
 <div class="layout">
   <section class="gallery" aria-label="Registre">
     <div class="filters">
-      <label class="search"><svg class="icon" aria-hidden="true"><use href="/icons.svg#search"/></svg><input id="q" type="search" placeholder="Rechercher dans le registre : bouton, graphique, sidebar, pricing…" aria-label="Rechercher dans le registre"></label>
+      <label class="search"><svg class="icon" aria-hidden="true"><use href="/icons.svg#search"/></svg><input id="q" type="search" placeholder="Rechercher dans le registre : bouton, graphique, sidebar, tarifs…" aria-label="Rechercher dans le registre"></label>
       <div class="types" id="types" role="group" aria-label="Type d’item"></div>
       <div class="selects">
         <select id="f-category" aria-label="Catégorie"><option value="">Toutes les catégories</option></select>
@@ -26,7 +26,10 @@
     <div class="gallery-head">
       <p class="help" id="count" aria-live="polite">Chargement du registre…</p>
       <div class="gallery-tools">
-        <label class="check"><input type="checkbox" id="f-light"> Aperçus sur fond clair</label>
+        <label class="check"><input type="checkbox" id="f-light"> Fond clair</label>
+        <label class="check" title="Recolore les aperçus avec les tokens du thème choisi dans la spec"><input type="checkbox" id="f-skin"> Thème de la spec</label>
+        <button class="btn ghost small" id="autoplay" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="/icons.svg#play"/></svg><span>Animations auto</span></button>
+        <label class="sort-label">Trier <select id="f-sort"><option value="relevance">Pertinence</option><option value="name">Nom A → Z</option><option value="recent">Plus récents</option></select></label>
       </div>
     </div>
     <div class="grid" id="grid"></div>
@@ -36,43 +39,54 @@
   <aside class="spec" aria-labelledby="spec-heading">
     <div class="spec-scroll">
       <div class="spec-head">
-        <h2 id="spec-heading">Nouvelle spec</h2>
+        <div class="spec-title"><h2 id="spec-heading">Nouvelle spec</h2><small id="spec-state">Brouillon non enregistré</small></div>
         <div class="spec-head-actions">
           <label class="visually-hidden" for="load-spec">Ouvrir une spec ou un preset</label>
           <select id="load-spec"><option value="">Ouvrir…</option></select>
-          <button class="btn ghost small" id="new-spec" title="Vider la spec en cours">Nouvelle</button>
+          <details class="menu" id="spec-menu">
+            <summary class="btn icon-only ghost" aria-label="Actions sur la spec"><svg class="icon" aria-hidden="true"><use href="/icons.svg#more"/></svg></summary>
+            <div class="menu-list" role="menu">
+              <button role="menuitem" id="new-spec"><svg class="icon" aria-hidden="true"><use href="/icons.svg#plus"/></svg>Nouvelle spec</button>
+              <button role="menuitem" id="duplicate-spec"><svg class="icon" aria-hidden="true"><use href="/icons.svg#duplicate"/></svg>Dupliquer</button>
+              <button role="menuitem" id="rename-spec" data-saved-only><svg class="icon" aria-hidden="true"><use href="/icons.svg#edit"/></svg>Renommer…</button>
+              <button role="menuitem" id="history-spec" data-saved-only><svg class="icon" aria-hidden="true"><use href="/icons.svg#history"/></svg>Historique…</button>
+              <button role="menuitem" id="delete-spec" data-saved-only class="danger"><svg class="icon" aria-hidden="true"><use href="/icons.svg#trash"/></svg>Supprimer…</button>
+            </div>
+          </details>
         </div>
       </div>
 
       <ol class="guide" id="guide">
         <li>Nommez la spec et collez le brief du client.</li>
-        <li>Choisissez un thème et des blocs dans la galerie, puis ordonnez-les.</li>
+        <li>Choisissez un thème et des blocs (ici ou dans le catalogue), puis ordonnez-les par page.</li>
         <li>Enregistrez, puis lancez la commande dans Claude Code.</li>
       </ol>
 
       <section class="spec-section" aria-labelledby="h-project">
         <h3 id="h-project">Projet</h3>
         <div class="row">
-          <label class="field">Nom du fichier<input id="s-name" placeholder="dashboard-padel" autocomplete="off" spellcheck="false" aria-describedby="name-help"></label>
-          <label class="field">Titre<input id="s-title" placeholder="Dashboard padel"></label>
+          <label class="field">Nom du fichier<input id="s-name" placeholder="site-boulangerie" autocomplete="off" spellcheck="false" aria-describedby="name-help"></label>
+          <label class="field">Titre<input id="s-title" placeholder="Site de la boulangerie Dupont"></label>
         </div>
         <p id="name-help" class="help">Enregistré dans specs/<span id="name-preview">nom</span>.json</p>
         <label class="field">Brief<textarea id="s-brief" rows="2" placeholder="Pour qui, quelles pages, quel objectif…"></textarea></label>
         <div class="row">
           <label class="field">Stack<input id="s-stack" placeholder="Next.js + Tailwind"></label>
-          <label class="field">Direction visuelle<input id="s-style" placeholder="Sombre, accents verts"></label>
+          <label class="field">Direction visuelle<input id="s-style" placeholder="Chaleureux, crème et brun"></label>
         </div>
       </section>
 
       <section class="spec-section" aria-labelledby="h-style">
         <h3 id="h-style">Style</h3>
-        <div class="slot-row"><span class="slot-label">Thème</span><div id="s-theme" class="slot"></div></div>
+        <div class="slot-row"><span class="slot-label">Thème</span><div class="slot-with-action"><div id="s-theme" class="slot"></div><button class="btn ghost small" id="create-theme" title="Créer un thème personnel (couleurs, rayon)"><svg class="icon" aria-hidden="true"><use href="/icons.svg#palette"/></svg>Créer</button></div></div>
         <div class="slot-row"><span class="slot-label">Polices</span><div id="s-fonts" class="slot chips"></div></div>
-        <div class="slot-row"><span class="slot-label">Easings</span><div id="s-easings" class="slot chips"></div></div>
+        <div class="slot-row"><span class="slot-label">Mouvement</span><div id="s-easings" class="slot chips"></div></div>
+        <div class="slot-row" id="sounds-row" hidden><span class="slot-label">Sons</span><div id="s-sounds" class="slot chips"></div></div>
       </section>
 
       <section class="spec-section" aria-labelledby="h-blocks">
-        <div class="section-title"><h3 id="h-blocks">Blocs <span class="count" id="s-count">0</span></h3><button class="btn ghost small" id="import-atlas" hidden></button></div>
+        <div class="section-title"><h3 id="h-blocks">Blocs <span class="count" id="s-count">0</span></h3><button class="btn ghost small" id="preview-page" disabled><svg class="icon" aria-hidden="true"><use href="/icons.svg#eye"/></svg>Aperçu de la page</button></div>
+        <datalist id="pages-list"></datalist>
         <ol id="s-blocks" class="blocks"></ol>
         <div id="s-attribution"></div>
       </section>
@@ -90,7 +104,7 @@
     </div>
   </aside>
 </div>
-<dialog id="detail" aria-labelledby="detail-title"><button class="btn icon-only ghost close" id="close-detail" aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="/icons.svg#x"/></svg></button><div id="detail-body"></div></dialog>
+<dialog id="detail" aria-labelledby="detail-title"><button class="btn icon-only ghost close" aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="/icons.svg#x"/></svg></button><div id="detail-body" class="dialog-body"></div></dialog>
 <div id="toast" role="status"></div>
 </body>
 </html>

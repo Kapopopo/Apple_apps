@@ -1,4 +1,0 @@
-{
-  "$comment": "Scripts navigateur classiques (prompt.js est aussi chargé par tests/test_prompt.cjs) : pas de modules ES ici.",
-  "type": "commonjs"
-}

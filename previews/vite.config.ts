@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+// Alias par source : même définition que le bundle et le MCP (importers/sources.json).
+import { loadAliases } from '../shared/resolve.ts';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const REGISTRY = path.resolve(here, '../registry');
@@ -11,17 +13,6 @@ const SHIMS = path.resolve(here, 'shims');
 const ANCHOR = path.resolve(here, 'src/main.tsx');
 const EXTENSIONS = ['', '.tsx', '.ts', '.jsx', '.js', '.css', '/index.tsx', '/index.ts', '/index.js'];
 const posix = (p: string) => p.split(path.sep).join('/');
-
-/** Alias d'import par source, identiques à ceux des importers. */
-function loadAliases(): Record<string, Record<string, string>> {
-  const cfg = JSON.parse(fs.readFileSync(path.resolve(here, '../importers/sources.json'), 'utf8'));
-  const map: Record<string, Record<string, string>> = { 'magic-ui': { '@/': 'demos/src/' }, 'motion-primitives': { '@/': 'demos/src/' } };
-  for (const s of cfg.github) {
-    if (s.aliases) map[s.id] = s.aliases;
-    for (const v of s.variants ?? []) if (v.aliases) map[v.id] = v.aliases;
-  }
-  return map;
-}
 
 /** Fichiers de chaque source : chemin d'origine → chemin absolu (un import `@/x` peut viser un autre item). */
 function loadFiles(): Map<string, Map<string, string>> {
@@ -109,6 +100,8 @@ export default defineConfig({
   build: {
     outDir: path.resolve(here, '../web/registry-previews'),
     emptyOutDir: true,
+    // Manifeste : chunk compilé de chaque item, pour l'audit incrémental.
+    manifest: true,
     chunkSizeWarningLimit: 4000,
     rollupOptions: {
       shimMissingExports: true,

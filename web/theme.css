@@ -99,6 +99,44 @@ dialog[open] { animation: rise 0.22s var(--ease); }
 #toast { position: fixed; bottom: 22px; left: 50%; z-index: 60; max-width: 90vw; transform: translateX(-50%) translateY(16px); background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-weight: 550; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.25s var(--ease); box-shadow: var(--shadow); }
 #toast.visible { opacity: 1; transform: translateX(-50%); }
 pre.code { margin: 0; padding: 14px; background: #090b0a; color: #dfe7e2; font-size: 12px; line-height: 1.55; overflow: auto; max-height: 440px; border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
+/* Aperçus : vignette de l'audit, indication, iframe montée à la demande (lib/common.js) */
+.visual .thumb { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.visual > iframe, .detail-zone > iframe { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; border: 0; display: block; background: transparent; }
+.visual.is-live .thumb, .visual.is-live .visual-hint { visibility: hidden; }
+.visual-hint { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 6px; color: var(--faint); font-size: 12px; pointer-events: none; }
+.detail-zone { position: relative; width: 100%; height: 100%; }
+.new-tag { color: var(--accent); font-weight: 600; }
+.command-line { display: flex; gap: 6px; align-items: center; min-width: 0; margin-top: 6px; }
+.command-line code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 6px 8px; scrollbar-width: thin; }
+
+/* Équivalents d'un composant dans d'autres bibliothèques */
+.equivalents { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.equivalents h3 { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; font-size: 14px; }
+.eq-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+.eq { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 12px; background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-sm); cursor: pointer; text-align: left; transition: border-color 0.15s; }
+.eq:hover { border-color: var(--accent-line); }
+.eq strong { font-size: 13px; }
+.eq small { color: var(--faint); font-size: 12px; }
+
+/* Menu déroulant, formulaires et listes dans les fenêtres */
+.menu { position: relative; }
+.menu > summary { list-style: none; }
+.menu > summary::-webkit-details-marker { display: none; }
+.menu-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; min-width: 200px; display: flex; flex-direction: column; padding: 6px; background: var(--raised); border: 1px solid var(--line-strong); border-radius: var(--radius-sm); box-shadow: var(--shadow); }
+.menu-list button { display: flex; align-items: center; gap: 9px; padding: 8px 10px; border: 0; background: none; border-radius: 6px; text-align: left; cursor: pointer; color: var(--ink); font-size: 13px; }
+.menu-list button:hover:not(:disabled) { background: var(--surface-2); }
+.menu-list button:disabled { opacity: 0.4; cursor: default; }
+.menu-list .danger { color: var(--danger); }
+dialog[data-mode="form"] { width: min(560px, 96vw); }
+.dialog-body h2 { display: flex; align-items: center; gap: 10px; }
+.dialog-body h2 .icon { width: 20px; height: 20px; color: var(--accent); }
+.form-dialog { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+.form-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+.history { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.history li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 12px; background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.history span { display: flex; flex-direction: column; min-width: 0; }
+.history small { color: var(--faint); font-size: 12px; }
+input:user-invalid { border-color: var(--danger); }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 10px; border: 2px solid var(--bg); }
 ::-webkit-scrollbar-track { background: transparent; }
