@@ -1,0 +1,45 @@
+{
+  "id": "panelui/compare",
+  "name": "Compare",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "animé",
+    "drag",
+    "expo"
+  ],
+  "description": "Two versions of one picture, with a seam you drag across it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/haptics",
+    "panelui/text",
+    "panelui/use-direction"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/compare.json",
+  "sourcePath": "apps/docs/public/r/compare.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/compare.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "146911eb9330bc9b",
+  "importedAt": "2026-11-05T00:16:55.896Z"
+}

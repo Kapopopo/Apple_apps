@@ -1,0 +1,47 @@
+{
+  "id": "origin-ui/comp-578",
+  "name": "Navbar, navigation 578",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "navbar, navigation",
+    "web"
+  ],
+  "description": "Exemple Origin UI : navbar, navigation.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/comp-588",
+    "origin-ui/navigation-menu",
+    "origin-ui/popover",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-578.json",
+  "sourcePath": "apps/origin/public/r/comp-578.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-578.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/logo.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-578.tsx"
+  },
+  "contentHash": "3b25ab33e73d4d34",
+  "importedAt": "2026-11-05T17:59:42.816Z"
+}

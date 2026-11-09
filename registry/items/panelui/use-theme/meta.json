@@ -1,0 +1,35 @@
+{
+  "id": "panelui/use-theme",
+  "name": "Use Theme",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Read and change the active theme.",
+  "framework": "react-native",
+  "dependencies": [
+    "uniwind"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/use-theme.json",
+  "sourcePath": "apps/docs/public/r/use-theme.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "hooks/use-theme.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "1ea0f8e586f39853",
+  "importedAt": "2026-11-05T00:16:56.370Z"
+}

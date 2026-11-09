@@ -1,0 +1,58 @@
+{
+  "id": "easyui/funnel-chart",
+  "name": "Funnel Chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "conversion",
+    "data visualization",
+    "dataviz",
+    "feedback",
+    "funnel chart",
+    "interactive",
+    "svg"
+  ],
+  "description": "A conversion funnel with per-stage widths, curved drop-off bridges, and a loss chip between every stage. An optional summary line reports overall conversion and the single biggest drop-off, all in hand-written SVG.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/FunnelChart.tsx",
+  "sourcePath": "src/components/ui/FunnelChart.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/FunnelChart.tsx",
+      "role": "source",
+      "target": "components/ui/funnel-chart.tsx"
+    },
+    {
+      "path": "src/lib/chart-primitives.tsx",
+      "role": "source",
+      "target": "lib/chart-primitives.tsx"
+    },
+    {
+      "path": "src/lib/dashboard-chart-utils.ts",
+      "role": "source",
+      "target": "lib/dashboard-chart-utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/FunnelChart.tsx"
+  },
+  "contentHash": "e06d478128e734f1",
+  "importedAt": "2026-11-05T00:16:52.360Z"
+}

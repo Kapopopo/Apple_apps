@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/glitch-text",
+  "name": "Glitch Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/glitch-text.json",
+  "sourcePath": "public/r/glitch-text.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/glitch-text.tsx",
+      "role": "source",
+      "target": "components/kokonutui/glitch-text.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/glitch-text.tsx"
+  },
+  "contentHash": "eee029868a50793f",
+  "importedAt": "2026-11-05T17:59:35.497Z"
+}

@@ -1,0 +1,6 @@
+/* Tanker — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap');
+
+:root {
+  --font-tanker: 'Tanker', sans-serif;
+}

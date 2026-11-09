@@ -1,0 +1,54 @@
+{
+  "id": "magic-ui/animated-beam",
+  "name": "Animated Beam",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/animated-beam.json",
+  "sourcePath": "apps/www/public/r/animated-beam.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/animated-beam.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/animated-beam-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-beam-bidirectional.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-beam-multiple-inputs.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-beam-multiple-outputs.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/animated-beam-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "da7db8d5fa3eb59e",
+  "importedAt": "2026-11-05T17:59:28.019Z"
+}

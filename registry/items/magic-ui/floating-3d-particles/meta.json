@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/floating-3d-particles",
+  "name": "Floating 3D Particles",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "3d",
+    "web"
+  ],
+  "description": "A canvas-based pseudo-3D particle field with perspective projection, continuous rotation and buoyant drift.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/floating-3d-particles.json",
+  "sourcePath": "apps/www/public/r/floating-3d-particles.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/floating-3d-particles.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/floating-3d-particles-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/floating-3d-particles-demo-2.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/floating-3d-particles-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "58942975120cc6fd",
+  "importedAt": "2026-11-05T17:59:28.122Z"
+}

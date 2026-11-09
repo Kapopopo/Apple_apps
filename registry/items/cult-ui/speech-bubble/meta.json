@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/speech-bubble",
+  "name": "Speech Bubble",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "Speech bubble component",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/speech-bubble.json",
+  "sourcePath": "apps/www/public/r/speech-bubble.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/speech-bubble.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/speech-bubble-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/speech-bubble-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "acfa612d6e0d8361",
+  "importedAt": "2026-11-05T17:59:33.190Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/shiny-button",
+  "name": "Shiny Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "application",
+    "boucle"
+  ],
+  "description": "Attirer l’attention sur une action avec un reflet lumineux.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/shiny-button",
+  "sourcePath": "https://magicui.design/r/shiny-button.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/shiny-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "shiny-button"
+  },
+  "catalogId": "3c091f4ae6be2499",
+  "contentHash": "34a8f4c3031daca9",
+  "importedAt": "2026-11-05T00:16:49.371Z"
+}

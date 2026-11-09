@@ -1,0 +1,41 @@
+{
+  "id": "panelui/use-reveal-progress",
+  "name": "Use Reveal Progress",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "animé",
+    "expo",
+    "scroll"
+  ],
+  "description": "Reports how far an element has travelled through its scroll viewport.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "panelui/refs",
+    "panelui/scroll-progress"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/use-reveal-progress.json",
+  "sourcePath": "apps/docs/public/r/use-reveal-progress.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "hooks/use-reveal-progress.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "347ded9404fe249c",
+  "importedAt": "2026-11-05T00:16:56.363Z"
+}

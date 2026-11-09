@@ -1,0 +1,6 @@
+/* Azeret Mono — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=azeret-mono@1,100,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --font-azeret-mono: 'Azeret Mono', sans-serif;
+}

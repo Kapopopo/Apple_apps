@@ -1,0 +1,58 @@
+{
+  "id": "easyui/payment-status",
+  "name": "Payment Status",
+  "type": "component",
+  "category": "Paiement",
+  "tags": [
+    "animé",
+    "feedback",
+    "payment",
+    "svg motion"
+  ],
+  "description": "A calm, Apple-grade payment confirmation card with animated SVG path checkmark drawing, staged verification lifecycle transitions, receipt inspection, and failure recovery.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/PaymentStatus.tsx",
+  "sourcePath": "src/components/ui/PaymentStatus.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/PaymentStatus.tsx",
+      "role": "source",
+      "target": "components/ui/payment-status.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/PaymentStatus.tsx"
+  },
+  "contentHash": "d982fe69d5e1d227",
+  "importedAt": "2026-11-05T00:16:53.301Z",
+  "updatedAt": "2026-11-05T00:19:19.986Z"
+}

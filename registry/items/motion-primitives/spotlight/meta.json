@@ -1,0 +1,44 @@
+{
+  "id": "motion-primitives/spotlight",
+  "name": "Spotlight",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "portfolio",
+    "survol"
+  ],
+  "description": "Mettre en lumière une carte avec un halo qui suit le pointeur.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/spotlight",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/spotlight.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/spotlight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "spotlight"
+  },
+  "catalogId": "f3be58bded3059c7",
+  "contentHash": "babee1c46a296406",
+  "importedAt": "2026-11-05T00:16:49.236Z"
+}

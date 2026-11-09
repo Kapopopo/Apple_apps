@@ -1,0 +1,39 @@
+{
+  "id": "reui/badge",
+  "name": "Badge",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/badge.json",
+  "sourcePath": "public/r/styles/base-luma/badge.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/badge.tsx",
+      "role": "source",
+      "target": "components/reui/badge.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/badge.tsx"
+  },
+  "contentHash": "86bae1f6f0c78b2f",
+  "importedAt": "2026-11-05T17:59:38.032Z",
+  "updatedAt": "2026-11-05T18:07:49.655Z"
+}

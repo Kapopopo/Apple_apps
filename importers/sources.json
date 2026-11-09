@@ -1,0 +1,149 @@
+{
+  "$comment": "Sources GitHub importées par `npm run import:github`. La licence est relue dans le LICENSE à chaque import : un changement en amont fait tomber l'acceptation et les items sont sautés (voir registry/_import-log.json).",
+  "github": [
+    {
+      "id": "shadcn",
+      "name": "shadcn/ui",
+      "repo": "https://github.com/shadcn-ui/ui",
+      "homepage": "https://ui.shadcn.com",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "shadcn", "dir": "apps/v4/public/r/styles/new-york", "framework": "react", "aliases": { "@/registry/new-york/": "", "@/": "" }, "theme": { "file": "apps/v4/app/globals.css", "name": "shadcn/ui" } }
+      ]
+    },
+    {
+      "id": "magic-ui",
+      "name": "Magic UI",
+      "repo": "https://github.com/magicuidesign/magicui",
+      "homepage": "https://magicui.design",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "magic-ui", "dir": "apps/www/public/r", "framework": "react", "aliases": { "@/": "" }, "skipExisting": true, "fallbackSource": "shadcn", "theme": { "file": "apps/www/styles/globals.css", "name": "Magic UI" } }
+      ]
+    },
+    {
+      "id": "motion-primitives",
+      "name": "Motion Primitives",
+      "repo": "https://github.com/ibelick/motion-primitives",
+      "homepage": "https://motion-primitives.com",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "motion-primitives", "dir": "public/c", "framework": "react", "aliases": { "@/": "" }, "skipExisting": true, "theme": { "file": "app/globals.css", "name": "Motion Primitives" } }
+      ]
+    },
+    {
+      "id": "cult-ui",
+      "name": "Cult UI",
+      "repo": "https://github.com/nolly-studio/cult-ui",
+      "homepage": "https://www.cult-ui.com",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "cult-ui", "dir": "apps/www/public/r", "framework": "react", "aliases": { "@/": "" }, "fallbackSource": "shadcn", "theme": { "file": "apps/www/styles/globals.css", "name": "Cult UI" } }
+      ]
+    },
+    {
+      "id": "kokonut-ui",
+      "name": "Kokonut UI",
+      "repo": "https://github.com/kokonut-labs/kokonutui",
+      "homepage": "https://kokonutui.com",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "kokonut-ui", "dir": "public/r", "framework": "react", "aliases": { "@/": "" }, "fallbackSource": "shadcn", "theme": { "file": "app/globals.css", "name": "Kokonut UI" } }
+      ]
+    },
+    {
+      "id": "reui",
+      "name": "ReUI",
+      "repo": "https://github.com/keenthemes/reui",
+      "homepage": "https://reui.io",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "reui", "dir": "public/r/styles/base-luma", "framework": "react", "aliases": { "@/": "" }, "targetPaths": true, "fallbackSource": "shadcn", "theme": { "file": "styles/globals.css", "name": "ReUI" } }
+      ]
+    },
+    {
+      "id": "origin-ui",
+      "name": "Origin UI",
+      "repo": "https://github.com/cosscom/ui",
+      "homepage": "https://coss.com/origin",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "origin-ui", "dir": "apps/origin/public/r", "framework": "react", "aliases": { "@/": "" }, "index": "apps/origin/registry.json", "nameFromTags": true, "fallbackSource": "shadcn", "theme": { "file": "apps/origin/app/globals.css", "name": "Origin UI" } }
+      ]
+    },
+    {
+      "id": "react-bits",
+      "name": "React Bits",
+      "repo": "https://github.com/DavidHDev/react-bits",
+      "homepage": "https://reactbits.dev",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "react-bits", "dir": "public/r", "framework": "react", "variantSuffixes": ["-TS-TW", "-TS-CSS"] }
+      ],
+      "acceptRestricted": {
+        "license": "LicenseRef-Commons-Clause",
+        "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+        "notes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé)."
+      }
+    },
+    {
+      "id": "rare-ui",
+      "name": "Rare UI",
+      "repo": "https://github.com/swamimalode07/rare-ui",
+      "homepage": "https://rareui.com",
+      "parser": "shadcn-registry",
+      "registry": "registry.json",
+      "aliases": { "@/": "" },
+      "framework": "react",
+      "demos": "app/components/(docs)/*/demo.tsx",
+      "theme": { "file": "app/globals.css", "name": "Rare UI" },
+      "acceptRestricted": {
+        "license": "LicenseRef-MIT-Commons-Clause-Attribution",
+        "attribution": "Rare UI (https://rareui.com) : tout projet qui embarque un composant doit afficher un lien visible vers https://rareui.com (footer, page à propos, crédits ou README) et conserver la notice de copyright dans le code copié.",
+        "notes": "MIT + Commons Clause + Attribution : usage libre dans tes projets, y compris commerciaux ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes (seuls ou en pack). Accepté explicitement le 2026-11-05 pour un usage personnel dans un repo privé."
+      }
+    },
+    {
+      "id": "easyui",
+      "name": "Easy UI",
+      "repo": "https://github.com/Surajmaurya1/easyui",
+      "homepage": "https://easyui.pro",
+      "parser": "shadcn-registry",
+      "registry": "registry.json",
+      "aliases": { "@/": "src/" },
+      "framework": "react",
+      "metadata": "src/components/registry/components-data.ts",
+      "theme": { "file": ["src/styles/tokens.css", "src/styles/index.css"], "name": "Easy UI" }
+    },
+    {
+      "id": "panelui",
+      "name": "PanelUI",
+      "repo": "https://github.com/panel-ui/PanelUI",
+      "homepage": "https://panelui.dev",
+      "parser": "shadcn-built",
+      "variants": [
+        { "id": "panelui", "dir": "apps/docs/public/r", "framework": "react-native", "blockType": "screen", "aliases": { "@/": "" }, "componentList": { "file": "catalogue.json", "key": "componentModules" } },
+        {
+          "id": "panelui-web",
+          "dir": "apps/docs/public/r/web",
+          "framework": "react",
+          "aliases": { "@/": "", "panelui-web/": "components/panelui/" },
+          "demos": "apps/docs/components/web-demos/{name}/{overview,default,variants,basic}.tsx",
+          "theme": { "file": "apps/docs/app/global.css", "name": "PanelUI Web" }
+        }
+      ]
+    },
+    {
+      "id": "bencho",
+      "name": "Bencho",
+      "repo": "https://github.com/cabralorenzo/bencho",
+      "homepage": "https://bencho.dev",
+      "parser": "folder-blocks",
+      "blocks": "blocks",
+      "framework": "react",
+      "exclude": ["assets", "playground", "sounds"],
+      "excludeReadme": "\\b(Pro only|Bencho Pro|Premium)\\b",
+      "theme": { "file": "tokens.css", "name": "Bencho" }
+    }
+  ]
+}

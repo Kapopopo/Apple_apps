@@ -1,0 +1,51 @@
+{
+  "id": "easyui/text-scramble-decoder",
+  "name": "Text Scramble Decoder",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "interactive",
+    "motion",
+    "reduced motion",
+    "typography"
+  ],
+  "description": "A controlled text reveal that resolves scrambled glyphs into readable copy without changing the text semantics.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/TextScrambleDecoder.tsx",
+  "sourcePath": "src/components/ui/TextScrambleDecoder.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/TextScrambleDecoder.tsx",
+      "role": "source",
+      "target": "components/ui/text-scramble-decoder.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/TextScrambleDecoder.tsx"
+  },
+  "contentHash": "7aa4f0242e59185e",
+  "importedAt": "2026-11-05T00:16:54.167Z"
+}

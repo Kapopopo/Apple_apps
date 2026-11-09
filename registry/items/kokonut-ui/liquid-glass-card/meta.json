@@ -1,0 +1,42 @@
+{
+  "id": "kokonut-ui/liquid-glass-card",
+  "name": "Liquid Glass Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils",
+    "shadcn/button",
+    "shadcn/card"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/liquid-glass-card.json",
+  "sourcePath": "public/r/liquid-glass-card.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/liquid-glass-card.tsx",
+      "role": "source",
+      "target": "components/kokonutui/liquid-glass-card.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/liquid-glass-card.tsx"
+  },
+  "contentHash": "ba738ac283e86db7",
+  "importedAt": "2026-11-05T17:59:35.521Z"
+}

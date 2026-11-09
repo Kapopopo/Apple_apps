@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/three-d-carousel",
+  "name": "Three D Carousel",
+  "type": "component",
+  "category": "Carrousels",
+  "tags": [
+    "3d",
+    "animé",
+    "web",
+    "webgl"
+  ],
+  "description": "3D carousel component with perspective effects and smooth item transitions",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/three-d-carousel.json",
+  "sourcePath": "apps/www/public/r/three-d-carousel.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/three-d-carousel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/three-d-carousel-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/three-d-carousel-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "69678b5658ffa229",
+  "importedAt": "2026-11-05T17:59:33.286Z"
+}

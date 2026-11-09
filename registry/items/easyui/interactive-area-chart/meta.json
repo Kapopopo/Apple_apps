@@ -1,0 +1,49 @@
+{
+  "id": "easyui/interactive-area-chart",
+  "name": "Interactive Area Chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "accessible",
+    "animé",
+    "area chart",
+    "clavier",
+    "data visualization",
+    "dataviz",
+    "feedback",
+    "interactive",
+    "svg"
+  ],
+  "description": "A hand-written, dependency-free interactive SVG area chart with interruptible dataset morphing, Catmull-Rom spline resampling, scrubbing tooltip, and keyboard accessibility.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/InteractiveAreaChart.tsx",
+  "sourcePath": "src/components/ui/InteractiveAreaChart.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/InteractiveAreaChart.tsx",
+      "role": "source",
+      "target": "components/ui/interactive-area-chart.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/InteractiveAreaChart.tsx"
+  },
+  "contentHash": "f522b04e6bc0dfcd",
+  "importedAt": "2026-11-05T00:16:52.510Z"
+}

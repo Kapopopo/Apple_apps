@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/multiselect",
+  "name": "Multiselect",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "cmdk",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/command",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/multiselect.json",
+  "sourcePath": "apps/origin/public/r/multiselect.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/multiselect.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/multiselect.tsx"
+  },
+  "contentHash": "226ac096e463f3b6",
+  "importedAt": "2026-11-05T17:59:43.163Z"
+}

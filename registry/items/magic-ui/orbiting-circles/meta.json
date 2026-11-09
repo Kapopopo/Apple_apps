@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/orbiting-circles",
+  "name": "Orbiting Circles",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Illustrer un ensemble d’intégrations avec des orbites animées.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/orbiting-circles",
+  "sourcePath": "https://magicui.design/r/orbiting-circles.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/orbiting-circles.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "orbiting-circles"
+  },
+  "catalogId": "d70b7cce78b3405c",
+  "contentHash": "cc6a92777025a5eb",
+  "importedAt": "2026-11-05T00:16:49.284Z"
+}

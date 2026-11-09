@@ -1,0 +1,45 @@
+{
+  "id": "shadcn/calendar-27",
+  "name": "Calendar 27",
+  "type": "section",
+  "category": "Calendriers",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "Chart filter",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "react-day-picker",
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/calendar",
+    "shadcn/card",
+    "shadcn/chart",
+    "shadcn/popover"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/calendar-27.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/calendar-27.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/calendar-27.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/calendar-27.tsx"
+  },
+  "contentHash": "9586430d6c5c4c7c",
+  "importedAt": "2026-11-05T17:59:22.699Z"
+}

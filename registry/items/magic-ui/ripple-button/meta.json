@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/ripple-button",
+  "name": "Ripple Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "application",
+    "interaction"
+  ],
+  "description": "Rendre une action visible avec un retour animé.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/ripple-button",
+  "sourcePath": "https://magicui.design/r/ripple-button.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/ripple-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "ripple-button"
+  },
+  "catalogId": "2f2ed643a4fc2c99",
+  "contentHash": "ed0fcc6a93b6bedb",
+  "importedAt": "2026-11-05T00:16:49.366Z"
+}

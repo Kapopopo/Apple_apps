@@ -1,0 +1,80 @@
+{
+  "id": "fontshare/sharpie",
+  "name": "Sharpie",
+  "type": "font",
+  "category": "Display",
+  "tags": [
+    "calligraphy",
+    "lettering",
+    "magazines",
+    "pen",
+    "posters",
+    "variable"
+  ],
+  "description": "Display · 6 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/sharpie",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Sharpie par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Sharpie",
+    "slug": "sharpie",
+    "category": "Display",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "Extrabold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=sharpie@1,300,400,700,800,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Théo Guillard"
+    ]
+  },
+  "contentHash": "d809448776418d79",
+  "importedAt": "2026-11-05T00:16:59.948Z"
+}

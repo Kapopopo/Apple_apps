@@ -1,0 +1,58 @@
+{
+  "id": "easyui/morphing-dialog",
+  "name": "Morphing Dialog",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "overlays",
+    "shared layout",
+    "spring physics",
+    "zero layout shift"
+  ],
+  "description": "An expandable card trigger that fluidly morphs into a centered dialog without jarring popup animations.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/MorphingDialog.tsx",
+  "sourcePath": "src/components/ui/MorphingDialog.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/MorphingDialog.tsx",
+      "role": "source",
+      "target": "components/ui/morphing-dialog.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/MorphingDialog.tsx"
+  },
+  "contentHash": "5f08480f197c8c96",
+  "importedAt": "2026-11-05T00:16:52.855Z"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/stat",
+  "name": "Stat",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "web"
+  ],
+  "description": "One figure written large, with a label over it, a unit after it and a badge beside it.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/stat.json",
+  "sourcePath": "apps/docs/public/r/web/stat.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/stat.tsx",
+      "role": "source",
+      "target": "@components/panelui/stat.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/stat/sizes.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/stat/sizes.tsx",
+    "demo": "source"
+  },
+  "contentHash": "eeae9e3840edda0e",
+  "importedAt": "2026-11-05T00:16:56.998Z"
+}

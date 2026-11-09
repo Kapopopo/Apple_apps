@@ -1,0 +1,49 @@
+{
+  "id": "panelui-web/not-found",
+  "name": "Not Found",
+  "type": "screen",
+  "category": "Code",
+  "tags": [
+    "web"
+  ],
+  "description": "An error code drawn in pixels that come apart near the pointer, with a title and a way out.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/not-found.json",
+  "sourcePath": "apps/docs/public/r/web/not-found.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/not-found/index.tsx",
+      "role": "source",
+      "target": "@components/panelui/not-found/index.tsx"
+    },
+    {
+      "path": "components/panelui/not-found/glyphs.ts",
+      "role": "source",
+      "target": "@components/panelui/not-found/glyphs.ts"
+    },
+    {
+      "path": "apps/docs/components/web-demos/not-found/dissolve.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/not-found/dissolve.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f375a2a34269d660",
+  "importedAt": "2026-11-05T00:16:56.821Z",
+  "updatedAt": "2026-11-05T00:19:20.531Z"
+}

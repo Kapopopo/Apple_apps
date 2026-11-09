@@ -1,0 +1,46 @@
+{
+  "id": "origin-ui/comp-321",
+  "name": "Dialog 321",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "dialog",
+    "form",
+    "modal",
+    "newsletter",
+    "radix",
+    "subscribe",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, newsletter, subscribe, form, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dialog",
+    "origin-ui/input"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-321.json",
+  "sourcePath": "apps/origin/public/r/comp-321.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-321.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-321.tsx"
+  },
+  "contentHash": "a8ac5c239edee0a9",
+  "importedAt": "2026-11-05T17:59:41.535Z"
+}

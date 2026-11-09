@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/boarding-pass",
+  "name": "Boarding Pass",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/boarding-pass.json",
+  "sourcePath": "public/r/boarding-pass.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/boarding-pass.tsx",
+      "role": "source",
+      "target": "components/kokonutui/boarding-pass.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/boarding-pass.tsx"
+  },
+  "contentHash": "c1a83f038430dbe1",
+  "importedAt": "2026-11-05T17:59:35.438Z"
+}

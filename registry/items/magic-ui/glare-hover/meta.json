@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/glare-hover",
+  "name": "Glare Hover",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "landing page",
+    "survol"
+  ],
+  "description": "Mettre en valeur un contenu avec un effet de lumière ou de profondeur.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/glare-hover",
+  "sourcePath": "https://magicui.design/r/glare-hover.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/glare-hover.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "glare-hover"
+  },
+  "catalogId": "9b7500828582cb4b",
+  "contentHash": "a42b23d0313411b8",
+  "importedAt": "2026-11-05T00:16:49.416Z"
+}

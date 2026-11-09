@@ -1,0 +1,46 @@
+{
+  "id": "easyui/photo-box",
+  "name": "Photo Box",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "animé",
+    "glassmorphism",
+    "interactive",
+    "motion",
+    "polaroid",
+    "stationery"
+  ],
+  "description": "Tactile Japanese stationery-inspired photo box featuring frosted glass translucency, sliding paper box mechanics, fanning polaroid prints, and full-bleed image zoom.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/PhotoBox.tsx",
+  "sourcePath": "src/components/ui/PhotoBox.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/PhotoBox.tsx",
+      "role": "source",
+      "target": "components/ui/photo-box.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/PhotoBox.tsx"
+  },
+  "contentHash": "fefe35f91e31dbbd",
+  "importedAt": "2026-11-05T00:16:53.340Z"
+}

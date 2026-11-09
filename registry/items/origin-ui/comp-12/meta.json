@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-12",
+  "name": "Input 12",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "input",
+    "label",
+    "web"
+  ],
+  "description": "Exemple Origin UI : input, label.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/input",
+    "origin-ui/label"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-12.json",
+  "sourcePath": "apps/origin/public/r/comp-12.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-12.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-12.tsx"
+  },
+  "contentHash": "2a74d056a010d0d0",
+  "importedAt": "2026-11-05T17:59:40.564Z"
+}

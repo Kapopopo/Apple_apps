@@ -1,0 +1,40 @@
+{
+  "id": "shadcn/chart-tooltip-advanced",
+  "name": "Chart Tooltip Advanced",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/card",
+    "shadcn/chart"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/chart-tooltip-advanced.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/chart-tooltip-advanced.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "charts/chart-tooltip-advanced.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "charts/chart-tooltip-advanced.tsx"
+  },
+  "contentHash": "dcd3a87d6ec70e6c",
+  "importedAt": "2026-11-05T17:59:22.936Z"
+}

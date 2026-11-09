@@ -1,0 +1,47 @@
+{
+  "id": "magic-ui/iphone",
+  "name": "iPhone",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A mockup of the iPhone",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/iphone.json",
+  "sourcePath": "apps/www/public/r/iphone.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/iphone.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/iphone-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/iphone-demo-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/iphone-demo-3.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/iphone-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "030e2b50f517ca72",
+  "importedAt": "2026-11-05T17:59:28.174Z"
+}

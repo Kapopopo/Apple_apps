@@ -1,0 +1,46 @@
+{
+  "id": "panelui/response",
+  "name": "Response",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "expo"
+  ],
+  "description": "A model's answer, rendered as markdown while it is still arriving.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/code-block",
+    "panelui/table",
+    "panelui/text",
+    "panelui/typography"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/response.json",
+  "sourcePath": "apps/docs/public/r/response.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/response.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/markdown.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "e4c90de21d3c1f10",
+  "importedAt": "2026-11-05T00:16:56.152Z",
+  "updatedAt": "2026-11-05T00:19:20.389Z"
+}

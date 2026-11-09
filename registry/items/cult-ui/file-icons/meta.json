@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/file-icons",
+  "name": "File Icons",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "web"
+  ],
+  "description": "Icon set for file types and languages",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/file-icons.json",
+  "sourcePath": "apps/www/public/r/file-icons.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/file-icons.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/file-icons-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/file-icons-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "22a1da961161af80",
+  "importedAt": "2026-11-05T17:59:32.775Z"
+}

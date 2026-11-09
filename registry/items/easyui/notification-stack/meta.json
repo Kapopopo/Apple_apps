@@ -1,0 +1,59 @@
+{
+  "id": "easyui/notification-stack",
+  "name": "Notification Stack",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "animé",
+    "drag",
+    "drag physics",
+    "elevation stacking",
+    "feedback",
+    "interactive"
+  ],
+  "description": "A stacked notification card system with physical spring stacking elevation, swipe-to-dismiss drag, and simulation triggers.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/NotificationStack.tsx",
+  "sourcePath": "src/components/ui/NotificationStack.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/NotificationStack.tsx",
+      "role": "source",
+      "target": "components/ui/notification-stack.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/NotificationStack.tsx"
+  },
+  "contentHash": "2bdcd33caa6aff93",
+  "importedAt": "2026-11-05T00:16:53.167Z"
+}

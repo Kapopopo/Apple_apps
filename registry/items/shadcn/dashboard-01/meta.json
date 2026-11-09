@@ -1,0 +1,108 @@
+{
+  "id": "shadcn/dashboard-01",
+  "name": "Dashboard 01",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "A dashboard with sidebar, charts and data table.",
+  "framework": "react",
+  "dependencies": [
+    "@dnd-kit/core",
+    "@dnd-kit/modifiers",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "@tanstack/react-table@^8.0.0",
+    "lucide-react",
+    "recharts",
+    "sonner",
+    "zod"
+  ],
+  "registryDependencies": [
+    "shadcn/avatar",
+    "shadcn/badge",
+    "shadcn/breadcrumb",
+    "shadcn/button",
+    "shadcn/card",
+    "shadcn/chart",
+    "shadcn/checkbox",
+    "shadcn/drawer",
+    "shadcn/dropdown-menu",
+    "shadcn/input",
+    "shadcn/label",
+    "shadcn/select",
+    "shadcn/separator",
+    "shadcn/sheet",
+    "shadcn/sidebar",
+    "shadcn/sonner",
+    "shadcn/table",
+    "shadcn/tabs",
+    "shadcn/toggle-group",
+    "shadcn/use-mobile"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/dashboard-01.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/dashboard-01.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/dashboard-01/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/dashboard-01/data.json",
+      "role": "source",
+      "target": "app/dashboard/data.json"
+    },
+    {
+      "path": "blocks/dashboard-01/components/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/chart-area-interactive.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/data-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/nav-documents.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/nav-main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/nav-secondary.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/nav-user.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/section-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/dashboard-01/components/site-header.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/dashboard-01/page.tsx"
+  },
+  "contentHash": "ded125506d0c8471",
+  "importedAt": "2026-11-05T17:59:23.001Z"
+}

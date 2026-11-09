@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/table",
+  "name": "Table",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "web"
+  ],
+  "description": "Rows of records with the same columns, with numbers aligned and a header that stays pinned.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/table.json",
+  "sourcePath": "apps/docs/public/r/web/table.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/table.tsx",
+      "role": "source",
+      "target": "@components/panelui/table.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/table/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/table/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "55f2fa01abefb9d4",
+  "importedAt": "2026-11-05T00:16:57.028Z"
+}

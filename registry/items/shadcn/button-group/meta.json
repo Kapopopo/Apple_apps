@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/button-group",
+  "name": "Button Group",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/separator",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/button-group.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/button-group.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/button-group.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "ui/button-group.tsx"
+  },
+  "contentHash": "bb4c5e7c6b986f3e",
+  "importedAt": "2026-11-05T17:59:22.608Z"
+}

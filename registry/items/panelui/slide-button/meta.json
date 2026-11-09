@@ -1,0 +1,51 @@
+{
+  "id": "panelui/slide-button",
+  "name": "Slide Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "drag",
+    "expo"
+  ],
+  "description": "Drag across to confirm, with the distance drawn on the button.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/refs",
+    "panelui/text",
+    "panelui/use-direction"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/slide-button.json",
+  "sourcePath": "apps/docs/public/r/slide-button.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/slide-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/slide-button-track.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "52035c431054ffba",
+  "importedAt": "2026-11-05T00:16:56.226Z"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "shadcn/badge",
+  "name": "Badge",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/badge.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/badge.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/badge-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/badge-destructive.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/badge-outline.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/badge-secondary.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/badge-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ca74990a88aa58ae",
+  "importedAt": "2026-11-05T17:59:22.589Z"
+}

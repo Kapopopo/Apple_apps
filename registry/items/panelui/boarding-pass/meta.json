@@ -1,0 +1,51 @@
+{
+  "id": "panelui/boarding-pass",
+  "name": "Boarding Pass",
+  "type": "screen",
+  "category": "Autres composants",
+  "tags": [
+    "expo"
+  ],
+  "description": "A flight on one screen: the ticket, the time to boarding, the way to the gate, and a slide to check in.",
+  "framework": "react-native",
+  "dependencies": [
+    "@hugeicons/core-free-icons",
+    "@hugeicons/react-native",
+    "react-native",
+    "react-native-safe-area-context",
+    "react-native-svg",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-badge",
+    "panelui/button",
+    "panelui/cn",
+    "panelui/countdown",
+    "panelui/flip-card",
+    "panelui/icons",
+    "panelui/qr-code",
+    "panelui/slide-button",
+    "panelui/text",
+    "panelui/timeline"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/boarding-pass.json",
+  "sourcePath": "apps/docs/public/r/boarding-pass.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/blocks/boarding-pass.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "5cea2ddfa0e0d2b7",
+  "importedAt": "2026-11-05T00:16:55.801Z"
+}

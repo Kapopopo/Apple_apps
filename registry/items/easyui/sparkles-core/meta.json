@@ -1,0 +1,54 @@
+{
+  "id": "easyui/sparkles-core",
+  "name": "Sparkles Core",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "background",
+    "canvas",
+    "interactive",
+    "motion",
+    "particles"
+  ],
+  "description": "A high-performance, zero-dependency particle sparkle canvas with multi-shape geometry (circles, radiant diamond stars, cross starlets), organic twinkling, interactive cursor repulsion/attraction, click particle bursts, and fluid SSR safety.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SparklesCore.tsx",
+  "sourcePath": "src/components/ui/SparklesCore.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SparklesCore.tsx",
+      "role": "source",
+      "target": "components/ui/sparkles-core.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SparklesCore.tsx"
+  },
+  "contentHash": "bd7ed894049a700f",
+  "importedAt": "2026-11-05T00:16:53.784Z",
+  "updatedAt": "2026-11-05T00:18:17.590Z"
+}

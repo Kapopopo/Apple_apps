@@ -1,0 +1,44 @@
+{
+  "id": "panelui-web/label",
+  "name": "Label",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "The name of a field, with its required mark, a hint and an action on one line.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/label.json",
+  "sourcePath": "apps/docs/public/r/web/label.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/label.tsx",
+      "role": "source",
+      "target": "@components/panelui/label.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/label/actions.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/label/actions.tsx",
+    "demo": "source"
+  },
+  "contentHash": "2a9b70ce3e5d7203",
+  "importedAt": "2026-11-05T00:16:56.747Z",
+  "updatedAt": "2026-11-05T00:18:17.996Z"
+}

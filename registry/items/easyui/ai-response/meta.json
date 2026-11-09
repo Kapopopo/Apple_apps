@@ -1,0 +1,49 @@
+{
+  "id": "easyui/ai-response",
+  "name": "AI Response",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "accessible",
+    "ai",
+    "animé",
+    "feedback",
+    "ia",
+    "interactive",
+    "markdown",
+    "streaming"
+  ],
+  "description": "A production-ready, accessible AI response component supporting streaming markdown, syntax-styled code blocks, citations, feedback actions, and tool execution status.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/AIResponse.tsx",
+  "sourcePath": "src/components/ui/AIResponse.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/AIResponse.tsx",
+      "role": "source",
+      "target": "components/ui/ai-response.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/AIResponse.tsx"
+  },
+  "contentHash": "d3f1477888a7046a",
+  "importedAt": "2026-11-05T00:16:51.491Z",
+  "updatedAt": "2026-11-05T00:19:19.786Z"
+}

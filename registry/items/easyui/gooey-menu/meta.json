@@ -1,0 +1,53 @@
+{
+  "id": "easyui/gooey-menu",
+  "name": "Gooey Menu",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "framer motion",
+    "metaball",
+    "navigation",
+    "spring physics",
+    "svg filter"
+  ],
+  "description": "A tactile liquid dropdown menu with organic SVG metaball fusion filter and spring-driven extrusion animation.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/GooeyMenu.tsx",
+  "sourcePath": "src/components/ui/GooeyMenu.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/GooeyMenu.tsx",
+      "role": "source",
+      "target": "components/ui/gooey-menu.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/GooeyMenu.tsx"
+  },
+  "contentHash": "3b127fbfc7565b43",
+  "importedAt": "2026-11-05T00:16:52.458Z"
+}

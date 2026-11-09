@@ -1,0 +1,78 @@
+{
+  "id": "fontshare/array",
+  "name": "Array",
+  "type": "font",
+  "category": "Display",
+  "tags": [
+    "branding",
+    "magazines",
+    "posters",
+    "signage"
+  ],
+  "description": "Display · 6 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/array",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Array par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Array",
+    "slug": "array",
+    "category": "Display",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Wide",
+        "weight": 401,
+        "italic": false
+      },
+      {
+        "name": "Semibold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiboldWide",
+        "weight": 601,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldWide",
+        "weight": 701,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=array@400,401,600,601,700,701&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Frode Helland"
+    ]
+  },
+  "contentHash": "642e18f74773d10c",
+  "importedAt": "2026-11-05T00:16:59.740Z"
+}

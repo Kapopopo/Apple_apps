@@ -1,0 +1,51 @@
+{
+  "id": "fontshare/bebas-neue",
+  "name": "Bebas Neue",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "credits",
+    "menus",
+    "packaging",
+    "websites"
+  ],
+  "description": "Sans serif · 1 style",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/bebas-neue",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Bebas Neue",
+    "slug": "bebas-neue",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=bebas-neue@400&display=swap",
+    "designers": [
+      "Ryoichi Tsunekawa",
+      "Dharma Type"
+    ]
+  },
+  "contentHash": "97017d4efc87aa93",
+  "importedAt": "2026-11-05T00:16:59.767Z"
+}

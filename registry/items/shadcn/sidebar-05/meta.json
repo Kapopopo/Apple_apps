@@ -1,0 +1,51 @@
+{
+  "id": "shadcn/sidebar-05",
+  "name": "Sidebar 05",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "A sidebar with collapsible submenus.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/breadcrumb",
+    "shadcn/collapsible",
+    "shadcn/label",
+    "shadcn/separator",
+    "shadcn/sidebar"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar-05.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar-05.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/sidebar-05/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/sidebar-05/components/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-05/components/search-form.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sidebar-05/page.tsx"
+  },
+  "contentHash": "4927bc0e75e3ff95",
+  "importedAt": "2026-11-05T17:59:23.218Z"
+}

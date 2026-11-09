@@ -1,0 +1,54 @@
+{
+  "id": "easyui/book-call-button",
+  "name": "Book Call Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "buttons",
+    "reduced motion",
+    "responsive",
+    "spring",
+    "state choreography",
+    "survol"
+  ],
+  "description": "A premium \"Book a call\" pill with a green expanding capsule. At rest, a 36% accent capsule holds a dotted arrow + label; on hover, the capsule fills the pill, the label slides out, and a phone icon with ringing lines fades in centered.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/BookCallButton.tsx",
+  "sourcePath": "src/components/ui/BookCallButton.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/BookCallButton.tsx",
+      "role": "source",
+      "target": "components/ui/book-call-button.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/BookCallButton.tsx"
+  },
+  "contentHash": "4bc195cb58623b08",
+  "importedAt": "2026-11-05T00:16:51.693Z"
+}

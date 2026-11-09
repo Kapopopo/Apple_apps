@@ -1,0 +1,38 @@
+{
+  "id": "shadcn/calendar-13",
+  "name": "Calendar 13",
+  "type": "section",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "With Month and Year Dropdown",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/calendar",
+    "shadcn/label",
+    "shadcn/select"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/calendar-13.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/calendar-13.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/calendar-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/calendar-13.tsx"
+  },
+  "contentHash": "5756e67745689020",
+  "importedAt": "2026-11-05T17:59:22.657Z"
+}

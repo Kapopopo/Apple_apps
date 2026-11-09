@@ -1,0 +1,59 @@
+{
+  "id": "easyui/stretch-switch",
+  "name": "StretchSwitch",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "animé",
+    "drag",
+    "forms",
+    "light & dark",
+    "spring snap",
+    "stretch physics"
+  ],
+  "description": "A toggle switch whose thumb stretches slightly while dragging or pressing, then snaps naturally to its destination via a snappy spring.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/StretchSwitch.tsx",
+  "sourcePath": "src/components/ui/StretchSwitch.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/StretchSwitch.tsx",
+      "role": "source",
+      "target": "components/ui/stretch-switch.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/StretchSwitch.tsx"
+  },
+  "contentHash": "3855b7d88f79bd6e",
+  "importedAt": "2026-11-05T00:16:53.994Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/warp-background",
+  "name": "Warp Background",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "boucle",
+    "portfolio"
+  ],
+  "description": "Créer une ambiance animée derrière un contenu lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/warp-background",
+  "sourcePath": "https://magicui.design/r/warp-background.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/warp-background.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "warp-background"
+  },
+  "catalogId": "5ee996b37ac8f0eb",
+  "contentHash": "a570a4357d66f86e",
+  "importedAt": "2026-11-05T00:16:49.407Z"
+}

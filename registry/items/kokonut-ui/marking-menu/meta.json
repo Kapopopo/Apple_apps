@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/marking-menu",
+  "name": "Marking Menu",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/marking-menu.json",
+  "sourcePath": "public/r/marking-menu.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/marking-menu.tsx",
+      "role": "source",
+      "target": "components/kokonutui/marking-menu.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/marking-menu.tsx"
+  },
+  "contentHash": "6fa7b40be4273b81",
+  "importedAt": "2026-11-05T17:59:35.536Z"
+}

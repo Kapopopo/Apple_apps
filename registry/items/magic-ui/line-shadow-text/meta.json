@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/line-shadow-text",
+  "name": "Line Shadow Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/line-shadow-text",
+  "sourcePath": "https://magicui.design/r/line-shadow-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/line-shadow-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "line-shadow-text"
+  },
+  "catalogId": "e3b3beece1ea49fa",
+  "contentHash": "48ec4c139bd1c1fe",
+  "importedAt": "2026-11-05T00:16:49.351Z"
+}

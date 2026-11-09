@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/seat-map",
+  "name": "Seat Map",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/seat-map.json",
+  "sourcePath": "public/r/seat-map.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/seat-map.tsx",
+      "role": "source",
+      "target": "components/kokonutui/seat-map.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/seat-map.tsx"
+  },
+  "contentHash": "c7201028a37845cc",
+  "importedAt": "2026-11-05T17:59:35.746Z"
+}

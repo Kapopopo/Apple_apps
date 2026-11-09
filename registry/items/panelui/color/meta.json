@@ -1,0 +1,33 @@
+{
+  "id": "panelui/color",
+  "name": "Color",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "HSV colour arithmetic, parsing and formatting. Every function a worklet.",
+  "framework": "react-native",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/color.json",
+  "sourcePath": "apps/docs/public/r/color.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "lib/color.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "7b4189c2cfd99d23",
+  "importedAt": "2026-11-05T00:16:55.888Z"
+}

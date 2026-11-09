@@ -1,0 +1,36 @@
+{
+  "id": "magic-ui/utils",
+  "name": "Utils",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/utils.json",
+  "sourcePath": "apps/www/public/r/utils.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "85b06b657e37ae39",
+  "importedAt": "2026-11-05T17:59:28.267Z"
+}

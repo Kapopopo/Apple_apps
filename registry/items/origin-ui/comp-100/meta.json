@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-100",
+  "name": "Button 100",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "hamburger",
+    "menu",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, menu, hamburger.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-100.json",
+  "sourcePath": "apps/origin/public/r/comp-100.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-100.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-100.tsx"
+  },
+  "contentHash": "f0fda0c567859901",
+  "importedAt": "2026-11-05T17:59:40.484Z"
+}

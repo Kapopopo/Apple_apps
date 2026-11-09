@@ -1,0 +1,45 @@
+{
+  "id": "panelui-web/command",
+  "name": "Command",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A launcher: type to find a page, an app or an action, and run it with Enter.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui-web/spinner"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/command.json",
+  "sourcePath": "apps/docs/public/r/web/command.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/command.tsx",
+      "role": "source",
+      "target": "@components/panelui/command.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/command/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/command/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f840af27648b47b3",
+  "importedAt": "2026-11-05T00:16:56.590Z"
+}

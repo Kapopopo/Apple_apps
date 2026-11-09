@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/code-comparison",
+  "name": "Code Comparison",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "web"
+  ],
+  "description": "A component which compares two code snippets.",
+  "framework": "react",
+  "dependencies": [
+    "@shikijs/transformers",
+    "lucide-react",
+    "next-themes",
+    "shiki"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/code-comparison.json",
+  "sourcePath": "apps/www/public/r/code-comparison.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/code-comparison.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/code-comparison-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/code-comparison-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "510e7306f7ddaa17",
+  "importedAt": "2026-11-05T17:59:28.059Z"
+}

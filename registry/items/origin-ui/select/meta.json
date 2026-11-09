@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/select",
+  "name": "Select",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/select.json",
+  "sourcePath": "apps/origin/public/r/select.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/select.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/select.tsx"
+  },
+  "contentHash": "d2f589b82c5bb4f5",
+  "importedAt": "2026-11-05T17:59:43.191Z"
+}

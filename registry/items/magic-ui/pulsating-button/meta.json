@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/pulsating-button",
+  "name": "Pulsating Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "application",
+    "boucle"
+  ],
+  "description": "Signaler une action principale avec une pulsation douce.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/pulsating-button",
+  "sourcePath": "https://magicui.design/r/pulsating-button.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/pulsating-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "pulsating-button"
+  },
+  "catalogId": "9fd47745f572839c",
+  "contentHash": "b2e45db515cd6ece",
+  "importedAt": "2026-11-05T00:16:49.376Z"
+}

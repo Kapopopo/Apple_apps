@@ -1,0 +1,39 @@
+{
+  "id": "kokonut-ui/synced-transcript",
+  "name": "Synced Transcript",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/synced-transcript.json",
+  "sourcePath": "public/r/synced-transcript.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/synced-transcript.tsx",
+      "role": "source",
+      "target": "components/kokonutui/synced-transcript.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/synced-transcript.tsx"
+  },
+  "contentHash": "b95cd0dfec8e401e",
+  "importedAt": "2026-11-05T17:59:35.840Z"
+}

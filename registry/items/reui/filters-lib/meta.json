@@ -1,0 +1,42 @@
+{
+  "id": "reui/filters-lib",
+  "name": "Filters Lib",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/cascader-lib",
+    "reui/cascader-types",
+    "reui/filters",
+    "reui/filters-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/filters-lib.json",
+  "sourcePath": "public/r/styles/base-luma/filters-lib.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/filters/filters-lib.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-lib.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/filters/filters-lib.tsx"
+  },
+  "contentHash": "29ae3dbd64917e56",
+  "importedAt": "2026-11-05T17:59:38.230Z",
+  "updatedAt": "2026-11-05T18:07:49.869Z"
+}

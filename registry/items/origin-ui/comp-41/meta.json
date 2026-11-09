@@ -1,0 +1,47 @@
+{
+  "id": "origin-ui/comp-41",
+  "name": "Input 41",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "calendar",
+    "date",
+    "input",
+    "label",
+    "picker",
+    "react aria",
+    "web"
+  ],
+  "description": "Exemple Origin UI : input, label, date, calendar, picker, react aria.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "origin-ui/calendar-rac",
+    "origin-ui/datefield-rac"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-41.json",
+  "sourcePath": "apps/origin/public/r/comp-41.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-41.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-41.tsx"
+  },
+  "contentHash": "0ab9b5be4eba42c2",
+  "importedAt": "2026-11-05T17:59:41.928Z"
+}

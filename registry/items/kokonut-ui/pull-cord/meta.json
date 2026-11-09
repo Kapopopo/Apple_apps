@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/pull-cord",
+  "name": "Pull Cord",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/pull-cord.json",
+  "sourcePath": "public/r/pull-cord.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/pull-cord.tsx",
+      "role": "source",
+      "target": "components/kokonutui/pull-cord.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/pull-cord.tsx"
+  },
+  "contentHash": "b2881e6845432edf",
+  "importedAt": "2026-11-05T17:59:35.574Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "magic-ui/pixel-image",
+  "name": "Pixel Image",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "web"
+  ],
+  "description": "A component that displays an image with a pixelated effect, creating a retro aesthetic.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/pixel-image.json",
+  "sourcePath": "apps/www/public/r/pixel-image.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/pixel-image.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/pixel-image-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/pixel-image-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0f3ef091b4dee805",
+  "importedAt": "2026-11-05T17:59:28.194Z"
+}

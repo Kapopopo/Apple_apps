@@ -1,0 +1,46 @@
+{
+  "id": "shadcn/sidebar-11",
+  "name": "Sidebar 11",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "A sidebar with a collapsible file tree.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/breadcrumb",
+    "shadcn/collapsible",
+    "shadcn/separator",
+    "shadcn/sidebar"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar-11.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar-11.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/sidebar-11/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/sidebar-11/components/app-sidebar.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sidebar-11/page.tsx"
+  },
+  "contentHash": "8ef224bfe936236c",
+  "importedAt": "2026-11-05T17:59:23.361Z"
+}

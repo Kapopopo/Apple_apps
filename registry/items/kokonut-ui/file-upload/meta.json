@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/file-upload",
+  "name": "File Upload",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/file-upload.json",
+  "sourcePath": "public/r/file-upload.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/file-upload.tsx",
+      "role": "source",
+      "target": "components/kokonutui/file-upload.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/file-upload.tsx"
+  },
+  "contentHash": "94b0cbcf18b17f2a",
+  "importedAt": "2026-11-05T17:59:35.485Z"
+}

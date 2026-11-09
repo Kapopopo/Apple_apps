@@ -1,0 +1,311 @@
+{
+  "id": "atlas/easings-standard",
+  "name": "Easings standard",
+  "type": "easing",
+  "category": "Easings",
+  "tags": [
+    "bezier",
+    "css",
+    "motion",
+    "tokens"
+  ],
+  "description": "30 courbes (Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce) en cubic-bezier CSS, tableaux Motion et fonctions JS.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Component Atlas",
+  "sourceId": "atlas",
+  "sourceUrl": "https://robertpenner.com/easing/",
+  "license": "BSD-3-Clause",
+  "licenseStatus": "open",
+  "licenseNotes": "Fonctions dérivées des Easing Equations de Robert Penner (BSD-3-Clause). Valeurs cubic-bezier standard (approximations usuelles des mêmes courbes).",
+  "attribution": "Easing Equations © 2001 Robert Penner (BSD-3-Clause).",
+  "files": [
+    {
+      "path": "easings.ts",
+      "role": "source"
+    },
+    {
+      "path": "easings.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Courbes tracées par le builder"
+  },
+  "easings": [
+    {
+      "name": "easeInSine",
+      "css": "cubic-bezier(0.12, 0, 0.39, 0)",
+      "cubicBezier": [
+        0.12,
+        0,
+        0.39,
+        0
+      ]
+    },
+    {
+      "name": "easeOutSine",
+      "css": "cubic-bezier(0.61, 1, 0.88, 1)",
+      "cubicBezier": [
+        0.61,
+        1,
+        0.88,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutSine",
+      "css": "cubic-bezier(0.37, 0, 0.63, 1)",
+      "cubicBezier": [
+        0.37,
+        0,
+        0.63,
+        1
+      ]
+    },
+    {
+      "name": "easeInQuad",
+      "css": "cubic-bezier(0.11, 0, 0.5, 0)",
+      "cubicBezier": [
+        0.11,
+        0,
+        0.5,
+        0
+      ]
+    },
+    {
+      "name": "easeOutQuad",
+      "css": "cubic-bezier(0.5, 1, 0.89, 1)",
+      "cubicBezier": [
+        0.5,
+        1,
+        0.89,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutQuad",
+      "css": "cubic-bezier(0.45, 0, 0.55, 1)",
+      "cubicBezier": [
+        0.45,
+        0,
+        0.55,
+        1
+      ]
+    },
+    {
+      "name": "easeInCubic",
+      "css": "cubic-bezier(0.32, 0, 0.67, 0)",
+      "cubicBezier": [
+        0.32,
+        0,
+        0.67,
+        0
+      ]
+    },
+    {
+      "name": "easeOutCubic",
+      "css": "cubic-bezier(0.33, 1, 0.68, 1)",
+      "cubicBezier": [
+        0.33,
+        1,
+        0.68,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutCubic",
+      "css": "cubic-bezier(0.65, 0, 0.35, 1)",
+      "cubicBezier": [
+        0.65,
+        0,
+        0.35,
+        1
+      ]
+    },
+    {
+      "name": "easeInQuart",
+      "css": "cubic-bezier(0.5, 0, 0.75, 0)",
+      "cubicBezier": [
+        0.5,
+        0,
+        0.75,
+        0
+      ]
+    },
+    {
+      "name": "easeOutQuart",
+      "css": "cubic-bezier(0.25, 1, 0.5, 1)",
+      "cubicBezier": [
+        0.25,
+        1,
+        0.5,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutQuart",
+      "css": "cubic-bezier(0.76, 0, 0.24, 1)",
+      "cubicBezier": [
+        0.76,
+        0,
+        0.24,
+        1
+      ]
+    },
+    {
+      "name": "easeInQuint",
+      "css": "cubic-bezier(0.64, 0, 0.78, 0)",
+      "cubicBezier": [
+        0.64,
+        0,
+        0.78,
+        0
+      ]
+    },
+    {
+      "name": "easeOutQuint",
+      "css": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "cubicBezier": [
+        0.22,
+        1,
+        0.36,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutQuint",
+      "css": "cubic-bezier(0.83, 0, 0.17, 1)",
+      "cubicBezier": [
+        0.83,
+        0,
+        0.17,
+        1
+      ]
+    },
+    {
+      "name": "easeInExpo",
+      "css": "cubic-bezier(0.7, 0, 0.84, 0)",
+      "cubicBezier": [
+        0.7,
+        0,
+        0.84,
+        0
+      ]
+    },
+    {
+      "name": "easeOutExpo",
+      "css": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "cubicBezier": [
+        0.16,
+        1,
+        0.3,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutExpo",
+      "css": "cubic-bezier(0.87, 0, 0.13, 1)",
+      "cubicBezier": [
+        0.87,
+        0,
+        0.13,
+        1
+      ]
+    },
+    {
+      "name": "easeInCirc",
+      "css": "cubic-bezier(0.55, 0, 1, 0.45)",
+      "cubicBezier": [
+        0.55,
+        0,
+        1,
+        0.45
+      ]
+    },
+    {
+      "name": "easeOutCirc",
+      "css": "cubic-bezier(0, 0.55, 0.45, 1)",
+      "cubicBezier": [
+        0,
+        0.55,
+        0.45,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutCirc",
+      "css": "cubic-bezier(0.85, 0, 0.15, 1)",
+      "cubicBezier": [
+        0.85,
+        0,
+        0.15,
+        1
+      ]
+    },
+    {
+      "name": "easeInBack",
+      "css": "cubic-bezier(0.36, 0, 0.66, -0.56)",
+      "cubicBezier": [
+        0.36,
+        0,
+        0.66,
+        -0.56
+      ]
+    },
+    {
+      "name": "easeOutBack",
+      "css": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "cubicBezier": [
+        0.34,
+        1.56,
+        0.64,
+        1
+      ]
+    },
+    {
+      "name": "easeInOutBack",
+      "css": "cubic-bezier(0.68, -0.6, 0.32, 1.6)",
+      "cubicBezier": [
+        0.68,
+        -0.6,
+        0.32,
+        1.6
+      ]
+    },
+    {
+      "name": "easeInElastic",
+      "css": "/* easeInElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    },
+    {
+      "name": "easeOutElastic",
+      "css": "/* easeOutElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    },
+    {
+      "name": "easeInOutElastic",
+      "css": "/* easeInOutElastic : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    },
+    {
+      "name": "easeInBounce",
+      "css": "/* easeInBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    },
+    {
+      "name": "easeOutBounce",
+      "css": "/* easeOutBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    },
+    {
+      "name": "easeInOutBounce",
+      "css": "/* easeInOutBounce : pas d'équivalent cubic-bezier, utiliser la fonction JS */",
+      "cubicBezier": null
+    }
+  ],
+  "contentHash": "794547b5c4bdde70",
+  "importedAt": "2026-11-05T00:16:49.479Z"
+}

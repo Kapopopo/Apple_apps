@@ -1,0 +1,53 @@
+{
+  "id": "shadcn/input",
+  "name": "Input",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/input.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/input.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/input-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-disabled.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-file.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-form.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/input-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "de34f6af8a081464",
+  "importedAt": "2026-11-05T17:59:23.053Z"
+}

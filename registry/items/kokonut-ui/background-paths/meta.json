@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/background-paths",
+  "name": "Background Paths",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/background-paths.json",
+  "sourcePath": "public/r/background-paths.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/background-paths.tsx",
+      "role": "source",
+      "target": "components/kokonutui/background-paths.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/background-paths.tsx"
+  },
+  "contentHash": "bbbcb4f93619c8d1",
+  "importedAt": "2026-11-05T17:59:35.425Z"
+}

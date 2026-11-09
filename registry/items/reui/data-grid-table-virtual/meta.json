@@ -1,0 +1,43 @@
+{
+  "id": "reui/data-grid-table-virtual",
+  "name": "Data Grid Table Virtual",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table",
+    "@tanstack/react-virtual"
+  ],
+  "registryDependencies": [
+    "reui/data-grid",
+    "reui/data-grid-table",
+    "shadcn/spinner"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/data-grid-table-virtual.json",
+  "sourcePath": "public/r/styles/base-luma/data-grid-table-virtual.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/data-grid/data-grid-table-virtual.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table-virtual.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/data-grid/data-grid-table-virtual.tsx"
+  },
+  "contentHash": "16d5159cfc1a11ef",
+  "importedAt": "2026-11-05T17:59:38.112Z",
+  "updatedAt": "2026-11-05T18:07:49.744Z"
+}

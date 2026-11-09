@@ -1,0 +1,6 @@
+/* Nippo — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=nippo@1,200,300,400,500,700&display=swap');
+
+:root {
+  --font-nippo: 'Nippo', sans-serif;
+}

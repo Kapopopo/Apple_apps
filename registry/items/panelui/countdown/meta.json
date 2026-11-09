@@ -1,0 +1,46 @@
+{
+  "id": "panelui/countdown",
+  "name": "Countdown",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "The time left until a moment, ticking down to it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/countdown.json",
+  "sourcePath": "apps/docs/public/r/countdown.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/countdown-time.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/countdown.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "15b3e95fa0c4aee7",
+  "importedAt": "2026-11-05T00:16:55.907Z"
+}

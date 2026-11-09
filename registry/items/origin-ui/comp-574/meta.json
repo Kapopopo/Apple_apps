@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-574",
+  "name": "Tree 574",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "button",
+    "tree",
+    "web"
+  ],
+  "description": "Exemple Origin UI : tree, button.",
+  "framework": "react",
+  "dependencies": [
+    "@headless-tree/core",
+    "@headless-tree/react",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/tree"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-574.json",
+  "sourcePath": "apps/origin/public/r/comp-574.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-574.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-574.tsx"
+  },
+  "contentHash": "20a53e314b20cbe8",
+  "importedAt": "2026-11-05T17:59:42.797Z"
+}

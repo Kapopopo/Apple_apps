@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-106",
+  "name": "Button 106",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "toggle group",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, toggle group.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-106.json",
+  "sourcePath": "apps/origin/public/r/comp-106.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-106.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-106.tsx"
+  },
+  "contentHash": "de29888f00e5ee7a",
+  "importedAt": "2026-11-05T17:59:40.507Z"
+}

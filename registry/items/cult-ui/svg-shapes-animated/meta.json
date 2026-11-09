@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/svg-shapes-animated",
+  "name": "Svg Shapes Animated",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "scroll",
+    "web"
+  ],
+  "description": "Scroll-triggered stroke-draw animations for wide SVG shapes and panels using Motion",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/svg-shapes-animated.json",
+  "sourcePath": "apps/www/public/r/svg-shapes-animated.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/svg-shapes-animated.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/svg-shapes-animated-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/svg-shapes-animated-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a127c83f5b467b69",
+  "importedAt": "2026-11-05T17:59:33.235Z"
+}

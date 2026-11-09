@@ -1,0 +1,49 @@
+{
+  "id": "magic-ui/dotted-map",
+  "name": "Dotted Map",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "web"
+  ],
+  "description": "A component with a dotted map.",
+  "framework": "react",
+  "dependencies": [
+    "svg-dotted-map"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/dotted-map.json",
+  "sourcePath": "apps/www/public/r/dotted-map.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/dotted-map.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/dotted-map-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dotted-map-demo-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dotted-map-demo-3.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/dotted-map-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7a6f7d75ddacd97f",
+  "importedAt": "2026-11-05T17:59:28.111Z"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "fontshare/asap",
+  "name": "Asap",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "friendly",
+    "packaging",
+    "posters",
+    "soft",
+    "variable"
+  ],
+  "description": "Sans serif · 10 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/asap",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Asap",
+    "slug": "asap",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=asap@1,400,500,600,700&display=swap",
+    "designers": [
+      "Omnibus-Type"
+    ]
+  },
+  "contentHash": "1e64e67f7ce49822",
+  "importedAt": "2026-11-05T00:16:59.788Z"
+}

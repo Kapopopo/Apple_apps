@@ -1,0 +1,34 @@
+{
+  "id": "react-bits/text-cursor",
+  "name": "TextCursor",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "Text or emoji that trails your cursor as stamped copies, a following chain or a ribbon of letters.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/TextCursor-TS-TW.json",
+  "sourcePath": "public/r/TextCursor-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "TextCursor/TextCursor.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "TextCursor/TextCursor.tsx"
+  },
+  "contentHash": "d0145e9765056bce",
+  "importedAt": "2026-11-05T17:59:46.170Z"
+}

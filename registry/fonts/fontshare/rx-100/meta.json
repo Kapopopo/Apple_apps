@@ -1,0 +1,54 @@
+{
+  "id": "fontshare/rx-100",
+  "name": "RX100",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "editorial",
+    "monospaced",
+    "programming",
+    "signage"
+  ],
+  "description": "Sans serif · 1 style · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/rx-100",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "RX100 par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "RX100",
+    "slug": "rx-100",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=rx-100@400&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Anurag Gautam",
+      "Indian Type Foundry"
+    ]
+  },
+  "contentHash": "1176346a4d0ee8d3",
+  "importedAt": "2026-11-05T00:16:59.932Z"
+}

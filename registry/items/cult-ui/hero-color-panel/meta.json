@@ -1,0 +1,45 @@
+{
+  "id": "cult-ui/hero-color-panel",
+  "name": "Hero Color Panel",
+  "type": "section",
+  "category": "Fonds",
+  "tags": [
+    "web",
+    "webgl"
+  ],
+  "description": "Split-layout hero section with responsive ColorPanels shader visuals, CTA, and tech stack badges",
+  "framework": "react",
+  "dependencies": [
+    "@paper-design/shaders-react"
+  ],
+  "registryDependencies": [
+    "shadcn/badge",
+    "shadcn/button"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/hero-color-panel.json",
+  "sourcePath": "apps/www/public/r/hero-color-panel.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/hero-color-panel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/hero-color-panels-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/hero-color-panels-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ce480a9feb40f1d2",
+  "importedAt": "2026-11-05T17:59:32.888Z"
+}

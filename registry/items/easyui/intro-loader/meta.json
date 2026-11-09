@@ -1,0 +1,60 @@
+{
+  "id": "easyui/intro-loader",
+  "name": "Intro Loader",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "accessible",
+    "animé",
+    "apple welcome",
+    "fluid blur",
+    "multilingual",
+    "overlays",
+    "splash screen"
+  ],
+  "description": "An Apple-inspired multilingual welcome splash and intro loader that rapidly cycles localized greetings with fluid blur transitions, progress tracking, and accessible skip controls.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/IntroLoader.tsx",
+  "sourcePath": "src/components/ui/IntroLoader.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/IntroLoader.tsx",
+      "role": "source",
+      "target": "components/ui/intro-loader.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/IntroLoader.tsx"
+  },
+  "contentHash": "7ecbef82fd590e8f",
+  "importedAt": "2026-11-05T00:16:52.546Z"
+}

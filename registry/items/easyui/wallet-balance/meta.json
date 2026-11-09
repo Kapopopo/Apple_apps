@@ -1,0 +1,46 @@
+{
+  "id": "easyui/wallet-balance",
+  "name": "Wallet Balance",
+  "type": "component",
+  "category": "Paiement",
+  "tags": [
+    "animé",
+    "motion",
+    "privacy eye",
+    "spring physics",
+    "wallet"
+  ],
+  "description": "An interactive wallet balance component where branded cards tuck neatly into an embossed leather pouch with spring physics. Tap the eye button to reveal or mask balances with smooth blur-crossfade transitions.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/WalletBalance.tsx",
+  "sourcePath": "src/components/ui/WalletBalance.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/WalletBalance.tsx",
+      "role": "source",
+      "target": "components/ui/wallet-balance.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/WalletBalance.tsx"
+  },
+  "contentHash": "2de90da35582e1b7",
+  "importedAt": "2026-11-05T00:16:54.314Z",
+  "updatedAt": "2026-11-05T00:19:20.122Z"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "magic-ui/terminal",
+  "name": "Terminal",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A terminal component",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/terminal.json",
+  "sourcePath": "apps/www/public/r/terminal.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/terminal.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/terminal-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/terminal-demo-2.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/terminal-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "485882bfe457187e",
+  "importedAt": "2026-11-05T17:59:28.235Z"
+}

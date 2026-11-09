@@ -1,0 +1,40 @@
+{
+  "id": "panelui/card",
+  "name": "Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "expo"
+  ],
+  "description": "Content surface with header, body and footer.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/card.json",
+  "sourcePath": "apps/docs/public/r/card.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/card.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "fe0b05addd845ba9",
+  "importedAt": "2026-11-05T00:16:55.835Z"
+}

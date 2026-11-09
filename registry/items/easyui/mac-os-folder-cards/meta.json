@@ -1,0 +1,59 @@
+{
+  "id": "easyui/mac-os-folder-cards",
+  "name": "macOS Folder Cards",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "expandable",
+    "macos folder",
+    "minimal",
+    "motion",
+    "spring morphing"
+  ],
+  "description": "An authentic porcelain-white macOS Finder folder icon that unrolls interactive cards with fluid Apple spring physics.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/MacOSFolderCards.tsx",
+  "sourcePath": "src/components/ui/MacOSFolderCards.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/MacOSFolderCards.tsx",
+      "role": "source",
+      "target": "components/ui/mac-os-folder-cards.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/MacOSFolderCards.tsx"
+  },
+  "contentHash": "24e592b34b1560fc",
+  "importedAt": "2026-11-05T00:16:52.732Z"
+}

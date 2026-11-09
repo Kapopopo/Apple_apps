@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/apple-iphone-17-pro",
+  "name": "Apple Iphone 17 Pro",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "iPhone-style device frame with Dynamic Island, status bar, and configurable frame colors",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/apple-iphone-17-pro.json",
+  "sourcePath": "apps/www/public/r/apple-iphone-17-pro.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/apple-iphone-17-pro.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/apple-iphone-17-pro-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/apple-iphone-17-pro-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "98ef82c9cbad84f0",
+  "importedAt": "2026-11-05T17:59:32.582Z"
+}

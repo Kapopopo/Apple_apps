@@ -1,0 +1,6 @@
+/* Boxing — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=boxing@400&display=swap');
+
+:root {
+  --font-boxing: 'Boxing', sans-serif;
+}

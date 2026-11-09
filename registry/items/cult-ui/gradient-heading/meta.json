@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/gradient-heading",
+  "name": "Gradient Heading",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "Heading component with gradient text effects and customizable styling",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/gradient-heading.json",
+  "sourcePath": "apps/www/public/r/gradient-heading.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/gradient-heading.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/gradient-heading-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/gradient-heading-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "11799af88b1cbbc3",
+  "importedAt": "2026-11-05T17:59:32.810Z"
+}

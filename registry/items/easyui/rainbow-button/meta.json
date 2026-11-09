@@ -1,0 +1,53 @@
+{
+  "id": "easyui/rainbow-button",
+  "name": "Rainbow Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "3d",
+    "animé",
+    "button",
+    "gradient",
+    "interactive",
+    "motion",
+    "new"
+  ],
+  "description": "A vibrant button featuring an animated chromatic rainbow gradient border, dynamic 3D surface reflections, and an ambient blurred rainbow underglow.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/RainbowButton.tsx",
+  "sourcePath": "src/components/ui/RainbowButton.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/RainbowButton.tsx",
+      "role": "source",
+      "target": "components/ui/rainbow-button.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/RainbowButton.tsx"
+  },
+  "contentHash": "13940cfbec4971d5",
+  "importedAt": "2026-11-05T00:16:53.471Z"
+}

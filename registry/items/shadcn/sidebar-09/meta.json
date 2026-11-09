@@ -1,0 +1,54 @@
+{
+  "id": "shadcn/sidebar-09",
+  "name": "Sidebar 09",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "Collapsible nested sidebars.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/avatar",
+    "shadcn/breadcrumb",
+    "shadcn/collapsible",
+    "shadcn/dropdown-menu",
+    "shadcn/label",
+    "shadcn/separator",
+    "shadcn/sidebar",
+    "shadcn/switch"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar-09.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar-09.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/sidebar-09/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/sidebar-09/components/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-09/components/nav-user.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sidebar-09/page.tsx"
+  },
+  "contentHash": "37aeb0ab9293447a",
+  "importedAt": "2026-11-05T17:59:23.345Z"
+}

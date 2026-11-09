@@ -1,0 +1,6 @@
+/* Aktura — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=aktura@400&display=swap');
+
+:root {
+  --font-aktura: 'Aktura', serif;
+}

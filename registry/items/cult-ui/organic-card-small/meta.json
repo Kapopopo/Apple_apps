@@ -1,0 +1,45 @@
+{
+  "id": "cult-ui/organic-card-small",
+  "name": "Organic Card Small",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "Compact card with SVG silhouette, category and date, motion morph on hover, and optional link",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "next"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/organic-card-small.json",
+  "sourcePath": "apps/www/public/r/organic-card-small.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/organic-card-small.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/organic-card-small-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/organic-card-small-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "de979c09e3699e4e",
+  "importedAt": "2026-11-05T17:59:33.090Z"
+}

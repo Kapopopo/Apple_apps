@@ -1,0 +1,50 @@
+{
+  "id": "reui/filters-editors",
+  "name": "Filters Editors",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/cascader-context",
+    "reui/cascader-footer",
+    "reui/cascader-item",
+    "reui/cascader-nav",
+    "reui/cascader-types",
+    "reui/filters",
+    "reui/filters-context",
+    "reui/filters-lib",
+    "reui/filters-types",
+    "shadcn/button",
+    "shadcn/button-group",
+    "shadcn/input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/filters-editors.json",
+  "sourcePath": "public/r/styles/base-luma/filters-editors.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/filters/filters-editors.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-editors.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/filters/filters-editors.tsx"
+  },
+  "contentHash": "2c6aa31cbedadee8",
+  "importedAt": "2026-11-05T17:59:38.223Z",
+  "updatedAt": "2026-11-05T18:07:49.861Z"
+}

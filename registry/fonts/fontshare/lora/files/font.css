@@ -1,0 +1,6 @@
+/* Lora — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=lora@1,400,500,600,700&display=swap');
+
+:root {
+  --font-lora: 'Lora', serif;
+}

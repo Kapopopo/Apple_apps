@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/bento-grid",
+  "name": "Bento Grid",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "Bento grid is a layout used to showcase the features of a product in a simple and elegant way.",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-icons"
+  ],
+  "registryDependencies": [
+    "shadcn/button"
+  ],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/bento-grid.json",
+  "sourcePath": "apps/www/public/r/bento-grid.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/bento-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/bento-demo-vertical.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/bento-demo-vertical.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5584044f9bcd7b15",
+  "importedAt": "2026-11-05T17:59:28.048Z"
+}

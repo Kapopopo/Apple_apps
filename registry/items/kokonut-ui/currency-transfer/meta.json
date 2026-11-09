@@ -1,0 +1,39 @@
+{
+  "id": "kokonut-ui/currency-transfer",
+  "name": "Currency Transfer",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/currency-transfer.json",
+  "sourcePath": "public/r/currency-transfer.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/currency-transfer.tsx",
+      "role": "source",
+      "target": "components/kokonutui/currency-transfer.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/currency-transfer.tsx"
+  },
+  "contentHash": "b6dee7c342a7bfeb",
+  "importedAt": "2026-11-05T17:59:35.470Z"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/interactive-hover-button",
+  "name": "Interactive Hover Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "application",
+    "survol"
+  ],
+  "description": "Révéler une flèche et un fond coloré au survol du bouton.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/interactive-hover-button",
+  "sourcePath": "https://magicui.design/r/interactive-hover-button.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/interactive-hover-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "interactive-hover-button"
+  },
+  "catalogId": "7700d4fb78e6bc66",
+  "contentHash": "fc84447abd9a5567",
+  "importedAt": "2026-11-05T00:16:49.381Z"
+}

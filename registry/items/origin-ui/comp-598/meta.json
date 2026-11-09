@@ -1,0 +1,42 @@
+{
+  "id": "origin-ui/comp-598",
+  "name": "Tree 598",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "checkbox",
+    "tree",
+    "web"
+  ],
+  "description": "Exemple Origin UI : tree, checkbox.",
+  "framework": "react",
+  "dependencies": [
+    "@headless-tree/core",
+    "@headless-tree/react"
+  ],
+  "registryDependencies": [
+    "origin-ui/checkbox",
+    "origin-ui/tree"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-598.json",
+  "sourcePath": "apps/origin/public/r/comp-598.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-598.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-598.tsx"
+  },
+  "contentHash": "1fe3a6824eea5308",
+  "importedAt": "2026-11-05T17:59:42.971Z"
+}

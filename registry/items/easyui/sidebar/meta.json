@@ -1,0 +1,56 @@
+{
+  "id": "easyui/sidebar",
+  "name": "Sidebar",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "drag",
+    "keyboard friendly",
+    "layout springs",
+    "light & dark",
+    "mobile drawer",
+    "navigation",
+    "survol"
+  ],
+  "description": "A collapsible application sidebar with a hover pill that follows the cursor and a shared-layout active pill that glides between items. Includes nested sections, icon-only mode with tooltips, ⌘B toggle, and a draggable mobile drawer.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/sidebar.tsx",
+  "sourcePath": "src/components/ui/sidebar.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "role": "source",
+      "target": "components/ui/sidebar.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/sidebar.tsx"
+  },
+  "contentHash": "ad2f227ff6b31a1b",
+  "importedAt": "2026-11-05T00:16:53.656Z"
+}

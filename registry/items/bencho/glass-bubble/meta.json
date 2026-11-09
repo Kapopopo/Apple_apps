@@ -1,0 +1,45 @@
+{
+  "id": "bencho/glass-bubble",
+  "name": "Glass bubble",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "drag"
+  ],
+  "description": "Drag a ball of glass over a photo and watch it bend the picture beneath.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/glass-bubble",
+  "sourcePath": "blocks/glass-bubble",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/glass-bubble/LiquidGlass.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/glass-bubble/LiquidGlass.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/glass-bubble/README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/glass-bubble/LiquidGlass.tsx",
+    "exportName": "LiquidGlass"
+  },
+  "contentHash": "0211680be1cbc36b",
+  "importedAt": "2026-11-05T00:16:58.566Z",
+  "updatedAt": "2026-11-05T00:19:20.829Z"
+}

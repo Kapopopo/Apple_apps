@@ -1,0 +1,44 @@
+{
+  "id": "panelui-web/tilt-card",
+  "name": "Tilt Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "3d",
+    "web"
+  ],
+  "description": "A card that leans towards the pointer, with layers inside it that move by their depth.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/tilt-card.json",
+  "sourcePath": "apps/docs/public/r/web/tilt-card.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/tilt-card.tsx",
+      "role": "source",
+      "target": "@components/panelui/tilt-card.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/tilt-card/figures.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/tilt-card/figures.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f433ccb9c5753f11",
+  "importedAt": "2026-11-05T00:16:57.067Z"
+}

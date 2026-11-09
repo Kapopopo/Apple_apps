@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-467",
+  "name": "Table 467",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "avatar",
+    "table",
+    "user",
+    "web"
+  ],
+  "description": "Exemple Origin UI : table, user, avatar.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/table"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-467.json",
+  "sourcePath": "apps/origin/public/r/comp-467.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-467.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-467.tsx"
+  },
+  "contentHash": "dd021a8ac90e59f8",
+  "importedAt": "2026-11-05T17:59:42.162Z"
+}

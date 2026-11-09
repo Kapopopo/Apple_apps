@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/mac-screen",
+  "name": "Mac Screen",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "web"
+  ],
+  "description": "Classic Mac frame with an image or GIF composited into the CRT",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/mac-screen.json",
+  "sourcePath": "apps/www/public/r/mac-screen.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/mac-screen.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/mac-screen-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/mac-screen-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "13871404e6147b94",
+  "importedAt": "2026-11-05T17:59:32.962Z"
+}

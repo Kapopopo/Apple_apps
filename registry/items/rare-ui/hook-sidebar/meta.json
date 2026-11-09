@@ -1,0 +1,45 @@
+{
+  "id": "rare-ui/hook-sidebar",
+  "name": "Hook Sidebar",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé"
+  ],
+  "description": "A vertical navigation list with a dashed rail that marks the active item.",
+  "framework": "react",
+  "dependencies": [
+    "motion",
+    "next"
+  ],
+  "registryDependencies": [
+    "rare-ui/utils"
+  ],
+  "source": "Rare UI",
+  "sourceId": "rare-ui",
+  "sourceUrl": "https://github.com/swamimalode07/rare-ui/blob/67471c37d978ecfcbc3922ad8ad60a2d84174b03/components/ui/hook-sidebar.tsx",
+  "sourcePath": "components/ui/hook-sidebar.tsx",
+  "sourceCommit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
+  "license": "LicenseRef-MIT-Commons-Clause-Attribution",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause + Attribution : usage libre dans tes projets, y compris commerciaux ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes (seuls ou en pack). Accepté explicitement le 2026-11-05 pour un usage personnel dans un repo privé.",
+  "attribution": "Rare UI (https://rareui.com) : tout projet qui embarque un composant doit afficher un lien visible vers https://rareui.com (footer, page à propos, crédits ou README) et conserver la notice de copyright dans le code copié.",
+  "files": [
+    {
+      "path": "components/ui/hook-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/components/(docs)/hooksidebar/demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "rare-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "app/components/(docs)/hooksidebar/demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "1864349272095bda",
+  "importedAt": "2026-11-05T00:12:01.824Z"
+}

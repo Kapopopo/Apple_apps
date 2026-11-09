@@ -1,0 +1,36 @@
+{
+  "id": "panelui/cn",
+  "name": "Cn",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Merges Tailwind class names, with later classes winning conflicts.",
+  "framework": "react-native",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/cn.json",
+  "sourcePath": "apps/docs/public/r/cn.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "lib/cn.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "62fa9a8da0616516",
+  "importedAt": "2026-11-05T00:16:55.867Z"
+}

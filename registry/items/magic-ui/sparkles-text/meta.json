@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/sparkles-text",
+  "name": "Sparkles Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/sparkles-text",
+  "sourcePath": "https://magicui.design/r/sparkles-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/sparkles-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "sparkles-text"
+  },
+  "catalogId": "9b67ae68ed603890",
+  "contentHash": "bb87c223884f56da",
+  "importedAt": "2026-11-05T00:16:49.330Z"
+}

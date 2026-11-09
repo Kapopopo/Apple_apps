@@ -1,0 +1,125 @@
+{
+  "id": "origin-ui/comp-542",
+  "name": "Calendar 542",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "calendar",
+    "web"
+  ],
+  "description": "Exemple Origin UI : calendar.",
+  "framework": "react",
+  "dependencies": [
+    "@dnd-kit/core",
+    "@dnd-kit/modifiers",
+    "@dnd-kit/utilities",
+    "@remixicon/react",
+    "date-fns",
+    "lucide-react",
+    "sonner"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/calendar",
+    "origin-ui/checkbox",
+    "origin-ui/dialog",
+    "origin-ui/dropdown-menu",
+    "origin-ui/input",
+    "origin-ui/label",
+    "origin-ui/popover",
+    "origin-ui/radio-group",
+    "origin-ui/select",
+    "origin-ui/sonner",
+    "origin-ui/textarea",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-542.json",
+  "sourcePath": "apps/origin/public/r/comp-542.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-542.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/agenda-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/calendar-dnd-context.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/constants.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/day-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/draggable-event.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/droppable-cell.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/event-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/event-item.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/events-popup.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/event-calendar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/index.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/month-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/types.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/week-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/hooks/use-current-time-indicator.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/event-calendar/hooks/use-event-visibility.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-542.tsx"
+  },
+  "contentHash": "1c3bb28015795eb6",
+  "importedAt": "2026-11-05T17:59:42.454Z"
+}

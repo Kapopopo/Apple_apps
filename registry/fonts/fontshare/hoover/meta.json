@@ -1,0 +1,81 @@
+{
+  "id": "fontshare/hoover",
+  "name": "Hoover",
+  "type": "font",
+  "category": "Slab serif",
+  "tags": [
+    "banners",
+    "editorial",
+    "logo",
+    "logotype",
+    "magazines",
+    "poster",
+    "variable"
+  ],
+  "description": "Slab serif · 6 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/hoover",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Hoover par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Hoover",
+    "slug": "hoover",
+    "category": "Slab",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Thin",
+        "weight": 100,
+        "italic": false
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=hoover@1,100,300,400,500,700&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Gaetan Baehr"
+    ]
+  },
+  "contentHash": "d19bcde402fde7c5",
+  "importedAt": "2026-11-05T00:16:59.904Z"
+}

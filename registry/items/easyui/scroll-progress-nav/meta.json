@@ -1,0 +1,59 @@
+{
+  "id": "easyui/scroll-progress-nav",
+  "name": "Scroll Progress Navigation",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "3d",
+    "animé",
+    "floating",
+    "navigation",
+    "scroll",
+    "scroll physics"
+  ],
+  "description": "A floating table-of-contents navigation pill that tracks scroll depth, dynamically morphs between resting and floating states, highlights active sections, and enables smooth scrolling.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/ScrollProgressNav.tsx",
+  "sourcePath": "src/components/ui/ScrollProgressNav.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/ScrollProgressNav.tsx",
+      "role": "source",
+      "target": "components/ui/scroll-progress-nav.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/ScrollProgressNav.tsx"
+  },
+  "contentHash": "e4644a59c1af1d78",
+  "importedAt": "2026-11-05T00:16:53.536Z"
+}

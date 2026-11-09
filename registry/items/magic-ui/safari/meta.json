@@ -1,0 +1,51 @@
+{
+  "id": "magic-ui/safari",
+  "name": "Safari",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A safari browser mockup to showcase your website.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/safari.json",
+  "sourcePath": "apps/www/public/r/safari.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/safari.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/safari-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/safari-demo-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/safari-demo-3.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/safari-demo-4.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/safari-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8ea93c4c98dc1947",
+  "importedAt": "2026-11-05T17:59:28.204Z"
+}

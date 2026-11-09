@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/illustration-globe-vercel",
+  "name": "Illustration Globe Vercel",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "web"
+  ],
+  "description": "Globe deployment illustration",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/illustration-globe-vercel.json",
+  "sourcePath": "apps/www/public/r/illustration-globe-vercel.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/illustration-globe-vercel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/illustration-globe-vercel-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/illustration-globe-vercel-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "1c7876ee59a21de5",
+  "importedAt": "2026-11-05T17:59:32.931Z"
+}

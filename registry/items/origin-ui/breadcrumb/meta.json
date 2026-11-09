@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/breadcrumb",
+  "name": "Breadcrumb",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/breadcrumb.json",
+  "sourcePath": "apps/origin/public/r/breadcrumb.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/breadcrumb.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/breadcrumb.tsx"
+  },
+  "contentHash": "5be728f3c1f4b521",
+  "importedAt": "2026-11-05T17:59:40.410Z"
+}

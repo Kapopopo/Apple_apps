@@ -1,0 +1,36 @@
+{
+  "id": "shadcn/kbd",
+  "name": "Kbd",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/kbd.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/kbd.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/kbd.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "ui/kbd.tsx"
+  },
+  "contentHash": "3c0748634d0e5ad3",
+  "importedAt": "2026-11-05T17:59:23.069Z"
+}

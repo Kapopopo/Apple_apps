@@ -1,0 +1,48 @@
+{
+  "id": "shadcn/scroll-area",
+  "name": "Scroll Area",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "scroll",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-scroll-area"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/scroll-area.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/scroll-area.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/scroll-area.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/scroll-area-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/scroll-area-horizontal-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/scroll-area-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e225b9e805ab549e",
+  "importedAt": "2026-11-05T17:59:23.149Z"
+}

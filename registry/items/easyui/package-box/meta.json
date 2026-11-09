@@ -1,0 +1,46 @@
+{
+  "id": "easyui/package-box",
+  "name": "Package Box",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "3d",
+    "3d physics",
+    "animé",
+    "interactive",
+    "motion"
+  ],
+  "description": "A pure CSS 3D cardboard package box featuring interactive tape-splitting physics, flap-folding choreography, and an animated packing slip that rises out and turns to face the viewer.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/PackageBox.tsx",
+  "sourcePath": "src/components/ui/PackageBox.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/PackageBox.tsx",
+      "role": "source",
+      "target": "components/ui/package-box.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/PackageBox.tsx"
+  },
+  "contentHash": "f5e9ed65e9b98e84",
+  "importedAt": "2026-11-05T00:16:53.238Z",
+  "updatedAt": "2026-11-05T00:19:19.969Z"
+}

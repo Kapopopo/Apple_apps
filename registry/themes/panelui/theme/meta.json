@@ -1,0 +1,111 @@
+{
+  "id": "panelui/theme",
+  "name": "Thème PanelUI (React Native)",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens"
+  ],
+  "description": "Design tokens for every theme, in light and dark.",
+  "framework": "react-native",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/theme.json",
+  "sourcePath": "apps/docs/public/r/theme.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--color-background": "#1c1c1c",
+        "--color-foreground": "#ededed",
+        "--color-card": "#1f1f1f",
+        "--color-card-foreground": "#ededed",
+        "--color-popover": "#232323",
+        "--color-popover-foreground": "#ededed",
+        "--color-overlay": "#2a2a2a",
+        "--color-overlay-foreground": "#ededed",
+        "--color-inset": "rgba(0, 0, 0, 0.22)",
+        "--color-primary": "#3ecf8e",
+        "--color-primary-foreground": "#052e1b",
+        "--color-secondary": "rgba(255, 255, 255, 0.07)",
+        "--color-secondary-foreground": "#ededed",
+        "--color-muted": "rgba(255, 255, 255, 0.07)",
+        "--color-muted-foreground": "#8f8f8f",
+        "--color-accent": "rgba(62, 207, 142, 0.12)",
+        "--color-accent-foreground": "#3ecf8e",
+        "--color-destructive": "#f15757",
+        "--color-destructive-foreground": "#f87171",
+        "--color-destructive-solid-foreground": "#171717",
+        "--color-info": "#3b82f6",
+        "--color-info-foreground": "#60a5fa",
+        "--color-info-solid-foreground": "#171717",
+        "--color-success": "#3ecf8e",
+        "--color-success-foreground": "#4ade80",
+        "--color-success-solid-foreground": "#171717",
+        "--color-warning": "#f59e0b",
+        "--color-warning-foreground": "#fbbf24",
+        "--color-warning-solid-foreground": "#171717",
+        "--color-border": "rgba(255, 255, 255, 0.07)",
+        "--color-input": "rgba(255, 255, 255, 0.1)",
+        "--color-ring": "#3ecf8e",
+        "--color-surface": "#242424",
+        "--color-surface-secondary": "#2a2a2a",
+        "--color-surface-tertiary": "#303030",
+        "--color-skeleton": "rgba(255, 255, 255, 0.11)",
+        "--color-info-soft": "rgba(59, 130, 246, 0.08)",
+        "--color-info-subtle": "rgba(59, 130, 246, 0.16)",
+        "--color-success-soft": "rgba(62, 207, 142, 0.08)",
+        "--color-success-subtle": "rgba(62, 207, 142, 0.16)",
+        "--color-warning-soft": "rgba(245, 158, 11, 0.08)",
+        "--color-warning-subtle": "rgba(245, 158, 11, 0.16)",
+        "--color-destructive-soft": "rgba(241, 87, 87, 0.08)",
+        "--color-destructive-subtle": "rgba(241, 87, 87, 0.16)",
+        "--color-code-keyword": "#d2a8ff",
+        "--color-code-string": "#7ee787",
+        "--color-code-number": "#79c0ff",
+        "--color-code-comment": "#8b949e",
+        "--color-code-function": "#d2a8ff",
+        "--color-code-property": "#ffa657",
+        "--color-code-punctuation": "#8b949e",
+        "--color-code-inserted": "#7ee787",
+        "--color-code-deleted": "#ff7b72",
+        "--color-chart-1": "#3ecf8e",
+        "--color-chart-2": "#ededed",
+        "--color-chart-3": "#60a5fa",
+        "--color-chart-4": "#fbbf24",
+        "--color-chart-5": "#f472b6"
+      },
+      "dark": {}
+    },
+    "typography": {
+      "--font-mono": "monospace"
+    },
+    "radius": {
+      "--radius-xs": "6px",
+      "--radius-sm": "8px",
+      "--radius-md": "12px",
+      "--radius-lg": "14px",
+      "--radius-xl": "18px",
+      "--radius-2xl": "22px",
+      "--radius-3xl": "28px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "4ba7da41477e833b",
+  "importedAt": "2026-11-05T00:16:56.295Z"
+}

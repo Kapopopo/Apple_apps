@@ -1,0 +1,6 @@
+/* Array — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=array@400,401,600,601,700,701&display=swap');
+
+:root {
+  --font-array: 'Array', sans-serif;
+}

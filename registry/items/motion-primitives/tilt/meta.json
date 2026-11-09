@@ -1,0 +1,39 @@
+{
+  "id": "motion-primitives/tilt",
+  "name": "Tilt",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "3d",
+    "animé",
+    "portfolio",
+    "survol"
+  ],
+  "description": "Donner du relief à un projet avec une interaction qui suit le pointeur.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/tilt",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/tilt.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/tilt.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "tilt"
+  },
+  "catalogId": "86d534cfdb2841c0",
+  "contentHash": "d8d767d00b12700a",
+  "importedAt": "2026-11-05T00:16:49.215Z"
+}

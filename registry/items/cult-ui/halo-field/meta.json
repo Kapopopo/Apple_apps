@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/halo-field",
+  "name": "Halo Field",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "Form field layout (label, description, error) for HaloInput and HaloTextarea",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/field"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-field.json",
+  "sourcePath": "apps/www/public/r/halo-field.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-field.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-field-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-field-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "4661ebb57e1ec2bc",
+  "importedAt": "2026-11-05T17:59:32.844Z"
+}

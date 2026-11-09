@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-202",
+  "name": "Label 202",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "label",
+    "native select",
+    "select",
+    "web"
+  ],
+  "description": "Exemple Origin UI : label, select, native select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/select-native"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-202.json",
+  "sourcePath": "apps/origin/public/r/comp-202.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-202.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-202.tsx"
+  },
+  "contentHash": "a341dfef078044b2",
+  "importedAt": "2026-11-05T17:59:40.849Z"
+}

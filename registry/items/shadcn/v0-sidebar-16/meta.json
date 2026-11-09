@@ -1,0 +1,48 @@
+{
+  "id": "shadcn/v0-sidebar-16",
+  "name": "V0 Sidebar 16",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "An inset sidebar with site header navigation.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "next"
+  ],
+  "registryDependencies": [
+    "shadcn/avatar",
+    "shadcn/breadcrumb",
+    "shadcn/button",
+    "shadcn/collapsible",
+    "shadcn/dropdown-menu",
+    "shadcn/navigation-menu",
+    "shadcn/separator",
+    "shadcn/sidebar",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/v0-sidebar-16.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/v0-sidebar-16.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "v0/sidebar-16.tsx",
+      "role": "source",
+      "target": "components/sidebar-16.tsx"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "v0/sidebar-16.tsx"
+  },
+  "contentHash": "9dc027c299d36f43",
+  "importedAt": "2026-11-05T17:59:23.520Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "magic-ui/blur-fade",
+  "name": "Blur Fade",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "animé",
+    "entree",
+    "portfolio"
+  ],
+  "description": "Révéler un contenu avec une transition douce.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/blur-fade",
+  "sourcePath": "https://magicui.design/r/blur-fade.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/blur-fade.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "blur-fade"
+  },
+  "catalogId": "d49c1252e403b645",
+  "contentHash": "f0a7af77f58f2b46",
+  "importedAt": "2026-11-05T00:16:49.431Z"
+}

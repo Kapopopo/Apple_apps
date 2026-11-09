@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/topo-background",
+  "name": "Topo Background",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/topo-background.json",
+  "sourcePath": "public/r/topo-background.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/topo-background.tsx",
+      "role": "source",
+      "target": "components/kokonutui/topo-background.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/topo-background.tsx"
+  },
+  "contentHash": "8e4426d12ca7a926",
+  "importedAt": "2026-11-05T17:59:35.872Z"
+}

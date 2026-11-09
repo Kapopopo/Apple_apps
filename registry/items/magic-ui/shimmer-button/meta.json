@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/shimmer-button",
+  "name": "Shimmer Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Mettre en avant un appel à l’action unique avec un reflet discret.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/shimmer-button",
+  "sourcePath": "https://magicui.design/r/shimmer-button.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/shimmer-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "shimmer-button"
+  },
+  "catalogId": "2f57e5281d42adcc",
+  "contentHash": "88a48212cb616d3e",
+  "importedAt": "2026-11-05T00:16:49.220Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/chart-bar-mixed",
+  "name": "Chart Bar Mixed",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/card",
+    "shadcn/chart"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/chart-bar-mixed.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/chart-bar-mixed.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "charts/chart-bar-mixed.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "charts/chart-bar-mixed.tsx"
+  },
+  "contentHash": "7b07a89fc2b487ce",
+  "importedAt": "2026-11-05T17:59:22.785Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/slider",
+  "name": "Slider",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/tooltip",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/slider.json",
+  "sourcePath": "apps/origin/public/r/slider.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/slider.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/slider.tsx"
+  },
+  "contentHash": "5b9d23573bde2ecd",
+  "importedAt": "2026-11-05T17:59:43.194Z"
+}

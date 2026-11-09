@@ -1,0 +1,52 @@
+{
+  "id": "easyui/sticky-pages",
+  "name": "Sticky Pages",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "3d",
+    "css sticky",
+    "motion",
+    "new",
+    "scroll",
+    "stacking"
+  ],
+  "description": "A pure static full-page sticky stacking scroll component where pages slide up and stack cleanly one over another without any tilting or distortion, before releasing smoothly into natural page scrolling.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/StickyPages.tsx",
+  "sourcePath": "src/components/ui/StickyPages.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/StickyPages.tsx",
+      "role": "source",
+      "target": "components/ui/sticky-pages.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/StickyPages.tsx"
+  },
+  "contentHash": "542f5a0c41ef5813",
+  "importedAt": "2026-11-05T00:16:53.961Z"
+}

@@ -1,0 +1,6 @@
+/* Neco — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=neco@1,400,500,700,900&display=swap');
+
+:root {
+  --font-neco: 'Neco', serif;
+}

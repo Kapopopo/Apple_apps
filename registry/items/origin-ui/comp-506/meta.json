@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-506",
+  "name": "Calendar 506",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "button",
+    "calendar",
+    "date",
+    "react daypicker",
+    "web"
+  ],
+  "description": "Exemple Origin UI : calendar, date, button, react daypicker.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/calendar"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-506.json",
+  "sourcePath": "apps/origin/public/r/comp-506.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-506.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-506.tsx"
+  },
+  "contentHash": "810b2879a1ac6b7a",
+  "importedAt": "2026-11-05T17:59:42.304Z"
+}

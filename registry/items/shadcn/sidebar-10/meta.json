@@ -1,0 +1,73 @@
+{
+  "id": "shadcn/sidebar-10",
+  "name": "Sidebar 10",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "A sidebar in a popover.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/breadcrumb",
+    "shadcn/button",
+    "shadcn/collapsible",
+    "shadcn/dropdown-menu",
+    "shadcn/popover",
+    "shadcn/separator",
+    "shadcn/sidebar"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar-10.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar-10.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/sidebar-10/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/sidebar-10/components/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/nav-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/nav-favorites.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/nav-main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/nav-secondary.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/nav-workspaces.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-10/components/team-switcher.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sidebar-10/page.tsx"
+  },
+  "contentHash": "5618ca3b85bd57f4",
+  "importedAt": "2026-11-05T17:59:23.351Z"
+}

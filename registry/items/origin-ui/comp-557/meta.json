@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-557",
+  "name": "Image 557",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "crop",
+    "image",
+    "web",
+    "zoom"
+  ],
+  "description": "Exemple Origin UI : image, crop, zoom.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/cropper"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-557.json",
+  "sourcePath": "apps/origin/public/r/comp-557.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-557.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-557.tsx"
+  },
+  "contentHash": "9fe1f27b82115558",
+  "importedAt": "2026-11-05T17:59:42.566Z"
+}

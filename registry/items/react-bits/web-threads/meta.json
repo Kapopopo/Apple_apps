@@ -1,0 +1,34 @@
+{
+  "id": "react-bits/web-threads",
+  "name": "WebThreads",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web"
+  ],
+  "description": "Glowing threads woven through luminous pinch points that light up under the cursor and carry light on click.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/WebThreads-TS-TW.json",
+  "sourcePath": "public/r/WebThreads-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "WebThreads/WebThreads.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "WebThreads/WebThreads.tsx"
+  },
+  "contentHash": "aceae0e99d8bc2fa",
+  "importedAt": "2026-11-05T17:59:46.216Z"
+}

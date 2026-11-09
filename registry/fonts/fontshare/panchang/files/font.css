@@ -1,0 +1,6 @@
+/* Panchang — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=panchang@1,200,300,400,500,600,700,800&display=swap');
+
+:root {
+  --font-panchang: 'Panchang', sans-serif;
+}

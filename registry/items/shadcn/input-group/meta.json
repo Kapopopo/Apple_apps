@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/input-group",
+  "name": "Input Group",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/input",
+    "shadcn/textarea",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/input-group.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/input-group.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/input-group.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "ui/input-group.tsx"
+  },
+  "contentHash": "4846fcd3633cf1c7",
+  "importedAt": "2026-11-05T17:59:23.043Z"
+}

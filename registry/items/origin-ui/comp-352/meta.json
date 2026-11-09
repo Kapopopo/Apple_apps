@@ -1,0 +1,42 @@
+{
+  "id": "origin-ui/comp-352",
+  "name": "Accordion 352",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accordion",
+    "collapsible",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : accordion, collapsible, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/accordion",
+    "origin-ui/collapsible"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-352.json",
+  "sourcePath": "apps/origin/public/r/comp-352.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-352.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-352.tsx"
+  },
+  "contentHash": "e9fc5d88ca6594b9",
+  "importedAt": "2026-11-05T17:59:41.690Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "magic-ui/client-tweet-card",
+  "name": "Client Tweet Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
+  "framework": "react",
+  "dependencies": [
+    "react-tweet"
+  ],
+  "registryDependencies": [
+    "magic-ui/tweet-card"
+  ],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/client-tweet-card.json",
+  "sourcePath": "apps/www/public/r/client-tweet-card.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/client-tweet-card.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/magicui/client-tweet-card.tsx"
+  },
+  "contentHash": "ad8351b74b211ec5",
+  "importedAt": "2026-11-05T17:59:28.054Z"
+}

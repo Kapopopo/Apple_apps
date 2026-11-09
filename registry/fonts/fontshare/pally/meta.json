@@ -1,0 +1,72 @@
+{
+  "id": "fontshare/pally",
+  "name": "Pally",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "books",
+    "comics",
+    "editorial",
+    "funny",
+    "informal",
+    "kids",
+    "poster",
+    "variable"
+  ],
+  "description": "Sans serif · 4 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/pally",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Pally par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Pally",
+    "slug": "pally",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=pally@1,400,500,700&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Indian Type Foundry"
+    ]
+  },
+  "contentHash": "02449fe54929c485",
+  "importedAt": "2026-11-05T00:16:59.901Z"
+}

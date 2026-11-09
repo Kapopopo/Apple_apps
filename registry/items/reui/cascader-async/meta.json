@@ -1,0 +1,41 @@
+{
+  "id": "reui/cascader-async",
+  "name": "Cascader Async",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/cascader-context",
+    "reui/cascader-lib",
+    "reui/cascader-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/cascader-async.json",
+  "sourcePath": "public/r/styles/base-luma/cascader-async.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/cascader/cascader-async.tsx",
+      "role": "source",
+      "target": "components/reui/cascader/cascader-async.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/cascader/cascader-async.tsx"
+  },
+  "contentHash": "e9f52878fc8f15d3",
+  "importedAt": "2026-11-05T17:59:38.036Z",
+  "updatedAt": "2026-11-05T18:07:49.658Z"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "fontshare/paquito",
+  "name": "Paquito",
+  "type": "font",
+  "category": "Serif",
+  "tags": [
+    "books",
+    "comics",
+    "funny",
+    "informal",
+    "kids",
+    "poster",
+    "variable"
+  ],
+  "description": "Serif · 4 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/paquito",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Paquito par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Paquito",
+    "slug": "paquito",
+    "category": "Serif, Slab",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=paquito@1,400,500,700&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Juanjo Lopez"
+    ]
+  },
+  "contentHash": "837538cf3aec8ca1",
+  "importedAt": "2026-11-05T00:16:59.942Z",
+  "updatedAt": "2026-11-05T00:37:05.269Z"
+}

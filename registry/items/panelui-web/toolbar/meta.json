@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/toolbar",
+  "name": "Toolbar",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "A strip of tools and actions for an editor, with one tool chosen at a time.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/toolbar.json",
+  "sourcePath": "apps/docs/public/r/web/toolbar.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/toolbar.tsx",
+      "role": "source",
+      "target": "@components/panelui/toolbar.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/toolbar/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/toolbar/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "1b4eeb44f06a60fe",
+  "importedAt": "2026-11-05T00:16:57.213Z"
+}

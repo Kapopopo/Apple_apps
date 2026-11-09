@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/gateway-route-illustration",
+  "name": "Gateway Route Illustration",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "web"
+  ],
+  "description": "Illustration for gateway routing",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/gateway-route-illustration.json",
+  "sourcePath": "apps/www/public/r/gateway-route-illustration.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/gateway-route-illustration.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/gateway-route-illustration-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/gateway-route-illustration-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0e78646a1d1718e9",
+  "importedAt": "2026-11-05T17:59:32.798Z"
+}

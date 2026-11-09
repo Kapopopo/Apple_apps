@@ -1,0 +1,6 @@
+/* Bonny — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=bonny@1,100,300,400,500,700&display=swap');
+
+:root {
+  --font-bonny: 'Bonny', serif;
+}

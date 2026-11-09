@@ -1,0 +1,40 @@
+{
+  "id": "magic-ui/particles",
+  "name": "Particles",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "3d",
+    "web"
+  ],
+  "description": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/particles.json",
+  "sourcePath": "apps/www/public/r/particles.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/particles.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/particles-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/particles-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "775de8492fd9260c",
+  "importedAt": "2026-11-05T17:59:28.189Z"
+}

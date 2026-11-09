@@ -1,0 +1,49 @@
+{
+  "id": "shadcn/sheet",
+  "name": "Sheet",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-dialog",
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sheet.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sheet.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/sheet.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/sheet-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/sheet-side.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/sheet-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "73d4dea424ed77fc",
+  "importedAt": "2026-11-05T17:59:23.175Z"
+}

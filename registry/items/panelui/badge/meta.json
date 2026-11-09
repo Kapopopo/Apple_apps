@@ -1,0 +1,40 @@
+{
+  "id": "panelui/badge",
+  "name": "Badge",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "expo"
+  ],
+  "description": "Compact status label, dot, or notification count.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/badge.json",
+  "sourcePath": "apps/docs/public/r/badge.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/badge.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "a69a0921fd28cebd",
+  "importedAt": "2026-11-05T00:16:55.793Z",
+  "updatedAt": "2026-11-05T00:18:17.781Z"
+}

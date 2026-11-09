@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/shine-border",
+  "name": "Shine Border",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Animer un reflet coloré le long du contour d’une carte.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/shine-border",
+  "sourcePath": "https://magicui.design/r/shine-border.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/shine-border.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "shine-border"
+  },
+  "catalogId": "8b24e2ee002fc226",
+  "contentHash": "f1bd7af081a9030d",
+  "importedAt": "2026-11-05T00:16:49.411Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "kokonut-ui/morph-popover",
+  "name": "Morph Popover",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/morph-popover.json",
+  "sourcePath": "public/r/morph-popover.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/morph-popover.tsx",
+      "role": "source",
+      "target": "components/kokonutui/morph-popover.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/morph-popover.tsx"
+  },
+  "contentHash": "12d23de5384e80cc",
+  "importedAt": "2026-11-05T17:59:35.546Z"
+}

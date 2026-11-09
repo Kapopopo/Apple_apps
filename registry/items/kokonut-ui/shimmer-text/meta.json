@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/shimmer-text",
+  "name": "Shimmer Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/shimmer-text.json",
+  "sourcePath": "public/r/shimmer-text.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/shimmer-text.tsx",
+      "role": "source",
+      "target": "components/kokonutui/shimmer-text.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/shimmer-text.tsx"
+  },
+  "contentHash": "d55286047d3af86d",
+  "importedAt": "2026-11-05T17:59:35.756Z"
+}

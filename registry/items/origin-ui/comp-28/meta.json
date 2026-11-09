@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-28",
+  "name": "Input 28",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "button",
+    "input",
+    "label",
+    "number",
+    "react aria",
+    "web"
+  ],
+  "description": "Exemple Origin UI : input, label, button, number, react aria.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "react-aria-components"
+  ],
+  "registryDependencies": [],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-28.json",
+  "sourcePath": "apps/origin/public/r/comp-28.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-28.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-28.tsx"
+  },
+  "contentHash": "3642684c2ede981c",
+  "importedAt": "2026-11-05T17:59:41.131Z"
+}

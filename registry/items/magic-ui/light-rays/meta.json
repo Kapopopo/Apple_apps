@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/light-rays",
+  "name": "Light Rays",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "boucle",
+    "portfolio"
+  ],
+  "description": "Créer une ambiance animée derrière un contenu lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/light-rays",
+  "sourcePath": "https://magicui.design/r/light-rays.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/light-rays.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "light-rays"
+  },
+  "catalogId": "e55327b56e316a00",
+  "contentHash": "a2c815b1cb0428d7",
+  "importedAt": "2026-11-05T00:16:49.403Z"
+}

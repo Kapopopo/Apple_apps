@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-184",
+  "name": "Switch 184",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "darkmode",
+    "label",
+    "radix",
+    "switch",
+    "web"
+  ],
+  "description": "Exemple Origin UI : switch, label, darkmode, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/label",
+    "origin-ui/switch"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-184.json",
+  "sourcePath": "apps/origin/public/r/comp-184.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-184.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-184.tsx"
+  },
+  "contentHash": "f15f14df8e147c43",
+  "importedAt": "2026-11-05T17:59:40.781Z"
+}

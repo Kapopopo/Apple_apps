@@ -1,0 +1,39 @@
+{
+  "id": "kokonut-ui/marker-text",
+  "name": "Marker Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/marker-text.json",
+  "sourcePath": "public/r/marker-text.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/marker-text.tsx",
+      "role": "source",
+      "target": "components/kokonutui/marker-text.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/marker-text.tsx"
+  },
+  "contentHash": "1c00b9efe0b8610c",
+  "importedAt": "2026-11-05T17:59:35.533Z"
+}

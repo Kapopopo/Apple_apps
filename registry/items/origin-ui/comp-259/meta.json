@@ -1,0 +1,45 @@
+{
+  "id": "origin-ui/comp-259",
+  "name": "Slider 259",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "button",
+    "label",
+    "pricing",
+    "radix",
+    "slider",
+    "web"
+  ],
+  "description": "Exemple Origin UI : slider, label, button, pricing, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/label",
+    "origin-ui/slider"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-259.json",
+  "sourcePath": "apps/origin/public/r/comp-259.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-259.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-259.tsx"
+  },
+  "contentHash": "ab49f25fded9d4d8",
+  "importedAt": "2026-11-05T17:59:41.051Z"
+}

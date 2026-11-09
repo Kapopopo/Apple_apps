@@ -1,0 +1,38 @@
+{
+  "id": "shadcn/calendar-10",
+  "name": "Calendar 10",
+  "type": "section",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "Today button",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/calendar",
+    "shadcn/card"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/calendar-10.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/calendar-10.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/calendar-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/calendar-10.tsx"
+  },
+  "contentHash": "65addc59c23875f3",
+  "importedAt": "2026-11-05T17:59:22.647Z"
+}

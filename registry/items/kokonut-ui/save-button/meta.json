@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/save-button",
+  "name": "Save Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/save-button.json",
+  "sourcePath": "public/r/save-button.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/save-button.tsx",
+      "role": "source",
+      "target": "components/kokonutui/save-button.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/save-button.tsx"
+  },
+  "contentHash": "6ee5524bdddcc281",
+  "importedAt": "2026-11-05T17:59:35.581Z"
+}

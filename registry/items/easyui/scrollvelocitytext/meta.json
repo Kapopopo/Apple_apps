@@ -1,0 +1,52 @@
+{
+  "id": "easyui/scrollvelocitytext",
+  "name": "Scroll Velocity Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "accessibility",
+    "kinetic typography",
+    "motion",
+    "scroll",
+    "scroll driven",
+    "zero overhead"
+  ],
+  "description": "A direction-aware kinetic typography component that smoothly expands letter-spacing and scale on downward scroll, and winds back on upward scroll, with zero per-frame React re-renders.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Scrollvelocitytext.tsx",
+  "sourcePath": "src/components/ui/Scrollvelocitytext.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Scrollvelocitytext.tsx",
+      "role": "source",
+      "target": "components/ui/scrollvelocitytext.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Scrollvelocitytext.tsx"
+  },
+  "contentHash": "eb9f70e6cb1eb98f",
+  "importedAt": "2026-11-05T00:16:53.555Z"
+}

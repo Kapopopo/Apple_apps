@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/word-rotate",
+  "name": "Word Rotate",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Présenter plusieurs bénéfices dans un même titre, avec une pause lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/word-rotate",
+  "sourcePath": "https://magicui.design/r/word-rotate.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/word-rotate.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "word-rotate"
+  },
+  "catalogId": "343e5a545f264c57",
+  "contentHash": "bb502e207a294475",
+  "importedAt": "2026-11-05T00:16:49.311Z"
+}

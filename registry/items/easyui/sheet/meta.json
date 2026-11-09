@@ -1,0 +1,55 @@
+{
+  "id": "easyui/sheet",
+  "name": "Sheet",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "accessible",
+    "animé",
+    "drag",
+    "drag to dismiss",
+    "light & dark",
+    "overlays",
+    "spring physics"
+  ],
+  "description": "A draggable sheet / drawer that slides in from any side and can be dragged away to dismiss — swipe left/right sheets anywhere on touch, top/bottom sheets via the grab handle. Springs back if you let go early.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/sheet.tsx",
+  "sourcePath": "src/components/ui/sheet.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "role": "source",
+      "target": "components/ui/sheet.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/sheet.tsx"
+  },
+  "contentHash": "e7b7d29c979d99d5",
+  "importedAt": "2026-11-05T00:16:53.614Z"
+}

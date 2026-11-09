@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/halo-dropzone",
+  "name": "Halo Dropzone",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "File dropzone with animated rim, frosted fill, moving border trail, and file-type glyphs",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-dropzone.json",
+  "sourcePath": "apps/www/public/r/halo-dropzone.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-dropzone.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-dropzone-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-dropzone-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "4ff9ceb1d68bc90f",
+  "importedAt": "2026-11-05T17:59:32.840Z"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "easyui/peek-card",
+  "name": "Peek Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "context preview",
+    "overlays",
+    "popovers",
+    "survol"
+  ],
+  "description": "An origin-anchored contextual preview popover that emerges directly from target triggers on hover or tap with smart collision edge detection and rich metadata summaries.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/PeekCard.tsx",
+  "sourcePath": "src/components/ui/PeekCard.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/PeekCard.tsx",
+      "role": "source",
+      "target": "components/ui/peek-card.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/PeekCard.tsx"
+  },
+  "contentHash": "12d5b97445e0f11a",
+  "importedAt": "2026-11-05T00:16:53.322Z"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "fontshare/pencerio",
+  "name": "Pencerio",
+  "type": "font",
+  "category": "Manuscrite",
+  "tags": [
+    "calligraphy",
+    "fashion",
+    "packaging",
+    "signboards",
+    "titles",
+    "wedding"
+  ],
+  "description": "Manuscrite · 1 style · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/pencerio",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Pencerio par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Pencerio",
+    "slug": "pencerio",
+    "category": "Script",
+    "styles": [
+      {
+        "name": "Hairline",
+        "weight": 50,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=pencerio@50&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Manushi Parikh"
+    ]
+  },
+  "contentHash": "6a7106df925bda10",
+  "importedAt": "2026-11-05T00:16:59.818Z"
+}

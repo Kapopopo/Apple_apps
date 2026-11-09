@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/hyper-text",
+  "name": "Hyper Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "landing page",
+    "survol"
+  ],
+  "description": "Décoder un titre au survol avec un effet de caractères aléatoires.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/hyper-text",
+  "sourcePath": "https://magicui.design/r/hyper-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/hyper-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "hyper-text"
+  },
+  "catalogId": "030f0e1fb61d5fff",
+  "contentHash": "97528fc5026a186e",
+  "importedAt": "2026-11-05T00:16:49.325Z"
+}

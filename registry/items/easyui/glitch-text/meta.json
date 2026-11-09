@@ -1,0 +1,53 @@
+{
+  "id": "easyui/glitch-text",
+  "name": "Glitch Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "cyberpunk",
+    "glitch",
+    "interactive",
+    "kinetic typography",
+    "motion"
+  ],
+  "description": "A multi-modal cybernetic glitch typography component featuring 5 distinct animation variants (RGB split chromatic aberration, cyberpunk clip-slicing, analog VHS tracking loss, matrix rune scramble decode, and electrical voltage surge).",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/GlitchText.tsx",
+  "sourcePath": "src/components/ui/GlitchText.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/GlitchText.tsx",
+      "role": "source",
+      "target": "components/ui/glitch-text.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/GlitchText.tsx"
+  },
+  "contentHash": "7c8de125d65d9e87",
+  "importedAt": "2026-11-05T00:16:52.414Z"
+}

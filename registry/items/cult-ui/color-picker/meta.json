@@ -1,0 +1,48 @@
+{
+  "id": "cult-ui/color-picker",
+  "name": "Color Picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Interactive color picker component with HSL support and preset colors",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "cult-ui/popover",
+    "shadcn/button",
+    "shadcn/input",
+    "shadcn/label"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/color-picker.json",
+  "sourcePath": "apps/www/public/r/color-picker.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/color-picker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/color-picker-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/color-picker-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5e8145f2519df0a5",
+  "importedAt": "2026-11-05T17:59:32.694Z"
+}

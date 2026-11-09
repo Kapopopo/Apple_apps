@@ -1,0 +1,6 @@
+/* RX100 — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=rx-100@400&display=swap');
+
+:root {
+  --font-rx-100: 'RX100', sans-serif;
+}

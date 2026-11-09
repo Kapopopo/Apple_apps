@@ -1,0 +1,53 @@
+{
+  "id": "easyui/stepper",
+  "name": "Stepper",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "connector line",
+    "directional panels",
+    "draw checkmark",
+    "light & dark",
+    "navigation"
+  ],
+  "description": "A multi-step progress indicator with line fills, gliding active rings, drawing checkmarks, and direction-aware sliding step panels.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/stepper.tsx",
+  "sourcePath": "src/components/ui/stepper.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/stepper.tsx",
+      "role": "source",
+      "target": "components/ui/stepper.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/stepper.tsx"
+  },
+  "contentHash": "0d18966f24d66ff9",
+  "importedAt": "2026-11-05T00:16:53.946Z"
+}

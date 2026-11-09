@@ -1,0 +1,38 @@
+{
+  "id": "shadcn/calendar-20",
+  "name": "Calendar 20",
+  "type": "section",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "With time presets",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/calendar",
+    "shadcn/card"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/calendar-20.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/calendar-20.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/calendar-20.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/calendar-20.tsx"
+  },
+  "contentHash": "cbaf7d2d345c53ae",
+  "importedAt": "2026-11-05T17:59:22.677Z"
+}

@@ -1,0 +1,6 @@
+/* Pencerio — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=pencerio@50&display=swap');
+
+:root {
+  --font-pencerio: 'Pencerio', cursive;
+}

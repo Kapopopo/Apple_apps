@@ -1,0 +1,48 @@
+{
+  "id": "easyui/not-found",
+  "name": "Not Found",
+  "type": "screen",
+  "category": "Texte",
+  "tags": [
+    "404 page",
+    "accessible",
+    "animé",
+    "feedback",
+    "micro-interactions",
+    "proximity response",
+    "spring physics"
+  ],
+  "description": "A minimal, production-ready 404 / route error component featuring floating spring-physics proximity displacement on individual glyphs, clear typography hierarchy, and accessible recovery actions.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/NotFound.tsx",
+  "sourcePath": "src/components/ui/NotFound.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/NotFound.tsx",
+      "role": "source",
+      "target": "components/ui/not-found.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/NotFound.tsx"
+  },
+  "contentHash": "a6b1e4fe019ba4e7",
+  "importedAt": "2026-11-05T00:16:52.966Z",
+  "updatedAt": "2026-11-05T00:18:17.490Z"
+}

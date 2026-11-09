@@ -1,0 +1,58 @@
+{
+  "id": "easyui/directional-tooltip",
+  "name": "DirectionalTooltip",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "accessible",
+    "animé",
+    "directional",
+    "light & dark",
+    "overlays",
+    "spring in"
+  ],
+  "description": "A tooltip that appears from the direction it originates — it starts a small distance outside the trigger in its preferred direction and springs inward, so it feels like it materializes from the trigger.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DirectionalTooltip.tsx",
+  "sourcePath": "src/components/ui/DirectionalTooltip.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DirectionalTooltip.tsx",
+      "role": "source",
+      "target": "components/ui/directional-tooltip.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DirectionalTooltip.tsx"
+  },
+  "contentHash": "bdaf0dfb064e83bb",
+  "importedAt": "2026-11-05T00:16:52.059Z"
+}

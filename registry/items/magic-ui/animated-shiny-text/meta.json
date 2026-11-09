@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/animated-shiny-text",
+  "name": "Animated Shiny Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/animated-shiny-text",
+  "sourcePath": "https://magicui.design/r/animated-shiny-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-shiny-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-shiny-text"
+  },
+  "catalogId": "900fb3157c0af004",
+  "contentHash": "25aa64362e1c9562",
+  "importedAt": "2026-11-05T00:16:49.320Z"
+}

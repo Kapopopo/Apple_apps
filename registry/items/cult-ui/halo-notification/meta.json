@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/halo-notification",
+  "name": "Halo Notification",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Polished notification surface for local AnimatePresence use with rim variants and glyph stagger",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-notification.json",
+  "sourcePath": "apps/www/public/r/halo-notification.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-notification.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-notification-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-notification-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8a5a2999b67d2b98",
+  "importedAt": "2026-11-05T17:59:32.854Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "shadcn/chart-tooltip-label-formatter",
+  "name": "Chart Tooltip Label Formatter",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/card",
+    "shadcn/chart"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/chart-tooltip-label-formatter.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/chart-tooltip-label-formatter.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "charts/chart-tooltip-label-formatter.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "charts/chart-tooltip-label-formatter.tsx"
+  },
+  "contentHash": "ef6210c46a949b66",
+  "importedAt": "2026-11-05T17:59:22.962Z"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "easyui/advanced-data-table",
+  "name": "Advanced Data Table",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "accessible",
+    "animé",
+    "enterprise",
+    "forms",
+    "interactive",
+    "table"
+  ],
+  "description": "A powerful, accessible data table component with multi-column sorting, faceted filters, global search, row selection, bulk actions, expandable sub-rows, and pagination.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/AdvancedDataTable.tsx",
+  "sourcePath": "src/components/ui/AdvancedDataTable.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/AdvancedDataTable.tsx",
+      "role": "source",
+      "target": "components/ui/advanced-data-table.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/AdvancedDataTable.tsx"
+  },
+  "contentHash": "1648e2637ca5d65e",
+  "importedAt": "2026-11-05T00:16:51.456Z"
+}

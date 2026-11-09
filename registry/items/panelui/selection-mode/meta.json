@@ -1,0 +1,53 @@
+{
+  "id": "panelui/selection-mode",
+  "name": "Selection Mode",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Pick several things at once, on a screen or in a sheet.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/bottom-sheet",
+    "panelui/cn",
+    "panelui/collapse",
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/text",
+    "panelui/use-back-handler"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/selection-mode.json",
+  "sourcePath": "apps/docs/public/r/selection-mode.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/selection-mode.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/selection-mode-contracts.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "a8e1177d98fc64df",
+  "importedAt": "2026-11-05T00:16:56.205Z",
+  "updatedAt": "2026-11-05T00:18:17.917Z"
+}

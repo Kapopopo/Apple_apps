@@ -1,0 +1,45 @@
+{
+  "id": "origin-ui/comp-325",
+  "name": "Dialog 325",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "authentication",
+    "dialog",
+    "form",
+    "modal",
+    "radix",
+    "signup",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, signup, authentication, form, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dialog",
+    "origin-ui/input",
+    "origin-ui/label"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-325.json",
+  "sourcePath": "apps/origin/public/r/comp-325.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-325.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-325.tsx"
+  },
+  "contentHash": "7c3c28cdf3216922",
+  "importedAt": "2026-11-05T17:59:41.548Z"
+}

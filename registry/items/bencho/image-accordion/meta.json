@@ -1,0 +1,45 @@
+{
+  "id": "bencho/image-accordion",
+  "name": "Image accordion",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "hover",
+    "survol"
+  ],
+  "description": "Hover a photo and it opens while its neighbours give way around it.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/image-accordion",
+  "sourcePath": "blocks/image-accordion",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/image-accordion/Accordion.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/image-accordion/Accordion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/image-accordion/README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/image-accordion/Accordion.tsx",
+    "exportName": "Accordion"
+  },
+  "contentHash": "22f2da82e348ac18",
+  "importedAt": "2026-11-05T00:16:58.611Z"
+}

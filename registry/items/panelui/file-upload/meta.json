@@ -1,0 +1,58 @@
+{
+  "id": "panelui/file-upload",
+  "name": "File Upload",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Pick files and photos, check them, and run their uploads.",
+  "framework": "react-native",
+  "dependencies": [
+    "expo-document-picker",
+    "expo-image-manipulator",
+    "expo-image-picker",
+    "react-native",
+    "react-native-reanimated",
+    "react-native-svg",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/attachment",
+    "panelui/cn",
+    "panelui/controllable-state",
+    "panelui/field",
+    "panelui/icons",
+    "panelui/image-viewer",
+    "panelui/menu",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/file-upload.json",
+  "sourcePath": "apps/docs/public/r/file-upload.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/file-upload-core.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/file-upload.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "319eda2cd404daa2",
+  "importedAt": "2026-11-05T00:16:55.938Z"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "shadcn/use-mobile",
+  "name": "Use Mobile",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/use-mobile.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/use-mobile.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "hooks/use-mobile.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "50df5bfbe271c2be",
+  "importedAt": "2026-11-05T17:59:23.510Z"
+}

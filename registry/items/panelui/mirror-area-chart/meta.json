@@ -1,0 +1,47 @@
+{
+  "id": "panelui/mirror-area-chart",
+  "name": "Mirror Area Chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "dataviz",
+    "expo"
+  ],
+  "description": "Two readings of one timeline, one above a baseline and one below it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-svg",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/chart",
+    "panelui/chart-accessibility",
+    "panelui/cn",
+    "panelui/finite-chart",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/mirror-area-chart.json",
+  "sourcePath": "apps/docs/public/r/mirror-area-chart.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/mirror-area-chart.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "347a0a137a67fdba",
+  "importedAt": "2026-11-05T00:16:56.055Z"
+}

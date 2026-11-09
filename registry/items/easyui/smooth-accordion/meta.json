@@ -1,0 +1,60 @@
+{
+  "id": "easyui/smooth-accordion",
+  "name": "Smooth Accordion",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accessible",
+    "animé",
+    "clavier",
+    "feedback",
+    "multi or single",
+    "spring height",
+    "zero layout shift"
+  ],
+  "description": "An accordion component with physics height transition, rotating chevron indicators, and accessible keyboard toggles.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SmoothAccordion.tsx",
+  "sourcePath": "src/components/ui/SmoothAccordion.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SmoothAccordion.tsx",
+      "role": "source",
+      "target": "components/ui/smooth-accordion.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SmoothAccordion.tsx"
+  },
+  "contentHash": "67ae1cd1d58d01a8",
+  "importedAt": "2026-11-05T00:16:53.765Z"
+}

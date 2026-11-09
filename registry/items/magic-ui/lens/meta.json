@@ -1,0 +1,38 @@
+{
+  "id": "magic-ui/lens",
+  "name": "Lens",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "landing page",
+    "survol"
+  ],
+  "description": "Explorer les détails d’une affiche avec une loupe interactive.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/lens",
+  "sourcePath": "https://magicui.design/r/lens.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/lens.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "lens"
+  },
+  "catalogId": "72b70dbec5fe9098",
+  "contentHash": "cf3f1768d88d0bef",
+  "importedAt": "2026-11-05T00:16:49.424Z"
+}

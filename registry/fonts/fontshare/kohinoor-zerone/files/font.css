@@ -1,0 +1,6 @@
+/* Kohinoor Zerone — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=kohinoor-zerone@100,200&display=swap');
+
+:root {
+  --font-kohinoor-zerone: 'Kohinoor Zerone', sans-serif;
+}

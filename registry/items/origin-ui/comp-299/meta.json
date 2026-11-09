@@ -1,0 +1,42 @@
+{
+  "id": "origin-ui/comp-299",
+  "name": "Notification 299",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "notification",
+    "radix",
+    "sonner",
+    "toast",
+    "web"
+  ],
+  "description": "Exemple Origin UI : notification, toast, sonner, radix.",
+  "framework": "react",
+  "dependencies": [
+    "sonner"
+  ],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-299.json",
+  "sourcePath": "apps/origin/public/r/comp-299.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-299.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-299.tsx"
+  },
+  "contentHash": "73ec88ab94114412",
+  "importedAt": "2026-11-05T17:59:41.455Z"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "shadcn/popover",
+  "name": "Popover",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-popover"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/popover.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/popover.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/popover.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/popover-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/combobox-popover.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/combobox-responsive.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/popover-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7bd6996afc9f3b5b",
+  "importedAt": "2026-11-05T17:59:23.121Z"
+}

@@ -1,0 +1,6 @@
+/* Excon — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=excon@1,100,300,400,500,700,900&display=swap');
+
+:root {
+  --font-excon: 'Excon', sans-serif;
+}

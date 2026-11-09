@@ -1,0 +1,37 @@
+{
+  "id": "motion-primitives/text-loop",
+  "name": "Text Loop",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/public/c/text-loop.json",
+  "sourcePath": "public/c/text-loop.json",
+  "sourceCommit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "text-loop.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "motion-primitives/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "text-loop.tsx"
+  },
+  "contentHash": "18dac11482067c97",
+  "importedAt": "2026-11-05T17:59:30.373Z"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "bencho/sound",
+  "name": "Now playing",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "press",
+    "son"
+  ],
+  "description": "A now-playing bar that opens into a full player and folds back as one.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/sound",
+  "sourcePath": "blocks/sound",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/sound/README.md",
+      "role": "doc"
+    },
+    {
+      "path": "blocks/sound/Sound.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/sound/Sound.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sound/Sound.tsx",
+    "exportName": "Sound"
+  },
+  "contentHash": "b30cdbcb4d7e024b",
+  "importedAt": "2026-11-05T00:16:59.097Z",
+  "updatedAt": "2026-11-05T00:19:20.872Z"
+}

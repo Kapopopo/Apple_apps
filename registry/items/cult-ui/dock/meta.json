@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/dock",
+  "name": "Dock",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "macOS-style dock component with hover effects and smooth animations",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/dock.json",
+  "sourcePath": "apps/www/public/r/dock.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/dock.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/dock-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/dock-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5ff526f70396898c",
+  "importedAt": "2026-11-05T17:59:32.727Z"
+}

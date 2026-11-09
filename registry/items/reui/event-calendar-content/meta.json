@@ -1,0 +1,45 @@
+{
+  "id": "reui/event-calendar-content",
+  "name": "Active-view switchboard rendering month, week, day, N-days, or agenda; swappable per view via the components prop.",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "Active-view switchboard rendering month, week, day, N-days, or agenda; swappable per view via the components prop.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar",
+    "reui/event-calendar-agenda-view",
+    "reui/event-calendar-month-view",
+    "reui/event-calendar-resource-view",
+    "reui/event-calendar-time-grid",
+    "reui/event-calendar-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/event-calendar-content.json",
+  "sourcePath": "public/r/styles/base-luma/event-calendar-content.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/event-calendar/event-calendar-content.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-content.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/event-calendar/event-calendar-content.tsx"
+  },
+  "contentHash": "59e67a5bc4c40e81",
+  "importedAt": "2026-11-05T17:59:38.140Z",
+  "updatedAt": "2026-11-05T18:07:49.770Z"
+}

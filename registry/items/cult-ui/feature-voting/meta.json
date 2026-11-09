@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/feature-voting",
+  "name": "Feature Voting",
+  "type": "section",
+  "category": "IA et messages",
+  "tags": [
+    "web"
+  ],
+  "description": "List of features with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/feature-voting.json",
+  "sourcePath": "apps/www/public/r/feature-voting.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/feature-voting.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/feature-voting-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/feature-voting-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "82a438c94892476d",
+  "importedAt": "2026-11-05T17:59:32.772Z"
+}

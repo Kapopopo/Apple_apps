@@ -1,0 +1,60 @@
+{
+  "id": "easyui/depth-corridor",
+  "name": "Depth Corridor",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "3d",
+    "3d perspective",
+    "animé",
+    "framer motion",
+    "motion",
+    "parallax"
+  ],
+  "description": "A 3D spatial layer stack with receding perspective depth, progressive focal blurs, and pointer parallax motion.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DepthCorridor.tsx",
+  "sourcePath": "src/components/ui/DepthCorridor.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DepthCorridor.tsx",
+      "role": "source",
+      "target": "components/ui/depth-corridor.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DepthCorridor.tsx"
+  },
+  "contentHash": "dd43706c8e78917d",
+  "importedAt": "2026-11-05T00:16:52.040Z",
+  "updatedAt": "2026-11-05T00:19:19.855Z"
+}

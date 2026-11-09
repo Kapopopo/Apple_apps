@@ -1,0 +1,55 @@
+{
+  "id": "easyui/activity-heatmap",
+  "name": "Activity Heatmap",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "calendar",
+    "clavier",
+    "data visualization",
+    "dataviz",
+    "feedback",
+    "heatmap",
+    "interactive",
+    "survol",
+    "svg"
+  ],
+  "description": "A GitHub-style contribution calendar and weekday-by-hour activity grid with automatic column fitting, quarterly color levels, hover tooltips, and keyboard navigation.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/ActivityHeatmap.tsx",
+  "sourcePath": "src/components/ui/ActivityHeatmap.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/ActivityHeatmap.tsx",
+      "role": "source",
+      "target": "components/ui/activity-heatmap.tsx"
+    },
+    {
+      "path": "src/lib/chart-primitives.tsx",
+      "role": "source",
+      "target": "lib/chart-primitives.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/ActivityHeatmap.tsx"
+  },
+  "contentHash": "d17496bfd1506e1d",
+  "importedAt": "2026-11-05T00:16:51.440Z"
+}

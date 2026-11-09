@@ -1,0 +1,46 @@
+{
+  "id": "cult-ui/halo-select",
+  "name": "Halo Select",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Composable animated select with gradient rim, frosted fill, and staggered label",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "cult-ui/base-select"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-select.json",
+  "sourcePath": "apps/www/public/r/halo-select.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-select.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-select-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-select-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e6403a1dd9cb7e87",
+  "importedAt": "2026-11-05T17:59:32.868Z"
+}

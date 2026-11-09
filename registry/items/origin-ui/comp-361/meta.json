@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-361",
+  "name": "Tooltip 361",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "radix",
+    "tooltip",
+    "web"
+  ],
+  "description": "Exemple Origin UI : tooltip, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/tooltip"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-361.json",
+  "sourcePath": "apps/origin/public/r/comp-361.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-361.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-361.tsx"
+  },
+  "contentHash": "ba7e076d7344c327",
+  "importedAt": "2026-11-05T17:59:41.725Z"
+}

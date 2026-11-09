@@ -1,0 +1,40 @@
+{
+  "id": "panelui/label",
+  "name": "Label",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Form field label with required, invalid and disabled states.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/label.json",
+  "sourcePath": "apps/docs/public/r/label.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/label.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "b0d80718d555ddef",
+  "importedAt": "2026-11-05T00:16:56.004Z",
+  "updatedAt": "2026-11-05T00:18:17.848Z"
+}

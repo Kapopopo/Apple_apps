@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-576",
+  "name": "Tree 576",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "menu",
+    "tree",
+    "web"
+  ],
+  "description": "Exemple Origin UI : tree, menu.",
+  "framework": "react",
+  "dependencies": [
+    "@headless-tree/core",
+    "@headless-tree/react"
+  ],
+  "registryDependencies": [
+    "origin-ui/tree"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-576.json",
+  "sourcePath": "apps/origin/public/r/comp-576.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-576.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-576.tsx"
+  },
+  "contentHash": "14486c46d80e28f2",
+  "importedAt": "2026-11-05T17:59:42.805Z"
+}

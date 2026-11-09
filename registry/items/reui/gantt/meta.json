@@ -1,0 +1,95 @@
+{
+  "id": "reui/gantt",
+  "name": "Headless-first gantt - horizontal resource timeline with day-to-year scales, external CRUD contract, and a subscribable store.",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "web"
+  ],
+  "description": "Headless-first gantt - horizontal resource timeline with day-to-year scales, external CRUD contract, and a subscribable store.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "@date-fns/tz",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/gantt-bar",
+    "reui/gantt-dnd",
+    "reui/gantt-i18n",
+    "reui/gantt-lib",
+    "reui/gantt-recurrence",
+    "reui/gantt-types",
+    "shadcn/button",
+    "shadcn/calendar",
+    "shadcn/checkbox",
+    "shadcn/context-menu",
+    "shadcn/dropdown-menu",
+    "shadcn/popover",
+    "shadcn/scroll-area",
+    "shadcn/tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/gantt.json",
+  "sourcePath": "public/r/styles/base-luma/gantt.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/gantt/gantt-bar.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-bar.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-dnd.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-i18n.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-i18n.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-lib.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-lib.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-nav.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-nav.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-recurrence.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-recurrence.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-types.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-types.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt-view.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-view.tsx"
+    },
+    {
+      "path": "components/reui/gantt/gantt.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/gantt/gantt-bar.tsx"
+  },
+  "contentHash": "e53bbff9b36b6a0b",
+  "importedAt": "2026-11-05T17:59:38.278Z",
+  "updatedAt": "2026-11-05T18:07:50.031Z"
+}

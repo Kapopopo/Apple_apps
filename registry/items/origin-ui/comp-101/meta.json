@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-101",
+  "name": "Button 101",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "toggle",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, toggle.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/toggle",
+    "origin-ui/tooltip"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-101.json",
+  "sourcePath": "apps/origin/public/r/comp-101.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-101.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-101.tsx"
+  },
+  "contentHash": "912858a478163548",
+  "importedAt": "2026-11-05T17:59:40.488Z"
+}

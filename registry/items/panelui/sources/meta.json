@@ -1,0 +1,44 @@
+{
+  "id": "panelui/sources",
+  "name": "Sources",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Where an answer came from, folded under a count.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/collapse",
+    "panelui/icons",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/sources.json",
+  "sourcePath": "apps/docs/public/r/sources.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/sources.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "3c55b385ac63de99",
+  "importedAt": "2026-11-05T00:16:56.240Z",
+  "updatedAt": "2026-11-05T00:19:20.425Z"
+}

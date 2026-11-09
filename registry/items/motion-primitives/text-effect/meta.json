@@ -1,0 +1,44 @@
+{
+  "id": "motion-primitives/text-effect",
+  "name": "Text Effect",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "entree",
+    "landing page"
+  ],
+  "description": "Introduire un titre avec une animation courte, mot par mot.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/text-effect",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/text-effect.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/text-effect.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "text-effect"
+  },
+  "catalogId": "f83c13e1de9495f6",
+  "contentHash": "913e2e9dda2d7b0f",
+  "importedAt": "2026-11-05T00:16:49.255Z"
+}

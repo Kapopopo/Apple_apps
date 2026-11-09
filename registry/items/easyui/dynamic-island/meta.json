@@ -1,0 +1,53 @@
+{
+  "id": "easyui/dynamic-island",
+  "name": "Dynamic Island",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "interactive",
+    "layout morphing",
+    "navigation",
+    "spring physics"
+  ],
+  "description": "A physical morphing island component that smoothly transitions between a compact indicator, interactive summary, profile card, and social dock with spring physics.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DynamicIsland.tsx",
+  "sourcePath": "src/components/ui/DynamicIsland.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DynamicIsland.tsx",
+      "role": "source",
+      "target": "components/ui/dynamic-island.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DynamicIsland.tsx"
+  },
+  "contentHash": "f420acde42658af6",
+  "importedAt": "2026-11-05T00:16:52.174Z"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/chip",
+  "name": "Chip",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A pill that can be pressed: a filter turned on and off, or an added value with a × to take it out.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/chip.json",
+  "sourcePath": "apps/docs/public/r/web/chip.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/chip.tsx",
+      "role": "source",
+      "target": "@components/panelui/chip.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/chip/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/chip/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d5d933854a85f8e3",
+  "importedAt": "2026-11-05T00:16:56.546Z"
+}

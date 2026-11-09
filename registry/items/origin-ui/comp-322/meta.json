@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-322",
+  "name": "Dialog 322",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "dialog",
+    "feedback",
+    "form",
+    "modal",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, feedback, form, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dialog",
+    "origin-ui/textarea"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-322.json",
+  "sourcePath": "apps/origin/public/r/comp-322.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-322.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-322.tsx"
+  },
+  "contentHash": "1cda1f08d93bdf38",
+  "importedAt": "2026-11-05T17:59:41.538Z"
+}

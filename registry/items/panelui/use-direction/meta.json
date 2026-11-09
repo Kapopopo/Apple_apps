@@ -1,0 +1,35 @@
+{
+  "id": "panelui/use-direction",
+  "name": "Use Direction",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Reads the nearest LTR or RTL direction, falling back to the device setting.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/use-direction.json",
+  "sourcePath": "apps/docs/public/r/use-direction.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "hooks/use-direction.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "239b3025ec10d4b4",
+  "importedAt": "2026-11-05T00:16:56.346Z"
+}

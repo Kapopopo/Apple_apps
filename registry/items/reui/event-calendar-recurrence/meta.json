@@ -1,0 +1,42 @@
+{
+  "id": "reui/event-calendar-recurrence",
+  "name": "RFC 5545 subset recurrence expansion for the event calendar - structured rules or raw RRULE strings, with a hard occurrence cap.",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "RFC 5545 subset recurrence expansion for the event calendar - structured rules or raw RRULE strings, with a hard occurrence cap.",
+  "framework": "react",
+  "dependencies": [
+    "@date-fns/tz",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar",
+    "reui/event-calendar-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/event-calendar-recurrence.json",
+  "sourcePath": "public/r/styles/base-luma/event-calendar-recurrence.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/event-calendar/event-calendar-recurrence.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-recurrence.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/event-calendar/event-calendar-recurrence.tsx"
+  },
+  "contentHash": "dcd31947302d5f53",
+  "importedAt": "2026-11-05T17:59:38.156Z",
+  "updatedAt": "2026-11-05T18:07:49.791Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/fluted-glass",
+  "name": "Fluted Glass",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web",
+    "webgl"
+  ],
+  "description": "Paper Design fluted-glass image shader with sensible defaults — ribbed, streaked distortions over a source image",
+  "framework": "react",
+  "dependencies": [
+    "@paper-design/shaders-react"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/fluted-glass.json",
+  "sourcePath": "apps/www/public/r/fluted-glass.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/fluted-glass.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/fluted-glass-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/fluted-glass-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ca237dcac999b9ae",
+  "importedAt": "2026-11-05T17:59:32.787Z"
+}

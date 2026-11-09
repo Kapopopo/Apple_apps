@@ -1,0 +1,138 @@
+{
+  "id": "fontshare/jet-brains-mono",
+  "name": "JetBrains Mono",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "code",
+    "display",
+    "monospaced",
+    "programming",
+    "variable"
+  ],
+  "description": "Sans serif · 18 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/jet-brains-mono",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "JetBrains Mono",
+    "slug": "jet-brains-mono",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Thin",
+        "weight": 100,
+        "italic": false
+      },
+      {
+        "name": "ThinItalic",
+        "weight": 101,
+        "italic": true
+      },
+      {
+        "name": "ExtraLight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "ExtraLightItalic",
+        "weight": 201,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "ExtraBold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraBoldItalic",
+        "weight": 801,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=jet-brains-mono@1,100,200,300,400,500,600,700,800&display=swap",
+    "designers": [
+      "JetBrains",
+      "Philipp Nurullin",
+      "Konstantin Bulenkov"
+    ]
+  },
+  "contentHash": "66e15c00e967d572",
+  "importedAt": "2026-11-05T00:16:59.802Z"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "rare-ui/ai-status",
+  "name": "Inline AI Status",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "animé",
+    "ia"
+  ],
+  "description": "An inline status that shows what an AI is doing, from thinking and researching to writing and done.",
+  "framework": "react",
+  "dependencies": [
+    "motion",
+    "react-use-measure"
+  ],
+  "registryDependencies": [
+    "rare-ui/utils"
+  ],
+  "source": "Rare UI",
+  "sourceId": "rare-ui",
+  "sourceUrl": "https://github.com/swamimalode07/rare-ui/blob/67471c37d978ecfcbc3922ad8ad60a2d84174b03/components/ui/ai-status.tsx",
+  "sourcePath": "components/ui/ai-status.tsx",
+  "sourceCommit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
+  "license": "LicenseRef-MIT-Commons-Clause-Attribution",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause + Attribution : usage libre dans tes projets, y compris commerciaux ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes (seuls ou en pack). Accepté explicitement le 2026-11-05 pour un usage personnel dans un repo privé.",
+  "attribution": "Rare UI (https://rareui.com) : tout projet qui embarque un composant doit afficher un lien visible vers https://rareui.com (footer, page à propos, crédits ou README) et conserver la notice de copyright dans le code copié.",
+  "files": [
+    {
+      "path": "components/ui/ai-status.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/components/(docs)/aistatus/demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "rare-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "app/components/(docs)/aistatus/demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "47ee20ade9e20cba",
+  "importedAt": "2026-11-05T00:12:01.975Z",
+  "updatedAt": "2026-11-05T00:19:19.625Z"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "reui/gantt-bar",
+  "name": "The interactive gantt bar - selection, clicks, drag + resize wiring, and the consumer render slot.",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "The interactive gantt bar - selection, clicks, drag + resize wiring, and the consumer render slot.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [
+    "reui/gantt",
+    "reui/gantt-dnd",
+    "reui/gantt-lib",
+    "reui/gantt-types",
+    "shadcn/context-menu",
+    "shadcn/tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/gantt-bar.json",
+  "sourcePath": "public/r/styles/base-luma/gantt-bar.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/gantt/gantt-bar.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-bar.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/gantt/gantt-bar.tsx"
+  },
+  "contentHash": "5b2631045bcc9bbd",
+  "importedAt": "2026-11-05T17:59:38.256Z",
+  "updatedAt": "2026-11-05T18:07:49.965Z"
+}

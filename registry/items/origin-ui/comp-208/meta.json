@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-208",
+  "name": "Label 208",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "label",
+    "radix",
+    "select",
+    "web"
+  ],
+  "description": "Exemple Origin UI : label, select, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/label",
+    "origin-ui/select"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-208.json",
+  "sourcePath": "apps/origin/public/r/comp-208.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-208.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-208.tsx"
+  },
+  "contentHash": "c25cb25a433e5307",
+  "importedAt": "2026-11-05T17:59:40.871Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "origin-ui/use-toast",
+  "name": "Use Toast",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/toast"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/use-toast.json",
+  "sourcePath": "apps/origin/public/r/use-toast.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/hooks/use-toast.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "da5fa3bd5d2d2ea9",
+  "importedAt": "2026-11-05T17:59:43.255Z"
+}

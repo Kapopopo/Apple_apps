@@ -1,0 +1,46 @@
+{
+  "id": "panelui-web/timeline",
+  "name": "Timeline",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "web"
+  ],
+  "description": "Time laid out left to right: tracks of clips under a ruler, with a playhead.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui-web/slider"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/timeline.json",
+  "sourcePath": "apps/docs/public/r/web/timeline.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/timeline.tsx",
+      "role": "source",
+      "target": "@components/panelui/timeline.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/timeline/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/timeline/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ebcfdc70f210a14e",
+  "importedAt": "2026-11-05T00:16:57.085Z",
+  "updatedAt": "2026-11-05T00:19:20.572Z"
+}

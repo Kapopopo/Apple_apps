@@ -1,0 +1,42 @@
+{
+  "id": "origin-ui/comp-169",
+  "name": "Radio 169",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "darkmode",
+    "label",
+    "radio",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : radio, label, darkmode, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/radio-group"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-169.json",
+  "sourcePath": "apps/origin/public/r/comp-169.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-169.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-169.tsx"
+  },
+  "contentHash": "18029e7e668585bf",
+  "importedAt": "2026-11-05T17:59:40.732Z"
+}

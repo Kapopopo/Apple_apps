@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/textarea",
+  "name": "Textarea",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "A field for more than one line that grows as it is written in, up to a limit.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/textarea.json",
+  "sourcePath": "apps/docs/public/r/web/textarea.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/textarea.tsx",
+      "role": "source",
+      "target": "@components/panelui/textarea.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/textarea/ghost.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/textarea/ghost.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0ec42e6ea705c411",
+  "importedAt": "2026-11-05T00:16:57.051Z"
+}

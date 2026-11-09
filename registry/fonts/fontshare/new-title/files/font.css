@@ -1,0 +1,6 @@
+/* New Title — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=new-title@1,200,300,400,500,700&display=swap');
+
+:root {
+  --font-new-title: 'New Title', sans-serif;
+}

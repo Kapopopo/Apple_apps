@@ -1,0 +1,66 @@
+{
+  "id": "shadcn/toast",
+  "name": "Toast",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-toast",
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/use-toast",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/toast.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/toast.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/toast.tsx",
+      "role": "source"
+    },
+    {
+      "path": "hooks/use-toast.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/toaster.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/toast-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/toast-destructive.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/toast-simple.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/toast-with-action.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/toast-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8ae7c4d47ae185e9",
+  "importedAt": "2026-11-05T17:59:23.473Z"
+}

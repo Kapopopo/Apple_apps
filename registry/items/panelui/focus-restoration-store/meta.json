@@ -1,0 +1,34 @@
+{
+  "id": "panelui/focus-restoration-store",
+  "name": "Focus Restoration Store",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Returns browser focus through nested overlays in last-opened order.",
+  "framework": "react-native",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/focus-restoration-store.json",
+  "sourcePath": "apps/docs/public/r/focus-restoration-store.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/focus-restoration-store.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "5ef2d6fcb0467bb1",
+  "importedAt": "2026-11-05T00:16:55.953Z",
+  "updatedAt": "2026-11-05T00:18:17.825Z"
+}

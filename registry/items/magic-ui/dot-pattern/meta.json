@@ -1,0 +1,50 @@
+{
+  "id": "magic-ui/dot-pattern",
+  "name": "Dot Pattern",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A background dot pattern made with SVGs, fully customizable using Tailwind CSS.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/dot-pattern.json",
+  "sourcePath": "apps/www/public/r/dot-pattern.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/dot-pattern.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/dot-pattern-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dot-pattern-linear-gradient.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dot-pattern-with-glow-effect.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/dot-pattern-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5cede252e36c6de8",
+  "importedAt": "2026-11-05T17:59:28.106Z"
+}

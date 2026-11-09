@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/halo-toggle-group",
+  "name": "Halo Toggle Group",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Segmented single-select control with frosted track, gradient rim, and spring-driven sliding thumb (aligned with Halo Button)",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-toggle-group.json",
+  "sourcePath": "apps/www/public/r/halo-toggle-group.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-toggle-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-toggle-group-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-toggle-group-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "1f907566526c2b79",
+  "importedAt": "2026-11-05T17:59:32.885Z"
+}

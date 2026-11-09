@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/edge-blur",
+  "name": "Edge Blur",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "Stacked backdrop-blur layers with a gradient mask for soft top or bottom screen edges",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/edge-blur.json",
+  "sourcePath": "apps/www/public/r/edge-blur.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/edge-blur.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/edge-blur-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/edge-blur-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "32833d9a64a0132a",
+  "importedAt": "2026-11-05T17:59:32.737Z"
+}

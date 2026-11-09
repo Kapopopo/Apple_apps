@@ -1,0 +1,45 @@
+{
+  "id": "origin-ui/comp-479",
+  "name": "Table 479",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "flag",
+    "resize",
+    "sort",
+    "table",
+    "tanstack",
+    "web"
+  ],
+  "description": "Exemple Origin UI : table, tanstack, flag, sort, resize.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/table",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-479.json",
+  "sourcePath": "apps/origin/public/r/comp-479.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-479.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-479.tsx"
+  },
+  "contentHash": "007d5fef2142adaf",
+  "importedAt": "2026-11-05T17:59:42.207Z"
+}

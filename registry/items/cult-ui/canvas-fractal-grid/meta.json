@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/canvas-fractal-grid",
+  "name": "Canvas Fractal Grid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Interactive canvas-based fractal dot grid with mouse tracking and wave effects",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/canvas-fractal-grid.json",
+  "sourcePath": "apps/www/public/r/canvas-fractal-grid.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/canvas-fractal-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/canvas-fractal-grid-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/canvas-fractal-grid-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "093033d33341e250",
+  "importedAt": "2026-11-05T17:59:32.662Z"
+}

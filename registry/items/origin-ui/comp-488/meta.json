@@ -1,0 +1,44 @@
+{
+  "id": "origin-ui/comp-488",
+  "name": "Calendar 488",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "accessible",
+    "calendar",
+    "date",
+    "range calendar",
+    "react aria",
+    "web"
+  ],
+  "description": "Exemple Origin UI : calendar, range calendar, date, react aria.",
+  "framework": "react",
+  "dependencies": [
+    "@internationalized/date",
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "origin-ui/calendar-rac"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-488.json",
+  "sourcePath": "apps/origin/public/r/comp-488.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-488.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-488.tsx"
+  },
+  "contentHash": "e7867961c396a1d3",
+  "importedAt": "2026-11-05T17:59:42.238Z"
+}

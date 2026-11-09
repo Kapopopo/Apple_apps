@@ -1,0 +1,53 @@
+{
+  "id": "easyui/loader",
+  "name": "Loader",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "accessible",
+    "animé",
+    "calm motion",
+    "css & svg",
+    "feedback",
+    "zero deps"
+  ],
+  "description": "A minimal, purpose-driven loading indicator with 4 calm, non-anxious motion variants.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Loader.tsx",
+  "sourcePath": "src/components/ui/Loader.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Loader.tsx",
+      "role": "source",
+      "target": "components/ui/loader.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Loader.tsx"
+  },
+  "contentHash": "c8e036adce4983d0",
+  "importedAt": "2026-11-05T00:16:52.654Z"
+}

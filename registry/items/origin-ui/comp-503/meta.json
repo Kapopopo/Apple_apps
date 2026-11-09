@@ -1,0 +1,45 @@
+{
+  "id": "origin-ui/comp-503",
+  "name": "Calendar 503",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "calendar",
+    "date",
+    "input",
+    "react daypicker",
+    "time",
+    "web"
+  ],
+  "description": "Exemple Origin UI : calendar, date, input, time, react daypicker.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/calendar",
+    "origin-ui/input",
+    "origin-ui/label"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-503.json",
+  "sourcePath": "apps/origin/public/r/comp-503.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-503.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-503.tsx"
+  },
+  "contentHash": "52c33b116b92cf5a",
+  "importedAt": "2026-11-05T17:59:42.294Z"
+}

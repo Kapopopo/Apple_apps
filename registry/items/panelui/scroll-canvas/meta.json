@@ -1,0 +1,42 @@
+{
+  "id": "panelui/scroll-canvas",
+  "name": "Scroll Canvas",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "expo",
+    "scroll"
+  ],
+  "description": "Image frame whose contents move as you scroll.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/use-reveal-progress"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/scroll-canvas.json",
+  "sourcePath": "apps/docs/public/r/scroll-canvas.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/scroll-canvas.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "9daca181542e60cb",
+  "importedAt": "2026-11-05T00:16:56.173Z",
+  "updatedAt": "2026-11-05T00:19:20.394Z"
+}

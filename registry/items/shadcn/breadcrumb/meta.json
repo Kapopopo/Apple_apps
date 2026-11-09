@@ -1,0 +1,56 @@
+{
+  "id": "shadcn/breadcrumb",
+  "name": "Breadcrumb",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/breadcrumb.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/breadcrumb.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/breadcrumb.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/breadcrumb-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/breadcrumb-dropdown.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/breadcrumb-ellipsis.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/breadcrumb-link.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/breadcrumb-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cef52fa0094122ff",
+  "importedAt": "2026-11-05T17:59:22.596Z"
+}

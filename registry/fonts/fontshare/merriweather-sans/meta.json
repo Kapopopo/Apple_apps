@@ -1,0 +1,116 @@
+{
+  "id": "fontshare/merriweather-sans",
+  "name": "Merriweather Sans",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "branding",
+    "legible",
+    "readable",
+    "variable"
+  ],
+  "description": "Sans serif · 14 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/merriweather-sans",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Merriweather Sans",
+    "slug": "merriweather-sans",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "ExtraBold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraBoldItalic",
+        "weight": 801,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=merriweather-sans@1,300,400,500,600,700,800&display=swap",
+    "designers": [
+      "Eben Sorkin",
+      "Sorkin Type"
+    ]
+  },
+  "contentHash": "669f11a0059a5c7a",
+  "importedAt": "2026-11-05T00:16:59.960Z"
+}

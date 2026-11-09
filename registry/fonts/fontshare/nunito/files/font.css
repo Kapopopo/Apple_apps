@@ -1,0 +1,6 @@
+/* Nunito — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=nunito@1,200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --font-nunito: 'Nunito', sans-serif;
+}

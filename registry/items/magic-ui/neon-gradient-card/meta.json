@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/neon-gradient-card",
+  "name": "Neon Gradient Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Mettre en valeur une carte avec un halo néon animé.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/neon-gradient-card",
+  "sourcePath": "https://magicui.design/r/neon-gradient-card.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/neon-gradient-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "neon-gradient-card"
+  },
+  "catalogId": "561cc8fb8bbbf53b",
+  "contentHash": "2e42300eb5976909",
+  "importedAt": "2026-11-05T00:16:49.420Z"
+}

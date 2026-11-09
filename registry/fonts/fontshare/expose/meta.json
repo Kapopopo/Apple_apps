@@ -1,0 +1,75 @@
+{
+  "id": "fontshare/expose",
+  "name": "Expose",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "apps",
+    "banners",
+    "branding",
+    "magazines",
+    "variable",
+    "websites"
+  ],
+  "description": "Sans serif · 5 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/expose",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Expose par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Expose",
+    "slug": "expose",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=expose@1,400,500,700,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Lukas Schneider"
+    ]
+  },
+  "contentHash": "87f58da524414555",
+  "importedAt": "2026-11-05T00:16:59.723Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "panelui/collapse",
+  "name": "Collapse",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Keeps content mounted while animating its measured height open or closed.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "panelui/cn"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/collapse.json",
+  "sourcePath": "apps/docs/public/r/collapse.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/collapse.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "fd52fd9e78df1455",
+  "importedAt": "2026-11-05T00:16:55.874Z",
+  "updatedAt": "2026-11-05T00:18:17.799Z"
+}

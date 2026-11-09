@@ -1,0 +1,112 @@
+{
+  "id": "reui/data-grid",
+  "name": "Data Grid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "@dnd-kit/core",
+    "@dnd-kit/modifiers",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "@tanstack/react-table",
+    "@tanstack/react-virtual"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/data-grid-i18n",
+    "reui/data-grid-table",
+    "shadcn/button",
+    "shadcn/checkbox",
+    "shadcn/dropdown-menu",
+    "shadcn/input",
+    "shadcn/popover",
+    "shadcn/select",
+    "shadcn/separator",
+    "shadcn/skeleton",
+    "shadcn/spinner"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/data-grid.json",
+  "sourcePath": "public/r/styles/base-luma/data-grid.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/data-grid/data-grid-cell-selection.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-cell-selection.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-column-filter.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-column-filter.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-column-header.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-column-header.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-column-visibility.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-column-visibility.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-i18n.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-i18n.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-pagination.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-pagination.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-scroll-area.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-scroll-area.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-table-dnd-rows.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table-dnd-rows.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-table-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table-dnd.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-table-virtual.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table-virtual.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid-table.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table.tsx"
+    },
+    {
+      "path": "components/reui/data-grid/data-grid.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/data-grid/data-grid-cell-selection.tsx"
+  },
+  "contentHash": "37ae8a6ad7d1be1d",
+  "importedAt": "2026-11-05T17:59:38.117Z",
+  "updatedAt": "2026-11-05T18:07:49.751Z"
+}

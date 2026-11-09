@@ -1,0 +1,42 @@
+{
+  "id": "kokonut-ui/ai-memory",
+  "name": "Ai Memory",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "animé",
+    "ia",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/ai-memory.json",
+  "sourcePath": "public/r/ai-memory.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/ai-memory.tsx",
+      "role": "source",
+      "target": "components/kokonutui/ai-memory.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/ai-memory.tsx"
+  },
+  "contentHash": "385dd42897a1ee8b",
+  "importedAt": "2026-11-05T17:59:35.379Z"
+}

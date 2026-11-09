@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/tear-button",
+  "name": "Tear Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/tear-button.json",
+  "sourcePath": "public/r/tear-button.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/tear-button.tsx",
+      "role": "source",
+      "target": "components/kokonutui/tear-button.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/tear-button.tsx"
+  },
+  "contentHash": "7e4728a82461daf8",
+  "importedAt": "2026-11-05T17:59:35.850Z"
+}

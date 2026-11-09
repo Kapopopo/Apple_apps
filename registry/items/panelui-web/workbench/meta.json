@@ -1,0 +1,46 @@
+{
+  "id": "panelui-web/workbench",
+  "name": "Workbench",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "The frame of an editor: a canvas with the work on it, a toolbar over it, an inspector beside it and a timeline under it.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui-web/sheet"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/workbench.json",
+  "sourcePath": "apps/docs/public/r/web/workbench.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/workbench.tsx",
+      "role": "source",
+      "target": "@components/panelui/workbench.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/workbench/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/workbench/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "c00eb2197e096044",
+  "importedAt": "2026-11-05T00:16:57.275Z",
+  "updatedAt": "2026-11-05T00:18:18.060Z"
+}

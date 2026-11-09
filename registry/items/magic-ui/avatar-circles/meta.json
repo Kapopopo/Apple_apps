@@ -1,0 +1,39 @@
+{
+  "id": "magic-ui/avatar-circles",
+  "name": "Avatar Circles",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "web"
+  ],
+  "description": "Overlapping circles of avatars.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/avatar-circles.json",
+  "sourcePath": "apps/www/public/r/avatar-circles.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/avatar-circles.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/avatar-circles-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/avatar-circles-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "37a631b4df9b073b",
+  "importedAt": "2026-11-05T17:59:28.037Z"
+}

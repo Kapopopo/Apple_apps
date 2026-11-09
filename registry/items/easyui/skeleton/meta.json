@@ -1,0 +1,53 @@
+{
+  "id": "easyui/skeleton",
+  "name": "Skeleton",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "animé",
+    "avatar & text",
+    "content reveal",
+    "feedback",
+    "light & dark",
+    "light sweep"
+  ],
+  "description": "Placeholder blocks with a subtle light sweep, text/avatar presets, and a SkeletonReveal container that eases real content in with a gentle rise and un-blur.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/skeleton.tsx",
+  "sourcePath": "src/components/ui/skeleton.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "role": "source",
+      "target": "components/ui/skeleton.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/skeleton.tsx"
+  },
+  "contentHash": "0b2d509dc5464b40",
+  "importedAt": "2026-11-05T00:16:53.704Z"
+}

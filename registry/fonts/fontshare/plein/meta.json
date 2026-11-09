@@ -1,0 +1,109 @@
+{
+  "id": "fontshare/plein",
+  "name": "Plein",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "books",
+    "magazines",
+    "newspapers",
+    "poster",
+    "variable"
+  ],
+  "description": "Sans serif · 12 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/plein",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Plein par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Plein",
+    "slug": "plein",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=plein@1,300,400,500,700,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Inga Plönnigs"
+    ]
+  },
+  "contentHash": "aea9c1fd20035dea",
+  "importedAt": "2026-11-05T00:16:59.946Z"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/aspect-ratio",
+  "name": "Aspect Ratio",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-aspect-ratio"
+  ],
+  "registryDependencies": [],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/aspect-ratio.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/aspect-ratio.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/aspect-ratio.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/aspect-ratio-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/aspect-ratio-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7f86458f6499d4e2",
+  "importedAt": "2026-11-05T17:59:22.570Z"
+}

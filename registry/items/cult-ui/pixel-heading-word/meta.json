@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/pixel-heading-word",
+  "name": "Pixel Heading Word",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "survol",
+    "web"
+  ],
+  "description": "Whole-word pixel-font heading that swaps or cycles fonts on hover using Geist pixel fonts",
+  "framework": "react",
+  "dependencies": [
+    "geist"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/pixel-heading-word.json",
+  "sourcePath": "apps/www/public/r/pixel-heading-word.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/pixel-heading-word.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/pixel-heading-word-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/pixel-heading-word-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "53322c25ff88a3ce",
+  "importedAt": "2026-11-05T17:59:33.108Z"
+}

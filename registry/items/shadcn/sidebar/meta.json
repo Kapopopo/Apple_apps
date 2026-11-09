@@ -1,0 +1,52 @@
+{
+  "id": "shadcn/sidebar",
+  "name": "Sidebar",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/input",
+    "shadcn/separator",
+    "shadcn/sheet",
+    "shadcn/skeleton",
+    "shadcn/tooltip",
+    "shadcn/use-mobile",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "internal/sidebar-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "internal/sidebar-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "2da0384fee124bec",
+  "importedAt": "2026-11-05T17:59:23.413Z"
+}

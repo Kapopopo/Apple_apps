@@ -1,0 +1,51 @@
+{
+  "id": "cult-ui/prompt-library",
+  "name": "Prompt Library",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "ia",
+    "web"
+  ],
+  "description": "Browse, insert, and manage prompt templates with categories and custom prompts",
+  "framework": "react",
+  "dependencies": [
+    "@hugeicons/core-free-icons",
+    "@hugeicons/react"
+  ],
+  "registryDependencies": [
+    "cult-ui/popover",
+    "shadcn/button",
+    "shadcn/command",
+    "shadcn/dialog",
+    "shadcn/hover-card",
+    "shadcn/input",
+    "shadcn/textarea"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/prompt-library.json",
+  "sourcePath": "apps/www/public/r/prompt-library.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/prompt-library.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/prompt-library-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/prompt-library-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f7946a1d3ae91d10",
+  "importedAt": "2026-11-05T17:59:33.141Z"
+}

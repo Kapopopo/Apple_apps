@@ -1,0 +1,59 @@
+{
+  "id": "easyui/settle-modal",
+  "name": "SettleModal",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "accessible",
+    "animé",
+    "layered motion",
+    "light & dark",
+    "overlays",
+    "scale settle"
+  ],
+  "description": "A modal whose content has a tiny scale/settle instead of a generic fade. The panel scales 0.94 -> 1.02 -> 1.0 with a small y travel, then the inner content layers its own gentle settle on top.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SettleModal.tsx",
+  "sourcePath": "src/components/ui/SettleModal.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SettleModal.tsx",
+      "role": "source",
+      "target": "components/ui/settle-modal.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SettleModal.tsx"
+  },
+  "contentHash": "98f62a5de7e0ee0c",
+  "importedAt": "2026-11-05T00:16:53.591Z"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "easyui/selection-basket",
+  "name": "Selection Basket",
+  "type": "component",
+  "category": "Paiement",
+  "tags": [
+    "animé",
+    "bulk actions",
+    "overlays",
+    "scroll",
+    "toolbars"
+  ],
+  "description": "A floating bulk-action toolbar that smoothly rises from the bottom of the screen when multiple dataset items are selected, supporting batch operations, horizontal scrolling, and clear triggers.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SelectionBasket.tsx",
+  "sourcePath": "src/components/ui/SelectionBasket.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SelectionBasket.tsx",
+      "role": "source",
+      "target": "components/ui/selection-basket.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SelectionBasket.tsx"
+  },
+  "contentHash": "a45458aed9b8a16b",
+  "importedAt": "2026-11-05T00:16:53.572Z",
+  "updatedAt": "2026-11-05T00:19:20.070Z"
+}

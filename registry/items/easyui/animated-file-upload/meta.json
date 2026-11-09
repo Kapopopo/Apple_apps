@@ -1,0 +1,59 @@
+{
+  "id": "easyui/animated-file-upload",
+  "name": "Animated File Upload",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "animé",
+    "drag",
+    "drag & drop",
+    "forms",
+    "spring physics"
+  ],
+  "description": "A minimal, physical drag-and-drop file uploader with smooth drop reaction, independent file upload tracking, progressive state morphing, and accessible retry flows.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/AnimatedFileUpload.tsx",
+  "sourcePath": "src/components/ui/AnimatedFileUpload.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/AnimatedFileUpload.tsx",
+      "role": "source",
+      "target": "components/ui/animated-file-upload.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/AnimatedFileUpload.tsx"
+  },
+  "contentHash": "7c57b9028396520a",
+  "importedAt": "2026-11-05T00:16:51.550Z"
+}

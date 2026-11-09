@@ -1,0 +1,53 @@
+{
+  "id": "panelui/toast",
+  "name": "Toast",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "animé",
+    "drag",
+    "expo"
+  ],
+  "description": "Transient notification queue with swipe to dismiss.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/button",
+    "panelui/cn",
+    "panelui/icons",
+    "panelui/portal",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/toast.json",
+  "sourcePath": "apps/docs/public/r/toast.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/toast.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/toast-store.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "panelui/theme",
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "0d6477639e70ec67",
+  "importedAt": "2026-11-05T00:16:56.311Z"
+}

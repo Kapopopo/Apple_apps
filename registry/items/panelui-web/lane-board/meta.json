@@ -1,0 +1,45 @@
+{
+  "id": "panelui-web/lane-board",
+  "name": "Lane Board",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "Lanes of cards that can be dragged within a lane and from one lane to another.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/lane-board.json",
+  "sourcePath": "apps/docs/public/r/web/lane-board.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/lane-board.tsx",
+      "role": "source",
+      "target": "@components/panelui/lane-board.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/lane-board/release.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/lane-board/release.tsx",
+    "demo": "source"
+  },
+  "contentHash": "74e957dc09dbed5d",
+  "importedAt": "2026-11-05T00:16:56.761Z",
+  "updatedAt": "2026-11-05T00:19:20.515Z"
+}

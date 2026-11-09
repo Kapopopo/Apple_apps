@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/pointer",
+  "name": "Pointer",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "A component that displays a pointer when hovering over an element",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/pointer.json",
+  "sourcePath": "apps/www/public/r/pointer.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/pointer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/pointer-demo-1.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/pointer-demo-1.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7137855e99eca1dc",
+  "importedAt": "2026-11-05T17:59:28.197Z"
+}

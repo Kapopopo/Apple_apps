@@ -1,0 +1,6 @@
+/* Merriweather Sans — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=merriweather-sans@1,300,400,500,600,700,800&display=swap');
+
+:root {
+  --font-merriweather-sans: 'Merriweather Sans', sans-serif;
+}

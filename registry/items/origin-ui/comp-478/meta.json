@@ -1,0 +1,53 @@
+{
+  "id": "origin-ui/comp-478",
+  "name": "Table 478",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "checkbox",
+    "filter",
+    "input",
+    "range",
+    "search",
+    "select",
+    "sort",
+    "table",
+    "tanstack",
+    "web"
+  ],
+  "description": "Exemple Origin UI : table, tanstack, checkbox, search, select, range, input, filter, sort.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/checkbox",
+    "origin-ui/input",
+    "origin-ui/label",
+    "origin-ui/select",
+    "origin-ui/table",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-478.json",
+  "sourcePath": "apps/origin/public/r/comp-478.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-478.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-478.tsx"
+  },
+  "contentHash": "36059654c5ff55e9",
+  "importedAt": "2026-11-05T17:59:42.204Z"
+}

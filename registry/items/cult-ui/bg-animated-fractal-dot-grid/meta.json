@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/bg-animated-fractal-dot-grid",
+  "name": "Bg Animated Fractal Dot Grid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Background animated fractal dot grid with performance optimization and responsive design",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/bg-animated-fractal-dot-grid.json",
+  "sourcePath": "apps/www/public/r/bg-animated-fractal-dot-grid.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/bg-animated-fractal-dot-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/bg-animated-fractal-dot-grid-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/bg-animated-fractal-dot-grid-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "bdfea9afd6d78904",
+  "importedAt": "2026-11-05T17:59:32.623Z"
+}

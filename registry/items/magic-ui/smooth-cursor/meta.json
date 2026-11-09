@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/smooth-cursor",
+  "name": "Smooth Cursor",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A customizable, physics-based smooth cursor animation component with spring animations and rotation effects",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/smooth-cursor.json",
+  "sourcePath": "apps/www/public/r/smooth-cursor.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/smooth-cursor.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/smooth-cursor-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/smooth-cursor-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d4024b6fbc8911a5",
+  "importedAt": "2026-11-05T17:59:28.225Z"
+}

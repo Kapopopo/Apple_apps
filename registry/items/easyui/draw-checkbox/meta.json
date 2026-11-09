@@ -1,0 +1,58 @@
+{
+  "id": "easyui/draw-checkbox",
+  "name": "DrawCheckbox",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "forms",
+    "indeterminate",
+    "light & dark",
+    "overshoot",
+    "path draw"
+  ],
+  "description": "A checkbox whose checkmark draws itself (path length animation) and settles with a tiny overshoot. The box scales from 0.9 -> 1.04 -> 1.0 for a tactile snap feel.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DrawCheckbox.tsx",
+  "sourcePath": "src/components/ui/DrawCheckbox.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DrawCheckbox.tsx",
+      "role": "source",
+      "target": "components/ui/draw-checkbox.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DrawCheckbox.tsx"
+  },
+  "contentHash": "306d19f14a829aea",
+  "importedAt": "2026-11-05T00:16:52.154Z"
+}

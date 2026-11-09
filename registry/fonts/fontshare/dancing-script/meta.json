@@ -1,0 +1,62 @@
+{
+  "id": "fontshare/dancing-script",
+  "name": "Dancing Script",
+  "type": "font",
+  "category": "Manuscrite",
+  "tags": [
+    "banners",
+    "beauty",
+    "luxury",
+    "packaging",
+    "posters",
+    "variable"
+  ],
+  "description": "Manuscrite · 3 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/dancing-script",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Dancing Script",
+    "slug": "dancing-script",
+    "category": "Script",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=dancing-script@1,400,700&display=swap",
+    "designers": [
+      "Impallari Type"
+    ]
+  },
+  "contentHash": "58979aa392dbcafd",
+  "importedAt": "2026-11-05T00:16:59.765Z"
+}

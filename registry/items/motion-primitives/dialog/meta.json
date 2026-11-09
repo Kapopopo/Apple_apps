@@ -1,0 +1,42 @@
+{
+  "id": "motion-primitives/dialog",
+  "name": "Dialog",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/public/c/dialog.json",
+  "sourcePath": "public/c/dialog.json",
+  "sourceCommit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "hooks/usePreventScroll.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "motion-primitives/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "dialog.tsx"
+  },
+  "contentHash": "91384927ceaa752d",
+  "importedAt": "2026-11-05T17:59:30.324Z"
+}

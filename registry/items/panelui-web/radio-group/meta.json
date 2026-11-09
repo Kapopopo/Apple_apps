@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/radio-group",
+  "name": "Radio Group",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "One choice from a short list, with every option visible and the arrow keys moving between them.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/radio-group.json",
+  "sourcePath": "apps/docs/public/r/web/radio-group.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/radio-group.tsx",
+      "role": "source",
+      "target": "@components/panelui/radio-group.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/radio-group/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/radio-group/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "3741162ca3da3947",
+  "importedAt": "2026-11-05T00:16:56.875Z"
+}

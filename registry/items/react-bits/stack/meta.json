@@ -1,0 +1,37 @@
+{
+  "id": "react-bits/stack",
+  "name": "Stack",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "Pile of cards you can drag, flick or click through, with thrown cards tucking underneath.",
+  "framework": "react",
+  "dependencies": [
+    "motion@^12.23.12"
+  ],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/Stack-TS-TW.json",
+  "sourcePath": "public/r/Stack-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "Stack/Stack.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "Stack/Stack.tsx"
+  },
+  "contentHash": "e3f2cea51a9f9d1f",
+  "importedAt": "2026-11-05T17:59:46.116Z"
+}

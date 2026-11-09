@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/marketing-feature-code",
+  "name": "Marketing Feature Code",
+  "type": "section",
+  "category": "Code",
+  "tags": [
+    "web"
+  ],
+  "description": "Marketing section for code or network policy features",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/marketing-feature-code.json",
+  "sourcePath": "apps/www/public/r/marketing-feature-code.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/marketing-feature-code.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/marketing-feature-code-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/marketing-feature-code-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "98ac31ed9bc3a397",
+  "importedAt": "2026-11-05T17:59:32.965Z"
+}

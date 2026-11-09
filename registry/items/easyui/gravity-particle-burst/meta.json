@@ -1,0 +1,51 @@
+{
+  "id": "easyui/gravity-particle-burst",
+  "name": "Gravity Particle Burst",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "canvas",
+    "motion",
+    "pointer physics",
+    "reduced motion"
+  ],
+  "description": "A pointer-triggered canvas particle burst with velocity, gravity, friction, and short-lived physical follow-through.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/GravityParticleBurst.tsx",
+  "sourcePath": "src/components/ui/GravityParticleBurst.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/GravityParticleBurst.tsx",
+      "role": "source",
+      "target": "components/ui/gravity-particle-burst.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/GravityParticleBurst.tsx"
+  },
+  "contentHash": "32329043672e3d30",
+  "importedAt": "2026-11-05T00:16:52.472Z"
+}

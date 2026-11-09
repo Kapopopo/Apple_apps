@@ -1,0 +1,36 @@
+{
+  "id": "origin-ui/comp-405",
+  "name": "Avatar 405",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "avatar",
+    "avatar group",
+    "web"
+  ],
+  "description": "Exemple Origin UI : avatar, avatar group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-405.json",
+  "sourcePath": "apps/origin/public/r/comp-405.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-405.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-405.tsx"
+  },
+  "contentHash": "eabc526440d4a2a8",
+  "importedAt": "2026-11-05T17:59:41.908Z"
+}

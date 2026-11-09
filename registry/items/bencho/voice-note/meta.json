@@ -1,0 +1,48 @@
+{
+  "id": "bencho/voice-note",
+  "name": "Voice note",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "press",
+    "son"
+  ],
+  "description": "Hold to record a waveform, slide left to bin it, let go to play it back.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/voice-note",
+  "sourcePath": "blocks/voice-note",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/voice-note/README.md",
+      "role": "doc"
+    },
+    {
+      "path": "blocks/voice-note/VoiceNote.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/voice-note/VoiceNote.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/voice-note/VoiceNote.tsx",
+    "exportName": "VoiceNote"
+  },
+  "contentHash": "900cc8d8911a8441",
+  "importedAt": "2026-11-05T00:16:59.236Z",
+  "updatedAt": "2026-11-05T00:19:20.896Z"
+}

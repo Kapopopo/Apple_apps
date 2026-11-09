@@ -1,0 +1,69 @@
+{
+  "id": "panelui/planner",
+  "name": "Planner",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "expo"
+  ],
+  "description": "A month of days, each carrying what falls on it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/date",
+    "panelui/dialog",
+    "panelui/frame",
+    "panelui/icons",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/planner.json",
+  "sourcePath": "apps/docs/public/r/planner.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/planner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-announcement.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-entries.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-grid-navigation.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-lifecycle.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-today.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/planner-weeks.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "266110815b75ce5d",
+  "importedAt": "2026-11-05T00:16:56.088Z"
+}

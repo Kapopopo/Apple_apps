@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/bg-animate-button",
+  "name": "Bg Animate Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Button component with animated background effects and gradient transitions",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/bg-animate-button.json",
+  "sourcePath": "apps/www/public/r/bg-animate-button.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/bg-animate-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/bg-animate-button-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/bg-animate-button-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ed30633e1c226637",
+  "importedAt": "2026-11-05T17:59:32.617Z"
+}

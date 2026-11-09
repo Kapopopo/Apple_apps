@@ -1,0 +1,39 @@
+{
+  "id": "panelui/use-scroll-sections",
+  "name": "Use Scroll Sections",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "animé",
+    "expo",
+    "scroll"
+  ],
+  "description": "Tracks the active measured section and scrolls directly to one.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "panelui/refs"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/use-scroll-sections.json",
+  "sourcePath": "apps/docs/public/r/use-scroll-sections.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "hooks/use-scroll-sections.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "bf056ec9c6e76763",
+  "importedAt": "2026-11-05T00:16:56.366Z"
+}

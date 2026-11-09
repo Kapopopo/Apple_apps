@@ -1,0 +1,47 @@
+{
+  "id": "rare-ui/folder-component",
+  "name": "Folder Component",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "3d",
+    "animé",
+    "survol"
+  ],
+  "description": "An animated folder whose cards fan out on hover and lift open on click, with a 3D-tilted flap. Supports color and size (sm/md/lg) props.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "rare-ui/utils"
+  ],
+  "source": "Rare UI",
+  "sourceId": "rare-ui",
+  "sourceUrl": "https://github.com/swamimalode07/rare-ui/blob/67471c37d978ecfcbc3922ad8ad60a2d84174b03/components/ui/folder-component.tsx",
+  "sourcePath": "components/ui/folder-component.tsx",
+  "sourceCommit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
+  "license": "LicenseRef-MIT-Commons-Clause-Attribution",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause + Attribution : usage libre dans tes projets, y compris commerciaux ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes (seuls ou en pack). Accepté explicitement le 2026-11-05 pour un usage personnel dans un repo privé.",
+  "attribution": "Rare UI (https://rareui.com) : tout projet qui embarque un composant doit afficher un lien visible vers https://rareui.com (footer, page à propos, crédits ou README) et conserver la notice de copyright dans le code copié.",
+  "files": [
+    {
+      "path": "components/ui/folder-component.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/components/(docs)/foldercomponent/demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "rare-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "app/components/(docs)/foldercomponent/demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "eef0cd389e1f854c",
+  "importedAt": "2026-11-05T00:12:01.802Z",
+  "updatedAt": "2026-11-05T00:19:19.547Z"
+}

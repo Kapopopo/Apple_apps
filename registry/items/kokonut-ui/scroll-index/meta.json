@@ -1,0 +1,38 @@
+{
+  "id": "kokonut-ui/scroll-index",
+  "name": "Scroll Index",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "scroll",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/scroll-index.json",
+  "sourcePath": "public/r/scroll-index.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/scroll-index.tsx",
+      "role": "source",
+      "target": "components/kokonutui/scroll-index.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/scroll-index.tsx"
+  },
+  "contentHash": "a3fcffd2535e5372",
+  "importedAt": "2026-11-05T17:59:35.583Z"
+}

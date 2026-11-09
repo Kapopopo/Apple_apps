@@ -1,0 +1,44 @@
+{
+  "id": "shadcn/context-menu",
+  "name": "Context Menu",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-context-menu",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/context-menu.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/context-menu.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/context-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/context-menu-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/context-menu-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "09acda06fbcdd9dd",
+  "importedAt": "2026-11-05T17:59:22.995Z"
+}

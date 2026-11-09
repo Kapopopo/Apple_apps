@@ -1,0 +1,109 @@
+{
+  "id": "bencho/theme",
+  "name": "Thème Bencho",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "dark mode"
+  ],
+  "description": "Tokens (couleurs clair/sombre, typographie, rayons) extraits de tokens.css. Les styles propres au site d'origine sont exclus.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/blob/27ac3159201fa48eb16ef65faa5d8078963a9a61/tokens.css",
+  "sourcePath": "tokens.css",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--bg": "#ffffff",
+        "--board": "#ffffff",
+        "--card": "#f7f7f6",
+        "--surface": "#f7f7f6",
+        "--surface-2": "#f1f1f0",
+        "--surface-3": "#ecebe7",
+        "--ink": "#17181a",
+        "--ink-rgb": "23, 24, 26",
+        "--ink-2": "#3c3b37",
+        "--ink-3": "#5c5b56",
+        "--ink-4": "#6f6e68",
+        "--ink-5": "#85847e",
+        "--on-ink": "#ffffff",
+        "--on-ink-rgb": "255, 255, 255",
+        "--slab": "#17181a",
+        "--on-slab": "#ffffff",
+        "--slab-dark": "#0e0f11",
+        "--fill-slab": "#ffffff",
+        "--fill-on": "#17181a",
+        "--fill-on-rgb": "23, 24, 26",
+        "--pane-edge": "rgba(23, 24, 26, 0.08)",
+        "--pane-thumb": "rgba(23, 24, 26, 0.07)",
+        "--inlay": "rgba(255, 255, 255, 0.55)",
+        "--inlay-hi": "rgba(23, 24, 26, 0.09)",
+        "--pick": "#0d99ff",
+        "--signal": "#2231dd",
+        "--focus": "#2231dd",
+        "--ok": "#15803d",
+        "--ember": "#b8431c"
+      },
+      "dark": {
+        "--bg": "#000000",
+        "--board": "#1a1a1a",
+        "--card": "#0a0a0a",
+        "--surface": "#0f0f0f",
+        "--surface-2": "#181818",
+        "--surface-3": "#202020",
+        "--ink": "#ffffff",
+        "--ink-rgb": "255, 255, 255",
+        "--ink-2": "#b4b4b4",
+        "--ink-3": "#9a9a9a",
+        "--ink-4": "#828282",
+        "--ink-5": "#6b6b6b",
+        "--on-ink": "#000000",
+        "--on-ink-rgb": "0, 0, 0",
+        "--slab": "#1a1a1a",
+        "--on-slab": "#ffffff",
+        "--slab-dark": "#262626",
+        "--fill-slab": "#262626",
+        "--fill-on": "#ffffff",
+        "--fill-on-rgb": "255, 255, 255",
+        "--pane-edge": "rgba(255, 255, 255, 0.08)",
+        "--pane-thumb": "rgba(255, 255, 255, 0.07)",
+        "--inlay": "rgba(255, 255, 255, 0.1)",
+        "--inlay-hi": "rgba(255, 255, 255, 0.09)",
+        "--pick": "#3aa9ff",
+        "--ok": "#34d17a"
+      }
+    },
+    "typography": {
+      "--font-ui": "\"Inter\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+    },
+    "radius": {},
+    "easings": [],
+    "other": {
+      "--pane": "var(--fill-slab)",
+      "--elev-rgb": "255, 255, 255",
+      "--glass-rgb": "255, 255, 255",
+      "--shadow-rgb": "23, 24, 26",
+      "--wash": "0.06"
+    }
+  },
+  "contentHash": "0fe464e89ed85f13",
+  "importedAt": "2026-11-05T00:16:58.244Z"
+}

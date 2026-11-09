@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/morphing-text",
+  "name": "Morphing Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/morphing-text",
+  "sourcePath": "https://magicui.design/r/morphing-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/morphing-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "morphing-text"
+  },
+  "catalogId": "f40938f180ac86fb",
+  "contentHash": "cb5a04010a7f72e0",
+  "importedAt": "2026-11-05T00:16:49.335Z"
+}

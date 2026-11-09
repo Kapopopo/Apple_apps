@@ -1,0 +1,45 @@
+{
+  "id": "motion-primitives/animated-number",
+  "name": "Animated Number",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "animé",
+    "dashboard",
+    "interaction"
+  ],
+  "description": "Animer les changements de valeurs dans un indicateur interactif.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/animated-number",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/animated-number.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-number.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-number"
+  },
+  "catalogId": "38305db522046284",
+  "contentHash": "bc6eb2c39b64fe36",
+  "importedAt": "2026-11-05T00:16:49.295Z",
+  "updatedAt": "2026-11-05T00:18:20.079Z"
+}

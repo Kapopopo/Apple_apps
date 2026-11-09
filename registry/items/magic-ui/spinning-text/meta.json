@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/spinning-text",
+  "name": "Spinning Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/spinning-text",
+  "sourcePath": "https://magicui.design/r/spinning-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/spinning-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "spinning-text"
+  },
+  "catalogId": "434f931f8f2afc13",
+  "contentHash": "72d3a0c1d2947b46",
+  "importedAt": "2026-11-05T00:16:49.340Z"
+}

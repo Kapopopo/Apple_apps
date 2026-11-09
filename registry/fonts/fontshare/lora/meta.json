@@ -1,0 +1,98 @@
+{
+  "id": "fontshare/lora",
+  "name": "Lora",
+  "type": "font",
+  "category": "Serif",
+  "tags": [
+    "clean",
+    "legible",
+    "publishing",
+    "variable",
+    "websites"
+  ],
+  "description": "Serif · 10 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/lora",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Lora",
+    "slug": "lora",
+    "category": "Serif",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=lora@1,400,500,600,700&display=swap",
+    "designers": [
+      "Cyreal",
+      "Olga Karpushina",
+      "Alexei Vanyashin"
+    ]
+  },
+  "contentHash": "deac4cf11afa2c6f",
+  "importedAt": "2026-11-05T00:16:59.781Z"
+}

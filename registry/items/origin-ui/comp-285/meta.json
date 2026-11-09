@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-285",
+  "name": "Notification 285",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "notification",
+    "success",
+    "web"
+  ],
+  "description": "Exemple Origin UI : notification, success.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-285.json",
+  "sourcePath": "apps/origin/public/r/comp-285.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-285.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-285.tsx"
+  },
+  "contentHash": "552d6bb8d4781ad9",
+  "importedAt": "2026-11-05T17:59:41.154Z"
+}

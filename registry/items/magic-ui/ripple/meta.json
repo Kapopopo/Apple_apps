@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/ripple",
+  "name": "Ripple",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Créer un fond de section doux autour d’un point focal.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/ripple",
+  "sourcePath": "https://magicui.design/r/ripple.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/ripple.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "ripple"
+  },
+  "catalogId": "971ac18f00aefd8c",
+  "contentHash": "0151318357ee4cd6",
+  "importedAt": "2026-11-05T00:16:49.301Z"
+}

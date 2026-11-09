@@ -1,0 +1,48 @@
+{
+  "id": "reui/event-calendar-resource-view",
+  "name": "Resource-columns day grid for booking scenarios - one time axis, one column per resource, full drag, resize, and drag-create.",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "Resource-columns day grid for booking scenarios - one time axis, one column per resource, full drag, resize, and drag-create.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar",
+    "reui/event-calendar-dnd",
+    "reui/event-calendar-event",
+    "reui/event-calendar-lib",
+    "reui/event-calendar-time-grid",
+    "reui/event-calendar-types",
+    "shadcn/scroll-area"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/event-calendar-resource-view.json",
+  "sourcePath": "public/r/styles/base-luma/event-calendar-resource-view.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/event-calendar/event-calendar-resource-view.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-resource-view.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/event-calendar/event-calendar-resource-view.tsx"
+  },
+  "contentHash": "f4bbcff0d8c51f33",
+  "importedAt": "2026-11-05T17:59:38.158Z",
+  "updatedAt": "2026-11-05T18:07:49.794Z"
+}

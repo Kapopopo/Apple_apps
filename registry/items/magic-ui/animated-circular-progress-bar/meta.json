@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/animated-circular-progress-bar",
+  "name": "Animated Circular Progress Bar",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "animé",
+    "boucle",
+    "dashboard"
+  ],
+  "description": "Visualiser la progression vers un objectif.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/animated-circular-progress-bar",
+  "sourcePath": "https://magicui.design/r/animated-circular-progress-bar.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-circular-progress-bar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-circular-progress-bar"
+  },
+  "catalogId": "5a41a48b28ca581a",
+  "contentHash": "b626955ff40c8e56",
+  "importedAt": "2026-11-05T00:16:49.428Z",
+  "updatedAt": "2026-11-05T00:18:20.108Z"
+}

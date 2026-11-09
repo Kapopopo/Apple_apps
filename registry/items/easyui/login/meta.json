@@ -1,0 +1,69 @@
+{
+  "id": "easyui/login",
+  "name": "Login",
+  "type": "section",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "animé",
+    "auth",
+    "authentication",
+    "forms",
+    "responsive"
+  ],
+  "description": "A production-ready authentication card built with the EasyUI form system, featuring password show/hide, remember me, validation states, and social logins.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Login.tsx",
+  "sourcePath": "src/components/ui/Login.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Login.tsx",
+      "role": "source",
+      "target": "components/ui/login.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "src/components/ui/Button.tsx",
+      "role": "source",
+      "target": "components/ui/button.tsx"
+    },
+    {
+      "path": "src/components/ui/Form.tsx",
+      "role": "source",
+      "target": "components/ui/form.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Login.tsx"
+  },
+  "contentHash": "c49c58ab8223c29c",
+  "importedAt": "2026-11-05T00:16:52.705Z"
+}

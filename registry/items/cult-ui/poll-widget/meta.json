@@ -1,0 +1,49 @@
+{
+  "id": "cult-ui/poll-widget",
+  "name": "Poll Widget",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Poll widget with inline, popover, and dialog modes, optional results, and animations",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state",
+    "class-variance-authority",
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "cult-ui/popover",
+    "shadcn/button",
+    "shadcn/dialog"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/poll-widget.json",
+  "sourcePath": "apps/www/public/r/poll-widget.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/poll-widget.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/poll-widget-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/poll-widget-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b784792fd6b216e4",
+  "importedAt": "2026-11-05T17:59:33.123Z"
+}

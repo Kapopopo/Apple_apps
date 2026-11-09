@@ -1,0 +1,44 @@
+{
+  "id": "motion-primitives/animated-background",
+  "name": "Animated Background",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "application",
+    "interaction"
+  ],
+  "description": "Rendre les changements d’onglet lisibles avec un indicateur qui glisse entre les options.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/animated-background",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/animated-background.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-background.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-background"
+  },
+  "catalogId": "4c4e3043b7c36ea1",
+  "contentHash": "b6dd1855296aa210",
+  "importedAt": "2026-11-05T00:16:49.278Z"
+}

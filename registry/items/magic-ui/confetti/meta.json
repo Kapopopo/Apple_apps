@@ -1,0 +1,57 @@
+{
+  "id": "magic-ui/confetti",
+  "name": "Confetti",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Confetti animations are best used to delight your users when something special happens",
+  "framework": "react",
+  "dependencies": [
+    "@types/canvas-confetti",
+    "canvas-confetti"
+  ],
+  "registryDependencies": [
+    "shadcn/button"
+  ],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/confetti.json",
+  "sourcePath": "apps/www/public/r/confetti.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/confetti.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/confetti-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/confetti-basic-cannon.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/confetti-custom-shapes.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/confetti-emoji.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/confetti-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "59c12be8f5f1d4b0",
+  "importedAt": "2026-11-05T17:59:28.070Z"
+}

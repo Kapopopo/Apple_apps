@@ -1,0 +1,45 @@
+{
+  "id": "panelui/button",
+  "name": "Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "expo"
+  ],
+  "description": "Pressable action with variants, sizes, loading state and icon slots.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/cn",
+    "panelui/icons",
+    "panelui/native",
+    "panelui/refs",
+    "panelui/spinner",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/button.json",
+  "sourcePath": "apps/docs/public/r/button.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/button.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "afe563f81046cb24",
+  "importedAt": "2026-11-05T00:16:55.822Z"
+}

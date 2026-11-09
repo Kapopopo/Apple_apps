@@ -1,0 +1,140 @@
+{
+  "id": "fontshare/bevellier",
+  "name": "Bevellier",
+  "type": "font",
+  "category": "Display",
+  "tags": [
+    "logos",
+    "magazines",
+    "poster",
+    "variable",
+    "websites"
+  ],
+  "description": "Display · 18 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/bevellier",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Bevellier par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Bevellier",
+    "slug": "bevellier",
+    "category": "Display",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Thin",
+        "weight": 100,
+        "italic": false
+      },
+      {
+        "name": "ThinItalic",
+        "weight": 101,
+        "italic": true
+      },
+      {
+        "name": "Extralight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "ExtralightItalic",
+        "weight": 201,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "Semibold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiboldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=bevellier@1,100,200,300,400,500,600,700,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Arya Purohit",
+      "Barbara Bigosinska"
+    ]
+  },
+  "contentHash": "cf769454bc0a5845",
+  "importedAt": "2026-11-05T00:16:59.761Z"
+}

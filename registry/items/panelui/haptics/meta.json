@@ -1,0 +1,36 @@
+{
+  "id": "panelui/haptics",
+  "name": "Haptics",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Optional bridge to the platform haptic engine, behind the `haptics` prop.",
+  "framework": "react-native",
+  "dependencies": [
+    "expo-haptics",
+    "react-native"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/haptics.json",
+  "sourcePath": "apps/docs/public/r/haptics.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "lib/haptics.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "950f3a80e34a139d",
+  "importedAt": "2026-11-05T00:16:55.972Z"
+}

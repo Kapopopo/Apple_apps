@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/minimal-card",
+  "name": "Minimal Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "survol",
+    "web"
+  ],
+  "description": "Clean and minimal card component with subtle styling and hover effects",
+  "framework": "react",
+  "dependencies": [
+    "next"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/minimal-card.json",
+  "sourcePath": "apps/www/public/r/minimal-card.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/minimal-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/minimal-card-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/minimal-card-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8946a566406ccadf",
+  "importedAt": "2026-11-05T17:59:32.984Z"
+}

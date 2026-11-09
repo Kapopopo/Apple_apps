@@ -1,0 +1,50 @@
+{
+  "id": "easyui/earnings",
+  "name": "Earnings",
+  "type": "component",
+  "category": "Paiement",
+  "tags": [
+    "animé",
+    "dark mode",
+    "data visualization",
+    "earnings",
+    "feedback",
+    "interactive",
+    "split bar",
+    "survol",
+    "svg"
+  ],
+  "description": "An earnings summary card that counts up the total, plots a scrubable trend line, and breaks income down by source with a hoverable split bar and a 7D / 30D / 12M period switcher. Light and dark themes, fully responsive.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Earnings.tsx",
+  "sourcePath": "src/components/ui/Earnings.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Earnings.tsx",
+      "role": "source",
+      "target": "components/ui/earnings.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Earnings.tsx"
+  },
+  "contentHash": "842ca2a87c4e6afe",
+  "importedAt": "2026-11-05T00:16:52.196Z",
+  "updatedAt": "2026-11-05T00:19:19.875Z"
+}

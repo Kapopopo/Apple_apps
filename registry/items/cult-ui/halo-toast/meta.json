@@ -1,0 +1,46 @@
+{
+  "id": "cult-ui/halo-toast",
+  "name": "Halo Toast",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Sonner-backed polished toasts with rim variants; mount PolishedToaster once in the root layout",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "sonner"
+  ],
+  "registryDependencies": [
+    "shadcn/button"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-toast.json",
+  "sourcePath": "apps/www/public/r/halo-toast.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-toast.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-toast-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-toast-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "600bb4937f521c72",
+  "importedAt": "2026-11-05T17:59:32.881Z"
+}

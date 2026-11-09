@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/hover-card",
+  "name": "Hover Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "survol",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/hover-card.json",
+  "sourcePath": "apps/origin/public/r/hover-card.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/hover-card.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/hover-card.tsx"
+  },
+  "contentHash": "7f1b12434f27d45c",
+  "importedAt": "2026-11-05T17:59:43.152Z"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "panelui-web/soundwave",
+  "name": "Soundwave",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "son",
+    "web"
+  ],
+  "description": "A voice drawn while an app listens: capsules, bars, a line, a field of dots, spokes round a person, or rings of dots.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/soundwave.json",
+  "sourcePath": "apps/docs/public/r/web/soundwave.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/soundwave.tsx",
+      "role": "source",
+      "target": "@components/panelui/soundwave.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/soundwave/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/soundwave/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "57d6e1395427af6a",
+  "importedAt": "2026-11-05T00:16:56.970Z",
+  "updatedAt": "2026-11-05T00:19:20.557Z"
+}

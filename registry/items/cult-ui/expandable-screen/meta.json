@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/expandable-screen",
+  "name": "Expandable Screen",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A full-screen expandable component with morphing animations using shared layout IDs for smooth transitions",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/expandable-screen.json",
+  "sourcePath": "apps/www/public/r/expandable-screen.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/expandable-screen.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/expandable-screen-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/expandable-screen-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0fbd9f0e7467c4ed",
+  "importedAt": "2026-11-05T17:59:32.742Z"
+}

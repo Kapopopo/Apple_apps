@@ -1,0 +1,47 @@
+{
+  "id": "panelui/scatter-chart",
+  "name": "Scatter Chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "dataviz",
+    "expo"
+  ],
+  "description": "Two quantities against each other, to show how they relate.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-svg",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/chart",
+    "panelui/chart-accessibility",
+    "panelui/cn",
+    "panelui/text",
+    "panelui/use-skeleton-handoff"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/scatter-chart.json",
+  "sourcePath": "apps/docs/public/r/scatter-chart.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/scatter-chart.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "d2bb44a4b2a5a984",
+  "importedAt": "2026-11-05T00:16:56.165Z"
+}

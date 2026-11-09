@@ -1,0 +1,36 @@
+{
+  "id": "react-bits/blob-cursor",
+  "name": "BlobCursor",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web"
+  ],
+  "description": "Liquid metal blob cursor that stretches, sloshes and bursts into droplets, in chrome, jelly, pearl or ink.",
+  "framework": "react",
+  "dependencies": [
+    "three@^0.180.0"
+  ],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/BlobCursor-TS-TW.json",
+  "sourcePath": "public/r/BlobCursor-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "BlobCursor/BlobCursor.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "BlobCursor/BlobCursor.tsx"
+  },
+  "contentHash": "aa198deb469e4472",
+  "importedAt": "2026-11-05T17:59:45.504Z"
+}

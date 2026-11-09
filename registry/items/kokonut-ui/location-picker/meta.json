@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/location-picker",
+  "name": "Location Picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/location-picker.json",
+  "sourcePath": "public/r/location-picker.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/location-picker.tsx",
+      "role": "source",
+      "target": "components/kokonutui/location-picker.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/location-picker.tsx"
+  },
+  "contentHash": "8c3b3ddb49cafccc",
+  "importedAt": "2026-11-05T17:59:35.530Z"
+}

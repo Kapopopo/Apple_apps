@@ -1,0 +1,47 @@
+{
+  "id": "shadcn/login-05",
+  "name": "Login 05",
+  "type": "section",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "A simple email-only login page.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/card",
+    "shadcn/input",
+    "shadcn/label",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/login-05.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/login-05.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/login-05/page.tsx",
+      "role": "source",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "blocks/login-05/components/login-form.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/login-05/page.tsx"
+  },
+  "contentHash": "b116a9333e92302b",
+  "importedAt": "2026-11-05T17:59:23.102Z"
+}

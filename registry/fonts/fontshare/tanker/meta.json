@@ -1,0 +1,54 @@
+{
+  "id": "fontshare/tanker",
+  "name": "Tanker",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "banners",
+    "books",
+    "editorial",
+    "logos",
+    "poster"
+  ],
+  "description": "Sans serif · 1 style · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/tanker",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Tanker par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Tanker",
+    "slug": "tanker",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Ruosi Huang"
+    ]
+  },
+  "contentHash": "d1d37558bf29eacf",
+  "importedAt": "2026-11-05T00:16:59.721Z"
+}

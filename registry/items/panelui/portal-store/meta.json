@@ -1,0 +1,34 @@
+{
+  "id": "panelui/portal-store",
+  "name": "Portal Store",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "What every portal has on screen, removed a frame after it stops taking touches.",
+  "framework": "react-native",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/portal-store.json",
+  "sourcePath": "apps/docs/public/r/portal-store.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/portal-store.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "97b6953af244f41b",
+  "importedAt": "2026-11-05T00:16:56.109Z",
+  "updatedAt": "2026-11-05T00:18:17.876Z"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "shadcn/tabs",
+  "name": "Tabs",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-tabs"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/tabs.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/tabs.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/tabs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/tabs-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/tabs-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b8ab74c31766afaa",
+  "importedAt": "2026-11-05T17:59:23.460Z"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "origin-ui/comp-547",
+  "name": "Upload 547",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "drag",
+    "drag and drop",
+    "file",
+    "image",
+    "upload",
+    "web"
+  ],
+  "description": "Exemple Origin UI : upload, file, image, drag and drop.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/use-file-upload"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-547.json",
+  "sourcePath": "apps/origin/public/r/comp-547.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-547.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/hooks/use-file-upload.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-547.tsx"
+  },
+  "contentHash": "caf79ff47faacc36",
+  "importedAt": "2026-11-05T17:59:42.513Z"
+}

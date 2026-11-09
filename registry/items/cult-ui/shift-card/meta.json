@@ -1,0 +1,43 @@
+{
+  "id": "cult-ui/shift-card",
+  "name": "Shift Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "Card component with shift animation effects and hover interactions",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/shift-card.json",
+  "sourcePath": "apps/www/public/r/shift-card.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/shift-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/shift-card-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/shift-card-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "292e76a667ac7197",
+  "importedAt": "2026-11-05T17:59:33.165Z"
+}

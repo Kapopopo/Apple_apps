@@ -1,0 +1,6 @@
+/* Bespoke Slab — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=bespoke-slab@1,300,400,500,700,800&display=swap');
+
+:root {
+  --font-bespoke-slab: 'Bespoke Slab', serif;
+}

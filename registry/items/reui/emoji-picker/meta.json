@@ -1,0 +1,44 @@
+{
+  "id": "reui/emoji-picker",
+  "name": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/dropdown-menu",
+    "shadcn/empty",
+    "shadcn/input-group",
+    "shadcn/popover",
+    "shadcn/skeleton",
+    "shadcn/tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/emoji-picker.json",
+  "sourcePath": "public/r/styles/base-luma/emoji-picker.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/emoji-picker.tsx",
+      "role": "source",
+      "target": "components/reui/emoji-picker.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/emoji-picker.tsx"
+  },
+  "contentHash": "41e3129dcb2abacf",
+  "importedAt": "2026-11-05T17:59:38.135Z",
+  "updatedAt": "2026-11-05T18:07:49.764Z"
+}

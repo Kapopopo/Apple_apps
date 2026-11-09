@@ -1,0 +1,34 @@
+{
+  "id": "kokonut-ui/use-auto-resize-textarea",
+  "name": "Use Auto Resize Textarea",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "React hook that auto-resizes a textarea to fit its content between a min and max height.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/use-auto-resize-textarea.json",
+  "sourcePath": "public/r/use-auto-resize-textarea.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "hooks/use-auto-resize-textarea.ts",
+      "role": "source",
+      "target": "hooks/use-auto-resize-textarea.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "16c5e821cc2a7363",
+  "importedAt": "2026-11-05T17:59:35.887Z"
+}

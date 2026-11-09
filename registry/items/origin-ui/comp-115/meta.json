@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-115",
+  "name": "Button 115",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "previous",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, previous.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-115.json",
+  "sourcePath": "apps/origin/public/r/comp-115.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-115.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-115.tsx"
+  },
+  "contentHash": "19c49281c92e919b",
+  "importedAt": "2026-11-05T17:59:40.545Z"
+}

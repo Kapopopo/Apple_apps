@@ -1,0 +1,52 @@
+{
+  "id": "magic-ui/striped-pattern",
+  "name": "Striped Pattern",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/striped-pattern.json",
+  "sourcePath": "apps/www/public/r/striped-pattern.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/striped-pattern.tsx",
+      "role": "source",
+      "target": "components/magicui/striped-pattern.tsx"
+    },
+    {
+      "path": "registry/example/striped-pattern-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/striped-pattern-colored.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/striped-pattern-dashed.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/striped-pattern-left.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/striped-pattern-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d545ab18dc3976fe",
+  "importedAt": "2026-11-05T17:59:28.230Z"
+}

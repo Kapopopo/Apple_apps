@@ -1,0 +1,50 @@
+{
+  "id": "panelui/context-menu",
+  "name": "Context Menu",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Actions for a piece of content, opened by holding it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/haptics",
+    "panelui/menu",
+    "panelui/popover",
+    "panelui/portal",
+    "panelui/refs"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/context-menu.json",
+  "sourcePath": "apps/docs/public/r/context-menu.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/context-menu-invocation.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/context-menu.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "a80ef20c9e05ed8d",
+  "importedAt": "2026-11-05T00:16:55.900Z"
+}

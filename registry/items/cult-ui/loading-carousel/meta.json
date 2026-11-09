@@ -1,0 +1,47 @@
+{
+  "id": "cult-ui/loading-carousel",
+  "name": "Loading Carousel",
+  "type": "component",
+  "category": "Carrousels",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Loading carousel component with smooth transitions and customizable content",
+  "framework": "react",
+  "dependencies": [
+    "embla-carousel-autoplay",
+    "lucide-react",
+    "motion",
+    "next"
+  ],
+  "registryDependencies": [
+    "shadcn/carousel"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/loading-carousel.json",
+  "sourcePath": "apps/www/public/r/loading-carousel.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/loading-carousel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/loading-carousel-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/loading-carousel-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7a626b46bb93d552",
+  "importedAt": "2026-11-05T17:59:32.951Z"
+}

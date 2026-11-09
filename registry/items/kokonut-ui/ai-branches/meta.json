@@ -1,0 +1,42 @@
+{
+  "id": "kokonut-ui/ai-branches",
+  "name": "Ai Branches",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "animé",
+    "ia",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/ai-branches.json",
+  "sourcePath": "public/r/ai-branches.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/ai-branches.tsx",
+      "role": "source",
+      "target": "components/kokonutui/ai-branches.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/ai-branches.tsx"
+  },
+  "contentHash": "c6edd5c439e8b940",
+  "importedAt": "2026-11-05T17:59:35.350Z"
+}

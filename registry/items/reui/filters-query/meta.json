@@ -1,0 +1,39 @@
+{
+  "id": "reui/filters-query",
+  "name": "Filters Query",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/filters",
+    "reui/filters-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/filters-query.json",
+  "sourcePath": "public/r/styles/base-luma/filters-query.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/filters/filters-query.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-query.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/filters/filters-query.tsx"
+  },
+  "contentHash": "7ff0c6ec8e86d965",
+  "importedAt": "2026-11-05T17:59:38.234Z",
+  "updatedAt": "2026-11-05T18:07:49.877Z"
+}

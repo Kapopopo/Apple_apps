@@ -1,0 +1,39 @@
+{
+  "id": "panelui/scrim",
+  "name": "Scrim",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "The backdrop behind an overlay — a dim, or a blur when expo-blur is installed.",
+  "framework": "react-native",
+  "dependencies": [
+    "expo-blur",
+    "react-native",
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/scrim.json",
+  "sourcePath": "apps/docs/public/r/scrim.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/scrim.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "2505fa95690a0187",
+  "importedAt": "2026-11-05T00:16:56.167Z",
+  "updatedAt": "2026-11-05T00:18:17.904Z"
+}

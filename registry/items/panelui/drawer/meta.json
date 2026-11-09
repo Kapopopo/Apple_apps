@@ -1,0 +1,49 @@
+{
+  "id": "panelui/drawer",
+  "name": "Drawer",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "A panel that comes in from an edge of the screen and covers the app until dismissed.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/icons",
+    "panelui/portal",
+    "panelui/scrim",
+    "panelui/text",
+    "panelui/use-back-handler",
+    "panelui/use-direction"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/drawer.json",
+  "sourcePath": "apps/docs/public/r/drawer.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/drawer.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "5eaf710b56b97f2c",
+  "importedAt": "2026-11-05T00:16:55.926Z"
+}

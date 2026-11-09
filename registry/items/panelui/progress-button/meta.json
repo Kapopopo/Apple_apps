@@ -1,0 +1,48 @@
+{
+  "id": "panelui/progress-button",
+  "name": "Progress Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Press and hold to confirm, with the wait drawn on the button.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/progress-button.json",
+  "sourcePath": "apps/docs/public/r/progress-button.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/progress-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/progress-button-hold.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "7ec22925a0b94a5a",
+  "importedAt": "2026-11-05T00:16:56.117Z"
+}

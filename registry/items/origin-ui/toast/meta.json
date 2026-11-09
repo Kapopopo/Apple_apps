@@ -1,0 +1,49 @@
+{
+  "id": "origin-ui/toast",
+  "name": "Toast",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/use-toast",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/toast.json",
+  "sourcePath": "apps/origin/public/r/toast.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/toast.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/hooks/use-toast.ts",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/ui/toaster.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/toast.tsx"
+  },
+  "contentHash": "3f26227652c1f030",
+  "importedAt": "2026-11-05T17:59:43.221Z"
+}

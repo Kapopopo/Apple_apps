@@ -1,0 +1,43 @@
+{
+  "id": "kokonut-ui/smooth-drawer",
+  "name": "Smooth Drawer",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils",
+    "shadcn/button",
+    "shadcn/drawer"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/smooth-drawer.json",
+  "sourcePath": "public/r/smooth-drawer.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/smooth-drawer.tsx",
+      "role": "source",
+      "target": "components/kokonutui/smooth-drawer.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/smooth-drawer.tsx"
+  },
+  "contentHash": "5e02bce2d4c40bd0",
+  "importedAt": "2026-11-05T17:59:35.777Z"
+}

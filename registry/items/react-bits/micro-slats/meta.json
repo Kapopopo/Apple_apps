@@ -1,0 +1,37 @@
+{
+  "id": "react-bits/micro-slats",
+  "name": "MicroSlats",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "3d",
+    "web"
+  ],
+  "description": "A wall of tiny slats that becomes a rolling sea in perspective, with glinting crests.",
+  "framework": "react",
+  "dependencies": [
+    "ogl@^1.0.11"
+  ],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/MicroSlats-TS-TW.json",
+  "sourcePath": "public/r/MicroSlats-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "MicroSlats/MicroSlats.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "MicroSlats/MicroSlats.tsx"
+  },
+  "contentHash": "7fd66bb96f0d258b",
+  "importedAt": "2026-11-05T17:59:45.876Z"
+}

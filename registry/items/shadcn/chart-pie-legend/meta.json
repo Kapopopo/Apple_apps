@@ -1,0 +1,40 @@
+{
+  "id": "shadcn/chart-pie-legend",
+  "name": "Chart Pie Legend",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/card",
+    "shadcn/chart"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/chart-pie-legend.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/chart-pie-legend.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "charts/chart-pie-legend.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "charts/chart-pie-legend.tsx"
+  },
+  "contentHash": "de412e1666d29b86",
+  "importedAt": "2026-11-05T17:59:22.860Z"
+}

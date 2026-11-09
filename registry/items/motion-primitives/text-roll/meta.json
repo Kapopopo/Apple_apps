@@ -1,0 +1,37 @@
+{
+  "id": "motion-primitives/text-roll",
+  "name": "Text Roll",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/public/c/text-roll.json",
+  "sourcePath": "public/c/text-roll.json",
+  "sourceCommit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "text-roll.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "motion-primitives/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "text-roll.tsx"
+  },
+  "contentHash": "191933a1d29a530d",
+  "importedAt": "2026-11-05T17:59:30.378Z"
+}

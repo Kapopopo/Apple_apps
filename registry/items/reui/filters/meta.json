@@ -1,0 +1,131 @@
+{
+  "id": "reui/filters",
+  "name": "Filters",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/cascader-context",
+    "reui/cascader-footer",
+    "reui/cascader-item",
+    "reui/cascader-lib",
+    "reui/cascader-nav",
+    "reui/cascader-types",
+    "reui/cascader-virtual",
+    "reui/filters-advanced",
+    "reui/filters-builder",
+    "reui/filters-chip",
+    "reui/filters-context",
+    "reui/filters-dnd",
+    "reui/filters-draft",
+    "reui/filters-editors",
+    "reui/filters-i18n",
+    "reui/filters-lib",
+    "reui/filters-operators",
+    "reui/filters-query",
+    "reui/filters-types",
+    "shadcn/button",
+    "shadcn/button-group",
+    "shadcn/dropdown-menu",
+    "shadcn/input",
+    "shadcn/popover",
+    "shadcn/tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/filters.json",
+  "sourcePath": "public/r/styles/base-luma/filters.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/filters/filters-advanced.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-advanced.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-builder.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-builder.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-chip.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-chip.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-context.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-context.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-date.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-date.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-dnd.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-draft.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-draft.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-editors.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-editors.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-i18n.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-i18n.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-lib.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-lib.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-operators.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-operators.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-query.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-query.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters-types.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters-types.tsx"
+    },
+    {
+      "path": "components/reui/filters/filters.tsx",
+      "role": "source",
+      "target": "components/reui/filters/filters.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/filters/filters-advanced.tsx"
+  },
+  "contentHash": "f75b88e675aa3dad",
+  "importedAt": "2026-11-05T17:59:38.241Z",
+  "updatedAt": "2026-11-05T18:07:49.885Z"
+}

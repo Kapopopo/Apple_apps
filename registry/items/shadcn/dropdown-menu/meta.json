@@ -1,0 +1,52 @@
+{
+  "id": "shadcn/dropdown-menu",
+  "name": "Dropdown Menu",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-dropdown-menu",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/dropdown-menu.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/dropdown-menu.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/dropdown-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/dropdown-menu-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/dropdown-menu-checkboxes.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/dropdown-menu-radio-group.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/dropdown-menu-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5a8dbc62217f4ae7",
+  "importedAt": "2026-11-05T17:59:23.025Z"
+}

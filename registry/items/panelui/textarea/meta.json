@@ -1,0 +1,49 @@
+{
+  "id": "panelui/textarea",
+  "name": "Textarea",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Text field that runs to several lines, sized in rows.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/keyboard-avoider",
+    "panelui/label",
+    "panelui/refs",
+    "panelui/text",
+    "panelui/use-keyboard-avoidance"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/textarea.json",
+  "sourcePath": "apps/docs/public/r/textarea.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/textarea.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/textarea-disabled.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "d6f21cd1a68d62f9",
+  "importedAt": "2026-11-05T00:16:56.287Z"
+}

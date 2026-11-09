@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/stack-panel",
+  "name": "Stack Panel",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/stack-panel.json",
+  "sourcePath": "public/r/stack-panel.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/stack-panel.tsx",
+      "role": "source",
+      "target": "components/kokonutui/stack-panel.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/stack-panel.tsx"
+  },
+  "contentHash": "6f1866382d177453",
+  "importedAt": "2026-11-05T17:59:35.819Z"
+}

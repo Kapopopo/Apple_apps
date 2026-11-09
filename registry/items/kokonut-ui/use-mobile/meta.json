@@ -1,0 +1,34 @@
+{
+  "id": "kokonut-ui/use-mobile",
+  "name": "Use Mobile",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "React hook that reports whether the viewport is below the 768px mobile breakpoint.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/use-mobile.json",
+  "sourcePath": "public/r/use-mobile.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "hooks/use-mobile.ts",
+      "role": "source",
+      "target": "hooks/use-mobile.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "cb967dbd0f0ef4f3",
+  "importedAt": "2026-11-05T17:59:35.899Z"
+}

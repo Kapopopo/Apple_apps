@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-472",
+  "name": "Table 472",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "checkbox",
+    "table",
+    "web"
+  ],
+  "description": "Exemple Origin UI : table, checkbox.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/checkbox",
+    "origin-ui/table"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-472.json",
+  "sourcePath": "apps/origin/public/r/comp-472.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-472.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-472.tsx"
+  },
+  "contentHash": "92b0eabc1202962c",
+  "importedAt": "2026-11-05T17:59:42.184Z"
+}

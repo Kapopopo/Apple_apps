@@ -1,0 +1,54 @@
+{
+  "id": "magic-ui/animated-theme-toggler",
+  "name": "Theme Toggler",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Theme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/animated-theme-toggler.json",
+  "sourcePath": "apps/www/public/r/animated-theme-toggler.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/animated-theme-toggler.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/animated-theme-toggler-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-theme-toggler-diamond-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-theme-toggler-hexagon-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/animated-theme-toggler-next-themes-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/animated-theme-toggler-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "03bc5c1efa4cfc0f",
+  "importedAt": "2026-11-05T17:59:28.028Z"
+}

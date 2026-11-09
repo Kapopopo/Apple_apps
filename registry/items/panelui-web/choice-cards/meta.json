@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/choice-cards",
+  "name": "Choice Cards",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "One option chosen from a few, each shown as a picture of what it does.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/choice-cards.json",
+  "sourcePath": "apps/docs/public/r/web/choice-cards.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/choice-cards.tsx",
+      "role": "source",
+      "target": "@components/panelui/choice-cards.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/choice-cards/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/choice-cards/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "20d281e09b2c2c4b",
+  "importedAt": "2026-11-05T00:16:56.557Z"
+}

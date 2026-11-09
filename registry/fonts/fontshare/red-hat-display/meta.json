@@ -1,0 +1,127 @@
+{
+  "id": "fontshare/red-hat-display",
+  "name": "Red Hat Display",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "banners",
+    "corporate",
+    "magazines",
+    "variable",
+    "websites"
+  ],
+  "description": "Sans serif · 16 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/red-hat-display",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Red Hat Display",
+    "slug": "red-hat-display",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "ExtraBold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraBoldItalic",
+        "weight": 801,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=red-hat-display@1,300,400,500,600,700,800,900&display=swap",
+    "designers": [
+      "MCKL",
+      "Jeremy Mickel"
+    ]
+  },
+  "contentHash": "5c7fb3c8f81749d8",
+  "importedAt": "2026-11-05T00:16:59.955Z"
+}

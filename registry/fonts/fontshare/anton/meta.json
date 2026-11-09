@@ -1,0 +1,52 @@
+{
+  "id": "fontshare/anton",
+  "name": "Anton",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "apps",
+    "banners",
+    "books",
+    "headlines",
+    "tight"
+  ],
+  "description": "Sans serif · 1 style",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/anton",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Anton",
+    "slug": "anton",
+    "category": "Sans, Display",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=anton@400&display=swap",
+    "designers": [
+      "Vernon Adams"
+    ]
+  },
+  "contentHash": "17cb64f0500824a6",
+  "importedAt": "2026-11-05T00:16:59.770Z",
+  "updatedAt": "2026-11-05T00:37:05.254Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/collab-avatar",
+  "name": "Collab Avatar",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Collaboration avatar with initials and color",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/collab-avatar.json",
+  "sourcePath": "apps/www/public/r/collab-avatar.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/collab-avatar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/collab-avatar-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/collab-avatar-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "12ab430cc21f8ffa",
+  "importedAt": "2026-11-05T17:59:32.685Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/file-tree",
+  "name": "File Tree",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "web"
+  ],
+  "description": "A component used to showcase the folder and file structure of a directory.",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-accordion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/file-tree.json",
+  "sourcePath": "apps/www/public/r/file-tree.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/file-tree.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/file-tree-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/file-tree-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "862b4eb8f08ba250",
+  "importedAt": "2026-11-05T17:59:28.118Z"
+}

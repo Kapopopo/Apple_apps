@@ -1,0 +1,45 @@
+{
+  "id": "magic-ui/dock",
+  "name": "Dock",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "application",
+    "survol"
+  ],
+  "description": "Rassembler les actions principales dans une navigation compacte.",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority",
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/dock",
+  "sourcePath": "https://magicui.design/r/dock.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/dock.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "dock"
+  },
+  "catalogId": "7cea5f752a35cc94",
+  "contentHash": "9dbc13bc6ccd360e",
+  "importedAt": "2026-11-05T00:16:49.231Z"
+}

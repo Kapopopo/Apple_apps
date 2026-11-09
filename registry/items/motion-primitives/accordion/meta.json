@@ -1,0 +1,44 @@
+{
+  "id": "motion-primitives/accordion",
+  "name": "Accordion",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "animé",
+    "application",
+    "interaction"
+  ],
+  "description": "Révéler des réponses progressivement tout en conservant une page lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://motion-primitives.com/docs/accordion",
+  "sourcePath": "https://raw.githubusercontent.com/ibelick/motion-primitives/main/components/core/accordion.tsx",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas. Adaptation de typage pour React 19, sans changement de comportement.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "demos/src/vendor/accordion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "accordion"
+  },
+  "catalogId": "1d2f103c77b67e8a",
+  "contentHash": "63c38cc3f57a3108",
+  "importedAt": "2026-11-05T00:16:49.225Z"
+}

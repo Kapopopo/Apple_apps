@@ -1,0 +1,41 @@
+{
+  "id": "reui/time-picker",
+  "name": "Shadcn time picker with scrollable hour, minute, second and AM/PM columns, a typable input, steps, bounds and localized labels.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "scroll",
+    "web"
+  ],
+  "description": "Shadcn time picker with scrollable hour, minute, second and AM/PM columns, a typable input, steps, bounds and localized labels.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/input-group",
+    "shadcn/popover"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/time-picker.json",
+  "sourcePath": "public/r/styles/base-luma/time-picker.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/time-picker.tsx",
+      "role": "source",
+      "target": "components/reui/time-picker.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/time-picker.tsx"
+  },
+  "contentHash": "da7f0a2e5ccea5f4",
+  "importedAt": "2026-11-05T17:59:38.316Z",
+  "updatedAt": "2026-11-05T18:07:50.071Z"
+}

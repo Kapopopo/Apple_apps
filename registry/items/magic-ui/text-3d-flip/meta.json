@@ -1,0 +1,48 @@
+{
+  "id": "magic-ui/text-3d-flip",
+  "name": "Text 3D Flip",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "3d",
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "A text effect that flips each letter in 3D with a staggered animation on hover.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/text-3d-flip.json",
+  "sourcePath": "apps/www/public/r/text-3d-flip.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/text-3d-flip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/text-3d-flip-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/text-3d-flip-demo-2.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/text-3d-flip-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "95b2ee78eb15bd67",
+  "importedAt": "2026-11-05T17:59:28.240Z"
+}

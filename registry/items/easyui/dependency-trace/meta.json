@@ -1,0 +1,59 @@
+{
+  "id": "easyui/dependency-trace",
+  "name": "Dependency Trace",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "dataviz",
+    "framer motion",
+    "graph visualization",
+    "motion",
+    "svg"
+  ],
+  "description": "An interactive SVG node graph that maps and dynamically traces relationship connections with directional bezier curves.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DependencyTrace.tsx",
+  "sourcePath": "src/components/ui/DependencyTrace.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DependencyTrace.tsx",
+      "role": "source",
+      "target": "components/ui/dependency-trace.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DependencyTrace.tsx"
+  },
+  "contentHash": "56a1590a702afcc2",
+  "importedAt": "2026-11-05T00:16:52.024Z",
+  "updatedAt": "2026-11-05T00:18:17.372Z"
+}

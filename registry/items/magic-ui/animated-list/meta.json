@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/animated-list",
+  "name": "Animated List",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "animé",
+    "dashboard",
+    "entree"
+  ],
+  "description": "Présenter un flux d’activité avec une apparition progressive des événements.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/animated-list",
+  "sourcePath": "https://magicui.design/r/animated-list.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-list"
+  },
+  "catalogId": "57348184fab8edf2",
+  "contentHash": "42df22272d72b796",
+  "importedAt": "2026-11-05T00:16:49.270Z"
+}

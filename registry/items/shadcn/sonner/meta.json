@@ -1,0 +1,42 @@
+{
+  "id": "shadcn/sonner",
+  "name": "Sonner",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "next-themes",
+    "sonner"
+  ],
+  "registryDependencies": [],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sonner.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sonner.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/sonner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/sonner-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/sonner-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f6e856be3d2a378d",
+  "importedAt": "2026-11-05T17:59:23.436Z"
+}

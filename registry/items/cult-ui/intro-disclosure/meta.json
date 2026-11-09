@@ -1,0 +1,52 @@
+{
+  "id": "cult-ui/intro-disclosure",
+  "name": "Intro Disclosure",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Intro disclosure component with expandable content and smooth animations",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "next",
+    "react-use-measure"
+  ],
+  "registryDependencies": [
+    "shadcn/aspect-ratio",
+    "shadcn/button",
+    "shadcn/checkbox",
+    "shadcn/dialog",
+    "shadcn/drawer",
+    "shadcn/progress"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/intro-disclosure.json",
+  "sourcePath": "apps/www/public/r/intro-disclosure.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/intro-disclosure.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/intro-disclosure-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/intro-disclosure-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f2d3d6e6d6d13e06",
+  "importedAt": "2026-11-05T17:59:32.939Z"
+}

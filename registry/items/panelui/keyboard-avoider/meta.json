@@ -1,0 +1,41 @@
+{
+  "id": "panelui/keyboard-avoider",
+  "name": "Keyboard Avoider",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "animé",
+    "clavier",
+    "expo"
+  ],
+  "description": "View that lifts itself clear of the software keyboard.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native-reanimated"
+  ],
+  "registryDependencies": [
+    "panelui/text",
+    "panelui/use-keyboard-avoidance"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/keyboard-avoider.json",
+  "sourcePath": "apps/docs/public/r/keyboard-avoider.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/keyboard-avoider.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "17b8d00b6aa7b66b",
+  "importedAt": "2026-11-05T00:16:55.999Z",
+  "updatedAt": "2026-11-05T00:18:17.844Z"
+}

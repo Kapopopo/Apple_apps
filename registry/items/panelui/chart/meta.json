@@ -1,0 +1,36 @@
+{
+  "id": "panelui/chart",
+  "name": "Chart",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "dataviz",
+    "expo"
+  ],
+  "description": "Scales, monotone curves and path building. Shared by every chart.",
+  "framework": "react-native",
+  "dependencies": [
+    "uniwind"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/chart.json",
+  "sourcePath": "apps/docs/public/r/chart.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "lib/chart.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "2791aab18bc0aee2",
+  "importedAt": "2026-11-05T00:16:55.849Z"
+}

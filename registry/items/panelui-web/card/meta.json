@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/card",
+  "name": "Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "A surface that holds one thing, with a heading, an action beside it and a footer.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/card.json",
+  "sourcePath": "apps/docs/public/r/web/card.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/card.tsx",
+      "role": "source",
+      "target": "@components/panelui/card.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/card/footer.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/card/footer.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d4dcb5e6d0ec578e",
+  "importedAt": "2026-11-05T00:16:56.523Z"
+}

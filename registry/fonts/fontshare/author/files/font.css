@@ -1,0 +1,6 @@
+/* Author — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=author@1,200,300,400,500,600,700&display=swap');
+
+:root {
+  --font-author: 'Author', sans-serif;
+}

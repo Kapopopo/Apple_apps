@@ -1,0 +1,49 @@
+{
+  "id": "origin-ui/comp-594",
+  "name": "Navbar, navigation 594",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "navbar, navigation",
+    "web"
+  ],
+  "description": "Exemple Origin UI : navbar, navigation.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dropdown-menu",
+    "origin-ui/radio-group"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-594.json",
+  "sourcePath": "apps/origin/public/r/comp-594.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-594.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/app-toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/team-switcher.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-594.tsx"
+  },
+  "contentHash": "a54fb216df42c7a0",
+  "importedAt": "2026-11-05T17:59:42.954Z"
+}

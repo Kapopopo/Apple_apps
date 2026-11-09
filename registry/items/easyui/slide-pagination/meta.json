@@ -1,0 +1,59 @@
+{
+  "id": "easyui/slide-pagination",
+  "name": "SlidePagination",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "accessible",
+    "animé",
+    "indicator travel",
+    "light & dark",
+    "navigation",
+    "shared layout"
+  ],
+  "description": "A pagination control where the active indicator slides between pages rather than instantly switching. The active background uses shared layoutId so the indicator visibly travels from one item to the next.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SlidePagination.tsx",
+  "sourcePath": "src/components/ui/SlidePagination.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SlidePagination.tsx",
+      "role": "source",
+      "target": "components/ui/slide-pagination.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SlidePagination.tsx"
+  },
+  "contentHash": "e69b358d70454658",
+  "importedAt": "2026-11-05T00:16:53.717Z"
+}

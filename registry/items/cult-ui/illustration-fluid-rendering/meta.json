@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/illustration-fluid-rendering",
+  "name": "Illustration Fluid Rendering",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "web"
+  ],
+  "description": "Fluid rendering illustration",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/illustration-fluid-rendering.json",
+  "sourcePath": "apps/www/public/r/illustration-fluid-rendering.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/illustration-fluid-rendering.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/illustration-fluid-rendering-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/illustration-fluid-rendering-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "de2c0e36838a080b",
+  "importedAt": "2026-11-05T17:59:32.927Z"
+}

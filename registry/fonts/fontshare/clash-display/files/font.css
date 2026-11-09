@@ -1,0 +1,6 @@
+/* Clash Display — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@1,200,300,400,500,600,700&display=swap');
+
+:root {
+  --font-clash-display: 'Clash Display', sans-serif;
+}

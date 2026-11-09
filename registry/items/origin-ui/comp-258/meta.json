@@ -1,0 +1,49 @@
+{
+  "id": "origin-ui/comp-258",
+  "name": "Slider 258",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "input",
+    "label",
+    "radix",
+    "range",
+    "range slider",
+    "slider",
+    "web"
+  ],
+  "description": "Exemple Origin UI : slider, range slider, label, input, range, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/input",
+    "origin-ui/label",
+    "origin-ui/slider",
+    "origin-ui/use-slider-with-input"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-258.json",
+  "sourcePath": "apps/origin/public/r/comp-258.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-258.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/hooks/use-slider-with-input.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-258.tsx"
+  },
+  "contentHash": "607e565f25fada42",
+  "importedAt": "2026-11-05T17:59:41.047Z"
+}

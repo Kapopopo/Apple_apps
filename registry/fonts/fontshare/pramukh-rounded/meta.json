@@ -1,0 +1,141 @@
+{
+  "id": "fontshare/pramukh-rounded",
+  "name": "Pramukh Rounded",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "books",
+    "editorial",
+    "headlines",
+    "posters",
+    "text",
+    "variable"
+  ],
+  "description": "Sans serif · 18 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/pramukh-rounded",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Pramukh Rounded par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Pramukh Rounded",
+    "slug": "pramukh-rounded",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Extralight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "ExtralightItalic",
+        "weight": 201,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Semilight",
+        "weight": 350,
+        "italic": false
+      },
+      {
+        "name": "SemilightItalic",
+        "weight": 351,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Semibold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiboldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "Extrabold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraboldItalic",
+        "weight": 801,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=pramukh-rounded@1,200,300,350,400,600,700,800,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Aarya Purohit",
+      "Indian Type Foundry"
+    ]
+  },
+  "contentHash": "681894abd78382b3",
+  "importedAt": "2026-11-05T00:16:59.937Z"
+}

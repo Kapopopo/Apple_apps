@@ -1,0 +1,37 @@
+{
+  "id": "kokonut-ui/shadow-text",
+  "name": "Shadow Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/shadow-text.json",
+  "sourcePath": "public/r/shadow-text.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/shadow-text.tsx",
+      "role": "source",
+      "target": "components/kokonutui/shadow-text.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/shadow-text.tsx"
+  },
+  "contentHash": "5af0792b3c502c0f",
+  "importedAt": "2026-11-05T17:59:35.749Z"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "reui/event-calendar",
+  "name": "Headless-first event calendar with month, week, day, N-day and agenda views, external CRUD contract, and a subscribable store.",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "Headless-first event calendar with month, week, day, N-day and agenda views, external CRUD contract, and a subscribable store.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "@date-fns/tz",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar-agenda-view",
+    "reui/event-calendar-dnd",
+    "reui/event-calendar-event",
+    "reui/event-calendar-i18n",
+    "reui/event-calendar-lib",
+    "reui/event-calendar-month-view",
+    "reui/event-calendar-recurrence",
+    "reui/event-calendar-resource-view",
+    "reui/event-calendar-time-grid",
+    "reui/event-calendar-types",
+    "reui/icon-stack",
+    "shadcn/button",
+    "shadcn/calendar",
+    "shadcn/dropdown-menu",
+    "shadcn/popover",
+    "shadcn/scroll-area",
+    "shadcn/tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/event-calendar.json",
+  "sourcePath": "public/r/styles/base-luma/event-calendar.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/event-calendar/event-calendar-agenda-view.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-content.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-content.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-dnd.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-event.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-event.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-i18n.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-i18n.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-lib.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-lib.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-month-view.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-month-view.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-nav.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-nav.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-recurrence.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-recurrence.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-resource-view.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-resource-view.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-time-grid.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-time-grid.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar-types.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-types.tsx"
+    },
+    {
+      "path": "components/reui/event-calendar/event-calendar.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+  },
+  "contentHash": "9b17145b86deda25",
+  "importedAt": "2026-11-05T17:59:38.165Z",
+  "updatedAt": "2026-11-05T18:07:49.804Z"
+}

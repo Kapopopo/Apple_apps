@@ -1,0 +1,34 @@
+{
+  "id": "kokonut-ui/use-copy-to-clipboard",
+  "name": "Use Copy To Clipboard",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "web"
+  ],
+  "description": "React hook that copies text to the clipboard and exposes a copied state with a reset timeout.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/use-copy-to-clipboard.json",
+  "sourcePath": "public/r/use-copy-to-clipboard.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "hooks/use-copy-to-clipboard.ts",
+      "role": "source",
+      "target": "hooks/use-copy-to-clipboard.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
+  },
+  "contentHash": "b512f3c02dc733c5",
+  "importedAt": "2026-11-05T17:59:35.893Z"
+}

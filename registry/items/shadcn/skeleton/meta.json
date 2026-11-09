@@ -1,0 +1,45 @@
+{
+  "id": "shadcn/skeleton",
+  "name": "Skeleton",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/skeleton.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/skeleton.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/skeleton.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/skeleton-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/skeleton-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/skeleton-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "4f9c7acaa824e964",
+  "importedAt": "2026-11-05T17:59:23.419Z"
+}

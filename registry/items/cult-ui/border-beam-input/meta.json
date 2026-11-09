@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/border-beam-input",
+  "name": "Border Beam Input",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "border-beam on Base UI input and input-group primitives with line or full border glow",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "border-beam"
+  ],
+  "registryDependencies": [
+    "shadcn/input-group"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/border-beam-input.json",
+  "sourcePath": "apps/www/public/r/border-beam-input.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/border-beam-input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/border-beam-input-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/border-beam-input-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cc892f05551abd2b",
+  "importedAt": "2026-11-05T17:59:32.657Z"
+}

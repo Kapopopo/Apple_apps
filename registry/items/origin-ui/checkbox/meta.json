@@ -1,0 +1,38 @@
+{
+  "id": "origin-ui/checkbox",
+  "name": "Checkbox",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/checkbox.json",
+  "sourcePath": "apps/origin/public/r/checkbox.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/checkbox.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/checkbox.tsx"
+  },
+  "contentHash": "e54e7bbec50b3891",
+  "importedAt": "2026-11-05T17:59:40.430Z"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "easyui/dot-shader",
+  "name": "Dot Shader",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "background",
+    "glsl shader",
+    "interactive",
+    "motion",
+    "webgl"
+  ],
+  "description": "A GPU-accelerated interactive dot matrix background shader with magnetic cursor repulsion, proximity illumination glow, dynamic lens scaling, and ambient wave motion.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/DotShader.tsx",
+  "sourcePath": "src/components/ui/DotShader.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/DotShader.tsx",
+      "role": "source",
+      "target": "components/ui/dot-shader.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/DotShader.tsx"
+  },
+  "contentHash": "034156e7c45de7ae",
+  "importedAt": "2026-11-05T00:16:52.116Z"
+}

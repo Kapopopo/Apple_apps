@@ -1,0 +1,45 @@
+{
+  "id": "cult-ui/ai-blob-warp",
+  "name": "Ai Blob Warp",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "ia",
+    "web",
+    "webgl"
+  ],
+  "description": "Circular avatar with Paper Design Warp shader; motion-safe pulse, pauses off-screen and when reduced motion is preferred",
+  "framework": "react",
+  "dependencies": [
+    "@paper-design/shaders-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/ai-blob-warp.json",
+  "sourcePath": "apps/www/public/r/ai-blob-warp.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/ai-blob-warp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/ai-blob-warp-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/ai-blob-warp-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "6e3a3985a6479fda",
+  "importedAt": "2026-11-05T17:59:32.534Z"
+}

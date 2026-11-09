@@ -1,0 +1,48 @@
+{
+  "id": "panelui/image-generation",
+  "name": "Image Generation",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "The place an image will be, while it is being made.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "react-native-svg",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/icons",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/image-generation.json",
+  "sourcePath": "apps/docs/public/r/image-generation.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/dot-field.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/image-generation.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "51be92b675ac7e17",
+  "importedAt": "2026-11-05T00:16:55.983Z"
+}

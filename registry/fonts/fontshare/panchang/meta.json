@@ -1,0 +1,90 @@
+{
+  "id": "fontshare/panchang",
+  "name": "Panchang",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "books",
+    "editorial",
+    "magazines",
+    "posters",
+    "variable"
+  ],
+  "description": "Sans serif · 8 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/panchang",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Panchang par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Panchang",
+    "slug": "panchang",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Extralight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Semibold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "Extrabold",
+        "weight": 800,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=panchang@1,200,300,400,500,600,700,800&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Barbara Bigosinska",
+      "Hitesh Malaviya"
+    ]
+  },
+  "contentHash": "a651214a9a061bba",
+  "importedAt": "2026-11-05T00:16:59.820Z"
+}

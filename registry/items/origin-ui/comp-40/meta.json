@@ -1,0 +1,43 @@
+{
+  "id": "origin-ui/comp-40",
+  "name": "Input 40",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "date",
+    "input",
+    "label",
+    "react aria",
+    "web"
+  ],
+  "description": "Exemple Origin UI : input, label, date, react aria.",
+  "framework": "react",
+  "dependencies": [
+    "react-aria-components"
+  ],
+  "registryDependencies": [
+    "origin-ui/datefield-rac"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-40.json",
+  "sourcePath": "apps/origin/public/r/comp-40.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-40.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-40.tsx"
+  },
+  "contentHash": "2d98fae28555f794",
+  "importedAt": "2026-11-05T17:59:41.871Z"
+}

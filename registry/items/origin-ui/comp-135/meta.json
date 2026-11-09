@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-135",
+  "name": "Checkbox 135",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "checkbox",
+    "disabled",
+    "label",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : checkbox, label, disabled, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/checkbox",
+    "origin-ui/label"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-135.json",
+  "sourcePath": "apps/origin/public/r/comp-135.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-135.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-135.tsx"
+  },
+  "contentHash": "6eb8dc4c415e2703",
+  "importedAt": "2026-11-05T17:59:40.621Z"
+}

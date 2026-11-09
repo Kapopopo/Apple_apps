@@ -1,0 +1,43 @@
+{
+  "id": "shadcn/separator",
+  "name": "Separator",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-separator"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/separator.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/separator.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/separator.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/separator-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/separator-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "163868be3557f11b",
+  "importedAt": "2026-11-05T17:59:23.169Z"
+}

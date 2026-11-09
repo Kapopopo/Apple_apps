@@ -1,0 +1,46 @@
+{
+  "id": "origin-ui/comp-333",
+  "name": "Dialog 333",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "autocomplete",
+    "combobox",
+    "command",
+    "dialog",
+    "modal",
+    "popover",
+    "radix",
+    "search",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, command, combobox, popover, search, radix, autocomplete, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/command"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-333.json",
+  "sourcePath": "apps/origin/public/r/comp-333.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-333.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-333.tsx"
+  },
+  "contentHash": "cef8a8fe2fc2e2e1",
+  "importedAt": "2026-11-05T17:59:41.585Z"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/globe",
+  "name": "Globe",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "animé",
+    "web",
+    "webgl"
+  ],
+  "description": "An autorotating, interactive, and highly performant globe made using WebGL.",
+  "framework": "react",
+  "dependencies": [
+    "cobe@^0.6.4",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/globe.json",
+  "sourcePath": "apps/www/public/r/globe.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/globe.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/globe-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/globe-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "447d2eeccd0dc1b5",
+  "importedAt": "2026-11-05T17:59:28.127Z"
+}

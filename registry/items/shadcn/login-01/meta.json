@@ -1,0 +1,45 @@
+{
+  "id": "shadcn/login-01",
+  "name": "Login 01",
+  "type": "section",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "A simple login form.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/card",
+    "shadcn/input",
+    "shadcn/label",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/login-01.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/login-01.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/login-01/page.tsx",
+      "role": "source",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "blocks/login-01/components/login-form.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/login-01/page.tsx"
+  },
+  "contentHash": "daae36307995e1b9",
+  "importedAt": "2026-11-05T17:59:23.078Z"
+}

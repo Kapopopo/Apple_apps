@@ -1,0 +1,39 @@
+{
+  "id": "magic-ui/video-text",
+  "name": "Video Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "web"
+  ],
+  "description": "A component that displays text with a video playing in the background.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/video-text.json",
+  "sourcePath": "apps/www/public/r/video-text.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/video-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/video-text-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/video-text-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a304a0a0a25b4af0",
+  "importedAt": "2026-11-05T17:59:28.270Z"
+}

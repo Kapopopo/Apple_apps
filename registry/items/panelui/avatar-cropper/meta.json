@@ -1,0 +1,52 @@
+{
+  "id": "panelui/avatar-cropper",
+  "name": "Avatar Cropper",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "Frame a photo under a circle, and get that circle back as an image.",
+  "framework": "react-native",
+  "dependencies": [
+    "expo-image-manipulator",
+    "expo-image-picker",
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-svg",
+    "react-native-view-shot",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/button",
+    "panelui/cn",
+    "panelui/icons",
+    "panelui/refs"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/avatar-cropper.json",
+  "sourcePath": "apps/docs/public/r/avatar-cropper.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/avatar-cropper-math.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/avatar-cropper.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "a7e6782a798559a6",
+  "importedAt": "2026-11-05T00:16:55.784Z"
+}

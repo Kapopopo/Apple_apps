@@ -1,0 +1,60 @@
+{
+  "id": "easyui/live-line-chart",
+  "name": "Live Line Chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animé",
+    "data visualization",
+    "dataviz",
+    "feedback",
+    "interactive",
+    "line chart",
+    "live data",
+    "scroll",
+    "survol",
+    "svg"
+  ],
+  "description": "A real-time line chart that scrolls right-to-left, with a large current-value readout, a live delta, and a pause control. Hover or touch the chart to freeze the stream and scrub it with a crosshair tooltip.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/LiveLineChart.tsx",
+  "sourcePath": "src/components/ui/LiveLineChart.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/LiveLineChart.tsx",
+      "role": "source",
+      "target": "components/ui/live-line-chart.tsx"
+    },
+    {
+      "path": "src/lib/chart-primitives.tsx",
+      "role": "source",
+      "target": "lib/chart-primitives.tsx"
+    },
+    {
+      "path": "src/lib/dashboard-chart-utils.ts",
+      "role": "source",
+      "target": "lib/dashboard-chart-utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/LiveLineChart.tsx"
+  },
+  "contentHash": "fb8d9d20433b517d",
+  "importedAt": "2026-11-05T00:16:52.630Z"
+}

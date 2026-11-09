@@ -1,0 +1,74 @@
+{
+  "id": "shadcn/app-01",
+  "name": "App 01",
+  "type": "section",
+  "category": "Listes et tâches",
+  "tags": [
+    "web"
+  ],
+  "description": "A simple task app.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "next",
+    "swr"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/card",
+    "shadcn/input",
+    "shadcn/label",
+    "shadcn/skeleton"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/app-01.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/app-01.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/app-01/page.tsx",
+      "role": "source",
+      "target": "app/page.tsx"
+    },
+    {
+      "path": "blocks/app-01/api/tasks/route.ts",
+      "role": "source",
+      "target": "app/api/tasks/route.ts"
+    },
+    {
+      "path": "blocks/app-01/components/add-task-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/app-01/components/submit-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/app-01/components/tasks-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/app-01/hooks/use-tasks.ts",
+      "role": "source"
+    },
+    {
+      "path": "blocks/app-01/lib/constants.ts",
+      "role": "source"
+    },
+    {
+      "path": "blocks/app-01/lib/actions.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/app-01/page.tsx"
+  },
+  "contentHash": "7b0084a546869b6f",
+  "importedAt": "2026-11-05T17:59:22.559Z"
+}

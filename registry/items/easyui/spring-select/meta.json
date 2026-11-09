@@ -1,0 +1,59 @@
+{
+  "id": "easyui/spring-select",
+  "name": "SpringSelect",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "accessible",
+    "animé",
+    "forms",
+    "keyboard",
+    "light & dark",
+    "origin spring"
+  ],
+  "description": "A select dropdown whose menu follows the trigger with a tiny spring. The chevron rotates a hair past 180° before settling, and the panel slides down with a subtle overshoot.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SpringSelect.tsx",
+  "sourcePath": "src/components/ui/SpringSelect.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SpringSelect.tsx",
+      "role": "source",
+      "target": "components/ui/spring-select.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SpringSelect.tsx"
+  },
+  "contentHash": "f637c579a70a0a9e",
+  "importedAt": "2026-11-05T00:16:53.879Z"
+}

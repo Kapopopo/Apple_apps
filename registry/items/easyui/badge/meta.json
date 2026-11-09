@@ -1,0 +1,54 @@
+{
+  "id": "easyui/badge",
+  "name": "Badge",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "feedback",
+    "light & dark",
+    "removable chip",
+    "roll animation",
+    "status dot"
+  ],
+  "description": "An animated status badge where numbers and strings roll on value change, with live status pulse dot, removable chip actions, and rich tone variants.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/badge.tsx",
+  "sourcePath": "src/components/ui/badge.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/badge.tsx",
+      "role": "source",
+      "target": "components/ui/badge.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/badge.tsx"
+  },
+  "contentHash": "c1f6c367bebc36f1",
+  "importedAt": "2026-11-05T00:16:51.631Z"
+}

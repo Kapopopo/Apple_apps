@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/scroll-progress",
+  "name": "Scroll Progress",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "animé",
+    "scroll",
+    "web"
+  ],
+  "description": "Animated Scroll Progress for your pages",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/scroll-progress.json",
+  "sourcePath": "apps/www/public/r/scroll-progress.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/scroll-progress.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/scroll-progress-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/scroll-progress-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8e99531d0427d0ba",
+  "importedAt": "2026-11-05T17:59:28.221Z"
+}

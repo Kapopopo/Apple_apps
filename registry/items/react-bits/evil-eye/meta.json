@@ -1,0 +1,38 @@
+{
+  "id": "react-bits/evil-eye",
+  "name": "EvilEye",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web",
+    "webgl"
+  ],
+  "description": "Procedural evil eye shader with animated iris, slit pupil, and fiery outer glow.",
+  "framework": "react",
+  "dependencies": [
+    "ogl@^1.0.11"
+  ],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/EvilEye-TS-TW.json",
+  "sourcePath": "public/r/EvilEye-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "EvilEye/EvilEye.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "EvilEye/EvilEye.tsx"
+  },
+  "contentHash": "e2259e470cee8cb3",
+  "importedAt": "2026-11-05T17:59:45.661Z"
+}

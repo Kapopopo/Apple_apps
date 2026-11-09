@@ -1,0 +1,6 @@
+/* Dancing Script — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=dancing-script@1,400,700&display=swap');
+
+:root {
+  --font-dancing-script: 'Dancing Script', cursive;
+}

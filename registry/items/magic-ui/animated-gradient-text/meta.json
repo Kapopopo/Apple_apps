@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/animated-gradient-text",
+  "name": "Animated Gradient Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "boucle",
+    "landing page"
+  ],
+  "description": "Accentuer quelques mots sans animer tout le contenu.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/animated-gradient-text",
+  "sourcePath": "https://magicui.design/r/animated-gradient-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-gradient-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-gradient-text"
+  },
+  "catalogId": "ffa95a0f985a25bf",
+  "contentHash": "07553a3b47981475",
+  "importedAt": "2026-11-05T00:16:49.290Z"
+}

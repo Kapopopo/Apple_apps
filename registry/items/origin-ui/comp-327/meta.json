@@ -1,0 +1,49 @@
+{
+  "id": "origin-ui/comp-327",
+  "name": "Dialog 327",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "dialog",
+    "form",
+    "modal",
+    "radix",
+    "team",
+    "user",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, form, user, team, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dialog",
+    "origin-ui/input",
+    "origin-ui/label",
+    "origin-ui/tooltip",
+    "origin-ui/utils"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-327.json",
+  "sourcePath": "apps/origin/public/r/comp-327.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-327.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-327.tsx"
+  },
+  "contentHash": "e58bd2bdc7301a7f",
+  "importedAt": "2026-11-05T17:59:41.558Z"
+}

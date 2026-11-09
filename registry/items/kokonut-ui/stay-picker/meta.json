@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/stay-picker",
+  "name": "Stay Picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/stay-picker.json",
+  "sourcePath": "public/r/stay-picker.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/stay-picker.tsx",
+      "role": "source",
+      "target": "components/kokonutui/stay-picker.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/stay-picker.tsx"
+  },
+  "contentHash": "bf382fb1196b9e4e",
+  "importedAt": "2026-11-05T17:59:35.826Z"
+}

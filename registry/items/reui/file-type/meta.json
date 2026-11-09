@@ -1,0 +1,38 @@
+{
+  "id": "reui/file-type",
+  "name": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/file-type.json",
+  "sourcePath": "public/r/styles/base-luma/file-type.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/file-type.tsx",
+      "role": "source",
+      "target": "components/reui/file-type.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/file-type.tsx"
+  },
+  "contentHash": "e9bdfaccc7792952",
+  "importedAt": "2026-11-05T17:59:38.172Z",
+  "updatedAt": "2026-11-05T18:07:49.814Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "shadcn/calendar-21",
+  "name": "Calendar 21",
+  "type": "section",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "Custom days and formatters",
+  "framework": "react",
+  "dependencies": [
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "shadcn/calendar"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/calendar-21.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/calendar-21.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/calendar-21.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/calendar-21.tsx"
+  },
+  "contentHash": "0cb9788627114917",
+  "importedAt": "2026-11-05T17:59:22.680Z"
+}

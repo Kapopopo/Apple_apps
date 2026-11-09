@@ -1,0 +1,40 @@
+{
+  "id": "cult-ui/distorted-glass",
+  "name": "Distorted Glass",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/distorted-glass.json",
+  "sourcePath": "apps/www/public/r/distorted-glass.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/distorted-glass.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/distorted-glass-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/distorted-glass-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "7a17e3127350c3e7",
+  "importedAt": "2026-11-05T17:59:32.718Z"
+}

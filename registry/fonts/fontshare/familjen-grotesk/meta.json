@@ -1,0 +1,97 @@
+{
+  "id": "fontshare/familjen-grotesk",
+  "name": "Familjen Grotesk",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "banners",
+    "general",
+    "headline",
+    "packaging",
+    "variable",
+    "websites"
+  ],
+  "description": "Sans serif · 10 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/familjen-grotesk",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Familjen Grotesk",
+    "slug": "familjen-grotesk",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=familjen-grotesk@1,400,500,600,700&display=swap",
+    "designers": [
+      "Familjen STHLM AB"
+    ]
+  },
+  "contentHash": "3c7e7b00f753a639",
+  "importedAt": "2026-11-05T00:16:59.806Z"
+}

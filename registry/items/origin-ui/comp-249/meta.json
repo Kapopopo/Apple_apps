@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-249",
+  "name": "Slider 249",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "label",
+    "radix",
+    "slider",
+    "tooltip",
+    "web"
+  ],
+  "description": "Exemple Origin UI : slider, label, tooltip, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/label",
+    "origin-ui/slider"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-249.json",
+  "sourcePath": "apps/origin/public/r/comp-249.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-249.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-249.tsx"
+  },
+  "contentHash": "b6c1363e0a8b82ea",
+  "importedAt": "2026-11-05T17:59:41.006Z"
+}

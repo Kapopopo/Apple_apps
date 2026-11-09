@@ -1,0 +1,6 @@
+/* Sharpie — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=sharpie@1,300,400,700,800,900&display=swap');
+
+:root {
+  --font-sharpie: 'Sharpie', sans-serif;
+}

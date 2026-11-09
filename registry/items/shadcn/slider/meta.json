@@ -1,0 +1,43 @@
+{
+  "id": "shadcn/slider",
+  "name": "Slider",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slider"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/slider.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/slider.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/slider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/slider-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/slider-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e9a7b83e509cf04d",
+  "importedAt": "2026-11-05T17:59:23.428Z"
+}

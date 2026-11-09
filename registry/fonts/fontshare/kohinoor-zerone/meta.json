@@ -1,0 +1,59 @@
+{
+  "id": "fontshare/kohinoor-zerone",
+  "name": "Kohinoor Zerone",
+  "type": "font",
+  "category": "Display",
+  "tags": [
+    "beauty",
+    "cosmetic",
+    "headlines",
+    "lettering",
+    "posters"
+  ],
+  "description": "Display · 2 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/kohinoor-zerone",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Kohinoor Zerone par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Kohinoor Zerone",
+    "slug": "kohinoor-zerone",
+    "category": "Display",
+    "styles": [
+      {
+        "name": "One",
+        "weight": 100,
+        "italic": false
+      },
+      {
+        "name": "Zero",
+        "weight": 200,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=kohinoor-zerone@100,200&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Satya Rajpurohit"
+    ]
+  },
+  "contentHash": "e7e21fb545e5e2df",
+  "importedAt": "2026-11-05T00:16:59.733Z"
+}

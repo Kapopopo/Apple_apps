@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/halo-search",
+  "name": "Halo Search",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "web",
+    "webgl"
+  ],
+  "description": "Search input with animated gradient border, staggered placeholder, blur deletion on clear, loading line, and Warp shader avatar",
+  "framework": "react",
+  "dependencies": [
+    "@paper-design/shaders-react",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-search.json",
+  "sourcePath": "apps/www/public/r/halo-search.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-search.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-search-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-search-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d921ae6d95c02a04",
+  "importedAt": "2026-11-05T17:59:32.862Z"
+}

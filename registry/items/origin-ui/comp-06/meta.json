@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-06",
+  "name": "Input 06",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "error",
+    "input",
+    "label",
+    "web"
+  ],
+  "description": "Exemple Origin UI : input, label, error.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/input",
+    "origin-ui/label"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-06.json",
+  "sourcePath": "apps/origin/public/r/comp-06.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-06.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-06.tsx"
+  },
+  "contentHash": "aa6d04a3869d261d",
+  "importedAt": "2026-11-05T17:59:40.465Z"
+}

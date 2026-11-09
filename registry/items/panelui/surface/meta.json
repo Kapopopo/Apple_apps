@@ -1,0 +1,38 @@
+{
+  "id": "panelui/surface",
+  "name": "Surface",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "expo"
+  ],
+  "description": "Elevated container with a variant ladder.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui/refs"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/surface.json",
+  "sourcePath": "apps/docs/public/r/surface.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/surface.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "cedeb99c4d6b3340",
+  "importedAt": "2026-11-05T00:16:56.263Z"
+}

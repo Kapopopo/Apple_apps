@@ -1,0 +1,54 @@
+{
+  "id": "easyui/evil-eye",
+  "name": "Evil Eye",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "layered motion",
+    "motion",
+    "painted svg",
+    "pointer tracking",
+    "spring physics"
+  ],
+  "description": "A hanging navy amulet disc with concentric sky-blue and white rings that swings with realistic inertia in response to the pointer, painted as a layered SVG and driven by a single spring pipeline.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/EvilEye.tsx",
+  "sourcePath": "src/components/ui/EvilEye.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/EvilEye.tsx",
+      "role": "source",
+      "target": "components/ui/evil-eye.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/EvilEye.tsx"
+  },
+  "contentHash": "5b0d6635497f9d3f",
+  "importedAt": "2026-11-05T00:16:52.215Z",
+  "updatedAt": "2026-11-05T00:19:19.882Z"
+}

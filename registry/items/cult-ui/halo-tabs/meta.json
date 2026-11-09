@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/halo-tabs",
+  "name": "Halo Tabs",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "Base UI tabs with gradient indicator: underline or pill variant aligned with Halo Card rim colors",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/halo-tabs.json",
+  "sourcePath": "apps/www/public/r/halo-tabs.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/halo-tabs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/halo-tabs-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/halo-tabs-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cae43f6445217bfe",
+  "importedAt": "2026-11-05T17:59:32.877Z"
+}

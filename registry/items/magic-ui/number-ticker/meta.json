@@ -1,0 +1,45 @@
+{
+  "id": "magic-ui/number-ticker",
+  "name": "Number Ticker",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "animé",
+    "dashboard",
+    "entree"
+  ],
+  "description": "Attirer l’attention sur un indicateur clé avec un compteur animé.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/number-ticker",
+  "sourcePath": "https://magicui.design/r/number-ticker.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/number-ticker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "number-ticker"
+  },
+  "catalogId": "58cf4d109f3587bf",
+  "contentHash": "24851822e988532f",
+  "importedAt": "2026-11-05T00:16:49.242Z",
+  "updatedAt": "2026-11-05T00:18:20.067Z"
+}

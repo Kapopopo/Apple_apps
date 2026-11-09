@@ -1,0 +1,60 @@
+{
+  "id": "easyui/origin-dropdown",
+  "name": "OriginDropdown",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "accessible",
+    "animé",
+    "light & dark",
+    "origin-aware",
+    "overlays",
+    "spring in"
+  ],
+  "description": "A dropdown with origin-aware expansion — the menu materializes from the chosen side with a slight scale and an inward translation, so its perceived origin is the trigger edge closest to the menu.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/OriginDropdown.tsx",
+  "sourcePath": "src/components/ui/OriginDropdown.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/OriginDropdown.tsx",
+      "role": "source",
+      "target": "components/ui/origin-dropdown.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/OriginDropdown.tsx"
+  },
+  "contentHash": "1b3c01ab9e0dbd11",
+  "importedAt": "2026-11-05T00:16:53.201Z",
+  "updatedAt": "2026-11-05T00:18:17.505Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/retro-grid",
+  "name": "Retro Grid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "defilement",
+    "portfolio"
+  ],
+  "description": "Donner une identité visuelle à une section d’accueil technologique.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/retro-grid",
+  "sourcePath": "https://magicui.design/r/retro-grid.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/retro-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "retro-grid"
+  },
+  "catalogId": "8a33d401edf66817",
+  "contentHash": "97d84d7a62df1e87",
+  "importedAt": "2026-11-05T00:16:49.305Z"
+}

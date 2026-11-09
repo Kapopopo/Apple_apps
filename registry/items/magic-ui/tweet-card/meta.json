@@ -1,0 +1,49 @@
+{
+  "id": "magic-ui/tweet-card",
+  "name": "Tweet Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
+  "framework": "react",
+  "dependencies": [
+    "react-tweet"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/tweet-card.json",
+  "sourcePath": "apps/www/public/r/tweet-card.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/tweet-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/tweet-card-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/tweet-card-images.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/tweet-card-meta-preview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/tweet-card-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "73238fb84f1797c4",
+  "importedAt": "2026-11-05T17:59:28.258Z"
+}

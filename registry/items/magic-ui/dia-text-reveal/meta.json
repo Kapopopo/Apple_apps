@@ -1,0 +1,54 @@
+{
+  "id": "magic-ui/dia-text-reveal",
+  "name": "Dia Text Reveal",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "A horizontal color band sweeps across text, revealing a gradient shine before settling on the base color.",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/dia-text-reveal.json",
+  "sourcePath": "apps/www/public/r/dia-text-reveal.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/dia-text-reveal.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/dia-text-reveal-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dia-text-reveal-demo-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dia-text-reveal-demo-3.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/dia-text-reveal-demo-4.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/dia-text-reveal-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "8482e8c019138adc",
+  "importedAt": "2026-11-05T17:59:28.083Z"
+}

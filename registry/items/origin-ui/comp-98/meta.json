@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-98",
+  "name": "Button 98",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "menu",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, menu.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-98.json",
+  "sourcePath": "apps/origin/public/r/comp-98.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-98.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-98.tsx"
+  },
+  "contentHash": "bb16012d8066316e",
+  "importedAt": "2026-11-05T17:59:43.129Z"
+}

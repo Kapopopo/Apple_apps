@@ -1,0 +1,35 @@
+{
+  "id": "panelui/use-disclosure",
+  "name": "Use Disclosure",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "expo"
+  ],
+  "description": "Open and closed state for an overlay.",
+  "framework": "react-native",
+  "dependencies": [],
+  "registryDependencies": [
+    "panelui/controllable-state"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/use-disclosure.json",
+  "sourcePath": "apps/docs/public/r/use-disclosure.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "hooks/use-disclosure.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "385f0b4578f3da60",
+  "importedAt": "2026-11-05T00:16:56.350Z"
+}

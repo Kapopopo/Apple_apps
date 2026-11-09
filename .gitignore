@@ -5,3 +5,14 @@ data/*.tmp
 data/previews/*.tmp
 data/previews/*.tmp.jpg
 node_modules/
+# Registre : outillage TypeScript
+dist/
+.cache/
+previews/node_modules/
+previews/missing-modules.txt
+# Aperçus live compilés (npm run previews) : code tiers regénéré à chaque build
+web/registry-previews/
+previews/src/generated/
+specs/*.tmp
+# Captures de revue de design (impeccable)
+.impeccable/review/

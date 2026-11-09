@@ -1,0 +1,6 @@
+/* Satoshi — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,300,400,500,700,900&display=swap');
+
+:root {
+  --font-satoshi: 'Satoshi', sans-serif;
+}

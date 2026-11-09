@@ -1,0 +1,43 @@
+{
+  "id": "panelui-web/badge",
+  "name": "Badge",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A short label for a state or a kind, tinted in its theme colour, with a dot for a state that is still changing.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/badge.json",
+  "sourcePath": "apps/docs/public/r/web/badge.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/badge.tsx",
+      "role": "source",
+      "target": "@components/panelui/badge.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/badge/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/badge/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a4be9a71acbb3799",
+  "importedAt": "2026-11-05T00:16:56.465Z"
+}

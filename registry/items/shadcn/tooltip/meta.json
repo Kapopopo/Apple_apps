@@ -1,0 +1,43 @@
+{
+  "id": "shadcn/tooltip",
+  "name": "Tooltip",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-tooltip"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/tooltip.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/tooltip.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/tooltip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/tooltip-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/tooltip-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d42439db8ee3a88b",
+  "importedAt": "2026-11-05T17:59:23.505Z"
+}

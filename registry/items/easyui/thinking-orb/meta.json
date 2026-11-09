@@ -1,0 +1,44 @@
+{
+  "id": "easyui/thinking-orb",
+  "name": "Thinking Orb",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "ai indicator",
+    "html5 canvas",
+    "monochrome",
+    "motion",
+    "orbital physics",
+    "reduced motion"
+  ],
+  "description": "Minimalist monochrome spherical particle vortex with orbital physics, pure black-and-white luminous styling, and 9 cognitive state deformations.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/ThinkingOrb.tsx",
+  "sourcePath": "src/components/ui/ThinkingOrb.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/ThinkingOrb.tsx",
+      "role": "source",
+      "target": "components/ui/thinking-orb.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/ThinkingOrb.tsx"
+  },
+  "contentHash": "33af1ecb913310d2",
+  "importedAt": "2026-11-05T00:16:54.199Z"
+}

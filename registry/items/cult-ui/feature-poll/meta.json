@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/feature-poll",
+  "name": "Feature Poll",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "clavier",
+    "web"
+  ],
+  "description": "Feature poll component with single or multiple selection, optional results, and keyboard navigation",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state",
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/feature-poll.json",
+  "sourcePath": "apps/www/public/r/feature-poll.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/feature-poll.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/feature-poll-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/feature-poll-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "100fb2a8a27963aa",
+  "importedAt": "2026-11-05T17:59:32.765Z"
+}

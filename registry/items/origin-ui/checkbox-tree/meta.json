@@ -1,0 +1,34 @@
+{
+  "id": "origin-ui/checkbox-tree",
+  "name": "Checkbox Tree",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/checkbox-tree.json",
+  "sourcePath": "apps/origin/public/r/checkbox-tree.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/ui/checkbox-tree.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/ui/checkbox-tree.tsx"
+  },
+  "contentHash": "8acbe99ce16283a4",
+  "importedAt": "2026-11-05T17:59:40.427Z"
+}

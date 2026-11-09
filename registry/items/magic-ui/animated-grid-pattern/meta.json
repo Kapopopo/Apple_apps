@@ -1,0 +1,44 @@
+{
+  "id": "magic-ui/animated-grid-pattern",
+  "name": "Animated Grid Pattern",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "animé",
+    "boucle",
+    "portfolio"
+  ],
+  "description": "Créer une ambiance animée derrière un contenu lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/animated-grid-pattern",
+  "sourcePath": "https://magicui.design/r/animated-grid-pattern.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/animated-grid-pattern.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "animated-grid-pattern"
+  },
+  "catalogId": "5623c96f5fb857f2",
+  "contentHash": "f740bbca76fc663c",
+  "importedAt": "2026-11-05T00:16:49.393Z"
+}

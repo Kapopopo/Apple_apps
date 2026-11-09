@@ -1,0 +1,6 @@
+/* Pramukh Rounded — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=pramukh-rounded@1,200,300,350,400,600,700,800,900&display=swap');
+
+:root {
+  --font-pramukh-rounded: 'Pramukh Rounded', sans-serif;
+}

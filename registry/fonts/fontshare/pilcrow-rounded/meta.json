@@ -1,0 +1,79 @@
+{
+  "id": "fontshare/pilcrow-rounded",
+  "name": "Pilcrow Rounded",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "books",
+    "branding",
+    "logos",
+    "magazines",
+    "variable"
+  ],
+  "description": "Sans serif · 6 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/pilcrow-rounded",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Pilcrow Rounded par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Pilcrow Rounded",
+    "slug": "pilcrow-rounded",
+    "category": "Sans",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Semibold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "Heavy",
+        "weight": 900,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=pilcrow-rounded@1,400,500,600,700,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Satya Rajpurohit"
+    ]
+  },
+  "contentHash": "85a5e8508d0b9199",
+  "importedAt": "2026-11-05T00:16:59.730Z"
+}

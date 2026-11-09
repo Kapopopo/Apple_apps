@@ -1,0 +1,42 @@
+{
+  "id": "reui/color-picker",
+  "name": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/dropdown-menu",
+    "shadcn/input-group",
+    "shadcn/popover",
+    "shadcn/separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/color-picker.json",
+  "sourcePath": "public/r/styles/base-luma/color-picker.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/color-picker.tsx",
+      "role": "source",
+      "target": "components/reui/color-picker.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/color-picker.tsx"
+  },
+  "contentHash": "669a5a14ad18ac23",
+  "importedAt": "2026-11-05T17:59:38.087Z",
+  "updatedAt": "2026-11-05T18:07:49.711Z"
+}

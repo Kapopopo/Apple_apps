@@ -1,0 +1,55 @@
+{
+  "id": "easyui/chat",
+  "name": "Chat",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "ai",
+    "animé",
+    "chat",
+    "feedback",
+    "interactive",
+    "messaging"
+  ],
+  "description": "A production-grade conversational chat component with thread history sidebar, rich message rendering, status indicators, file attachments, and auto-expanding composer.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Chat.tsx",
+  "sourcePath": "src/components/ui/Chat.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Chat.tsx",
+      "role": "source",
+      "target": "components/ui/chat.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Chat.tsx"
+  },
+  "contentHash": "1b241b065d27774f",
+  "importedAt": "2026-11-05T00:16:51.812Z",
+  "updatedAt": "2026-11-05T00:19:19.824Z"
+}

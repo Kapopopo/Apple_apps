@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/slide-to-confirm",
+  "name": "Slide To Confirm",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/slide-to-confirm.json",
+  "sourcePath": "public/r/slide-to-confirm.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/slide-to-confirm.tsx",
+      "role": "source",
+      "target": "components/kokonutui/slide-to-confirm.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/slide-to-confirm.tsx"
+  },
+  "contentHash": "f7713b76a4b892e0",
+  "importedAt": "2026-11-05T17:59:35.770Z"
+}

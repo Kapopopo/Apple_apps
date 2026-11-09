@@ -1,0 +1,54 @@
+{
+  "id": "fontshare/striper",
+  "name": "Striper",
+  "type": "font",
+  "category": "Display",
+  "tags": [
+    "branding",
+    "experimental",
+    "fun",
+    "logos",
+    "poster"
+  ],
+  "description": "Display · 1 style · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/striper",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Striper par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Striper",
+    "slug": "striper",
+    "category": "Display",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=striper@400&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Jitka Janečková"
+    ]
+  },
+  "contentHash": "44b3ca52d77853f0",
+  "importedAt": "2026-11-05T00:16:59.727Z"
+}

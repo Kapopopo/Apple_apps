@@ -1,0 +1,40 @@
+{
+  "id": "magic-ui/glyph-matrix",
+  "name": "Glyph Matrix",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "An animated grid of subtly shifting glyphs with fade effect and theme support.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/glyph-matrix.json",
+  "sourcePath": "apps/www/public/r/glyph-matrix.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/glyph-matrix.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/glyph-matrix-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/glyph-matrix-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ca0d6b1883e46865",
+  "importedAt": "2026-11-05T17:59:28.131Z"
+}

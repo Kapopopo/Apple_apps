@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/scroll-text",
+  "name": "Scroll Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "scroll",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/scroll-text.json",
+  "sourcePath": "public/r/scroll-text.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/scroll-text.tsx",
+      "role": "source",
+      "target": "components/kokonutui/scroll-text.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/scroll-text.tsx"
+  },
+  "contentHash": "c2587af0977391fa",
+  "importedAt": "2026-11-05T17:59:35.741Z"
+}

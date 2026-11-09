@@ -1,0 +1,30 @@
+{
+  "name": "component-atlas-registry",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Registre local de composants, importers et serveur MCP de Component Atlas.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "import": "tsx importers/run.ts",
+    "import:github": "tsx importers/run.ts github",
+    "import:local": "tsx importers/run.ts local",
+    "import:fontshare": "tsx importers/run.ts fontshare",
+    "import:easings": "tsx importers/run.ts easings",
+    "index": "tsx importers/run.ts index",
+    "mcp": "node dist/mcp/index.js",
+    "previews": "npm --prefix previews run build",
+    "test": "node --import tsx --test tests/ts/*.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}

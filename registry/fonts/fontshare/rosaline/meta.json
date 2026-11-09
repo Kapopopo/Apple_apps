@@ -1,0 +1,51 @@
+{
+  "id": "fontshare/rosaline",
+  "name": "Rosaline",
+  "type": "font",
+  "category": "Manuscrite",
+  "tags": [
+    "editorial",
+    "fashion"
+  ],
+  "description": "Manuscrite · 1 style · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/rosaline",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Rosaline par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Rosaline",
+    "slug": "rosaline",
+    "category": "Script",
+    "styles": [
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      }
+    ],
+    "variable": false,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=rosaline@400&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Jérémie Hornus"
+    ]
+  },
+  "contentHash": "10d3335ba44f8f03",
+  "importedAt": "2026-11-05T00:16:59.924Z"
+}

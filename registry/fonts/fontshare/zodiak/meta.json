@@ -1,0 +1,122 @@
+{
+  "id": "fontshare/zodiak",
+  "name": "Zodiak",
+  "type": "font",
+  "category": "Serif",
+  "tags": [
+    "books",
+    "editorial",
+    "magazines",
+    "variable"
+  ],
+  "description": "Serif · 14 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/zodiak",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "Zodiak par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Zodiak",
+    "slug": "zodiak",
+    "category": "Serif",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "Thin",
+        "weight": 100,
+        "italic": false
+      },
+      {
+        "name": "ThinItalic",
+        "weight": 101,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "Extrabold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraboldItalic",
+        "weight": 801,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=zodiak@1,100,300,400,700,800,900&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Jérémie Hornus",
+      "Gaetan Baehr",
+      "Jean-Baptiste Morizot",
+      "Alisa Nowak",
+      "Theo Guillard"
+    ]
+  },
+  "contentHash": "ee35290d84376d4a",
+  "importedAt": "2026-11-05T00:16:59.925Z"
+}

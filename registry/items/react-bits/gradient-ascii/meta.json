@@ -1,0 +1,34 @@
+{
+  "id": "react-bits/gradient-ascii",
+  "name": "GradientASCII",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "web"
+  ],
+  "description": "Soft gradient glows drawn in ASCII characters that scramble under the cursor.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/GradientASCII-TS-TW.json",
+  "sourcePath": "public/r/GradientASCII-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "GradientASCII/GradientASCII.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "GradientASCII/GradientASCII.tsx"
+  },
+  "contentHash": "112d5ec727585e38",
+  "importedAt": "2026-11-05T17:59:45.756Z"
+}

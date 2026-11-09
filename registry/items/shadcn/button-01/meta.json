@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/button-01",
+  "name": "Button 01",
+  "type": "section",
+  "category": "Boutons",
+  "tags": [
+    "web"
+  ],
+  "description": "A simple button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "shadcn/button"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/button-01.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/button-01.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/button-01/page.tsx",
+      "role": "source",
+      "target": "app/page.tsx"
+    },
+    {
+      "path": "blocks/button-01/components/amazing-button.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/button-01/page.tsx"
+  },
+  "contentHash": "80612a0abae5cdcb",
+  "importedAt": "2026-11-05T17:59:22.604Z"
+}

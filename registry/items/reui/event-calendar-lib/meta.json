@@ -1,0 +1,43 @@
+{
+  "id": "reui/event-calendar-lib",
+  "name": "Pure, React-free calendar math: view ranges, zoned day keys, multi-day segmentation, overlap packing, lane packing, and the event index.",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "web"
+  ],
+  "description": "Pure, React-free calendar math: view ranges, zoned day keys, multi-day segmentation, overlap packing, lane packing, and the event index.",
+  "framework": "react",
+  "dependencies": [
+    "@date-fns/tz",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar",
+    "reui/event-calendar-recurrence",
+    "reui/event-calendar-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/event-calendar-lib.json",
+  "sourcePath": "public/r/styles/base-luma/event-calendar-lib.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/event-calendar/event-calendar-lib.tsx",
+      "role": "source",
+      "target": "components/reui/event-calendar/event-calendar-lib.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/event-calendar/event-calendar-lib.tsx"
+  },
+  "contentHash": "d94df9a7d92bca36",
+  "importedAt": "2026-11-05T17:59:38.149Z",
+  "updatedAt": "2026-11-05T18:07:49.782Z"
+}

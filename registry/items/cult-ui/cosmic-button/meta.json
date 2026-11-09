@@ -1,0 +1,40 @@
+{
+  "id": "cult-ui/cosmic-button",
+  "name": "Cosmic Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Animated button/link with cosmic gradient border effect, renders as anchor or button",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/cosmic-button.json",
+  "sourcePath": "apps/www/public/r/cosmic-button.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/cosmic-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/cosmic-button-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/cosmic-button-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "9f5930fe46bdcd7f",
+  "importedAt": "2026-11-05T17:59:32.702Z"
+}

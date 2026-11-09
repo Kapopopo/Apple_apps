@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/meteors",
+  "name": "Meteors",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "boucle",
+    "portfolio"
+  ],
+  "description": "Créer une ambiance animée derrière un contenu lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/meteors",
+  "sourcePath": "https://magicui.design/r/meteors.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/meteors.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "meteors"
+  },
+  "catalogId": "f4aec32e61704cca",
+  "contentHash": "33378f1d21605e34",
+  "importedAt": "2026-11-05T00:16:49.384Z"
+}

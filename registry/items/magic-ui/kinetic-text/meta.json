@@ -1,0 +1,41 @@
+{
+  "id": "magic-ui/kinetic-text",
+  "name": "Kinetic Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "survol",
+    "web"
+  ],
+  "description": "A text component that animates font weight of characters on hover.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/kinetic-text.json",
+  "sourcePath": "apps/www/public/r/kinetic-text.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/kinetic-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/kinetic-text-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/kinetic-text-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f81035893cc6115c",
+  "importedAt": "2026-11-05T17:59:28.179Z"
+}

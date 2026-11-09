@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/texture-card",
+  "name": "Texture Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "web"
+  ],
+  "description": "Card component with texture background and customizable styling options",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/texture-card.json",
+  "sourcePath": "apps/www/public/r/texture-card.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/texture-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/texture-card-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/texture-card-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a49c970fbe922d14",
+  "importedAt": "2026-11-05T17:59:33.276Z"
+}

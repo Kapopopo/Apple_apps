@@ -1,0 +1,59 @@
+{
+  "id": "easyui/button",
+  "name": "Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "accessible",
+    "animé",
+    "buttons",
+    "micro-interactions",
+    "multi-variant",
+    "spring tap"
+  ],
+  "description": "A versatile, production-ready button system with 8 visual variants, 4 sizes, loading spinner states, icon slots, and spring tap feedback.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/Button.tsx",
+  "sourcePath": "src/components/ui/Button.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/Button.tsx",
+      "role": "source",
+      "target": "components/ui/button.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/Button.tsx"
+  },
+  "contentHash": "5ec1567efb5f86bc",
+  "importedAt": "2026-11-05T00:16:51.740Z"
+}

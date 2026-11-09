@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": ["shared/**/*.ts", "importers/**/*.ts", "mcp/**/*.ts"]
+}

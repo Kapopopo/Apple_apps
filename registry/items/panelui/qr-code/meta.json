@@ -1,0 +1,52 @@
+{
+  "id": "panelui/qr-code",
+  "name": "Qr Code",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "expo"
+  ],
+  "description": "A string a camera can read — framed, titled, or folded away behind a button.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-svg",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/cn",
+    "panelui/popover",
+    "panelui/refs",
+    "panelui/text"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/qr-code.json",
+  "sourcePath": "apps/docs/public/r/qr-code.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/qr-code.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/qr-encode.ts",
+      "role": "source"
+    },
+    {
+      "path": "ui/qr-shapes.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "09b5b610d2e3fe8a",
+  "importedAt": "2026-11-05T00:16:56.127Z",
+  "updatedAt": "2026-11-05T00:19:20.373Z"
+}

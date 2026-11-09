@@ -1,0 +1,51 @@
+{
+  "id": "panelui/fab",
+  "name": "Fab",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "The floating action button — one action pinned over the content, with an optional dial of others behind it.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/cn",
+    "panelui/glass",
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/native",
+    "panelui/refs",
+    "panelui/scrim",
+    "panelui/text",
+    "panelui/use-back-handler",
+    "panelui/web-deps"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/fab.json",
+  "sourcePath": "apps/docs/public/r/fab.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/fab.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "9a34987ce1a71a27",
+  "importedAt": "2026-11-05T00:16:55.931Z"
+}

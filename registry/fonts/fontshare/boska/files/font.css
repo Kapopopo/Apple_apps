@@ -1,0 +1,6 @@
+/* Boska — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=boska@1,200,300,400,500,700,900&display=swap');
+
+:root {
+  --font-boska: 'Boska', serif;
+}

@@ -1,0 +1,48 @@
+{
+  "id": "cult-ui/wizard-expandable",
+  "name": "Wizard Expandable",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "animé",
+    "scroll",
+    "web"
+  ],
+  "description": "Expandable multi-step wizard with optional forward validation, scrollable step rail, and Motion height transitions",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "@radix-ui/react-use-controllable-state",
+    "motion"
+  ],
+  "registryDependencies": [
+    "shadcn/badge",
+    "shadcn/button"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/wizard-expandable.json",
+  "sourcePath": "apps/www/public/r/wizard-expandable.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/wizard-expandable.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/wizard-expandable-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/wizard-expandable-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cb87f4bad1a4f77f",
+  "importedAt": "2026-11-05T17:59:33.323Z"
+}

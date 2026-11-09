@@ -1,0 +1,52 @@
+{
+  "id": "easyui/split-button",
+  "name": "Split Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "animé",
+    "buttons",
+    "floating ui",
+    "framer motion"
+  ],
+  "description": "A primary action fused with a chevron trigger that reveals related actions in a spring-timed dropdown, sharing a single pill silhouette.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/SplitButton.tsx",
+  "sourcePath": "src/components/ui/SplitButton.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/SplitButton.tsx",
+      "role": "source",
+      "target": "components/ui/split-button.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/SplitButton.tsx"
+  },
+  "contentHash": "97dd5128f956e8ff",
+  "importedAt": "2026-11-05T00:16:53.821Z"
+}

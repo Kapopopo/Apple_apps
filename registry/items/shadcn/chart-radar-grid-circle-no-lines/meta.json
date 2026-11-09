@@ -1,0 +1,41 @@
+{
+  "id": "shadcn/chart-radar-grid-circle-no-lines",
+  "name": "Chart Radar Grid Circle No Lines",
+  "type": "section",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "recharts"
+  ],
+  "registryDependencies": [
+    "shadcn/card",
+    "shadcn/chart"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/chart-radar-grid-circle-no-lines.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/chart-radar-grid-circle-no-lines.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "charts/chart-radar-grid-circle-no-lines.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "charts/chart-radar-grid-circle-no-lines.tsx"
+  },
+  "contentHash": "fbd0de1817df170e",
+  "importedAt": "2026-11-05T17:59:22.882Z"
+}

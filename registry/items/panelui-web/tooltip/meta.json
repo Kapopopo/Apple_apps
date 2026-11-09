@@ -1,0 +1,44 @@
+{
+  "id": "panelui-web/tooltip",
+  "name": "Tooltip",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "survol",
+    "web"
+  ],
+  "description": "A short hint about a control while it is hovered or focused: a pill, a card, its keys or a status.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/tooltip.json",
+  "sourcePath": "apps/docs/public/r/web/tooltip.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/tooltip.tsx",
+      "role": "source",
+      "target": "@components/panelui/tooltip.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/tooltip/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/tooltip/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "edec3be4cfc926bf",
+  "importedAt": "2026-11-05T00:16:57.234Z"
+}

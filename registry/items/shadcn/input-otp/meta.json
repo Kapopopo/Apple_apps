@@ -1,0 +1,56 @@
+{
+  "id": "shadcn/input-otp",
+  "name": "Input Otp",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "input-otp",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/input-otp.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/input-otp.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/input-otp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/input-otp-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-otp-controlled.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-otp-form.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "examples/input-otp-pattern.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/input-otp-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e347e3a1e35e08ec",
+  "importedAt": "2026-11-05T17:59:23.046Z"
+}

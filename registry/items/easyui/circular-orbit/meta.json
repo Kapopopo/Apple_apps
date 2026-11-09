@@ -1,0 +1,53 @@
+{
+  "id": "easyui/circular-orbit",
+  "name": "Circular Orbit",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "animé",
+    "depth field",
+    "gallery",
+    "motion",
+    "motionvalue",
+    "spatial animation"
+  ],
+  "description": "A circular gallery of image tiles orbiting around a centered title. All motion runs on a single MotionValue driven by useAnimationFrame, so no React renders per frame.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/CircularOrbit.tsx",
+  "sourcePath": "src/components/ui/CircularOrbit.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/CircularOrbit.tsx",
+      "role": "source",
+      "target": "components/ui/circular-orbit.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/CircularOrbit.tsx"
+  },
+  "contentHash": "fee464385bffcce5",
+  "importedAt": "2026-11-05T00:16:51.834Z"
+}

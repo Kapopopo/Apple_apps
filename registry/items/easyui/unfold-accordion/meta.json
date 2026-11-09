@@ -1,0 +1,59 @@
+{
+  "id": "easyui/unfold-accordion",
+  "name": "UnfoldAccordion",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accessible",
+    "animé",
+    "coordinated motion",
+    "feedback",
+    "light & dark",
+    "spring height"
+  ],
+  "description": "An accordion whose content unfolds with the chevron and spacing moving together. The chevron rotates 180° while the content height expands and the inner content slides up to close the gap, producing a single, fluid motion.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/UnfoldAccordion.tsx",
+  "sourcePath": "src/components/ui/UnfoldAccordion.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/UnfoldAccordion.tsx",
+      "role": "source",
+      "target": "components/ui/unfold-accordion.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/UnfoldAccordion.tsx"
+  },
+  "contentHash": "9d2524ab80f0712f",
+  "importedAt": "2026-11-05T00:16:54.276Z"
+}

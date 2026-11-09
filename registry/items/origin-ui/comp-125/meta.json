@@ -1,0 +1,49 @@
+{
+  "id": "origin-ui/comp-125",
+  "name": "Button 125",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "avatar",
+    "button",
+    "image",
+    "profile",
+    "upload",
+    "user",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, upload, user, avatar, profile, image.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/use-file-upload"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-125.json",
+  "sourcePath": "apps/origin/public/r/comp-125.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-125.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/hooks/use-file-upload.ts",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-125.tsx"
+  },
+  "contentHash": "f92b52dd586e5dfe",
+  "importedAt": "2026-11-05T17:59:40.587Z"
+}

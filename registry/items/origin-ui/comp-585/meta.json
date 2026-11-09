@@ -1,0 +1,59 @@
+{
+  "id": "origin-ui/comp-585",
+  "name": "Navbar, navigation 585",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "navbar, navigation",
+    "web"
+  ],
+  "description": "Exemple Origin UI : navbar, navigation.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/avatar",
+    "origin-ui/button",
+    "origin-ui/comp-588",
+    "origin-ui/comp-591",
+    "origin-ui/comp-592",
+    "origin-ui/dropdown-menu",
+    "origin-ui/input",
+    "origin-ui/navigation-menu",
+    "origin-ui/popover"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-585.json",
+  "sourcePath": "apps/origin/public/r/comp-585.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-585.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/notification-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/components/navbar-components/user-menu.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-585.tsx"
+  },
+  "contentHash": "f00752aa2a60061b",
+  "importedAt": "2026-11-05T17:59:42.884Z"
+}

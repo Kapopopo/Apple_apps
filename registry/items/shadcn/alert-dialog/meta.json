@@ -1,0 +1,44 @@
+{
+  "id": "shadcn/alert-dialog",
+  "name": "Alert Dialog",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-alert-dialog"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/alert-dialog.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/alert-dialog.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/alert-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/alert-dialog-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/alert-dialog-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "35650d32ef6a5cbc",
+  "importedAt": "2026-11-05T17:59:22.542Z"
+}

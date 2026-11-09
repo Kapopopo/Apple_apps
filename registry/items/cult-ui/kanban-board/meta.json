@@ -1,0 +1,44 @@
+{
+  "id": "cult-ui/kanban-board",
+  "name": "Kanban Board",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "drag",
+    "web"
+  ],
+  "description": "Kanban board with drag-and-drop columns and cards",
+  "framework": "react",
+  "dependencies": [
+    "motion",
+    "next"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/kanban-board.json",
+  "sourcePath": "apps/www/public/r/kanban-board.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/kanban-board.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/kanban-board-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/kanban-board-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "6bc757608322b475",
+  "importedAt": "2026-11-05T17:59:32.942Z"
+}

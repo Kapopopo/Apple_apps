@@ -1,0 +1,59 @@
+{
+  "id": "easyui/date-picker",
+  "name": "Date Picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "flip up",
+    "forms",
+    "keyboard friendly",
+    "light & dark",
+    "spring in"
+  ],
+  "description": "A date picker (and date range picker) whose popover pops from the trigger edge with a spring, flips above when there is no room below, lands the selection pill, then closes and hands focus back to the trigger.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/date-picker.tsx",
+  "sourcePath": "src/components/ui/date-picker.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/date-picker.tsx",
+      "role": "source",
+      "target": "components/ui/date-picker.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "role": "source",
+      "target": "components/ui/calendar.tsx"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/date-picker.tsx"
+  },
+  "contentHash": "778d0232ce25eeae",
+  "importedAt": "2026-11-05T00:16:51.990Z"
+}

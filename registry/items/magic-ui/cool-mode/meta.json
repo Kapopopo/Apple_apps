@@ -1,0 +1,43 @@
+{
+  "id": "magic-ui/cool-mode",
+  "name": "Cool Mode",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "web"
+  ],
+  "description": "Cool mode effect for buttons, links, and other DOMs",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/cool-mode.json",
+  "sourcePath": "apps/www/public/r/cool-mode.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/cool-mode.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/cool-mode-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/cool-mode-custom.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/cool-mode-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "665a95c9490182af",
+  "importedAt": "2026-11-05T17:59:28.078Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "reui/data-grid-column-header",
+  "name": "Data Grid Column Header",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "reui/data-grid",
+    "shadcn/button",
+    "shadcn/dropdown-menu"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/data-grid-column-header.json",
+  "sourcePath": "public/r/styles/base-luma/data-grid-column-header.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/data-grid/data-grid-column-header.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-column-header.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/data-grid/data-grid-column-header.tsx"
+  },
+  "contentHash": "131bfe03fefd709b",
+  "importedAt": "2026-11-05T17:59:38.095Z",
+  "updatedAt": "2026-11-05T18:07:49.721Z"
+}

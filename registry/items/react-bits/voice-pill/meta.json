@@ -1,0 +1,37 @@
+{
+  "id": "react-bits/voice-pill",
+  "name": "VoicePill",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "web"
+  ],
+  "description": "Mic button that swells into a capsule of live equalizer bars and a timer while recording.",
+  "framework": "react",
+  "dependencies": [
+    "@hugeicons/core-free-icons@^4.3.3",
+    "@hugeicons/react@^1.1.10"
+  ],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/VoicePill-TS-TW.json",
+  "sourcePath": "public/r/VoicePill-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "VoicePill/VoicePill.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "VoicePill/VoicePill.tsx"
+  },
+  "contentHash": "c9bc040e6af78692",
+  "importedAt": "2026-11-05T17:59:46.204Z"
+}

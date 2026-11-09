@@ -1,0 +1,135 @@
+{
+  "id": "fontshare/crimson-pro",
+  "name": "Crimson Pro",
+  "type": "font",
+  "category": "Serif",
+  "tags": [
+    "editorial",
+    "magazines",
+    "publishing",
+    "variable"
+  ],
+  "description": "Serif · 18 styles",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/crimson-pro",
+  "license": "OFL-1.1",
+  "licenseStatus": "open",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "Crimson Pro",
+    "slug": "crimson-pro",
+    "category": "Serif",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "VariableItalic",
+        "weight": 2,
+        "italic": true
+      },
+      {
+        "name": "ExtraLight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "ExtraLightItalic",
+        "weight": 201,
+        "italic": true
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "LightItalic",
+        "weight": 301,
+        "italic": true
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Italic",
+        "weight": 401,
+        "italic": true
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "MediumItalic",
+        "weight": 501,
+        "italic": true
+      },
+      {
+        "name": "SemiBold",
+        "weight": 600,
+        "italic": false
+      },
+      {
+        "name": "SemiBoldItalic",
+        "weight": 601,
+        "italic": true
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      },
+      {
+        "name": "BoldItalic",
+        "weight": 701,
+        "italic": true
+      },
+      {
+        "name": "ExtraBold",
+        "weight": 800,
+        "italic": false
+      },
+      {
+        "name": "ExtraBoldItalic",
+        "weight": 801,
+        "italic": true
+      },
+      {
+        "name": "Black",
+        "weight": 900,
+        "italic": false
+      },
+      {
+        "name": "BlackItalic",
+        "weight": 901,
+        "italic": true
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=crimson-pro@1,200,300,400,500,600,700,800,900&display=swap",
+    "designers": [
+      "Jacques Le Bailly"
+    ]
+  },
+  "contentHash": "c9f2bbf1f4dd97d7",
+  "importedAt": "2026-11-05T00:16:59.799Z"
+}

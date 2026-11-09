@@ -1,0 +1,83 @@
+{
+  "id": "fontshare/new-title",
+  "name": "New Title",
+  "type": "font",
+  "category": "Sans serif",
+  "tags": [
+    "branding",
+    "credits",
+    "films",
+    "logos",
+    "magazines",
+    "titles",
+    "variable"
+  ],
+  "description": "Sans serif · 6 styles · Indian Type Foundry",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Fontshare",
+  "sourceId": "fontshare",
+  "sourceUrl": "https://www.fontshare.com/fonts/new-title",
+  "license": "LicenseRef-ITF-FFL",
+  "licenseStatus": "restricted",
+  "licenseNotes": "ITF Free Font License : usage gratuit personnel et commercial ; la police ne doit pas être revendue ni redistribuée en fichiers. Atlas ne stocke que le lien CSS Fontshare. Acceptée explicitement (import Fontshare demandé).",
+  "attribution": "New Title par Indian Type Foundry via Fontshare (ITF Free Font License).",
+  "files": [
+    {
+      "path": "font.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Aperçu typographique dans le builder"
+  },
+  "font": {
+    "family": "New Title",
+    "slug": "new-title",
+    "category": "Sans, Display",
+    "styles": [
+      {
+        "name": "Variable",
+        "weight": 1,
+        "italic": false
+      },
+      {
+        "name": "Extralight",
+        "weight": 200,
+        "italic": false
+      },
+      {
+        "name": "Light",
+        "weight": 300,
+        "italic": false
+      },
+      {
+        "name": "Regular",
+        "weight": 400,
+        "italic": false
+      },
+      {
+        "name": "Medium",
+        "weight": 500,
+        "italic": false
+      },
+      {
+        "name": "Bold",
+        "weight": 700,
+        "italic": false
+      }
+    ],
+    "variable": true,
+    "cssUrl": "https://api.fontshare.com/v2/css?f[]=new-title@1,200,300,400,500,700&display=swap",
+    "publisher": "Indian Type Foundry",
+    "designers": [
+      "Julie Soudanne",
+      "Jérémie Hornus"
+    ]
+  },
+  "contentHash": "3ead27eba1c2d93e",
+  "importedAt": "2026-11-05T00:16:59.734Z",
+  "updatedAt": "2026-11-05T00:37:05.241Z"
+}

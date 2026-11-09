@@ -1,0 +1,6 @@
+/* Rosaline — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=rosaline@400&display=swap');
+
+:root {
+  --font-rosaline: 'Rosaline', cursive;
+}

@@ -1,0 +1,40 @@
+{
+  "id": "origin-ui/comp-277",
+  "name": "Alert 277",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "alert",
+    "authentication",
+    "error",
+    "signup",
+    "web"
+  ],
+  "description": "Exemple Origin UI : alert, error, signup, authentication.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-277.json",
+  "sourcePath": "apps/origin/public/r/comp-277.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-277.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-277.tsx"
+  },
+  "contentHash": "eade7815070afecb",
+  "importedAt": "2026-11-05T17:59:41.121Z"
+}

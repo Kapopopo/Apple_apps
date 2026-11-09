@@ -1,0 +1,37 @@
+{
+  "id": "motion-primitives/in-view",
+  "name": "In View",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Motion Primitives",
+  "sourceId": "motion-primitives",
+  "sourceUrl": "https://github.com/ibelick/motion-primitives/blob/120f64f6ca60348e251f929e9c81f11ccbe45eda/public/c/in-view.json",
+  "sourcePath": "public/c/in-view.json",
+  "sourceCommit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 ibelick",
+  "files": [
+    {
+      "path": "in-view.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "motion-primitives/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "in-view.tsx"
+  },
+  "contentHash": "7bc3d12982af5de1",
+  "importedAt": "2026-11-05T17:59:30.344Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "kokonut-ui/notification-stack",
+  "name": "Notification Stack",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/notification-stack.json",
+  "sourcePath": "public/r/notification-stack.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/notification-stack.tsx",
+      "role": "source",
+      "target": "components/kokonutui/notification-stack.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/notification-stack.tsx"
+  },
+  "contentHash": "7d2757fc9adbd018",
+  "importedAt": "2026-11-05T17:59:35.558Z"
+}

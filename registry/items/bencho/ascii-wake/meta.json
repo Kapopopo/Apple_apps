@@ -1,0 +1,46 @@
+{
+  "id": "bencho/ascii-wake",
+  "name": "ASCII wake",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "drag",
+    "hover"
+  ],
+  "description": "A cube drawn in ink dots: the pointer drags a wake of characters through it that thicken under the hand and cool back to dots behind it, and a press sends a ring out.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/ascii-wake",
+  "sourcePath": "blocks/ascii-wake",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/ascii-wake/AsciiWake.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/ascii-wake/AsciiWake.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/ascii-wake/README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/ascii-wake/AsciiWake.tsx",
+    "exportName": "AsciiWake"
+  },
+  "contentHash": "baba5e45b65045a2",
+  "importedAt": "2026-11-05T00:16:58.274Z",
+  "updatedAt": "2026-11-05T00:19:20.775Z"
+}

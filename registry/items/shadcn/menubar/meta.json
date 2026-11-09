@@ -1,0 +1,44 @@
+{
+  "id": "shadcn/menubar",
+  "name": "Menubar",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-menubar",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/utils"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/menubar.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/menubar.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "ui/menubar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "examples/menubar-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "examples/menubar-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5403097301d4d714",
+  "importedAt": "2026-11-05T17:59:23.107Z"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "panelui/stack-card",
+  "name": "Stack Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "A pile of cards, taken one at a time by throwing the top one off.",
+  "framework": "react-native",
+  "dependencies": [
+    "react-native",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/cn",
+    "panelui/controllable-state",
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/refs",
+    "panelui/text",
+    "panelui/web-deps"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/stack-card.json",
+  "sourcePath": "apps/docs/public/r/stack-card.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/stack-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "ui/stack-card-geometry.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "773705e185e65523",
+  "importedAt": "2026-11-05T00:16:56.253Z"
+}

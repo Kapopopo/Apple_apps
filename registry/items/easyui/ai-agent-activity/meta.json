@@ -1,0 +1,56 @@
+{
+  "id": "easyui/ai-agent-activity",
+  "name": "AI Agent Activity",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "agent",
+    "ai",
+    "animé",
+    "feedback",
+    "ia",
+    "interactive",
+    "timeline"
+  ],
+  "description": "A timeline component for tracking AI agent reasoning, tool calls, API queries, database fetches, and execution states with inspectable parameters and results.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/AIAgentActivity.tsx",
+  "sourcePath": "src/components/ui/AIAgentActivity.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/AIAgentActivity.tsx",
+      "role": "source",
+      "target": "components/ui/ai-agent-activity.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/AIAgentActivity.tsx"
+  },
+  "contentHash": "33d3ddfeb5c378e7",
+  "importedAt": "2026-11-05T00:16:51.471Z",
+  "updatedAt": "2026-11-05T00:19:19.773Z"
+}

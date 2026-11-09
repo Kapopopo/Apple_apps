@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/texture-overlay",
+  "name": "Texture Overlay",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "Texture overlay component with various CSS gradient patterns for adding visual texture to backgrounds",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/texture-overlay.json",
+  "sourcePath": "apps/www/public/r/texture-overlay.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/texture-overlay.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/texture-overlay-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/texture-overlay-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "901034123f6f1f1e",
+  "importedAt": "2026-11-05T17:59:33.280Z"
+}

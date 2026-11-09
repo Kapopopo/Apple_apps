@@ -1,0 +1,38 @@
+{
+  "id": "reui/code-block-highlight",
+  "name": "Isomorphic shiki engine and pure helpers for the code block.",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "web"
+  ],
+  "description": "Isomorphic shiki engine and pure helpers for the code block.",
+  "framework": "react",
+  "dependencies": [
+    "shiki"
+  ],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/code-block-highlight.json",
+  "sourcePath": "public/r/styles/base-luma/code-block-highlight.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/code-block/code-block-highlight.tsx",
+      "role": "source",
+      "target": "components/reui/code-block/code-block-highlight.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/code-block/code-block-highlight.tsx"
+  },
+  "contentHash": "b5aeeabadb3f3ffc",
+  "importedAt": "2026-11-05T17:59:38.080Z",
+  "updatedAt": "2026-11-05T18:07:49.700Z"
+}

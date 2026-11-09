@@ -1,0 +1,50 @@
+{
+  "id": "panelui/post",
+  "name": "Post",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "expo"
+  ],
+  "description": "A social card — author, body, media and the counts underneath, with the votes animated.",
+  "framework": "react-native",
+  "dependencies": [
+    "expo-linear-gradient",
+    "react-native",
+    "react-native-reanimated",
+    "tailwind-variants",
+    "uniwind"
+  ],
+  "registryDependencies": [
+    "panelui/animated-pressable",
+    "panelui/avatar",
+    "panelui/cn",
+    "panelui/haptics",
+    "panelui/icons",
+    "panelui/refs",
+    "panelui/text",
+    "panelui/use-previous"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/post.json",
+  "sourcePath": "apps/docs/public/r/post.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "ui/post.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Composant React Native (Expo) : pas de rendu web"
+  },
+  "contentHash": "aa1da1171f7fe864",
+  "importedAt": "2026-11-05T00:16:56.114Z",
+  "updatedAt": "2026-11-05T00:18:17.882Z"
+}

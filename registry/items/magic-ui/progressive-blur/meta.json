@@ -1,0 +1,40 @@
+{
+  "id": "magic-ui/progressive-blur",
+  "name": "Progressive Blur",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "scroll",
+    "web"
+  ],
+  "description": "The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/progressive-blur.json",
+  "sourcePath": "apps/www/public/r/progressive-blur.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/progressive-blur.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/progressive-blur-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/progressive-blur-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "90123cfddcff74ea",
+  "importedAt": "2026-11-05T17:59:28.200Z"
+}

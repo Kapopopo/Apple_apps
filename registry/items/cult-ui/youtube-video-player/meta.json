@@ -1,0 +1,45 @@
+{
+  "id": "cult-ui/youtube-video-player",
+  "name": "Youtube Video Player",
+  "type": "component",
+  "category": "Médias",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "YouTube video player component with custom controls and smooth animations",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "shadcn/button"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/youtube-video-player.json",
+  "sourcePath": "apps/www/public/r/youtube-video-player.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/youtube-video-player.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/youtube-video-player-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/youtube-video-player-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "98f1ece783638fca",
+  "importedAt": "2026-11-05T17:59:33.330Z"
+}

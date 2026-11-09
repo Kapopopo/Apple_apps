@@ -1,0 +1,35 @@
+{
+  "id": "magic-ui/aurora-text",
+  "name": "Aurora Text",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "boucle",
+    "landing page"
+  ],
+  "description": "Donner du rythme à un titre ou mettre en valeur un message.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/aurora-text",
+  "sourcePath": "https://magicui.design/r/aurora-text.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/aurora-text.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "aurora-text"
+  },
+  "catalogId": "fb8b9567b16aac2a",
+  "contentHash": "7a63cf7923ae8893",
+  "importedAt": "2026-11-05T00:16:49.315Z"
+}

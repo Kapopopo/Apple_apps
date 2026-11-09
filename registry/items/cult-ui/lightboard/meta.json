@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/lightboard",
+  "name": "Lightboard",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "web"
+  ],
+  "description": "Interactive lightboard component with customizable grid and lighting effects",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/lightboard.json",
+  "sourcePath": "apps/www/public/r/lightboard.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/lightboard.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/lightboard-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/lightboard-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ca6befe76ccfcdd1",
+  "importedAt": "2026-11-05T17:59:32.947Z"
+}

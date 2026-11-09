@@ -1,0 +1,6 @@
+/* Gambarino — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap');
+
+:root {
+  --font-gambarino: 'Gambarino', serif;
+}

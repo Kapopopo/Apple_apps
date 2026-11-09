@@ -1,0 +1,51 @@
+{
+  "id": "origin-ui/comp-481",
+  "name": "Table 481",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "drag",
+    "drag and drop",
+    "flag",
+    "sort",
+    "table",
+    "tanstack",
+    "web"
+  ],
+  "description": "Exemple Origin UI : table, tanstack, flag, sort, drag and drop.",
+  "framework": "react",
+  "dependencies": [
+    "@dnd-kit/core",
+    "@dnd-kit/modifiers",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "@tanstack/react-table",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dropdown-menu",
+    "origin-ui/table"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-481.json",
+  "sourcePath": "apps/origin/public/r/comp-481.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-481.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-481.tsx"
+  },
+  "contentHash": "e0fc9391e25534d2",
+  "importedAt": "2026-11-05T17:59:42.215Z"
+}

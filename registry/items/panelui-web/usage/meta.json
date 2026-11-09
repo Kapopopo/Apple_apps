@@ -1,0 +1,46 @@
+{
+  "id": "panelui-web/usage",
+  "name": "Usage",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "web"
+  ],
+  "description": "How full a model's context or a plan is, as a small indicator that opens into the figures.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "panelui-web/rolling-number"
+  ],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/usage.json",
+  "sourcePath": "apps/docs/public/r/web/usage.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/usage.tsx",
+      "role": "source",
+      "target": "@components/panelui/usage.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/usage/overview.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/usage/overview.tsx",
+    "demo": "source"
+  },
+  "contentHash": "caaa2a1547ddc30d",
+  "importedAt": "2026-11-05T00:16:57.253Z",
+  "updatedAt": "2026-11-05T00:19:20.582Z"
+}

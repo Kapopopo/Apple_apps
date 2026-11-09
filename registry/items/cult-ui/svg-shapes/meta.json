@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/svg-shapes",
+  "name": "Svg Shapes",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "web"
+  ],
+  "description": "Wide-aspect SVG shape and panel components for backgrounds and hero decorations",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/svg-shapes.json",
+  "sourcePath": "apps/www/public/r/svg-shapes.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/svg-shapes.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/svg-shapes-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/svg-shapes-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "f969184d5644ab02",
+  "importedAt": "2026-11-05T17:59:33.241Z"
+}

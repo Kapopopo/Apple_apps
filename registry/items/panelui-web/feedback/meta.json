@@ -1,0 +1,44 @@
+{
+  "id": "panelui-web/feedback",
+  "name": "Feedback",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "web"
+  ],
+  "description": "A dialog with a well to write in and two actions in the band around it.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/feedback.json",
+  "sourcePath": "apps/docs/public/r/web/feedback.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/feedback.tsx",
+      "role": "source",
+      "target": "@components/panelui/feedback.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/feedback/blur.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/feedback/blur.tsx",
+    "demo": "source"
+  },
+  "contentHash": "583ad65c3916958a",
+  "importedAt": "2026-11-05T00:16:56.633Z",
+  "updatedAt": "2026-11-05T00:18:17.976Z"
+}

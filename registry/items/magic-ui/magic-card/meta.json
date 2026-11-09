@@ -1,0 +1,45 @@
+{
+  "id": "magic-ui/magic-card",
+  "name": "Magic Card",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "application",
+    "survol"
+  ],
+  "description": "Souligner l’élément exploré avec une lumière qui suit le pointeur.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "motion",
+    "next-themes",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/magic-card",
+  "sourcePath": "https://magicui.design/r/magic-card.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/magic-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "magic-card"
+  },
+  "catalogId": "54011923c087e460",
+  "contentHash": "c42c362612bc70d3",
+  "importedAt": "2026-11-05T00:16:49.263Z"
+}

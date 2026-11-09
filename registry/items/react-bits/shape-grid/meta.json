@@ -1,0 +1,35 @@
+{
+  "id": "react-bits/shape-grid",
+  "name": "ShapeGrid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "3d",
+    "web"
+  ],
+  "description": "A drifting grid of shapes that lights up under the cursor, with perspective tilt and rainbow trails.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/ShapeGrid-TS-TW.json",
+  "sourcePath": "public/r/ShapeGrid-TS-TW.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "ShapeGrid/ShapeGrid.tsx",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "ShapeGrid/ShapeGrid.tsx"
+  },
+  "contentHash": "c3ef3a6bb78ba194",
+  "importedAt": "2026-11-05T17:59:46.043Z"
+}

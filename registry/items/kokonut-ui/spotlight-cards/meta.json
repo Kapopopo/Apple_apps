@@ -1,0 +1,41 @@
+{
+  "id": "kokonut-ui/spotlight-cards",
+  "name": "Spotlight Cards",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "kokonut-ui/utils"
+  ],
+  "source": "Kokonut UI",
+  "sourceId": "kokonut-ui",
+  "sourceUrl": "https://github.com/kokonut-labs/kokonutui/blob/9976111a38abe05a47229867611db02646b597ef/public/r/spotlight-cards.json",
+  "sourcePath": "public/r/spotlight-cards.json",
+  "sourceCommit": "9976111a38abe05a47229867611db02646b597ef",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 kokonutUI",
+  "files": [
+    {
+      "path": "components/kokonutui/spotlight-cards.tsx",
+      "role": "source",
+      "target": "components/kokonutui/spotlight-cards.tsx"
+    }
+  ],
+  "theme": "kokonut-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/kokonutui/spotlight-cards.tsx"
+  },
+  "contentHash": "84c4402f06879cb4",
+  "importedAt": "2026-11-05T17:59:35.816Z"
+}

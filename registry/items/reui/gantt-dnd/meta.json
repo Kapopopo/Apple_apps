@@ -1,0 +1,43 @@
+{
+  "id": "reui/gantt-dnd",
+  "name": "Custom pointer-event interaction engine - edge resize and drag-create over the horizontal axis with live validation; bars are never dragged whole.",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "Custom pointer-event interaction engine - edge resize and drag-create over the horizontal axis with live validation; bars are never dragged whole.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/gantt",
+    "reui/gantt-lib",
+    "reui/gantt-types"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/gantt-dnd.json",
+  "sourcePath": "public/r/styles/base-luma/gantt-dnd.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/gantt/gantt-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/gantt/gantt-dnd.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/gantt/gantt-dnd.tsx"
+  },
+  "contentHash": "c666e4af22edfc89",
+  "importedAt": "2026-11-05T17:59:38.259Z",
+  "updatedAt": "2026-11-05T18:07:49.968Z"
+}

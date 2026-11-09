@@ -1,0 +1,44 @@
+{
+  "id": "panelui-web/sheet",
+  "name": "Sheet",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "drag",
+    "web"
+  ],
+  "description": "A panel that rises from an edge of the screen, floating clear of it, and leaves with a swipe.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [],
+  "source": "PanelUI",
+  "sourceId": "panelui-web",
+  "sourceUrl": "https://github.com/panel-ui/PanelUI/blob/a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4/apps/docs/public/r/web/sheet.json",
+  "sourcePath": "apps/docs/public/r/web/sheet.json",
+  "sourceCommit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Khalid Abdi",
+  "files": [
+    {
+      "path": "components/panelui/sheet.tsx",
+      "role": "source",
+      "target": "@components/panelui/sheet.tsx"
+    },
+    {
+      "path": "apps/docs/components/web-demos/sheet/copy.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "panelui-web/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "apps/docs/components/web-demos/sheet/copy.tsx",
+    "demo": "source"
+  },
+  "contentHash": "3b05b4ddc1f2f24c",
+  "importedAt": "2026-11-05T00:16:56.937Z"
+}

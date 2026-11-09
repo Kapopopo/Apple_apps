@@ -1,0 +1,48 @@
+{
+  "id": "bencho/upload-dropzone",
+  "name": "Upload dropzone",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "animé",
+    "drag"
+  ],
+  "description": "Drag a file into the box to upload it; one that is too big gets refused.",
+  "framework": "react",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "source": "Bencho",
+  "sourceId": "bencho",
+  "sourceUrl": "https://github.com/cabralorenzo/bencho/tree/27ac3159201fa48eb16ef65faa5d8078963a9a61/blocks/upload-dropzone",
+  "sourcePath": "blocks/upload-dropzone",
+  "sourceCommit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Hors licence : the Bencho name and the goat mark, and the photographs shown on bencho.dev (none are included here). Third-party material keeps its own licence; see THIRD_PARTY.md.",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Lorenzo Cabra",
+  "files": [
+    {
+      "path": "blocks/upload-dropzone/README.md",
+      "role": "doc"
+    },
+    {
+      "path": "blocks/upload-dropzone/Upload.css",
+      "role": "style"
+    },
+    {
+      "path": "blocks/upload-dropzone/Upload.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "bencho/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/upload-dropzone/Upload.tsx",
+    "exportName": "Upload"
+  },
+  "contentHash": "c8ad9beb4e7f4180",
+  "importedAt": "2026-11-05T00:16:59.224Z"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "easyui/code-snippet-deck",
+  "name": "Code Snippet Deck",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "animé",
+    "buttons",
+    "code runner",
+    "live customizer",
+    "multi-runtime"
+  ],
+  "description": "An interactive multi-runtime developer code snippet deck with runtime switching (cURL, TypeScript, Python, Go, Rust), live dynamic parameter customizations, and line highlighting.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "framer-motion",
+    "lucide-react",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/CodeSnippetDeck.tsx",
+  "sourcePath": "src/components/ui/CodeSnippetDeck.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/CodeSnippetDeck.tsx",
+      "role": "source",
+      "target": "components/ui/code-snippet-deck.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "source",
+      "target": "lib/motion-tokens.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/CodeSnippetDeck.tsx"
+  },
+  "contentHash": "092b0dcfc4226897",
+  "importedAt": "2026-11-05T00:16:51.849Z",
+  "updatedAt": "2026-11-05T00:19:19.832Z"
+}

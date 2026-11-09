@@ -1,0 +1,46 @@
+{
+  "id": "shadcn/login-02",
+  "name": "Login 02",
+  "type": "section",
+  "category": "Formulaires",
+  "tags": [
+    "web"
+  ],
+  "description": "A two column login page with a cover image.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/button",
+    "shadcn/card",
+    "shadcn/input",
+    "shadcn/label"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/login-02.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/login-02.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/login-02/page.tsx",
+      "role": "source",
+      "target": "app/login/page.tsx"
+    },
+    {
+      "path": "blocks/login-02/components/login-form.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/login-02/page.tsx"
+  },
+  "contentHash": "55ab3afc3974a44d",
+  "importedAt": "2026-11-05T17:59:23.083Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/text-animate",
+  "name": "Text Animate",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Animated text component with customizable reveal effects and timing",
+  "framework": "react",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/text-animate.json",
+  "sourcePath": "apps/www/public/r/text-animate.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/text-animate.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/text-animate-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/text-animate-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d9963d1b52caeec9",
+  "importedAt": "2026-11-05T17:59:33.259Z"
+}

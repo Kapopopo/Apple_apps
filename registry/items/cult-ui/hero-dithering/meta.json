@@ -1,0 +1,45 @@
+{
+  "id": "cult-ui/hero-dithering",
+  "name": "Hero Dithering",
+  "type": "section",
+  "category": "Fonds",
+  "tags": [
+    "web",
+    "webgl"
+  ],
+  "description": "Split-layout hero section with responsive dithering shader visuals, CTA, and tech stack badges",
+  "framework": "react",
+  "dependencies": [
+    "@paper-design/shaders-react"
+  ],
+  "registryDependencies": [
+    "shadcn/badge",
+    "shadcn/button"
+  ],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/hero-dithering.json",
+  "sourcePath": "apps/www/public/r/hero-dithering.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/hero-dithering.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/hero-dithering-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/hero-dithering-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d99255857bbd89c4",
+  "importedAt": "2026-11-05T17:59:32.892Z"
+}

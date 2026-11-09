@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-130",
+  "name": "Button 130",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "darkmode",
+    "toggle",
+    "web"
+  ],
+  "description": "Exemple Origin UI : button, toggle, darkmode.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "origin-ui/toggle"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-130.json",
+  "sourcePath": "apps/origin/public/r/comp-130.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-130.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-130.tsx"
+  },
+  "contentHash": "a734422e55076df0",
+  "importedAt": "2026-11-05T17:59:40.607Z"
+}

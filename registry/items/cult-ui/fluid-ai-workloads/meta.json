@@ -1,0 +1,40 @@
+{
+  "id": "cult-ui/fluid-ai-workloads",
+  "name": "Fluid Ai Workloads",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "ia",
+    "web"
+  ],
+  "description": "Fluid visualization for AI workload states",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/fluid-ai-workloads.json",
+  "sourcePath": "apps/www/public/r/fluid-ai-workloads.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/fluid-ai-workloads.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/fluid-ai-workloads-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/fluid-ai-workloads-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e9a1a834eb00231d",
+  "importedAt": "2026-11-05T17:59:32.784Z"
+}

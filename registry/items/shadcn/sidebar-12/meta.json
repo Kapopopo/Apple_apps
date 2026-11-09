@@ -1,0 +1,61 @@
+{
+  "id": "shadcn/sidebar-12",
+  "name": "Sidebar 12",
+  "type": "section",
+  "category": "Navigation",
+  "tags": [
+    "web"
+  ],
+  "description": "A sidebar with a calendar.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "shadcn/avatar",
+    "shadcn/breadcrumb",
+    "shadcn/calendar",
+    "shadcn/collapsible",
+    "shadcn/dropdown-menu",
+    "shadcn/separator",
+    "shadcn/sidebar"
+  ],
+  "source": "shadcn/ui",
+  "sourceId": "shadcn",
+  "sourceUrl": "https://github.com/shadcn-ui/ui/blob/8a3536678a528cc012b9e62484290e79d0be410f/apps/v4/public/r/styles/new-york/sidebar-12.json",
+  "sourcePath": "apps/v4/public/r/styles/new-york/sidebar-12.json",
+  "sourceCommit": "8a3536678a528cc012b9e62484290e79d0be410f",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 shadcn",
+  "files": [
+    {
+      "path": "blocks/sidebar-12/page.tsx",
+      "role": "source",
+      "target": "app/dashboard/page.tsx"
+    },
+    {
+      "path": "blocks/sidebar-12/components/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-12/components/calendars.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-12/components/date-picker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "blocks/sidebar-12/components/nav-user.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "shadcn/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "blocks/sidebar-12/page.tsx"
+  },
+  "contentHash": "557e523432e8a467",
+  "importedAt": "2026-11-05T17:59:23.368Z"
+}

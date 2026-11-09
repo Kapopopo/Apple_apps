@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-341",
+  "name": "Accordion 341",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accordion",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : accordion, radix.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react",
+    "radix-ui"
+  ],
+  "registryDependencies": [
+    "origin-ui/accordion"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-341.json",
+  "sourcePath": "apps/origin/public/r/comp-341.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-341.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-341.tsx"
+  },
+  "contentHash": "6c88eb1364fc4247",
+  "importedAt": "2026-11-05T17:59:41.626Z"
+}

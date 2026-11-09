@@ -1,0 +1,6 @@
+/* Expose — Fontshare (LicenseRef-ITF-FFL). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=expose@1,400,500,700,900&display=swap');
+
+:root {
+  --font-expose: 'Expose', sans-serif;
+}

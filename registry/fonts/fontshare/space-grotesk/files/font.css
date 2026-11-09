@@ -1,0 +1,6 @@
+/* Space Grotesk — Fontshare (OFL-1.1). Lien CSS uniquement, aucun fichier de police stocké. */
+@import url('https://api.fontshare.com/v2/css?f[]=space-grotesk@1,300,400,500,600,700&display=swap');
+
+:root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}

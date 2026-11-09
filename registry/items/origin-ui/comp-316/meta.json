@@ -1,0 +1,41 @@
+{
+  "id": "origin-ui/comp-316",
+  "name": "Dialog 316",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "dialog",
+    "modal",
+    "radix",
+    "web"
+  ],
+  "description": "Exemple Origin UI : dialog, modal, radix.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/button",
+    "origin-ui/dialog",
+    "origin-ui/scroll-area"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-316.json",
+  "sourcePath": "apps/origin/public/r/comp-316.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-316.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-316.tsx"
+  },
+  "contentHash": "aafbafb3ceac505c",
+  "importedAt": "2026-11-05T17:59:41.517Z"
+}

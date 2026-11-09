@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/flickering-grid",
+  "name": "Flickering Grid",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "boucle",
+    "portfolio"
+  ],
+  "description": "Créer une ambiance animée derrière un contenu lisible.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/flickering-grid",
+  "sourcePath": "https://magicui.design/r/flickering-grid.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/flickering-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "flickering-grid"
+  },
+  "catalogId": "c132450dccfdd6e3",
+  "contentHash": "a78842773abb297f",
+  "importedAt": "2026-11-05T00:16:49.389Z"
+}

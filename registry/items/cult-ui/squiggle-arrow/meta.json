@@ -1,0 +1,39 @@
+{
+  "id": "cult-ui/squiggle-arrow",
+  "name": "Squiggle Arrow",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/squiggle-arrow.json",
+  "sourcePath": "apps/www/public/r/squiggle-arrow.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/squiggle-arrow.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/squiggle-arrow-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/squiggle-arrow-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "197b1e0b607fd1b4",
+  "importedAt": "2026-11-05T17:59:33.204Z"
+}

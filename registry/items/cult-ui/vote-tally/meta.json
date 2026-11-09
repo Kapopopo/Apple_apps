@@ -1,0 +1,41 @@
+{
+  "id": "cult-ui/vote-tally",
+  "name": "Vote Tally",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "web"
+  ],
+  "description": "List of items with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-use-controllable-state"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/vote-tally.json",
+  "sourcePath": "apps/www/public/r/vote-tally.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/vote-tally.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/vote-tally-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/vote-tally-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "4b80364d3b0d1a18",
+  "importedAt": "2026-11-05T17:59:33.318Z"
+}

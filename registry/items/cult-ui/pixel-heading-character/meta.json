@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/pixel-heading-character",
+  "name": "Pixel Heading Character",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "animé",
+    "web"
+  ],
+  "description": "Per-character pixel-font heading with four animation modes using Geist pixel fonts",
+  "framework": "react",
+  "dependencies": [
+    "geist"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/pixel-heading-character.json",
+  "sourcePath": "apps/www/public/r/pixel-heading-character.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/pixel-heading-character.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/pixel-heading-character-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/pixel-heading-character-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b0666ad969f4e991",
+  "importedAt": "2026-11-05T17:59:33.102Z"
+}

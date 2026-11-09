@@ -1,0 +1,45 @@
+{
+  "id": "reui/data-grid-table-dnd",
+  "name": "Data Grid Table Dnd",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "web"
+  ],
+  "description": "",
+  "framework": "react",
+  "dependencies": [
+    "@dnd-kit/core",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "reui/data-grid",
+    "reui/data-grid-table",
+    "shadcn/button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/public/r/styles/base-luma/data-grid-table-dnd.json",
+  "sourcePath": "public/r/styles/base-luma/data-grid-table-dnd.json",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/reui/data-grid/data-grid-table-dnd.tsx",
+      "role": "source",
+      "target": "components/reui/data-grid/data-grid-table-dnd.tsx"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/reui/data-grid/data-grid-table-dnd.tsx"
+  },
+  "contentHash": "69613b5b6620aa6a",
+  "importedAt": "2026-11-05T17:59:38.109Z",
+  "updatedAt": "2026-11-05T18:07:49.741Z"
+}

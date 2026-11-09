@@ -1,0 +1,51 @@
+{
+  "id": "easyui/glyph-matrix",
+  "name": "Glyph Matrix",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "background effect",
+    "canvas",
+    "interactive",
+    "motion"
+  ],
+  "description": "A high-performance, canvas-driven Matrix digital rain background effect featuring streaming Katakana and numeric glyphs, glowing head highlights, decaying phosphor trails, and interactive cursor disturbances.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Easy UI",
+  "sourceId": "easyui",
+  "sourceUrl": "https://github.com/Surajmaurya1/easyui/blob/e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5/src/components/ui/GlyphMatrix.tsx",
+  "sourcePath": "src/components/ui/GlyphMatrix.tsx",
+  "sourceCommit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2026 Suraj Maurya",
+  "files": [
+    {
+      "path": "src/components/ui/GlyphMatrix.tsx",
+      "role": "source",
+      "target": "components/ui/glyph-matrix.tsx"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source",
+      "target": "lib/utils.ts"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    }
+  ],
+  "theme": "easyui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "src/components/ui/GlyphMatrix.tsx"
+  },
+  "contentHash": "13bf8c837f3dbeb6",
+  "importedAt": "2026-11-05T00:16:52.440Z",
+  "updatedAt": "2026-11-05T00:19:19.910Z"
+}

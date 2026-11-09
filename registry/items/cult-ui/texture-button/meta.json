@@ -1,0 +1,42 @@
+{
+  "id": "cult-ui/texture-button",
+  "name": "Texture Button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "web"
+  ],
+  "description": "Button component with texture overlay effects and customizable variants",
+  "framework": "react",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source": "Cult UI",
+  "sourceId": "cult-ui",
+  "sourceUrl": "https://github.com/nolly-studio/cult-ui/blob/d71b1428b811c2779d46ea41b7ef8c9f9c9991c2/apps/www/public/r/texture-button.json",
+  "sourcePath": "apps/www/public/r/texture-button.json",
+  "sourceCommit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2023 Jordan-Gilliam",
+  "files": [
+    {
+      "path": "registry/default/ui/texture-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/default/example/texture-button-demo.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "cult-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/example/texture-button-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "9bc5b82fdbffbff9",
+  "importedAt": "2026-11-05T17:59:33.271Z"
+}

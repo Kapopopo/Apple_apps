@@ -1,0 +1,39 @@
+{
+  "id": "origin-ui/comp-416",
+  "name": "Badge 416",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "badge",
+    "chip",
+    "counter",
+    "web"
+  ],
+  "description": "Exemple Origin UI : badge, chip, counter.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "origin-ui/badge"
+  ],
+  "source": "Origin UI",
+  "sourceId": "origin-ui",
+  "sourceUrl": "https://github.com/cosscom/ui/blob/890a79a5368b3cdebbdd860aa1908f2843fd7ddc/apps/origin/public/r/comp-416.json",
+  "sourcePath": "apps/origin/public/r/comp-416.json",
+  "sourceCommit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 coss.com",
+  "files": [
+    {
+      "path": "registry/default/components/comp-416.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "origin-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/default/components/comp-416.tsx"
+  },
+  "contentHash": "1f8007ce8007aa9e",
+  "importedAt": "2026-11-05T17:59:41.956Z"
+}

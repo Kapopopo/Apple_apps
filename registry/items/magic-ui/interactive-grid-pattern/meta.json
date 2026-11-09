@@ -1,0 +1,42 @@
+{
+  "id": "magic-ui/interactive-grid-pattern",
+  "name": "Interactive Grid Pattern",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "portfolio",
+    "survol"
+  ],
+  "description": "Éclairer les cases parcourues par le pointeur dans une grille.",
+  "framework": "react",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://magicui.design/docs/components/interactive-grid-pattern",
+  "sourcePath": "https://magicui.design/r/interactive-grid-pattern.json",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "licenseNotes": "Composant original ; contenu de démonstration adapté pour Atlas.",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "demos/src/vendor/interactive-grid-pattern.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/src/lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "atlas-demo",
+    "demo": "interactive-grid-pattern"
+  },
+  "catalogId": "f09e98ab5b8fd829",
+  "contentHash": "28f812ac13505033",
+  "importedAt": "2026-11-05T00:16:49.398Z"
+}

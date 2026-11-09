@@ -1,0 +1,51 @@
+{
+  "id": "magic-ui/noise-texture",
+  "name": "Noise Texture",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "web"
+  ],
+  "description": "An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Magic UI",
+  "sourceId": "magic-ui",
+  "sourceUrl": "https://github.com/magicuidesign/magicui/blob/37ce829f18dd7d0a7219531a4249b664419933ea/apps/www/public/r/noise-texture.json",
+  "sourcePath": "apps/www/public/r/noise-texture.json",
+  "sourceCommit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) Magic UI",
+  "files": [
+    {
+      "path": "registry/magicui/noise-texture.tsx",
+      "role": "source"
+    },
+    {
+      "path": "registry/example/noise-texture-demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/noise-texture-demo-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/noise-texture-demo-3.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "registry/example/noise-texture-demo-4.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "magic-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "registry/example/noise-texture-demo.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b13e2c10fcb573c0",
+  "importedAt": "2026-11-05T17:59:28.183Z"
+}
