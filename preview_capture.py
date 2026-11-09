@@ -9,12 +9,47 @@ import time
 import urllib.request
 from pathlib import Path
 
+class CaptureUnavailable(RuntimeError):
+    """Problème d'environnement (navigateur ou dépendance absente) : jamais mis en cache comme échec d'une fiche."""
+
+
+COMMON_BROWSERS = [
+    r'C:\Program Files\Google\Chrome\Application\chrome.exe',
+    r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',
+    os.path.expandvars(r'%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe'),
+    r'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe',
+    r'C:\Program Files\Microsoft\Edge\Application\msedge.exe',
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Chromium.app/Contents/MacOS/Chromium',
+]
+
+
+def find_browser():
+    """ATLAS_CHROME, sinon le PATH, sinon les emplacements d'installation usuels (Windows, macOS)."""
+    for candidate in (os.environ.get('ATLAS_CHROME'), shutil.which('google-chrome'), shutil.which('chromium'), shutil.which('chromium-browser'), shutil.which('chrome'), shutil.which('msedge')):
+        if candidate:
+            return candidate
+    return next((path for path in COMMON_BROWSERS if os.path.isfile(path)), None)
+
+
+def capture_environment():
+    """None si les captures sont possibles, sinon la raison (affichée telle quelle dans l'interface)."""
+    try:
+        import websocket  # noqa: F401
+    except ImportError:
+        return 'dépendance manquante : python -m pip install -r requirements-preview.txt'
+    if not find_browser():
+        return 'Chrome, Chromium ou Edge introuvable (définir ATLAS_CHROME)'
+    return None
+
+
 class Browser:
     def __init__(self):
+        problem = capture_environment()
+        if problem:
+            raise CaptureUnavailable(problem)
         import websocket
-        executable = os.environ.get('ATLAS_CHROME') or shutil.which('google-chrome') or shutil.which('chromium') or shutil.which('chromium-browser')
-        if not executable:
-            raise RuntimeError('Chrome ou Chromium est nécessaire pour créer les captures.')
+        executable = find_browser()
         self.profile = tempfile.TemporaryDirectory(prefix='atlas-preview-', ignore_cleanup_errors=True)
         flags = ['--no-sandbox'] if os.environ.get('ATLAS_CHROME_NO_SANDBOX') == '1' else []
         self.process = subprocess.Popen([executable, '--headless', *flags, '--disable-dev-shm-usage', '--disable-background-networking', '--no-first-run', '--remote-debugging-port=0', '--user-data-dir='+self.profile.name, 'about:blank'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -24,7 +59,7 @@ class Browser:
                 if port_file.exists():
                     break
                 if self.process.poll() is not None:
-                    raise RuntimeError('Chrome ne démarre pas.')
+                    raise CaptureUnavailable('le navigateur ne démarre pas')
                 time.sleep(.1)
             port = port_file.read_text().splitlines()[0]
             with urllib.request.urlopen('http://127.0.0.1:'+port+'/json', timeout=5) as response:

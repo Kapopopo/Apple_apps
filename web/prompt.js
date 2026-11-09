@@ -29,6 +29,8 @@
         lines.push(`   Type : ${c.type_label||'Référence visuelle'} — inspiration pour la direction artistique.`,`   Auteur indiqué : ${c.creator||'Non indiqué'}.`,`   ${c.description||''}`,`   Utiliser cette référence pour proposer un visuel original adapté au projet ; ce n’est pas un composant React ni une animation intégrée.`,`   Droits : ${c.license||'À vérifier auprès de la source'} ; vérifier les autorisations avant réutilisation de l’image. Ne pas inventer une licence MIT.`);
       }else if(choice){
         lines.push(`   Rôle : ${c.type_label||choice.category}. Usage suggéré : ${choice.usage}.`,`   Comportement à préserver : ${choice.interaction}.`,`   Intérêt : ${choice.reason}`,`   Source du composant : ${choice.code_source}`,`   Licence de la version retenue : ${choice.license} ; conserver les mentions d’origine.`);
+      }else if(c.registry){
+        lines.push(`   Rôle : ${c.type_label||'Composant'}. ${c.description||''}`.trimEnd(),`   Code source réel : registre Component Atlas, identifiant ${c.registry_id||c.id} (outil MCP get_component).`,`   Licence : ${c.license||'à vérifier'}${c.license_status==='restricted'?' (conditions)':''}.${c.attribution?' Attribution : '+c.attribution:''}`,'   Utiliser ce code tel quel et préserver son comportement interactif.');
       }else lines.push(`   Type : ${c.type_label||c.kind}. Consulter la documentation pour confirmer les API, la licence et les dépendances.`,`   Cette fiche n’a pas de démonstration locale validée : ne pas inventer son comportement.`);
       const note=options.notes?.[c.id]?.trim();
       if(note)lines.push('   Consigne spécifique : '+note);

@@ -1,6 +1,7 @@
 """End-to-end validation of local demos, selection, filters, and prompt exports."""
 import base64
 import json
+import os
 import tempfile
 import time
 import sys
@@ -18,7 +19,7 @@ def wait(b,js,timeout=15):
 
 with Browser() as b:
     b.call('Emulation.setDeviceMetricsOverride',dict(width=1440,height=1050,deviceScaleFactor=1,mobile=False))
-    b.navigate('http://127.0.0.1:8000')
+    b.navigate(os.environ.get('ATLAS_URL', 'http://127.0.0.1:8000'))
     wait(b,"document.querySelectorAll('.card').length===44")
     wait(b,"document.querySelector('iframe')?.dataset.ready==='true'")
     assert b.js("document.querySelectorAll('#results a').length")==0
@@ -34,8 +35,9 @@ with Browser() as b:
 
     b.js("[...document.querySelectorAll('.select-mini')].slice(0,5).forEach(b=>b.click())")
     assert b.js('selectedItems().length')==5
-    b.js("document.querySelector('#demo-filter').value='live';document.querySelector('#category-filter').value='Indicateurs';document.querySelector('#category-filter').dispatchEvent(new Event('input'))")
-    assert b.js("document.querySelectorAll('.card').length")==3
+    b.js("document.querySelector('#category-filter').value='Indicateurs';document.querySelector('#category-filter').dispatchEvent(new Event('input'))")
+    # Le catalogue inclut aussi les composants interactifs du registre : 3 indicateurs viennent de la sélection Atlas.
+    assert b.js("displayed.filter(c=>c.curation).length")==3
     assert b.js('selectedItems().length')==5
     b.js("document.querySelector('#effect-filter').value='Interaction';document.querySelector('#effect-filter').dispatchEvent(new Event('input'))")
     assert b.js("document.querySelectorAll('.card').length")==1
@@ -62,10 +64,10 @@ with Browser() as b:
         for _ in range(30):
             if output.exists():break
             time.sleep(.15)
-        assert 'Un portfolio pour Camille' in output.read_text()
-        assert 'COMPOSANTS À INTÉGRER (6)' in output.read_text()
+        assert 'Un portfolio pour Camille' in output.read_text(encoding='utf-8')
+        assert 'COMPOSANTS À INTÉGRER (6)' in output.read_text(encoding='utf-8')
     # The button's actual clipboard operation must preserve the edited prompt.
-    b.call('Browser.grantPermissions',{'origin':'http://127.0.0.1:8000','permissions':['clipboardReadWrite','clipboardSanitizedWrite']})
+    b.call('Browser.grantPermissions',{'origin':os.environ.get('ATLAS_URL', 'http://127.0.0.1:8000'),'permissions':['clipboardReadWrite','clipboardSanitizedWrite']})
     b.call('Page.bringToFront')
     b.call('Runtime.evaluate',{'expression':"document.querySelector('#copy-prompt').click()",'userGesture':True})
     time.sleep(.3)
@@ -124,7 +126,7 @@ with Browser() as b:
     b.js('window.scrollTo(0,0)')
     assert b.js('innerWidth')==390
     assert b.js('document.documentElement.scrollWidth<=innerWidth')
-    assert b.js("getComputedStyle(document.querySelector('.hover-actions')).opacity==='1'")
+    assert b.js("getComputedStyle(document.querySelector('.card-actions')).display!=='none'")
     Path('/tmp/atlas-live-mobile.png').write_bytes(base64.b64decode(b.call('Page.captureScreenshot',{'format':'png'})['data']))
     b.js("document.querySelector('#open-prompt').click()")
     assert b.js("document.querySelector('dialog').scrollWidth<=document.querySelector('dialog').clientWidth")

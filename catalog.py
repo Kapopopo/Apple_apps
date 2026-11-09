@@ -19,7 +19,7 @@ def matches(query, text):
 
 def source_list():
     result, category, previous = {}, 'Principaux', ''
-    for raw in (ROOT / 'data' / 'sources.txt').read_text().splitlines():
+    for raw in (ROOT / 'data' / 'sources.txt').read_text(encoding='utf-8').splitlines():
         line = raw.strip()
         if not line or '━' in line:
             continue
@@ -33,10 +33,10 @@ def source_list():
     return list(result.values())
 
 def load():
-    catalog = json.loads(DATA.read_text()) if DATA.exists() else dict(updated=None, sources=source_list())
+    catalog = json.loads(DATA.read_text(encoding='utf-8')) if DATA.exists() else dict(updated=None, sources=source_list())
     references = ROOT / 'data' / 'reference_sources.json'
     if references.exists():
-        additions = json.loads(references.read_text())
+        additions = json.loads(references.read_text(encoding='utf-8'))
         ids = {s['id'] for s in additions}
         catalog['sources'] = [s for s in catalog['sources'] if s['id'] not in ids] + additions
     return catalog

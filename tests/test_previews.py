@@ -1,3 +1,4 @@
+import datetime
 import json
 import tempfile
 import unittest
@@ -32,7 +33,7 @@ class PreviewTests(unittest.TestCase):
         component={'id':'c'*16,'url':'https://example.com/component'}
         queue=PreviewQueue()
         queue.started=True  # Keep this test offline; inspect scheduled jobs.
-        with patch('previews.load',return_value={'sources':[{'components':[component]}]}),patch('previews.cached_previews',return_value={}):
+        with patch('previews.load',return_value={'sources':[{'components':[component]}]}),patch('previews.cached_previews',return_value={}),patch('preview_capture.capture_environment',return_value=None):
             with self.assertRaises(ValueError):
                 queue.request(['https://example.com'])
             with self.assertRaises(ValueError):
@@ -40,6 +41,28 @@ class PreviewTests(unittest.TestCase):
             self.assertEqual(queue.request([component['id']])[component['id']]['status'],'pending')
             queue.request([component['id']])
             self.assertEqual(queue.jobs.qsize(),1)
+
+    def test_old_errors_are_retried(self):
+        with tempfile.TemporaryDirectory() as directory, patch('previews.CACHE', Path(directory)):
+            now=datetime.datetime.now(datetime.timezone.utc)
+            for id_,age in (('e'*16,1),('f'*16,30)):
+                (Path(directory)/(id_+'.json')).write_text(json.dumps({'status':'error','captured_at':(now-datetime.timedelta(days=age)).isoformat()}))
+            self.assertEqual(set(cached_previews()),{'e'*16})
+
+    def test_missing_browser_is_never_cached_as_a_failure(self):
+        from preview_capture import CaptureUnavailable
+        component={'id':'a1'*8,'url':'https://example.com/component'}
+        with tempfile.TemporaryDirectory() as directory, patch('previews.CACHE', Path(directory)), patch('preview_capture.Browser', side_effect=CaptureUnavailable('Chrome introuvable')):
+            with self.assertRaises(CaptureUnavailable):
+                capture_component(component)
+            self.assertEqual(list(Path(directory).iterdir()),[])
+        queue=PreviewQueue()
+        with patch('previews.load',return_value={'sources':[{'components':[component]}]}),patch('previews.cached_previews',return_value={}),patch('preview_capture.capture_environment',return_value='Chrome introuvable'):
+            state=queue.request([component['id']])[component['id']]
+            self.assertEqual(state['status'],'unavailable')
+            self.assertIn('Chrome introuvable',state['message'])
+            self.assertEqual(queue.jobs.qsize(),0)
+            self.assertFalse(queue.started)
 
 if __name__=='__main__':
     unittest.main()
