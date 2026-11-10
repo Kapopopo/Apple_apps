@@ -20,11 +20,11 @@ Le registre contient le code source réel (pas des liens) avec licence et proven
 
 ## Operating Context
 
-- Application web locale servie par `server.py` (http://localhost:8000), deux pages conservées (décision du 2026-11-05) :
-  - `/` Catalogue : essayer les composants — sélection Atlas (44 démos), tous les composants interactifs du registre, favoris, sélection, prompt à copier, envoi au builder.
-  - `/builder` : composer une spec (thème, polices, easings, blocs ordonnés + notes), sauvegarde dans `specs/`, presets.
+- Application web locale servie par `npm start` (serveur TypeScript, http://localhost:8000), deux pages conservées (décision du 2026-11-05) :
+  - `/` Catalogue : essayer les composants — sélection Atlas (44 démos), tous les composants interactifs du registre, nouveautés, favoris, prompt texte. « Ajouter » alimente directement la spec en cours (panier unique partagé avec le builder).
+  - `/builder` : composer la spec (thème — y compris un thème personnel créé sur place —, polices, mouvement, sons, blocs ordonnés par page + consignes), aperçu composé de la page, sauvegarde dans `specs/` avec historique, renommage, duplication, presets.
 - **Uniquement de l'interactif dans l'interface** (décision du 2026-11-05) : un composant n'apparaît que s'il fonctionne en direct (démo Atlas ou aperçu live validé par l'audit). Les fiches « lien + capture », les fonds One Prompt Design et les composants React Native restent dans `data/` ou le registre (accessibles au MCP) mais ne sont plus affichés.
-- Claude Code consomme les specs via le serveur MCP `atlas`.
+- Claude Code consomme les specs via le serveur MCP `atlas` (code réel, bundle prêt à poser, CREDITS.md) ; `npm run bundle` écrit tout dans un projet.
 
 ## Capabilities and Constraints
 
@@ -36,7 +36,7 @@ Le registre contient le code source réel (pas des liens) avec licence et proven
 
 ## Evidence on Hand
 
-Registre réel dans `registry/`, presets dans `specs/presets/`, spec d'exemple `specs/dashboard-padel.json`, captures dans `data/previews/`. Aucun témoignage ni métrique d'usage : ne pas en inventer.
+Registre réel dans `registry/` (≈ 3 600 items), presets dans `specs/presets/`, spec d'exemple `specs/dashboard-padel.json`, vignettes d'audit dans `web/thumbs/` (générées). Aucun témoignage ni métrique d'usage : ne pas en inventer.
 
 ## Product Principles
 
