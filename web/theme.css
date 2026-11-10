@@ -582,7 +582,7 @@ pre.code {
 .menu-list .danger {
   color: var(--danger);
 }
-dialog[data-mode='form'] {
+dialog[data-kind='form'] {
   width: min(560px, 96vw);
 }
 .dialog-body h2 {

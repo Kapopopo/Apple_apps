@@ -686,7 +686,7 @@
 }
 
 /* Aperçu composé de la page */
-dialog[data-mode='page'] {
+dialog[data-kind='page'] {
   width: min(1280px, 98vw);
 }
 .page-preview-head {
@@ -770,7 +770,7 @@ dialog[data-mode='page'] {
 }
 
 /* Éditeur de thème */
-dialog[data-mode='theme'] {
+dialog[data-kind='theme'] {
   width: min(1180px, 98vw);
 }
 .theme-editor {

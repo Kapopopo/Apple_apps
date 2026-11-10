@@ -884,10 +884,10 @@ async function showThemeEditor(baseId = spec.theme) {
     grid();
     push();
   });
-  for (const b of $$('[data-mode]'))
+  for (const b of $$('#theme-form [data-mode]'))
     b.onclick = () => {
       draftTheme.mode = b.dataset.mode;
-      for (const x of $$('[data-mode]')) x.setAttribute('aria-pressed', String(x === b));
+      for (const x of $$('#theme-form [data-mode]')) x.setAttribute('aria-pressed', String(x === b));
       grid();
       push();
     };
@@ -927,7 +927,7 @@ $('#create-theme').onclick = () => showThemeEditor();
 
 function openDialog(html, mode = 'detail') {
   const dialog = $('#detail');
-  dialog.dataset.mode = mode;
+  dialog.dataset.kind = mode;
   $('#detail-body').innerHTML = html;
   for (const b of $$('[data-close]', dialog)) b.onclick = () => dialog.close();
   if (!dialog.open) dialog.showModal();
