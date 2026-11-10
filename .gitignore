@@ -22,3 +22,6 @@ specs/*.tmp
 specs/.history/
 # Vignettes produites par l'audit des aperçus (regénérables)
 web/thumbs/
+# Vérification des sources (npm run outdated), locale
+registry/_updates.json
+registry/_updates.log

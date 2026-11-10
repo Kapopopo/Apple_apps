@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-checkbox-12",
+  "name": "Card checkbox group with icons",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "checkbox",
+    "exemple",
+    "icon card rows"
+  ],
+  "description": "Card checkbox group with icons. Built by composing Card, Checkbox, Field, Separator.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-checkbox",
+    "reui/ui-field",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/checkbox/c-checkbox-12.tsx",
+  "sourcePath": "registry-reui/bases/base/components/checkbox/c-checkbox-12.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/checkbox/c-checkbox-12.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/checkbox/c-checkbox-12.tsx"
+  },
+  "contentHash": "3951c9ca653824f6",
+  "importedAt": "2026-11-10T13:14:53.288Z"
+}

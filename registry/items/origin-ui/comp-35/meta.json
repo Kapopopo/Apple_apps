@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-35",
-  "name": "Input 35",
+  "name": "Input with characters left",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-35.tsx"
   },
-  "contentHash": "63e36999f16d3f6f",
-  "importedAt": "2026-11-05T17:59:41.678Z"
+  "contentHash": "c89bb76116fd76a2",
+  "importedAt": "2026-11-05T17:59:41.678Z",
+  "updatedAt": "2026-11-10T13:12:56.370Z"
 }

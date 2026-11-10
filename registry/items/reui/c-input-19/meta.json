@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-input-19",
+  "name": "Input label with link and visibility toggle",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "input",
+    "link & toggle"
+  ],
+  "description": "Input label with link and visibility toggle. Built by composing Field, Input.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input/c-input-19.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input/c-input-19.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input/c-input-19.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input/c-input-19.tsx"
+  },
+  "contentHash": "f3a15aa8a3c590df",
+  "importedAt": "2026-11-10T13:14:57.430Z"
+}

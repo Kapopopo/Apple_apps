@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-39",
-  "name": "Input 39",
+  "name": "Time input with end icon",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-39.tsx"
   },
-  "contentHash": "664be2a3024ff62c",
-  "importedAt": "2026-11-05T17:59:41.837Z"
+  "contentHash": "51510d82138df540",
+  "importedAt": "2026-11-05T17:59:41.837Z",
+  "updatedAt": "2026-11-10T13:12:56.483Z"
 }

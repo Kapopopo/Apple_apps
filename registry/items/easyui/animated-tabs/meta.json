@@ -43,6 +43,18 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/animated-tabs.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -50,8 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/AnimatedTabs.tsx"
+    "entry": "src/components/docs/detail/demos/items/animated-tabs.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "cf7869eee8385516",
-  "importedAt": "2026-11-05T00:16:51.596Z"
+  "contentHash": "8a8071a9df6c96f2",
+  "importedAt": "2026-11-05T00:16:51.596Z",
+  "updatedAt": "2026-11-10T13:12:05.414Z"
 }

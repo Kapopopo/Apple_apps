@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-cascader-2",
+  "name": "Multi-select permissions with checkboxes and a selection cap.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "cascader",
+    "exemple",
+    "multi-select cap"
+  ],
+  "description": "Multi-select permissions with checkboxes and a selection cap. Built by composing Button, Cascader, Cascader Footer, Cascader Item, Cascader Nav and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-2.tsx"
+  },
+  "contentHash": "3dc80b52c12da11e",
+  "importedAt": "2026-11-10T13:13:08.494Z"
+}

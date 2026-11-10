@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-177",
-  "name": "Switch 177",
+  "name": "M2-style switch",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-177.tsx"
   },
-  "contentHash": "4d3f43f5ddcc2e45",
-  "importedAt": "2026-11-05T17:59:40.758Z"
+  "contentHash": "5b5f4d8f5b14a81d",
+  "importedAt": "2026-11-05T17:59:40.758Z",
+  "updatedAt": "2026-11-10T13:12:55.380Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-381",
-  "name": "Popover 381",
+  "name": "Real Time",
   "type": "component",
   "category": "Fenêtres et panneaux",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-381.tsx"
   },
-  "contentHash": "2ad1612209feefaa",
-  "importedAt": "2026-11-05T17:59:41.808Z"
+  "contentHash": "7627a57997172411",
+  "importedAt": "2026-11-05T17:59:41.808Z",
+  "updatedAt": "2026-11-10T13:12:56.465Z"
 }

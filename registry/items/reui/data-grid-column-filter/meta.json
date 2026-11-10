@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-column-filter",
   "name": "Data Grid Column Filter",
-  "type": "component",
-  "category": "Fonds",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -14,10 +14,10 @@
   "registryDependencies": [
     "reui/badge",
     "reui/data-grid",
-    "shadcn/button",
-    "shadcn/input",
-    "shadcn/popover",
-    "shadcn/separator"
+    "reui/ui-button",
+    "reui/ui-input",
+    "reui/ui-popover",
+    "reui/ui-separator"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -34,12 +34,11 @@
       "target": "components/reui/data-grid/data-grid-column-filter.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-column-filter.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "e7b3325d55cb2697",
+  "contentHash": "7810a3236b72e11d",
   "importedAt": "2026-11-05T17:59:38.092Z",
-  "updatedAt": "2026-11-05T18:07:49.718Z"
+  "updatedAt": "2026-11-10T13:13:02.879Z"
 }

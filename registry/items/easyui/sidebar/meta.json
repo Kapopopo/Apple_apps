@@ -42,6 +42,38 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/sidebar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/sidebar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-shared.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -49,8 +81,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/sidebar.tsx"
+    "entry": "src/components/docs/detail/demos/items/sidebar.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "ad2f227ff6b31a1b",
-  "importedAt": "2026-11-05T00:16:53.656Z"
+  "contentHash": "4619200b9b46d307",
+  "importedAt": "2026-11-05T00:16:53.656Z",
+  "updatedAt": "2026-11-10T13:12:09.418Z"
 }

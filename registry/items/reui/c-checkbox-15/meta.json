@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-checkbox-15",
+  "name": "Avatar based card checkbox",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "avatar card",
+    "checkbox",
+    "exemple"
+  ],
+  "description": "Avatar based card checkbox. Built by composing Avatar, Checkbox, Field.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-avatar",
+    "reui/ui-checkbox",
+    "reui/ui-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/checkbox/c-checkbox-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/checkbox/c-checkbox-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/checkbox/c-checkbox-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/checkbox/c-checkbox-15.tsx"
+  },
+  "contentHash": "74f684cd7a2c2d14",
+  "importedAt": "2026-11-10T13:14:53.319Z"
+}

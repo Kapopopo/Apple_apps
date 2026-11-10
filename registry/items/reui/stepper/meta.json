@@ -25,14 +25,27 @@
       "path": "components/reui/stepper.tsx",
       "role": "source",
       "target": "components/reui/stepper.tsx"
+    },
+    {
+      "path": "components/stepper/c-stepper-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/stepper/c-stepper-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/stepper/c-stepper-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/stepper.tsx"
+    "entry": "components/stepper/c-stepper-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "1eedd7feeb994496",
+  "contentHash": "a1e523436ca9311d",
   "importedAt": "2026-11-05T17:59:38.313Z",
-  "updatedAt": "2026-11-05T18:07:50.068Z"
+  "updatedAt": "2026-11-10T13:13:04.108Z"
 }

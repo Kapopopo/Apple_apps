@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-tabs-8",
+  "name": "Tabs with icons and line variant",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "side list icons",
+    "tabs"
+  ],
+  "description": "Tabs with icons and line variant. Built by composing Badge, Card, Tabs.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-card",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/tabs/c-tabs-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/tabs/c-tabs-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/tabs/c-tabs-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/tabs/c-tabs-8.tsx"
+  },
+  "contentHash": "85276fce0aaba61e",
+  "importedAt": "2026-11-10T13:15:03.134Z"
+}

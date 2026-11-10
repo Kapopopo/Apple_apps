@@ -1,0 +1,39 @@
+{
+  "id": "reui/ui-carousel",
+  "name": "Carousel (primitive ReUI)",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "primitive",
+    "base-ui"
+  ],
+  "description": "Primitive Base UI de ReUI (carousel) : utilisée par ses composants et ses exemples à la place de la version Radix de shadcn.",
+  "framework": "react",
+  "dependencies": [
+    "embla-carousel-react"
+  ],
+  "registryDependencies": [
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry/bases/base/ui/carousel.tsx",
+  "sourcePath": "registry/bases/base/ui/carousel.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/ui/carousel.tsx",
+      "role": "source",
+      "target": "components/ui/carousel.tsx"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Primitive sans rendu propre"
+  },
+  "contentHash": "50ee12a173cae9bd",
+  "importedAt": "2026-11-10T13:13:01.387Z"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-deep",
+  "name": "Son Deep",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "A muffled underwater drone with a few bubbles.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundDeep-TS.json",
+  "sourcePath": "public/r/SoundDeep-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/deep.ts",
+      "role": "source",
+      "target": "components/sounds/deep.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/deep.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Deep"
+    ]
+  },
+  "contentHash": "95ef7123d809ae4d",
+  "importedAt": "2026-11-10T13:15:37.483Z"
+}

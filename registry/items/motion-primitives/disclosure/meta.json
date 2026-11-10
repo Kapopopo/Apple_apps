@@ -25,13 +25,19 @@
     {
       "path": "disclosure.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/disclosure/disclosure-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "disclosure.tsx"
+    "entry": "app/docs/disclosure/disclosure-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "dbc36bb1cb387677",
-  "importedAt": "2026-11-05T17:59:30.328Z"
+  "contentHash": "438231945d27a4a9",
+  "importedAt": "2026-11-05T17:59:30.328Z",
+  "updatedAt": "2026-11-10T13:11:58.350Z"
 }

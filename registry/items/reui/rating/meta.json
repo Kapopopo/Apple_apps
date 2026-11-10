@@ -25,14 +25,27 @@
       "path": "components/reui/rating.tsx",
       "role": "source",
       "target": "components/reui/rating.tsx"
+    },
+    {
+      "path": "components/rating/c-rating-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/rating/c-rating-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/rating/c-rating-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/rating.tsx"
+    "entry": "components/rating/c-rating-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "483353e5fa6b281a",
+  "contentHash": "92822a5766b55880",
   "importedAt": "2026-11-05T17:59:38.304Z",
-  "updatedAt": "2026-11-05T18:07:50.056Z"
+  "updatedAt": "2026-11-10T13:13:03.939Z"
 }

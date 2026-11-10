@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-toggle-1",
+  "name": "Basic toggle.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "basic",
+    "exemple",
+    "toggle"
+  ],
+  "description": "Basic toggle. Built with the Toggle component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-toggle"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/toggle/c-toggle-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/toggle/c-toggle-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/toggle/c-toggle-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/toggle/c-toggle-1.tsx"
+  },
+  "contentHash": "d7effa56f58ea18c",
+  "importedAt": "2026-11-10T13:15:03.527Z"
+}

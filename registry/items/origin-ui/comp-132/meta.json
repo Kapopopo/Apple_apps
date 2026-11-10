@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-132",
-  "name": "Checkbox 132",
+  "name": "Simple checkbox",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-132.tsx"
   },
-  "contentHash": "9ded4715750d5325",
-  "importedAt": "2026-11-05T17:59:40.613Z"
+  "contentHash": "a892bf38f2d0319e",
+  "importedAt": "2026-11-05T17:59:40.613Z",
+  "updatedAt": "2026-11-10T13:12:55.098Z"
 }

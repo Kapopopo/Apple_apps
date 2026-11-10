@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-596",
-  "name": "Navbar, navigation 596",
+  "name": "Power (navbar, navigation)",
   "type": "component",
   "category": "Navigation",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-596.tsx"
   },
-  "contentHash": "eacdd03fc29f4f4d",
-  "importedAt": "2026-11-05T17:59:42.963Z"
+  "contentHash": "0148399d766b4c7b",
+  "importedAt": "2026-11-05T17:59:42.963Z",
+  "updatedAt": "2026-11-10T13:12:56.864Z"
 }

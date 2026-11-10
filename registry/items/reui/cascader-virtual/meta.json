@@ -1,8 +1,8 @@
 {
   "id": "reui/cascader-virtual",
   "name": "Cascader Virtual",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -32,12 +32,11 @@
       "target": "components/reui/cascader/cascader-virtual.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/cascader/cascader-virtual.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "46bdb3ddc11d694d",
+  "contentHash": "83e7f7918b7af076",
   "importedAt": "2026-11-05T17:59:38.064Z",
-  "updatedAt": "2026-11-05T18:07:49.688Z"
+  "updatedAt": "2026-11-10T13:13:02.766Z"
 }

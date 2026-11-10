@@ -38,6 +38,30 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/scrollvelocitytext.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,8 +69,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Scrollvelocitytext.tsx"
+    "entry": "src/components/docs/detail/demos/items/scrollvelocitytext.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "eb9f70e6cb1eb98f",
-  "importedAt": "2026-11-05T00:16:53.555Z"
+  "contentHash": "500f433697e009bf",
+  "importedAt": "2026-11-05T00:16:53.555Z",
+  "updatedAt": "2026-11-10T13:12:09.113Z"
 }

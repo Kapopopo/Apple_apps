@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-tooltip-8",
+  "name": "Toolbar with tooltip actions",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "exemple",
+    "toolbar actions",
+    "tooltip"
+  ],
+  "description": "Toolbar with tooltip actions. Built by composing Button, Separator, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-separator",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/tooltip/c-tooltip-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/tooltip/c-tooltip-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/tooltip/c-tooltip-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/tooltip/c-tooltip-8.tsx"
+  },
+  "contentHash": "3a86f6edf6f8fb81",
+  "importedAt": "2026-11-10T13:15:03.955Z"
+}

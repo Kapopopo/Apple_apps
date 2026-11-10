@@ -1,0 +1,45 @@
+{
+  "id": "reui/c-chart-11",
+  "name": "Animated monochrome bar chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "animated monochrome bars",
+    "animé",
+    "chart",
+    "dataviz",
+    "exemple"
+  ],
+  "description": "Animated monochrome bar chart. Built by composing Badge, Card, Chart.",
+  "framework": "react",
+  "dependencies": [
+    "motion",
+    "recharts"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-card",
+    "reui/ui-chart"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/chart/c-chart-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/chart/c-chart-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/chart/c-chart-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/chart/c-chart-11.tsx"
+  },
+  "contentHash": "0f3fbc51bd6f6fb4",
+  "importedAt": "2026-11-10T13:14:53.014Z"
+}

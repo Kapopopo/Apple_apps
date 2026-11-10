@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-badge-3",
+  "name": "Destructive badge",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "badge",
+    "destructive",
+    "exemple"
+  ],
+  "description": "Destructive badge. Built with the Badge component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/badge/c-badge-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/badge/c-badge-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/badge/c-badge-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/badge/c-badge-3.tsx"
+  },
+  "contentHash": "4e3db45ee84626aa",
+  "importedAt": "2026-11-10T13:13:05.669Z"
+}

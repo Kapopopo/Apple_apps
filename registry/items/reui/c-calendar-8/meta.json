@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-calendar-8",
+  "name": "Month and year selection",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "calendar",
+    "exemple",
+    "month year select"
+  ],
+  "description": "Month and year selection. Built by composing Calendar, Card, Select.",
+  "framework": "react",
+  "dependencies": [
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "reui/ui-calendar",
+    "reui/ui-card",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-8.tsx"
+  },
+  "contentHash": "29f5fcb3db25c19e",
+  "importedAt": "2026-11-10T13:13:07.808Z"
+}

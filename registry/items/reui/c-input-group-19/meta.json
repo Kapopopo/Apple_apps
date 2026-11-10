@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-input-group-19",
+  "name": "AI Chat interface with file and context attachments",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "ai chat attachments",
+    "exemple",
+    "ia",
+    "input-group"
+  ],
+  "description": "AI Chat interface with file and context attachments. Built by composing Dropdown Menu, Field, Input Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-dropdown-menu",
+    "reui/ui-field",
+    "reui/ui-input-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input-group/c-input-group-19.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input-group/c-input-group-19.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input-group/c-input-group-19.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input-group/c-input-group-19.tsx"
+  },
+  "contentHash": "4cb47d8bf847c4d8",
+  "importedAt": "2026-11-10T13:14:57.811Z"
+}

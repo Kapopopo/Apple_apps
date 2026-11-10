@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-command-5",
+  "name": "File search command palette",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "command",
+    "exemple",
+    "file search"
+  ],
+  "description": "File search command palette. Built by composing Badge, Button, Command, Kbd.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-button",
+    "reui/ui-command",
+    "reui/ui-kbd"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/command/c-command-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/command/c-command-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/command/c-command-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/command/c-command-5.tsx"
+  },
+  "contentHash": "e0e0e82fc2405af7",
+  "importedAt": "2026-11-10T13:14:54.344Z"
+}

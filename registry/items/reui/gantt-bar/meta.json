@@ -1,8 +1,8 @@
 {
   "id": "reui/gantt-bar",
   "name": "The interactive gantt bar - selection, clicks, drag + resize wiring, and the consumer render slot.",
-  "type": "component",
-  "category": "Effets et interactions",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "drag",
     "web"
@@ -17,8 +17,8 @@
     "reui/gantt-dnd",
     "reui/gantt-lib",
     "reui/gantt-types",
-    "shadcn/context-menu",
-    "shadcn/tooltip"
+    "reui/ui-context-menu",
+    "reui/ui-tooltip"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -35,12 +35,11 @@
       "target": "components/reui/gantt/gantt-bar.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/gantt/gantt-bar.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "5b2631045bcc9bbd",
+  "contentHash": "3733ec54e0cae96c",
   "importedAt": "2026-11-05T17:59:38.256Z",
-  "updatedAt": "2026-11-05T18:07:49.965Z"
+  "updatedAt": "2026-11-10T13:13:03.551Z"
 }

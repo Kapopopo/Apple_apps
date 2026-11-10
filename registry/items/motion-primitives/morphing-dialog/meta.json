@@ -32,13 +32,19 @@
     {
       "path": "hooks/useClickOutside.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/morphing-dialog/morphing-dialog-basic-1.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "morphing-dialog.tsx"
+    "entry": "app/docs/morphing-dialog/morphing-dialog-basic-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "b0ee368dbb635988",
-  "importedAt": "2026-11-05T17:59:30.353Z"
+  "contentHash": "4aacd313dfceb349",
+  "importedAt": "2026-11-05T17:59:30.353Z",
+  "updatedAt": "2026-11-10T13:11:58.489Z"
 }

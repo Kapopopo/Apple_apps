@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-field-6",
+  "name": "Field with OTP input",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "field",
+    "otp input"
+  ],
+  "description": "Field with OTP input. Built by composing Field, Input Otp, Native Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-input-otp",
+    "reui/ui-native-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/field/c-field-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/field/c-field-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/field/c-field-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/field/c-field-6.tsx"
+  },
+  "contentHash": "8b4a514f9381bafe",
+  "importedAt": "2026-11-10T13:14:55.960Z"
+}

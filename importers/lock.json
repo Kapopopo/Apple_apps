@@ -1,0 +1,53 @@
+{
+  "$comment": "Commit importé par source. npm run import réutilise ces commits ; npm run update prend les derniers et met ce fichier à jour.",
+  "sources": {
+    "bencho": {
+      "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+      "importedAt": "2026-11-10T13:21:52.433Z"
+    },
+    "cult-ui": {
+      "commit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "importedAt": "2026-11-10T13:21:52.305Z"
+    },
+    "easyui": {
+      "commit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+      "importedAt": "2026-11-10T13:21:52.401Z"
+    },
+    "kokonut-ui": {
+      "commit": "9976111a38abe05a47229867611db02646b597ef",
+      "importedAt": "2026-11-10T13:21:52.320Z"
+    },
+    "magic-ui": {
+      "commit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+      "importedAt": "2026-11-10T13:21:52.272Z"
+    },
+    "motion-primitives": {
+      "commit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "importedAt": "2026-11-10T13:21:52.289Z"
+    },
+    "origin-ui": {
+      "commit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+      "importedAt": "2026-11-10T13:21:52.352Z"
+    },
+    "panelui": {
+      "commit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+      "importedAt": "2026-11-10T13:21:52.417Z"
+    },
+    "rare-ui": {
+      "commit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
+      "importedAt": "2026-11-10T13:21:52.385Z"
+    },
+    "react-bits": {
+      "commit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+      "importedAt": "2026-11-10T13:21:52.368Z"
+    },
+    "reui": {
+      "commit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+      "importedAt": "2026-11-10T13:21:52.336Z"
+    },
+    "shadcn": {
+      "commit": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "importedAt": "2026-11-10T13:21:52.253Z"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-595",
-  "name": "Navbar, navigation 595",
+  "name": "Basic UI",
   "type": "component",
   "category": "Navigation",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-595.tsx"
   },
-  "contentHash": "bda139250b12127b",
-  "importedAt": "2026-11-05T17:59:42.960Z"
+  "contentHash": "12e6adcc08c1b7a0",
+  "importedAt": "2026-11-05T17:59:42.960Z",
+  "updatedAt": "2026-11-10T13:12:56.857Z"
 }

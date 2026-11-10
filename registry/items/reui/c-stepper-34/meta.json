@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-stepper-34",
+  "name": "Stepper with outlined chevron plan",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "outlined chevrons",
+    "stepper"
+  ],
+  "description": "Stepper with outlined chevron plan. Built by composing Button, Frame, Stepper.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/frame",
+    "reui/stepper",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/stepper/c-stepper-34.tsx",
+  "sourcePath": "registry-reui/bases/base/components/stepper/c-stepper-34.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/stepper/c-stepper-34.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/stepper/c-stepper-34.tsx"
+  },
+  "contentHash": "49c152963e71f176",
+  "importedAt": "2026-11-10T13:15:02.462Z"
+}

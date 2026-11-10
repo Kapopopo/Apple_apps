@@ -43,6 +43,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/payment-status.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -50,9 +66,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/PaymentStatus.tsx"
+    "entry": "src/components/docs/detail/demos/items/payment-status.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "d982fe69d5e1d227",
+  "contentHash": "9ae46b92a8a1797d",
   "importedAt": "2026-11-05T00:16:53.301Z",
-  "updatedAt": "2026-11-05T00:19:19.986Z"
+  "updatedAt": "2026-11-10T13:12:08.306Z"
 }

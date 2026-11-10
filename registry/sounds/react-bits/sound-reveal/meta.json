@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-reveal",
+  "name": "Son Reveal",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "A soft swell into a warm chord for logo reveals.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundReveal-TS.json",
+  "sourcePath": "public/r/SoundReveal-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/reveal.ts",
+      "role": "source",
+      "target": "components/sounds/reveal.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/reveal.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Reveal"
+    ]
+  },
+  "contentHash": "f6030824593bda0b",
+  "importedAt": "2026-11-10T13:15:37.976Z"
+}

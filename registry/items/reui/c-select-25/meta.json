@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-select-25",
+  "name": "Country picker select with flag emojis",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "country flags",
+    "exemple",
+    "select"
+  ],
+  "description": "Country picker select with flag emojis. Built by composing Field, Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/select/c-select-25.tsx",
+  "sourcePath": "registry-reui/bases/base/components/select/c-select-25.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/select/c-select-25.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/select/c-select-25.tsx"
+  },
+  "contentHash": "9eca6d69e0fa4fbb",
+  "importedAt": "2026-11-10T13:15:00.704Z"
+}

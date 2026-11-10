@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-348",
-  "name": "Accordion 348",
+  "name": "Table w/ chevron",
   "type": "component",
-  "category": "FAQ",
+  "category": "Tableaux de données",
   "tags": [
     "accordion",
     "radix",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-348.tsx"
   },
-  "contentHash": "6c8c35272fcc78b9",
-  "importedAt": "2026-11-05T17:59:41.664Z"
+  "contentHash": "7902a1543b21a573",
+  "importedAt": "2026-11-05T17:59:41.664Z",
+  "updatedAt": "2026-11-10T13:12:56.354Z"
 }

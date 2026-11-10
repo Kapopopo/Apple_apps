@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-alert-13",
+  "name": "Stacked alerts within a Frame",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "alert",
+    "exemple",
+    "stacked in frame"
+  ],
+  "description": "Stacked alerts within a Frame. Built by composing Alert, Button, Frame.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/alert",
+    "reui/frame",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert/c-alert-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert/c-alert-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert/c-alert-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert/c-alert-13.tsx"
+  },
+  "contentHash": "4e3a62fde5f77472",
+  "importedAt": "2026-11-10T13:13:04.511Z"
+}

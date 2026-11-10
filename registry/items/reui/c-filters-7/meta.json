@@ -1,0 +1,44 @@
+{
+  "id": "reui/c-filters-7",
+  "name": "Filtering a table",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "exemple",
+    "filters",
+    "table filtering"
+  ],
+  "description": "Filtering a table. Built by composing Avatar, Badge, Card, Data Grid, Data Grid Column Header and 6 more.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/data-grid",
+    "reui/filters",
+    "reui/ui-avatar",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/filters/c-filters-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/filters/c-filters-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/filters/c-filters-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/filters/c-filters-7.tsx"
+  },
+  "contentHash": "e384915d26b36ffd",
+  "importedAt": "2026-11-10T13:14:56.456Z"
+}

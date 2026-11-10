@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-19",
-  "name": "Input 19",
+  "name": "Input with end inline button",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Boutons",
   "tags": [
     "button",
     "input",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-19.tsx"
   },
-  "contentHash": "9d5519f9bb674b43",
-  "importedAt": "2026-11-05T17:59:40.799Z"
+  "contentHash": "7e4031a366eb4a33",
+  "importedAt": "2026-11-05T17:59:40.799Z",
+  "updatedAt": "2026-11-10T13:12:55.439Z"
 }

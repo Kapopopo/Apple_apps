@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/typewriter-button.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/TypewriterButton.tsx"
+    "entry": "src/components/docs/detail/demos/items/typewriter-button.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "6d9e83ca4c7e114f",
-  "importedAt": "2026-11-05T00:16:54.246Z"
+  "contentHash": "8b2796f7a0b21f2b",
+  "importedAt": "2026-11-05T00:16:54.246Z",
+  "updatedAt": "2026-11-10T13:12:10.767Z"
 }

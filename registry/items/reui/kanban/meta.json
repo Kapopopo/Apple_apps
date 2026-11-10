@@ -28,14 +28,27 @@
       "path": "components/reui/kanban.tsx",
       "role": "source",
       "target": "components/reui/kanban.tsx"
+    },
+    {
+      "path": "components/kanban/c-kanban-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/kanban/c-kanban-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/kanban/c-kanban-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/kanban.tsx"
+    "entry": "components/kanban/c-kanban-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "9a1ea46e8d46f824",
+  "contentHash": "2f74662a06c76b04",
   "importedAt": "2026-11-05T17:59:38.294Z",
-  "updatedAt": "2026-11-05T18:07:50.046Z"
+  "updatedAt": "2026-11-10T13:13:03.820Z"
 }

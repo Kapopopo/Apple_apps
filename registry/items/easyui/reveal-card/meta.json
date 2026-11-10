@@ -39,6 +39,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/reveal-card.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/RevealCard.tsx"
+    "entry": "src/components/docs/detail/demos/items/reveal-card.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "c48cb7a84dd7d608",
-  "importedAt": "2026-11-05T00:16:53.502Z"
+  "contentHash": "d7634113da8d0067",
+  "importedAt": "2026-11-05T00:16:53.502Z",
+  "updatedAt": "2026-11-10T13:12:08.930Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-235",
-  "name": "Label 235",
+  "name": "Multiselect with placeholder and clear",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-235.tsx"
   },
-  "contentHash": "a5a8987548b57c5d",
-  "importedAt": "2026-11-05T17:59:40.961Z"
+  "contentHash": "6f2808442e9ad3c3",
+  "importedAt": "2026-11-05T17:59:40.961Z",
+  "updatedAt": "2026-11-10T13:12:55.823Z"
 }

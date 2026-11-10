@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/mac-os-folder-cards.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/MacOSFolderCards.tsx"
+    "entry": "src/components/docs/detail/demos/items/mac-os-folder-cards.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "24e592b34b1560fc",
-  "importedAt": "2026-11-05T00:16:52.732Z"
+  "contentHash": "3b30633960e41f62",
+  "importedAt": "2026-11-05T00:16:52.732Z",
+  "updatedAt": "2026-11-10T13:12:07.175Z"
 }

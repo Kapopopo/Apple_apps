@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-number-field-3",
+  "name": "Basic number field",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "exemple",
+    "large size",
+    "number-field"
+  ],
+  "description": "Basic number field. Built with the Number Field component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/number-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/number-field/c-number-field-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/number-field/c-number-field-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/number-field/c-number-field-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/number-field/c-number-field-3.tsx"
+  },
+  "contentHash": "2a9c2eb81b1d374b",
+  "importedAt": "2026-11-10T13:14:59.033Z"
+}

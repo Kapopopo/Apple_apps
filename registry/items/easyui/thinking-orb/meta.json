@@ -30,6 +30,42 @@
       "target": "components/ui/thinking-orb.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/thinking-orb.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/thinking-orb.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/theme/useTheme.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -37,8 +73,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/ThinkingOrb.tsx"
+    "entry": "src/components/docs/detail/demos/items/thinking-orb.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "33af1ecb913310d2",
-  "importedAt": "2026-11-05T00:16:54.199Z"
+  "contentHash": "2f04281a49a10ed5",
+  "importedAt": "2026-11-05T00:16:54.199Z",
+  "updatedAt": "2026-11-10T13:12:10.658Z"
 }

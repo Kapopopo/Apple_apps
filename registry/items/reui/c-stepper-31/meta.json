@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-stepper-31",
+  "name": "Stepper with icon tiles and chevrons",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "chevron icon tiles",
+    "exemple",
+    "stepper"
+  ],
+  "description": "Stepper with icon tiles and chevrons. Built by composing Button, Icon Tile, Stepper.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/icon-tile",
+    "reui/stepper",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/stepper/c-stepper-31.tsx",
+  "sourcePath": "registry-reui/bases/base/components/stepper/c-stepper-31.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/stepper/c-stepper-31.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/stepper/c-stepper-31.tsx"
+  },
+  "contentHash": "8acb8c2b6e02dcf5",
+  "importedAt": "2026-11-10T13:15:02.416Z"
+}

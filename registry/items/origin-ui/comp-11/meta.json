@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-11",
-  "name": "Input 11",
+  "name": "Input with start inline add-on",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-11.tsx"
   },
-  "contentHash": "8b635fb2db75666d",
-  "importedAt": "2026-11-05T17:59:40.523Z"
+  "contentHash": "ecd3474298b16e83",
+  "importedAt": "2026-11-05T17:59:40.523Z",
+  "updatedAt": "2026-11-10T13:12:55.058Z"
 }

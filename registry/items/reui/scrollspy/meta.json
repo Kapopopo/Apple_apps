@@ -24,14 +24,23 @@
       "path": "components/reui/scrollspy.tsx",
       "role": "source",
       "target": "components/reui/scrollspy.tsx"
+    },
+    {
+      "path": "components/scrollspy/c-scrollspy-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/scrollspy/c-scrollspy-2.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/scrollspy.tsx"
+    "entry": "components/scrollspy/c-scrollspy-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "0578f8ee9dd75fd6",
+  "contentHash": "1c080e4289fe8102",
   "importedAt": "2026-11-05T17:59:38.306Z",
-  "updatedAt": "2026-11-05T18:07:50.059Z"
+  "updatedAt": "2026-11-10T13:13:03.976Z"
 }

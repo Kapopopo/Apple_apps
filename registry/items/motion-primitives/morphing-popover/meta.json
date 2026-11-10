@@ -31,13 +31,19 @@
     {
       "path": "hooks/useClickOutside.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/morphing-popover/morphing-popover-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "morphing-popover.tsx"
+    "entry": "app/docs/morphing-popover/morphing-popover-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "8c831b92289bb4ea",
-  "importedAt": "2026-11-05T17:59:30.357Z"
+  "contentHash": "5e27a56e65bab16c",
+  "importedAt": "2026-11-05T17:59:30.357Z",
+  "updatedAt": "2026-11-10T13:11:58.506Z"
 }

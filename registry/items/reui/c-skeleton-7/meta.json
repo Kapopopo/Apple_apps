@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-skeleton-7",
+  "name": "Skeleton loader for a list with actions",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "exemple",
+    "list with actions",
+    "skeleton"
+  ],
+  "description": "Skeleton loader for a list with actions. Built by composing Separator, Skeleton.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-separator",
+    "reui/ui-skeleton"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/skeleton/c-skeleton-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/skeleton/c-skeleton-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/skeleton/c-skeleton-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/skeleton/c-skeleton-7.tsx"
+  },
+  "contentHash": "a42ff6b222046833",
+  "importedAt": "2026-11-10T13:15:01.262Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-340",
-  "name": "Accordion 340",
+  "name": "W/ sub-header and chevron",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-340.tsx"
   },
-  "contentHash": "f8bd2f4d9ff8712b",
-  "importedAt": "2026-11-05T17:59:41.623Z"
+  "contentHash": "d57ee09b77f64624",
+  "importedAt": "2026-11-05T17:59:41.623Z",
+  "updatedAt": "2026-11-10T13:12:56.288Z"
 }

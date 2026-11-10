@@ -1,0 +1,36 @@
+{
+  "id": "react-bits/sound-engine",
+  "name": "Moteur de sons React Bits",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "son",
+    "web audio"
+  ],
+  "description": "The tiny Web Audio engine that renders and plays React Bits sounds, with a useSound hook.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundEngine-TS.json",
+  "sourcePath": "public/r/SoundEngine-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/react-bits-sound.ts",
+      "role": "source",
+      "target": "components/sounds/react-bits-sound.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Moteur audio sans rendu"
+  },
+  "contentHash": "5da0029b33f5c913",
+  "importedAt": "2026-11-10T13:15:37.250Z"
+}

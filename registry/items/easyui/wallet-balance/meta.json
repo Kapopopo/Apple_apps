@@ -31,6 +31,22 @@
       "target": "components/ui/wallet-balance.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/wallet-balance.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -38,9 +54,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/WalletBalance.tsx"
+    "entry": "src/components/docs/detail/demos/items/wallet-balance.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "2de90da35582e1b7",
+  "contentHash": "c66be82d1205ce21",
   "importedAt": "2026-11-05T00:16:54.314Z",
-  "updatedAt": "2026-11-05T00:19:20.122Z"
+  "updatedAt": "2026-11-10T13:12:11.026Z"
 }

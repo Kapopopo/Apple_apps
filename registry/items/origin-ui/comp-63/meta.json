@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-63",
-  "name": "Label 63",
+  "name": "Textarea with colored border and ring",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-63.tsx"
   },
-  "contentHash": "43598edc8a1b1554",
-  "importedAt": "2026-11-05T17:59:42.991Z"
+  "contentHash": "2aaf5896a8971bf7",
+  "importedAt": "2026-11-05T17:59:42.991Z",
+  "updatedAt": "2026-11-10T13:12:56.890Z"
 }

@@ -6,7 +6,7 @@
  * Message accepté du parent : { type: 'atlas-skin', light, dark, radius } (éditeur de thème, en direct).
  * Chargé dans un iframe sandboxé (allow-scripts) : pas d'accès au stockage ni à la page parente.
  */
-import { Component, StrictMode, isValidElement, type ComponentType, type ErrorInfo, type ReactNode } from 'react';
+import { Component, StrictMode, isValidElement, useState, type ComponentType, type ErrorInfo, type ReactNode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ITEMS } from './generated/registry';
 import './base.css';
@@ -90,6 +90,25 @@ function pick(mod: Record<string, unknown>, exportName: string | null): Componen
   return (named.find(([k]) => !/(Provider|Context|Root|Item|Trigger|Content)$/.test(k)) ?? named[0])?.[1] as ComponentType | undefined;
 }
 
+/** Sons d'interface : un bouton par son ; la lecture démarre au clic (règle des navigateurs). */
+function SoundPad({ names, play }: { names: string[]; play: (name: string) => unknown }) {
+  const [last, setLast] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  return (
+    <main className="atlas-stage">
+      <div className="atlas-sound">
+        {names.map((n) => (
+          <button key={n} type="button" onClick={async () => {
+            setLast(n); setError(null);
+            try { await play(n); } catch (e) { setError((e as Error).message); }
+          }}><span aria-hidden="true">▶</span>{n}</button>
+        ))}
+        <p>{error ? `Lecture impossible : ${error}` : last ? `Joué : ${last}` : 'Cliquer pour écouter · son synthétisé (Web Audio), sans fichier audio'}</p>
+      </div>
+    </main>
+  );
+}
+
 const root = createRoot(document.getElementById('root')!);
 
 async function boot() {
@@ -101,6 +120,15 @@ async function boot() {
     for (const style of entry.styles) await style();
     await loadSkinSheet();
     const mod = await entry.load();
+    if (entry.sound) {
+      const engine = entry.engine ? await entry.engine() : null;
+      const play = entry.sound.engine === 'bencho'
+        ? (name: string) => (mod.play as (n: string) => unknown)(name)
+        : () => (engine?.playSound as (recipe: unknown) => unknown)(mod.default);
+      root.render(<StrictMode><Boundary><SoundPad names={entry.sound.names} play={play} /></Boundary></StrictMode>);
+      requestAnimationFrame(() => notify('ready'));
+      return;
+    }
     const Preview = pick(mod, entry.exportName);
     if (!Preview) throw new Error('Aucun composant exporté à afficher sans props.');
     root.render(<StrictMode><Boundary><main className="atlas-stage"><Preview /></main></Boundary></StrictMode>);

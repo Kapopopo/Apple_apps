@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-file-type-1",
+  "name": "Common formats",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "common formats",
+    "exemple",
+    "file-type"
+  ],
+  "description": "Common formats. Built with the File Type component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/file-type"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-type/c-file-type-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-type/c-file-type-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-type/c-file-type-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-type/c-file-type-1.tsx"
+  },
+  "contentHash": "f4f579a5faa7882d",
+  "importedAt": "2026-11-10T13:14:56.026Z"
+}

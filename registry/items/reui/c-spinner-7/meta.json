@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-spinner-7",
+  "name": "Overlay loading spinner",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "exemple",
+    "overlay with caption",
+    "spinner"
+  ],
+  "description": "Overlay loading spinner. Built by composing Card, Spinner.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-spinner"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/spinner/c-spinner-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/spinner/c-spinner-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/spinner/c-spinner-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/spinner/c-spinner-7.tsx"
+  },
+  "contentHash": "f7ae992407ca23f6",
+  "importedAt": "2026-11-10T13:15:01.921Z"
+}

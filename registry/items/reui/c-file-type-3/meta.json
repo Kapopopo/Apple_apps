@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-file-type-3",
+  "name": "Sizes",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "exemple",
+    "file-type",
+    "sizes"
+  ],
+  "description": "Sizes. Built with the File Type component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/file-type"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-type/c-file-type-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-type/c-file-type-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-type/c-file-type-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-type/c-file-type-3.tsx"
+  },
+  "contentHash": "6cc2c849a4067ec2",
+  "importedAt": "2026-11-10T13:14:56.038Z"
+}

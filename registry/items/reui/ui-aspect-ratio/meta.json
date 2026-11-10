@@ -1,0 +1,35 @@
+{
+  "id": "reui/ui-aspect-ratio",
+  "name": "Aspect Ratio (primitive ReUI)",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "primitive",
+    "base-ui"
+  ],
+  "description": "Primitive Base UI de ReUI (aspect-ratio) : utilisée par ses composants et ses exemples à la place de la version Radix de shadcn.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry/bases/base/ui/aspect-ratio.tsx",
+  "sourcePath": "registry/bases/base/ui/aspect-ratio.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/ui/aspect-ratio.tsx",
+      "role": "source",
+      "target": "components/ui/aspect-ratio.tsx"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Primitive sans rendu propre"
+  },
+  "contentHash": "41d8aac97082a175",
+  "importedAt": "2026-11-10T13:13:01.213Z"
+}

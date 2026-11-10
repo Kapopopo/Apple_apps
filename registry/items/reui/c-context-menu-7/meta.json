@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-context-menu-7",
+  "name": "Context menu with radio items.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "context-menu",
+    "exemple",
+    "radio items"
+  ],
+  "description": "Context menu with radio items. Built with the Context Menu component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-context-menu"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/context-menu/c-context-menu-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/context-menu/c-context-menu-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/context-menu/c-context-menu-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/context-menu/c-context-menu-7.tsx"
+  },
+  "contentHash": "1d7eef36c754cb6b",
+  "importedAt": "2026-11-10T13:14:54.441Z"
+}

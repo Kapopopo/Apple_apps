@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-command-4",
+  "name": "Command with many groups",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "command",
+    "exemple",
+    "many groups"
+  ],
+  "description": "Command with many groups. Built by composing Button, Command.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-command"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/command/c-command-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/command/c-command-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/command/c-command-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/command/c-command-4.tsx"
+  },
+  "contentHash": "f4b6d1364fb65fb4",
+  "importedAt": "2026-11-10T13:14:54.332Z"
+}

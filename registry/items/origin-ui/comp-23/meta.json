@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-23",
-  "name": "Input 23",
+  "name": "Show/hide password input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-23.tsx"
   },
-  "contentHash": "12915e25c4cacdcd",
-  "importedAt": "2026-11-05T17:59:40.944Z"
+  "contentHash": "73b732d021218456",
+  "importedAt": "2026-11-05T17:59:40.944Z",
+  "updatedAt": "2026-11-10T13:12:55.760Z"
 }

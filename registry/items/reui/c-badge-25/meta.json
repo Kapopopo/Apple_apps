@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-badge-25",
+  "name": "Badge with flag image",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "badge",
+    "exemple",
+    "with flag"
+  ],
+  "description": "Badge with flag image. Built with the Badge component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/badge/c-badge-25.tsx",
+  "sourcePath": "registry-reui/bases/base/components/badge/c-badge-25.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/badge/c-badge-25.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/badge/c-badge-25.tsx"
+  },
+  "contentHash": "7d77eb3ce9998dbf",
+  "importedAt": "2026-11-10T13:13:05.915Z"
+}

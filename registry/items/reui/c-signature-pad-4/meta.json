@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-signature-pad-4",
+  "name": "Signing workspace",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "signature-pad",
+    "signing workspace"
+  ],
+  "description": "Signing workspace. Built by composing Badge, Button, Card, Dropdown Menu, Separator and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/signature-pad",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-dropdown-menu",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/signature-pad/c-signature-pad-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/signature-pad/c-signature-pad-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/signature-pad/c-signature-pad-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/signature-pad/c-signature-pad-4.tsx"
+  },
+  "contentHash": "04f6cac7220a2d75",
+  "importedAt": "2026-11-10T13:15:01.053Z"
+}

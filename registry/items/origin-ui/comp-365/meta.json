@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-365",
-  "name": "Tooltip 365",
+  "name": "Building a Design System with Next.js and Tailwind CSS",
   "type": "component",
   "category": "Fenêtres et panneaux",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-365.tsx"
   },
-  "contentHash": "bd9d862575157f39",
-  "importedAt": "2026-11-05T17:59:41.739Z"
+  "contentHash": "3f598bf450909858",
+  "importedAt": "2026-11-05T17:59:41.739Z",
+  "updatedAt": "2026-11-10T13:12:56.430Z"
 }

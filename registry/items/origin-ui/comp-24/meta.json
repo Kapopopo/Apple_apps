@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-24",
-  "name": "Input 24",
+  "name": "Input with clear button",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Boutons",
   "tags": [
     "button",
     "input",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-24.tsx"
   },
-  "contentHash": "40d5c46cebc34219",
-  "importedAt": "2026-11-05T17:59:40.975Z"
+  "contentHash": "8c6f1d73635b1b0d",
+  "importedAt": "2026-11-05T17:59:40.975Z",
+  "updatedAt": "2026-11-10T13:12:55.866Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-color-picker-13",
+  "name": "Contrast checker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "color-picker",
+    "contrast checker",
+    "exemple"
+  ],
+  "description": "Contrast checker. Built by composing Badge, Button, Card, Color Picker, Field and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/color-picker",
+    "reui/frame",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/color-picker/c-color-picker-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/color-picker/c-color-picker-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/color-picker/c-color-picker-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/color-picker/c-color-picker-13.tsx"
+  },
+  "contentHash": "995d4bf2353a7bbe",
+  "importedAt": "2026-11-10T13:14:53.924Z"
+}

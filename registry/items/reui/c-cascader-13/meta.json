@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-cascader-13",
+  "name": "Columns mode with independently scrolling panels.",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "cascader",
+    "columns mode",
+    "exemple",
+    "scroll"
+  ],
+  "description": "Columns mode with independently scrolling panels. Built by composing Badge, Button, Cascader, Cascader Columns, Cascader Nav and 2 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/cascader",
+    "reui/icon-tile",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-13.tsx"
+  },
+  "contentHash": "fb2e1cc0464552bf",
+  "importedAt": "2026-11-10T13:14:52.753Z"
+}

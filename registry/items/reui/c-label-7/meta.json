@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-label-7",
+  "name": "Label with tooltip info icon",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "exemple",
+    "label",
+    "tooltip info"
+  ],
+  "description": "Label with tooltip info icon. Built by composing Field, Input, Label, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-input",
+    "reui/ui-label",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/label/c-label-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/label/c-label-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/label/c-label-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/label/c-label-7.tsx"
+  },
+  "contentHash": "b48fa170c6f84566",
+  "importedAt": "2026-11-10T13:14:58.508Z"
+}

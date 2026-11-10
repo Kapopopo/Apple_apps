@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-12",
-  "name": "Input 12",
+  "name": "Input with end inline add-on",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-12.tsx"
   },
-  "contentHash": "2a74d056a010d0d0",
-  "importedAt": "2026-11-05T17:59:40.564Z"
+  "contentHash": "089552739e5f0ab0",
+  "importedAt": "2026-11-05T17:59:40.564Z",
+  "updatedAt": "2026-11-10T13:12:55.069Z"
 }

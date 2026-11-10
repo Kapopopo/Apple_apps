@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-settle",
+  "name": "Son Settle",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "A single warm note that quietly says done.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundSettle-TS.json",
+  "sourcePath": "public/r/SoundSettle-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/settle.ts",
+      "role": "source",
+      "target": "components/sounds/settle.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/settle.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Settle"
+    ]
+  },
+  "contentHash": "001a262251eacf85",
+  "importedAt": "2026-11-10T13:15:38.029Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-209",
-  "name": "Label 209",
+  "name": "Select with gray background",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-209.tsx"
   },
-  "contentHash": "5165e2fdd74708b8",
-  "importedAt": "2026-11-05T17:59:40.874Z"
+  "contentHash": "23f337472fc9302a",
+  "importedAt": "2026-11-05T17:59:40.874Z",
+  "updatedAt": "2026-11-10T13:12:55.597Z"
 }

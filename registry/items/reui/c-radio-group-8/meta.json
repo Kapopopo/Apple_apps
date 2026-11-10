@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-radio-group-8",
+  "name": "Radio group in card with separators",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "card separators",
+    "exemple",
+    "radio-group"
+  ],
+  "description": "Radio group in card with separators. Built by composing Card, Field, Radio Group, Separator.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-field",
+    "reui/ui-radio-group",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/radio-group/c-radio-group-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/radio-group/c-radio-group-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/radio-group/c-radio-group-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/radio-group/c-radio-group-8.tsx"
+  },
+  "contentHash": "e636edb33c816021",
+  "importedAt": "2026-11-10T13:14:59.934Z"
+}

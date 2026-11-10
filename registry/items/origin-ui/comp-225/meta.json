@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-225",
-  "name": "Label 225",
+  "name": "Options with flag",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-225.tsx"
   },
-  "contentHash": "e5073744c4803bab",
-  "importedAt": "2026-11-05T17:59:40.930Z"
+  "contentHash": "3f4d0a662a57dd63",
+  "importedAt": "2026-11-05T17:59:40.930Z",
+  "updatedAt": "2026-11-10T13:12:55.717Z"
 }

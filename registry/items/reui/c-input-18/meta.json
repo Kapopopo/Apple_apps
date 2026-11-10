@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-input-18",
+  "name": "Input label with optional badge",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "input",
+    "optional badge"
+  ],
+  "description": "Input label with optional badge. Built by composing Badge, Field, Input.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-field",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input/c-input-18.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input/c-input-18.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input/c-input-18.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input/c-input-18.tsx"
+  },
+  "contentHash": "b29f5b7f6be0e731",
+  "importedAt": "2026-11-10T13:14:57.417Z"
+}

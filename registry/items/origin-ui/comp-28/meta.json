@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-28",
-  "name": "Input 28",
+  "name": "Number input with plus/minus buttons",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Boutons",
   "tags": [
     "accessible",
     "button",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-28.tsx"
   },
-  "contentHash": "3642684c2ede981c",
-  "importedAt": "2026-11-05T17:59:41.131Z"
+  "contentHash": "c02537dab034e007",
+  "importedAt": "2026-11-05T17:59:41.131Z",
+  "updatedAt": "2026-11-10T13:12:56.101Z"
 }

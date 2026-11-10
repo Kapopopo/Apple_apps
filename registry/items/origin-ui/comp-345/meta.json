@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-345",
-  "name": "Accordion 345",
+  "name": "Tabs w/ plus-minus",
   "type": "component",
-  "category": "FAQ",
+  "category": "Navigation",
   "tags": [
     "accordion",
     "radix",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-345.tsx"
   },
-  "contentHash": "7cb21d1f09554880",
-  "importedAt": "2026-11-05T17:59:41.650Z"
+  "contentHash": "288e5478e383a2f4",
+  "importedAt": "2026-11-05T17:59:41.650Z",
+  "updatedAt": "2026-11-10T13:12:56.326Z"
 }

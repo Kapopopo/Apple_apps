@@ -25,13 +25,19 @@
     {
       "path": "in-view.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/in-view/in-view-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "in-view.tsx"
+    "entry": "app/docs/in-view/in-view-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "7bc3d12982af5de1",
-  "importedAt": "2026-11-05T17:59:30.344Z"
+  "contentHash": "5e304adf1c5f48c2",
+  "importedAt": "2026-11-05T17:59:30.344Z",
+  "updatedAt": "2026-11-10T13:11:58.428Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-27",
-  "name": "Input 27",
+  "name": "Search input with loader",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-27.tsx"
   },
-  "contentHash": "ced64d1845bc3ae6",
-  "importedAt": "2026-11-05T17:59:41.091Z"
+  "contentHash": "f66ccc229236ca67",
+  "importedAt": "2026-11-05T17:59:41.091Z",
+  "updatedAt": "2026-11-10T13:12:56.088Z"
 }

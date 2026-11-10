@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-47",
-  "name": "Input 47",
+  "name": "Card Number",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Indicateurs",
   "tags": [
     "checkout",
     "credit card",
@@ -41,6 +41,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-47.tsx"
   },
-  "contentHash": "5e4766b705a21edc",
-  "importedAt": "2026-11-05T17:59:42.173Z"
+  "contentHash": "0e708f59aa46ab30",
+  "importedAt": "2026-11-05T17:59:42.173Z",
+  "updatedAt": "2026-11-10T13:12:56.622Z"
 }

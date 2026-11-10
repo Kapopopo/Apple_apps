@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-card-17",
+  "name": "Card with icon, title and link",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "card",
+    "exemple",
+    "icon & link"
+  ],
+  "description": "Card with icon, title and link. Built with the Card component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/card/c-card-17.tsx",
+  "sourcePath": "registry-reui/bases/base/components/card/c-card-17.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/card/c-card-17.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/card/c-card-17.tsx"
+  },
+  "contentHash": "e9da23425cc950e3",
+  "importedAt": "2026-11-10T13:13:08.330Z"
+}

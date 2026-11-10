@@ -1,0 +1,37 @@
+{
+  "id": "reui/ui-switch",
+  "name": "Switch (primitive ReUI)",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "primitive",
+    "base-ui"
+  ],
+  "description": "Primitive Base UI de ReUI (switch) : utilisée par ses composants et ses exemples à la place de la version Radix de shadcn.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry/bases/base/ui/switch.tsx",
+  "sourcePath": "registry/bases/base/ui/switch.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/ui/switch.tsx",
+      "role": "source",
+      "target": "components/ui/switch.tsx"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Primitive sans rendu propre"
+  },
+  "contentHash": "519033b949ddc077",
+  "importedAt": "2026-11-10T13:13:01.988Z"
+}

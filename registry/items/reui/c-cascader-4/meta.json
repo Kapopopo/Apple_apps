@@ -1,0 +1,71 @@
+{
+  "id": "reui/c-cascader-4",
+  "name": "Pinned footer with a side-anchored import flyout.",
+  "type": "section",
+  "category": "Boutons",
+  "tags": [
+    "cascader",
+    "exemple",
+    "footer flyout"
+  ],
+  "description": "Pinned footer with a side-anchored import flyout. Built by composing Button, Cascader, Cascader Footer, Cascader Item, Cascader Nav and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-4.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/dropbox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/githubDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/githubLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/googleDrive.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/redis.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/slack.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/stripe.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/supabase.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-4.tsx"
+  },
+  "contentHash": "48f1b4a419029a54",
+  "importedAt": "2026-11-10T13:14:52.568Z"
+}

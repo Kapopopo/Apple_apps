@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-progress-6",
+  "name": "Progress bar with slider.",
+  "type": "component",
+  "category": "Curseurs",
+  "tags": [
+    "exemple",
+    "progress",
+    "with slider"
+  ],
+  "description": "Progress bar with slider. Built by composing Progress, Slider.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-progress",
+    "reui/ui-slider"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/progress/c-progress-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/progress/c-progress-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/progress/c-progress-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/progress/c-progress-6.tsx"
+  },
+  "contentHash": "1e2da904fe1c672f",
+  "importedAt": "2026-11-10T13:14:59.672Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-208",
-  "name": "Label 208",
+  "name": "Select with error",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-208.tsx"
   },
-  "contentHash": "c25cb25a433e5307",
-  "importedAt": "2026-11-05T17:59:40.871Z"
+  "contentHash": "a675375aa5e0102b",
+  "importedAt": "2026-11-05T17:59:40.871Z",
+  "updatedAt": "2026-11-10T13:12:55.589Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-223",
-  "name": "Label 223",
+  "name": "Options with icon and right indicator",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Illustrations",
   "tags": [
     "label",
     "radix",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-223.tsx"
   },
-  "contentHash": "19b534cc6485e7d6",
-  "importedAt": "2026-11-05T17:59:40.925Z"
+  "contentHash": "55eb278cb41f932b",
+  "importedAt": "2026-11-05T17:59:40.925Z",
+  "updatedAt": "2026-11-10T13:12:55.702Z"
 }

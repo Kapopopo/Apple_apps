@@ -28,9 +28,10 @@
     }
   ],
   "preview": {
-    "kind": "live",
-    "entry": "AeroShards/AeroShards.tsx"
+    "kind": "none",
+    "reason": "Aperçu désactivé : dépend de vgpu (paquet non vérifié)"
   },
-  "contentHash": "bed7ae7e8c707a16",
-  "importedAt": "2026-11-05T17:59:45.472Z"
+  "contentHash": "d5e140fbb7e68fda",
+  "importedAt": "2026-11-05T17:59:45.472Z",
+  "updatedAt": "2026-11-10T13:15:38.470Z"
 }

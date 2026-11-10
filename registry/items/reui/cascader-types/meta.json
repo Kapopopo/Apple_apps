@@ -1,8 +1,8 @@
 {
   "id": "reui/cascader-types",
   "name": "Nested multi-level combobox with drill-down, columns and tree modes.",
-  "type": "component",
-  "category": "Formulaires",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -25,12 +25,11 @@
       "target": "components/reui/cascader/cascader-types.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/cascader/cascader-types.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "5c239c1daaa20a77",
+  "contentHash": "cdd677fd75834153",
   "importedAt": "2026-11-05T17:59:38.061Z",
-  "updatedAt": "2026-11-05T18:07:49.685Z"
+  "updatedAt": "2026-11-10T13:13:02.763Z"
 }

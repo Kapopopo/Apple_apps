@@ -30,13 +30,19 @@
     {
       "path": "hooks/usePreventScroll.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/dialog/dialog-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "dialog.tsx"
+    "entry": "app/docs/dialog/dialog-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "91384927ceaa752d",
-  "importedAt": "2026-11-05T17:59:30.324Z"
+  "contentHash": "2898176c80137bb1",
+  "importedAt": "2026-11-05T17:59:30.324Z",
+  "updatedAt": "2026-11-10T13:11:58.323Z"
 }

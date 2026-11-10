@@ -1,0 +1,49 @@
+{
+  "id": "reui/c-gantt-1",
+  "name": "Gantt chart with settings menu and schedulable rows",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "dataviz",
+    "exemple",
+    "gantt",
+    "settings menu"
+  ],
+  "description": "Gantt chart with settings menu and schedulable rows. Built by composing Button, Card, Gantt, Gantt I18n, Gantt Nav and 8 more.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/gantt",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-label",
+    "reui/ui-popover",
+    "reui/ui-radio-group",
+    "reui/ui-select",
+    "reui/ui-switch",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/gantt/c-gantt-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/gantt/c-gantt-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/gantt/c-gantt-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/gantt/c-gantt-1.tsx"
+  },
+  "contentHash": "f37091d6c98cde11",
+  "importedAt": "2026-11-10T13:14:56.789Z"
+}

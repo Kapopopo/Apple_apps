@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-190",
-  "name": "Label 190",
+  "name": "Select with placeholder (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-190.tsx"
   },
-  "contentHash": "a3f3a4dccf990cf0",
-  "importedAt": "2026-11-05T17:59:40.803Z"
+  "contentHash": "1f7085ce1f600443",
+  "importedAt": "2026-11-05T17:59:40.803Z",
+  "updatedAt": "2026-11-10T13:12:55.447Z"
 }

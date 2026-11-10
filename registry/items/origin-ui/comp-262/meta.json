@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-262",
-  "name": "Slider 262",
+  "name": "Vertical slider with input",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -43,6 +43,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-262.tsx"
   },
-  "contentHash": "77ca513859d02cac",
-  "importedAt": "2026-11-05T17:59:41.065Z"
+  "contentHash": "f85e7c7197e4e77c",
+  "importedAt": "2026-11-05T17:59:41.065Z",
+  "updatedAt": "2026-11-10T13:12:56.060Z"
 }

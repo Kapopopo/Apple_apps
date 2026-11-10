@@ -34,6 +34,34 @@
       "target": "components/ui/ai-response.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/ai-response.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -41,9 +69,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/AIResponse.tsx"
+    "entry": "src/components/docs/detail/demos/items/ai-response.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "d3f1477888a7046a",
+  "contentHash": "9e4e3f872fb02e24",
   "importedAt": "2026-11-05T00:16:51.491Z",
-  "updatedAt": "2026-11-05T00:19:19.786Z"
+  "updatedAt": "2026-11-10T13:12:05.240Z"
 }

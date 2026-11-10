@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-advanced",
   "name": "Filters Advanced",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -20,11 +20,11 @@
     "reui/filters-operators",
     "reui/filters-query",
     "reui/filters-types",
-    "shadcn/button",
-    "shadcn/dropdown-menu",
-    "shadcn/input",
-    "shadcn/popover",
-    "shadcn/tooltip"
+    "reui/ui-button",
+    "reui/ui-dropdown-menu",
+    "reui/ui-input",
+    "reui/ui-popover",
+    "reui/ui-tooltip"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -41,12 +41,11 @@
       "target": "components/reui/filters/filters-advanced.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-advanced.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "b810a9b0fc39d205",
+  "contentHash": "cff8214ad447ad40",
   "importedAt": "2026-11-05T17:59:38.174Z",
-  "updatedAt": "2026-11-05T18:07:49.817Z"
+  "updatedAt": "2026-11-10T13:13:03.317Z"
 }

@@ -44,6 +44,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/draw-checkbox.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,8 +67,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/DrawCheckbox.tsx"
+    "entry": "src/components/docs/detail/demos/items/draw-checkbox.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "306d19f14a829aea",
-  "importedAt": "2026-11-05T00:16:52.154Z"
+  "contentHash": "616b2ee00ffec77d",
+  "importedAt": "2026-11-05T00:16:52.154Z",
+  "updatedAt": "2026-11-10T13:12:06.329Z"
 }

@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-marker-1",
+  "name": "Default, separator, and border markers",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "basic variants",
+    "exemple",
+    "marker"
+  ],
+  "description": "Default, separator, and border markers. Built with the Marker component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-marker"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/marker/c-marker-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/marker/c-marker-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/marker/c-marker-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/marker/c-marker-1.tsx"
+  },
+  "contentHash": "561c5322a3c8bb1d",
+  "importedAt": "2026-11-10T13:14:58.590Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-card-4",
+  "name": "Card with header and footer",
+  "type": "section",
+  "category": "Cartes",
+  "tags": [
+    "card",
+    "exemple",
+    "header & footer"
+  ],
+  "description": "Card with header and footer. Built by composing Button, Card.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/card/c-card-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/card/c-card-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/card/c-card-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/card/c-card-4.tsx"
+  },
+  "contentHash": "f08be9d79f09868f",
+  "importedAt": "2026-11-10T13:13:08.167Z"
+}

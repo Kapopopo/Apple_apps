@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-46",
-  "name": "Input 46",
+  "name": "PhoneIcon number input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-46.tsx"
   },
-  "contentHash": "fbe0812c3ce9c7f2",
-  "importedAt": "2026-11-05T17:59:42.128Z"
+  "contentHash": "cfdc5ed2aa7de172",
+  "importedAt": "2026-11-05T17:59:42.128Z",
+  "updatedAt": "2026-11-10T13:12:56.585Z"
 }

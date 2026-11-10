@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-breadcrumb-12",
+  "name": "Breadcrumb starting with home icon item",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "breadcrumb",
+    "exemple",
+    "home icon button"
+  ],
+  "description": "Breadcrumb starting with home icon item. Built by composing Breadcrumb, Button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-breadcrumb",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/breadcrumb/c-breadcrumb-12.tsx",
+  "sourcePath": "registry-reui/bases/base/components/breadcrumb/c-breadcrumb-12.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/breadcrumb/c-breadcrumb-12.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/breadcrumb/c-breadcrumb-12.tsx"
+  },
+  "contentHash": "021b4f91a3f9932d",
+  "importedAt": "2026-11-10T13:13:06.120Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-breadcrumb-3",
+  "name": "Breadcrumb with Next.js link",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "breadcrumb",
+    "exemple",
+    "router link"
+  ],
+  "description": "Breadcrumb with Next.js link. Built with the Breadcrumb component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-breadcrumb"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/breadcrumb/c-breadcrumb-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/breadcrumb/c-breadcrumb-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/breadcrumb/c-breadcrumb-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/breadcrumb/c-breadcrumb-3.tsx"
+  },
+  "contentHash": "49232a0faa5d8b98",
+  "importedAt": "2026-11-10T13:13:05.950Z"
+}

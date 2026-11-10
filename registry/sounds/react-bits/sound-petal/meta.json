@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-petal",
+  "name": "Son Petal",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "Two light notes for picking a swatch or card.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundPetal-TS.json",
+  "sourcePath": "public/r/SoundPetal-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/petal.ts",
+      "role": "source",
+      "target": "components/sounds/petal.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/petal.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Petal"
+    ]
+  },
+  "contentHash": "8deae7da95cfd928",
+  "importedAt": "2026-11-10T13:15:37.819Z"
+}

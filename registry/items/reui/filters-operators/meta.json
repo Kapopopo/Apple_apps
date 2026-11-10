@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-operators",
   "name": "Filters Operators",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -28,12 +28,11 @@
       "target": "components/reui/filters/filters-operators.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-operators.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "bf84ffaca9c09dcc",
+  "contentHash": "a0035835096625e5",
   "importedAt": "2026-11-05T17:59:38.232Z",
-  "updatedAt": "2026-11-05T18:07:49.873Z"
+  "updatedAt": "2026-11-10T13:13:03.396Z"
 }

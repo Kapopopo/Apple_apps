@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-42",
-  "name": "Input 42",
+  "name": "Date range picker",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -44,6 +44,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-42.tsx"
   },
-  "contentHash": "750f6712cfbe8660",
-  "importedAt": "2026-11-05T17:59:41.974Z"
+  "contentHash": "ebaeb6f8b333d877",
+  "importedAt": "2026-11-05T17:59:41.974Z",
+  "updatedAt": "2026-11-10T13:12:56.521Z"
 }

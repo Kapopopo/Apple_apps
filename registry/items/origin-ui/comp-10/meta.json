@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-10",
-  "name": "Input 10",
+  "name": "Input with end icon",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-10.tsx"
   },
-  "contentHash": "8085aaba43b77582",
-  "importedAt": "2026-11-05T17:59:40.479Z"
+  "contentHash": "b3cf4a6b139ba27d",
+  "importedAt": "2026-11-05T17:59:40.479Z",
+  "updatedAt": "2026-11-10T13:12:55.045Z"
 }

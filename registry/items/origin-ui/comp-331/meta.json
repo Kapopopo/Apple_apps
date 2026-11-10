@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-331",
-  "name": "Dialog 331",
+  "name": "First name",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Formulaires",
   "tags": [
     "avatar",
     "dialog",
@@ -55,6 +55,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-331.tsx"
   },
-  "contentHash": "f19934de640159bb",
-  "importedAt": "2026-11-05T17:59:41.574Z"
+  "contentHash": "0440c5d6fac011f4",
+  "importedAt": "2026-11-05T17:59:41.574Z",
+  "updatedAt": "2026-11-10T13:12:56.214Z"
 }

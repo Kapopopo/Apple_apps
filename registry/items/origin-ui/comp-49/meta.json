@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-49",
-  "name": "Input 49",
+  "name": "Code (input)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-49.tsx"
   },
-  "contentHash": "467564182beaa45f",
-  "importedAt": "2026-11-05T17:59:42.246Z"
+  "contentHash": "535cbed87b53c0a0",
+  "importedAt": "2026-11-05T17:59:42.246Z",
+  "updatedAt": "2026-11-10T13:12:56.673Z"
 }

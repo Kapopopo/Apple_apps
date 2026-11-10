@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-178",
-  "name": "Switch 178",
+  "name": "M3-style switch",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-178.tsx"
   },
-  "contentHash": "51ab2f02e4a792b0",
-  "importedAt": "2026-11-05T17:59:40.761Z"
+  "contentHash": "e8c1cf30d0e075c8",
+  "importedAt": "2026-11-05T17:59:40.761Z",
+  "updatedAt": "2026-11-10T13:12:55.387Z"
 }

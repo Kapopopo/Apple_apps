@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-258",
-  "name": "Slider 258",
+  "name": "Dual range slider with input",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -44,6 +44,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-258.tsx"
   },
-  "contentHash": "607e565f25fada42",
-  "importedAt": "2026-11-05T17:59:41.047Z"
+  "contentHash": "6ebfa1e961e05e58",
+  "importedAt": "2026-11-05T17:59:41.047Z",
+  "updatedAt": "2026-11-10T13:12:56.035Z"
 }

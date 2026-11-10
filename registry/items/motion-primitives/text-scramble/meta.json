@@ -25,13 +25,19 @@
     {
       "path": "text-scramble.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/text-scramble/text-scramble-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "text-scramble.tsx"
+    "entry": "app/docs/text-scramble/text-scramble-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "59f28df97bc54708",
-  "importedAt": "2026-11-05T17:59:30.381Z"
+  "contentHash": "6ff9835f874018bf",
+  "importedAt": "2026-11-05T17:59:30.381Z",
+  "updatedAt": "2026-11-10T13:11:58.642Z"
 }

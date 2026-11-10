@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/rocket-party-popper.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,9 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/RocketPartyPopper.tsx"
+    "entry": "src/components/docs/detail/demos/items/rocket-party-popper.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "13f8493f7b05046d",
+  "contentHash": "fb190f3bf50ecda6",
   "importedAt": "2026-11-05T00:16:53.519Z",
-  "updatedAt": "2026-11-05T00:19:20.055Z"
+  "updatedAt": "2026-11-10T13:12:08.990Z"
 }

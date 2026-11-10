@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-calendar-9",
+  "name": "Year select with navigation",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "calendar",
+    "exemple",
+    "year select"
+  ],
+  "description": "Year select with navigation. Built by composing Calendar, Card, Select.",
+  "framework": "react",
+  "dependencies": [
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "reui/ui-calendar",
+    "reui/ui-card",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-9.tsx"
+  },
+  "contentHash": "825a50e5d72a3048",
+  "importedAt": "2026-11-10T13:13:07.822Z"
+}

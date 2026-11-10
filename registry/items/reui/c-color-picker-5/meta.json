@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-color-picker-5",
+  "name": "Preset swatches",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "color-picker",
+    "exemple",
+    "preset swatches"
+  ],
+  "description": "Preset swatches. Built by composing Badge, Card, Color Picker, Field, Input.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/color-picker",
+    "reui/ui-card",
+    "reui/ui-field",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/color-picker/c-color-picker-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/color-picker/c-color-picker-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/color-picker/c-color-picker-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/color-picker/c-color-picker-5.tsx"
+  },
+  "contentHash": "345cce2a02c3e14d",
+  "importedAt": "2026-11-10T13:14:53.829Z"
+}

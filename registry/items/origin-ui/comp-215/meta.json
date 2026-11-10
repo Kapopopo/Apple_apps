@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-215",
-  "name": "Label 215",
+  "name": "Select with disabled options",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-215.tsx"
   },
-  "contentHash": "ec5654370e3ca4b1",
-  "importedAt": "2026-11-05T17:59:40.897Z"
+  "contentHash": "971d47d73f38e952",
+  "importedAt": "2026-11-05T17:59:40.897Z",
+  "updatedAt": "2026-11-10T13:12:55.642Z"
 }

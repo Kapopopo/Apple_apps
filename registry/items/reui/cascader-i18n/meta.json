@@ -1,8 +1,8 @@
 {
   "id": "reui/cascader-i18n",
   "name": "Cascader I18n",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -28,12 +28,11 @@
       "target": "components/reui/cascader/cascader-i18n.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/cascader/cascader-i18n.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "0986893027f34312",
+  "contentHash": "4207507643d12f25",
   "importedAt": "2026-11-05T17:59:38.049Z",
-  "updatedAt": "2026-11-05T18:07:49.673Z"
+  "updatedAt": "2026-11-10T13:13:02.746Z"
 }

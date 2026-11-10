@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-message-4",
+  "name": "Reply actions in the footer",
+  "type": "section",
+  "category": "IA et messages",
+  "tags": [
+    "exemple",
+    "message",
+    "reply actions"
+  ],
+  "description": "Reply actions in the footer. Built by composing Bubble, Button, Message.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-bubble",
+    "reui/ui-button",
+    "reui/ui-message"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/message/c-message-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/message/c-message-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/message/c-message-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/message/c-message-4.tsx"
+  },
+  "contentHash": "e27813fbad17c0dd",
+  "importedAt": "2026-11-10T13:14:58.766Z"
+}

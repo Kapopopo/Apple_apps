@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-file-type-8",
+  "name": "Upload queue",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "file-type",
+    "upload queue"
+  ],
+  "description": "Upload queue. Built by composing Button, File Type, Item, Progress.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/file-type",
+    "reui/ui-button",
+    "reui/ui-item",
+    "reui/ui-progress"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-type/c-file-type-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-type/c-file-type-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-type/c-file-type-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-type/c-file-type-8.tsx"
+  },
+  "contentHash": "0b17b38bf2377b99",
+  "importedAt": "2026-11-10T13:14:56.113Z"
+}

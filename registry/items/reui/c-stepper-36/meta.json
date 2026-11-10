@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-stepper-36",
+  "name": "Stepper with shipping route and stop details",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "shipping route",
+    "stepper"
+  ],
+  "description": "Stepper with shipping route and stop details. Built by composing Avatar, Badge, Button, Icon Tile, Stepper.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/icon-tile",
+    "reui/stepper",
+    "reui/ui-avatar",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/stepper/c-stepper-36.tsx",
+  "sourcePath": "registry-reui/bases/base/components/stepper/c-stepper-36.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/stepper/c-stepper-36.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/stepper/c-stepper-36.tsx"
+  },
+  "contentHash": "3f2d71abed8b13c1",
+  "importedAt": "2026-11-10T13:15:02.500Z"
+}

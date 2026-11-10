@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-separator-4",
+  "name": "Horizontal separator between items in a list.",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "exemple",
+    "list rows",
+    "separator"
+  ],
+  "description": "Horizontal separator between items in a list. Built with the Separator component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/separator/c-separator-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/separator/c-separator-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/separator/c-separator-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/separator/c-separator-4.tsx"
+  },
+  "contentHash": "dbcbe1dda81ba995",
+  "importedAt": "2026-11-10T13:15:00.865Z"
+}

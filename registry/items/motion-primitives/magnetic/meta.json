@@ -25,13 +25,19 @@
     {
       "path": "magnetic.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/magnetic/magnetic-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "magnetic.tsx"
+    "entry": "app/docs/magnetic/magnetic-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "bfeae93e291378c8",
-  "importedAt": "2026-11-05T17:59:30.349Z"
+  "contentHash": "3501620bb60e7efc",
+  "importedAt": "2026-11-05T17:59:30.349Z",
+  "updatedAt": "2026-11-10T13:11:58.468Z"
 }

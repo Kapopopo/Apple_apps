@@ -1,0 +1,52 @@
+{
+  "id": "reui/c-data-grid-22",
+  "name": "Data grid with CRUD features",
+  "type": "section",
+  "category": "Fonds",
+  "tags": [
+    "crud admin",
+    "data-grid",
+    "exemple"
+  ],
+  "description": "Data grid with CRUD features. Built by composing Avatar, Badge, Button, Card, Checkbox and 10 more.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table",
+    "sonner"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/data-grid",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-checkbox",
+    "reui/ui-dropdown-menu",
+    "reui/ui-input-group",
+    "reui/ui-label",
+    "reui/ui-popover",
+    "reui/use-copy-to-clipboard"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/data-grid/c-data-grid-22.tsx",
+  "sourcePath": "registry-reui/bases/base/components/data-grid/c-data-grid-22.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/data-grid/c-data-grid-22.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/data-grid/c-data-grid-22.tsx"
+  },
+  "contentHash": "47aced694ba2844d",
+  "importedAt": "2026-11-10T13:14:54.742Z",
+  "updatedAt": "2026-11-10T13:25:20.781Z"
+}

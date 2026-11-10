@@ -45,6 +45,34 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/ios-search-bar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/iossearch-bar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +80,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/IOSSearchBar.tsx"
+    "entry": "src/components/docs/detail/demos/items/ios-search-bar.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "bf48efad5b33cb47",
-  "importedAt": "2026-11-05T00:16:52.567Z"
+  "contentHash": "929313bfccb5bab6",
+  "importedAt": "2026-11-05T00:16:52.567Z",
+  "updatedAt": "2026-11-10T13:12:06.956Z"
 }

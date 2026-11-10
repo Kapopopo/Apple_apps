@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/pill-navigation.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/PillNavigation.tsx"
+    "entry": "src/components/docs/detail/demos/items/pill-navigation.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "b9917587fa9595d6",
-  "importedAt": "2026-11-05T00:16:53.355Z"
+  "contentHash": "0ebee2d057bb3ad7",
+  "importedAt": "2026-11-05T00:16:53.355Z",
+  "updatedAt": "2026-11-10T13:12:08.524Z"
 }

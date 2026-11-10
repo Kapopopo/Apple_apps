@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-200",
-  "name": "Label 200",
+  "name": "Timezone select (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-200.tsx"
   },
-  "contentHash": "ba76ec9385f4132e",
-  "importedAt": "2026-11-05T17:59:40.840Z"
+  "contentHash": "a35d36fa7f8eda46",
+  "importedAt": "2026-11-05T17:59:40.840Z",
+  "updatedAt": "2026-11-10T13:12:55.526Z"
 }

@@ -44,6 +44,34 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/selection-basket.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/selection-basket.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,9 +79,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/SelectionBasket.tsx"
+    "entry": "src/components/docs/detail/demos/items/selection-basket.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "a45458aed9b8a16b",
+  "contentHash": "80b43bb5a403bc45",
   "importedAt": "2026-11-05T00:16:53.572Z",
-  "updatedAt": "2026-11-05T00:19:20.070Z"
+  "updatedAt": "2026-11-10T13:12:09.172Z"
 }

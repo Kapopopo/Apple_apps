@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-sortable-6",
+  "name": "Sortable sidebar navigation with frame",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "sidebar navigation",
+    "sortable"
+  ],
+  "description": "Sortable sidebar navigation with frame. Built by composing Badge, Frame, Sortable.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/frame",
+    "reui/sortable"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/sortable/c-sortable-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/sortable/c-sortable-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/sortable/c-sortable-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/sortable/c-sortable-6.tsx"
+  },
+  "contentHash": "de2e8ed0e571beed",
+  "importedAt": "2026-11-10T13:15:01.808Z"
+}

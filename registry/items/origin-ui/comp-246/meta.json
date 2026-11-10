@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-246",
-  "name": "Slider 246",
+  "name": "Slider with ticks",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-246.tsx"
   },
-  "contentHash": "da52a13178187f01",
-  "importedAt": "2026-11-05T17:59:40.996Z"
+  "contentHash": "c969db675bcc081e",
+  "importedAt": "2026-11-05T17:59:40.996Z",
+  "updatedAt": "2026-11-10T13:12:55.925Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-29",
-  "name": "Input 29",
+  "name": "Number input with chevrons",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-29.tsx"
   },
-  "contentHash": "6a892a7cc39e8487",
-  "importedAt": "2026-11-05T17:59:41.180Z"
+  "contentHash": "0ee79af1256713de",
+  "importedAt": "2026-11-05T17:59:41.180Z",
+  "updatedAt": "2026-11-10T13:12:56.115Z"
 }

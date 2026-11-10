@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-alert-dialog-9",
+  "name": "Warning for unsaved changes when navigating away",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "alert-dialog",
+    "exemple",
+    "unsaved changes"
+  ],
+  "description": "Warning for unsaved changes when navigating away. Built by composing Alert Dialog, Button, Checkbox, Frame, Label.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/frame",
+    "reui/ui-alert-dialog",
+    "reui/ui-button",
+    "reui/ui-checkbox",
+    "reui/ui-label"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert-dialog/c-alert-dialog-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert-dialog/c-alert-dialog-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert-dialog/c-alert-dialog-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert-dialog/c-alert-dialog-9.tsx"
+  },
+  "contentHash": "18c19440274385a5",
+  "importedAt": "2026-11-10T13:13:04.717Z"
+}

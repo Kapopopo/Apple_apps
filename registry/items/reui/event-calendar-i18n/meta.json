@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-i18n",
   "name": "Default UI texts, date-format strings, and formatter functions for the event calendar, fully overridable per key.",
-  "type": "component",
-  "category": "Formulaires",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -30,12 +30,11 @@
       "target": "components/reui/event-calendar/event-calendar-i18n.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-i18n.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "72a540df81ae017c",
+  "contentHash": "3a4960890332fc1c",
   "importedAt": "2026-11-05T17:59:38.147Z",
-  "updatedAt": "2026-11-05T18:07:49.779Z"
+  "updatedAt": "2026-11-10T13:13:03.091Z"
 }

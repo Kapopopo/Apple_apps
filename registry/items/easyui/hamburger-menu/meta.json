@@ -46,6 +46,34 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/hamburger-menu.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/hamburger-menu.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -53,8 +81,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/HamburgerMenu.tsx"
+    "entry": "src/components/docs/detail/demos/items/hamburger-menu.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "4b671d32053f81aa",
-  "importedAt": "2026-11-05T00:16:52.487Z"
+  "contentHash": "1ca96f594084cd08",
+  "importedAt": "2026-11-05T00:16:52.487Z",
+  "updatedAt": "2026-11-10T13:12:06.795Z"
 }

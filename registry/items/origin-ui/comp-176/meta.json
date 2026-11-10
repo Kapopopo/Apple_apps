@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-176",
-  "name": "Switch 176",
+  "name": "Square switch",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-176.tsx"
   },
-  "contentHash": "5ec777b700acafcf",
-  "importedAt": "2026-11-05T17:59:40.754Z"
+  "contentHash": "89461076132ef06b",
+  "importedAt": "2026-11-05T17:59:40.754Z",
+  "updatedAt": "2026-11-10T13:12:55.373Z"
 }

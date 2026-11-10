@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-alert-2",
+  "name": "Alert with icon",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "alert",
+    "exemple",
+    "leading icon"
+  ],
+  "description": "Alert with icon. Built with the Alert component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/alert"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert/c-alert-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert/c-alert-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert/c-alert-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert/c-alert-2.tsx"
+  },
+  "contentHash": "8cbe406cdb4fb5ad",
+  "importedAt": "2026-11-10T13:13:04.402Z"
+}

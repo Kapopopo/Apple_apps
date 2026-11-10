@@ -38,6 +38,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/nimbu-mirchi.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,9 +61,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/NimbuMirchi.tsx"
+    "entry": "src/components/docs/detail/demos/items/nimbu-mirchi.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "1009f4fa00e3607b",
+  "contentHash": "4c8542e39fbbe8ab",
   "importedAt": "2026-11-05T00:16:52.947Z",
-  "updatedAt": "2026-11-05T00:18:17.484Z"
+  "updatedAt": "2026-11-10T13:12:07.553Z"
 }

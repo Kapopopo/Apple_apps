@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-button-group-9",
+  "name": "Nested button groups for complex action sets",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button-group",
+    "exemple",
+    "nested groups"
+  ],
+  "description": "Nested button groups for complex action sets. Built by composing Button, Button Group, Input Group, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-button-group",
+    "reui/ui-input-group",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button-group/c-button-group-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button-group/c-button-group-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button-group/c-button-group-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button-group/c-button-group-9.tsx"
+  },
+  "contentHash": "9de6f606c3b9bd21",
+  "importedAt": "2026-11-10T13:13:07.082Z"
+}

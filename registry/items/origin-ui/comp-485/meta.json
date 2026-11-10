@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-485",
-  "name": "Table 485",
+  "name": "Rows per page",
   "type": "component",
-  "category": "Tableaux de données",
+  "category": "Formulaires",
   "tags": [
     "badge",
     "checkbox",
@@ -55,6 +55,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-485.tsx"
   },
-  "contentHash": "78475e7b2ca173f1",
-  "importedAt": "2026-11-05T17:59:42.229Z"
+  "contentHash": "d11f3b059de70d7e",
+  "importedAt": "2026-11-05T17:59:42.229Z",
+  "updatedAt": "2026-11-10T13:12:56.653Z"
 }

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-emoji-picker-1",
+  "name": "Inline emoji picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "emoji-picker",
+    "exemple",
+    "inline"
+  ],
+  "description": "Inline emoji picker. Built by composing Card, Emoji Picker.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/emoji-picker",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/emoji-picker/c-emoji-picker-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/emoji-picker/c-emoji-picker-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/emoji-picker/c-emoji-picker-1.tsx"
+  },
+  "contentHash": "ae101436124e045f",
+  "importedAt": "2026-11-10T13:14:55.477Z"
+}

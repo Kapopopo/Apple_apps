@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-scrollspy-1",
+  "name": "Basic scrollspy",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "exemple",
+    "scroll",
+    "scrollspy",
+    "vertical nav"
+  ],
+  "description": "Basic scrollspy. Built by composing Button, Scroll Area, Scrollspy.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/scrollspy",
+    "reui/ui-button",
+    "reui/ui-scroll-area"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/scrollspy/c-scrollspy-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/scrollspy/c-scrollspy-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/scrollspy/c-scrollspy-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/scrollspy/c-scrollspy-1.tsx"
+  },
+  "contentHash": "2a6372ccd893138d",
+  "importedAt": "2026-11-10T13:15:00.345Z"
+}

@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-types",
   "name": "Stepped filter builder with nested fields, popover value editors and a boolean query tree.",
-  "type": "component",
-  "category": "Fenêtres et panneaux",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -25,12 +25,11 @@
       "target": "components/reui/filters/filters-types.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-types.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "3129d14e51d51064",
+  "contentHash": "e3a8d387c6fe8849",
   "importedAt": "2026-11-05T17:59:38.237Z",
-  "updatedAt": "2026-11-05T18:07:49.881Z"
+  "updatedAt": "2026-11-10T13:13:03.411Z"
 }

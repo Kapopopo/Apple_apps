@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-62",
-  "name": "Label 62",
+  "name": "Textarea with hint",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-62.tsx"
   },
-  "contentHash": "04a48c1d8716faef",
-  "importedAt": "2026-11-05T17:59:42.986Z"
+  "contentHash": "863ef1b82b9a7807",
+  "importedAt": "2026-11-05T17:59:42.986Z",
+  "updatedAt": "2026-11-10T13:12:56.883Z"
 }

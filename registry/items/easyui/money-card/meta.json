@@ -32,6 +32,22 @@
       "target": "components/ui/money-card.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/money-card.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -39,8 +55,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/MoneyCard.tsx"
+    "entry": "src/components/docs/detail/demos/items/money-card.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "bd83644cd494b321",
-  "importedAt": "2026-11-05T00:16:52.803Z"
+  "contentHash": "b76c9a004143e60e",
+  "importedAt": "2026-11-05T00:16:52.803Z",
+  "updatedAt": "2026-11-10T13:12:07.300Z"
 }

@@ -25,13 +25,19 @@
     {
       "path": "animated-group.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/animated-group/animated-group-custom-variants-2.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "animated-group.tsx"
+    "entry": "app/docs/animated-group/animated-group-custom-variants-2.tsx",
+    "demo": "source"
   },
-  "contentHash": "a1920a1e75c4c9c5",
-  "importedAt": "2026-11-05T17:59:30.309Z"
+  "contentHash": "05a2e28997e76e58",
+  "importedAt": "2026-11-05T17:59:30.309Z",
+  "updatedAt": "2026-11-10T13:11:58.060Z"
 }

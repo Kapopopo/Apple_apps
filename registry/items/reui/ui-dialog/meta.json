@@ -1,0 +1,39 @@
+{
+  "id": "reui/ui-dialog",
+  "name": "Dialog (primitive ReUI)",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "primitive",
+    "base-ui"
+  ],
+  "description": "Primitive Base UI de ReUI (dialog) : utilisée par ses composants et ses exemples à la place de la version Radix de shadcn.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "registryDependencies": [
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry/bases/base/ui/dialog.tsx",
+  "sourcePath": "registry/bases/base/ui/dialog.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/ui/dialog.tsx",
+      "role": "source",
+      "target": "components/ui/dialog.tsx"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Primitive sans rendu propre"
+  },
+  "contentHash": "0c1a069aac3e0105",
+  "importedAt": "2026-11-10T13:13:01.481Z"
+}

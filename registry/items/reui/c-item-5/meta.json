@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-item-5",
+  "name": "Item group with status badges",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "exemple",
+    "item",
+    "status badges"
+  ],
+  "description": "Item group with status badges. Built by composing Avatar, Badge, Item.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-avatar",
+    "reui/ui-item"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/item/c-item-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/item/c-item-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/item/c-item-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/item/c-item-5.tsx"
+  },
+  "contentHash": "82f73f3a5e2a802c",
+  "importedAt": "2026-11-10T13:14:58.197Z"
+}

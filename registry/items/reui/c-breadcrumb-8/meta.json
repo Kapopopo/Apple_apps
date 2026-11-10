@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-breadcrumb-8",
+  "name": "Breadcrumb with double chevron separators",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "breadcrumb",
+    "double chevron",
+    "exemple"
+  ],
+  "description": "Breadcrumb with double chevron separators. Built with the Breadcrumb component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-breadcrumb"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/breadcrumb/c-breadcrumb-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/breadcrumb/c-breadcrumb-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/breadcrumb/c-breadcrumb-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/breadcrumb/c-breadcrumb-8.tsx"
+  },
+  "contentHash": "af57d8c52c4cce36",
+  "importedAt": "2026-11-10T13:13:06.006Z"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-pickup",
+  "name": "Son Pickup",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "A soft lift as an item is picked up.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundPickup-TS.json",
+  "sourcePath": "public/r/SoundPickup-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/pickup.ts",
+      "role": "source",
+      "target": "components/sounds/pickup.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/pickup.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Pickup"
+    ]
+  },
+  "contentHash": "1a98aaf4a70215f8",
+  "importedAt": "2026-11-10T13:15:37.825Z"
+}

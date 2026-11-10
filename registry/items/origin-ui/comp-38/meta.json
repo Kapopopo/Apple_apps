@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-38",
-  "name": "Input 38",
+  "name": "Time input with start icon",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-38.tsx"
   },
-  "contentHash": "320eff71a8f8c8a8",
-  "importedAt": "2026-11-05T17:59:41.802Z"
+  "contentHash": "0242ec57226ecb0d",
+  "importedAt": "2026-11-05T17:59:41.802Z",
+  "updatedAt": "2026-11-10T13:12:56.456Z"
 }

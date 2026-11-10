@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-trace-9",
+  "name": "CI pipeline run",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "ci pipeline",
+    "exemple",
+    "trace"
+  ],
+  "description": "CI pipeline run. Built by composing Button, Code Block, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/code-block",
+    "reui/ui-button",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-9.tsx"
+  },
+  "contentHash": "34b1a6b4f37a36a2",
+  "importedAt": "2026-11-10T13:15:04.188Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-frame-13",
+  "name": "Frame with small border radius",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "exemple",
+    "frame",
+    "small radius"
+  ],
+  "description": "Frame with small border radius. Built with the Frame component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/frame"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/frame/c-frame-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/frame/c-frame-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/frame/c-frame-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/frame/c-frame-13.tsx"
+  },
+  "contentHash": "1a598b9808005a00",
+  "importedAt": "2026-11-10T13:14:56.712Z"
+}

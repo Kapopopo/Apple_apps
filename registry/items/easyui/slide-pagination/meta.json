@@ -45,6 +45,34 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/slide-pagination.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/slide-pagination.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +80,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/SlidePagination.tsx"
+    "entry": "src/components/docs/detail/demos/items/slide-pagination.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "e69b358d70454658",
-  "importedAt": "2026-11-05T00:16:53.717Z"
+  "contentHash": "e976450e98e5182a",
+  "importedAt": "2026-11-05T00:16:53.717Z",
+  "updatedAt": "2026-11-10T13:12:09.667Z"
 }

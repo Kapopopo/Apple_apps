@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-67",
-  "name": "Label 67",
+  "name": "Disabled textarea",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-67.tsx"
   },
-  "contentHash": "c134c7457fccbded",
-  "importedAt": "2026-11-05T17:59:43.007Z"
+  "contentHash": "e2eeb3c96b15facd",
+  "importedAt": "2026-11-05T17:59:43.007Z",
+  "updatedAt": "2026-11-10T13:12:56.924Z"
 }

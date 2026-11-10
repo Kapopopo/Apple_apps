@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-calendar-24",
+  "name": "Calendar with date picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "calendar",
+    "date picker",
+    "exemple"
+  ],
+  "description": "Calendar with date picker. Built by composing Button, Calendar, Popover.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-popover"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-24.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-24.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-24.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-24.tsx"
+  },
+  "contentHash": "174e154b9b8e14fa",
+  "importedAt": "2026-11-10T13:13:08.040Z"
+}

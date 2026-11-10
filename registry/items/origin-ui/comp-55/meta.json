@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-55",
-  "name": "Input 55",
+  "name": "Timestamp (input)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-55.tsx"
   },
-  "contentHash": "d3f13eefcfdf3b44",
-  "importedAt": "2026-11-05T17:59:42.531Z"
+  "contentHash": "7c25e9c6a5d679f1",
+  "importedAt": "2026-11-05T17:59:42.531Z",
+  "updatedAt": "2026-11-10T13:12:56.773Z"
 }

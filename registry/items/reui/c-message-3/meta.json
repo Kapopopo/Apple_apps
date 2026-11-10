@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-message-3",
+  "name": "Sender name and delivery status",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "exemple",
+    "message",
+    "sender & status"
+  ],
+  "description": "Sender name and delivery status. Built by composing Bubble, Message.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-bubble",
+    "reui/ui-message"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/message/c-message-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/message/c-message-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/message/c-message-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/message/c-message-3.tsx"
+  },
+  "contentHash": "2850b627611f934b",
+  "importedAt": "2026-11-10T13:14:58.749Z"
+}

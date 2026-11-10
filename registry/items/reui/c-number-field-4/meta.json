@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-number-field-4",
+  "name": "Number field with buttons on right",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "buttons on right",
+    "exemple",
+    "number-field"
+  ],
+  "description": "Number field with buttons on right. Built with the Number Field component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/number-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/number-field/c-number-field-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/number-field/c-number-field-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/number-field/c-number-field-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/number-field/c-number-field-4.tsx"
+  },
+  "contentHash": "7dc0c304e3cbe6b2",
+  "importedAt": "2026-11-10T13:14:59.044Z"
+}

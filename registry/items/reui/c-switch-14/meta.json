@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-switch-14",
+  "name": "Switch with descriptions in card grid",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "card grid",
+    "exemple",
+    "switch"
+  ],
+  "description": "Switch with descriptions in card grid. Built by composing Field, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/switch/c-switch-14.tsx",
+  "sourcePath": "registry-reui/bases/base/components/switch/c-switch-14.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/switch/c-switch-14.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/switch/c-switch-14.tsx"
+  },
+  "contentHash": "400af56354e01428",
+  "importedAt": "2026-11-10T13:15:02.794Z"
+}

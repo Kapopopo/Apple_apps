@@ -26,13 +26,19 @@
     {
       "path": "sliding-number.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/sliding-number/clock.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "sliding-number.tsx"
+    "entry": "app/docs/sliding-number/clock.tsx",
+    "demo": "source"
   },
-  "contentHash": "863589c6080220e0",
-  "importedAt": "2026-11-05T17:59:30.367Z"
+  "contentHash": "534e733c4b3e8c52",
+  "importedAt": "2026-11-05T17:59:30.367Z",
+  "updatedAt": "2026-11-10T13:11:58.565Z"
 }

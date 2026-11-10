@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-199",
-  "name": "Label 199",
+  "name": "Select with option groups (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-199.tsx"
   },
-  "contentHash": "d4713f128b4b74a9",
-  "importedAt": "2026-11-05T17:59:40.833Z"
+  "contentHash": "f08acfdb0af89392",
+  "importedAt": "2026-11-05T17:59:40.833Z",
+  "updatedAt": "2026-11-10T13:12:55.506Z"
 }

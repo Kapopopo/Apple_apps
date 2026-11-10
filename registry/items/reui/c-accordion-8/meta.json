@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-accordion-8",
+  "name": "Nested accordion example with bordered items",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accordion",
+    "exemple",
+    "nested"
+  ],
+  "description": "Nested accordion example with bordered items. Built with the Accordion component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-accordion"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/accordion/c-accordion-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/accordion/c-accordion-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/accordion/c-accordion-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/accordion/c-accordion-8.tsx"
+  },
+  "contentHash": "596b41df4d8fb49b",
+  "importedAt": "2026-11-10T13:13:04.348Z"
+}

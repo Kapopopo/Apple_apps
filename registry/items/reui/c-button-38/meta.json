@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-button-38",
+  "name": "Star button with count",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "exemple",
+    "star count"
+  ],
+  "description": "Star button with count. Built with the Button component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button/c-button-38.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button/c-button-38.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button/c-button-38.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button/c-button-38.tsx"
+  },
+  "contentHash": "b346aec653f65d79",
+  "importedAt": "2026-11-10T13:13:06.700Z"
+}

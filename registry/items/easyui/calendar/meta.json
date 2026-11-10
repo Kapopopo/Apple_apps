@@ -41,6 +41,34 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/calendar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/calendar.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -48,8 +76,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/calendar.tsx"
+    "entry": "src/components/docs/detail/demos/items/calendar.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "a63f7ec297858347",
-  "importedAt": "2026-11-05T00:16:51.755Z"
+  "contentHash": "3d41bb0e1c9f8a6c",
+  "importedAt": "2026-11-05T00:16:51.755Z",
+  "updatedAt": "2026-11-10T13:12:05.743Z"
 }

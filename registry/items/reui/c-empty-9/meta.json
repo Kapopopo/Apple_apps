@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-empty-9",
+  "name": "No notifications empty state",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "empty",
+    "exemple",
+    "no notifications"
+  ],
+  "description": "No notifications empty state. Built with the Empty component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-empty"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/empty/c-empty-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/empty/c-empty-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/empty/c-empty-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/empty/c-empty-9.tsx"
+  },
+  "contentHash": "dcc185ec77bf97f1",
+  "importedAt": "2026-11-10T13:14:55.677Z"
+}

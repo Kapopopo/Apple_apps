@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-tooltip-15",
+  "name": "Tooltip with label badges",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "exemple",
+    "label badges",
+    "tooltip"
+  ],
+  "description": "Tooltip with label badges. Built by composing Badge, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/tooltip/c-tooltip-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/tooltip/c-tooltip-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/tooltip/c-tooltip-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/tooltip/c-tooltip-15.tsx"
+  },
+  "contentHash": "b05f65bce211de4d",
+  "importedAt": "2026-11-10T13:15:04.034Z"
+}

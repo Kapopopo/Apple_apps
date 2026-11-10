@@ -39,6 +39,38 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/avatar-stack.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/avatar-stack.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-shared.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +78,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/AvatarStack.tsx"
+    "entry": "src/components/docs/detail/demos/items/avatar-stack.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "0627fc7171d384ec",
-  "importedAt": "2026-11-05T00:16:51.613Z"
+  "contentHash": "300598c14cd4397e",
+  "importedAt": "2026-11-05T00:16:51.613Z",
+  "updatedAt": "2026-11-10T13:12:05.470Z"
 }

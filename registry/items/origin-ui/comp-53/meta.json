@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-53",
-  "name": "Input 53",
+  "name": "Copy to clipboard",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-53.tsx"
   },
-  "contentHash": "2ace06bc686b71f2",
-  "importedAt": "2026-11-05T17:59:42.391Z"
+  "contentHash": "998700f4487c590b",
+  "importedAt": "2026-11-05T17:59:42.391Z",
+  "updatedAt": "2026-11-10T13:12:56.748Z"
 }

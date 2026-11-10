@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-alert-dialog-1",
+  "name": "Basic alert dialog with title, description, and action buttons",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "alert-dialog",
+    "basic",
+    "exemple"
+  ],
+  "description": "Basic alert dialog with title, description, and action buttons. Built by composing Alert Dialog, Button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-alert-dialog",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert-dialog/c-alert-dialog-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert-dialog/c-alert-dialog-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert-dialog/c-alert-dialog-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert-dialog/c-alert-dialog-1.tsx"
+  },
+  "contentHash": "fd92afd01d88557a",
+  "importedAt": "2026-11-10T13:13:04.610Z"
+}

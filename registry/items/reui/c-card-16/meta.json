@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-card-16",
+  "name": "Card with header badge and actions",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "badge & actions",
+    "card",
+    "exemple"
+  ],
+  "description": "Card with header badge and actions. Built by composing Avatar, Badge, Button, Card, Dropdown Menu.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-dropdown-menu"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/card/c-card-16.tsx",
+  "sourcePath": "registry-reui/bases/base/components/card/c-card-16.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/card/c-card-16.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/card/c-card-16.tsx"
+  },
+  "contentHash": "1d33be4a0637ad67",
+  "importedAt": "2026-11-10T13:13:08.316Z"
+}

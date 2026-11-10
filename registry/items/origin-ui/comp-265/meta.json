@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-265",
-  "name": "Slider 265",
+  "name": "Price slider",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -44,6 +44,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-265.tsx"
   },
-  "contentHash": "0ae49f61e4d890e7",
-  "importedAt": "2026-11-05T17:59:41.076Z"
+  "contentHash": "ba6e92dea6678b93",
+  "importedAt": "2026-11-05T17:59:41.076Z",
+  "updatedAt": "2026-11-10T13:12:56.077Z"
 }

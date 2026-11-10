@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-filters-6",
+  "name": "Sliders as the value editor",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "exemple",
+    "filters",
+    "slider editor"
+  ],
+  "description": "Sliders as the value editor. Built by composing Button, Filters, Filters Query, Filters Types, Slider.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/filters",
+    "reui/ui-button",
+    "reui/ui-slider"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/filters/c-filters-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/filters/c-filters-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/filters/c-filters-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/filters/c-filters-6.tsx"
+  },
+  "contentHash": "a50d3c332a0b1634",
+  "importedAt": "2026-11-10T13:14:56.440Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-69",
-  "name": "Label 69",
+  "name": "Textarea with right button",
   "type": "component",
   "category": "Boutons",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-69.tsx"
   },
-  "contentHash": "a62af03e5c3e7242",
-  "importedAt": "2026-11-05T17:59:43.017Z"
+  "contentHash": "c01db1d8d584c23c",
+  "importedAt": "2026-11-05T17:59:43.017Z",
+  "updatedAt": "2026-11-10T13:12:56.940Z"
 }

@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/stack-unfold-panel.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,9 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/StackUnfoldPanel.tsx"
+    "entry": "src/components/docs/detail/demos/items/stack-unfold-panel.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "571ab04b15f5fb84",
+  "contentHash": "0fc40e0877bd40c8",
   "importedAt": "2026-11-05T00:16:53.896Z",
-  "updatedAt": "2026-11-05T00:18:17.617Z"
+  "updatedAt": "2026-11-10T13:12:10.265Z"
 }

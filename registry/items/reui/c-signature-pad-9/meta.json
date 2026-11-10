@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-signature-pad-9",
+  "name": "Stylus mode with palm rejection",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "signature-pad",
+    "stylus mode"
+  ],
+  "description": "Stylus mode with palm rejection. Built by composing Badge, Field, Signature Pad, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/signature-pad",
+    "reui/ui-field",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/signature-pad/c-signature-pad-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/signature-pad/c-signature-pad-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/signature-pad/c-signature-pad-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/signature-pad/c-signature-pad-9.tsx"
+  },
+  "contentHash": "c6da1ea639e9fe94",
+  "importedAt": "2026-11-10T13:15:01.139Z"
+}

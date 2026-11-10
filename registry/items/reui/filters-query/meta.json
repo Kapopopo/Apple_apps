@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-query",
   "name": "Filters Query",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -28,12 +28,11 @@
       "target": "components/reui/filters/filters-query.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-query.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "7ff0c6ec8e86d965",
+  "contentHash": "7396dd197bc6478e",
   "importedAt": "2026-11-05T17:59:38.234Z",
-  "updatedAt": "2026-11-05T18:07:49.877Z"
+  "updatedAt": "2026-11-10T13:13:03.404Z"
 }

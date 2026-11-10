@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-tabs-9",
+  "name": "Segmented control tabs",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "segmented control",
+    "tabs"
+  ],
+  "description": "Segmented control tabs. Built by composing Card, Tabs.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/tabs/c-tabs-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/tabs/c-tabs-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/tabs/c-tabs-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/tabs/c-tabs-9.tsx"
+  },
+  "contentHash": "2c0b429a12e24329",
+  "importedAt": "2026-11-10T13:15:03.146Z"
+}

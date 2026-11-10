@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-file-type-15",
+  "name": "Dotfiles and build names",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "dotfiles & build names",
+    "exemple",
+    "file-type"
+  ],
+  "description": "Dotfiles and build names. Built with the File Type component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/file-type"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-type/c-file-type-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-type/c-file-type-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-type/c-file-type-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-type/c-file-type-15.tsx"
+  },
+  "contentHash": "e0b7bc3c377d5e6e",
+  "importedAt": "2026-11-10T13:14:56.206Z"
+}

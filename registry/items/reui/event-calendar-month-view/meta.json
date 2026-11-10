@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-month-view",
   "name": "ARIA-grid month view with week rows, day cells, event chips, and overflow counts.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "accessible",
     "web"
@@ -19,8 +19,8 @@
     "reui/event-calendar-event",
     "reui/event-calendar-lib",
     "reui/event-calendar-types",
-    "shadcn/popover",
-    "shadcn/scroll-area"
+    "reui/ui-popover",
+    "reui/ui-scroll-area"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -37,12 +37,11 @@
       "target": "components/reui/event-calendar/event-calendar-month-view.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-month-view.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "d0ba84ee7e8a5cbd",
+  "contentHash": "7a08871fad847875",
   "importedAt": "2026-11-05T17:59:38.151Z",
-  "updatedAt": "2026-11-05T18:07:49.785Z"
+  "updatedAt": "2026-11-10T13:13:03.108Z"
 }

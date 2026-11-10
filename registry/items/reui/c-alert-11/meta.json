@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-alert-11",
+  "name": "Alert with description and action buttons",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "alert",
+    "description & actions",
+    "exemple"
+  ],
+  "description": "Alert with description and action buttons. Built by composing Alert, Button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/alert",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert/c-alert-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert/c-alert-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert/c-alert-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert/c-alert-11.tsx"
+  },
+  "contentHash": "954ab50de45213c0",
+  "importedAt": "2026-11-10T13:13:04.489Z"
+}

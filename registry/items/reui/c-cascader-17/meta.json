@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-cascader-17",
+  "name": "Consumer-rendered removable chips with path-aware labels.",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "cascader",
+    "exemple",
+    "removable chips"
+  ],
+  "description": "Consumer-rendered removable chips with path-aware labels. Built by composing Badge, Button, Cascader, Cascader Item, Cascader Nav and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-17.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-17.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-17.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-17.tsx"
+  },
+  "contentHash": "ae347fd0afef6050",
+  "importedAt": "2026-11-10T13:14:52.821Z"
+}

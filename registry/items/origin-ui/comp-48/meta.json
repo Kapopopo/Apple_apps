@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-48",
-  "name": "Input 48",
+  "name": "Expiry date",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-48.tsx"
   },
-  "contentHash": "83cec177fc0e5781",
-  "importedAt": "2026-11-05T17:59:42.209Z"
+  "contentHash": "4e326e9cedb6afae",
+  "importedAt": "2026-11-05T17:59:42.209Z",
+  "updatedAt": "2026-11-10T13:12:56.635Z"
 }

@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-signature-pad-6",
+  "name": "Draw or type",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "draw or type",
+    "exemple",
+    "signature-pad"
+  ],
+  "description": "Draw or type. Built by composing Badge, Button, Field, Input, Signature Pad and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/signature-pad",
+    "reui/ui-button",
+    "reui/ui-field",
+    "reui/ui-input",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/signature-pad/c-signature-pad-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/signature-pad/c-signature-pad-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/signature-pad/c-signature-pad-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/signature-pad/c-signature-pad-6.tsx"
+  },
+  "contentHash": "65140aaf6d853035",
+  "importedAt": "2026-11-10T13:15:01.088Z"
+}

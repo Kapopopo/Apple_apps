@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-skeleton-4",
+  "name": "Skeleton loader for a form.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "form",
+    "skeleton"
+  ],
+  "description": "Skeleton loader for a form. Built with the Skeleton component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-skeleton"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/skeleton/c-skeleton-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/skeleton/c-skeleton-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/skeleton/c-skeleton-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/skeleton/c-skeleton-4.tsx"
+  },
+  "contentHash": "863a3d271391ce90",
+  "importedAt": "2026-11-10T13:15:01.229Z"
+}

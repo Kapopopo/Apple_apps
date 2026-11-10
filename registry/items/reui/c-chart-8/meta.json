@@ -1,0 +1,44 @@
+{
+  "id": "reui/c-chart-8",
+  "name": "3D isometric bar chart",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "3d",
+    "chart",
+    "dataviz",
+    "exemple",
+    "isometric bars"
+  ],
+  "description": "3D isometric bar chart. Built by composing Badge, Card, Chart.",
+  "framework": "react",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-card",
+    "reui/ui-chart"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/chart/c-chart-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/chart/c-chart-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/chart/c-chart-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/chart/c-chart-8.tsx"
+  },
+  "contentHash": "dcb4df2b7ada728c",
+  "importedAt": "2026-11-10T13:14:52.983Z"
+}

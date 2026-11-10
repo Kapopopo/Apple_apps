@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-61",
-  "name": "Label 61",
+  "name": "Textarea with helper text",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-61.tsx"
   },
-  "contentHash": "6b2b7bdbb50c597c",
-  "importedAt": "2026-11-05T17:59:42.983Z"
+  "contentHash": "b39dc06400bfd83a",
+  "importedAt": "2026-11-05T17:59:42.983Z",
+  "updatedAt": "2026-11-10T13:12:56.875Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-352",
-  "name": "Accordion 352",
+  "name": "Multi-level (accordion)",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-352.tsx"
   },
-  "contentHash": "e9fc5d88ca6594b9",
-  "importedAt": "2026-11-05T17:59:41.690Z"
+  "contentHash": "cf52a934752bdcf1",
+  "importedAt": "2026-11-05T17:59:41.690Z",
+  "updatedAt": "2026-11-10T13:12:56.400Z"
 }

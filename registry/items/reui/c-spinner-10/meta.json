@@ -1,0 +1,37 @@
+{
+  "id": "reui/c-spinner-10",
+  "name": "Animated loading dots",
+  "type": "component",
+  "category": "Chargement",
+  "tags": [
+    "animé",
+    "exemple",
+    "loading dots",
+    "spinner"
+  ],
+  "description": "Animated loading dots.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/spinner/c-spinner-10.tsx",
+  "sourcePath": "registry-reui/bases/base/components/spinner/c-spinner-10.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/spinner/c-spinner-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/spinner/c-spinner-10.tsx"
+  },
+  "contentHash": "44aad98b60732312",
+  "importedAt": "2026-11-10T13:15:01.951Z"
+}

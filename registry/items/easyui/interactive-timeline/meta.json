@@ -44,6 +44,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/interactive-timeline.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,9 +67,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/InteractiveTimeline.tsx"
+    "entry": "src/components/docs/detail/demos/items/interactive-timeline.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "0bf7a47095ef963e",
+  "contentHash": "5b7e81a68a299c0d",
   "importedAt": "2026-11-05T00:16:52.527Z",
-  "updatedAt": "2026-11-05T00:19:19.921Z"
+  "updatedAt": "2026-11-10T13:12:06.883Z"
 }

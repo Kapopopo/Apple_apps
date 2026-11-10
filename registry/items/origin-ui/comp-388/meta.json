@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-388",
-  "name": "Popover 388",
+  "name": "Send us feedback",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Formulaires",
   "tags": [
     "feedback",
     "form",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-388.tsx"
   },
-  "contentHash": "136a01d0e48495d4",
-  "importedAt": "2026-11-05T17:59:41.831Z"
+  "contentHash": "b2ac750ba97db7b8",
+  "importedAt": "2026-11-05T17:59:41.831Z",
+  "updatedAt": "2026-11-10T13:12:56.475Z"
 }

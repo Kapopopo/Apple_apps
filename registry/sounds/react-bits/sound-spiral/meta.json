@@ -1,0 +1,45 @@
+{
+  "id": "react-bits/sound-spiral",
+  "name": "Son Spiral",
+  "type": "sound",
+  "category": "Sons",
+  "tags": [
+    "son",
+    "web audio",
+    "feedback"
+  ],
+  "description": "An endless-feeling rise that keeps climbing.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "react-bits/sound-engine"
+  ],
+  "source": "React Bits",
+  "sourceId": "react-bits",
+  "sourceUrl": "https://github.com/DavidHDev/react-bits/blob/4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4/public/r/SoundSpiral-TS.json",
+  "sourcePath": "public/r/SoundSpiral-TS.json",
+  "sourceCommit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+  "license": "LicenseRef-Commons-Clause",
+  "licenseStatus": "restricted",
+  "licenseNotes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé).",
+  "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
+  "files": [
+    {
+      "path": "components/sounds/spiral.ts",
+      "role": "source",
+      "target": "components/sounds/spiral.ts"
+    }
+  ],
+  "preview": {
+    "kind": "live",
+    "entry": "components/sounds/spiral.ts"
+  },
+  "sound": {
+    "engine": "react-bits",
+    "names": [
+      "Spiral"
+    ]
+  },
+  "contentHash": "5a9f8bd4d7758e5c",
+  "importedAt": "2026-11-10T13:15:38.138Z"
+}

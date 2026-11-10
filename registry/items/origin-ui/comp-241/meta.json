@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-241",
-  "name": "Slider 241",
+  "name": "Disabled slider",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-241.tsx"
   },
-  "contentHash": "7a817c0ce750ba4d",
-  "importedAt": "2026-11-05T17:59:40.981Z"
+  "contentHash": "e53113e8954de561",
+  "importedAt": "2026-11-05T17:59:40.981Z",
+  "updatedAt": "2026-11-10T13:12:55.886Z"
 }

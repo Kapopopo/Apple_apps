@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-calendar-22",
+  "name": "Calendar with event list",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "calendar",
+    "event list",
+    "exemple"
+  ],
+  "description": "Calendar with event list. Built by composing Button, Calendar, Card.",
+  "framework": "react",
+  "dependencies": [
+    "little-date"
+  ],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-22.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-22.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-22.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-22.tsx"
+  },
+  "contentHash": "b9f0de8f14c0a35c",
+  "importedAt": "2026-11-10T13:13:08.010Z"
+}

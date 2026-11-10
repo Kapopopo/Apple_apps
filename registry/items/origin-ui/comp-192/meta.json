@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-192",
-  "name": "Label 192",
+  "name": "Select with helper text (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-192.tsx"
   },
-  "contentHash": "68a63350dc4d8090",
-  "importedAt": "2026-11-05T17:59:40.809Z"
+  "contentHash": "97b5e2825419ad86",
+  "importedAt": "2026-11-05T17:59:40.809Z",
+  "updatedAt": "2026-11-10T13:12:55.462Z"
 }

@@ -1,0 +1,44 @@
+{
+  "id": "reui/c-message-scroller-4",
+  "name": "Opening position for a saved thread",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "exemple",
+    "message-scroller",
+    "opening position",
+    "scroll"
+  ],
+  "description": "Opening position for a saved thread. Built by composing Bubble, Card, Marker, Message, Message Scroller and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-bubble",
+    "reui/ui-card",
+    "reui/ui-marker",
+    "reui/ui-message",
+    "reui/ui-message-scroller",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/message-scroller/c-message-scroller-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/message-scroller/c-message-scroller-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/message-scroller/c-message-scroller-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/message-scroller/c-message-scroller-4.tsx"
+  },
+  "contentHash": "e0ce28b33d7609f9",
+  "importedAt": "2026-11-10T13:14:58.864Z"
+}

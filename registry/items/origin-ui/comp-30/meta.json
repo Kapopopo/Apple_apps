@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-30",
-  "name": "Input 30",
+  "name": "File input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-30.tsx"
   },
-  "contentHash": "eb55e0f587b8561e",
-  "importedAt": "2026-11-05T17:59:41.461Z"
+  "contentHash": "c1f5f22b2acfca2c",
+  "importedAt": "2026-11-05T17:59:41.461Z",
+  "updatedAt": "2026-11-10T13:12:56.129Z"
 }

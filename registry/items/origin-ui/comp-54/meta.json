@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-54",
-  "name": "Input 54",
+  "name": "Input with mask",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-54.tsx"
   },
-  "contentHash": "2ab47c4888b668ff",
-  "importedAt": "2026-11-05T17:59:42.441Z"
+  "contentHash": "87f84c115ea5177c",
+  "importedAt": "2026-11-05T17:59:42.441Z",
+  "updatedAt": "2026-11-10T13:12:56.760Z"
 }

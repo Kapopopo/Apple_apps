@@ -39,6 +39,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/dynamic-island.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/DynamicIsland.tsx"
+    "entry": "src/components/docs/detail/demos/items/dynamic-island.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "f420acde42658af6",
-  "importedAt": "2026-11-05T00:16:52.174Z"
+  "contentHash": "cc0d442921f29939",
+  "importedAt": "2026-11-05T00:16:52.174Z",
+  "updatedAt": "2026-11-10T13:12:06.362Z"
 }

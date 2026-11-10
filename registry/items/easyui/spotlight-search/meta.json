@@ -61,6 +61,30 @@
       "role": "source"
     },
     {
+      "path": "src/components/docs/detail/demos/items/spotlight-search.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/spotlight-search.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -68,8 +92,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/SpotlightSearch.tsx"
+    "entry": "src/components/docs/detail/demos/items/spotlight-search.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "c7aee5f933ccdbd8",
-  "importedAt": "2026-11-05T00:16:53.856Z"
+  "contentHash": "26ac6a6a4022b7f2",
+  "importedAt": "2026-11-05T00:16:53.856Z",
+  "updatedAt": "2026-11-10T13:12:10.091Z"
 }

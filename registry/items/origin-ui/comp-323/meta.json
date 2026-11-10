@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-323",
-  "name": "Dialog 323",
+  "name": "Why did you give this rating?",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Listes et tâches",
   "tags": [
     "dialog",
     "feedback",
@@ -41,6 +41,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-323.tsx"
   },
-  "contentHash": "c64a110879abda39",
-  "importedAt": "2026-11-05T17:59:41.541Z"
+  "contentHash": "6d5dbc6b7fb69427",
+  "importedAt": "2026-11-05T17:59:41.541Z",
+  "updatedAt": "2026-11-10T13:12:56.156Z"
 }

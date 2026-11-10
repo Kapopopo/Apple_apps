@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-collapsible-9",
+  "name": "Multi-level collapsible menu",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "collapsible",
+    "exemple",
+    "multi-level menu"
+  ],
+  "description": "Multi-level collapsible menu. Built by composing Card, Collapsible, Item.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-collapsible",
+    "reui/ui-item"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/collapsible/c-collapsible-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/collapsible/c-collapsible-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/collapsible/c-collapsible-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/collapsible/c-collapsible-9.tsx"
+  },
+  "contentHash": "6ef63cdfd25b2415",
+  "importedAt": "2026-11-10T13:14:53.788Z"
+}

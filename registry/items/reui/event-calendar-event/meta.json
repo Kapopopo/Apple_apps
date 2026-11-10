@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-event",
   "name": "The reusable event chip/bar/block - selection, clicks, drag + resize wiring, and the consumer render slot.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "drag",
     "web"
@@ -18,7 +18,7 @@
     "reui/event-calendar-dnd",
     "reui/event-calendar-lib",
     "reui/event-calendar-types",
-    "shadcn/tooltip"
+    "reui/ui-tooltip"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -35,12 +35,11 @@
       "target": "components/reui/event-calendar/event-calendar-event.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-event.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "d00610400d235608",
+  "contentHash": "c6573b28f03150fb",
   "importedAt": "2026-11-05T17:59:38.145Z",
-  "updatedAt": "2026-11-05T18:07:49.776Z"
+  "updatedAt": "2026-11-10T13:13:03.084Z"
 }

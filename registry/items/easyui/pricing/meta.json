@@ -46,6 +46,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/pricing.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -53,9 +69,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Pricing.tsx"
+    "entry": "src/components/docs/detail/demos/items/pricing.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "396d84f28390ed86",
+  "contentHash": "b07acd7dac74bf47",
   "importedAt": "2026-11-05T00:16:53.391Z",
-  "updatedAt": "2026-11-05T00:19:20.004Z"
+  "updatedAt": "2026-11-10T13:12:08.616Z"
 }

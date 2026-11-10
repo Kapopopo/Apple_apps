@@ -36,14 +36,22 @@ for (const source of sources) {
 
 const entries = live.map((item) => {
   const meta = JSON.parse(fs.readFileSync(path.join(registry, item.dir, 'meta.json'), 'utf8'));
-  const file = (rel) => `@registry/${posix(item.dir)}/files/${rel}`;
+  const file = (rel, dir = item.dir) => `@registry/${posix(dir)}/files/${rel}`;
   const styles = meta.files.filter((f) => f.role === 'style').map((f) => `() => import(${JSON.stringify(file(f.path))})`);
-  return `  ${JSON.stringify(item.id)}: { source: ${JSON.stringify(item.sourceId)}, name: ${JSON.stringify(item.name)}, exportName: ${JSON.stringify(meta.preview.exportName ?? null)}, demo: ${meta.preview.demo === 'source'}, load: () => import(${JSON.stringify(file(meta.preview.entry))}), css: () => import(${JSON.stringify(`./${item.sourceId}.css`)}), styles: [${styles.join(', ')}] },`;
+  // Sons : moteur de lecture (React Bits) chargé depuis l'item dont dépend la recette.
+  let engine = 'null';
+  if (meta.sound?.engine === 'react-bits') {
+    const dep = items.find((i) => meta.registryDependencies.includes(i.id) && i.id.endsWith('/sound-engine'));
+    const engineMeta = dep && JSON.parse(fs.readFileSync(path.join(registry, dep.dir, 'meta.json'), 'utf8'));
+    if (engineMeta) engine = `() => import(${JSON.stringify(file(engineMeta.files[0].path, dep.dir))})`;
+  }
+  return `  ${JSON.stringify(item.id)}: { source: ${JSON.stringify(item.sourceId)}, name: ${JSON.stringify(item.name)}, exportName: ${JSON.stringify(meta.preview.exportName ?? null)}, demo: ${meta.preview.demo === 'source'}, sound: ${JSON.stringify(meta.sound ?? null)}, engine: ${engine}, load: () => import(${JSON.stringify(file(meta.preview.entry))}), css: () => import(${JSON.stringify(`./${item.sourceId}.css`)}), styles: [${styles.join(', ')}] },`;
 });
 
 fs.writeFileSync(path.join(out, 'registry.ts'), [
   '/* Généré par scripts/generate.mjs — ne pas modifier. */',
-  'export interface PreviewEntry { source: string; name: string; exportName: string | null; demo: boolean; load: () => Promise<Record<string, unknown>>; css: () => Promise<unknown>; styles: (() => Promise<unknown>)[] }',
+  'type Loader = () => Promise<Record<string, unknown>>;',
+  'export interface PreviewEntry { source: string; name: string; exportName: string | null; demo: boolean; sound: { engine: string; names: string[] } | null; engine: Loader | null; load: Loader; css: () => Promise<unknown>; styles: (() => Promise<unknown>)[] }',
   'export const ITEMS: Record<string, PreviewEntry> = {',
   ...entries,
   '};',

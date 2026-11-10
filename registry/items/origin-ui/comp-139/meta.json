@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-139",
-  "name": "Checkbox 139",
+  "name": "React (checkbox)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-139.tsx"
   },
-  "contentHash": "6ed6394abc688018",
-  "importedAt": "2026-11-05T17:59:40.633Z"
+  "contentHash": "54079ca78a0f9008",
+  "importedAt": "2026-11-05T17:59:40.633Z",
+  "updatedAt": "2026-11-10T13:12:55.143Z"
 }

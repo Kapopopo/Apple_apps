@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-212",
-  "name": "Label 212",
+  "name": "Select with auto-width",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-212.tsx"
   },
-  "contentHash": "289aae8f0b97a1c4",
-  "importedAt": "2026-11-05T17:59:40.887Z"
+  "contentHash": "be522999e7694e26",
+  "importedAt": "2026-11-05T17:59:40.887Z",
+  "updatedAt": "2026-11-10T13:12:55.620Z"
 }

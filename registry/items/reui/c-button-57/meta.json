@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-button-57",
+  "name": "Small button with avatar",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "exemple",
+    "small avatar"
+  ],
+  "description": "Small button with avatar. Built by composing Avatar, Button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-avatar",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button/c-button-57.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button/c-button-57.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button/c-button-57.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button/c-button-57.tsx"
+  },
+  "contentHash": "8fbd3e5b3ffd8486",
+  "importedAt": "2026-11-10T13:13:06.924Z"
+}

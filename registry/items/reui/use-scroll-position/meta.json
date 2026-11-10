@@ -1,0 +1,34 @@
+{
+  "id": "reui/use-scroll-position",
+  "name": "use-scroll-position",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "hook"
+  ],
+  "description": "Hook use-scroll-position de ReUI, utilisé par ses composants et ses exemples.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/hooks/use-scroll-position.ts",
+  "sourcePath": "registry-reui/bases/base/hooks/use-scroll-position.ts",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "hooks/use-scroll-position.ts",
+      "role": "source",
+      "target": "hooks/use-scroll-position.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Hook sans rendu"
+  },
+  "contentHash": "0f80ce0b4a11bea6",
+  "importedAt": "2026-11-10T13:25:17.111Z"
+}

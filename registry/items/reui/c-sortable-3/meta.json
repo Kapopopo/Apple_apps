@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-sortable-3",
+  "name": "Sortable list of items with nested layout",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "exemple",
+    "nested layout",
+    "sortable"
+  ],
+  "description": "Sortable list of items with nested layout. Built by composing Card, Sortable.",
+  "framework": "react",
+  "dependencies": [
+    "sonner"
+  ],
+  "registryDependencies": [
+    "reui/sortable",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/sortable/c-sortable-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/sortable/c-sortable-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/sortable/c-sortable-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/sortable/c-sortable-3.tsx"
+  },
+  "contentHash": "c9ad6837e6d76b39",
+  "importedAt": "2026-11-10T13:15:01.763Z"
+}

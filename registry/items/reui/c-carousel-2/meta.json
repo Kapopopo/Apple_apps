@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-carousel-2",
+  "name": "Vertical carousel orientation",
+  "type": "component",
+  "category": "Carrousels",
+  "tags": [
+    "carousel",
+    "exemple",
+    "vertical"
+  ],
+  "description": "Vertical carousel orientation. Built by composing Card, Carousel.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-carousel"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/carousel/c-carousel-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/carousel/c-carousel-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/carousel/c-carousel-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/carousel/c-carousel-2.tsx"
+  },
+  "contentHash": "574b2862d867401b",
+  "importedAt": "2026-11-10T13:13:08.370Z"
+}

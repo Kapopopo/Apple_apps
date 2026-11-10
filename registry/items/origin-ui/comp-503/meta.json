@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-503",
-  "name": "Calendar 503",
+  "name": "Enter time",
   "type": "component",
-  "category": "Calendriers",
+  "category": "Formulaires",
   "tags": [
     "calendar",
     "date",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-503.tsx"
   },
-  "contentHash": "52c33b116b92cf5a",
-  "importedAt": "2026-11-05T17:59:42.294Z"
+  "contentHash": "1c7b3bdcd761dc70",
+  "importedAt": "2026-11-05T17:59:42.294Z",
+  "updatedAt": "2026-11-10T13:12:56.698Z"
 }

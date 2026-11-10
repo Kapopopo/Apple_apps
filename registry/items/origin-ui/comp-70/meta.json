@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-70",
-  "name": "Label 70",
+  "name": "Textarea with button",
   "type": "component",
   "category": "Boutons",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-70.tsx"
   },
-  "contentHash": "dd330c9a493ffd14",
-  "importedAt": "2026-11-05T17:59:43.020Z"
+  "contentHash": "f3a5d54156ca3cf0",
+  "importedAt": "2026-11-05T17:59:43.020Z",
+  "updatedAt": "2026-11-10T13:12:56.947Z"
 }

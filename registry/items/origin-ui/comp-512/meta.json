@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-512",
-  "name": "Calendar 512",
+  "name": "Date range picker",
   "type": "component",
-  "category": "Calendriers",
+  "category": "Formulaires",
   "tags": [
     "button",
     "calendar",
@@ -43,6 +43,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-512.tsx"
   },
-  "contentHash": "fd5653dd9f1af1f6",
-  "importedAt": "2026-11-05T17:59:42.326Z"
+  "contentHash": "35d0fc831f398eb5",
+  "importedAt": "2026-11-05T17:59:42.326Z",
+  "updatedAt": "2026-11-10T13:12:56.724Z"
 }

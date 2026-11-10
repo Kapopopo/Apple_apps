@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-accordion-6",
+  "name": "Advanced accordion with custom icons and badges",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accordion",
+    "exemple",
+    "icons & badges"
+  ],
+  "description": "Advanced accordion with custom icons and badges. Built by composing Accordion, Badge.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-accordion"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/accordion/c-accordion-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/accordion/c-accordion-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/accordion/c-accordion-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/accordion/c-accordion-6.tsx"
+  },
+  "contentHash": "67dc183811ff2f27",
+  "importedAt": "2026-11-10T13:13:04.313Z"
+}

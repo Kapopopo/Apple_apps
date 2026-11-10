@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-236",
-  "name": "Label 236",
+  "name": "Multiple select (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-236.tsx"
   },
-  "contentHash": "2ad6f1e1ac049445",
-  "importedAt": "2026-11-05T17:59:40.964Z"
+  "contentHash": "8415ae79d1a0ac5f",
+  "importedAt": "2026-11-05T17:59:40.964Z",
+  "updatedAt": "2026-11-10T13:12:55.834Z"
 }

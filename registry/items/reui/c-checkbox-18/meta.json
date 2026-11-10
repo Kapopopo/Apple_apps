@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-checkbox-18",
+  "name": "Checkbox with label and tooltip info",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "checkbox",
+    "exemple",
+    "help icon tooltip"
+  ],
+  "description": "Checkbox with label and tooltip info. Built by composing Checkbox, Field, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-checkbox",
+    "reui/ui-field",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/checkbox/c-checkbox-18.tsx",
+  "sourcePath": "registry-reui/bases/base/components/checkbox/c-checkbox-18.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/checkbox/c-checkbox-18.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/checkbox/c-checkbox-18.tsx"
+  },
+  "contentHash": "90fb914a098a9a09",
+  "importedAt": "2026-11-10T13:14:53.352Z"
+}

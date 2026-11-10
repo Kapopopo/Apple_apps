@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-icon-stack-5",
+  "name": "Empty state illustration",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "empty state",
+    "exemple",
+    "icon-stack"
+  ],
+  "description": "Empty state illustration. Built by composing Button, Empty, Icon Stack.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/icon-stack",
+    "reui/ui-button",
+    "reui/ui-empty"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/icon-stack/c-icon-stack-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/icon-stack/c-icon-stack-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/icon-stack/c-icon-stack-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/icon-stack/c-icon-stack-5.tsx"
+  },
+  "contentHash": "01a578af6b929e7a",
+  "importedAt": "2026-11-10T13:14:57.017Z"
+}

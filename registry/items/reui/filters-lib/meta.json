@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-lib",
   "name": "Filters Lib",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -31,12 +31,11 @@
       "target": "components/reui/filters/filters-lib.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-lib.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "29ae3dbd64917e56",
+  "contentHash": "36e60c81937e7552",
   "importedAt": "2026-11-05T17:59:38.230Z",
-  "updatedAt": "2026-11-05T18:07:49.869Z"
+  "updatedAt": "2026-11-10T13:13:03.390Z"
 }

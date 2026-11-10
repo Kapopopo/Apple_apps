@@ -1,8 +1,8 @@
 {
   "id": "reui/gantt-recurrence",
   "name": "RFC 5545 subset recurrence expansion for the event calendar - structured rules or raw RRULE strings, with a hard occurrence cap.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -31,12 +31,11 @@
       "target": "components/reui/gantt/gantt-recurrence.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/gantt/gantt-recurrence.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "8ae04cb4ee523244",
+  "contentHash": "4c447049b96b7959",
   "importedAt": "2026-11-05T17:59:38.270Z",
-  "updatedAt": "2026-11-05T18:07:50.015Z"
+  "updatedAt": "2026-11-10T13:13:03.600Z"
 }

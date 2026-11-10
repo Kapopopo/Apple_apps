@@ -38,6 +38,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/wallet-card.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,8 +61,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/WalletCard.tsx"
+    "entry": "src/components/docs/detail/demos/items/wallet-card.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "02cc9b7570b6a934",
-  "importedAt": "2026-11-05T00:16:54.328Z"
+  "contentHash": "ba5c148be6e86bd6",
+  "importedAt": "2026-11-05T00:16:54.328Z",
+  "updatedAt": "2026-11-10T13:12:11.057Z"
 }

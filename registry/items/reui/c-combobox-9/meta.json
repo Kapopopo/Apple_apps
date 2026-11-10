@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-combobox-9",
+  "name": "A combobox with an icon addon",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "combobox",
+    "exemple",
+    "icon addon"
+  ],
+  "description": "A combobox with an icon addon. Built by composing Combobox, Field, Input Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-combobox",
+    "reui/ui-field",
+    "reui/ui-input-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/combobox/c-combobox-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/combobox/c-combobox-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/combobox/c-combobox-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/combobox/c-combobox-9.tsx"
+  },
+  "contentHash": "2c5749c45b7a70db",
+  "importedAt": "2026-11-10T13:14:54.049Z"
+}

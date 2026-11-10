@@ -1,0 +1,34 @@
+{
+  "id": "reui/use-copy-to-clipboard",
+  "name": "use-copy-to-clipboard",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "hook"
+  ],
+  "description": "Hook use-copy-to-clipboard de ReUI, utilisé par ses composants et ses exemples.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/hooks/use-copy-to-clipboard.ts",
+  "sourcePath": "registry-reui/bases/base/hooks/use-copy-to-clipboard.ts",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "hooks/use-copy-to-clipboard.ts",
+      "role": "source",
+      "target": "hooks/use-copy-to-clipboard.ts"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Hook sans rendu"
+  },
+  "contentHash": "ab037416263db251",
+  "importedAt": "2026-11-10T13:25:17.085Z"
+}

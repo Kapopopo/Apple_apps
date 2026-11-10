@@ -26,13 +26,19 @@
     {
       "path": "infinite-slider.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/infinite-slider/infinite-slider-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "infinite-slider.tsx"
+    "entry": "app/docs/infinite-slider/infinite-slider-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "697e8a15eceabd07",
-  "importedAt": "2026-11-05T17:59:30.346Z"
+  "contentHash": "12c8a40ffac39c90",
+  "importedAt": "2026-11-05T17:59:30.346Z",
+  "updatedAt": "2026-11-10T13:11:58.450Z"
 }

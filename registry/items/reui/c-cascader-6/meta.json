@@ -1,0 +1,76 @@
+{
+  "id": "reui/c-cascader-6",
+  "name": "Trigger path formatting and collapsing.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "cascader",
+    "exemple",
+    "path formatting"
+  ],
+  "description": "Trigger path formatting and collapsing. Built by composing Button, Cascader, Cascader Item, Cascader Nav, Cascader Types and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/ui-button",
+    "reui/ui-toggle-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-6.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/discord.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/dropbox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/githubDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/githubLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/googleDrive.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/loom.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/slack.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/stripe.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/svgs/zoom.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-6.tsx"
+  },
+  "contentHash": "3453f23ee26aded7",
+  "importedAt": "2026-11-10T13:14:52.636Z"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-emoji-picker-3",
+  "name": "Message reactions",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "emoji-picker",
+    "exemple",
+    "message reactions"
+  ],
+  "description": "Message reactions. Built by composing Avatar, Button, Emoji Picker, Item, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/emoji-picker",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-item",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/emoji-picker/c-emoji-picker-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/emoji-picker/c-emoji-picker-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/emoji-picker/c-emoji-picker-3.tsx"
+  },
+  "contentHash": "4eeca180fd547ab5",
+  "importedAt": "2026-11-10T13:14:55.490Z"
+}

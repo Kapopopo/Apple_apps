@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-select-32",
+  "name": "Select with icon-labeled categories",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "category icons",
+    "exemple",
+    "select"
+  ],
+  "description": "Select with icon-labeled categories. Built by composing Field, Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/select/c-select-32.tsx",
+  "sourcePath": "registry-reui/bases/base/components/select/c-select-32.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/select/c-select-32.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/select/c-select-32.tsx"
+  },
+  "contentHash": "f19339f34e7f92ed",
+  "importedAt": "2026-11-10T13:15:00.804Z"
+}

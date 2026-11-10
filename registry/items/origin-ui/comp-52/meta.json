@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-52",
-  "name": "Input 52",
+  "name": "Read-only input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-52.tsx"
   },
-  "contentHash": "009bf3fd2afba057",
-  "importedAt": "2026-11-05T17:59:42.352Z"
+  "contentHash": "d6305ccb3b344322",
+  "importedAt": "2026-11-05T17:59:42.352Z",
+  "updatedAt": "2026-11-10T13:12:56.734Z"
 }

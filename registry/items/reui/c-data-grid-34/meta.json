@@ -1,0 +1,47 @@
+{
+  "id": "reui/c-data-grid-34",
+  "name": "Data grid with server side pagination",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "data-grid",
+    "exemple",
+    "server-side pagination"
+  ],
+  "description": "Data grid with server side pagination. Built by composing Avatar, Badge, Button, Card, Data Grid and 7 more.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/data-grid",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-input",
+    "reui/ui-select",
+    "reui/ui-skeleton"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/data-grid/c-data-grid-34.tsx",
+  "sourcePath": "registry-reui/bases/base/components/data-grid/c-data-grid-34.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/data-grid/c-data-grid-34.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/data-grid/c-data-grid-34.tsx"
+  },
+  "contentHash": "f82b8a66aeb7c584",
+  "importedAt": "2026-11-10T13:14:54.943Z"
+}

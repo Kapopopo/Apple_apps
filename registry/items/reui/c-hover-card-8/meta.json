@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-hover-card-8",
+  "name": "Hover card with paginated release notes",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "exemple",
+    "hover-card",
+    "release notes",
+    "survol"
+  ],
+  "description": "Hover card with paginated release notes. Built by composing Badge, Button, Hover Card.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-button",
+    "reui/ui-hover-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/hover-card/c-hover-card-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/hover-card/c-hover-card-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/hover-card/c-hover-card-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/hover-card/c-hover-card-8.tsx"
+  },
+  "contentHash": "eb2ad3b40c41864b",
+  "importedAt": "2026-11-10T13:14:56.971Z"
+}

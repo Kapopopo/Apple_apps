@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-242",
-  "name": "Slider 242",
+  "name": "Slider with square thumb",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-242.tsx"
   },
-  "contentHash": "2a56aab9122dfbf2",
-  "importedAt": "2026-11-05T17:59:40.984Z"
+  "contentHash": "74d85addea27243d",
+  "importedAt": "2026-11-05T17:59:40.984Z",
+  "updatedAt": "2026-11-10T13:12:55.894Z"
 }

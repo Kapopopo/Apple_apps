@@ -25,13 +25,19 @@
     {
       "path": "image-comparison.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/image-comparison/image-comparison-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "image-comparison.tsx"
+    "entry": "app/docs/image-comparison/image-comparison-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "7d3d5a04cecad07f",
-  "importedAt": "2026-11-05T17:59:30.341Z"
+  "contentHash": "87c7cc38167a33ed",
+  "importedAt": "2026-11-05T17:59:30.341Z",
+  "updatedAt": "2026-11-10T13:11:58.412Z"
 }

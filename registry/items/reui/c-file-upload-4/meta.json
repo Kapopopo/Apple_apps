@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-file-upload-4",
+  "name": "Gallery file upload",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "file-upload",
+    "gallery"
+  ],
+  "description": "Gallery file upload. Built by composing Alert, Button, Dialog, Spinner, Use File Upload.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/alert",
+    "reui/ui-button",
+    "reui/ui-dialog",
+    "reui/ui-spinner",
+    "reui/use-file-upload"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-upload/c-file-upload-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-upload/c-file-upload-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-upload/c-file-upload-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-upload/c-file-upload-4.tsx"
+  },
+  "contentHash": "b76dc6d1b44b4367",
+  "importedAt": "2026-11-10T13:14:56.271Z",
+  "updatedAt": "2026-11-10T13:25:21.599Z"
+}

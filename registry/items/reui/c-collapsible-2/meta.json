@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-collapsible-2",
+  "name": "Collapsible with checkbox settings",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "checkbox settings",
+    "collapsible",
+    "exemple"
+  ],
+  "description": "Collapsible with checkbox settings. Built by composing Button, Card, Checkbox, Collapsible, Field.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-checkbox",
+    "reui/ui-collapsible",
+    "reui/ui-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/collapsible/c-collapsible-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/collapsible/c-collapsible-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/collapsible/c-collapsible-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/collapsible/c-collapsible-2.tsx"
+  },
+  "contentHash": "ba12ea7a8de6ec36",
+  "importedAt": "2026-11-10T13:14:53.710Z"
+}

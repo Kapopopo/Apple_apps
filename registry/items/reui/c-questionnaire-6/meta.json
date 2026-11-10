@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-questionnaire-6",
+  "name": "A rule that sends you back",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "cross-question rule",
+    "exemple",
+    "questionnaire"
+  ],
+  "description": "A rule that sends you back. Built by composing Button, Card, Questionnaire.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-questionnaire"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/questionnaire/c-questionnaire-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/questionnaire/c-questionnaire-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/questionnaire/c-questionnaire-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/questionnaire/c-questionnaire-6.tsx"
+  },
+  "contentHash": "ffce0b2ac4de782e",
+  "importedAt": "2026-11-10T13:14:59.805Z"
+}

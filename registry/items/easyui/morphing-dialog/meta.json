@@ -44,6 +44,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/morphing-dialog.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,8 +67,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/MorphingDialog.tsx"
+    "entry": "src/components/docs/detail/demos/items/morphing-dialog.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "5f08480f197c8c96",
-  "importedAt": "2026-11-05T00:16:52.855Z"
+  "contentHash": "f6c55aa7cdb719ed",
+  "importedAt": "2026-11-05T00:16:52.855Z",
+  "updatedAt": "2026-11-10T13:12:07.395Z"
 }

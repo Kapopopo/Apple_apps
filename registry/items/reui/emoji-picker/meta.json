@@ -10,13 +10,13 @@
   "framework": "react",
   "dependencies": [],
   "registryDependencies": [
-    "shadcn/button",
-    "shadcn/dropdown-menu",
-    "shadcn/empty",
-    "shadcn/input-group",
-    "shadcn/popover",
-    "shadcn/skeleton",
-    "shadcn/tabs"
+    "reui/ui-button",
+    "reui/ui-dropdown-menu",
+    "reui/ui-empty",
+    "reui/ui-input-group",
+    "reui/ui-popover",
+    "reui/ui-skeleton",
+    "reui/ui-tabs"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -31,14 +31,27 @@
       "path": "components/reui/emoji-picker.tsx",
       "role": "source",
       "target": "components/reui/emoji-picker.tsx"
+    },
+    {
+      "path": "components/emoji-picker/c-emoji-picker-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/emoji-picker/c-emoji-picker-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/emoji-picker/c-emoji-picker-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/emoji-picker.tsx"
+    "entry": "components/emoji-picker/c-emoji-picker-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "41e3129dcb2abacf",
+  "contentHash": "2c1049c1a8a57612",
   "importedAt": "2026-11-05T17:59:38.135Z",
-  "updatedAt": "2026-11-05T18:07:49.764Z"
+  "updatedAt": "2026-11-10T13:13:03.048Z"
 }

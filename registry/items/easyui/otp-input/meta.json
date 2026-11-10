@@ -38,6 +38,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/otp-input.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,8 +61,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/OtpInput.tsx"
+    "entry": "src/components/docs/detail/demos/items/otp-input.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "7e596de929216dda",
-  "importedAt": "2026-11-05T00:16:53.221Z"
+  "contentHash": "91784963a2740e03",
+  "importedAt": "2026-11-05T00:16:53.221Z",
+  "updatedAt": "2026-11-10T13:12:08.106Z"
 }

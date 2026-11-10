@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-attachment-4",
+  "name": "Three sizes carrying three levels of an answer",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "3d",
+    "attachment",
+    "exemple",
+    "three sizes",
+    "webgl"
+  ],
+  "description": "Three sizes carrying three levels of an answer. Built with the Attachment component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-attachment"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/attachment/c-attachment-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/attachment/c-attachment-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/attachment/c-attachment-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/attachment/c-attachment-4.tsx"
+  },
+  "contentHash": "b5ada83dfacd6a3e",
+  "importedAt": "2026-11-10T13:13:05.043Z"
+}

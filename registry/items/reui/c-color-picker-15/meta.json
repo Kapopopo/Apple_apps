@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-color-picker-15",
+  "name": "Form field with validation",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "color-picker",
+    "exemple",
+    "form validation"
+  ],
+  "description": "Form field with validation. Built by composing Button, Color Picker, Field.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/color-picker",
+    "reui/ui-button",
+    "reui/ui-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/color-picker/c-color-picker-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/color-picker/c-color-picker-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/color-picker/c-color-picker-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/color-picker/c-color-picker-15.tsx"
+  },
+  "contentHash": "01bfb0db9da6348b",
+  "importedAt": "2026-11-10T13:14:53.949Z"
+}

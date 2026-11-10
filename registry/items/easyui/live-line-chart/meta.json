@@ -46,6 +46,26 @@
       "target": "lib/dashboard-chart-utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/live-line-chart.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/chart-demo-data.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -53,8 +73,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/LiveLineChart.tsx"
+    "entry": "src/components/docs/detail/demos/items/live-line-chart.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "fb8d9d20433b517d",
-  "importedAt": "2026-11-05T00:16:52.630Z"
+  "contentHash": "812e0dd162dabbd7",
+  "importedAt": "2026-11-05T00:16:52.630Z",
+  "updatedAt": "2026-11-10T13:12:07.054Z"
 }

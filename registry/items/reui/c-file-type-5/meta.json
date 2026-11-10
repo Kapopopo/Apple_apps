@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-file-type-5",
+  "name": "All formats",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "all formats",
+    "exemple",
+    "file-type"
+  ],
+  "description": "All formats. Built by composing File Type, Tabs.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/file-type",
+    "reui/ui-tabs"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-type/c-file-type-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-type/c-file-type-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-type/c-file-type-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-type/c-file-type-5.tsx"
+  },
+  "contentHash": "e78a0629a3a15a62",
+  "importedAt": "2026-11-10T13:14:56.067Z"
+}

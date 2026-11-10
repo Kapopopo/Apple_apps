@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-08",
-  "name": "Input 08",
+  "name": "Disabled input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-08.tsx"
   },
-  "contentHash": "df2969da6e17b647",
-  "importedAt": "2026-11-05T17:59:40.472Z"
+  "contentHash": "12d9e7149c0be22e",
+  "importedAt": "2026-11-05T17:59:40.472Z",
+  "updatedAt": "2026-11-10T13:12:55.029Z"
 }

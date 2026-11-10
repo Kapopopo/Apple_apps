@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-drawer-2",
+  "name": "A drawer that opens from the right side",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "drawer",
+    "exemple",
+    "right side"
+  ],
+  "description": "A drawer that opens from the right side. Built by composing Button, Drawer.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-drawer"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/drawer/c-drawer-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/drawer/c-drawer-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/drawer/c-drawer-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/drawer/c-drawer-2.tsx"
+  },
+  "contentHash": "2a4045a5dccb2564",
+  "importedAt": "2026-11-10T13:14:55.126Z"
+}

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-248",
-  "name": "Slider 248",
+  "name": "Slider with labels",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-248.tsx"
   },
-  "contentHash": "bd22f3ea4b6017c7",
-  "importedAt": "2026-11-05T17:59:41.002Z"
+  "contentHash": "340b8887f7650f46",
+  "importedAt": "2026-11-05T17:59:41.002Z",
+  "updatedAt": "2026-11-10T13:12:55.941Z"
 }

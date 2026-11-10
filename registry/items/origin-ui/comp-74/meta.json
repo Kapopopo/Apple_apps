@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-74",
-  "name": "Label 74",
+  "name": "Textarea with characters left",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-74.tsx"
   },
-  "contentHash": "70e26ab95a4b5084",
-  "importedAt": "2026-11-05T17:59:43.038Z"
+  "contentHash": "c3351edc8d286001",
+  "importedAt": "2026-11-05T17:59:43.038Z",
+  "updatedAt": "2026-11-10T13:12:56.963Z"
 }

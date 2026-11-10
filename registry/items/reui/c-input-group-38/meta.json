@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-input-group-38",
+  "name": "Company search input with region selector",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "company search",
+    "exemple",
+    "input-group"
+  ],
+  "description": "Company search input with region selector. Built by composing Dropdown Menu, Field, Input Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-dropdown-menu",
+    "reui/ui-field",
+    "reui/ui-input-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input-group/c-input-group-38.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input-group/c-input-group-38.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input-group/c-input-group-38.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input-group/c-input-group-38.tsx"
+  },
+  "contentHash": "ea8dd2bfd38645ad",
+  "importedAt": "2026-11-10T13:14:58.046Z"
+}

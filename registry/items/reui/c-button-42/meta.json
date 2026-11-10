@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-button-42",
+  "name": "Icon-only copy button with feedback",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "exemple",
+    "icon copy"
+  ],
+  "description": "Icon-only copy button with feedback. Built by composing Button, Tooltip, Use Copy To Clipboard.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-tooltip",
+    "reui/use-copy-to-clipboard"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button/c-button-42.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button/c-button-42.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button/c-button-42.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button/c-button-42.tsx"
+  },
+  "contentHash": "2dd907434478139e",
+  "importedAt": "2026-11-10T13:13:06.749Z",
+  "updatedAt": "2026-11-10T13:25:18.922Z"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-phone-input-8",
+  "name": "Read-only phone input",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "phone-input",
+    "read-only"
+  ],
+  "description": "Read-only phone input. Built with the Phone Input component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/phone-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/phone-input/c-phone-input-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/phone-input/c-phone-input-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/phone-input/c-phone-input-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/phone-input/c-phone-input-8.tsx"
+  },
+  "contentHash": "3c0df2e34d9f2a94",
+  "importedAt": "2026-11-10T13:14:59.318Z"
+}

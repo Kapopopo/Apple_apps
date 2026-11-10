@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-popover-10",
+  "name": "Popover with controls",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "controls",
+    "exemple",
+    "popover"
+  ],
+  "description": "Popover with controls. Built by composing Button, Popover, Slider, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-popover",
+    "reui/ui-slider",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/popover/c-popover-10.tsx",
+  "sourcePath": "registry-reui/bases/base/components/popover/c-popover-10.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/popover/c-popover-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/popover/c-popover-10.tsx"
+  },
+  "contentHash": "b022a429a2e09420",
+  "importedAt": "2026-11-10T13:14:59.571Z"
+}

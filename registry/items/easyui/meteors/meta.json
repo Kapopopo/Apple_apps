@@ -38,6 +38,30 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/meteors.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,8 +69,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Meteors.tsx"
+    "entry": "src/components/docs/detail/demos/items/meteors.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "fa30d2766e360169",
-  "importedAt": "2026-11-05T00:16:52.765Z"
+  "contentHash": "37f1ecc011048433",
+  "importedAt": "2026-11-05T00:16:52.765Z",
+  "updatedAt": "2026-11-10T13:12:07.229Z"
 }

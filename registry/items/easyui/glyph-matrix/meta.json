@@ -36,6 +36,34 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/glyph-matrix.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/glyph-matrix.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -43,9 +71,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/GlyphMatrix.tsx"
+    "entry": "src/components/docs/detail/demos/items/glyph-matrix.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "13bf8c837f3dbeb6",
+  "contentHash": "7632f39554f02fbd",
   "importedAt": "2026-11-05T00:16:52.440Z",
-  "updatedAt": "2026-11-05T00:19:19.910Z"
+  "updatedAt": "2026-11-10T13:12:06.707Z"
 }

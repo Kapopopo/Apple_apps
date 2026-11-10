@@ -1,0 +1,46 @@
+{
+  "id": "reui/c-autocomplete-12",
+  "name": "Form integration",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "autocomplete",
+    "exemple",
+    "form integration"
+  ],
+  "description": "Form integration. Built by composing Alert, Autocomplete, Button, Field.",
+  "framework": "react",
+  "dependencies": [
+    "@hookform/resolvers",
+    "react-hook-form",
+    "sonner",
+    "zod"
+  ],
+  "registryDependencies": [
+    "reui/autocomplete",
+    "reui/ui-alert",
+    "reui/ui-button",
+    "reui/ui-field"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/autocomplete/c-autocomplete-12.tsx",
+  "sourcePath": "registry-reui/bases/base/components/autocomplete/c-autocomplete-12.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/autocomplete/c-autocomplete-12.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/autocomplete/c-autocomplete-12.tsx"
+  },
+  "contentHash": "a502792528f5997b",
+  "importedAt": "2026-11-10T13:13:05.212Z"
+}

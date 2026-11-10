@@ -39,6 +39,34 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/skeleton.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/skeleton.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +74,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/skeleton.tsx"
+    "entry": "src/components/docs/detail/demos/items/skeleton.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "0b2d509dc5464b40",
-  "importedAt": "2026-11-05T00:16:53.704Z"
+  "contentHash": "0830a75c9f70048f",
+  "importedAt": "2026-11-05T00:16:53.704Z",
+  "updatedAt": "2026-11-10T13:12:09.614Z"
 }

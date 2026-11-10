@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-native-select-1",
+  "name": "Basic native select.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "basic",
+    "exemple",
+    "native-select"
+  ],
+  "description": "Basic native select. Built with the Native Select component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-native-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/native-select/c-native-select-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/native-select/c-native-select-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/native-select/c-native-select-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/native-select/c-native-select-1.tsx"
+  },
+  "contentHash": "0f6e383ef6e4aaca",
+  "importedAt": "2026-11-10T13:14:58.908Z"
+}

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-227",
-  "name": "Label 227",
+  "name": "Options with placeholder avatar",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "label",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-227.tsx"
   },
-  "contentHash": "ccf023799aef9cdf",
-  "importedAt": "2026-11-05T17:59:40.936Z"
+  "contentHash": "5a7328ee29fcd659",
+  "importedAt": "2026-11-05T17:59:40.936Z",
+  "updatedAt": "2026-11-10T13:12:55.734Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-45",
-  "name": "Input 45",
+  "name": "OTP input double",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-45.tsx"
   },
-  "contentHash": "16569e10270fa1ff",
-  "importedAt": "2026-11-05T17:59:42.089Z"
+  "contentHash": "e1e006ab0619f725",
+  "importedAt": "2026-11-05T17:59:42.089Z",
+  "updatedAt": "2026-11-10T13:12:56.567Z"
 }

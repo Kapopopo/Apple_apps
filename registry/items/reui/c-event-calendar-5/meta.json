@@ -1,0 +1,44 @@
+{
+  "id": "reui/c-event-calendar-5",
+  "name": "Event calendar with drag-to-book appointments",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "drag",
+    "drag-to-book",
+    "event-calendar",
+    "exemple"
+  ],
+  "description": "Event calendar with drag-to-book appointments. Built by composing Avatar, Button, Card, Event Calendar, Event Calendar Content and 2 more.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/event-calendar",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/event-calendar/c-event-calendar-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/event-calendar/c-event-calendar-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/event-calendar/c-event-calendar-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/event-calendar/c-event-calendar-5.tsx"
+  },
+  "contentHash": "a13163e08dd132ed",
+  "importedAt": "2026-11-10T13:14:55.889Z"
+}

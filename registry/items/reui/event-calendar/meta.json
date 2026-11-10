@@ -25,12 +25,12 @@
     "reui/event-calendar-time-grid",
     "reui/event-calendar-types",
     "reui/icon-stack",
-    "shadcn/button",
-    "shadcn/calendar",
-    "shadcn/dropdown-menu",
-    "shadcn/popover",
-    "shadcn/scroll-area",
-    "shadcn/tooltip"
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-dropdown-menu",
+    "reui/ui-popover",
+    "reui/ui-scroll-area",
+    "reui/ui-tooltip"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -105,14 +105,27 @@
       "path": "components/reui/event-calendar/event-calendar.tsx",
       "role": "source",
       "target": "components/reui/event-calendar/event-calendar.tsx"
+    },
+    {
+      "path": "components/event-calendar/c-event-calendar-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/event-calendar/c-event-calendar-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/event-calendar/c-event-calendar-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+    "entry": "components/event-calendar/c-event-calendar-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "9b17145b86deda25",
+  "contentHash": "a5e9fb63a84c40ab",
   "importedAt": "2026-11-05T17:59:38.165Z",
-  "updatedAt": "2026-11-05T18:07:49.804Z"
+  "updatedAt": "2026-11-10T13:13:03.194Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-240",
-  "name": "Slider 240",
+  "name": "Simple slider",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-240.tsx"
   },
-  "contentHash": "f52051300d642860",
-  "importedAt": "2026-11-05T17:59:40.978Z"
+  "contentHash": "5329d72020bbe983",
+  "importedAt": "2026-11-05T17:59:40.978Z",
+  "updatedAt": "2026-11-10T13:12:55.878Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-table-dnd",
   "name": "Data Grid Table Dnd",
-  "type": "component",
-  "category": "Tableaux de données",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -17,7 +17,7 @@
   "registryDependencies": [
     "reui/data-grid",
     "reui/data-grid-table",
-    "shadcn/button"
+    "reui/ui-button"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -34,12 +34,11 @@
       "target": "components/reui/data-grid/data-grid-table-dnd.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-table-dnd.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "69613b5b6620aa6a",
+  "contentHash": "adad4f009d74fd1f",
   "importedAt": "2026-11-05T17:59:38.109Z",
-  "updatedAt": "2026-11-05T18:07:49.741Z"
+  "updatedAt": "2026-11-10T13:13:02.908Z"
 }

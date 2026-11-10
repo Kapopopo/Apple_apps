@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-button-group-2",
+  "name": "Button group with button followed by input",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button & input",
+    "button-group",
+    "exemple"
+  ],
+  "description": "Button group with button followed by input. Built by composing Button, Button Group, Input.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-button-group",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button-group/c-button-group-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button-group/c-button-group-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button-group/c-button-group-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button-group/c-button-group-2.tsx"
+  },
+  "contentHash": "82ec628d774195fc",
+  "importedAt": "2026-11-10T13:13:06.994Z"
+}

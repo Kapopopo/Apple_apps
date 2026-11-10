@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-button-group-24",
+  "name": "View switcher for dashboard layouts",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button-group",
+    "dashboard views",
+    "exemple"
+  ],
+  "description": "View switcher for dashboard layouts. Built by composing Button, Button Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-button-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button-group/c-button-group-24.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button-group/c-button-group-24.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button-group/c-button-group-24.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button-group/c-button-group-24.tsx"
+  },
+  "contentHash": "99b48698efefbeb9",
+  "importedAt": "2026-11-10T13:13:07.262Z"
+}

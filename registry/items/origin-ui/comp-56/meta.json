@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-56",
-  "name": "Input 56",
+  "name": "Input with tags",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-56.tsx"
   },
-  "contentHash": "b40d1e0d5e316ee3",
-  "importedAt": "2026-11-05T17:59:42.579Z"
+  "contentHash": "8405af51de9092e2",
+  "importedAt": "2026-11-05T17:59:42.579Z",
+  "updatedAt": "2026-11-10T13:12:56.788Z"
 }

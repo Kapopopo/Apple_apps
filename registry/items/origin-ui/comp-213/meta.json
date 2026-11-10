@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-213",
-  "name": "Label 213",
+  "name": "Select with options groups",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-213.tsx"
   },
-  "contentHash": "b21324c5fcb5bd3a",
-  "importedAt": "2026-11-05T17:59:40.890Z"
+  "contentHash": "bac15b43e3a44391",
+  "importedAt": "2026-11-05T17:59:40.890Z",
+  "updatedAt": "2026-11-10T13:12:55.628Z"
 }

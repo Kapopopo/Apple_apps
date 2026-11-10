@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-table-3",
+  "name": "Table in card with status badges.",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "exemple",
+    "status badges",
+    "table"
+  ],
+  "description": "Table in card with status badges. Built by composing Card, Table.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-table"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/table/c-table-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/table/c-table-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/table/c-table-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/table/c-table-3.tsx"
+  },
+  "contentHash": "adb7058d4ee365da",
+  "importedAt": "2026-11-10T13:15:02.833Z"
+}

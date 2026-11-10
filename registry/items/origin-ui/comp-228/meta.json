@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-228",
-  "name": "Label 228",
+  "name": "Options with portrait",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-228.tsx"
   },
-  "contentHash": "4ef5c971c00157a2",
-  "importedAt": "2026-11-05T17:59:40.939Z"
+  "contentHash": "0ae22d9b03364b97",
+  "importedAt": "2026-11-05T17:59:40.939Z",
+  "updatedAt": "2026-11-10T13:12:55.742Z"
 }

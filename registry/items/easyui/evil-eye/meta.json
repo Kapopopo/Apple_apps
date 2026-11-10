@@ -39,6 +39,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/evil-eye.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,9 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/EvilEye.tsx"
+    "entry": "src/components/docs/detail/demos/items/evil-eye.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "5b0d6635497f9d3f",
+  "contentHash": "a5305e05aea30f6e",
   "importedAt": "2026-11-05T00:16:52.215Z",
-  "updatedAt": "2026-11-05T00:19:19.882Z"
+  "updatedAt": "2026-11-10T13:12:06.414Z"
 }

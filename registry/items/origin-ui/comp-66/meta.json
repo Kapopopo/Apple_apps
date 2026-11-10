@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-66",
-  "name": "Label 66",
+  "name": "Shorter textarea",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-66.tsx"
   },
-  "contentHash": "2d5c7fb43878a9c4",
-  "importedAt": "2026-11-05T17:59:43.003Z"
+  "contentHash": "485a3f5b32d049ae",
+  "importedAt": "2026-11-05T17:59:43.003Z",
+  "updatedAt": "2026-11-10T13:12:56.917Z"
 }

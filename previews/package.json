@@ -117,7 +117,6 @@
     "three": "^0.187.0",
     "use-mask-input": "^3.14.3",
     "vaul": "^1.1.2",
-    "vgpu": "^0.6.0",
     "zod": "^4.6.7"
   },
   "devDependencies": {

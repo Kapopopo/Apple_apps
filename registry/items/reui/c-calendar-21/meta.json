@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-calendar-21",
+  "name": "Display 2 months with range picker",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "calendar",
+    "exemple",
+    "two month range"
+  ],
+  "description": "Display 2 months with range picker. Built by composing Calendar, Card.",
+  "framework": "react",
+  "dependencies": [
+    "react-day-picker"
+  ],
+  "registryDependencies": [
+    "reui/ui-calendar",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-21.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-21.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-21.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-21.tsx"
+  },
+  "contentHash": "f1d8ee1f7d84e286",
+  "importedAt": "2026-11-10T13:13:07.991Z"
+}

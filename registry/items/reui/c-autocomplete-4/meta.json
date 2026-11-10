@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-autocomplete-4",
+  "name": "Control with label",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "autocomplete",
+    "exemple",
+    "labeled"
+  ],
+  "description": "Control with label. Built by composing Autocomplete, Label.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/autocomplete",
+    "reui/ui-label"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/autocomplete/c-autocomplete-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/autocomplete/c-autocomplete-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/autocomplete/c-autocomplete-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/autocomplete/c-autocomplete-4.tsx"
+  },
+  "contentHash": "1b176c6715802dc6",
+  "importedAt": "2026-11-10T13:13:05.100Z"
+}

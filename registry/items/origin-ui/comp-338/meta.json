@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-338",
-  "name": "Accordion 338",
+  "name": "W/ icon and chevron",
   "type": "component",
-  "category": "FAQ",
+  "category": "Illustrations",
   "tags": [
     "accordion",
     "radix",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-338.tsx"
   },
-  "contentHash": "ff7daf86a62f35fd",
-  "importedAt": "2026-11-05T17:59:41.610Z"
+  "contentHash": "b2c39f06206b6408",
+  "importedAt": "2026-11-05T17:59:41.610Z",
+  "updatedAt": "2026-11-10T13:12:56.262Z"
 }

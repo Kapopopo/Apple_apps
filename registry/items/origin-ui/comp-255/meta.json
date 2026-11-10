@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-255",
-  "name": "Slider 255",
+  "name": "Slider with input",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -42,6 +42,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-255.tsx"
   },
-  "contentHash": "de00199b6f2dac0b",
-  "importedAt": "2026-11-05T17:59:41.038Z"
+  "contentHash": "c64ccb6ff8eadf02",
+  "importedAt": "2026-11-05T17:59:41.038Z",
+  "updatedAt": "2026-11-10T13:12:56.007Z"
 }

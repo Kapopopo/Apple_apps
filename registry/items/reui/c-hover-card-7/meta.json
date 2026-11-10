@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-hover-card-7",
+  "name": "Timestamp hover card with active relative time",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "exemple",
+    "hover-card",
+    "live timestamp",
+    "survol"
+  ],
+  "description": "Timestamp hover card with active relative time. Built by composing Badge, Hover Card, Separator.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-hover-card",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/hover-card/c-hover-card-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/hover-card/c-hover-card-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/hover-card/c-hover-card-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/hover-card/c-hover-card-7.tsx"
+  },
+  "contentHash": "a5223b93c99a3408",
+  "importedAt": "2026-11-10T13:14:56.954Z"
+}

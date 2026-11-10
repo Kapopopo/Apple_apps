@@ -55,6 +55,22 @@
       "target": "components/ui/form.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/login.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -62,8 +78,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Login.tsx"
+    "entry": "src/components/docs/detail/demos/items/login.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "c49c58ab8223c29c",
-  "importedAt": "2026-11-05T00:16:52.705Z"
+  "contentHash": "92c0cbdbbe9d9ddb",
+  "importedAt": "2026-11-05T00:16:52.705Z",
+  "updatedAt": "2026-11-10T13:12:07.145Z"
 }

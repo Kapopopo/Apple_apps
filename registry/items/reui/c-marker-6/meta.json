@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-marker-6",
+  "name": "Markers as links and as an action button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "exemple",
+    "links & action",
+    "marker"
+  ],
+  "description": "Markers as links and as an action button. Built with the Marker component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-marker"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/marker/c-marker-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/marker/c-marker-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/marker/c-marker-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/marker/c-marker-6.tsx"
+  },
+  "contentHash": "55b4052918b8bfa4",
+  "importedAt": "2026-11-10T13:14:58.652Z"
+}

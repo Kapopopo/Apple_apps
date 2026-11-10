@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-navigation-menu-3",
+  "name": "Navigation menu with icons.",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "navigation-menu",
+    "with icons"
+  ],
+  "description": "Navigation menu with icons. Built with the Navigation Menu component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-navigation-menu"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/navigation-menu/c-navigation-menu-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/navigation-menu/c-navigation-menu-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/navigation-menu/c-navigation-menu-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/navigation-menu/c-navigation-menu-3.tsx"
+  },
+  "contentHash": "905dddc416347a8d",
+  "importedAt": "2026-11-10T13:14:59.002Z"
+}

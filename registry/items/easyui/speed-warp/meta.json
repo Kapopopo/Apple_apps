@@ -37,6 +37,34 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/speed-warp.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/speed-warp.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -44,8 +72,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/SpeedWarp.tsx"
+    "entry": "src/components/docs/detail/demos/items/speed-warp.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "f915ec7b440f2623",
-  "importedAt": "2026-11-05T00:16:53.805Z"
+  "contentHash": "b34b61bcf8f3519e",
+  "importedAt": "2026-11-05T00:16:53.805Z",
+  "updatedAt": "2026-11-10T13:12:09.913Z"
 }

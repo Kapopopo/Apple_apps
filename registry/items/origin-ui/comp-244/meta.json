@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-244",
-  "name": "Slider 244",
+  "name": "Slider with tiny thumb",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-244.tsx"
   },
-  "contentHash": "d9ffe31a8b9cc111",
-  "importedAt": "2026-11-05T17:59:40.990Z"
+  "contentHash": "60427cc9ae4d7468",
+  "importedAt": "2026-11-05T17:59:40.990Z",
+  "updatedAt": "2026-11-10T13:12:55.911Z"
 }

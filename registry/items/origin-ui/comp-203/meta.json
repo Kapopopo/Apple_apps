@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-203",
-  "name": "Label 203",
+  "name": "Simple select with default value",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-203.tsx"
   },
-  "contentHash": "124bcddc2815642b",
-  "importedAt": "2026-11-05T17:59:40.853Z"
+  "contentHash": "f5e5efd470dc630a",
+  "importedAt": "2026-11-05T17:59:40.853Z",
+  "updatedAt": "2026-11-10T13:12:55.547Z"
 }

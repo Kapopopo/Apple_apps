@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-256",
-  "name": "Slider 256",
+  "name": "Rate your experience",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-256.tsx"
   },
-  "contentHash": "39849116a6ced64d",
-  "importedAt": "2026-11-05T17:59:41.042Z"
+  "contentHash": "7091c8016d745cc9",
+  "importedAt": "2026-11-05T17:59:41.042Z",
+  "updatedAt": "2026-11-10T13:12:56.016Z"
 }

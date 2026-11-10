@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-native-select-4",
+  "name": "Native select embedded within a field.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "field with label",
+    "native-select"
+  ],
+  "description": "Native select embedded within a field. Built by composing Field, Native Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-native-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/native-select/c-native-select-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/native-select/c-native-select-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/native-select/c-native-select-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/native-select/c-native-select-4.tsx"
+  },
+  "contentHash": "f2e060a8b63c5881",
+  "importedAt": "2026-11-10T13:14:58.943Z"
+}

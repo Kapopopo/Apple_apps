@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-154",
-  "name": "Radio 154",
+  "name": "Option 1",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-154.tsx"
   },
-  "contentHash": "389060c30f438a4f",
-  "importedAt": "2026-11-05T17:59:40.682Z"
+  "contentHash": "42ff84b6df0c8a77",
+  "importedAt": "2026-11-05T17:59:40.682Z",
+  "updatedAt": "2026-11-10T13:12:55.210Z"
 }

@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/stretch-switch.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/StretchSwitch.tsx"
+    "entry": "src/components/docs/detail/demos/items/stretch-switch.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "3855b7d88f79bd6e",
-  "importedAt": "2026-11-05T00:16:53.994Z"
+  "contentHash": "bbec334af54308a5",
+  "importedAt": "2026-11-05T00:16:53.994Z",
+  "updatedAt": "2026-11-10T13:12:10.570Z"
 }

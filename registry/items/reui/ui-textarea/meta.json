@@ -1,0 +1,35 @@
+{
+  "id": "reui/ui-textarea",
+  "name": "Textarea (primitive ReUI)",
+  "type": "lib",
+  "category": "Utilitaires",
+  "tags": [
+    "primitive",
+    "base-ui"
+  ],
+  "description": "Primitive Base UI de ReUI (textarea) : utilisée par ses composants et ses exemples à la place de la version Radix de shadcn.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry/bases/base/ui/textarea.tsx",
+  "sourcePath": "registry/bases/base/ui/textarea.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/ui/textarea.tsx",
+      "role": "source",
+      "target": "components/ui/textarea.tsx"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Primitive sans rendu propre"
+  },
+  "contentHash": "94b76c012f5ceab1",
+  "importedAt": "2026-11-10T13:13:02.025Z"
+}

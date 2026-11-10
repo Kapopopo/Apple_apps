@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-select-11",
+  "name": "Select component inside a Dialog",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "in dialog",
+    "select"
+  ],
+  "description": "Select component inside a Dialog. Built by composing Button, Dialog, Field, Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-dialog",
+    "reui/ui-field",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/select/c-select-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/select/c-select-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/select/c-select-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/select/c-select-11.tsx"
+  },
+  "contentHash": "d3b919b7b27bced2",
+  "importedAt": "2026-11-10T13:15:00.506Z"
+}

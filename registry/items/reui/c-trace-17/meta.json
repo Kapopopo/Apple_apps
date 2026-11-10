@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-trace-17",
+  "name": "AI review findings",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "exemple",
+    "ia",
+    "review findings",
+    "trace"
+  ],
+  "description": "AI review findings. Built by composing Button, Code Block, Sheet, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/code-block",
+    "reui/ui-button",
+    "reui/ui-sheet",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-17.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-17.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-17.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-17.tsx"
+  },
+  "contentHash": "9478e7a2d722b018",
+  "importedAt": "2026-11-10T13:15:04.310Z"
+}

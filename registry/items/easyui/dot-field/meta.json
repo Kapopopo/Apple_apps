@@ -33,6 +33,22 @@
       "target": "components/ui/dot-field.css"
     },
     {
+      "path": "src/components/docs/detail/demos/items/dot-field.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -40,8 +56,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/DotField.tsx"
+    "entry": "src/components/docs/detail/demos/items/dot-field.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "14155d8632729326",
-  "importedAt": "2026-11-05T00:16:52.096Z"
+  "contentHash": "bbf2458de643dc1c",
+  "importedAt": "2026-11-05T00:16:52.096Z",
+  "updatedAt": "2026-11-10T13:12:06.214Z"
 }

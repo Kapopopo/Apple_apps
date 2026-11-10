@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-resizable-7",
+  "name": "Handle with large capsule expansion on drag",
+  "type": "component",
+  "category": "Effets et interactions",
+  "tags": [
+    "capsule expansion",
+    "drag",
+    "exemple",
+    "resizable"
+  ],
+  "description": "Handle with large capsule expansion on drag. Built with the Resizable component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-resizable"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/resizable/c-resizable-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/resizable/c-resizable-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/resizable/c-resizable-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/resizable/c-resizable-7.tsx"
+  },
+  "contentHash": "d6e7806b3df94ae5",
+  "importedAt": "2026-11-10T13:15:00.239Z"
+}

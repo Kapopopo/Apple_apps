@@ -25,13 +25,19 @@
     {
       "path": "progressive-blur.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/progressive-blur/progressive-blur-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "progressive-blur.tsx"
+    "entry": "app/docs/progressive-blur/progressive-blur-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "15fc9ba79e22beff",
-  "importedAt": "2026-11-05T17:59:30.360Z"
+  "contentHash": "93b43ae0c4f9b394",
+  "importedAt": "2026-11-05T17:59:30.360Z",
+  "updatedAt": "2026-11-10T13:11:58.526Z"
 }

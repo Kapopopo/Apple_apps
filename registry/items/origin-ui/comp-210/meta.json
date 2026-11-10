@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-210",
-  "name": "Label 210",
+  "name": "Disabled select",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-210.tsx"
   },
-  "contentHash": "b784eab9daa6424e",
-  "importedAt": "2026-11-05T17:59:40.881Z"
+  "contentHash": "87fb4d8df5a51b8f",
+  "importedAt": "2026-11-05T17:59:40.881Z",
+  "updatedAt": "2026-11-10T13:12:55.611Z"
 }

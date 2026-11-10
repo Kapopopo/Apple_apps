@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-avatar-34",
+  "name": "Avatar with multiple badges",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "avatar",
+    "exemple",
+    "multiple badges"
+  ],
+  "description": "Avatar with multiple badges. Built with the Avatar component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-avatar"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/avatar/c-avatar-34.tsx",
+  "sourcePath": "registry-reui/bases/base/components/avatar/c-avatar-34.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/avatar/c-avatar-34.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/avatar/c-avatar-34.tsx"
+  },
+  "contentHash": "5729a132cc6e1775",
+  "importedAt": "2026-11-10T13:13:05.641Z"
+}

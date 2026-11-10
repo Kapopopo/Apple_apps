@@ -44,6 +44,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/lock-input.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,8 +67,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/LockInput.tsx"
+    "entry": "src/components/docs/detail/demos/items/lock-input.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "3afdd7bfb622e690",
-  "importedAt": "2026-11-05T00:16:52.676Z"
+  "contentHash": "ad8c8e108a05c8c9",
+  "importedAt": "2026-11-05T00:16:52.676Z",
+  "updatedAt": "2026-11-10T13:12:07.112Z"
 }

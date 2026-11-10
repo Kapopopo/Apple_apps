@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-color-picker-7",
+  "name": "Format converter",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "color-picker",
+    "exemple",
+    "format converter"
+  ],
+  "description": "Format converter. Built by composing Card, Color Picker.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/color-picker",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/color-picker/c-color-picker-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/color-picker/c-color-picker-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/color-picker/c-color-picker-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/color-picker/c-color-picker-7.tsx"
+  },
+  "contentHash": "0b4ada085fec0321",
+  "importedAt": "2026-11-10T13:14:53.853Z"
+}

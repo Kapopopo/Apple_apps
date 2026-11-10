@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-filters-5",
+  "name": "A date and a date range editor",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "date editors",
+    "exemple",
+    "filters"
+  ],
+  "description": "A date and a date range editor. Built by composing Button, Calendar, Filters, Filters Date, Filters Query and 2 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/filters",
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/filters/c-filters-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/filters/c-filters-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/filters/c-filters-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/filters/c-filters-5.tsx"
+  },
+  "contentHash": "f4d0aebf8849afb1",
+  "importedAt": "2026-11-10T13:14:56.423Z"
+}

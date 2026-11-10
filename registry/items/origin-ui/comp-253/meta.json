@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-253",
-  "name": "Slider 253",
+  "name": "Slider with multiple thumbs",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-253.tsx"
   },
-  "contentHash": "42e6b0c35349d455",
-  "importedAt": "2026-11-05T17:59:41.031Z"
+  "contentHash": "257da06bc89d4060",
+  "importedAt": "2026-11-05T17:59:41.031Z",
+  "updatedAt": "2026-11-10T13:12:55.988Z"
 }

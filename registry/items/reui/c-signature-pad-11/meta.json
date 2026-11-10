@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-signature-pad-11",
+  "name": "Proof of delivery",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "proof of delivery",
+    "signature-pad"
+  ],
+  "description": "Proof of delivery. Built by composing Badge, Button, Card, Field, Input and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/signature-pad",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-field",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/signature-pad/c-signature-pad-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/signature-pad/c-signature-pad-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/signature-pad/c-signature-pad-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/signature-pad/c-signature-pad-11.tsx"
+  },
+  "contentHash": "0a04b92aa57edd48",
+  "importedAt": "2026-11-10T13:15:01.169Z"
+}

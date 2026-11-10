@@ -45,6 +45,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/button.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -52,8 +68,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Button.tsx"
+    "entry": "src/components/docs/detail/demos/items/button.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "5ec1567efb5f86bc",
-  "importedAt": "2026-11-05T00:16:51.740Z"
+  "contentHash": "621b89df93b1957b",
+  "importedAt": "2026-11-05T00:16:51.740Z",
+  "updatedAt": "2026-11-10T13:12:05.697Z"
 }

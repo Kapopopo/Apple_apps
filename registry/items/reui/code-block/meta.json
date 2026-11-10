@@ -14,7 +14,7 @@
   ],
   "registryDependencies": [
     "reui/code-block-highlight",
-    "shadcn/button"
+    "reui/ui-button"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -34,14 +34,27 @@
       "path": "components/reui/code-block/code-block.tsx",
       "role": "source",
       "target": "components/reui/code-block/code-block.tsx"
+    },
+    {
+      "path": "components/code-block/c-code-block-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/code-block/c-code-block-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/code-block/c-code-block-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/code-block/code-block-highlight.tsx"
+    "entry": "components/code-block/c-code-block-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "1273fb1ab7e7d174",
+  "contentHash": "6453b17aa5b28655",
   "importedAt": "2026-11-05T17:59:38.083Z",
-  "updatedAt": "2026-11-05T18:07:49.704Z"
+  "updatedAt": "2026-11-10T13:13:02.842Z"
 }

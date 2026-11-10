@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-column-header",
   "name": "Data Grid Column Header",
-  "type": "component",
-  "category": "Fonds",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -13,8 +13,8 @@
   ],
   "registryDependencies": [
     "reui/data-grid",
-    "shadcn/button",
-    "shadcn/dropdown-menu"
+    "reui/ui-button",
+    "reui/ui-dropdown-menu"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -31,12 +31,11 @@
       "target": "components/reui/data-grid/data-grid-column-header.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-column-header.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "131bfe03fefd709b",
+  "contentHash": "e64c9eeec3dd0477",
   "importedAt": "2026-11-05T17:59:38.095Z",
-  "updatedAt": "2026-11-05T18:07:49.721Z"
+  "updatedAt": "2026-11-10T13:13:02.882Z"
 }

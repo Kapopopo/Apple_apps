@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-156",
-  "name": "Radio 156",
+  "name": "Radio with expansion",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-156.tsx"
   },
-  "contentHash": "a3fb082f5566231e",
-  "importedAt": "2026-11-05T17:59:40.688Z"
+  "contentHash": "b5d01953e370ab16",
+  "importedAt": "2026-11-05T17:59:40.688Z",
+  "updatedAt": "2026-11-10T13:12:55.218Z"
 }

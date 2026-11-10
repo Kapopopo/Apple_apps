@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-input-group-22",
+  "name": "Input group with popover trigger addon",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "input-group",
+    "popover trigger"
+  ],
+  "description": "Input group with popover trigger addon. Built by composing Field, Input Group, Popover.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-input-group",
+    "reui/ui-popover"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input-group/c-input-group-22.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input-group/c-input-group-22.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input-group/c-input-group-22.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input-group/c-input-group-22.tsx"
+  },
+  "contentHash": "5eb20304a92bc7a5",
+  "importedAt": "2026-11-10T13:14:57.844Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-table-5",
+  "name": "Table with interactive elements.",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "exemple",
+    "interactive rows",
+    "table"
+  ],
+  "description": "Table with interactive elements. Built by composing Card, Input, Table.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-card",
+    "reui/ui-input",
+    "reui/ui-table"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/table/c-table-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/table/c-table-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/table/c-table-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/table/c-table-5.tsx"
+  },
+  "contentHash": "b8fadab188f89a51",
+  "importedAt": "2026-11-10T13:15:02.859Z"
+}

@@ -1,8 +1,8 @@
 {
   "id": "reui/cascader-async",
   "name": "Cascader Async",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -30,12 +30,11 @@
       "target": "components/reui/cascader/cascader-async.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/cascader/cascader-async.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "e9f52878fc8f15d3",
+  "contentHash": "92b42ccf6b5de064",
   "importedAt": "2026-11-05T17:59:38.036Z",
-  "updatedAt": "2026-11-05T18:07:49.658Z"
+  "updatedAt": "2026-11-10T13:13:02.733Z"
 }

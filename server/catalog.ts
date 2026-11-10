@@ -4,7 +4,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { DATA } from '../shared/paths.js';
+import { DATA, REGISTRY } from '../shared/paths.js';
 import { hydrate, loadIndex } from '../shared/registry.js';
 import type { IndexEntry } from '../shared/schema.js';
 import { loadAudit, previewsBuilt, previewState, thumbUrl } from '../shared/interactive.js';
@@ -13,6 +13,14 @@ import { normalize, VOCAB } from '../shared/taxonomy.js';
 export const readIndex = () => loadIndex();
 
 export interface EnrichedEntry extends IndexEntry { interactive: boolean; previewState: string; thumb?: string }
+
+/** Dernière vérification des sources (npm run outdated) : sources qui ont publié depuis leur commit verrouillé. */
+function updates(): { checkedAt: string; behind: string[] } | null {
+  try {
+    const raw = JSON.parse(fs.readFileSync(path.join(REGISTRY, '_updates.json'), 'utf8'));
+    return { checkedAt: String(raw.checkedAt ?? ''), behind: Array.isArray(raw.behind) ? raw.behind.filter((x: unknown) => typeof x === 'string') : [] };
+  } catch { return null; }
+}
 
 /** Index pour le builder : chaque item avec son état d'aperçu et sa vignette. */
 export function registryPayload() {
@@ -23,7 +31,7 @@ export function registryPayload() {
     const thumb = state === 'interactive' ? thumbUrl(e, audit) : undefined;
     return { ...e, interactive: state === 'interactive', previewState: state, ...(thumb ? { thumb } : {}) };
   });
-  return { generatedAt: index.generatedAt, count: items.length, previewsBuilt: built, audited: !!audit, sources: index.sources, items };
+  return { generatedAt: index.generatedAt, count: items.length, previewsBuilt: built, audited: !!audit, updates: updates(), sources: index.sources, items };
 }
 
 interface Curated { id: string; demo: string; category: string; interaction: string; usage: string; reason: string; source_url: string; code_source: string; license: string; integration: string }

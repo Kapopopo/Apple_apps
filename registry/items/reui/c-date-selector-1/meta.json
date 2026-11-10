@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-date-selector-1",
+  "name": "Basic date selector",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "basic inline",
+    "date-selector",
+    "exemple"
+  ],
+  "description": "Basic date selector. Built by composing Card, Date Selector.",
+  "framework": "react",
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "reui/date-selector",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/date-selector/c-date-selector-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/date-selector/c-date-selector-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/date-selector/c-date-selector-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/date-selector/c-date-selector-1.tsx"
+  },
+  "contentHash": "320ecc3cab3c098d",
+  "importedAt": "2026-11-10T13:14:54.948Z"
+}

@@ -60,3 +60,30 @@ test('easings : cubic-bezier + fonctions JS cohérentes', async () => {
   const index = buildIndex();
   assert.ok(index.some((e) => e.id === 'atlas/easings-standard' && e.type === 'easing'));
 });
+
+test('easings : ressorts (linear() + durée) et durées de référence', () => {
+  const tokens = easingTokens();
+  const snappy = tokens.find((t) => t.name === 'springSnappy')!;
+  assert.equal(snappy.kind, 'spring');
+  assert.deepEqual(snappy.spring, { stiffness: 400, damping: 30, mass: 1 });
+  assert.match(snappy.css, /^linear\(0, [\d., ]+, 1\)$/);
+  assert.ok(snappy.durationMs! > 100 && snappy.durationMs! < 1500);
+  assert.equal(tokens.find((t) => t.name === 'durationBase')!.css, '200ms');
+  assert.match(generateTs(), /export const spring = \{[\s\S]*snappy: \{ stiffness: 400/);
+});
+
+test('démos de route : registre paresseux rendu statique, limité aux entrées utilisées', async () => {
+  const { lazyEntries, usedKeys, staticRegistry, labelOf } = await import('../../importers/github.js');
+  const registry = "export const DEMO_COMPONENTS = {\n  Button: lazyNamed(() => import('../../ui/Button'), 'Button'),\n  Card: lazyNamed(() => import('../../ui/Card'), 'GlassCard'),\n  Alert: lazyWithPreload(() => import('./demos/alert.demo'), 'default'),\n};";
+  const entries = lazyEntries(registry);
+  assert.deepEqual([...entries.keys()], ['Button', 'Card', 'Alert']);
+  const keys = usedKeys('const { Button, Card: Glass } = DEMO_COMPONENTS;\nDEMO_COMPONENTS.Alert.preload();', 'DEMO_COMPONENTS');
+  assert.deepEqual([...keys].sort(), ['Alert', 'Button', 'Card']);
+  const code = staticRegistry('DEMO_COMPONENTS', entries, new Set(['Button', 'Card']));
+  assert.match(code, /import \{ Button \} from '\.\.\/\.\.\/ui\/Button';/);
+  assert.match(code, /import \{ GlassCard as Card \} from '\.\.\/\.\.\/ui\/Card';/);
+  assert.match(code, /export const DEMO_COMPONENTS = \{ Button, Card \} as const;/);
+  assert.ok(!code.includes('alert.demo'), 'entrée inutilisée absente');
+  assert.equal(labelOf('<Label htmlFor={id}>Simple input</Label>'), 'Simple input');
+  assert.equal(labelOf('<div>{x}</div>'), undefined);
+});

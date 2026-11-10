@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-137",
-  "name": "Checkbox 137",
+  "name": "Fancy todo item",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Listes et tâches",
   "tags": [
     "checkbox",
     "label",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-137.tsx"
   },
-  "contentHash": "01db03fb561acbc4",
-  "importedAt": "2026-11-05T17:59:40.628Z"
+  "contentHash": "c0c66f311a56d2fb",
+  "importedAt": "2026-11-05T17:59:40.628Z",
+  "updatedAt": "2026-11-10T13:12:55.135Z"
 }

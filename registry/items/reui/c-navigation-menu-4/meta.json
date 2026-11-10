@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-navigation-menu-4",
+  "name": "Navigation menu with grid layout and learn more button.",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "exemple",
+    "learn more button",
+    "navigation-menu"
+  ],
+  "description": "Navigation menu with grid layout and learn more button. Built by composing Button, Navigation Menu.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-navigation-menu"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/navigation-menu/c-navigation-menu-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/navigation-menu/c-navigation-menu-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/navigation-menu/c-navigation-menu-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/navigation-menu/c-navigation-menu-4.tsx"
+  },
+  "contentHash": "5a4a3f28969763c9",
+  "importedAt": "2026-11-10T13:14:59.018Z"
+}

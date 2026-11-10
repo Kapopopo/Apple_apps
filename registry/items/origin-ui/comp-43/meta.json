@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-43",
-  "name": "Input 43",
+  "name": "Date range picker (unavailable dates)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -46,6 +46,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-43.tsx"
   },
-  "contentHash": "a7853ded202842f6",
-  "importedAt": "2026-11-05T17:59:42.012Z"
+  "contentHash": "b7befd490cba7f38",
+  "importedAt": "2026-11-05T17:59:42.012Z",
+  "updatedAt": "2026-11-10T13:12:56.534Z"
 }

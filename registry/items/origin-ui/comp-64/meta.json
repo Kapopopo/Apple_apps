@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-64",
-  "name": "Label 64",
+  "name": "Textarea with error",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-64.tsx"
   },
-  "contentHash": "e9022766ddfcf643",
-  "importedAt": "2026-11-05T17:59:42.995Z"
+  "contentHash": "20b03605b14059b4",
+  "importedAt": "2026-11-05T17:59:42.995Z",
+  "updatedAt": "2026-11-10T13:12:56.898Z"
 }

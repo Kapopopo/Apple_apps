@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-table-2",
+  "name": "Table with footer.",
+  "type": "section",
+  "category": "Tableaux de données",
+  "tags": [
+    "exemple",
+    "table",
+    "with footer"
+  ],
+  "description": "Table with footer. Built with the Table component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-table"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/table/c-table-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/table/c-table-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/table/c-table-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/table/c-table-2.tsx"
+  },
+  "contentHash": "69e4db1b7005b33b",
+  "importedAt": "2026-11-10T13:15:02.820Z"
+}

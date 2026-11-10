@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-58",
-  "name": "Input 58",
+  "name": "OTP input (spaced)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-58.tsx"
   },
-  "contentHash": "0e0b0903714b55e9",
-  "importedAt": "2026-11-05T17:59:42.836Z"
+  "contentHash": "6f20c6251af6bae4",
+  "importedAt": "2026-11-05T17:59:42.836Z",
+  "updatedAt": "2026-11-10T13:12:56.817Z"
 }

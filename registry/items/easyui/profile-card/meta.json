@@ -39,6 +39,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/profile-card.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/ProfileCard.tsx"
+    "entry": "src/components/docs/detail/demos/items/profile-card.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "34d2a7db6f81a9ec",
-  "importedAt": "2026-11-05T00:16:53.429Z"
+  "contentHash": "66ea1fc4d9aa5568",
+  "importedAt": "2026-11-05T00:16:53.429Z",
+  "updatedAt": "2026-11-10T13:12:08.730Z"
 }

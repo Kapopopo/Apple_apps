@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-questionnaire-4",
+  "name": "Segmented progress with step labels",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "exemple",
+    "questionnaire",
+    "segmented progress"
+  ],
+  "description": "Segmented progress with step labels. Built by composing Button, Empty, Questionnaire.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-empty",
+    "reui/ui-questionnaire"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/questionnaire/c-questionnaire-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/questionnaire/c-questionnaire-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/questionnaire/c-questionnaire-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/questionnaire/c-questionnaire-4.tsx"
+  },
+  "contentHash": "0b5c7e5da6b5738a",
+  "importedAt": "2026-11-10T13:14:59.770Z"
+}

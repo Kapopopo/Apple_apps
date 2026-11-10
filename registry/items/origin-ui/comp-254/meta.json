@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-254",
-  "name": "Slider 254",
+  "name": "Temperature (slider)",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -50,6 +50,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-254.tsx"
   },
-  "contentHash": "c2675d526753c79f",
-  "importedAt": "2026-11-05T17:59:41.034Z"
+  "contentHash": "2f69cf1947c25aa6",
+  "importedAt": "2026-11-05T17:59:41.034Z",
+  "updatedAt": "2026-11-10T13:12:55.998Z"
 }

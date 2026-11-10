@@ -36,6 +36,34 @@
       "target": "components/ui/product-tour.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/product-tour.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/inline-demo-registry.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/product-tour.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-registry.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -43,9 +71,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/ProductTour.tsx"
+    "entry": "src/components/docs/detail/demos/items/product-tour.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "93608fc620dc5158",
+  "contentHash": "12681e29fbfc4485",
   "importedAt": "2026-11-05T00:16:53.414Z",
-  "updatedAt": "2026-11-05T00:19:20.012Z"
+  "updatedAt": "2026-11-10T13:12:08.679Z"
 }

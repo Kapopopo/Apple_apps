@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-51",
-  "name": "Input 51",
+  "name": "Input with password strength indicator",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-51.tsx"
   },
-  "contentHash": "047cfaddf7f0afdd",
-  "importedAt": "2026-11-05T17:59:42.317Z"
+  "contentHash": "0ad595fd11da44ca",
+  "importedAt": "2026-11-05T17:59:42.317Z",
+  "updatedAt": "2026-11-10T13:12:56.710Z"
 }

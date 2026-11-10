@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-330",
-  "name": "Dialog 330",
+  "name": "Essential (dialog)",
   "type": "component",
   "category": "Fenêtres et panneaux",
   "tags": [
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-330.tsx"
   },
-  "contentHash": "5cb497ce20f3e5a6",
-  "importedAt": "2026-11-05T17:59:41.571Z"
+  "contentHash": "05a132e8e6d67918",
+  "importedAt": "2026-11-05T17:59:41.571Z",
+  "updatedAt": "2026-11-10T13:12:56.204Z"
 }

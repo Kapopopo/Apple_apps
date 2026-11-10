@@ -23,14 +23,27 @@
       "path": "components/reui/icon-stack.tsx",
       "role": "source",
       "target": "components/reui/icon-stack.tsx"
+    },
+    {
+      "path": "components/icon-stack/c-icon-stack-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/icon-stack/c-icon-stack-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/icon-stack/c-icon-stack-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/icon-stack.tsx"
+    "entry": "components/icon-stack/c-icon-stack-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "e81435e80bc4d524",
+  "contentHash": "28538e4a3a03460b",
   "importedAt": "2026-11-05T17:59:38.287Z",
-  "updatedAt": "2026-11-05T18:07:50.040Z"
+  "updatedAt": "2026-11-10T13:13:03.735Z"
 }

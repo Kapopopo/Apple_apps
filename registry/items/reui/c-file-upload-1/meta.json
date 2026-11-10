@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-file-upload-1",
+  "name": "Basic file upload",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "basic",
+    "exemple",
+    "file-upload"
+  ],
+  "description": "Basic file upload. Built by composing Button, Use File Upload.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/use-file-upload"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/file-upload/c-file-upload-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/file-upload/c-file-upload-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/file-upload/c-file-upload-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/file-upload/c-file-upload-1.tsx"
+  },
+  "contentHash": "bae0140180ac6dc3",
+  "importedAt": "2026-11-10T13:14:56.220Z",
+  "updatedAt": "2026-11-10T13:25:21.569Z"
+}

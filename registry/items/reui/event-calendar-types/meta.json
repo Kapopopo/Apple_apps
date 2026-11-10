@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-types",
   "name": "Public TypeScript contract for the headless event calendar: events, occurrences, segments, state, and callbacks.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -25,12 +25,11 @@
       "target": "components/reui/event-calendar/event-calendar-types.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-types.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "cb2510fa197b099a",
+  "contentHash": "c0e9ffcb14325485",
   "importedAt": "2026-11-05T17:59:38.162Z",
-  "updatedAt": "2026-11-05T18:07:49.800Z"
+  "updatedAt": "2026-11-10T13:13:03.147Z"
 }

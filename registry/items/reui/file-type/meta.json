@@ -25,14 +25,27 @@
       "path": "components/reui/file-type.tsx",
       "role": "source",
       "target": "components/reui/file-type.tsx"
+    },
+    {
+      "path": "components/file-type/c-file-type-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/file-type/c-file-type-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/file-type/c-file-type-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/file-type.tsx"
+    "entry": "components/file-type/c-file-type-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "e9bdfaccc7792952",
+  "contentHash": "5a4375d66e801369",
   "importedAt": "2026-11-05T17:59:38.172Z",
-  "updatedAt": "2026-11-05T18:07:49.814Z"
+  "updatedAt": "2026-11-10T13:13:03.299Z"
 }

@@ -25,13 +25,19 @@
     {
       "path": "text-roll.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/text-roll/text-roll-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "text-roll.tsx"
+    "entry": "app/docs/text-roll/text-roll-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "191933a1d29a530d",
-  "importedAt": "2026-11-05T17:59:30.378Z"
+  "contentHash": "cc574e8015f8f755",
+  "importedAt": "2026-11-05T17:59:30.378Z",
+  "updatedAt": "2026-11-10T13:11:58.628Z"
 }

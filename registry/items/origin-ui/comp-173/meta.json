@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-173",
-  "name": "Switch 173",
+  "name": "Small switch",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-173.tsx"
   },
-  "contentHash": "69a029be8b32e6fe",
-  "importedAt": "2026-11-05T17:59:40.746Z"
+  "contentHash": "6eb7a3db06c2d9fd",
+  "importedAt": "2026-11-05T17:59:40.746Z",
+  "updatedAt": "2026-11-10T13:12:55.347Z"
 }

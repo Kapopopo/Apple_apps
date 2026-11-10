@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-agenda-view",
   "name": "Chronological agenda grouped by day - a day header row plus a clean time / dot / title table.",
-  "type": "component",
-  "category": "Tableaux de données",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -18,7 +18,7 @@
     "reui/event-calendar-lib",
     "reui/event-calendar-types",
     "reui/icon-stack",
-    "shadcn/scroll-area"
+    "reui/ui-scroll-area"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -35,12 +35,11 @@
       "target": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-agenda-view.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "7a5b5e75d958378f",
+  "contentHash": "8983555bb9514a9d",
   "importedAt": "2026-11-05T17:59:38.138Z",
-  "updatedAt": "2026-11-05T18:07:49.767Z"
+  "updatedAt": "2026-11-10T13:13:03.058Z"
 }

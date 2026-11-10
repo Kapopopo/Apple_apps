@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-245",
-  "name": "Slider 245",
+  "name": "Slider with reference labels",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-245.tsx"
   },
-  "contentHash": "804ac5bbdd1efd85",
-  "importedAt": "2026-11-05T17:59:40.993Z"
+  "contentHash": "73b552cf5872747a",
+  "importedAt": "2026-11-05T17:59:40.993Z",
+  "updatedAt": "2026-11-10T13:12:55.918Z"
 }

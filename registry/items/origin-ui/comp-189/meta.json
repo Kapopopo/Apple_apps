@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-189",
-  "name": "Label 189",
+  "name": "Simple select (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-189.tsx"
   },
-  "contentHash": "6ddcef8ddcd161b8",
-  "importedAt": "2026-11-05T17:59:40.797Z"
+  "contentHash": "118d2796ae411787",
+  "importedAt": "2026-11-05T17:59:40.797Z",
+  "updatedAt": "2026-11-10T13:12:55.431Z"
 }

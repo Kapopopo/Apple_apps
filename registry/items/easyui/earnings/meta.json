@@ -35,6 +35,26 @@
       "target": "components/ui/earnings.tsx"
     },
     {
+      "path": "src/components/docs/detail/demos/items/earnings.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demos/chart-demo-data.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -42,9 +62,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/Earnings.tsx"
+    "entry": "src/components/docs/detail/demos/items/earnings.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "842ca2a87c4e6afe",
+  "contentHash": "78659d1b9f85bf9b",
   "importedAt": "2026-11-05T00:16:52.196Z",
-  "updatedAt": "2026-11-05T00:19:19.875Z"
+  "updatedAt": "2026-11-10T13:12:06.385Z"
 }

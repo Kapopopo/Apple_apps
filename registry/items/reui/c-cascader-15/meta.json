@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-cascader-15",
+  "name": "Async drill-down that loads before it navigates.",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "async loading",
+    "cascader",
+    "exemple"
+  ],
+  "description": "Async drill-down that loads before it navigates. Built by composing Badge, Button, Cascader, Cascader Item, Cascader Nav and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-15.tsx"
+  },
+  "contentHash": "bbe3d0337e5ba875",
+  "importedAt": "2026-11-10T13:14:52.788Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-bubble-1",
+  "name": "Support thread with sender alignment",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "bubble",
+    "exemple",
+    "sender alignment"
+  ],
+  "description": "Support thread with sender alignment. Built by composing Avatar, Bubble, Card.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-avatar",
+    "reui/ui-bubble",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/bubble/c-bubble-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/bubble/c-bubble-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/bubble/c-bubble-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/bubble/c-bubble-1.tsx"
+  },
+  "contentHash": "d980fca0361433b5",
+  "importedAt": "2026-11-10T13:13:06.171Z"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-trace-7",
+  "name": "Support copilot draft",
+  "type": "component",
+  "category": "IA et messages",
+  "tags": [
+    "exemple",
+    "support copilot",
+    "trace"
+  ],
+  "description": "Support copilot draft. Built by composing Button, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-7.tsx"
+  },
+  "contentHash": "95c463befc2fd6f5",
+  "importedAt": "2026-11-10T13:15:04.158Z"
+}

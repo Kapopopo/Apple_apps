@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-select-14",
+  "name": "Select component with Button side by side",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "exemple",
+    "select",
+    "with button"
+  ],
+  "description": "Select component with Button side by side. Built by composing Button, Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/select/c-select-14.tsx",
+  "sourcePath": "registry-reui/bases/base/components/select/c-select-14.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/select/c-select-14.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/select/c-select-14.tsx"
+  },
+  "contentHash": "f95182d678b709c3",
+  "importedAt": "2026-11-10T13:15:00.549Z"
+}

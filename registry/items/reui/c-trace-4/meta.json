@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-trace-4",
+  "name": "Parallel subagents",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "exemple",
+    "subagents",
+    "trace"
+  ],
+  "description": "Parallel subagents. Built by composing Button, Code Block, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/code-block",
+    "reui/ui-button",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-4.tsx"
+  },
+  "contentHash": "c23e68a619f61494",
+  "importedAt": "2026-11-10T13:15:04.109Z"
+}

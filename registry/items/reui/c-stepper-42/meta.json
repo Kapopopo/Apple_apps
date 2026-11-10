@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-stepper-42",
+  "name": "Stepper with vertical status bars",
+  "type": "component",
+  "category": "Graphiques",
+  "tags": [
+    "exemple",
+    "stepper",
+    "vertical status bars"
+  ],
+  "description": "Stepper with vertical status bars. Built by composing Button, Separator, Stepper.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/stepper",
+    "reui/ui-button",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/stepper/c-stepper-42.tsx",
+  "sourcePath": "registry-reui/bases/base/components/stepper/c-stepper-42.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/stepper/c-stepper-42.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/stepper/c-stepper-42.tsx"
+  },
+  "contentHash": "5aab2dd4621e01e3",
+  "importedAt": "2026-11-10T13:15:02.596Z"
+}

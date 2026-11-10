@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-breadcrumb-13",
+  "name": "Breadcrumb with a custom separator",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "bar separator",
+    "breadcrumb",
+    "exemple"
+  ],
+  "description": "Breadcrumb with a custom separator. Built with the Breadcrumb component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-breadcrumb"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/breadcrumb/c-breadcrumb-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/breadcrumb/c-breadcrumb-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/breadcrumb/c-breadcrumb-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/breadcrumb/c-breadcrumb-13.tsx"
+  },
+  "contentHash": "e5a95b41ffa3e0f0",
+  "importedAt": "2026-11-10T13:13:06.133Z"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-table-10",
+  "name": "Subscriptions table with plan badges and billing info",
+  "type": "component",
+  "category": "Tableaux de données",
+  "tags": [
+    "exemple",
+    "subscriptions",
+    "table"
+  ],
+  "description": "Subscriptions table with plan badges and billing info. Built by composing Badge, Button, Table.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-button",
+    "reui/ui-table"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/table/c-table-10.tsx",
+  "sourcePath": "registry-reui/bases/base/components/table/c-table-10.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/table/c-table-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/table/c-table-10.tsx"
+  },
+  "contentHash": "3e285a739eaab3d3",
+  "importedAt": "2026-11-10T13:15:02.935Z"
+}

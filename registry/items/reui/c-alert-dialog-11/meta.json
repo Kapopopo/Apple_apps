@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-alert-dialog-11",
+  "name": "System update notification requiring application restart",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "alert-dialog",
+    "exemple",
+    "system update"
+  ],
+  "description": "System update notification requiring application restart. Built by composing Alert Dialog, Badge, Button.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/ui-alert-dialog",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/alert-dialog/c-alert-dialog-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/alert-dialog/c-alert-dialog-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/alert-dialog/c-alert-dialog-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/alert-dialog/c-alert-dialog-11.tsx"
+  },
+  "contentHash": "3bfc3c92890bc6ff",
+  "importedAt": "2026-11-10T13:13:04.744Z"
+}

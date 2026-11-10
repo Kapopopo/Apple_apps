@@ -1,0 +1,45 @@
+{
+  "id": "reui/c-emoji-picker-2",
+  "name": "Chat composer",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "chat composer",
+    "emoji-picker",
+    "exemple"
+  ],
+  "description": "Chat composer. Built by composing Avatar, Bubble, Button, Card, Emoji Picker and 3 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/emoji-picker",
+    "reui/ui-avatar",
+    "reui/ui-bubble",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-input-group",
+    "reui/ui-message",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-2.tsx",
+  "sourcePath": "registry-reui/bases/base/components/emoji-picker/c-emoji-picker-2.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/emoji-picker/c-emoji-picker-2.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/emoji-picker/c-emoji-picker-2.tsx"
+  },
+  "contentHash": "f4b113710d3ab9e7",
+  "importedAt": "2026-11-10T13:14:55.486Z"
+}

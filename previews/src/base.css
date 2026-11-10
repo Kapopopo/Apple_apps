@@ -14,3 +14,12 @@ html.dark .atlas-failure strong { color: #ecebe7; }
 /* Mode page (aperçu composé du builder) : hauteur naturelle, mesurée et transmise à la page parente. */
 html.page, html.page body, html.page #root { height: auto; min-height: 0; }
 html.page .atlas-stage { min-height: 160px; padding: 32px 24px; }
+/* Pupitre de sons (items de type sound) */
+.atlas-sound { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.atlas-sound button { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 22px; border-radius: 999px; border: 1px solid #d9d9d4; background: #fff; color: #17181a; font: 600 15px/1 Inter, ui-sans-serif, system-ui, sans-serif; text-transform: capitalize; cursor: pointer; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06); transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.atlas-sound button:hover { box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); }
+.atlas-sound button:active { transform: scale(0.97); }
+.atlas-sound button span { font-size: 11px; color: #6b6a65; }
+.atlas-sound p { margin: 0; max-width: 34ch; font-size: 12px; color: #6b6a65; }
+html.dark .atlas-sound button { background: #1d1f22; border-color: #33363b; color: #f3f3f1; box-shadow: none; }
+html.dark .atlas-sound button span, html.dark .atlas-sound p { color: #9d9c96; }

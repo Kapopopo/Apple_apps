@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-emoji-picker-8",
+  "name": "Localized data and labels",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "emoji-picker",
+    "exemple",
+    "localized labels"
+  ],
+  "description": "Localized data and labels. Built by composing Card, Emoji Picker, Native Select.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/emoji-picker",
+    "reui/ui-card",
+    "reui/ui-native-select"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/emoji-picker/c-emoji-picker-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/emoji-picker/c-emoji-picker-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/emoji-picker/c-emoji-picker-8.tsx"
+  },
+  "contentHash": "9ac6525c60f0c295",
+  "importedAt": "2026-11-10T13:14:55.578Z"
+}

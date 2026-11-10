@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-time-grid",
   "name": "Shared week/day/N-days engine - hour gutter, minute-positioned events, all-day row, drag ghosts, now indicator, and configurable scrolling.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "drag",
     "scroll",
@@ -20,7 +20,7 @@
     "reui/event-calendar-event",
     "reui/event-calendar-lib",
     "reui/event-calendar-types",
-    "shadcn/scroll-area"
+    "reui/ui-scroll-area"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -37,12 +37,11 @@
       "target": "components/reui/event-calendar/event-calendar-time-grid.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-time-grid.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "d1cebbe021d60ee6",
+  "contentHash": "35f7b7adf59c8c68",
   "importedAt": "2026-11-05T17:59:38.160Z",
-  "updatedAt": "2026-11-05T18:07:49.797Z"
+  "updatedAt": "2026-11-10T13:13:03.139Z"
 }

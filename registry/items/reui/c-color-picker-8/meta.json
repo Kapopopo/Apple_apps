@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-color-picker-8",
+  "name": "Hue wheel",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "color-picker",
+    "exemple",
+    "hue wheel"
+  ],
+  "description": "Hue wheel. Built by composing Card, Color Picker.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/color-picker",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/color-picker/c-color-picker-8.tsx",
+  "sourcePath": "registry-reui/bases/base/components/color-picker/c-color-picker-8.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/color-picker/c-color-picker-8.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/color-picker/c-color-picker-8.tsx"
+  },
+  "contentHash": "7bae7fe2c6ffee39",
+  "importedAt": "2026-11-10T13:14:53.863Z"
+}

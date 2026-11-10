@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-code-block-17",
+  "name": "Soft wrap",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "code-block",
+    "exemple",
+    "soft wrap"
+  ],
+  "description": "Soft wrap. Built by composing Badge, Code Block, Separator.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/code-block",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/code-block/c-code-block-17.tsx",
+  "sourcePath": "registry-reui/bases/base/components/code-block/c-code-block-17.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/code-block/c-code-block-17.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/code-block/c-code-block-17.tsx"
+  },
+  "contentHash": "f40034d71d7bfe52",
+  "importedAt": "2026-11-10T13:14:53.570Z"
+}

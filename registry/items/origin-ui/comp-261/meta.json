@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-261",
-  "name": "Slider 261",
+  "name": "Vertical slider",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-261.tsx"
   },
-  "contentHash": "9161db308e7baf6b",
-  "importedAt": "2026-11-05T17:59:41.062Z"
+  "contentHash": "9f2b97172ef2f2db",
+  "importedAt": "2026-11-05T17:59:41.062Z",
+  "updatedAt": "2026-11-10T13:12:56.052Z"
 }

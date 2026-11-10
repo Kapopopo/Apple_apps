@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-button-40",
+  "name": "Button with icon, label, and shortcut keys",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button",
+    "exemple",
+    "shortcut keys"
+  ],
+  "description": "Button with icon, label, and shortcut keys. Built by composing Button, Kbd.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-kbd"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button/c-button-40.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button/c-button-40.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button/c-button-40.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button/c-button-40.tsx"
+  },
+  "contentHash": "2302f044b389f160",
+  "importedAt": "2026-11-10T13:13:06.725Z"
+}

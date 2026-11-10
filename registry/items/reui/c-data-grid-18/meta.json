@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-data-grid-18",
+  "name": "Data grid with column controls",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "column controls",
+    "data-grid",
+    "exemple"
+  ],
+  "description": "Data grid with column controls. Built by composing Avatar, Badge, Card, Data Grid, Data Grid Column Header and 3 more.",
+  "framework": "react",
+  "dependencies": [
+    "@tanstack/react-table"
+  ],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/data-grid",
+    "reui/ui-avatar",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/data-grid/c-data-grid-18.tsx",
+  "sourcePath": "registry-reui/bases/base/components/data-grid/c-data-grid-18.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/data-grid/c-data-grid-18.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/data-grid/c-data-grid-18.tsx"
+  },
+  "contentHash": "f203550a98d27388",
+  "importedAt": "2026-11-10T13:14:54.684Z"
+}

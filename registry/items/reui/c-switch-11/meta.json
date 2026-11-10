@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-switch-11",
+  "name": "Colored switches",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "colored",
+    "exemple",
+    "switch"
+  ],
+  "description": "Colored switches. Built by composing Field, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/switch/c-switch-11.tsx",
+  "sourcePath": "registry-reui/bases/base/components/switch/c-switch-11.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/switch/c-switch-11.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/switch/c-switch-11.tsx"
+  },
+  "contentHash": "52139b6ffb6b2933",
+  "importedAt": "2026-11-10T13:15:02.756Z"
+}

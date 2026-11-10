@@ -13,7 +13,7 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "shadcn/scroll-area"
+    "reui/ui-scroll-area"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -28,14 +28,27 @@
       "path": "components/reui/autocomplete.tsx",
       "role": "source",
       "target": "components/reui/autocomplete.tsx"
+    },
+    {
+      "path": "components/autocomplete/c-autocomplete-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/autocomplete/c-autocomplete-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/autocomplete/c-autocomplete-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/autocomplete.tsx"
+    "entry": "components/autocomplete/c-autocomplete-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "deaceb6ac008e5a0",
+  "contentHash": "d024da5b26240112",
   "importedAt": "2026-11-05T17:59:38.023Z",
-  "updatedAt": "2026-11-05T18:07:49.651Z"
+  "updatedAt": "2026-11-10T13:13:02.701Z"
 }

@@ -25,13 +25,19 @@
     {
       "path": "glow-effect.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/glow-effect/glow-effect-button.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "glow-effect.tsx"
+    "entry": "app/docs/glow-effect/glow-effect-button.tsx",
+    "demo": "source"
   },
-  "contentHash": "b905b6a057bb5c12",
-  "importedAt": "2026-11-05T17:59:30.339Z"
+  "contentHash": "f420cefed1de8938",
+  "importedAt": "2026-11-05T17:59:30.339Z",
+  "updatedAt": "2026-11-10T13:11:58.393Z"
 }

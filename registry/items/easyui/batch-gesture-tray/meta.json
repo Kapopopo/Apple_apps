@@ -46,6 +46,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/batch-gesture-tray.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -53,8 +69,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/BatchGestureTray.tsx"
+    "entry": "src/components/docs/detail/demos/items/batch-gesture-tray.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "6019158ba84a97bc",
-  "importedAt": "2026-11-05T00:16:51.675Z"
+  "contentHash": "cdbed3c6079691f5",
+  "importedAt": "2026-11-05T00:16:51.675Z",
+  "updatedAt": "2026-11-10T13:12:05.570Z"
 }

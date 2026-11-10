@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-26",
-  "name": "Input 26",
+  "name": "Search input with icon and button",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Boutons",
   "tags": [
     "button",
     "input",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-26.tsx"
   },
-  "contentHash": "5acb292237e3ea84",
-  "importedAt": "2026-11-05T17:59:41.055Z"
+  "contentHash": "ebef043dbbe8180d",
+  "importedAt": "2026-11-05T17:59:41.055Z",
+  "updatedAt": "2026-11-10T13:12:56.045Z"
 }

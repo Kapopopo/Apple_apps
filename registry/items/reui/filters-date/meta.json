@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-date",
   "name": "Filters Date",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -27,12 +27,11 @@
       "target": "components/reui/filters/filters-date.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-date.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "18372174fb7c50e7",
+  "contentHash": "b4b8cf7078109816",
   "importedAt": "2026-11-05T17:59:38.190Z",
-  "updatedAt": "2026-11-05T18:07:49.844Z"
+  "updatedAt": "2026-11-10T13:13:03.348Z"
 }

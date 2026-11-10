@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-phone-input-7",
+  "name": "Phone input with specific default country",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "default country",
+    "exemple",
+    "phone-input"
+  ],
+  "description": "Phone input with specific default country. Built with the Phone Input component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/phone-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/phone-input/c-phone-input-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/phone-input/c-phone-input-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/phone-input/c-phone-input-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/phone-input/c-phone-input-7.tsx"
+  },
+  "contentHash": "6d07a42a3c28f706",
+  "importedAt": "2026-11-10T13:14:59.309Z"
+}

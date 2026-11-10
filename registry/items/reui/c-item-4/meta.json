@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-item-4",
+  "name": "Clickable navigation items with icons and chevron",
+  "type": "component",
+  "category": "Navigation",
+  "tags": [
+    "exemple",
+    "item",
+    "navigation links"
+  ],
+  "description": "Clickable navigation items with icons and chevron. Built with the Item component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-item"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/item/c-item-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/item/c-item-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/item/c-item-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/item/c-item-4.tsx"
+  },
+  "contentHash": "434a4df388ad8084",
+  "importedAt": "2026-11-10T13:14:58.185Z"
+}

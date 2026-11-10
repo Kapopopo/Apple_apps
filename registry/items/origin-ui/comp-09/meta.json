@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-09",
-  "name": "Input 09",
+  "name": "Input with start icon",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-09.tsx"
   },
-  "contentHash": "f15173f5362c01a1",
-  "importedAt": "2026-11-05T17:59:40.476Z"
+  "contentHash": "e3e1489836833e3a",
+  "importedAt": "2026-11-05T17:59:40.476Z",
+  "updatedAt": "2026-11-10T13:12:55.036Z"
 }

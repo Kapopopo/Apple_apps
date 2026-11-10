@@ -25,13 +25,19 @@
     {
       "path": "text-shimmer-wave.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/text-shimmer-wave/text-shimmer-wave-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "text-shimmer-wave.tsx"
+    "entry": "app/docs/text-shimmer-wave/text-shimmer-wave-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "e5751a0f44848de5",
-  "importedAt": "2026-11-05T17:59:30.384Z"
+  "contentHash": "58d8ef72f36cc72d",
+  "importedAt": "2026-11-05T17:59:30.384Z",
+  "updatedAt": "2026-11-10T13:11:58.655Z"
 }

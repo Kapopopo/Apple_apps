@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-183",
-  "name": "Switch 183",
+  "name": "Labeled switch",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-183.tsx"
   },
-  "contentHash": "c1c63eeac7a780af",
-  "importedAt": "2026-11-05T17:59:40.778Z"
+  "contentHash": "8737733cf2fb3e7f",
+  "importedAt": "2026-11-05T17:59:40.778Z",
+  "updatedAt": "2026-11-10T13:12:55.404Z"
 }

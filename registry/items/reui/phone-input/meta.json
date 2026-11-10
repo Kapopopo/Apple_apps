@@ -12,10 +12,10 @@
     "react-phone-number-input"
   ],
   "registryDependencies": [
-    "reui/combobox",
-    "shadcn/button",
-    "shadcn/input",
-    "shadcn/scroll-area"
+    "reui/ui-button",
+    "reui/ui-combobox",
+    "reui/ui-input",
+    "reui/ui-scroll-area"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -30,14 +30,27 @@
       "path": "components/reui/phone-input.tsx",
       "role": "source",
       "target": "components/reui/phone-input.tsx"
+    },
+    {
+      "path": "components/phone-input/c-phone-input-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/phone-input/c-phone-input-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/phone-input/c-phone-input-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/phone-input.tsx"
+    "entry": "components/phone-input/c-phone-input-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "398c7f6171d710ee",
+  "contentHash": "b44bde8f3a6aa575",
   "importedAt": "2026-11-05T17:59:38.300Z",
-  "updatedAt": "2026-11-05T18:07:50.052Z"
+  "updatedAt": "2026-11-10T13:13:03.899Z"
 }

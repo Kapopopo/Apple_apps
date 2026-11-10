@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-229",
-  "name": "Label 229",
+  "name": "Select with search",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -45,6 +45,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-229.tsx"
   },
-  "contentHash": "6c55dc15b880cf72",
-  "importedAt": "2026-11-05T17:59:40.942Z"
+  "contentHash": "60747dced33bde7f",
+  "importedAt": "2026-11-05T17:59:40.942Z",
+  "updatedAt": "2026-11-10T13:12:55.753Z"
 }

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-resizable-5",
+  "name": "Handle with animated pill indicator",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "animated pill",
+    "animé",
+    "exemple",
+    "resizable"
+  ],
+  "description": "Handle with animated pill indicator. Built with the Resizable component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-resizable"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/resizable/c-resizable-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/resizable/c-resizable-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/resizable/c-resizable-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/resizable/c-resizable-5.tsx"
+  },
+  "contentHash": "a41f72dfcab42446",
+  "importedAt": "2026-11-10T13:15:00.218Z"
+}

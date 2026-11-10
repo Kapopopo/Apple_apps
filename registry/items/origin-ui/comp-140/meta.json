@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-140",
-  "name": "Checkbox 140",
+  "name": "Right aligned checkbox",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-140.tsx"
   },
-  "contentHash": "8cd20a1f0bb829c9",
-  "importedAt": "2026-11-05T17:59:40.637Z"
+  "contentHash": "45d82a89b465ebf6",
+  "importedAt": "2026-11-05T17:59:40.637Z",
+  "updatedAt": "2026-11-10T13:12:55.160Z"
 }

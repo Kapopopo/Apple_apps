@@ -26,14 +26,27 @@
       "path": "components/reui/badge.tsx",
       "role": "source",
       "target": "components/reui/badge.tsx"
+    },
+    {
+      "path": "components/badge/c-badge-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/badge/c-badge-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/badge/c-badge-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/badge.tsx"
+    "entry": "components/badge/c-badge-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "86bae1f6f0c78b2f",
+  "contentHash": "443cb4664dfe7eae",
   "importedAt": "2026-11-05T17:59:38.032Z",
-  "updatedAt": "2026-11-05T18:07:49.655Z"
+  "updatedAt": "2026-11-10T13:13:02.727Z"
 }

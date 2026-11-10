@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-sonner-17",
+  "name": "Multi-action invert toast with avatar group",
+  "type": "component",
+  "category": "Notifications",
+  "tags": [
+    "exemple",
+    "invert avatar group",
+    "sonner"
+  ],
+  "description": "Multi-action invert toast with avatar group. Built by composing Avatar, Button, Separator.",
+  "framework": "react",
+  "dependencies": [
+    "sonner"
+  ],
+  "registryDependencies": [
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-separator"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/sonner/c-sonner-17.tsx",
+  "sourcePath": "registry-reui/bases/base/components/sonner/c-sonner-17.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/sonner/c-sonner-17.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/sonner/c-sonner-17.tsx"
+  },
+  "contentHash": "bf4bc0d0748b443f",
+  "importedAt": "2026-11-10T13:15:01.694Z"
+}

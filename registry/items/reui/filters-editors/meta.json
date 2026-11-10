@@ -1,8 +1,8 @@
 {
   "id": "reui/filters-editors",
   "name": "Filters Editors",
-  "type": "component",
-  "category": "Autres composants",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -20,9 +20,9 @@
     "reui/filters-context",
     "reui/filters-lib",
     "reui/filters-types",
-    "shadcn/button",
-    "shadcn/button-group",
-    "shadcn/input"
+    "reui/ui-button",
+    "reui/ui-button-group",
+    "reui/ui-input"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -39,12 +39,11 @@
       "target": "components/reui/filters/filters-editors.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/filters/filters-editors.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "2c6aa31cbedadee8",
+  "contentHash": "a4c2a0ea0f2cac9b",
   "importedAt": "2026-11-05T17:59:38.223Z",
-  "updatedAt": "2026-11-05T18:07:49.861Z"
+  "updatedAt": "2026-11-10T13:13:03.373Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-233",
-  "name": "Label 233",
+  "name": "Options with icon and number",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Indicateurs",
   "tags": [
     "autocomplete",
     "combobox",
@@ -44,6 +44,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-233.tsx"
   },
-  "contentHash": "45c94547eda4c7df",
-  "importedAt": "2026-11-05T17:59:40.956Z"
+  "contentHash": "e55f03876a6d794e",
+  "importedAt": "2026-11-05T17:59:40.956Z",
+  "updatedAt": "2026-11-10T13:12:55.807Z"
 }

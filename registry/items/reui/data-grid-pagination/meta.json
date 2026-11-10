@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-pagination",
   "name": "Data Grid Pagination",
-  "type": "component",
-  "category": "Navigation",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -11,9 +11,9 @@
   "dependencies": [],
   "registryDependencies": [
     "reui/data-grid",
-    "shadcn/button",
-    "shadcn/select",
-    "shadcn/skeleton"
+    "reui/ui-button",
+    "reui/ui-select",
+    "reui/ui-skeleton"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -30,12 +30,11 @@
       "target": "components/reui/data-grid/data-grid-pagination.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-pagination.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "72773e7d181b75ee",
+  "contentHash": "83de0e361ad30d1b",
   "importedAt": "2026-11-05T17:59:38.102Z",
-  "updatedAt": "2026-11-05T18:07:49.732Z"
+  "updatedAt": "2026-11-10T13:13:02.894Z"
 }

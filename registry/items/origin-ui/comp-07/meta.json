@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-07",
-  "name": "Input 07",
+  "name": "Input with gray background",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-07.tsx"
   },
-  "contentHash": "d3898ebdabd1a573",
-  "importedAt": "2026-11-05T17:59:40.468Z"
+  "contentHash": "340dbbd47cc3d9c4",
+  "importedAt": "2026-11-05T17:59:40.468Z",
+  "updatedAt": "2026-11-10T13:12:55.019Z"
 }

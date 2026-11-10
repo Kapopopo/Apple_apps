@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-77",
-  "name": "Label 77",
+  "name": "Autogrowing textarea",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-77.tsx"
   },
-  "contentHash": "a08e98937024995f",
-  "importedAt": "2026-11-05T17:59:43.051Z"
+  "contentHash": "3ec45f446ada2a99",
+  "importedAt": "2026-11-05T17:59:43.051Z",
+  "updatedAt": "2026-11-10T13:12:56.987Z"
 }

@@ -25,13 +25,19 @@
     {
       "path": "dock.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/dock/apple-style-dock.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "dock.tsx"
+    "entry": "app/docs/dock/apple-style-dock.tsx",
+    "demo": "source"
   },
-  "contentHash": "01ec8fa507c9ae13",
-  "importedAt": "2026-11-05T17:59:30.336Z"
+  "contentHash": "7d910c3f0c4e86e1",
+  "importedAt": "2026-11-05T17:59:30.336Z",
+  "updatedAt": "2026-11-10T13:11:58.374Z"
 }

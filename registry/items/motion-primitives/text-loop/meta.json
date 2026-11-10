@@ -25,13 +25,19 @@
     {
       "path": "text-loop.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/text-loop/text-loop-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "text-loop.tsx"
+    "entry": "app/docs/text-loop/text-loop-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "18dac11482067c97",
-  "importedAt": "2026-11-05T17:59:30.373Z"
+  "contentHash": "519f6079a18885fe",
+  "importedAt": "2026-11-05T17:59:30.373Z",
+  "updatedAt": "2026-11-10T13:11:58.597Z"
 }

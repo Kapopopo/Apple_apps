@@ -39,6 +39,30 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/glitch-text.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,8 +70,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/GlitchText.tsx"
+    "entry": "src/components/docs/detail/demos/items/glitch-text.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "7c8de125d65d9e87",
-  "importedAt": "2026-11-05T00:16:52.414Z"
+  "contentHash": "8dd32f26166b1136",
+  "importedAt": "2026-11-05T00:16:52.414Z",
+  "updatedAt": "2026-11-10T13:12:06.665Z"
 }

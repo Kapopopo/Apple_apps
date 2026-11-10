@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-progress-5",
+  "name": "File upload list with progress & status.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "file uploads",
+    "progress"
+  ],
+  "description": "File upload list with progress & status. Built by composing Item, Progress.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-item",
+    "reui/ui-progress"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/progress/c-progress-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/progress/c-progress-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/progress/c-progress-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/progress/c-progress-5.tsx"
+  },
+  "contentHash": "21d6e142aacaa8b0",
+  "importedAt": "2026-11-10T13:14:59.660Z"
+}

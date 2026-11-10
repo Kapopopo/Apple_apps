@@ -63,7 +63,7 @@ function staticVisual(i) {
 }
 
 function visual(i, extra = '') {
-  if (i.interactive && !STYLE_TYPES.has(i.type)) return previewZone(i.id, i.name, i.thumb, extra, i.preview.kind === 'atlas-demo' ? 'stage' : $('#f-light').checked ? 'light' : '');
+  if (i.interactive && (!STYLE_TYPES.has(i.type) || i.type === 'sound')) return previewZone(i.id, i.name, i.thumb, extra, i.preview.kind === 'atlas-demo' ? 'stage' : $('#f-light').checked ? 'light' : '');
   return `<div class="visual">${staticVisual(i)}${extra}</div>`;
 }
 
@@ -499,7 +499,7 @@ async function showDetail(id) {
     <h2 id="detail-title">${esc(i.name)}</h2>
     <p class="detail-meta">${esc(TYPE_LABEL[i.type])} · ${esc(i.category)} · ${esc(i.source)} · <code>${esc(i.id)}</code>${i.isNew ? ' · <span class="new-tag">Nouveau</span>' : ''}</p>
     <div class="detail-grid">
-      <div class="detail-visual">${i.interactive && !STYLE_TYPES.has(i.type) ? `<div class="visual detail-zone ${i.preview.kind === 'atlas-demo' ? 'stage' : $('#f-light').checked ? 'light' : ''}" data-preview="${esc(i.id)}"></div>` : `<div class="visual">${staticVisual({ ...i, _colors: meta.tokens?.colors?.light || i._colors, _easings: meta.easings || i._easings })}</div>`}</div>
+      <div class="detail-visual">${i.interactive && (!STYLE_TYPES.has(i.type) || i.type === 'sound') ? `<div class="visual detail-zone ${i.preview.kind === 'atlas-demo' ? 'stage' : $('#f-light').checked ? 'light' : ''}" data-preview="${esc(i.id)}"></div>` : `<div class="visual">${staticVisual({ ...i, _colors: meta.tokens?.colors?.light || i._colors, _easings: meta.easings || i._easings })}</div>`}</div>
       <dl class="facts">
         <dt>Description</dt><dd>${esc(meta.description || '—')}</dd>
         <dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span>${meta.licenseNotes ? `<br><span class="help">${esc(meta.licenseNotes)}</span>` : ''}</dd>
@@ -560,6 +560,9 @@ async function loadRegistry() {
   const data = await api('/api/registry');
   previewsBuilt = data.previewsBuilt;
   sources = data.sources || {};
+  const behind = data.updates?.behind ?? [];
+  $('#updates').hidden = !behind.length;
+  if (behind.length) $('#updates').textContent = `${plural(behind.length, 'source a', 'sources ont')} publié depuis le dernier import (${behind.join(', ')}) : lancez « npm run update ».`;
   const all = hydrateLicenses(data.items, sources).map((i) => ({ ...i, _hay: norm([i.id, i.name, i.description, i.category, i.type, TYPE_LABEL[i.type], i.source, i.framework, ...(i.tags || [])].join(' ')) }));
   const previous = byId;
   byId = new Map(all.map((i) => [i.id, i]));

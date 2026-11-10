@@ -13,7 +13,7 @@
     "class-variance-authority"
   ],
   "registryDependencies": [
-    "shadcn/label"
+    "reui/ui-label"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -28,14 +28,27 @@
       "path": "components/reui/number-field.tsx",
       "role": "source",
       "target": "components/reui/number-field.tsx"
+    },
+    {
+      "path": "components/number-field/c-number-field-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/number-field/c-number-field-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/number-field/c-number-field-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/number-field.tsx"
+    "entry": "components/number-field/c-number-field-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "f2d5342901313f3d",
+  "contentHash": "6dca3d9c6e042c5f",
   "importedAt": "2026-11-05T17:59:38.297Z",
-  "updatedAt": "2026-11-05T18:07:50.050Z"
+  "updatedAt": "2026-11-10T13:13:03.860Z"
 }

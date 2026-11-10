@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-table",
   "name": "Data Grid Table",
-  "type": "component",
-  "category": "Tableaux de données",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -13,9 +13,9 @@
   ],
   "registryDependencies": [
     "reui/data-grid",
-    "shadcn/button",
-    "shadcn/checkbox",
-    "shadcn/spinner"
+    "reui/ui-button",
+    "reui/ui-checkbox",
+    "reui/ui-spinner"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -32,12 +32,11 @@
       "target": "components/reui/data-grid/data-grid-table.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-table.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "6a0502069f23d5a2",
+  "contentHash": "b728066fc23c06d2",
   "importedAt": "2026-11-05T17:59:38.114Z",
-  "updatedAt": "2026-11-05T18:07:49.747Z"
+  "updatedAt": "2026-11-10T13:13:02.917Z"
 }

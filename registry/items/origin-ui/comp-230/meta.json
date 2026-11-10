@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-230",
-  "name": "Label 230",
+  "name": "Select with search and button",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Boutons",
   "tags": [
     "autocomplete",
     "combobox",
@@ -45,6 +45,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-230.tsx"
   },
-  "contentHash": "ba06cdee3935ec20",
-  "importedAt": "2026-11-05T17:59:40.947Z"
+  "contentHash": "0904cd1cdd0f29e8",
+  "importedAt": "2026-11-05T17:59:40.947Z",
+  "updatedAt": "2026-11-10T13:12:55.772Z"
 }

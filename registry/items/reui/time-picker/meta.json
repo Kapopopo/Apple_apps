@@ -11,9 +11,9 @@
   "framework": "react",
   "dependencies": [],
   "registryDependencies": [
-    "shadcn/button",
-    "shadcn/input-group",
-    "shadcn/popover"
+    "reui/ui-button",
+    "reui/ui-input-group",
+    "reui/ui-popover"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -28,14 +28,27 @@
       "path": "components/reui/time-picker.tsx",
       "role": "source",
       "target": "components/reui/time-picker.tsx"
+    },
+    {
+      "path": "components/time-picker/c-time-picker-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/time-picker/c-time-picker-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/time-picker/c-time-picker-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/time-picker.tsx"
+    "entry": "components/time-picker/c-time-picker-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "da7f0a2e5ccea5f4",
+  "contentHash": "05a93038d1ac2557",
   "importedAt": "2026-11-05T17:59:38.316Z",
-  "updatedAt": "2026-11-05T18:07:50.071Z"
+  "updatedAt": "2026-11-10T13:13:04.150Z"
 }

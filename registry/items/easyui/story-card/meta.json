@@ -38,6 +38,22 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/story-card.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -45,8 +61,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/StoryCard.tsx"
+    "entry": "src/components/docs/detail/demos/items/story-card.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "ca65489e273cfa00",
-  "importedAt": "2026-11-05T00:16:53.980Z"
+  "contentHash": "c082f5d83ed0eee7",
+  "importedAt": "2026-11-05T00:16:53.980Z",
+  "updatedAt": "2026-11-10T13:12:10.533Z"
 }

@@ -44,6 +44,22 @@
       "target": "lib/motion-tokens.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/liquid-ripple-button.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -51,8 +67,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/LiquidRippleButton.tsx"
+    "entry": "src/components/docs/detail/demos/items/liquid-ripple-button.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "1d126d58c8265de7",
-  "importedAt": "2026-11-05T00:16:52.585Z"
+  "contentHash": "50bbe0767b57fad2",
+  "importedAt": "2026-11-05T00:16:52.585Z",
+  "updatedAt": "2026-11-10T13:12:06.983Z"
 }

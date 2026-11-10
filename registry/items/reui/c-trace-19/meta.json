@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-trace-19",
+  "name": "Access decision",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "access decision",
+    "exemple",
+    "trace"
+  ],
+  "description": "Access decision. Built by composing Field, Select, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-select",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-19.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-19.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-19.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-19.tsx"
+  },
+  "contentHash": "6cda17bc8252e9f1",
+  "importedAt": "2026-11-10T13:15:04.337Z"
+}

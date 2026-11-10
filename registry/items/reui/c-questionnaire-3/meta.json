@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-questionnaire-3",
+  "name": "A written answer beside the choices",
+  "type": "component",
+  "category": "Listes et tâches",
+  "tags": [
+    "exemple",
+    "questionnaire",
+    "write-in answer"
+  ],
+  "description": "A written answer beside the choices. Built by composing Button, Card, Label, Questionnaire.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-label",
+    "reui/ui-questionnaire"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/questionnaire/c-questionnaire-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/questionnaire/c-questionnaire-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/questionnaire/c-questionnaire-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/questionnaire/c-questionnaire-3.tsx"
+  },
+  "contentHash": "be0705472cb09cb3",
+  "importedAt": "2026-11-10T13:14:59.753Z"
+}

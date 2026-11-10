@@ -25,14 +25,27 @@
       "path": "components/reui/timeline.tsx",
       "role": "source",
       "target": "components/reui/timeline.tsx"
+    },
+    {
+      "path": "components/timeline/c-timeline-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/timeline/c-timeline-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/timeline/c-timeline-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/timeline.tsx"
+    "entry": "components/timeline/c-timeline-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "fa1e6030fc1c0372",
+  "contentHash": "ff5d4fd6dd75222d",
   "importedAt": "2026-11-05T17:59:38.318Z",
-  "updatedAt": "2026-11-05T18:07:50.074Z"
+  "updatedAt": "2026-11-10T13:13:04.184Z"
 }

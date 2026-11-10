@@ -25,13 +25,19 @@
     {
       "path": "border-trail.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/border-trail/border-trail-card-1.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "border-trail.tsx"
+    "entry": "app/docs/border-trail/border-trail-card-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "18853c123d2f464c",
-  "importedAt": "2026-11-05T17:59:30.312Z"
+  "contentHash": "8c82bad904b5c1d3",
+  "importedAt": "2026-11-05T17:59:30.312Z",
+  "updatedAt": "2026-11-10T13:11:58.268Z"
 }

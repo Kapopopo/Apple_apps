@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-field-10",
+  "name": "Notification preferences form",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "field",
+    "notification preferences"
+  ],
+  "description": "Notification preferences form. Built by composing Checkbox, Field, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-checkbox",
+    "reui/ui-field",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/field/c-field-10.tsx",
+  "sourcePath": "registry-reui/bases/base/components/field/c-field-10.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/field/c-field-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/field/c-field-10.tsx"
+  },
+  "contentHash": "bd6c84135fcf51cd",
+  "importedAt": "2026-11-10T13:14:56.009Z"
+}

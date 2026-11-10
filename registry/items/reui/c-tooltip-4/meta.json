@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-tooltip-4",
+  "name": "Tooltip with keyboard shortcut.",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "clavier",
+    "exemple",
+    "keyboard shortcut",
+    "tooltip"
+  ],
+  "description": "Tooltip with keyboard shortcut. Built by composing Button, Kbd, Tooltip.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-kbd",
+    "reui/ui-tooltip"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/tooltip/c-tooltip-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/tooltip/c-tooltip-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/tooltip/c-tooltip-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/tooltip/c-tooltip-4.tsx"
+  },
+  "contentHash": "038637a765b100f6",
+  "importedAt": "2026-11-10T13:15:03.913Z"
+}

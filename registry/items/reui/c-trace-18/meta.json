@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-trace-18",
+  "name": "Model eval results",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "eval results",
+    "exemple",
+    "trace"
+  ],
+  "description": "Model eval results. Built by composing Label, Switch, Trace.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-label",
+    "reui/ui-switch",
+    "reui/ui-trace"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/trace/c-trace-18.tsx",
+  "sourcePath": "registry-reui/bases/base/components/trace/c-trace-18.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/trace/c-trace-18.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/trace/c-trace-18.tsx"
+  },
+  "contentHash": "72f16ca622f1184a",
+  "importedAt": "2026-11-10T13:15:04.324Z"
+}

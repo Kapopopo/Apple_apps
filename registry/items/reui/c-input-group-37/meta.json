@@ -1,0 +1,42 @@
+{
+  "id": "reui/c-input-group-37",
+  "name": "Order search input with status filter",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "input-group",
+    "order search"
+  ],
+  "description": "Order search input with status filter. Built by composing Checkbox, Field, Input Group, Label, Popover.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-checkbox",
+    "reui/ui-field",
+    "reui/ui-input-group",
+    "reui/ui-label",
+    "reui/ui-popover"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/input-group/c-input-group-37.tsx",
+  "sourcePath": "registry-reui/bases/base/components/input-group/c-input-group-37.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/input-group/c-input-group-37.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/input-group/c-input-group-37.tsx"
+  },
+  "contentHash": "0f1ab4d0c55d5a9e",
+  "importedAt": "2026-11-10T13:14:58.031Z"
+}

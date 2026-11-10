@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-133",
-  "name": "Checkbox 133",
+  "name": "Indeterminate checkbox",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-133.tsx"
   },
-  "contentHash": "43d6797a8aafb7d0",
-  "importedAt": "2026-11-05T17:59:40.615Z"
+  "contentHash": "aaec5886b4b53806",
+  "importedAt": "2026-11-05T17:59:40.615Z",
+  "updatedAt": "2026-11-10T13:12:55.106Z"
 }

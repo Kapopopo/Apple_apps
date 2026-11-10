@@ -39,6 +39,30 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/sparkles-core.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -46,9 +70,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/SparklesCore.tsx"
+    "entry": "src/components/docs/detail/demos/items/sparkles-core.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "bd7ed894049a700f",
+  "contentHash": "f5e44675fb770c92",
   "importedAt": "2026-11-05T00:16:53.784Z",
-  "updatedAt": "2026-11-05T00:18:17.590Z"
+  "updatedAt": "2026-11-10T13:12:09.856Z"
 }

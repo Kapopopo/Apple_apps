@@ -25,13 +25,19 @@
     {
       "path": "transition-panel.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/transition-panel/transition-panel-card.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "transition-panel.tsx"
+    "entry": "app/docs/transition-panel/transition-panel-card.tsx",
+    "demo": "source"
   },
-  "contentHash": "4d082666887c0ec8",
-  "importedAt": "2026-11-05T17:59:30.399Z"
+  "contentHash": "5f6bcd7658b30c23",
+  "importedAt": "2026-11-05T17:59:30.399Z",
+  "updatedAt": "2026-11-10T13:11:58.691Z"
 }

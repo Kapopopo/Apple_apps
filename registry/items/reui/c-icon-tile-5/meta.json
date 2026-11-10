@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-icon-tile-5",
+  "name": "Sizes",
+  "type": "component",
+  "category": "Illustrations",
+  "tags": [
+    "exemple",
+    "icon-tile",
+    "sizes"
+  ],
+  "description": "Sizes. Built with the Icon Tile component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/icon-tile"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/icon-tile/c-icon-tile-5.tsx",
+  "sourcePath": "registry-reui/bases/base/components/icon-tile/c-icon-tile-5.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/icon-tile/c-icon-tile-5.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/icon-tile/c-icon-tile-5.tsx"
+  },
+  "contentHash": "c8b458ac3d2aa764",
+  "importedAt": "2026-11-10T13:14:57.072Z"
+}

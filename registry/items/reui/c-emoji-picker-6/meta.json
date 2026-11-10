@@ -1,0 +1,43 @@
+{
+  "id": "reui/c-emoji-picker-6",
+  "name": "Shortcode suggestions",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "emoji-picker",
+    "exemple",
+    "shortcode suggestions"
+  ],
+  "description": "Shortcode suggestions. Built by composing Avatar, Button, Card, Emoji Picker, Input Group and 1 more.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/emoji-picker",
+    "reui/ui-avatar",
+    "reui/ui-button",
+    "reui/ui-card",
+    "reui/ui-input-group",
+    "reui/ui-item"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/emoji-picker/c-emoji-picker-6.tsx",
+  "sourcePath": "registry-reui/bases/base/components/emoji-picker/c-emoji-picker-6.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/emoji-picker/c-emoji-picker-6.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/emoji-picker/c-emoji-picker-6.tsx"
+  },
+  "contentHash": "7050a6d1a266ced0",
+  "importedAt": "2026-11-10T13:14:55.546Z"
+}

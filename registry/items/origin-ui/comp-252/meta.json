@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-252",
-  "name": "Slider 252",
+  "name": "Volume (slider)",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-252.tsx"
   },
-  "contentHash": "f28ac350dca592fb",
-  "importedAt": "2026-11-05T17:59:41.024Z"
+  "contentHash": "7375329fda8a775f",
+  "importedAt": "2026-11-05T17:59:41.024Z",
+  "updatedAt": "2026-11-10T13:12:55.980Z"
 }

@@ -121,6 +121,7 @@
 .sort-label { display: flex; align-items: center; gap: 8px; color: var(--faint); font-size: 12px; }
 .sort-label select { min-height: 28px; padding: 3px 8px; font-size: 12px; }
 .gallery-tools { align-items: center; flex-wrap: wrap; }
+.updates { flex-basis: 100%; order: 3; color: var(--warn); }
 
 /* Aperçu composé de la page */
 dialog[data-mode="page"] { width: min(1280px, 98vw); }

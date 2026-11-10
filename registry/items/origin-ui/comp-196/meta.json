@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-196",
-  "name": "Label 196",
+  "name": "Disabled select (native)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-196.tsx"
   },
-  "contentHash": "13c382504175463d",
-  "importedAt": "2026-11-05T17:59:40.822Z"
+  "contentHash": "f21c35b457de06f6",
+  "importedAt": "2026-11-05T17:59:40.822Z",
+  "updatedAt": "2026-11-10T13:12:55.490Z"
 }

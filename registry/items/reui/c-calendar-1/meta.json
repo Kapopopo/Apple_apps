@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-calendar-1",
+  "name": "Basic calendar",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "basic",
+    "calendar",
+    "exemple"
+  ],
+  "description": "Basic calendar. Built by composing Calendar, Card.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-calendar",
+    "reui/ui-card"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/calendar/c-calendar-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/calendar/c-calendar-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/calendar/c-calendar-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/calendar/c-calendar-1.tsx"
+  },
+  "contentHash": "5f1b557bccd9260e",
+  "importedAt": "2026-11-10T13:13:07.719Z"
+}

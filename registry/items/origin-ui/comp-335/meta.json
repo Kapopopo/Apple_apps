@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-335",
-  "name": "Accordion 335",
+  "name": "W/ plus-minus",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-335.tsx"
   },
-  "contentHash": "e106ba467536e798",
-  "importedAt": "2026-11-05T17:59:41.595Z"
+  "contentHash": "b25892d6de737c34",
+  "importedAt": "2026-11-05T17:59:41.595Z",
+  "updatedAt": "2026-11-10T13:12:56.236Z"
 }

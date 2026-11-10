@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-dialog-10",
+  "name": "Dialog with full width button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "dialog",
+    "exemple",
+    "full width button"
+  ],
+  "description": "Dialog with full width button. Built by composing Button, Dialog.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-dialog"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/dialog/c-dialog-10.tsx",
+  "sourcePath": "registry-reui/bases/base/components/dialog/c-dialog-10.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/dialog/c-dialog-10.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/dialog/c-dialog-10.tsx"
+  },
+  "contentHash": "7cb52cb6fefac200",
+  "importedAt": "2026-11-10T13:14:55.104Z"
+}

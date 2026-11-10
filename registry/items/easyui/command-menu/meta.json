@@ -67,6 +67,14 @@
       "role": "source"
     },
     {
+      "path": "src/components/docs/detail/demos/items/command-menu.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -74,8 +82,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/CommandMenu.tsx"
+    "entry": "src/components/docs/detail/demos/items/command-menu.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "e256152d6500fd9a",
-  "importedAt": "2026-11-05T00:16:51.950Z"
+  "contentHash": "7d1fd617a51535fe",
+  "importedAt": "2026-11-05T00:16:51.950Z",
+  "updatedAt": "2026-11-10T13:12:05.975Z"
 }

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-cascader-9",
+  "name": "Controlled path, value, query and open state.",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "cascader",
+    "controlled state",
+    "exemple"
+  ],
+  "description": "Controlled path, value, query and open state. Built by composing Button, Cascader, Cascader Item, Cascader Nav, Cascader Types.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-9.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-9.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-9.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-9.tsx"
+  },
+  "contentHash": "2c3056c9171e721a",
+  "importedAt": "2026-11-10T13:14:52.681Z"
+}

@@ -8,7 +8,23 @@
       "homepage": "https://ui.shadcn.com",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "shadcn", "dir": "apps/v4/public/r/styles/new-york", "framework": "react", "aliases": { "@/registry/new-york/": "", "@/": "" }, "theme": { "file": "apps/v4/app/globals.css", "name": "shadcn/ui" } }
+        {
+          "id": "shadcn",
+          "dir": "apps/v4/public/r/styles/new-york",
+          "framework": "react",
+          "aliases": {
+            "@/registry/new-york/": "",
+            "@/": ""
+          },
+          "theme": {
+            "file": "apps/v4/app/globals.css",
+            "name": "shadcn/ui"
+          }
+        }
+      ],
+      "sparse": [
+        "apps/v4/public/r/styles/new-york",
+        "apps/v4/app"
       ]
     },
     {
@@ -18,7 +34,24 @@
       "homepage": "https://magicui.design",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "magic-ui", "dir": "apps/www/public/r", "framework": "react", "aliases": { "@/": "" }, "skipExisting": true, "fallbackSource": "shadcn", "theme": { "file": "apps/www/styles/globals.css", "name": "Magic UI" } }
+        {
+          "id": "magic-ui",
+          "dir": "apps/www/public/r",
+          "framework": "react",
+          "aliases": {
+            "@/": ""
+          },
+          "skipExisting": true,
+          "fallbackSource": "shadcn",
+          "theme": {
+            "file": "apps/www/styles/globals.css",
+            "name": "Magic UI"
+          }
+        }
+      ],
+      "sparse": [
+        "apps/www/public/r",
+        "apps/www/styles"
       ]
     },
     {
@@ -28,7 +61,25 @@
       "homepage": "https://motion-primitives.com",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "motion-primitives", "dir": "public/c", "framework": "react", "aliases": { "@/": "" }, "skipExisting": true, "theme": { "file": "app/globals.css", "name": "Motion Primitives" } }
+        {
+          "id": "motion-primitives",
+          "dir": "public/c",
+          "framework": "react",
+          "aliases": {
+            "@/components/core/": "",
+            "@/": ""
+          },
+          "skipExisting": true,
+          "theme": {
+            "file": "app/globals.css",
+            "name": "Motion Primitives"
+          },
+          "demos": "app/docs/{name}/{name}-basic.tsx"
+        }
+      ],
+      "sparse": [
+        "public/c",
+        "app"
       ]
     },
     {
@@ -38,7 +89,23 @@
       "homepage": "https://www.cult-ui.com",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "cult-ui", "dir": "apps/www/public/r", "framework": "react", "aliases": { "@/": "" }, "fallbackSource": "shadcn", "theme": { "file": "apps/www/styles/globals.css", "name": "Cult UI" } }
+        {
+          "id": "cult-ui",
+          "dir": "apps/www/public/r",
+          "framework": "react",
+          "aliases": {
+            "@/": ""
+          },
+          "fallbackSource": "shadcn",
+          "theme": {
+            "file": "apps/www/styles/globals.css",
+            "name": "Cult UI"
+          }
+        }
+      ],
+      "sparse": [
+        "apps/www/public/r",
+        "apps/www/styles"
       ]
     },
     {
@@ -48,7 +115,23 @@
       "homepage": "https://kokonutui.com",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "kokonut-ui", "dir": "public/r", "framework": "react", "aliases": { "@/": "" }, "fallbackSource": "shadcn", "theme": { "file": "app/globals.css", "name": "Kokonut UI" } }
+        {
+          "id": "kokonut-ui",
+          "dir": "public/r",
+          "framework": "react",
+          "aliases": {
+            "@/": ""
+          },
+          "fallbackSource": "shadcn",
+          "theme": {
+            "file": "app/globals.css",
+            "name": "Kokonut UI"
+          }
+        }
+      ],
+      "sparse": [
+        "public/r",
+        "app"
       ]
     },
     {
@@ -58,7 +141,51 @@
       "homepage": "https://reui.io",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "reui", "dir": "public/r/styles/base-luma", "framework": "react", "aliases": { "@/": "" }, "targetPaths": true, "fallbackSource": "shadcn", "theme": { "file": "styles/globals.css", "name": "ReUI" } }
+        {
+          "id": "reui",
+          "dir": "public/r/styles/base-luma",
+          "framework": "react",
+          "aliases": {
+            "@/registry/bases/base/ui/": "components/ui/",
+            "@/registry/bases/base/lib/": "lib/",
+            "@/registry/bases/base/hooks/": "hooks/",
+            "@/registry-reui/bases/base/reui/": "components/reui/",
+            "@/registry-reui/bases/base/hooks/": "hooks/",
+            "@/": ""
+          },
+          "targetPaths": true,
+          "fallbackSource": "shadcn",
+          "theme": {
+            "file": "styles/globals.css",
+            "name": "ReUI"
+          },
+          "primitives": [
+            {
+              "dir": "registry/bases/base/ui",
+              "target": "components/ui",
+              "prefix": "@/registry/bases/base/ui/",
+              "idPrefix": "ui-"
+            },
+            {
+              "dir": "registry-reui/bases/base/hooks",
+              "target": "hooks",
+              "prefix": "@/registry-reui/bases/base/hooks/",
+              "idPrefix": ""
+            }
+          ],
+          "examples": {
+            "meta": "registry-reui/_meta/components/bases/base",
+            "root": "registry-reui/bases/base"
+          }
+        }
+      ],
+      "sparse": [
+        "public/r/styles/base-luma",
+        "styles",
+        "registry/bases/base/ui",
+        "registry-reui/_meta/components/bases/base",
+        "registry-reui/bases/base",
+        "components/ui/svgs"
       ]
     },
     {
@@ -68,7 +195,25 @@
       "homepage": "https://coss.com/origin",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "origin-ui", "dir": "apps/origin/public/r", "framework": "react", "aliases": { "@/": "" }, "index": "apps/origin/registry.json", "nameFromTags": true, "fallbackSource": "shadcn", "theme": { "file": "apps/origin/app/globals.css", "name": "Origin UI" } }
+        {
+          "id": "origin-ui",
+          "dir": "apps/origin/public/r",
+          "framework": "react",
+          "aliases": {
+            "@/": ""
+          },
+          "index": "apps/origin/registry.json",
+          "nameFromTags": true,
+          "fallbackSource": "shadcn",
+          "theme": {
+            "file": "apps/origin/app/globals.css",
+            "name": "Origin UI"
+          }
+        }
+      ],
+      "sparse": [
+        "apps/origin/public/r",
+        "apps/origin/app"
       ]
     },
     {
@@ -78,13 +223,32 @@
       "homepage": "https://reactbits.dev",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "react-bits", "dir": "public/r", "framework": "react", "variantSuffixes": ["-TS-TW", "-TS-CSS"] }
+        {
+          "id": "react-bits",
+          "dir": "public/r",
+          "framework": "react",
+          "variantSuffixes": [
+            "-TS-TW",
+            "-TS-CSS"
+          ],
+          "sounds": {
+            "prefix": "Sound",
+            "suffix": "-TS",
+            "engine": "SoundEngine-TS"
+          },
+          "noPreviewPackages": [
+            "vgpu"
+          ]
+        }
       ],
       "acceptRestricted": {
         "license": "LicenseRef-Commons-Clause",
         "attribution": "React Bits (https://reactbits.dev) : conserver la notice de copyright « Copyright (c) David Haz » et la licence MIT + Commons Clause dans le code copié.",
         "notes": "MIT + Commons Clause : usage libre dans une application, un site ou un produit, y compris commercial ; interdiction de vendre, sous-licencier ou redistribuer les composants eux-mêmes. Accepté explicitement le 2026-11-05 (outil personnel, repo privé)."
-      }
+      },
+      "sparse": [
+        "public/r"
+      ]
     },
     {
       "id": "rare-ui",
@@ -93,10 +257,15 @@
       "homepage": "https://rareui.com",
       "parser": "shadcn-registry",
       "registry": "registry.json",
-      "aliases": { "@/": "" },
+      "aliases": {
+        "@/": ""
+      },
       "framework": "react",
       "demos": "app/components/(docs)/*/demo.tsx",
-      "theme": { "file": "app/globals.css", "name": "Rare UI" },
+      "theme": {
+        "file": "app/globals.css",
+        "name": "Rare UI"
+      },
       "acceptRestricted": {
         "license": "LicenseRef-MIT-Commons-Clause-Attribution",
         "attribution": "Rare UI (https://rareui.com) : tout projet qui embarque un composant doit afficher un lien visible vers https://rareui.com (footer, page à propos, crédits ou README) et conserver la notice de copyright dans le code copié.",
@@ -110,10 +279,34 @@
       "homepage": "https://easyui.pro",
       "parser": "shadcn-registry",
       "registry": "registry.json",
-      "aliases": { "@/": "src/" },
+      "aliases": {
+        "@/": "src/"
+      },
       "framework": "react",
       "metadata": "src/components/registry/components-data.ts",
-      "theme": { "file": ["src/styles/tokens.css", "src/styles/index.css"], "name": "Easy UI" }
+      "theme": {
+        "file": [
+          "src/styles/tokens.css",
+          "src/styles/index.css"
+        ],
+        "name": "Easy UI"
+      },
+      "routeDemos": {
+        "pattern": "src/components/docs/detail/demos/items/{name}.demo.tsx",
+        "registries": [
+          {
+            "file": "src/components/docs/detail/demo-components.ts",
+            "name": "DEMO_COMPONENTS"
+          },
+          {
+            "file": "src/components/docs/detail/inline-demo-registry.tsx",
+            "name": "INLINE_DEMO_COMPONENTS"
+          }
+        ],
+        "reexports": {
+          "src/components/docs/detail/demo-registry.ts": "export { DEMO_COMPONENTS } from './demo-components';\n"
+        }
+      }
     },
     {
       "id": "panelui",
@@ -122,15 +315,38 @@
       "homepage": "https://panelui.dev",
       "parser": "shadcn-built",
       "variants": [
-        { "id": "panelui", "dir": "apps/docs/public/r", "framework": "react-native", "blockType": "screen", "aliases": { "@/": "" }, "componentList": { "file": "catalogue.json", "key": "componentModules" } },
+        {
+          "id": "panelui",
+          "dir": "apps/docs/public/r",
+          "framework": "react-native",
+          "blockType": "screen",
+          "aliases": {
+            "@/": ""
+          },
+          "componentList": {
+            "file": "catalogue.json",
+            "key": "componentModules"
+          }
+        },
         {
           "id": "panelui-web",
           "dir": "apps/docs/public/r/web",
           "framework": "react",
-          "aliases": { "@/": "", "panelui-web/": "components/panelui/" },
+          "aliases": {
+            "@/": "",
+            "panelui-web/": "components/panelui/"
+          },
           "demos": "apps/docs/components/web-demos/{name}/{overview,default,variants,basic}.tsx",
-          "theme": { "file": "apps/docs/app/global.css", "name": "PanelUI Web" }
+          "theme": {
+            "file": "apps/docs/app/global.css",
+            "name": "PanelUI Web"
+          }
         }
+      ],
+      "sparse": [
+        "apps/docs/public/r",
+        "apps/docs/components",
+        "apps/docs/app"
       ]
     },
     {
@@ -141,9 +357,20 @@
       "parser": "folder-blocks",
       "blocks": "blocks",
       "framework": "react",
-      "exclude": ["assets", "playground", "sounds"],
+      "exclude": [
+        "assets",
+        "playground"
+      ],
       "excludeReadme": "\\b(Pro only|Bencho Pro|Premium)\\b",
-      "theme": { "file": "tokens.css", "name": "Bencho" }
+      "theme": {
+        "file": "tokens.css",
+        "name": "Bencho"
+      },
+      "sounds": "sounds/sounds.ts",
+      "sparse": [
+        "blocks",
+        "sounds"
+      ]
     }
   ]
 }

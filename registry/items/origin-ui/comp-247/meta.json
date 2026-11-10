@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-247",
-  "name": "Slider 247",
+  "name": "Slider with output",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-247.tsx"
   },
-  "contentHash": "c1e4112905ac5d37",
-  "importedAt": "2026-11-05T17:59:40.998Z"
+  "contentHash": "70f590c826d89f86",
+  "importedAt": "2026-11-05T17:59:40.998Z",
+  "updatedAt": "2026-11-10T13:12:55.932Z"
 }

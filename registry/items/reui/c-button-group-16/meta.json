@@ -1,0 +1,41 @@
+{
+  "id": "reui/c-button-group-16",
+  "name": "Search input with filter menu and clear button",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "button-group",
+    "exemple",
+    "search filter clear"
+  ],
+  "description": "Search input with filter menu and clear button. Built by composing Button, Button Group, Dropdown Menu, Input.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-button-group",
+    "reui/ui-dropdown-menu",
+    "reui/ui-input"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/button-group/c-button-group-16.tsx",
+  "sourcePath": "registry-reui/bases/base/components/button-group/c-button-group-16.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/button-group/c-button-group-16.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/button-group/c-button-group-16.tsx"
+  },
+  "contentHash": "e71e66420d8f8b19",
+  "importedAt": "2026-11-10T13:13:07.165Z"
+}

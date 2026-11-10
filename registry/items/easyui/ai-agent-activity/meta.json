@@ -41,6 +41,30 @@
       "target": "lib/utils.ts"
     },
     {
+      "path": "src/components/docs/detail/demos/items/ai-agent-activity.demo.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-types.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/detail/demo-components.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/types/component.ts",
+      "role": "demo"
+    },
+    {
+      "path": "src/components/docs/sections/NewComponentsShowcase.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "src/lib/motion-tokens.ts",
+      "role": "demo"
+    },
+    {
       "path": "README.md",
       "role": "doc"
     }
@@ -48,9 +72,10 @@
   "theme": "easyui/theme",
   "preview": {
     "kind": "live",
-    "entry": "src/components/ui/AIAgentActivity.tsx"
+    "entry": "src/components/docs/detail/demos/items/ai-agent-activity.demo.tsx",
+    "demo": "source"
   },
-  "contentHash": "33d3ddfeb5c378e7",
+  "contentHash": "7290ad80eddaae9e",
   "importedAt": "2026-11-05T00:16:51.471Z",
-  "updatedAt": "2026-11-05T00:19:19.773Z"
+  "updatedAt": "2026-11-10T13:12:05.212Z"
 }

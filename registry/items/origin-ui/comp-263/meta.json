@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-263",
-  "name": "Slider 263",
+  "name": "Vertical dual range slider and tooltip",
   "type": "component",
   "category": "Curseurs",
   "tags": [
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-263.tsx"
   },
-  "contentHash": "d325e9a71110cb06",
-  "importedAt": "2026-11-05T17:59:41.069Z"
+  "contentHash": "8ec24b4fcb7ee982",
+  "importedAt": "2026-11-05T17:59:41.069Z",
+  "updatedAt": "2026-11-10T13:12:56.069Z"
 }

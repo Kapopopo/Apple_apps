@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-486",
-  "name": "Input 486",
+  "name": "Range (input)",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-486.tsx"
   },
-  "contentHash": "b8703c59a4cc73ed",
-  "importedAt": "2026-11-05T17:59:42.232Z"
+  "contentHash": "a598005c457fc060",
+  "importedAt": "2026-11-05T17:59:42.232Z",
+  "updatedAt": "2026-11-10T13:12:56.660Z"
 }

@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-switch-4",
+  "name": "Switch in different sizes.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "sizes",
+    "switch"
+  ],
+  "description": "Switch in different sizes. Built by composing Label, Switch.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-label",
+    "reui/ui-switch"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/switch/c-switch-4.tsx",
+  "sourcePath": "registry-reui/bases/base/components/switch/c-switch-4.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/switch/c-switch-4.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/switch/c-switch-4.tsx"
+  },
+  "contentHash": "08f5b5f6ada24295",
+  "importedAt": "2026-11-10T13:15:02.677Z"
+}

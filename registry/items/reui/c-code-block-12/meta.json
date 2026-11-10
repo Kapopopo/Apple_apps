@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-code-block-12",
+  "name": "Line selection",
+  "type": "component",
+  "category": "Code",
+  "tags": [
+    "code-block",
+    "exemple",
+    "line selection"
+  ],
+  "description": "Line selection. Built by composing Badge, Button, Code Block.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/code-block",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/code-block/c-code-block-12.tsx",
+  "sourcePath": "registry-reui/bases/base/components/code-block/c-code-block-12.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/code-block/c-code-block-12.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/code-block/c-code-block-12.tsx"
+  },
+  "contentHash": "0fc9ec43472685a5",
+  "importedAt": "2026-11-10T13:14:53.504Z"
+}

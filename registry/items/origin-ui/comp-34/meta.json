@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-34",
-  "name": "Input 34",
+  "name": "Input with character limit",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-34.tsx"
   },
-  "contentHash": "4da9eb4d711b87b8",
-  "importedAt": "2026-11-05T17:59:41.617Z"
+  "contentHash": "843ae75036799d13",
+  "importedAt": "2026-11-05T17:59:41.617Z",
+  "updatedAt": "2026-11-10T13:12:56.280Z"
 }

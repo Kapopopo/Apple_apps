@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-empty-1",
+  "name": "Basic empty state",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "basic",
+    "empty",
+    "exemple"
+  ],
+  "description": "Basic empty state. Built by composing Button, Empty.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-button",
+    "reui/ui-empty"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/empty/c-empty-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/empty/c-empty-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/empty/c-empty-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/empty/c-empty-1.tsx"
+  },
+  "contentHash": "4fd1a8397ec90bec",
+  "importedAt": "2026-11-10T13:14:55.589Z"
+}

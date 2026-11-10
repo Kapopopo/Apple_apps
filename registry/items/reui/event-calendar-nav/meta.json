@@ -1,8 +1,8 @@
 {
   "id": "reui/event-calendar-nav",
   "name": "Composable navigation - Today, prev/next, period title, view switcher dropdown, and a free toolbar slot.",
-  "type": "component",
-  "category": "Calendriers",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "web"
   ],
@@ -16,11 +16,11 @@
     "reui/event-calendar",
     "reui/event-calendar-lib",
     "reui/event-calendar-types",
-    "shadcn/button",
-    "shadcn/calendar",
-    "shadcn/dropdown-menu",
-    "shadcn/popover",
-    "shadcn/tooltip"
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-dropdown-menu",
+    "reui/ui-popover",
+    "reui/ui-tooltip"
   ],
   "source": "ReUI",
   "sourceId": "reui",
@@ -37,12 +37,11 @@
       "target": "components/reui/event-calendar/event-calendar-nav.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/event-calendar/event-calendar-nav.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "1396a24c739ba9ab",
+  "contentHash": "04bc513b82a375eb",
   "importedAt": "2026-11-05T17:59:38.153Z",
-  "updatedAt": "2026-11-05T18:07:49.788Z"
+  "updatedAt": "2026-11-10T13:13:03.116Z"
 }

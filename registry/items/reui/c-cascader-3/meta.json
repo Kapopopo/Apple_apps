@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-cascader-3",
+  "name": "Deep search across every level with path-annotated results.",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "cascader",
+    "deep search",
+    "exemple"
+  ],
+  "description": "Deep search across every level with path-annotated results. Built by composing Button, Cascader, Cascader Item, Cascader Nav, Cascader Types.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/cascader",
+    "reui/ui-button"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/cascader/c-cascader-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/cascader/c-cascader-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/cascader/c-cascader-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/cascader/c-cascader-3.tsx"
+  },
+  "contentHash": "a0e9a0f95b9bdbcd",
+  "importedAt": "2026-11-10T13:13:08.498Z"
+}

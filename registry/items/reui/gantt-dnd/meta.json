@@ -1,8 +1,8 @@
 {
   "id": "reui/gantt-dnd",
   "name": "Custom pointer-event interaction engine - edge resize and drag-create over the horizontal axis with live validation; bars are never dragged whole.",
-  "type": "component",
-  "category": "Graphiques",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "drag",
     "web"
@@ -32,12 +32,11 @@
       "target": "components/reui/gantt/gantt-dnd.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/gantt/gantt-dnd.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "c666e4af22edfc89",
+  "contentHash": "d1aacd6e1ec29fd1",
   "importedAt": "2026-11-05T17:59:38.259Z",
-  "updatedAt": "2026-11-05T18:07:49.968Z"
+  "updatedAt": "2026-11-10T13:13:03.565Z"
 }

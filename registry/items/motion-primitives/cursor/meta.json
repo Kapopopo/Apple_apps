@@ -25,13 +25,19 @@
     {
       "path": "cursor.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/cursor/cursor-1.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "cursor.tsx"
+    "entry": "app/docs/cursor/cursor-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "e9e0f1c9e07f5e21",
-  "importedAt": "2026-11-05T17:59:30.321Z"
+  "contentHash": "135ef644ca0bfa60",
+  "importedAt": "2026-11-05T17:59:30.321Z",
+  "updatedAt": "2026-11-10T13:11:58.306Z"
 }

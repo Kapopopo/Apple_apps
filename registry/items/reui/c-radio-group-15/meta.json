@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-radio-group-15",
+  "name": "Radio group with badges",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "badges",
+    "exemple",
+    "radio-group"
+  ],
+  "description": "Radio group with badges. Built by composing Badge, Field, Radio Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-badge",
+    "reui/ui-field",
+    "reui/ui-radio-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/radio-group/c-radio-group-15.tsx",
+  "sourcePath": "registry-reui/bases/base/components/radio-group/c-radio-group-15.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/radio-group/c-radio-group-15.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/radio-group/c-radio-group-15.tsx"
+  },
+  "contentHash": "a53698bafae43b1a",
+  "importedAt": "2026-11-10T13:15:00.035Z"
+}

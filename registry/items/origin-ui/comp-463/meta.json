@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-463",
-  "name": "Pagination 463",
+  "name": "Rows per page",
   "type": "component",
-  "category": "Navigation",
+  "category": "Formulaires",
   "tags": [
     "pagination",
     "radix",
@@ -42,6 +42,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-463.tsx"
   },
-  "contentHash": "b594e2d9836f40be",
-  "importedAt": "2026-11-05T17:59:42.146Z"
+  "contentHash": "cafd7e2f84da39cd",
+  "importedAt": "2026-11-05T17:59:42.146Z",
+  "updatedAt": "2026-11-10T13:12:56.595Z"
 }

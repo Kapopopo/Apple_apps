@@ -1,0 +1,40 @@
+{
+  "id": "reui/c-accordion-7",
+  "name": "Accordion items integrated within Frame and FramePanel",
+  "type": "component",
+  "category": "FAQ",
+  "tags": [
+    "accordion",
+    "exemple",
+    "in frame"
+  ],
+  "description": "Accordion items integrated within Frame and FramePanel. Built by composing Accordion, Badge, Frame.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/badge",
+    "reui/frame",
+    "reui/ui-accordion"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/accordion/c-accordion-7.tsx",
+  "sourcePath": "registry-reui/bases/base/components/accordion/c-accordion-7.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/accordion/c-accordion-7.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/accordion/c-accordion-7.tsx"
+  },
+  "contentHash": "c5c69a45fd7ad27d",
+  "importedAt": "2026-11-10T13:13:04.330Z"
+}

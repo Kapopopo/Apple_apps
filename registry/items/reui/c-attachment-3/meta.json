@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-attachment-3",
+  "name": "Image thumbnails in a snapping strip",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "attachment",
+    "exemple",
+    "image strip"
+  ],
+  "description": "Image thumbnails in a snapping strip. Built with the Attachment component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-attachment"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/attachment/c-attachment-3.tsx",
+  "sourcePath": "registry-reui/bases/base/components/attachment/c-attachment-3.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/attachment/c-attachment-3.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/attachment/c-attachment-3.tsx"
+  },
+  "contentHash": "3cfcab0637feff96",
+  "importedAt": "2026-11-10T13:13:05.030Z"
+}

@@ -13,11 +13,11 @@
     "react-day-picker"
   ],
   "registryDependencies": [
-    "shadcn/button",
-    "shadcn/calendar",
-    "shadcn/input",
-    "shadcn/scroll-area",
-    "shadcn/tabs",
+    "reui/ui-button",
+    "reui/ui-calendar",
+    "reui/ui-input",
+    "reui/ui-scroll-area",
+    "reui/ui-tabs",
     "shadcn/use-mobile"
   ],
   "source": "ReUI",
@@ -33,14 +33,27 @@
       "path": "components/reui/date-selector.tsx",
       "role": "source",
       "target": "components/reui/date-selector.tsx"
+    },
+    {
+      "path": "components/date-selector/c-date-selector-1.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/date-selector/c-date-selector-2.tsx",
+      "role": "demo"
+    },
+    {
+      "path": "components/date-selector/c-date-selector-3.tsx",
+      "role": "demo"
     }
   ],
   "theme": "reui/theme",
   "preview": {
     "kind": "live",
-    "entry": "components/reui/date-selector.tsx"
+    "entry": "components/date-selector/c-date-selector-1.tsx",
+    "demo": "source"
   },
-  "contentHash": "0c13cae0baaee8e1",
+  "contentHash": "65b019e267701f36",
   "importedAt": "2026-11-05T17:59:38.132Z",
-  "updatedAt": "2026-11-05T18:07:49.760Z"
+  "updatedAt": "2026-11-10T13:13:03.014Z"
 }

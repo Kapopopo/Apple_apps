@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-224",
-  "name": "Label 224",
+  "name": "Select with description and right indicator",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-224.tsx"
   },
-  "contentHash": "ed4e68b182fd7a00",
-  "importedAt": "2026-11-05T17:59:40.928Z"
+  "contentHash": "ca65d5704ae56d8e",
+  "importedAt": "2026-11-05T17:59:40.928Z",
+  "updatedAt": "2026-11-10T13:12:55.710Z"
 }

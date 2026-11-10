@@ -26,13 +26,19 @@
     {
       "path": "carousel.tsx",
       "role": "source"
+    },
+    {
+      "path": "app/docs/carousel/carousel-basic.tsx",
+      "role": "demo"
     }
   ],
   "theme": "motion-primitives/theme",
   "preview": {
     "kind": "live",
-    "entry": "carousel.tsx"
+    "entry": "app/docs/carousel/carousel-basic.tsx",
+    "demo": "source"
   },
-  "contentHash": "4d11a8867590af96",
-  "importedAt": "2026-11-05T17:59:30.316Z"
+  "contentHash": "ac1f69020b1c869e",
+  "importedAt": "2026-11-05T17:59:30.316Z",
+  "updatedAt": "2026-11-10T13:11:58.284Z"
 }

@@ -1,0 +1,38 @@
+{
+  "id": "reui/c-skeleton-1",
+  "name": "Skeleton loader for avatars and user info.",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "avatar info",
+    "exemple",
+    "skeleton"
+  ],
+  "description": "Skeleton loader for avatars and user info. Built with the Skeleton component.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-skeleton"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/skeleton/c-skeleton-1.tsx",
+  "sourcePath": "registry-reui/bases/base/components/skeleton/c-skeleton-1.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/skeleton/c-skeleton-1.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/skeleton/c-skeleton-1.tsx"
+  },
+  "contentHash": "2a873fe6747d2ae3",
+  "importedAt": "2026-11-10T13:15:01.198Z"
+}

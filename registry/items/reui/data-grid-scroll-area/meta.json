@@ -1,8 +1,8 @@
 {
   "id": "reui/data-grid-scroll-area",
   "name": "Data Grid Scroll Area",
-  "type": "component",
-  "category": "Fonds",
+  "type": "lib",
+  "category": "Utilitaires",
   "tags": [
     "scroll",
     "web"
@@ -30,12 +30,11 @@
       "target": "components/reui/data-grid/data-grid-scroll-area.tsx"
     }
   ],
-  "theme": "reui/theme",
   "preview": {
-    "kind": "live",
-    "entry": "components/reui/data-grid/data-grid-scroll-area.tsx"
+    "kind": "none",
+    "reason": "Utilitaire sans rendu"
   },
-  "contentHash": "a8dc71de72ef3f97",
+  "contentHash": "a334f0f32b91d97d",
   "importedAt": "2026-11-05T17:59:38.104Z",
-  "updatedAt": "2026-11-05T18:07:49.734Z"
+  "updatedAt": "2026-11-10T13:13:02.898Z"
 }

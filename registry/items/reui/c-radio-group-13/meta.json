@@ -1,0 +1,39 @@
+{
+  "id": "reui/c-radio-group-13",
+  "name": "Payment method radio cards",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "exemple",
+    "payment methods",
+    "radio-group"
+  ],
+  "description": "Payment method radio cards. Built by composing Field, Radio Group.",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "reui/ui-field",
+    "reui/ui-radio-group"
+  ],
+  "source": "ReUI",
+  "sourceId": "reui",
+  "sourceUrl": "https://github.com/keenthemes/reui/blob/067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a/registry-reui/bases/base/components/radio-group/c-radio-group-13.tsx",
+  "sourcePath": "registry-reui/bases/base/components/radio-group/c-radio-group-13.tsx",
+  "sourceCommit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc",
+  "files": [
+    {
+      "path": "components/radio-group/c-radio-group-13.tsx",
+      "role": "source"
+    }
+  ],
+  "theme": "reui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "components/radio-group/c-radio-group-13.tsx"
+  },
+  "contentHash": "97e5b62187d54558",
+  "importedAt": "2026-11-10T13:15:00.003Z"
+}

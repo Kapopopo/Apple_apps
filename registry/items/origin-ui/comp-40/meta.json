@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-40",
-  "name": "Input 40",
+  "name": "Date and time input",
   "type": "component",
   "category": "Formulaires",
   "tags": [
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-40.tsx"
   },
-  "contentHash": "2d98fae28555f794",
-  "importedAt": "2026-11-05T17:59:41.871Z"
+  "contentHash": "27bd38b57b0cf2cd",
+  "importedAt": "2026-11-05T17:59:41.871Z",
+  "updatedAt": "2026-11-10T13:12:56.497Z"
 }
