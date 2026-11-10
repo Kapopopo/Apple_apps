@@ -11,13 +11,22 @@ import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry/index.json'), 'utf8')).items as { id: string; type: string; dir: string; licenseStatus: string; registryDependencies: string[]; sourceId: string; framework: string }[];
+const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry/index.json'), 'utf8')).items as {
+  id: string;
+  type: string;
+  dir: string;
+  licenseStatus: string;
+  registryDependencies: string[];
+  sourceId: string;
+  framework: string;
+}[];
 const SPEC = `zz-test-${process.pid}`;
 const CREATED = `zz-created-${process.pid}`;
 const specFile = path.join(ROOT, 'specs', `${SPEC}.json`);
 const client = new Client({ name: 'atlas-tests', version: '1.0.0' });
 
-const call = async (name: string, args: Record<string, unknown> = {}) => (await client.callTool({ name, arguments: args })) as { content: { type: string; text: string }[]; isError?: boolean };
+const call = async (name: string, args: Record<string, unknown> = {}) =>
+  (await client.callTool({ name, arguments: args })) as { content: { type: string; text: string }[]; isError?: boolean };
 const textOf = async (name: string, args: Record<string, unknown> = {}) => (await call(name, args)).content[0].text;
 
 const block = index.find((e) => e.registryDependencies.length && e.licenseStatus === 'restricted' && e.type === 'component')!;
@@ -31,17 +40,52 @@ const cleanup = () => {
 };
 
 before(async () => {
-  fs.writeFileSync(specFile, JSON.stringify({ name: SPEC, title: 'Spec de test', brief: 'Tester le MCP', theme: theme.id, fonts: [], easings: ['atlas/easings-standard'], blocks: [{ id: block.id, note: 'Dans le hero', page: 'Accueil' }, { id: 'absent/item', note: '' }] }));
-  await client.connect(new StdioClientTransport({ command: process.execPath, args: ['--import', 'tsx', path.join(ROOT, 'mcp/index.ts')], cwd: ROOT, stderr: 'ignore' }));
+  fs.writeFileSync(
+    specFile,
+    JSON.stringify({
+      name: SPEC,
+      title: 'Spec de test',
+      brief: 'Tester le MCP',
+      theme: theme.id,
+      fonts: [],
+      easings: ['atlas/easings-standard'],
+      blocks: [
+        { id: block.id, note: 'Dans le hero', page: 'Accueil' },
+        { id: 'absent/item', note: '' },
+      ],
+    }),
+  );
+  await client.connect(
+    new StdioClientTransport({
+      command: process.execPath,
+      args: ['--import', 'tsx', path.join(ROOT, 'mcp/index.ts')],
+      cwd: ROOT,
+      stderr: 'ignore',
+    }),
+  );
 });
-after(async () => { await client.close(); cleanup(); });
+after(async () => {
+  await client.close();
+  cleanup();
+});
 
 test('outils et prompt exposés ; seul create_spec écrit', async () => {
   const tools = (await client.listTools()).tools;
-  assert.deepEqual(tools.map((t) => t.name).sort(), ['create_spec', 'get_component', 'get_spec', 'get_spec_bundle', 'get_theme', 'list_specs', 'search_registry']);
+  assert.deepEqual(tools.map((t) => t.name).sort(), [
+    'create_spec',
+    'get_component',
+    'get_spec',
+    'get_spec_bundle',
+    'get_theme',
+    'list_specs',
+    'search_registry',
+  ]);
   assert.ok(tools.filter((t) => t.name !== 'create_spec').every((t) => t.annotations?.readOnlyHint));
   assert.equal(tools.find((t) => t.name === 'create_spec')!.annotations?.readOnlyHint, false);
-  assert.deepEqual((await client.listPrompts()).prompts.map((p) => p.name), ['build-from-spec']);
+  assert.deepEqual(
+    (await client.listPrompts()).prompts.map((p) => p.name),
+    ['build-from-spec'],
+  );
 });
 
 test('get_component renvoie le code réel, la licence et les dépendances', async () => {
@@ -83,7 +127,9 @@ test('search_registry : vocabulaire français, filtres, interactifs d’abord', 
   const interactive = JSON.parse(await textOf('search_registry', { query: 'bouton', interactive_only: true, limit: 50 }));
   assert.ok(interactive.length && interactive.every((r: { interactive: boolean }) => r.interactive));
   const native = JSON.parse(await textOf('search_registry', { framework: 'react-native', type: 'screen' }));
-  assert.ok(native.length && native.every((r: { framework: string; type: string }) => r.framework === 'react-native' && r.type === 'screen'));
+  assert.ok(
+    native.length && native.every((r: { framework: string; type: string }) => r.framework === 'react-native' && r.type === 'screen'),
+  );
   const fonts = JSON.parse(await textOf('search_registry', { type: 'font', license_status: 'open', limit: 5 }));
   assert.ok(fonts.every((r: { licenseStatus: string }) => r.licenseStatus === 'open'));
   for (const args of [{ type: 'widget' }, { limit: true }, { limit: -1 }, { query: [] }, { unknown: 1 }]) {
@@ -96,7 +142,10 @@ test('specs : list_specs, get_spec (pages), get_spec_bundle', async () => {
   const mine = specs.find((s: { name: string }) => s.name === SPEC);
   assert.ok(mine && !mine.preset);
   assert.deepEqual(mine.pages, ['Accueil']);
-  assert.ok(specs.some((s: { preset: boolean }) => s.preset), 'presets listés');
+  assert.ok(
+    specs.some((s: { preset: boolean }) => s.preset),
+    'presets listés',
+  );
   const spec = JSON.parse(await textOf('get_spec', { name: SPEC }));
   assert.equal(spec.blocks[0].note, 'Dans le hero');
   assert.equal(spec.blocks[0].page, 'Accueil');
@@ -120,7 +169,11 @@ test('create_spec : ids vérifiés, conflit sans overwrite, version archivée', 
   assert.equal(conflict.isError, true);
   assert.match(conflict.content[0].text, /overwrite: true/);
   assert.equal((await call('create_spec', { name: CREATED, blocks: [{ id: theme.id }] })).isError, true, 'un thème n’est pas un bloc');
-  assert.equal((await call('create_spec', { name: CREATED, blocks: [{ id: 'absent/item' }], overwrite: true })).isError, true, 'id inconnu');
+  assert.equal(
+    (await call('create_spec', { name: CREATED, blocks: [{ id: 'absent/item' }], overwrite: true })).isError,
+    true,
+    'id inconnu',
+  );
   assert.equal((await call('create_spec', { name: 'Nom Invalide', blocks })).isError, true);
   assert.equal((await call('create_spec', { name: CREATED, title: 'V2', blocks, overwrite: true })).isError, undefined);
   const listed = JSON.parse(await textOf('list_specs')).find((s: { name: string }) => s.name === CREATED);
@@ -129,7 +182,8 @@ test('create_spec : ids vérifiés, conflit sans overwrite, version archivée', 
 });
 
 test('prompt build-from-spec : light par défaut, full avec le code', async () => {
-  const light = ((await client.getPrompt({ name: 'build-from-spec', arguments: { name: SPEC } })).messages[0].content as { text: string }).text;
+  const light = ((await client.getPrompt({ name: 'build-from-spec', arguments: { name: SPEC } })).messages[0].content as { text: string })
+    .text;
   assert.match(light, /CODE SOURCE RÉEL/);
   assert.match(light, /### Page : Accueil/);
   assert.match(light, /Consigne : Dans le hero/);
@@ -138,9 +192,14 @@ test('prompt build-from-spec : light par défaut, full avec le code', async () =
   assert.match(light, /introuvables.*absent\/item/);
   assert.match(light, /Paquets \(une seule commande\) : `npm install /);
   assert.ok(!light.includes('## Code ('), 'mode light : pas de code inline');
-  const full = ((await client.getPrompt({ name: 'build-from-spec', arguments: { name: SPEC, mode: 'full' } })).messages[0].content as { text: string }).text;
+  const full = (
+    (await client.getPrompt({ name: 'build-from-spec', arguments: { name: SPEC, mode: 'full' } })).messages[0].content as { text: string }
+  ).text;
   assert.match(full, /## Code \(fichiers prêts à copier/);
   assert.ok(full.length > light.length);
-  const completion = await client.complete({ ref: { type: 'ref/prompt', name: 'build-from-spec' }, argument: { name: 'name', value: 'zz-test' } });
+  const completion = await client.complete({
+    ref: { type: 'ref/prompt', name: 'build-from-spec' },
+    argument: { name: 'name', value: 'zz-test' },
+  });
   assert.ok(completion.completion.values.includes(SPEC));
 });

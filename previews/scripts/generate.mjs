@@ -48,14 +48,17 @@ const entries = live.map((item) => {
   return `  ${JSON.stringify(item.id)}: { source: ${JSON.stringify(item.sourceId)}, name: ${JSON.stringify(item.name)}, exportName: ${JSON.stringify(meta.preview.exportName ?? null)}, demo: ${meta.preview.demo === 'source'}, sound: ${JSON.stringify(meta.sound ?? null)}, engine: ${engine}, load: () => import(${JSON.stringify(file(meta.preview.entry))}), css: () => import(${JSON.stringify(`./${item.sourceId}.css`)}), styles: [${styles.join(', ')}] },`;
 });
 
-fs.writeFileSync(path.join(out, 'registry.ts'), [
-  '/* Généré par scripts/generate.mjs — ne pas modifier. */',
-  'type Loader = () => Promise<Record<string, unknown>>;',
-  'export interface PreviewEntry { source: string; name: string; exportName: string | null; demo: boolean; sound: { engine: string; names: string[] } | null; engine: Loader | null; load: Loader; css: () => Promise<unknown>; styles: (() => Promise<unknown>)[] }',
-  'export const ITEMS: Record<string, PreviewEntry> = {',
-  ...entries,
-  '};',
-  '',
-].join('\n'));
+fs.writeFileSync(
+  path.join(out, 'registry.ts'),
+  [
+    '/* Généré par scripts/generate.mjs — ne pas modifier. */',
+    'type Loader = () => Promise<Record<string, unknown>>;',
+    'export interface PreviewEntry { source: string; name: string; exportName: string | null; demo: boolean; sound: { engine: string; names: string[] } | null; engine: Loader | null; load: Loader; css: () => Promise<unknown>; styles: (() => Promise<unknown>)[] }',
+    'export const ITEMS: Record<string, PreviewEntry> = {',
+    ...entries,
+    '};',
+    '',
+  ].join('\n'),
+);
 
 console.log(`previews : ${live.length} items live, ${sources.length} feuilles Tailwind (${sources.join(', ')})`);

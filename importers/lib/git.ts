@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { CACHE } from '../../shared/paths.js';
 
-const git = (args: string[], cwd?: string) => execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
+const git = (args: string[], cwd?: string) =>
+  execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
 
 export interface SyncOptions {
   /** Aucun accès réseau : le cache doit exister (le commit verrouillé doit y être présent). */
@@ -16,7 +17,13 @@ export interface SyncOptions {
 
 function applySparse(dir: string, sparse?: string[]) {
   if (!sparse?.length) return;
-  const current = (() => { try { return git(['sparse-checkout', 'list'], dir).split('\n').filter(Boolean); } catch { return []; } })();
+  const current = (() => {
+    try {
+      return git(['sparse-checkout', 'list'], dir).split('\n').filter(Boolean);
+    } catch {
+      return [];
+    }
+  })();
   if (current.length === sparse.length && sparse.every((s) => current.includes(s))) return;
   git(['sparse-checkout', 'set', '--cone', ...sparse], dir);
 }
@@ -36,7 +43,8 @@ export function syncRepo(id: string, url: string, options: SyncOptions = {}): { 
   } else applySparse(dir, sparse);
   const head = git(['rev-parse', 'HEAD'], dir);
   if (commit && head !== commit) {
-    if (offline) throw new Error(`${id} : commit verrouillé ${commit.slice(0, 7)} absent du cache (HEAD ${head.slice(0, 7)}) et mode hors ligne.`);
+    if (offline)
+      throw new Error(`${id} : commit verrouillé ${commit.slice(0, 7)} absent du cache (HEAD ${head.slice(0, 7)}) et mode hors ligne.`);
     git(['fetch', '--quiet', '--depth', '1', 'origin', commit], dir);
     git(['reset', '--quiet', '--hard', 'FETCH_HEAD'], dir);
   } else if (!commit && !offline) {

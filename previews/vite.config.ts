@@ -38,16 +38,25 @@ function registryResolver(): Plugin {
   const aliases = loadAliases();
   const files = loadFiles();
   const missing = new Set<string>();
-  const stub = (spec: string, from: string) => { missing.add(`${spec}  ←  ${posix(path.relative(REGISTRY, from))}`); return `\0atlas-missing:${spec}`; };
+  const stub = (spec: string, from: string) => {
+    missing.add(`${spec}  ←  ${posix(path.relative(REGISTRY, from))}`);
+    return `\0atlas-missing:${spec}`;
+  };
   const inSource = (source: string, rel: string) => {
     const map = files.get(source);
-    for (const ext of EXTENSIONS) { const hit = map?.get(rel + ext); if (hit) return hit; }
+    for (const ext of EXTENSIONS) {
+      const hit = map?.get(rel + ext);
+      if (hit) return hit;
+    }
   };
   /** Replis communs : helper cn, puis primitives shadcn/ui et hooks partagés qu'une source importe sans les fournir. */
   const shared = (target: string) => {
     if (/(^|\/)lib\/utils$/.test(target)) return path.join(SHIMS, 'global', 'lib', 'utils.ts');
     const primitive = target.match(/(?:^|\/)(ui|hooks)\/([\w.-]+)$/);
-    return primitive ? inSource('shadcn', `${primitive[1]}/${primitive[2]}`) ?? inSource('shadcn', `${primitive[1] === 'ui' ? 'ui' : 'hooks'}/${primitive[2]}`) : undefined;
+    return primitive
+      ? (inSource('shadcn', `${primitive[1]}/${primitive[2]}`) ??
+          inSource('shadcn', `${primitive[1] === 'ui' ? 'ui' : 'hooks'}/${primitive[2]}`))
+      : undefined;
   };
   return {
     name: 'atlas-registry-resolver',
@@ -56,7 +65,9 @@ function registryResolver(): Plugin {
       if (!importer || spec.startsWith('\0')) return null;
       const from = path.resolve(importer.split('?')[0]);
       const rel = posix(path.relative(REGISTRY, from));
-      const match = rel.match(/^items\/([^/]+)\/([^/]+)\/files\/(.+)$/) ?? (from.startsWith(SHIMS) ? ['', posix(path.relative(SHIMS, from)).split('/')[0], '', ''] : null);
+      const match =
+        rel.match(/^items\/([^/]+)\/([^/]+)\/files\/(.+)$/) ??
+        (from.startsWith(SHIMS) ? ['', posix(path.relative(SHIMS, from)).split('/')[0], '', ''] : null);
       if (!match) {
         // Paquet tiers dont une dépendance optionnelle n'est pas installée (ex. styled-components) : erreur locale, pas d'échec du build.
         if (!from.includes(`${path.sep}node_modules${path.sep}`) || spec.startsWith('.') || spec.startsWith('/')) return null;
@@ -66,10 +77,18 @@ function registryResolver(): Plugin {
       const [, source, slug, fileRel] = match;
       if (spec.startsWith('next/')) return firstExisting(path.join(SHIMS, 'global', spec)) ?? stub(spec, from);
       if (spec === 'cn') return path.join(SHIMS, 'global', 'lib', 'utils.ts'); // ReUI : alias réécrit par son CLI
-      const alias = Object.keys(aliases[source] ?? {}).sort((a, b) => b.length - a.length).find((a) => spec.startsWith(a));
+      const alias = Object.keys(aliases[source] ?? {})
+        .sort((a, b) => b.length - a.length)
+        .find((a) => spec.startsWith(a));
       if (alias !== undefined) {
         const target = aliases[source][alias] + spec.slice(alias.length);
-        return firstExisting(path.join(REGISTRY, 'items', source, slug, 'files', target)) ?? inSource(source, target) ?? firstExisting(path.join(SHIMS, source, target)) ?? shared(target) ?? stub(spec, from);
+        return (
+          firstExisting(path.join(REGISTRY, 'items', source, slug, 'files', target)) ??
+          inSource(source, target) ??
+          firstExisting(path.join(SHIMS, source, target)) ??
+          shared(target) ??
+          stub(spec, from)
+        );
       }
       if (spec.startsWith('.')) {
         if (firstExisting(path.resolve(path.dirname(from), spec.split('?')[0]))) return null;
@@ -81,7 +100,10 @@ function registryResolver(): Plugin {
     load(id) {
       if (!id.startsWith('\0atlas-missing:')) return null;
       const spec = id.slice('\0atlas-missing:'.length);
-      return { code: `throw new Error(${JSON.stringify(`Module indisponible dans les previews : ${spec}`)});\nexport const __atlas = {};\nexport default undefined;`, syntheticNamedExports: '__atlas' };
+      return {
+        code: `throw new Error(${JSON.stringify(`Module indisponible dans les previews : ${spec}`)});\nexport const __atlas = {};\nexport default undefined;`,
+        syntheticNamedExports: '__atlas',
+      };
     },
     buildEnd() {
       if (missing.size) {

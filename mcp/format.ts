@@ -4,7 +4,7 @@ import { bundleItems, type BundleFile } from '../shared/bundle.js';
 import { loadAliases } from '../shared/resolve.js';
 import { specBundle } from '../shared/spec-bundle.js';
 import type { EasingToken, Meta, Spec } from '../shared/schema.js';
-import { dependencyClosure, getEntry, getItem, itemFiles, previewOf } from './store.js';
+import { dependencyClosure, enrichmentFor, getEntry, getItem, itemFiles, previewOf } from './store.js';
 
 const FENCE: Record<string, string> = { tsx: 'tsx', ts: 'ts', jsx: 'jsx', js: 'js', css: 'css', md: 'md', mdx: 'mdx', json: 'json' };
 export const fence = (file: string, content: string) => {
@@ -25,7 +25,10 @@ export function metaHeader(meta: Meta): string {
     `- Source : ${meta.source} — ${meta.sourceUrl || 'création personnelle'}${meta.sourceCommit ? ` (commit ${meta.sourceCommit.slice(0, 7)})` : ''}`,
     `- Licence : ${meta.license} (${meta.licenseStatus === 'open' ? 'ouverte' : 'RESTREINTE'})${meta.licenseNotes ? ` — ${meta.licenseNotes}` : ''}`,
   ];
-  if (meta.attribution) lines.push(`- ${meta.licenseStatus === 'restricted' ? '⚠ Attribution OBLIGATOIRE' : 'Attribution'} : ${meta.attribution}`);
+  if (meta.attribution)
+    lines.push(`- ${meta.licenseStatus === 'restricted' ? '⚠ Attribution OBLIGATOIRE' : 'Attribution'} : ${meta.attribution}`);
+  const fr = entry ? enrichmentFor(entry) : undefined;
+  if (fr) lines.push(`- En bref : ${fr.description}`, `- Cas d’usage : ${fr.usages.join(' · ')}`);
   if (meta.description) lines.push(`- Description : ${meta.description}`);
   if (meta.tags.length) lines.push(`- Tags : ${meta.tags.join(', ')}`);
   if (meta.dependencies.length) lines.push(`- Paquets npm : \`npm install ${meta.dependencies.join(' ')}\``);
@@ -36,10 +39,21 @@ export function metaHeader(meta: Meta): string {
 
 function rawFiles(id: string, opts: { demo: boolean; docs: boolean }): string {
   const files = itemFiles(id).filter((f) => (opts.demo || f.role !== 'demo') && (opts.docs || f.role !== 'doc'));
-  return files.map((f) => {
-    const label = f.role === 'demo' ? 'Démo d’usage (exemple de la source, peut importer des helpers du site)' : f.role === 'doc' ? 'Documentation' : f.role === 'theme' ? 'Tokens' : f.role === 'style' ? 'Styles' : 'Source';
-    return `### \`${f.path}\` — ${label}${f.target ? ` · cible conseillée : \`${f.target}\`` : ''}\n\n${fence(f.path, f.content)}`;
-  }).join('\n\n');
+  return files
+    .map((f) => {
+      const label =
+        f.role === 'demo'
+          ? 'Démo d’usage (exemple de la source, peut importer des helpers du site)'
+          : f.role === 'doc'
+            ? 'Documentation'
+            : f.role === 'theme'
+              ? 'Tokens'
+              : f.role === 'style'
+                ? 'Styles'
+                : 'Source';
+      return `### \`${f.path}\` — ${label}${f.target ? ` · cible conseillée : \`${f.target}\`` : ''}\n\n${fence(f.path, f.content)}`;
+    })
+    .join('\n\n');
 }
 
 const roleLabel = (f: BundleFile) => (f.role === 'demo' ? ' — démo d’usage' : f.role === 'style' ? ' — styles' : '');
@@ -51,14 +65,22 @@ function bundledFiles(files: BundleFile[], budget = MAX_INLINE): { md: string; d
   let size = 0;
   for (const f of files) {
     const block = `### \`${f.path}\`${f.itemId.startsWith('atlas/') ? '' : ` · ${f.itemId}`}${roleLabel(f)}\n\n${fence(f.path, f.content)}`;
-    if (size + block.length > budget) { deferred.push(f); continue; }
+    if (size + block.length > budget) {
+      deferred.push(f);
+      continue;
+    }
     parts.push(block);
     size += block.length;
   }
   return { md: parts.join('\n\n'), deferred };
 }
 
-export interface ComponentOptions { dependencies?: boolean; demo?: boolean; docs?: boolean; targetAlias?: string }
+export interface ComponentOptions {
+  dependencies?: boolean;
+  demo?: boolean;
+  docs?: boolean;
+  targetAlias?: string;
+}
 
 export function componentMarkdown(id: string, opts: ComponentOptions = {}): string | null {
   const item = getItem(id);
@@ -66,29 +88,57 @@ export function componentMarkdown(id: string, opts: ComponentOptions = {}): stri
   const { meta } = item;
   const o = { demo: opts.demo ?? true, docs: opts.docs ?? true, dependencies: opts.dependencies ?? true };
   const parts = [metaHeader(meta)];
-  if (meta.font) parts.push('', `Police : ${meta.font.family} · styles : ${meta.font.styles.map((s) => `${s.name} (${s.weight}${s.italic ? ', italique' : ''})`).join(', ')}`, `CSS : ${meta.font.cssUrl}`);
+  if (meta.font)
+    parts.push(
+      '',
+      `Police : ${meta.font.family} · styles : ${meta.font.styles.map((s) => `${s.name} (${s.weight}${s.italic ? ', italique' : ''})`).join(', ')}`,
+      `CSS : ${meta.font.cssUrl}`,
+    );
 
   if (opts.targetAlias && meta.files.length && ['component', 'section', 'screen', 'lib', 'sound'].includes(meta.type)) {
     const bundle = bundleItems([id], { alias: opts.targetAlias, demos: o.demo, shallow: !o.dependencies });
-    parts.push('', `## Fichiers prêts à copier (imports réécrits vers \`${opts.targetAlias === 'relative' ? 'chemins relatifs' : opts.targetAlias}\`, chemins relatifs à la racine source du projet)`);
+    parts.push(
+      '',
+      `## Fichiers prêts à copier (imports réécrits vers \`${opts.targetAlias === 'relative' ? 'chemins relatifs' : opts.targetAlias}\`, chemins relatifs à la racine source du projet)`,
+    );
     if (bundle.dependencies.length) parts.push('', `Installation : \`npm install ${bundle.dependencies.join(' ')}\``);
     const { md, deferred } = bundledFiles(bundle.files);
     parts.push('', md || '_Aucun fichier._');
-    if (deferred.length) parts.push('', `Fichiers non inclus (taille) : ${deferred.map((f) => `\`${f.path}\``).join(', ')} — utiliser \`npm run bundle\` ou get_component sans target_alias.`);
+    if (deferred.length)
+      parts.push(
+        '',
+        `Fichiers non inclus (taille) : ${deferred.map((f) => `\`${f.path}\``).join(', ')} — utiliser \`npm run bundle\` ou get_component sans target_alias.`,
+      );
     if (bundle.external.length) parts.push('', `Items importés à récupérer aussi : ${bundle.external.map((e) => `\`${e}\``).join(', ')}.`);
-    if (bundle.missing.length) parts.push('', `⚠ Imports non résolus (helpers du site d’origine, à remplacer ou retirer) : ${bundle.missing.join(', ')}`);
-    if (o.docs) { const docs = itemFiles(id).filter((f) => f.role === 'doc'); if (docs.length) parts.push('', '## Documentation', '', docs.map((f) => fence(f.path, f.content)).join('\n\n')); }
+    if (bundle.missing.length)
+      parts.push('', `⚠ Imports non résolus (helpers du site d’origine, à remplacer ou retirer) : ${bundle.missing.join(', ')}`);
+    if (o.docs) {
+      const docs = itemFiles(id).filter((f) => f.role === 'doc');
+      if (docs.length) parts.push('', '## Documentation', '', docs.map((f) => fence(f.path, f.content)).join('\n\n'));
+    }
     return parts.join('\n');
   }
 
   const aliases = loadAliases()[meta.sourceId];
-  if (aliases && meta.files.length) parts.push(`- Alias d'import du projet source : ${Object.entries(aliases).map(([a, t]) => `\`${a}\` → \`${t || '<racine>'}\``).join(', ')}. Chemins et imports d'origine ci-dessous ; passer target_alias (ex. "@/") pour les obtenir réécrits et prêts à copier.`);
+  if (aliases && meta.files.length)
+    parts.push(
+      `- Alias d'import du projet source : ${Object.entries(aliases)
+        .map(([a, t]) => `\`${a}\` → \`${t || '<racine>'}\``)
+        .join(
+          ', ',
+        )}. Chemins et imports d'origine ci-dessous ; passer target_alias (ex. "@/") pour les obtenir réécrits et prêts à copier.`,
+    );
   parts.push('', '## Fichiers', '', rawFiles(id, o) || '_Aucun fichier (métadonnées seules)._');
   if (o.dependencies) {
     const { ids, missing } = dependencyClosure(id);
     for (const dep of ids) {
       const d = getItem(dep)!;
-      parts.push('', `## Dépendance du registre : \`${dep}\` (${d.meta.name}, ${d.meta.license})`, '', rawFiles(dep, { demo: false, docs: false }));
+      parts.push(
+        '',
+        `## Dépendance du registre : \`${dep}\` (${d.meta.name}, ${d.meta.license})`,
+        '',
+        rawFiles(dep, { demo: false, docs: false }),
+      );
       if (d.meta.dependencies.length) parts.push('', `Paquets npm de la dépendance : ${d.meta.dependencies.join(' ')}`);
     }
     if (missing.length) parts.push('', `⚠ Dépendances absentes du registre : ${missing.join(', ')} (relancer l'import de la source).`);
@@ -97,7 +147,8 @@ export function componentMarkdown(id: string, opts: ComponentOptions = {}): stri
 }
 
 function easingLine(e: EasingToken): string {
-  if (e.kind === 'spring' && e.spring) return `- \`${e.name}\` : Motion \`{ type: 'spring', stiffness: ${e.spring.stiffness}, damping: ${e.spring.damping}, mass: ${e.spring.mass} }\` · CSS \`${e.durationMs}ms ${e.css.length > 60 ? e.css.slice(0, 57) + '…)' : e.css}\`${e.usage ? ` — ${e.usage}` : ''}`;
+  if (e.kind === 'spring' && e.spring)
+    return `- \`${e.name}\` : Motion \`{ type: 'spring', stiffness: ${e.spring.stiffness}, damping: ${e.spring.damping}, mass: ${e.spring.mass} }\` · CSS \`${e.durationMs}ms ${e.css.length > 60 ? e.css.slice(0, 57) + '…)' : e.css}\`${e.usage ? ` — ${e.usage}` : ''}`;
   if (e.kind === 'duration') return `- \`${e.name}\` : ${e.durationMs}ms${e.usage ? ` — ${e.usage}` : ''}`;
   return `- \`${e.name}\` : ${e.cubicBezier ? `\`${e.css}\` · Motion \`[${e.cubicBezier.join(', ')}]\`` : 'fonction JS uniquement'}`;
 }
@@ -109,13 +160,25 @@ export function themeMarkdown(id: string): string | null {
   const parts = [metaHeader(meta)];
   if (meta.tokens) parts.push('', '## Tokens', '', fence('tokens.json', JSON.stringify(meta.tokens, null, 2)));
   if (meta.easings) {
-    const kinds: [string, string][] = [['bezier', 'Courbes'], ['spring', 'Ressorts'], ['duration', 'Durées']];
+    const kinds: [string, string][] = [
+      ['bezier', 'Courbes'],
+      ['spring', 'Ressorts'],
+      ['duration', 'Durées'],
+    ];
     for (const [kind, title] of kinds) {
       const list = meta.easings.filter((e) => (e.kind ?? 'bezier') === kind);
       if (list.length) parts.push('', `## ${title}`, '', list.map(easingLine).join('\n'));
     }
   }
-  if (meta.font) parts.push('', '## Police', '', `- Famille : ${meta.font.family}`, `- Styles : ${meta.font.styles.map((s) => `${s.name} ${s.weight}${s.italic ? ' italique' : ''}`).join(', ')}`, `- Lien CSS : ${meta.font.cssUrl}`);
+  if (meta.font)
+    parts.push(
+      '',
+      '## Police',
+      '',
+      `- Famille : ${meta.font.family}`,
+      `- Styles : ${meta.font.styles.map((s) => `${s.name} ${s.weight}${s.italic ? ' italique' : ''}`).join(', ')}`,
+      `- Lien CSS : ${meta.font.cssUrl}`,
+    );
   parts.push('', '## Fichiers', '', rawFiles(id, { demo: false, docs: true }) || '_Aucun fichier._');
   return parts.join('\n');
 }
@@ -125,10 +188,22 @@ export function describeItem(id: string) {
   if (!item) return { id, found: false as const };
   const m = item.meta;
   const entry = getEntry(id);
+  const fr = entry ? enrichmentFor(entry) : undefined;
   return {
-    id, found: true as const, name: m.name, type: m.type, category: m.category, framework: m.framework, source: m.source,
-    license: m.license, licenseStatus: m.licenseStatus, attribution: m.attribution, dependencies: m.dependencies,
-    registryDependencies: m.registryDependencies, ...(entry ? { interactive: previewOf(entry) === 'interactive' } : {}),
+    id,
+    found: true as const,
+    name: m.name,
+    type: m.type,
+    category: m.category,
+    framework: m.framework,
+    source: m.source,
+    license: m.license,
+    licenseStatus: m.licenseStatus,
+    attribution: m.attribution,
+    dependencies: m.dependencies,
+    registryDependencies: m.registryDependencies,
+    ...(entry ? { interactive: previewOf(entry) === 'interactive' } : {}),
+    ...(fr ? { description_fr: fr.description, usages: fr.usages } : {}),
   };
 }
 
@@ -159,7 +234,9 @@ function blockPlan(summary: ReturnType<typeof specSummary>, alias: string, withC
   for (const page of pages) {
     if (pages.length > 1 || page) out.push('', `### Page : ${page || 'Accueil'}`);
     for (const b of summary.blocks.filter((x) => (x.page ?? '') === page)) {
-      const head = b.found ? `${b.order}. \`${b.id}\` — ${b.name} (${b.type}, ${b.source}${b.licenseStatus === 'restricted' ? ', attribution' : ''})` : `${b.order}. \`${b.id}\` — INTROUVABLE`;
+      const head = b.found
+        ? `${b.order}. \`${b.id}\` — ${b.name} (${b.type}, ${b.source}${b.licenseStatus === 'restricted' ? ', attribution' : ''})`
+        : `${b.order}. \`${b.id}\` — INTROUVABLE`;
       out.push(head);
       if (b.note) out.push(`   Consigne : ${b.note}`);
       if (withCalls && b.found) out.push(`   → get_component({ id: "${b.id}", target_alias: "${alias}" })`);
@@ -193,16 +270,35 @@ export function buildFromSpecPrompt(spec: Spec, mode: PromptMode = 'light', alia
     '## Règles',
     ...RULES,
   ];
-  if (restricted.length) out.push('', '## ⚠ Attributions obligatoires', ...[...new Map(restricted.map((r) => [r.attribution ?? r.id, r])).values()].map((r) => `- \`${r.id}\` : ${r.attribution ?? 'voir la licence'}`), 'Ajoute ces crédits dans le projet (footer, page crédits ou README) — CREDITS.md les rassemble.');
-  if (missing.length) out.push('', `⚠ Items introuvables dans le registre (à signaler, ne pas inventer) : ${[...new Set(missing)].join(', ')}`);
+  if (restricted.length)
+    out.push(
+      '',
+      '## ⚠ Attributions obligatoires',
+      ...[...new Map(restricted.map((r) => [r.attribution ?? r.id, r])).values()].map(
+        (r) => `- \`${r.id}\` : ${r.attribution ?? 'voir la licence'}`,
+      ),
+      'Ajoute ces crédits dans le projet (footer, page crédits ou README) — CREDITS.md les rassemble.',
+    );
+  if (missing.length)
+    out.push('', `⚠ Items introuvables dans le registre (à signaler, ne pas inventer) : ${[...new Set(missing)].join(', ')}`);
   out.push('', '## Mise en place');
   if (bundle.install) out.push(`- Paquets (une seule commande) : \`${bundle.install}\``);
-  out.push(`- Tout écrire d’un coup (option) : \`npm --prefix "${ROOT}" run bundle -- ${spec.name} --out <dossier du projet>\` (refuse d’écraser sans --force).`);
+  out.push(
+    `- Tout écrire d’un coup (option) : \`npm --prefix "${ROOT}" run bundle -- ${spec.name} --out <dossier du projet>\` (refuse d’écraser sans --force).`,
+  );
   out.push(`- Ou bien get_spec_bundle({ name: "${spec.name}", target_alias: "${alias}" }) pour recevoir tous les fichiers.`);
-  if (spec.theme) out.push(`- Thème : \`${spec.theme}\` → fichier \`styles/atlas-theme.css\` du bundle (get_theme pour le détail des tokens).`);
-  if (spec.fonts.length) out.push(`- Polices : ${summary.fonts.map((f) => (f.found ? `${f.name} (\`${f.id}\`)` : f.id)).join(', ')} → \`styles/atlas-fonts.css\`.`);
-  if (spec.easings.length) out.push(`- Mouvement : ${spec.easings.map((e) => `\`${e}\``).join(', ')} → \`lib/easings.ts\` et \`styles/easings.css\` (courbes, ressorts, durées).`);
-  if (spec.sounds.length) out.push(`- Sons : ${summary.sounds.map((s) => (s.found ? `${s.name} (\`${s.id}\`)` : s.id)).join(', ')} (get_component pour chacun).`);
+  if (spec.theme)
+    out.push(`- Thème : \`${spec.theme}\` → fichier \`styles/atlas-theme.css\` du bundle (get_theme pour le détail des tokens).`);
+  if (spec.fonts.length)
+    out.push(
+      `- Polices : ${summary.fonts.map((f) => (f.found ? `${f.name} (\`${f.id}\`)` : f.id)).join(', ')} → \`styles/atlas-fonts.css\`.`,
+    );
+  if (spec.easings.length)
+    out.push(
+      `- Mouvement : ${spec.easings.map((e) => `\`${e}\``).join(', ')} → \`lib/easings.ts\` et \`styles/easings.css\` (courbes, ressorts, durées).`,
+    );
+  if (spec.sounds.length)
+    out.push(`- Sons : ${summary.sounds.map((s) => (s.found ? `${s.name} (\`${s.id}\`)` : s.id)).join(', ')} (get_component pour chacun).`);
   out.push('', '## Plan des blocs', ...blockPlan(summary, alias, mode === 'light'));
 
   if (mode === 'full') {
@@ -211,12 +307,21 @@ export function buildFromSpecPrompt(spec: Spec, mode: PromptMode = 'light', alia
     const budget = MAX_INLINE - out.join('\n').length;
     const { md, deferred } = bundledFiles([...bundle.extras.filter((f) => f.path !== 'CREDITS.md'), ...bundle.files], budget);
     out.push('', md);
-    if (deferred.length) out.push('', `Fichiers non inclus pour limiter la taille (utiliser get_spec_bundle ou la commande bundle) : ${deferred.map((f) => `\`${f.path}\``).join(', ')}.`);
-    if (bundle.missing.length) out.push('', `⚠ Imports non résolus (helpers du site d’origine, à remplacer ou retirer) : ${bundle.missing.join(', ')}`);
+    if (deferred.length)
+      out.push(
+        '',
+        `Fichiers non inclus pour limiter la taille (utiliser get_spec_bundle ou la commande bundle) : ${deferred.map((f) => `\`${f.path}\``).join(', ')}.`,
+      );
+    if (bundle.missing.length)
+      out.push('', `⚠ Imports non résolus (helpers du site d’origine, à remplacer ou retirer) : ${bundle.missing.join(', ')}`);
   } else if (spec.theme) {
     out.push('', '## Thème', '', themeMarkdown(spec.theme) ?? `Thème introuvable : ${spec.theme}`);
   }
-  out.push('', '## Livrable', 'Une implémentation fonctionnelle : fichiers créés ou modifiés, paquets installés, CREDITS.md ajouté, et pour chaque bloc l’endroit où il est utilisé.');
+  out.push(
+    '',
+    '## Livrable',
+    'Une implémentation fonctionnelle : fichiers créés ou modifiés, paquets installés, CREDITS.md ajouté, et pour chaque bloc l’endroit où il est utilisé.',
+  );
   return out.join('\n');
 }
 
@@ -239,7 +344,11 @@ export function specBundleMarkdown(spec: Spec, opts: { alias?: string; includeCo
     const budget = MAX_INLINE - out.join('\n').length;
     const { md, deferred } = bundledFiles(files, budget);
     out.push('', '## Contenu', '', md);
-    if (deferred.length) out.push('', `Non inclus (taille) : ${deferred.map((f) => `\`${f.path}\``).join(', ')} — utiliser la commande bundle ci-dessus ou get_component({ id, target_alias }).`);
+    if (deferred.length)
+      out.push(
+        '',
+        `Non inclus (taille) : ${deferred.map((f) => `\`${f.path}\``).join(', ')} — utiliser la commande bundle ci-dessus ou get_component({ id, target_alias }).`,
+      );
   }
   return out.join('\n');
 }

@@ -25,16 +25,32 @@ const CURVES: [string, Bezier | null, string][] = [
   ['easeInOutQuint', [0.83, 0, 0.17, 1], 'x < 0.5 ? 16 * x * x * x * x * x : 1 - Math.pow(-2 * x + 2, 5) / 2'],
   ['easeInExpo', [0.7, 0, 0.84, 0], 'x === 0 ? 0 : Math.pow(2, 10 * x - 10)'],
   ['easeOutExpo', [0.16, 1, 0.3, 1], 'x === 1 ? 1 : 1 - Math.pow(2, -10 * x)'],
-  ['easeInOutExpo', [0.87, 0, 0.13, 1], 'x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? Math.pow(2, 20 * x - 10) / 2 : (2 - Math.pow(2, -20 * x + 10)) / 2'],
+  [
+    'easeInOutExpo',
+    [0.87, 0, 0.13, 1],
+    'x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? Math.pow(2, 20 * x - 10) / 2 : (2 - Math.pow(2, -20 * x + 10)) / 2',
+  ],
   ['easeInCirc', [0.55, 0, 1, 0.45], '1 - Math.sqrt(1 - Math.pow(x, 2))'],
   ['easeOutCirc', [0, 0.55, 0.45, 1], 'Math.sqrt(1 - Math.pow(x - 1, 2))'],
-  ['easeInOutCirc', [0.85, 0, 0.15, 1], 'x < 0.5 ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2 : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2'],
+  [
+    'easeInOutCirc',
+    [0.85, 0, 0.15, 1],
+    'x < 0.5 ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2 : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2',
+  ],
   ['easeInBack', [0.36, 0, 0.66, -0.56], 'C3 * x * x * x - C1 * x * x'],
   ['easeOutBack', [0.34, 1.56, 0.64, 1], '1 + C3 * Math.pow(x - 1, 3) + C1 * Math.pow(x - 1, 2)'],
-  ['easeInOutBack', [0.68, -0.6, 0.32, 1.6], 'x < 0.5 ? (Math.pow(2 * x, 2) * ((C2 + 1) * 2 * x - C2)) / 2 : (Math.pow(2 * x - 2, 2) * ((C2 + 1) * (x * 2 - 2) + C2) + 2) / 2'],
+  [
+    'easeInOutBack',
+    [0.68, -0.6, 0.32, 1.6],
+    'x < 0.5 ? (Math.pow(2 * x, 2) * ((C2 + 1) * 2 * x - C2)) / 2 : (Math.pow(2 * x - 2, 2) * ((C2 + 1) * (x * 2 - 2) + C2) + 2) / 2',
+  ],
   ['easeInElastic', null, 'x === 0 ? 0 : x === 1 ? 1 : -Math.pow(2, 10 * x - 10) * Math.sin((x * 10 - 10.75) * C4)'],
   ['easeOutElastic', null, 'x === 0 ? 0 : x === 1 ? 1 : Math.pow(2, -10 * x) * Math.sin((x * 10 - 0.75) * C4) + 1'],
-  ['easeInOutElastic', null, 'x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * C5)) / 2 : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * C5)) / 2 + 1'],
+  [
+    'easeInOutElastic',
+    null,
+    'x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? -(Math.pow(2, 20 * x - 10) * Math.sin((20 * x - 11.125) * C5)) / 2 : (Math.pow(2, -20 * x + 10) * Math.sin((20 * x - 11.125) * C5)) / 2 + 1',
+  ],
   ['easeInBounce', null, '1 - easeOutBounce(1 - x)'],
   ['easeOutBounce', null, 'bounceOut(x)'],
   ['easeInOutBounce', null, 'x < 0.5 ? (1 - easeOutBounce(1 - 2 * x)) / 2 : (1 + easeOutBounce(2 * x - 1)) / 2'],
@@ -83,9 +99,28 @@ const camelTail = (name: string, prefix: string) => name.slice(prefix.length).re
 
 export function easingTokens(): EasingToken[] {
   return [
-    ...CURVES.map(([name, bezier]): EasingToken => ({ name, kind: 'bezier', cubicBezier: bezier, css: bezier ? bezierCss(bezier) : `/* ${name} : pas d'équivalent cubic-bezier, utiliser la fonction JS */` })),
-    ...SPRINGS.map(([name, spring, usage]): EasingToken => ({ name, kind: 'spring', cubicBezier: null, ...springLinear(spring), spring, usage })),
-    ...DURATIONS.map(([name, ms, usage]): EasingToken => ({ name, kind: 'duration', cubicBezier: null, css: `${ms}ms`, durationMs: ms, usage })),
+    ...CURVES.map(([name, bezier]): EasingToken => ({
+      name,
+      kind: 'bezier',
+      cubicBezier: bezier,
+      css: bezier ? bezierCss(bezier) : `/* ${name} : pas d'équivalent cubic-bezier, utiliser la fonction JS */`,
+    })),
+    ...SPRINGS.map(([name, spring, usage]): EasingToken => ({
+      name,
+      kind: 'spring',
+      cubicBezier: null,
+      ...springLinear(spring),
+      spring,
+      usage,
+    })),
+    ...DURATIONS.map(([name, ms, usage]): EasingToken => ({
+      name,
+      kind: 'duration',
+      cubicBezier: null,
+      css: `${ms}ms`,
+      durationMs: ms,
+      usage,
+    })),
   ];
 }
 
@@ -97,7 +132,11 @@ export function generateTs(): string {
     ' * `bezier` : tableau pour Motion / Framer Motion (`transition={{ ease: bezier.easeOutCubic }}`).',
     ' * `css` : valeur pour `transition-timing-function` / `animation-timing-function`.',
     ' */',
-    'const C1 = 1.70158;', 'const C2 = C1 * 1.525;', 'const C3 = C1 + 1;', 'const C4 = (2 * Math.PI) / 3;', 'const C5 = (2 * Math.PI) / 4.5;',
+    'const C1 = 1.70158;',
+    'const C2 = C1 * 1.525;',
+    'const C3 = C1 + 1;',
+    'const C4 = (2 * Math.PI) / 3;',
+    'const C5 = (2 * Math.PI) / 4.5;',
     '',
     'function bounceOut(x: number): number {',
     '  const n1 = 7.5625, d1 = 2.75;',
@@ -122,7 +161,10 @@ export function generateTs(): string {
     '',
     "/** Ressorts Motion : `transition={{ type: 'spring', ...spring.snappy }}`. */",
     'export const spring = {',
-    ...SPRINGS.map(([name, v, usage]) => `  /** ${usage} */\n  ${camelTail(name, 'spring')}: { stiffness: ${v.stiffness}, damping: ${v.damping}, mass: ${v.mass} },`),
+    ...SPRINGS.map(
+      ([name, v, usage]) =>
+        `  /** ${usage} */\n  ${camelTail(name, 'spring')}: { stiffness: ${v.stiffness}, damping: ${v.damping}, mass: ${v.mass} },`,
+    ),
     '} as const;',
     '',
     '/** Durées de référence en millisecondes. */',
@@ -139,7 +181,10 @@ export function generateCss(): string {
     ':root {',
     ...CURVES.filter(([, b]) => b).map(([name, b]) => `  --${kebab(name)}: ${bezierCss(b!)};`),
     '  /* Ressorts approchés par linear() (Chrome 113+, Safari 17.2+, Firefox 112+), à combiner avec la durée indiquée. */',
-    ...SPRINGS.map(([name, v]) => { const { css, durationMs } = springLinear(v); return `  --${kebab(name)}: ${css}; /* ${durationMs}ms */`; }),
+    ...SPRINGS.map(([name, v]) => {
+      const { css, durationMs } = springLinear(v);
+      return `  --${kebab(name)}: ${css}; /* ${durationMs}ms */`;
+    }),
     ...DURATIONS.map(([name, ms]) => `  --${kebab(name)}: ${ms}ms;`),
     '}',
     '',
@@ -148,18 +193,36 @@ export function generateCss(): string {
 
 export function importEasings() {
   const collector = new Collector('easings', 'atlas');
-  collector.write({
-    id: 'atlas/easings-standard', name: 'Easings standard', type: 'easing', category: 'Easings',
-    tags: ['bezier', 'css', 'motion', 'spring', 'duration', 'tokens'],
-    description: `${CURVES.length} courbes (Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce) en cubic-bezier CSS, tableaux Motion et fonctions JS, ${SPRINGS.length} ressorts Motion (approximation CSS linear() incluse) et ${DURATIONS.length} durées de référence.`,
-    framework: 'agnostic', dependencies: [], registryDependencies: [],
-    source: 'Component Atlas', sourceId: 'atlas', sourceUrl: 'https://robertpenner.com/easing/',
-    license: 'BSD-3-Clause', licenseStatus: 'open',
-    licenseNotes: 'Fonctions dérivées des Easing Equations de Robert Penner (BSD-3-Clause). Valeurs cubic-bezier standard (approximations usuelles des mêmes courbes). Ressorts et durées : valeurs génériques définies par Atlas.',
-    attribution: 'Easing Equations © 2001 Robert Penner (BSD-3-Clause).',
-    files: [{ path: 'easings.ts', role: 'source' }, { path: 'easings.css', role: 'style' }],
-    easings: easingTokens(),
-    preview: { kind: 'none', reason: 'Courbes tracées par le builder' },
-  }, new Map([['easings.ts', generateTs()], ['easings.css', generateCss()]]));
+  collector.write(
+    {
+      id: 'atlas/easings-standard',
+      name: 'Easings standard',
+      type: 'easing',
+      category: 'Easings',
+      tags: ['bezier', 'css', 'motion', 'spring', 'duration', 'tokens'],
+      description: `${CURVES.length} courbes (Sine, Quad, Cubic, Quart, Quint, Expo, Circ, Back, Elastic, Bounce) en cubic-bezier CSS, tableaux Motion et fonctions JS, ${SPRINGS.length} ressorts Motion (approximation CSS linear() incluse) et ${DURATIONS.length} durées de référence.`,
+      framework: 'agnostic',
+      dependencies: [],
+      registryDependencies: [],
+      source: 'Component Atlas',
+      sourceId: 'atlas',
+      sourceUrl: 'https://robertpenner.com/easing/',
+      license: 'BSD-3-Clause',
+      licenseStatus: 'open',
+      licenseNotes:
+        'Fonctions dérivées des Easing Equations de Robert Penner (BSD-3-Clause). Valeurs cubic-bezier standard (approximations usuelles des mêmes courbes). Ressorts et durées : valeurs génériques définies par Atlas.',
+      attribution: 'Easing Equations © 2001 Robert Penner (BSD-3-Clause).',
+      files: [
+        { path: 'easings.ts', role: 'source' },
+        { path: 'easings.css', role: 'style' },
+      ],
+      easings: easingTokens(),
+      preview: { kind: 'none', reason: 'Courbes tracées par le builder' },
+    },
+    new Map([
+      ['easings.ts', generateTs()],
+      ['easings.css', generateCss()],
+    ]),
+  );
   return [collector.finish(['atlas'])];
 }

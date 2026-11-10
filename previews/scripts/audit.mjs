@@ -30,11 +30,23 @@ const VIEW = { width: 720, height: 480 };
 const args = process.argv.slice(2);
 const all = args.includes('--all');
 const thumbs = !args.includes('--no-thumbs');
-const only = (() => { const i = args.indexOf('--only'); return i >= 0 ? new Set(String(args[i + 1] || '').split(',').filter(Boolean)) : null; })();
+const only = (() => {
+  const i = args.indexOf('--only');
+  return i >= 0
+    ? new Set(
+        String(args[i + 1] || '')
+          .split(',')
+          .filter(Boolean),
+      )
+    : null;
+})();
 
-if (!fs.existsSync(path.join(BUILD, 'index.html'))) { console.error('Aperçus non compilés : lancer npm run previews.'); process.exit(1); }
+if (!fs.existsSync(path.join(BUILD, 'index.html'))) {
+  console.error('Aperçus non compilés : lancer npm run previews.');
+  process.exit(1);
+}
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'index.json'), 'utf8'));
-const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')).results ?? {} : {};
+const previous = fs.existsSync(OUT) ? (JSON.parse(fs.readFileSync(OUT, 'utf8')).results ?? {}) : {};
 
 /* Chunk compilé de chaque item (manifeste Vite) : un changement de code, de shim ou de dépendance change son nom. */
 const manifestFile = path.join(BUILD, '.vite', 'manifest.json');
@@ -49,7 +61,16 @@ function chunkOf(item) {
 
 const targets = index.items
   .filter((i) => (i.preview?.kind === 'live' && i.framework === 'react') || i.preview?.kind === 'atlas-demo')
-  .map((i) => ({ id: i.id, hash: i.contentHash, chunk: chunkOf(i), url: i.preview.kind === 'atlas-demo' ? `/demos/index.html?demo=${encodeURIComponent(i.preview.demo)}` : `/registry-previews/index.html?id=${encodeURIComponent(i.id)}&theme=dark&card=1`, demo: i.preview.kind === 'atlas-demo' }));
+  .map((i) => ({
+    id: i.id,
+    hash: i.contentHash,
+    chunk: chunkOf(i),
+    url:
+      i.preview.kind === 'atlas-demo'
+        ? `/demos/index.html?demo=${encodeURIComponent(i.preview.demo)}`
+        : `/registry-previews/index.html?id=${encodeURIComponent(i.id)}&theme=dark&card=1`,
+    demo: i.preview.kind === 'atlas-demo',
+  }));
 const thumbFile = (id) => path.join(THUMBS, `${id}.jpg`);
 const todo = targets.filter((t) => {
   if (only) return only.has(t.id);
@@ -60,26 +81,70 @@ const todo = targets.filter((t) => {
 console.log(`Audit : ${todo.length} item(s) à vérifier sur ${targets.length}${all ? ' (--all)' : ''}`);
 
 /* Serveur statique minimal (aperçus + démos Atlas), sans dépendre du serveur de l'application. */
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.woff2': 'font/woff2', '.json': 'application/json', '.wasm': 'application/wasm' };
+const TYPES = {
+  '.html': 'text/html',
+  '.js': 'text/javascript',
+  '.css': 'text/css',
+  '.svg': 'image/svg+xml',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.webp': 'image/webp',
+  '.woff2': 'font/woff2',
+  '.json': 'application/json',
+  '.wasm': 'application/wasm',
+};
 const server = http.createServer((req, res) => {
   const url = new URL(req.url, 'http://x');
   const m = decodeURIComponent(url.pathname).match(/^\/(registry-previews|demos)\/?(.*)$/);
   const base = m && path.join(WEB, m[1]);
   const file = base && path.resolve(base, m[2] || 'index.html');
-  if (!file || !file.startsWith(base) || !fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404); res.end(); return; }
+  if (!file || !file.startsWith(base) || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
+    res.writeHead(404);
+    res.end();
+    return;
+  }
   res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream' });
   fs.createReadStream(file).pipe(res);
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
 const origin = `http://127.0.0.1:${server.address().port}`;
 
-const chromePath = [process.env.ATLAS_CHROME, 'C:/Program Files/Google/Chrome/Application/chrome.exe', 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe', '/usr/bin/google-chrome', '/usr/bin/chromium', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'].filter(Boolean).find((p) => fs.existsSync(p));
-if (!chromePath) { console.error('Chrome ou Edge introuvable (ATLAS_CHROME).'); process.exit(1); }
+const chromePath = [
+  process.env.ATLAS_CHROME,
+  'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
+  '/usr/bin/google-chrome',
+  '/usr/bin/chromium',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+]
+  .filter(Boolean)
+  .find((p) => fs.existsSync(p));
+if (!chromePath) {
+  console.error('Chrome ou Edge introuvable (ATLAS_CHROME).');
+  process.exit(1);
+}
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-audit-'));
-const chrome = spawn(chromePath, ['--headless=new', '--disable-gpu', '--no-first-run', '--hide-scrollbars', `--user-data-dir=${profile}`, '--remote-debugging-port=0', '--mute-audio', 'about:blank'], { stdio: ['ignore', 'ignore', 'pipe'] });
+const chrome = spawn(
+  chromePath,
+  [
+    '--headless=new',
+    '--disable-gpu',
+    '--no-first-run',
+    '--hide-scrollbars',
+    `--user-data-dir=${profile}`,
+    '--remote-debugging-port=0',
+    '--mute-audio',
+    'about:blank',
+  ],
+  { stdio: ['ignore', 'ignore', 'pipe'] },
+);
 const wsUrl = await new Promise((resolve, reject) => {
   let buf = '';
-  chrome.stderr.on('data', (d) => { buf += d; const m = buf.match(/DevTools listening on (ws:\/\/\S+)/); if (m) resolve(m[1]); });
+  chrome.stderr.on('data', (d) => {
+    buf += d;
+    const m = buf.match(/DevTools listening on (ws:\/\/\S+)/);
+    if (m) resolve(m[1]);
+  });
   setTimeout(() => reject(new Error('Chrome ne démarre pas')), 20000);
 });
 const ws = new WebSocket(wsUrl);
@@ -89,10 +154,22 @@ const pending = new Map();
 const exceptions = new Map();
 ws.addEventListener('message', (e) => {
   const msg = JSON.parse(e.data);
-  if (msg.id && pending.has(msg.id)) { pending.get(msg.id)(msg); pending.delete(msg.id); return; }
-  if (msg.method === 'Runtime.exceptionThrown' && msg.sessionId) exceptions.get(msg.sessionId)?.push(msg.params.exceptionDetails.exception?.description?.split('\n')[0] ?? msg.params.exceptionDetails.text);
+  if (msg.id && pending.has(msg.id)) {
+    pending.get(msg.id)(msg);
+    pending.delete(msg.id);
+    return;
+  }
+  if (msg.method === 'Runtime.exceptionThrown' && msg.sessionId)
+    exceptions
+      .get(msg.sessionId)
+      ?.push(msg.params.exceptionDetails.exception?.description?.split('\n')[0] ?? msg.params.exceptionDetails.text);
 });
-const send = (method, params = {}, sessionId) => new Promise((resolve) => { const id = ++seq; pending.set(id, resolve); ws.send(JSON.stringify({ id, method, params, sessionId })); });
+const send = (method, params = {}, sessionId) =>
+  new Promise((resolve) => {
+    const id = ++seq;
+    pending.set(id, resolve);
+    ws.send(JSON.stringify({ id, method, params, sessionId }));
+  });
 
 /* Contenu DOM visible : texte, média, contrôle de formulaire, ou surface peinte (fond, bordure, ombre). */
 const PROBE = `(() => {
@@ -117,23 +194,38 @@ const PROBE = `(() => {
 
 /* Décodeur PNG minimal (8 bits, RGB/RGBA, non entrelacé) pour mesurer l'uniformité d'une capture. */
 function decodePng(buffer) {
-  let pos = 8, width = 0, height = 0, channels = 4;
+  let pos = 8,
+    width = 0,
+    height = 0,
+    channels = 4;
   const idat = [];
   while (pos < buffer.length) {
-    const len = buffer.readUInt32BE(pos), type = buffer.toString('ascii', pos + 4, pos + 8);
+    const len = buffer.readUInt32BE(pos),
+      type = buffer.toString('ascii', pos + 4, pos + 8);
     const data = buffer.subarray(pos + 8, pos + 8 + len);
-    if (type === 'IHDR') { width = data.readUInt32BE(0); height = data.readUInt32BE(4); channels = data[9] === 6 ? 4 : data[9] === 2 ? 3 : 0; if (data[8] !== 8 || !channels || data[12]) return null; }
-    else if (type === 'IDAT') idat.push(data);
+    if (type === 'IHDR') {
+      width = data.readUInt32BE(0);
+      height = data.readUInt32BE(4);
+      channels = data[9] === 6 ? 4 : data[9] === 2 ? 3 : 0;
+      if (data[8] !== 8 || !channels || data[12]) return null;
+    } else if (type === 'IDAT') idat.push(data);
     else if (type === 'IEND') break;
     pos += 12 + len;
   }
   const raw = zlib.inflateSync(Buffer.concat(idat));
-  const stride = width * channels, out = Buffer.alloc(stride * height);
+  const stride = width * channels,
+    out = Buffer.alloc(stride * height);
   for (let y = 0; y < height; y++) {
-    const f = raw[y * (stride + 1)], row = raw.subarray(y * (stride + 1) + 1, (y + 1) * (stride + 1));
+    const f = raw[y * (stride + 1)],
+      row = raw.subarray(y * (stride + 1) + 1, (y + 1) * (stride + 1));
     for (let x = 0; x < stride; x++) {
-      const a = x >= channels ? out[y * stride + x - channels] : 0, b = y ? out[(y - 1) * stride + x] : 0, c = x >= channels && y ? out[(y - 1) * stride + x - channels] : 0;
-      const p = a + b - c, pa = Math.abs(p - a), pb = Math.abs(p - b), pc = Math.abs(p - c);
+      const a = x >= channels ? out[y * stride + x - channels] : 0,
+        b = y ? out[(y - 1) * stride + x] : 0,
+        c = x >= channels && y ? out[(y - 1) * stride + x - channels] : 0;
+      const p = a + b - c,
+        pa = Math.abs(p - a),
+        pb = Math.abs(p - b),
+        pc = Math.abs(p - c);
       const pred = f === 1 ? a : f === 2 ? b : f === 3 ? (a + b) >> 1 : f === 4 ? (pa <= pb && pa <= pc ? a : pb <= pc ? b : c) : 0;
       out[y * stride + x] = (row[x] + pred) & 255;
     }
@@ -154,7 +246,11 @@ function distinctPixels(png) {
 }
 
 async function capture(sessionId, format, scale, quality) {
-  const r = await send('Page.captureScreenshot', { format, ...(quality ? { quality } : {}), clip: { x: 0, y: 0, ...VIEW, scale }, captureBeyondViewport: false }, sessionId);
+  const r = await send(
+    'Page.captureScreenshot',
+    { format, ...(quality ? { quality } : {}), clip: { x: 0, y: 0, ...VIEW, scale }, captureBeyondViewport: false },
+    sessionId,
+  );
   return r.result?.data ? Buffer.from(r.result.data, 'base64') : null;
 }
 
@@ -183,11 +279,17 @@ async function auditOne(sessionId, target) {
     await new Promise((r) => setTimeout(r, 1500));
   }
   const visible = pixels === null ? last.state === 'ok' : pixels > 40;
-  const result = visible ? { status: 'ok' } : { status: 'empty', message: last.state === 'ok' ? 'rendu invisible (capture uniforme)' : errors[0] || 'rien de visible sans props' };
+  const result = visible
+    ? { status: 'ok' }
+    : { status: 'empty', message: last.state === 'ok' ? 'rendu invisible (capture uniforme)' : errors[0] || 'rien de visible sans props' };
   if (last.broken) result.brokenImages = last.broken;
   if (visible && thumbs) {
     const jpg = await capture(sessionId, 'jpeg', 0.75, 72);
-    if (jpg) { fs.mkdirSync(path.dirname(thumbFile(target.id)), { recursive: true }); fs.writeFileSync(thumbFile(target.id), jpg); result.thumb = true; }
+    if (jpg) {
+      fs.mkdirSync(path.dirname(thumbFile(target.id)), { recursive: true });
+      fs.writeFileSync(thumbFile(target.id), jpg);
+      result.thumb = true;
+    }
   }
   return result;
 }
@@ -197,8 +299,12 @@ const queue = [...todo];
 let done = 0;
 const t0 = Date.now();
 async function worker() {
-  const { result: { targetId } } = await send('Target.createTarget', { url: 'about:blank' });
-  const { result: { sessionId } } = await send('Target.attachToTarget', { targetId, flatten: true });
+  const {
+    result: { targetId },
+  } = await send('Target.createTarget', { url: 'about:blank' });
+  const {
+    result: { sessionId },
+  } = await send('Target.attachToTarget', { targetId, flatten: true });
   await send('Page.enable', {}, sessionId);
   await send('Runtime.enable', {}, sessionId);
   await send('Emulation.setDeviceMetricsOverride', { ...VIEW, deviceScaleFactor: 1, mobile: false }, sessionId);
@@ -206,8 +312,11 @@ async function worker() {
   while (queue.length) {
     const target = queue.shift();
     let result;
-    try { result = await auditOne(sessionId, target); }
-    catch (error) { result = { status: 'error', message: String(error.message || error) }; }
+    try {
+      result = await auditOne(sessionId, target);
+    } catch (error) {
+      result = { status: 'error', message: String(error.message || error) };
+    }
     results[target.id] = { ...result, hash: target.hash, ...(target.chunk ? { chunk: target.chunk } : {}), at: new Date().toISOString() };
     if (result.status !== 'ok') fs.rmSync(thumbFile(target.id), { force: true });
     if (++done % 100 === 0 || done === todo.length) console.log(`${done}/${todo.length} · ${Math.round((Date.now() - t0) / 1000)} s`);
@@ -220,10 +329,16 @@ setTimeout(() => fs.rmSync(profile, { recursive: true, force: true }), 500);
 
 // Items disparus du registre : résultat et vignette retirés.
 const known = new Set(targets.map((t) => t.id));
-for (const id of Object.keys(results)) if (!known.has(id)) { delete results[id]; fs.rmSync(thumbFile(id), { force: true }); }
+for (const id of Object.keys(results))
+  if (!known.has(id)) {
+    delete results[id];
+    fs.rmSync(thumbFile(id), { force: true });
+  }
 const counts = Object.values(results).reduce((m, r) => ({ ...m, [r.status]: (m[r.status] || 0) + 1 }), {});
 const broken = Object.values(results).filter((r) => r.brokenImages).length;
 const sorted = Object.fromEntries(Object.entries(results).sort(([a], [b]) => a.localeCompare(b)));
 fs.writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), counts, results: sorted }, null, 1) + '\n');
-console.log(`Audit : ${JSON.stringify(counts)}${broken ? ` · ${broken} aperçu(s) avec images introuvables` : ''} → registry/_previews.json${thumbs ? ' · vignettes dans web/thumbs/' : ''}`);
+console.log(
+  `Audit : ${JSON.stringify(counts)}${broken ? ` · ${broken} aperçu(s) avec images introuvables` : ''} → registry/_previews.json${thumbs ? ' · vignettes dans web/thumbs/' : ''}`,
+);
 process.exit(0);

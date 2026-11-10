@@ -79,20 +79,36 @@ const STOP_WORDS = /\b(demo|basic|default|example|simple|animated|component|bloc
 
 /** Clé d'équivalence : « Input 01 », « input » et « Animated Input » se retrouvent sous « input ». */
 export function groupKey(name: string): string {
-  return normalize(name).replace(/[-_]/g, ' ').replace(/\d+/g, ' ').replace(STOP_WORDS, ' ').replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
+  return normalize(name)
+    .replace(/[-_]/g, ' ')
+    .replace(/\d+/g, ' ')
+    .replace(STOP_WORDS, ' ')
+    .replace(/[^a-z ]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 /** Valeur la plus fréquente d'un champ parmi les items d'une source. */
 function mostCommon<T>(values: T[]): T | undefined {
   const counts = new Map<string, { value: T; n: number }>();
-  for (const v of values) { const k = JSON.stringify(v ?? null); const c = counts.get(k); if (c) c.n++; else counts.set(k, { value: v, n: 1 }); }
+  for (const v of values) {
+    const k = JSON.stringify(v ?? null);
+    const c = counts.get(k);
+    if (c) c.n++;
+    else counts.set(k, { value: v, n: 1 });
+  }
   return [...counts.values()].sort((a, b) => b.n - a.n)[0]?.value;
 }
 
 function summarize(meta: Meta, dir: string, root: string): IndexEntry {
   const { files, tokens: _t, easings: _e, ...summary } = meta;
   const ui = meta.type === 'component' || meta.type === 'section' || meta.type === 'screen';
-  return { ...summary, dir: toPosix(path.relative(root, dir)), fileCount: files.length, ...(ui && groupKey(meta.name) ? { group: groupKey(meta.name) } : {}) };
+  return {
+    ...summary,
+    dir: toPosix(path.relative(root, dir)),
+    fileCount: files.length,
+    ...(ui && groupKey(meta.name) ? { group: groupKey(meta.name) } : {}),
+  };
 }
 
 /** Retire de l'entrée les textes de licence identiques à ceux de sa source (ils sont dans `sources`). */
@@ -159,7 +175,13 @@ export function buildIndex(root = REGISTRY): IndexEntry[] {
   for (const [sourceId, list] of bySource) {
     const license = mostCommon(list.map((e) => e.license))!;
     const same = list.filter((e) => e.license === license);
-    sources[sourceId] = { name: list[0].source, license, licenseStatus: same[0].licenseStatus, licenseNotes: mostCommon(same.map((e) => e.licenseNotes)), attribution: mostCommon(same.map((e) => e.attribution)) };
+    sources[sourceId] = {
+      name: list[0].source,
+      license,
+      licenseStatus: same[0].licenseStatus,
+      licenseNotes: mostCommon(same.map((e) => e.licenseNotes)),
+      attribution: mostCommon(same.map((e) => e.attribution)),
+    };
     firstDay.set(sourceId, list.map((e) => e.importedAt.slice(0, 10)).sort()[0]);
   }
   const items = entries.map((e) => {
@@ -175,10 +197,19 @@ export function buildIndex(root = REGISTRY): IndexEntry[] {
 /** Ajoute ou remplace un seul item dans l'index sans tout relire (thèmes personnels créés depuis le builder). */
 export function upsertIndex(meta: Meta, dir: string, root = REGISTRY): void {
   const file = path.join(root, 'index.json');
-  if (!fs.existsSync(file)) { buildIndex(root); return; }
+  if (!fs.existsSync(file)) {
+    buildIndex(root);
+    return;
+  }
   const index: RegistryIndex = JSON.parse(fs.readFileSync(file, 'utf8'));
   const entry = summarize(meta, dir, root);
-  index.sources[meta.sourceId] ??= { name: meta.source, license: meta.license, licenseStatus: meta.licenseStatus, licenseNotes: meta.licenseNotes, attribution: meta.attribution };
+  index.sources[meta.sourceId] ??= {
+    name: meta.source,
+    license: meta.license,
+    licenseStatus: meta.licenseStatus,
+    licenseNotes: meta.licenseNotes,
+    attribution: meta.attribution,
+  };
   const source = index.sources[meta.sourceId];
   const compacted = entry.license === source.license ? compact(entry, source) : entry;
   index.items = [...index.items.filter((i) => i.id !== meta.id), compacted].sort((a, b) => a.id.localeCompare(b.id));
@@ -226,5 +257,7 @@ export function appendLog(run: RunLog, root = REGISTRY) {
 
 /** Ids déjà présents pour une source, pour signaler les items disparus en amont (jamais supprimés automatiquement). */
 export function existingIds(sourceId: string, root = REGISTRY): string[] {
-  return allMeta(root).filter(({ meta }) => meta.sourceId === sourceId).map(({ meta }) => meta.id);
+  return allMeta(root)
+    .filter(({ meta }) => meta.sourceId === sourceId)
+    .map(({ meta }) => meta.id);
 }

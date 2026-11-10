@@ -8,8 +8,18 @@ import path from 'node:path';
 import { PRESETS, ROOT, SPECS, SPEC_HISTORY, toPosix } from './paths.js';
 import { BLOCK_TYPES, Spec, SpecInput, SPEC_NAME, type IndexEntry } from './schema.js';
 
-export interface StoredSpec { spec: Spec; file: string; preset: boolean }
-export interface SpecVersion { stamp: string; at: string; title: string; blocks: number; deleted: boolean }
+export interface StoredSpec {
+  spec: Spec;
+  file: string;
+  preset: boolean;
+}
+export interface SpecVersion {
+  stamp: string;
+  at: string;
+  title: string;
+  blocks: number;
+  deleted: boolean;
+}
 export type SaveResult = { ok: true; spec: Spec; file: string } | { ok: false; status: number; error: string; exists?: boolean };
 
 const HISTORY_LIMIT = 30;
@@ -19,7 +29,11 @@ const historyDir = (name: string, preset: boolean) => path.join(SPEC_HISTORY, pr
 const rel = (file: string) => toPosix(path.relative(ROOT, file));
 
 function readSpec(file: string): Spec | null {
-  try { return Spec.parse(JSON.parse(fs.readFileSync(file, 'utf8'))); } catch { return null; }
+  try {
+    return Spec.parse(JSON.parse(fs.readFileSync(file, 'utf8')));
+  } catch {
+    return null;
+  }
 }
 
 export function listSpecs(): StoredSpec[] {
@@ -27,7 +41,10 @@ export function listSpecs(): StoredSpec[] {
   for (const preset of [false, true]) {
     const dir = folder(preset);
     if (!fs.existsSync(dir)) continue;
-    for (const f of fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort()) {
+    for (const f of fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith('.json'))
+      .sort()) {
       const spec = readSpec(path.join(dir, f));
       if (spec) out.push({ spec, file: rel(path.join(dir, f)), preset });
     }
@@ -71,7 +88,10 @@ function archive(name: string, preset: boolean, deleted = false) {
   fs.mkdirSync(dir, { recursive: true });
   const stamp = new Date().toISOString().replace(/[:.]/g, '-');
   fs.copyFileSync(file, path.join(dir, `${stamp}${deleted ? '.deleted' : ''}.json`));
-  const versions = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort();
+  const versions = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .sort();
   for (const old of versions.slice(0, Math.max(0, versions.length - HISTORY_LIMIT))) fs.rmSync(path.join(dir, old));
 }
 
@@ -94,7 +114,8 @@ export function saveSpec(raw: unknown, items: Pick<IndexEntry, 'id' | 'type'>[],
   if (errors.length) return { ok: false, status: 400, error: errors.join(' · ') };
   const file = fileOf(input.name, input.preset);
   const previous = fs.existsSync(file) ? readSpec(file) : null;
-  if (previous && !options.overwrite) return { ok: false, status: 409, error: `${input.preset ? 'Le preset' : 'La spec'} « ${input.name} » existe déjà`, exists: true };
+  if (previous && !options.overwrite)
+    return { ok: false, status: 409, error: `${input.preset ? 'Le preset' : 'La spec'} « ${input.name} » existe déjà`, exists: true };
   if (previous) archive(input.name, input.preset);
   const now = new Date().toISOString();
   const spec: Spec = { ...input, createdAt: previous?.createdAt ?? now, updatedAt: now };
@@ -111,8 +132,10 @@ export function deleteSpec(name: string, preset: boolean): boolean {
 }
 
 export function renameSpec(name: string, to: string, preset: boolean): SaveResult {
-  if (!SPEC_NAME.test(name) || !SPEC_NAME.test(to)) return { ok: false, status: 400, error: 'Nom invalide : minuscules, chiffres et tirets' };
-  const from = fileOf(name, preset), target = fileOf(to, preset);
+  if (!SPEC_NAME.test(name) || !SPEC_NAME.test(to))
+    return { ok: false, status: 400, error: 'Nom invalide : minuscules, chiffres et tirets' };
+  const from = fileOf(name, preset),
+    target = fileOf(to, preset);
   const spec = fs.existsSync(from) ? readSpec(from) : null;
   if (!spec) return { ok: false, status: 404, error: 'Spec introuvable' };
   if (fs.existsSync(target)) return { ok: false, status: 409, error: `« ${to} » existe déjà`, exists: true };
@@ -120,7 +143,8 @@ export function renameSpec(name: string, to: string, preset: boolean): SaveResul
   writeAtomic(target, renamed);
   fs.rmSync(from);
   // L'historique suit la spec (fusionné avec celui d'une ancienne spec du même nom, s'il existe).
-  const oldHistory = historyDir(name, preset), newHistory = historyDir(to, preset);
+  const oldHistory = historyDir(name, preset),
+    newHistory = historyDir(to, preset);
   if (fs.existsSync(oldHistory)) {
     fs.mkdirSync(newHistory, { recursive: true });
     for (const f of fs.readdirSync(oldHistory)) fs.renameSync(path.join(oldHistory, f), path.join(newHistory, f));
@@ -132,11 +156,22 @@ export function renameSpec(name: string, to: string, preset: boolean): SaveResul
 export function specHistory(name: string, preset: boolean): SpecVersion[] {
   const dir = historyDir(name, preset);
   if (!SPEC_NAME.test(name) || !fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort().reverse().map((f) => {
-    const spec = readSpec(path.join(dir, f));
-    const stamp = f.replace(/\.json$/, '');
-    return { stamp, at: spec?.updatedAt ?? stamp, title: spec?.title ?? '', blocks: spec?.blocks.length ?? 0, deleted: stamp.endsWith('.deleted') };
-  });
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .sort()
+    .reverse()
+    .map((f) => {
+      const spec = readSpec(path.join(dir, f));
+      const stamp = f.replace(/\.json$/, '');
+      return {
+        stamp,
+        at: spec?.updatedAt ?? stamp,
+        title: spec?.title ?? '',
+        blocks: spec?.blocks.length ?? 0,
+        deleted: stamp.endsWith('.deleted'),
+      };
+    });
 }
 
 export function specVersion(name: string, stamp: string, preset: boolean): Spec | null {

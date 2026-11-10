@@ -25,7 +25,16 @@ export const WEB = path.join(ROOT, 'web');
 /** Vignettes produites par l'audit des aperçus (gitignorées, regénérables). */
 export const THUMBS = path.join(WEB, 'thumbs');
 
-export const KIND_DIRS = { component: 'items', section: 'items', screen: 'items', lib: 'items', theme: 'themes', font: 'fonts', easing: 'easings', sound: 'sounds' } as const;
+export const KIND_DIRS = {
+  component: 'items',
+  section: 'items',
+  screen: 'items',
+  lib: 'items',
+  theme: 'themes',
+  font: 'fonts',
+  easing: 'easings',
+  sound: 'sounds',
+} as const;
 
 /** Refuse tout chemin qui sortirait du dossier parent (fichiers issus de sources externes). */
 export function safeJoin(base: string, rel: string): string {

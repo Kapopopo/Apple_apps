@@ -13,7 +13,16 @@ const { allMeta, buildIndex } = await import('../../shared/registry.js');
 
 const style = (name: string, number: number, italic = false) => ({ is_italic: italic, is_variable: false, weight: { name, number } });
 const FONTS = [
-  { name: 'Satoshi', slug: 'satoshi', category: 'Sans', license_type: 'itf_ffl', font_tags: [{ name: 'Modern' }], publisher: { name: 'Indian Type Foundry' }, designers: [{ name: 'X' }], styles: [style('Regular', 400), style('Italic', 400, true), style('Bold', 700)] },
+  {
+    name: 'Satoshi',
+    slug: 'satoshi',
+    category: 'Sans',
+    license_type: 'itf_ffl',
+    font_tags: [{ name: 'Modern' }],
+    publisher: { name: 'Indian Type Foundry' },
+    designers: [{ name: 'X' }],
+    styles: [style('Regular', 400), style('Italic', 400, true), style('Bold', 700)],
+  },
   { name: 'Lora', slug: 'lora', category: 'Serif', license_type: 'sil_ofl', styles: [style('Regular', 400)] },
   { name: 'Mystère', slug: 'mystere', category: 'Display', license_type: 'proprietary', styles: [style('Regular', 400)] },
 ];
@@ -50,7 +59,12 @@ test('easings : cubic-bezier + fonctions JS cohérentes', async () => {
   assert.equal(cubic.css, 'cubic-bezier(0.65, 0, 0.35, 1)');
   assert.equal(tokens.find((t) => t.name === 'easeOutBounce')!.cubicBezier, null);
   // Les fonctions générées doivent valoir 0 en 0 et 1 en 1.
-  const js = generateTs().replace(/: number/g, '').replace(/ as \[number, number, number, number\]/g, '').replace(/ as const/g, '').replace(/^export type .*$/m, '').replace(/export /g, '');
+  const js = generateTs()
+    .replace(/: number/g, '')
+    .replace(/ as \[number, number, number, number\]/g, '')
+    .replace(/ as const/g, '')
+    .replace(/^export type .*$/m, '')
+    .replace(/export /g, '');
   const fns = new Function(`${js}; return easings;`)() as Record<string, (x: number) => number>;
   for (const [name, fn] of Object.entries(fns)) {
     assert.ok(Math.abs(fn(0)) < 1e-9, `${name}(0)`);
@@ -74,7 +88,8 @@ test('easings : ressorts (linear() + durée) et durées de référence', () => {
 
 test('démos de route : registre paresseux rendu statique, limité aux entrées utilisées', async () => {
   const { lazyEntries, usedKeys, staticRegistry, labelOf } = await import('../../importers/github.js');
-  const registry = "export const DEMO_COMPONENTS = {\n  Button: lazyNamed(() => import('../../ui/Button'), 'Button'),\n  Card: lazyNamed(() => import('../../ui/Card'), 'GlassCard'),\n  Alert: lazyWithPreload(() => import('./demos/alert.demo'), 'default'),\n};";
+  const registry =
+    "export const DEMO_COMPONENTS = {\n  Button: lazyNamed(() => import('../../ui/Button'), 'Button'),\n  Card: lazyNamed(() => import('../../ui/Card'), 'GlassCard'),\n  Alert: lazyWithPreload(() => import('./demos/alert.demo'), 'default'),\n};";
   const entries = lazyEntries(registry);
   assert.deepEqual([...entries.keys()], ['Button', 'Card', 'Alert']);
   const keys = usedKeys('const { Button, Card: Glass } = DEMO_COMPONENTS;\nDEMO_COMPONENTS.Alert.preload();', 'DEMO_COMPONENTS');

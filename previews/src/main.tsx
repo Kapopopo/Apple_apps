@@ -28,12 +28,19 @@ const notify = (status: 'ready' | 'error', message?: string) => parent.postMessa
 const VAR_NAME = /^--[a-z0-9-]{1,40}$/;
 const SAFE_VALUE = /^[#(),.%\w\s\-/]{1,100}$/;
 type Vars = Record<string, unknown>;
-const declarations = (vars: Vars) => Object.entries(vars ?? {}).filter(([k, v]) => VAR_NAME.test(k) && typeof v === 'string' && SAFE_VALUE.test(v) && !v.includes('/*')).map(([k, v]) => `  ${k}: ${v};`).join('\n');
+const declarations = (vars: Vars) =>
+  Object.entries(vars ?? {})
+    .filter(([k, v]) => VAR_NAME.test(k) && typeof v === 'string' && SAFE_VALUE.test(v) && !v.includes('/*'))
+    .map(([k, v]) => `  ${k}: ${v};`)
+    .join('\n');
 
 function applySkin(light: Vars, darkVars: Vars, radius?: unknown) {
   const rootVars = { ...light, ...(typeof radius === 'string' ? { '--radius': radius } : {}) };
   let style = document.getElementById('atlas-skin') as HTMLStyleElement | null;
-  if (!style) { style = document.createElement('style'); style.id = 'atlas-skin'; }
+  if (!style) {
+    style = document.createElement('style');
+    style.id = 'atlas-skin';
+  }
   style.textContent = `:root {\n${declarations(rootVars)}\n}\n.dark, [data-theme="dark"] {\n${declarations(darkVars)}\n}\n`;
   document.head.append(style); // toujours en dernier : l'emporte sur les feuilles de la source
 }
@@ -71,17 +78,31 @@ if (pageMode) {
 /* ---------- Rendu ---------- */
 
 function Failure({ message }: { message: string }) {
-  return <div className="atlas-failure"><strong>Aperçu indisponible</strong><p>{message}</p><small>Le code reste disponible dans le registre et via get_component.</small></div>;
+  return (
+    <div className="atlas-failure">
+      <strong>Aperçu indisponible</strong>
+      <p>{message}</p>
+      <small>Le code reste disponible dans le registre et via get_component.</small>
+    </div>
+  );
 }
 
 class Boundary extends Component<{ children: ReactNode }, { error: Error | null }> {
   state = { error: null as Error | null };
-  static getDerivedStateFromError(error: Error) { return { error }; }
-  componentDidCatch(error: Error, info: ErrorInfo) { notify('error', error.message); console.error(error, info.componentStack); }
-  render() { return this.state.error ? <Failure message={this.state.error.message} /> : this.props.children; }
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    notify('error', error.message);
+    console.error(error, info.componentStack);
+  }
+  render() {
+    return this.state.error ? <Failure message={this.state.error.message} /> : this.props.children;
+  }
 }
 
-const isComponent = (v: unknown): v is ComponentType => typeof v === 'function' || (typeof v === 'object' && v !== null && '$$typeof' in v && !isValidElement(v));
+const isComponent = (v: unknown): v is ComponentType =>
+  typeof v === 'function' || (typeof v === 'object' && v !== null && '$$typeof' in v && !isValidElement(v));
 
 function pick(mod: Record<string, unknown>, exportName: string | null): ComponentType | undefined {
   if (exportName && isComponent(mod[exportName])) return mod[exportName] as ComponentType;
@@ -98,12 +119,30 @@ function SoundPad({ names, play }: { names: string[]; play: (name: string) => un
     <main className="atlas-stage">
       <div className="atlas-sound">
         {names.map((n) => (
-          <button key={n} type="button" onClick={async () => {
-            setLast(n); setError(null);
-            try { await play(n); } catch (e) { setError((e as Error).message); }
-          }}><span aria-hidden="true">▶</span>{n}</button>
+          <button
+            key={n}
+            type="button"
+            onClick={async () => {
+              setLast(n);
+              setError(null);
+              try {
+                await play(n);
+              } catch (e) {
+                setError((e as Error).message);
+              }
+            }}
+          >
+            <span aria-hidden="true">▶</span>
+            {n}
+          </button>
         ))}
-        <p>{error ? `Lecture impossible : ${error}` : last ? `Joué : ${last}` : 'Cliquer pour écouter · son synthétisé (Web Audio), sans fichier audio'}</p>
+        <p>
+          {error
+            ? `Lecture impossible : ${error}`
+            : last
+              ? `Joué : ${last}`
+              : 'Cliquer pour écouter · son synthétisé (Web Audio), sans fichier audio'}
+        </p>
       </div>
     </main>
   );
@@ -113,7 +152,11 @@ const root = createRoot(document.getElementById('root')!);
 
 async function boot() {
   const entry = ITEMS[id];
-  if (!entry) { root.render(<Failure message={`Item sans aperçu live : ${id || '(aucun id)'}`} />); notify('error', 'unknown item'); return; }
+  if (!entry) {
+    root.render(<Failure message={`Item sans aperçu live : ${id || '(aucun id)'}`} />);
+    notify('error', 'unknown item');
+    return;
+  }
   document.title = `${entry.name} — aperçu`;
   try {
     await entry.css();
@@ -122,16 +165,31 @@ async function boot() {
     const mod = await entry.load();
     if (entry.sound) {
       const engine = entry.engine ? await entry.engine() : null;
-      const play = entry.sound.engine === 'bencho'
-        ? (name: string) => (mod.play as (n: string) => unknown)(name)
-        : () => (engine?.playSound as (recipe: unknown) => unknown)(mod.default);
-      root.render(<StrictMode><Boundary><SoundPad names={entry.sound.names} play={play} /></Boundary></StrictMode>);
+      const play =
+        entry.sound.engine === 'bencho'
+          ? (name: string) => (mod.play as (n: string) => unknown)(name)
+          : () => (engine?.playSound as (recipe: unknown) => unknown)(mod.default);
+      root.render(
+        <StrictMode>
+          <Boundary>
+            <SoundPad names={entry.sound.names} play={play} />
+          </Boundary>
+        </StrictMode>,
+      );
       requestAnimationFrame(() => notify('ready'));
       return;
     }
     const Preview = pick(mod, entry.exportName);
     if (!Preview) throw new Error('Aucun composant exporté à afficher sans props.');
-    root.render(<StrictMode><Boundary><main className="atlas-stage"><Preview /></main></Boundary></StrictMode>);
+    root.render(
+      <StrictMode>
+        <Boundary>
+          <main className="atlas-stage">
+            <Preview />
+          </main>
+        </Boundary>
+      </StrictMode>,
+    );
     requestAnimationFrame(() => notify('ready'));
   } catch (error) {
     root.render(<Failure message={(error as Error).message} />);

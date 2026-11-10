@@ -15,7 +15,10 @@ import { importFontshare } from './fontshare.js';
 import { importEasings } from './easings.js';
 
 const args = process.argv.slice(2);
-const flag = (name: string) => { const i = args.indexOf(`--${name}`); return i >= 0 ? (args[i + 1] && !args[i + 1].startsWith('--') ? args[i + 1] : true) : undefined; };
+const flag = (name: string) => {
+  const i = args.indexOf(`--${name}`);
+  return i >= 0 ? (args[i + 1] && !args[i + 1].startsWith('--') ? args[i + 1] : true) : undefined;
+};
 const command = args.find((a) => !a.startsWith('--') && args[args.indexOf(a) - 1] !== '--source') ?? 'all';
 const only = typeof flag('source') === 'string' ? (flag('source') as string) : undefined;
 const offline = flag('offline') === true;
@@ -24,8 +27,12 @@ const update = flag('update') === true;
 if (command === 'outdated') {
   const rows = outdated();
   const behind = rows.filter((r) => r.behind);
-  for (const r of rows) console.log(`${r.behind ? '↑' : '='} ${r.name.padEnd(18)} ${r.locked?.slice(0, 7) ?? 'jamais'} → ${r.latest.slice(0, 7)}`);
-  fs.writeFileSync(path.join(REGISTRY, '_updates.json'), JSON.stringify({ checkedAt: new Date().toISOString(), behind: behind.map((r) => r.id), sources: rows }, null, 1) + '\n');
+  for (const r of rows)
+    console.log(`${r.behind ? '↑' : '='} ${r.name.padEnd(18)} ${r.locked?.slice(0, 7) ?? 'jamais'} → ${r.latest.slice(0, 7)}`);
+  fs.writeFileSync(
+    path.join(REGISTRY, '_updates.json'),
+    JSON.stringify({ checkedAt: new Date().toISOString(), behind: behind.map((r) => r.id), sources: rows }, null, 1) + '\n',
+  );
   console.log(behind.length ? `${behind.length} source(s) à mettre à jour : npm run update` : 'Toutes les sources sont à jour.');
   process.exit(0);
 }
@@ -45,8 +52,12 @@ if (command !== 'all' && !steps[command]) {
 
 let failed = false;
 for (const name of command === 'all' ? ['local', 'easings', 'github', 'fontshare'] : [command]) {
-  try { await steps[name](); }
-  catch (error) { failed = true; console.error(`✗ ${name} : ${(error as Error).message}`); }
+  try {
+    await steps[name]();
+  } catch (error) {
+    failed = true;
+    console.error(`✗ ${name} : ${(error as Error).message}`);
+  }
 }
 const entries = buildIndex();
 console.log(`Index : ${entries.length} items → registry/index.json`);

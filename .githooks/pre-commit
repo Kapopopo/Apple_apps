@@ -1,0 +1,4 @@
+#!/bin/sh
+# Avant chaque commit : types, lint, format et tests unitaires (≈ 30 s). Activé par « npm run setup ».
+# Contourner exceptionnellement : git commit --no-verify
+npm run -s check

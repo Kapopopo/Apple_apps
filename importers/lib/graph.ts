@@ -7,7 +7,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { toPosix } from '../../shared/paths.js';
 
-const IMPORT_RE = /(?:import|export)\s+(?:type\s+)?(?:[^'"`;]*?\s+from\s+)?['"]([^'"]+)['"]|import\(\s*['"]([^'"]+)['"]\s*\)|require\(\s*['"]([^'"]+)['"]\s*\)|@import\s+(?:url\()?['"]([^'"]+)['"]/g;
+const IMPORT_RE =
+  /(?:import|export)\s+(?:type\s+)?(?:[^'"`;]*?\s+from\s+)?['"]([^'"]+)['"]|import\(\s*['"]([^'"]+)['"]\s*\)|require\(\s*['"]([^'"]+)['"]\s*\)|@import\s+(?:url\()?['"]([^'"]+)['"]/g;
 const EXTENSIONS = ['', '.tsx', '.ts', '.jsx', '.js', '.mjs', '.css', '/index.tsx', '/index.ts', '/index.js'];
 const IGNORED_PACKAGES = new Set(['react', 'react-dom', 'react/jsx-runtime']);
 const BUILTINS = /^(node:|fs$|path$|url$|crypto$)/;
@@ -29,11 +30,19 @@ export function packageName(spec: string): string {
 export type Aliases = Record<string, string>;
 
 /** Résout un spécifieur en chemin relatif au repo (posix), ou null s'il s'agit d'un paquet npm. */
-export function resolveInRepo(repoDir: string, fromRel: string, spec: string, aliases: Aliases, exists: (rel: string) => boolean): string | null | undefined {
+export function resolveInRepo(
+  repoDir: string,
+  fromRel: string,
+  spec: string,
+  aliases: Aliases,
+  exists: (rel: string) => boolean,
+): string | null | undefined {
   let base: string | null = null;
   if (spec.startsWith('.')) base = toPosix(path.posix.normalize(path.posix.join(path.posix.dirname(fromRel), spec)));
   else {
-    const alias = Object.keys(aliases).sort((a, b) => b.length - a.length).find((a) => spec.startsWith(a));
+    const alias = Object.keys(aliases)
+      .sort((a, b) => b.length - a.length)
+      .find((a) => spec.startsWith(a));
     if (alias !== undefined) base = aliases[alias] + spec.slice(alias.length);
   }
   if (base === null) return null;
@@ -52,8 +61,20 @@ export interface WalkResult {
  * Parcourt les imports depuis `entries`. Un fichier appartenant à un autre item (`owners`)
  * devient une dépendance de registre au lieu d'être recopié.
  */
-export function walk(repoDir: string, entries: string[], self: string, owners: Map<string, string>, aliases: Aliases, readFile?: (rel: string) => string | undefined): WalkResult {
-  const read = readFile ?? ((rel: string) => { const f = path.join(repoDir, rel); return fs.existsSync(f) && fs.statSync(f).isFile() ? fs.readFileSync(f, 'utf8') : undefined; });
+export function walk(
+  repoDir: string,
+  entries: string[],
+  self: string,
+  owners: Map<string, string>,
+  aliases: Aliases,
+  readFile?: (rel: string) => string | undefined,
+): WalkResult {
+  const read =
+    readFile ??
+    ((rel: string) => {
+      const f = path.join(repoDir, rel);
+      return fs.existsSync(f) && fs.statSync(f).isFile() ? fs.readFileSync(f, 'utf8') : undefined;
+    });
   const exists = (rel: string) => read(rel) !== undefined;
   const files = new Set<string>();
   const packages = new Set<string>();
@@ -64,7 +85,10 @@ export function walk(repoDir: string, entries: string[], self: string, owners: M
     const rel = queue.shift()!;
     if (files.has(rel)) continue;
     const code = read(rel);
-    if (code === undefined) { unresolved.add(rel); continue; }
+    if (code === undefined) {
+      unresolved.add(rel);
+      continue;
+    }
     files.add(rel);
     for (const { spec, typeOnly } of importSpecifiers(code)) {
       if (spec.startsWith('http') || spec.startsWith('data:')) continue;

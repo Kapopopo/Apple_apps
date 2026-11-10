@@ -28,12 +28,22 @@ const FONTSHARE_FONTS = 'https://cdn.fontshare.com';
 
 /** Pages de l'application (catalogue, builder) : aucun script externe, polices Fontshare chargées à la demande. */
 export const APP_POLICY = [
-  "default-src 'self'", `style-src 'self' ${FONTSHARE_CSS}`, `font-src ${FONTSHARE_FONTS}`, "script-src 'self'",
-  "connect-src 'self'", "img-src 'self' data:", "frame-src 'self'", "object-src 'none'", "base-uri 'none'", "frame-ancestors 'none'", "form-action 'none'",
+  "default-src 'self'",
+  `style-src 'self' ${FONTSHARE_CSS}`,
+  `font-src ${FONTSHARE_FONTS}`,
+  "script-src 'self'",
+  "connect-src 'self'",
+  "img-src 'self' data:",
+  "frame-src 'self'",
+  "object-src 'none'",
+  "base-uri 'none'",
+  "frame-ancestors 'none'",
+  "form-action 'none'",
 ].join('; ');
 
 /** Démos Atlas (code relu, compilé dans web/demos) : aucune ressource distante. */
-export const DEMO_POLICY = "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; form-action 'none'";
+export const DEMO_POLICY =
+  "default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; img-src 'self' data:; object-src 'none'; frame-ancestors 'self'; form-action 'none'";
 
 /**
  * Aperçus du registre (code tiers) : iframe sandboxée à origine opaque, donc l'origine du serveur est
@@ -42,8 +52,15 @@ export const DEMO_POLICY = "default-src 'self'; style-src 'self' 'unsafe-inline'
 export function previewPolicy(host: string): string {
   const self = `http://${host}`;
   return [
-    `default-src 'self' ${self}`, `script-src 'self' ${self}`, `style-src 'self' 'unsafe-inline' ${self}`,
-    `img-src 'self' data: blob: https: ${self}`, `font-src 'self' data: ${self}`, "connect-src 'none'",
-    "media-src 'self' data: blob:", "object-src 'none'", "frame-ancestors 'self'", "form-action 'none'",
+    `default-src 'self' ${self}`,
+    `script-src 'self' ${self}`,
+    `style-src 'self' 'unsafe-inline' ${self}`,
+    `img-src 'self' data: blob: https: ${self}`,
+    `font-src 'self' data: ${self}`,
+    "connect-src 'none'",
+    "media-src 'self' data: blob:",
+    "object-src 'none'",
+    "frame-ancestors 'self'",
+    "form-action 'none'",
   ].join('; ');
 }

@@ -6,7 +6,12 @@ import { bundleItems, CN_ITEM } from '../shared/bundle.js';
 import { indexItems } from '../shared/registry.js';
 
 export const ITEM_ID_PATTERN = /^[a-z0-9-]+\/[a-z0-9-]+$/;
-const TYPES: Record<string, string> = { component: 'registry:component', section: 'registry:block', screen: 'registry:block', lib: 'registry:lib' };
+const TYPES: Record<string, string> = {
+  component: 'registry:component',
+  section: 'registry:block',
+  screen: 'registry:block',
+  lib: 'registry:lib',
+};
 const installable = (e: { type: string; framework: string }) => !!TYPES[e.type] && e.framework === 'react';
 
 export function shadcnIndex(base: string) {
@@ -14,7 +19,15 @@ export function shadcnIndex(base: string) {
     $schema: 'https://ui.shadcn.com/schema/registry.json',
     name: 'component-atlas',
     homepage: base,
-    items: indexItems().filter(installable).map((e) => ({ name: e.id.replace('/', '--'), type: TYPES[e.type], title: e.name, description: e.description, url: `${base}/r/${e.id}.json` })),
+    items: indexItems()
+      .filter(installable)
+      .map((e) => ({
+        name: e.id.replace('/', '--'),
+        type: TYPES[e.type],
+        title: e.name,
+        description: e.description,
+        url: `${base}/r/${e.id}.json`,
+      })),
   };
 }
 
@@ -34,8 +47,17 @@ export function shadcnItem(id: string, base: string) {
     description: entry.description,
     dependencies: bundle.dependencies,
     registryDependencies: [...(needsCn ? ['utils'] : []), ...registryDeps.map((d) => `${base}/r/${d}.json`)],
-    files: bundle.files.filter((f) => f.itemId !== CN_ITEM).map((f) => ({ path: f.path, type: f.path.startsWith('lib/') ? 'registry:lib' : f.path.startsWith('hooks/') ? 'registry:hook' : 'registry:file', target: f.path, content: f.content })),
-    docs: entry.attribution ? `Licence ${entry.license}${entry.licenseStatus === 'restricted' ? ' (conditions)' : ''} — ${entry.attribution}` : `Licence ${entry.license}`,
+    files: bundle.files
+      .filter((f) => f.itemId !== CN_ITEM)
+      .map((f) => ({
+        path: f.path,
+        type: f.path.startsWith('lib/') ? 'registry:lib' : f.path.startsWith('hooks/') ? 'registry:hook' : 'registry:file',
+        target: f.path,
+        content: f.content,
+      })),
+    docs: entry.attribution
+      ? `Licence ${entry.license}${entry.licenseStatus === 'restricted' ? ' (conditions)' : ''} — ${entry.attribution}`
+      : `Licence ${entry.license}`,
     meta: { license: entry.license, licenseStatus: entry.licenseStatus, source: entry.sourceUrl, attribution: entry.attribution ?? null },
   };
 }

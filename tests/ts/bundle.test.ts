@@ -20,9 +20,16 @@ const file = (b: { files: { path: string; content: string }[] }, p: string) => b
 test('bundle complet : dépendances d’abord, chemins cibles, imports réécrits', () => {
   const b = bundleItems(['demo-src/card']);
   assert.deepEqual(b.items, ['shadcn/utils', 'shadcn/button', 'demo-src/card']);
-  assert.deepEqual(b.files.map((f) => f.path), [
-    'components/atlas/demo-src/card/card.css', 'components/atlas/demo-src/card/card.tsx', 'components/atlas/demo-src/card/helper.ts', 'components/ui/button.tsx', 'lib/utils.ts',
-  ]);
+  assert.deepEqual(
+    b.files.map((f) => f.path),
+    [
+      'components/atlas/demo-src/card/card.css',
+      'components/atlas/demo-src/card/card.tsx',
+      'components/atlas/demo-src/card/helper.ts',
+      'components/ui/button.tsx',
+      'lib/utils.ts',
+    ],
+  );
   const card = file(b, 'components/atlas/demo-src/card/card.tsx');
   assert.match(card, /from '@\/components\/ui\/button'/, 'primitive shadcn à son emplacement standard');
   assert.match(card, /from '@\/lib\/utils'/);
@@ -58,9 +65,16 @@ test('crédits : sources à attribution obligatoire en premier, conditions repri
 
 test('shallow : seuls les fichiers de l’item, items importés listés à part', () => {
   const b = bundleItems(['demo-src/card'], { shallow: true });
-  assert.deepEqual(b.files.map((f) => f.path).filter((p) => !p.startsWith('lib/')), ['components/atlas/demo-src/card/card.css', 'components/atlas/demo-src/card/card.tsx', 'components/atlas/demo-src/card/helper.ts']);
+  assert.deepEqual(
+    b.files.map((f) => f.path).filter((p) => !p.startsWith('lib/')),
+    ['components/atlas/demo-src/card/card.css', 'components/atlas/demo-src/card/card.tsx', 'components/atlas/demo-src/card/helper.ts'],
+  );
   assert.deepEqual(b.external, ['shadcn/button']);
-  assert.match(file(b, 'components/atlas/demo-src/card/card.tsx'), /from '@\/components\/ui\/button'/, 'import réécrit vers l’emplacement que shadcn installera');
+  assert.match(
+    file(b, 'components/atlas/demo-src/card/card.tsx'),
+    /from '@\/components\/ui\/button'/,
+    'import réécrit vers l’emplacement que shadcn installera',
+  );
 });
 
 test('démos incluses sur demande, réécrites vers le composant', () => {
@@ -69,7 +83,19 @@ test('démos incluses sur demande, réécrites vers le composant', () => {
 });
 
 test('bundle de spec : thème CSS, easings, CREDITS.md, une commande npm install', () => {
-  const saved = saveSpec({ name: 'demo', title: 'Démo', theme: 'demo-src/theme', easings: ['atlas/easings-standard'], blocks: [{ id: 'demo-src/card', note: 'hero' }, { id: 'shadcn/button', note: '' }] }, indexItems());
+  const saved = saveSpec(
+    {
+      name: 'demo',
+      title: 'Démo',
+      theme: 'demo-src/theme',
+      easings: ['atlas/easings-standard'],
+      blocks: [
+        { id: 'demo-src/card', note: 'hero' },
+        { id: 'shadcn/button', note: '' },
+      ],
+    },
+    indexItems(),
+  );
   assert.ok(saved.ok, saved.ok ? '' : saved.error);
   const b = specBundle(saved.ok ? saved.spec : (null as never));
   const extras = Object.fromEntries(b.extras.map((f) => [f.path, f.content]));
@@ -86,7 +112,8 @@ test('CLI bundle : écrit dans src/, refuse d’écraser sans --force', () => {
   const project = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-project-'));
   fs.mkdirSync(path.join(project, 'src'));
   const cli = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../scripts/bundle.ts');
-  const run = (...args: string[]) => spawnSync(process.execPath, ['--import', 'tsx', cli, ...args], { encoding: 'utf8', env: { ...process.env, ATLAS_ROOT: root } });
+  const run = (...args: string[]) =>
+    spawnSync(process.execPath, ['--import', 'tsx', cli, ...args], { encoding: 'utf8', env: { ...process.env, ATLAS_ROOT: root } });
   const first = run('demo', '--out', project);
   assert.equal(first.status, 0, first.stderr);
   assert.ok(fs.existsSync(path.join(project, 'src/components/ui/button.tsx')));

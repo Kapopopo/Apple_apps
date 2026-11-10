@@ -3,7 +3,7 @@ import { createAtlasServer, webReady } from './app.js';
 
 const args = process.argv.slice(2);
 const flag = args.indexOf('--port');
-const port = Number(flag >= 0 ? args[flag + 1] : process.env.PORT ?? 8000);
+const port = Number(flag >= 0 ? args[flag + 1] : (process.env.PORT ?? 8000));
 if (!Number.isInteger(port) || port <= 0 || port > 65535) {
   console.error(`Port invalide : ${args[flag + 1]}`);
   process.exit(2);

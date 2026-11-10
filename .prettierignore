@@ -1,0 +1,17 @@
+# Code et données importés ou générés : jamais reformatés
+registry/
+.cache/
+dist/
+node_modules/
+specs/
+data/
+web/registry-previews/
+web/demos/
+web/thumbs/
+demos/src/vendor/
+previews/src/generated/
+previews/missing-modules.txt
+importers/lock.json
+importers/sources.json
+**/package-lock.json
+*.md

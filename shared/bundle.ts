@@ -22,7 +22,12 @@ export interface BundleOptions {
   shallow?: boolean;
 }
 
-export interface BundleFile { path: string; content: string; itemId: string; role: string }
+export interface BundleFile {
+  path: string;
+  content: string;
+  itemId: string;
+  role: string;
+}
 export interface Bundle {
   files: BundleFile[];
   /** Paquets npm à installer (hors react, react-dom, next). */
@@ -46,7 +51,12 @@ const stripExt = (p: string) => p.replace(/\.(tsx|ts|jsx|js|mjs)$/, '');
 const keyOf = (ref: FileRef) => `${ref.sourceId}::${ref.rel}`;
 const read = (abs: string) => fs.readFileSync(abs, 'utf8');
 
-let cache: { key: number; metas: { meta: Meta; dir: string }[]; byId: Map<string, { meta: Meta; dir: string }>; ctx: ResolveContext } | null = null;
+let cache: {
+  key: number;
+  metas: { meta: Meta; dir: string }[];
+  byId: Map<string, { meta: Meta; dir: string }>;
+  ctx: ResolveContext;
+} | null = null;
 
 /** Contexte de résolution sur tout le registre (relu quand l'index change). */
 export function registryContext() {
@@ -96,7 +106,10 @@ export function bundleItems(ids: string[], options: BundleOptions = {}): Bundle 
   const visit = (id: string, trail: Set<string>) => {
     if (order.includes(id) || trail.has(id)) return;
     const item = byId.get(id);
-    if (!item) { missing.add(id); return; }
+    if (!item) {
+      missing.add(id);
+      return;
+    }
     if (!options.shallow) for (const dep of item.meta.registryDependencies) visit(dep, new Set([...trail, id]));
     order.push(id);
   };
@@ -125,7 +138,10 @@ export function bundleItems(ids: string[], options: BundleOptions = {}): Bundle 
   while (queue.length) {
     const { ref, meta } = queue.shift()!;
     if (emitted.has(keyOf(ref))) continue;
-    if (isCnOnly(ref, read)) { needsCn = true; continue; }
+    if (isCnOnly(ref, read)) {
+      needsCn = true;
+      continue;
+    }
     emitted.set(keyOf(ref), { ref, meta, target: targetOf(ref, meta) });
     for (const m of read(ref.abs).matchAll(IMPORT_SPEC)) {
       const r = resolve(m[3], ref);
@@ -142,7 +158,7 @@ export function bundleItems(ids: string[], options: BundleOptions = {}): Bundle 
 
   // Réécriture des imports internes vers les emplacements cibles (y compris ceux des items externes).
   const files: BundleFile[] = [];
-  for (const { ref, meta, target } of emitted.values()) {
+  for (const { ref, target } of emitted.values()) {
     const code = read(ref.abs).replace(IMPORT_SPEC, (whole, head: string, quote: string, spec: string) => {
       const r = resolve(spec, ref);
       if (r.kind === 'cn') return `${head}${quote}${importPath(target, 'lib/utils.ts', alias, false)}${quote}`;
@@ -181,7 +197,12 @@ export function credits(metas: Meta[]): string {
   for (const m of metas) if (m.sourceId !== 'perso') bySource.set(m.sourceId, [...(bySource.get(m.sourceId) ?? []), m]);
   const restricted = (list: Meta[]) => Number(list.some((m) => m.licenseStatus === 'restricted'));
   const groups = [...bySource.values()].sort((a, b) => restricted(b) - restricted(a) || a[0].source.localeCompare(b[0].source));
-  const lines = ['# Crédits', '', 'Composants et ressources issus de bibliothèques tierces (registre Component Atlas). Conserver ces mentions.', ''];
+  const lines = [
+    '# Crédits',
+    '',
+    'Composants et ressources issus de bibliothèques tierces (registre Component Atlas). Conserver ces mentions.',
+    '',
+  ];
   for (const list of groups) {
     lines.push(`## ${list[0].source}`, '');
     const byLicense = new Map<string, Meta[]>();

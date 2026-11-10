@@ -1,66 +1,124 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>Atlas · Catalogue</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
-<body>
-<a class="skip" href="#results">Aller aux composants</a>
-<header class="appbar">
-  <a href="/" class="brand" aria-label="Atlas, catalogue"><span class="brand-mark">a<span>•</span></span><span>atlas</span></a>
-  <nav class="pages" aria-label="Pages">
-    <a href="/" aria-current="page">Catalogue <small>essayer les composants</small></a>
-    <a href="/builder">Builder <small>composer la spec</small></a>
-  </nav>
-  <div class="appbar-end"><button class="btn ghost" id="mcp-button"><svg class="icon" aria-hidden="true"><use href="/icons.svg#terminal"/></svg><span class="label">Utiliser avec Claude Code</span></button></div>
-</header>
-<main id="main" class="home">
-  <nav class="views" aria-label="Vues du catalogue">
-    <button data-view="recommend" class="active" aria-current="page">Sélection Atlas <span class="count" id="live-nav">…</span></button>
-    <button data-view="components">Tous les composants <span class="count" id="nav-count">…</span></button>
-    <button data-view="new" hidden><svg class="icon" aria-hidden="true"><use href="/icons.svg#sparkle"/></svg>Nouveautés <span class="count" id="new-nav">0</span></button>
-    <button data-view="selected">Ma sélection <span class="count" id="selected-count">0</span></button>
-    <button data-view="favorites">Favoris <span class="count" id="fav-count">0</span></button>
-  </nav>
-  <div class="view-head">
-    <h1 id="title">Sélection Atlas</h1>
-    <p id="intro"></p>
-  </div>
-  <div class="toolbar" role="search">
-    <label class="search"><svg class="icon" aria-hidden="true"><use href="/icons.svg#search"/></svg><input id="search" type="search" placeholder="Rechercher : graphique, carrousel, bouton, tarifs, connexion…" aria-label="Rechercher par type, nom ou bibliothèque" aria-describedby="search-scope"></label>
-    <div class="filter-row">
-      <select id="source-filter" aria-label="Bibliothèque"><option value="">Toutes les bibliothèques</option></select>
-      <select id="category-filter" aria-label="Type de composant"><option value="">Tous les types</option></select>
-      <select id="effect-filter" aria-label="Animation (sélection Atlas)"><option value="">Toutes les animations</option></select>
-      <select id="usage-filter" aria-label="Usage (sélection Atlas)"><option value="">Tous les usages</option></select>
-      <select id="license-filter" aria-label="Licence"><option value="">Toutes les licences</option><option value="open">Licence ouverte</option><option value="restricted">Licence avec conditions</option></select>
-      <button class="btn ghost small" id="reset-filters" hidden><svg class="icon" aria-hidden="true"><use href="/icons.svg#reset"/></svg>Réinitialiser <span id="filter-count"></span></button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Atlas · Catalogue</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/theme.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#results">Aller aux composants</a>
+    <header class="appbar">
+      <a href="/" class="brand" aria-label="Atlas, catalogue"
+        ><span class="brand-mark">a<span>•</span></span
+        ><span>atlas</span></a
+      >
+      <nav class="pages" aria-label="Pages">
+        <a href="/" aria-current="page">Catalogue <small>essayer les composants</small></a>
+        <a href="/builder">Builder <small>composer la spec</small></a>
+      </nav>
+      <div class="appbar-end">
+        <button class="btn ghost" id="mcp-button">
+          <svg class="icon" aria-hidden="true"><use href="/icons.svg#terminal" /></svg><span class="label">Utiliser avec Claude Code</span>
+        </button>
+      </div>
+    </header>
+    <main id="main" class="home">
+      <nav class="views" aria-label="Vues du catalogue">
+        <button data-view="recommend" class="active" aria-current="page">Sélection Atlas <span class="count" id="live-nav">…</span></button>
+        <button data-view="components">Tous les composants <span class="count" id="nav-count">…</span></button>
+        <button data-view="new" hidden>
+          <svg class="icon" aria-hidden="true"><use href="/icons.svg#sparkle" /></svg>Nouveautés <span class="count" id="new-nav">0</span>
+        </button>
+        <button data-view="selected">Ma sélection <span class="count" id="selected-count">0</span></button>
+        <button data-view="favorites">Favoris <span class="count" id="fav-count">0</span></button>
+      </nav>
+      <div class="view-head">
+        <h1 id="title">Sélection Atlas</h1>
+        <p id="intro"></p>
+      </div>
+      <div class="toolbar" role="search">
+        <label class="search"
+          ><svg class="icon" aria-hidden="true"><use href="/icons.svg#search" /></svg
+          ><input
+            id="search"
+            type="search"
+            placeholder="Rechercher : graphique, carrousel, bouton, tarifs, connexion…"
+            aria-label="Rechercher par type, nom ou bibliothèque"
+            aria-describedby="search-scope"
+        /></label>
+        <div class="filter-row">
+          <select id="source-filter" aria-label="Bibliothèque">
+            <option value="">Toutes les bibliothèques</option>
+          </select>
+          <select id="category-filter" aria-label="Type de composant">
+            <option value="">Tous les types</option>
+          </select>
+          <select id="effect-filter" aria-label="Animation (sélection Atlas)">
+            <option value="">Toutes les animations</option>
+          </select>
+          <select id="usage-filter" aria-label="Usage (sélection Atlas)">
+            <option value="">Tous les usages</option>
+          </select>
+          <select id="license-filter" aria-label="Licence">
+            <option value="">Toutes les licences</option>
+            <option value="open">Licence ouverte</option>
+            <option value="restricted">Licence avec conditions</option>
+          </select>
+          <button class="btn ghost small" id="reset-filters" hidden>
+            <svg class="icon" aria-hidden="true"><use href="/icons.svg#reset" /></svg>Réinitialiser <span id="filter-count"></span>
+          </button>
+        </div>
+        <div class="shortcuts" aria-label="Raccourcis">
+          <button class="chip" data-search="graphique">Graphiques</button>
+          <button class="chip" data-search="carrousel">Carrousels</button>
+          <button class="chip" data-search="bouton">Boutons</button>
+          <button class="chip" data-search="tarifs">Tarifs</button>
+          <button class="chip" data-search="fond">Fonds animés</button>
+          <button class="chip" data-search="texte">Textes animés</button>
+        </div>
+      </div>
+      <div class="results-head">
+        <p class="help" id="search-scope" role="status"><span id="result-count"></span> <span id="scope-text"></span></p>
+        <div class="results-tools">
+          <button class="btn ghost small" id="autoplay" aria-pressed="true">
+            <svg class="icon" aria-hidden="true"><use href="/icons.svg#pause" /></svg><span>Animations auto</span>
+          </button>
+          <label class="sort-label"
+            >Trier
+            <select id="sort">
+              <option value="relevance">Pertinence</option>
+              <option value="name">Nom A → Z</option>
+              <option value="source">Bibliothèque</option>
+              <option value="recent">Plus récents</option>
+            </select></label
+          >
+        </div>
+      </div>
+      <section id="results" class="grid" aria-live="polite" aria-label="Résultats"><p class="help">Chargement…</p></section>
+      <button id="more" class="btn more" hidden>Afficher plus</button>
+    </main>
+    <div id="selection-bar" class="selection-bar" hidden>
+      <div class="selection-text"><strong id="selection-total">0 bloc</strong><span>Spec en cours, partagée avec le builder</span></div>
+      <div class="selection-actions">
+        <button class="btn ghost" id="review-selection">Voir</button>
+        <button class="btn ghost" id="clear-selection">Vider</button>
+        <button class="btn" id="open-prompt" disabled>Prompt texte</button>
+        <a class="btn primary" id="to-builder" href="/builder"
+          >Ouvrir dans le builder<svg class="icon" aria-hidden="true"><use href="/icons.svg#arrow" /></svg
+        ></a>
+      </div>
     </div>
-    <div class="shortcuts" aria-label="Raccourcis">
-      <button class="chip" data-search="graphique">Graphiques</button>
-      <button class="chip" data-search="carrousel">Carrousels</button>
-      <button class="chip" data-search="bouton">Boutons</button>
-      <button class="chip" data-search="tarifs">Tarifs</button>
-      <button class="chip" data-search="fond">Fonds animés</button>
-      <button class="chip" data-search="texte">Textes animés</button>
-    </div>
-  </div>
-  <div class="results-head">
-    <p class="help" id="search-scope" role="status"><span id="result-count"></span> <span id="scope-text"></span></p>
-    <div class="results-tools">
-      <button class="btn ghost small" id="autoplay" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="/icons.svg#pause"/></svg><span>Animations auto</span></button>
-      <label class="sort-label">Trier <select id="sort"><option value="relevance">Pertinence</option><option value="name">Nom A → Z</option><option value="source">Bibliothèque</option><option value="recent">Plus récents</option></select></label>
-    </div>
-  </div>
-  <section id="results" class="grid" aria-live="polite" aria-label="Résultats"><p class="help">Chargement…</p></section>
-  <button id="more" class="btn more" hidden>Afficher plus</button>
-</main>
-<div id="selection-bar" class="selection-bar" hidden>
-  <div class="selection-text"><strong id="selection-total">0 bloc</strong><span>Spec en cours, partagée avec le builder</span></div>
-  <div class="selection-actions">
-    <button class="btn ghost" id="review-selection">Voir</button>
-    <button class="btn ghost" id="clear-selection">Vider</button>
-    <button class="btn" id="open-prompt" disabled>Prompt texte</button>
-    <a class="btn primary" id="to-builder" href="/builder">Ouvrir dans le builder<svg class="icon" aria-hidden="true"><use href="/icons.svg#arrow"/></svg></a>
-  </div>
-</div>
-<dialog id="detail" aria-labelledby="detail-title"><button class="btn icon-only ghost close" aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="/icons.svg#x"/></svg></button><div id="detail-body" class="dialog-body"></div></dialog>
-<div id="toast" role="status"></div>
-</body></html>
+    <dialog id="detail" aria-labelledby="detail-title">
+      <button class="btn icon-only ghost close" aria-label="Fermer">
+        <svg class="icon" aria-hidden="true"><use href="/icons.svg#x" /></svg>
+      </button>
+      <div id="detail-body" class="dialog-body"></div>
+    </dialog>
+    <div id="toast" role="status"></div>
+  </body>
+</html>

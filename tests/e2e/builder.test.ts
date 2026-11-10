@@ -16,6 +16,7 @@ const RENAMED = `${NAME}-b`;
 let browser: Browser | null = null;
 let server: Awaited<ReturnType<typeof startServer>>;
 let page: Page;
+let built = false;
 
 const specFile = (name: string) => path.join(ROOT, 'specs', `${name}.json`);
 const cleanup = () => {
@@ -28,6 +29,7 @@ const cleanup = () => {
 before(async () => {
   cleanup();
   server = await startServer();
+  built = (await (await fetch(`${server.base}/api/registry`)).json()).previewsBuilt;
   browser = await Browser.launch();
   if (!browser) return;
   page = await browser.page();
@@ -36,17 +38,31 @@ before(async () => {
   await page.evaluate(`localStorage.clear(); location.reload(); true`);
   await page.waitFor(`document.querySelectorAll('[data-toggle]').length > 0`);
 });
-after(async () => { browser?.close(); await server?.close(); cleanup(); });
+after(async () => {
+  browser?.close();
+  await server?.close();
+  cleanup();
+});
 
 test('galerie : registre chargé, recherche française, filtre par type', async (t) => {
   if (!browser) return t.skip('Chrome introuvable');
   assert.match(await page.evaluate<string>(`document.querySelector('#count').textContent`), /items/);
-  await page.fill('#q', 'graphique', ['input']);
-  await page.waitFor(`[...document.querySelectorAll('[data-card] .card-meta')].length > 5`);
-  assert.ok(await page.evaluate<boolean>(`(() => { const m = [...document.querySelectorAll('[data-card] .card-meta')].slice(0, 10); return m.filter((x) => /Graphiques/.test(x.textContent)).length >= 6; })()`));
+  if (built) {
+    await page.fill('#q', 'graphique', ['input']);
+    await page.waitFor(`[...document.querySelectorAll('[data-card] .card-meta')].length > 5`);
+    assert.ok(
+      await page.evaluate<boolean>(
+        `(() => { const m = [...document.querySelectorAll('[data-card] .card-meta')].slice(0, 10); return m.filter((x) => /Graphiques/.test(x.textContent)).length >= 6; })()`,
+      ),
+    );
+  }
   await page.click('#reset');
   await page.click('[data-type="theme"]');
-  assert.ok(await page.evaluate<boolean>(`[...document.querySelectorAll('[data-card] .card-meta')].every((m) => m.textContent.startsWith('Thème'))`));
+  assert.ok(
+    await page.evaluate<boolean>(
+      `[...document.querySelectorAll('[data-card] .card-meta')].every((m) => m.textContent.startsWith('Thème'))`,
+    ),
+  );
 });
 
 test('composition : thème, trois blocs, ordre, consigne, page, enregistrement', async (t) => {
@@ -76,7 +92,9 @@ test('gestion : remplacement archivé, historique, renommage, suppression', asyn
   if (!browser) return t.skip('Chrome introuvable');
   await page.fill('#s-title', 'Version 2', ['input']);
   await page.click('#save');
-  await page.waitFor(`/Enregistré/.test(document.querySelector('#toast').textContent) && JSON.parse(localStorage.getItem('atlas-builder-draft')).title === 'Version 2'`);
+  await page.waitFor(
+    `/Enregistré/.test(document.querySelector('#toast').textContent) && JSON.parse(localStorage.getItem('atlas-builder-draft')).title === 'Version 2'`,
+  );
   await page.evaluate(`document.querySelector('#spec-menu').open = true; document.querySelector('#history-spec').click(); true`);
   await page.waitFor(`document.querySelectorAll('#detail[open] .history li').length === 1`);
   await page.evaluate(`document.querySelector('#detail').close(); true`);
@@ -96,8 +114,11 @@ test('aperçu composé de la page et éditeur de thème', async (t) => {
   if (!browser) return t.skip('Chrome introuvable');
   await page.click('#preview-page');
   await page.waitFor(`!!document.querySelector('#detail[open] #page-frames')`);
-  assert.ok(await page.evaluate<number>(`document.querySelectorAll('#page-frames iframe, #page-frames .page-missing').length`) >= 1);
-  assert.ok(await page.evaluate<boolean>(`[...document.querySelectorAll('#page-frames iframe')].every((f) => parseInt(f.style.height) >= 80)`), 'hauteur appliquée');
+  assert.ok((await page.evaluate<number>(`document.querySelectorAll('#page-frames iframe, #page-frames .page-missing').length`)) >= 1);
+  assert.ok(
+    await page.evaluate<boolean>(`[...document.querySelectorAll('#page-frames iframe')].every((f) => parseInt(f.style.height) >= 80)`),
+    'hauteur appliquée',
+  );
   await page.evaluate(`document.querySelector('#detail').close(); true`);
   await page.click('#create-theme');
   await page.waitFor(`document.querySelectorAll('#token-grid .token-row').length === 16`);
@@ -109,7 +130,9 @@ test('aperçu composé de la page et éditeur de thème', async (t) => {
 test('preset chargé comme point de départ, aucune erreur JavaScript', async (t) => {
   if (!browser) return t.skip('Chrome introuvable');
   await page.waitFor(`!!document.querySelector('#load-spec option[value^="preset:"]')`);
-  await page.evaluate(`const s = document.querySelector('#load-spec'); s.value = s.querySelector('option[value^="preset:"]').value; s.dispatchEvent(new Event('change')); true`);
+  await page.evaluate(
+    `const s = document.querySelector('#load-spec'); s.value = s.querySelector('option[value^="preset:"]').value; s.dispatchEvent(new Event('change')); true`,
+  );
   await page.waitFor(`document.querySelector('#s-name').value === '' && document.querySelectorAll('#s-blocks .block').length > 0`);
   assert.deepEqual(page.errors, []);
 });

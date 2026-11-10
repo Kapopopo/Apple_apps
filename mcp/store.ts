@@ -6,6 +6,9 @@ import { allMeta, indexItems, readFiles } from '../shared/registry.js';
 import type { IndexEntry, Meta } from '../shared/schema.js';
 import { loadAudit, previewsBuilt, previewState, type PreviewState } from '../shared/interactive.js';
 import { matches, normalize, VOCAB } from '../shared/taxonomy.js';
+import { enrichmentFor } from '../shared/enrichment.js';
+
+export { enrichmentFor };
 
 export { getSpec, listSpecs, saveSpec, specHistory, type StoredSpec } from '../shared/specs.js';
 
@@ -35,7 +38,10 @@ export function dependencyClosure(id: string): { ids: string[]; missing: string[
     if (ordered.includes(current) || visiting.has(current)) return;
     visiting.add(current);
     const item = getItem(current);
-    if (!item) { missing.push(current); return; }
+    if (!item) {
+      missing.push(current);
+      return;
+    }
     for (const dep of item.meta.registryDependencies) visit(dep);
     ordered.push(current);
   };
@@ -53,11 +59,36 @@ export function previewOf(entry: IndexEntry): PreviewState {
   return previewState(entry, loadAudit(), previewsBuilt());
 }
 
-const haystack = (e: IndexEntry) => normalize([e.id, e.name, e.description, e.category, VOCAB[e.category] ?? '', e.type, e.source, e.framework, ...e.tags].join(' '));
+/** Texte de recherche : métadonnées + enrichissement français (description, mots-clés) s'il est à jour. */
+const haystack = (e: IndexEntry) => {
+  const fr = enrichmentFor(e);
+  return normalize(
+    [
+      e.id,
+      e.name,
+      e.description,
+      fr?.description ?? '',
+      e.category,
+      VOCAB[e.category] ?? '',
+      e.type,
+      e.source,
+      e.framework,
+      ...e.tags,
+      ...(fr?.keywords ?? []),
+    ].join(' '),
+  );
+};
 
 export interface SearchArgs {
-  query?: string; type?: string; framework?: string; source?: string; category?: string;
-  license_status?: string; tags?: string[]; interactive_only?: boolean; limit?: number;
+  query?: string;
+  type?: string;
+  framework?: string;
+  source?: string;
+  category?: string;
+  license_status?: string;
+  tags?: string[];
+  interactive_only?: boolean;
+  limit?: number;
 }
 
 /**
@@ -65,16 +96,29 @@ export interface SearchArgs {
  * À score égal, les items interactifs (vérifiés visuellement) passent devant.
  */
 export function searchRegistry(args: SearchArgs) {
-  const q = normalize(args.query ?? '').split(/\s+/).filter(Boolean);
-  const rows = index().filter((e) =>
-    (args.type ? e.type === args.type : e.type !== 'lib') &&
-    (!args.framework || e.framework === args.framework) &&
-    (!args.source || e.sourceId === args.source || normalize(e.source) === normalize(args.source)) &&
-    (!args.category || normalize(e.category) === normalize(args.category)) &&
-    (!args.license_status || e.licenseStatus === args.license_status) &&
-    (!args.tags?.length || args.tags.every((t) => e.tags.map(normalize).includes(normalize(t)))) &&
-    (!q.length || matches(q.join(' '), haystack(e), true)));
-  const score = (e: IndexEntry) => q.reduce((s, w) => s + (normalize(e.name).includes(w) ? 3 : 0) + (normalize(e.category).includes(w) ? 2 : 0) + (e.tags.some((t) => normalize(t).includes(w)) ? 2 : 0) + (normalize(e.description).includes(w) ? 1 : 0), 0);
+  const q = normalize(args.query ?? '')
+    .split(/\s+/)
+    .filter(Boolean);
+  const rows = index().filter(
+    (e) =>
+      (args.type ? e.type === args.type : e.type !== 'lib') &&
+      (!args.framework || e.framework === args.framework) &&
+      (!args.source || e.sourceId === args.source || normalize(e.source) === normalize(args.source)) &&
+      (!args.category || normalize(e.category) === normalize(args.category)) &&
+      (!args.license_status || e.licenseStatus === args.license_status) &&
+      (!args.tags?.length || args.tags.every((t) => e.tags.map(normalize).includes(normalize(t)))) &&
+      (!q.length || matches(q.join(' '), haystack(e), true)),
+  );
+  const score = (e: IndexEntry) =>
+    q.reduce(
+      (s, w) =>
+        s +
+        (normalize(e.name).includes(w) ? 3 : 0) +
+        (normalize(e.category).includes(w) ? 2 : 0) +
+        (e.tags.some((t) => normalize(t).includes(w)) ? 2 : 0) +
+        (normalize(e.description).includes(w) ? 1 : 0),
+      0,
+    );
   return rows
     .map((e) => ({ e, s: score(e), state: previewOf(e) }))
     .filter((r) => !args.interactive_only || r.state === 'interactive')

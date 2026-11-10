@@ -131,7 +131,9 @@ export const Spec = z.object({
 });
 export type Spec = z.infer<typeof Spec>;
 /** Entrée envoyée par le builder ou le MCP : aucun champ inconnu accepté. */
-export const SpecInput = Spec.omit({ createdAt: true, updatedAt: true }).extend({ blocks: z.array(SpecBlock.strict()).max(200).default([]) }).strict();
+export const SpecInput = Spec.omit({ createdAt: true, updatedAt: true })
+  .extend({ blocks: z.array(SpecBlock.strict()).max(200).default([]) })
+  .strict();
 
 /** Valeurs de licence communes à une source, stockées une fois dans l'index. */
 export interface SourceInfo {

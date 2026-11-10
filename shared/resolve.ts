@@ -24,7 +24,13 @@ export function loadAliases(): Record<string, Aliases> {
   return map;
 }
 
-export interface FileRef { itemId: string; sourceId: string; rel: string; abs: string; role: string }
+export interface FileRef {
+  itemId: string;
+  sourceId: string;
+  rel: string;
+  abs: string;
+  role: string;
+}
 
 export interface ResolveContext {
   aliases: Record<string, Aliases>;
@@ -53,14 +59,14 @@ export function buildContext(metas: { meta: Meta; dir: string }[], aliases = loa
 }
 
 export type Resolution =
-  | { kind: 'file'; ref: FileRef }
-  | { kind: 'cn' }
-  | { kind: 'package'; name: string }
-  | { kind: 'missing'; spec: string };
+  { kind: 'file'; ref: FileRef } | { kind: 'cn' } | { kind: 'package'; name: string } | { kind: 'missing'; spec: string };
 
 function lookup(ctx: ResolveContext, source: string, rel: string): FileRef | undefined {
   const map = ctx.files.get(source);
-  for (const ext of EXTENSIONS) { const hit = map?.get(rel + ext); if (hit) return hit; }
+  for (const ext of EXTENSIONS) {
+    const hit = map?.get(rel + ext);
+    if (hit) return hit;
+  }
   return undefined;
 }
 
@@ -78,7 +84,10 @@ function shared(ctx: ResolveContext, target: string): Resolution | undefined {
 function ancestors(rel: string): string[] {
   const out: string[] = [];
   let dir = path.posix.dirname(rel);
-  while (dir && dir !== '.') { out.push(dir); dir = path.posix.dirname(dir); }
+  while (dir && dir !== '.') {
+    out.push(dir);
+    dir = path.posix.dirname(dir);
+  }
   return [...out, ''];
 }
 
@@ -86,7 +95,11 @@ function ancestors(rel: string): string[] {
 function firstHit(ctx: ResolveContext, source: string, candidates: string[], itemId: string): FileRef | undefined {
   for (const map of [ctx.items.get(itemId), ctx.files.get(source)]) {
     if (!map) continue;
-    for (const c of candidates) for (const ext of EXTENSIONS) { const hit = map.get(c + ext); if (hit) return hit; }
+    for (const c of candidates)
+      for (const ext of EXTENSIONS) {
+        const hit = map.get(c + ext);
+        if (hit) return hit;
+      }
   }
   return undefined;
 }
@@ -99,7 +112,21 @@ export function isCnOnly(ref: FileRef, read: (abs: string) => string): boolean {
   let hit = cnOnlyCache.get(ref.abs);
   if (hit === undefined) {
     const code = read(ref.abs);
-    const exported = [...code.matchAll(/export\s+(?:default\s+)?(?:async\s+)?(?:function|const|let|var|class)\s+(\w+)|export\s*\{([^}]*)\}/g)].flatMap((m) => (m[1] ? [m[1]] : m[2].split(',').map((s) => s.trim().split(/\s+as\s+/).pop()!).filter(Boolean)));
+    const exported = [
+      ...code.matchAll(/export\s+(?:default\s+)?(?:async\s+)?(?:function|const|let|var|class)\s+(\w+)|export\s*\{([^}]*)\}/g),
+    ].flatMap((m) =>
+      m[1]
+        ? [m[1]]
+        : m[2]
+            .split(',')
+            .map((s) =>
+              s
+                .trim()
+                .split(/\s+as\s+/)
+                .pop()!,
+            )
+            .filter(Boolean),
+    );
     hit = exported.length === 1 && exported[0] === 'cn';
     cnOnlyCache.set(ref.abs, hit);
   }
@@ -114,12 +141,17 @@ export function resolveImport(ctx: ResolveContext, spec: string, from: { itemId:
     return ref ? { kind: 'file', ref } : { kind: 'missing', spec };
   }
   const aliases = ctx.aliases[from.sourceId] ?? {};
-  const alias = Object.keys(aliases).sort((a, b) => b.length - a.length).find((a) => clean.startsWith(a));
+  const alias = Object.keys(aliases)
+    .sort((a, b) => b.length - a.length)
+    .find((a) => clean.startsWith(a));
   const generic = clean.match(/^[@~#]\//)?.[0];
   if (alias !== undefined || generic) {
     const rest = clean.slice((alias ?? generic)!.length);
     // Cible déclarée, puis la racine du projet d'origine supposée parmi les dossiers parents du fichier.
-    const candidates = [...(alias !== undefined ? [aliases[alias] + rest] : []), ...ancestors(from.rel).map((d) => (d ? `${d}/${rest}` : rest))];
+    const candidates = [
+      ...(alias !== undefined ? [aliases[alias] + rest] : []),
+      ...ancestors(from.rel).map((d) => (d ? `${d}/${rest}` : rest)),
+    ];
     const ref = firstHit(ctx, from.sourceId, candidates, from.itemId);
     if (ref) return { kind: 'file', ref };
     return shared(ctx, rest) ?? { kind: 'missing', spec };
@@ -128,5 +160,5 @@ export function resolveImport(ctx: ResolveContext, spec: string, from: { itemId:
 }
 
 /** Spécifieurs d'import d'un fichier, avec leur position pour la réécriture. */
-export const IMPORT_SPEC = /((?:import|export)\s+(?:type\s+)?(?:[^'"`;]*?\s+from\s+)?|import\s*\(\s*|require\s*\(\s*|@import\s+(?:url\()?)(['"])([^'"\n]+)\2/g;
-
+export const IMPORT_SPEC =
+  /((?:import|export)\s+(?:type\s+)?(?:[^'"`;]*?\s+from\s+)?|import\s*\(\s*|require\s*\(\s*|@import\s+(?:url\()?)(['"])([^'"\n]+)\2/g;

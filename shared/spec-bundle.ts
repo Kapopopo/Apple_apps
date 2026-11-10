@@ -29,7 +29,12 @@ export function specBundle(spec: Spec, options: BundleOptions = {}): SpecBundle 
     const theme = metaOf(spec.theme);
     if (theme?.tokens) {
       credited.add(theme.id);
-      extras.push({ path: 'styles/atlas-theme.css', itemId: theme.id, role: 'theme', content: `/* Thème « ${theme.name} » — ${theme.source} (${theme.license}). Variables CSS clair / sombre (.dark). */\n${skinCss(theme.tokens)}` });
+      extras.push({
+        path: 'styles/atlas-theme.css',
+        itemId: theme.id,
+        role: 'theme',
+        content: `/* Thème « ${theme.name} » — ${theme.source} (${theme.license}). Variables CSS clair / sombre (.dark). */\n${skinCss(theme.tokens)}`,
+      });
     } else missing.add(spec.theme);
   }
 
@@ -39,13 +44,18 @@ export function specBundle(spec: Spec, options: BundleOptions = {}): SpecBundle 
   if (loaded.length) {
     for (const f of loaded) credited.add(f.id);
     extras.push({
-      path: 'styles/atlas-fonts.css', itemId: loaded[0].id, role: 'style',
+      path: 'styles/atlas-fonts.css',
+      itemId: loaded[0].id,
+      role: 'style',
       content: [
         '/* Polices de la spec (licences dans CREDITS.md). À importer avant les autres feuilles. */',
         ...loaded.map((f) => `@import url("${f.meta!.font!.cssUrl}");`),
         '',
         ':root {',
-        ...loaded.map((f, i) => `  --font-${i === 0 ? 'sans' : i === 1 ? 'display' : `extra-${i}`}: '${f.meta!.font!.family}', ui-sans-serif, system-ui, sans-serif;`),
+        ...loaded.map(
+          (f, i) =>
+            `  --font-${i === 0 ? 'sans' : i === 1 ? 'display' : `extra-${i}`}: '${f.meta!.font!.family}', ui-sans-serif, system-ui, sans-serif;`,
+        ),
         '}',
         '',
       ].join('\n'),
@@ -55,11 +65,15 @@ export function specBundle(spec: Spec, options: BundleOptions = {}): SpecBundle 
   const { byId } = registryContext();
   for (const id of spec.easings) {
     const item = byId.get(id);
-    if (!item) { missing.add(id); continue; }
+    if (!item) {
+      missing.add(id);
+      continue;
+    }
     credited.add(id);
     for (const f of item.meta.files) {
       const target = EASING_TARGETS[path.extname(f.path)];
-      if (target) extras.push({ path: target, itemId: id, role: f.role, content: fs.readFileSync(path.join(item.dir, 'files', f.path), 'utf8') });
+      if (target)
+        extras.push({ path: target, itemId: id, role: f.role, content: fs.readFileSync(path.join(item.dir, 'files', f.path), 'utf8') });
     }
   }
 

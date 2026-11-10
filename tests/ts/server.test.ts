@@ -20,11 +20,24 @@ before(async () => {
 });
 after(() => new Promise<void>((resolve) => server.close(() => resolve())));
 
-interface Reply { status: number; headers: http.IncomingHttpHeaders; text: string; json: () => any }
+interface Reply {
+  status: number;
+  headers: http.IncomingHttpHeaders;
+  text: string;
+  json: () => any;
+}
 
-function request(method: string, url: string, options: { body?: unknown; headers?: Record<string, string>; host?: string } = {}): Promise<Reply> {
+function request(
+  method: string,
+  url: string,
+  options: { body?: unknown; headers?: Record<string, string>; host?: string } = {},
+): Promise<Reply> {
   const payload = options.body === undefined ? undefined : typeof options.body === 'string' ? options.body : JSON.stringify(options.body);
-  const headers: Record<string, string> = { Host: options.host ?? `127.0.0.1:${port}`, ...(payload !== undefined ? { 'Content-Type': 'application/json' } : {}), ...options.headers };
+  const headers: Record<string, string> = {
+    Host: options.host ?? `127.0.0.1:${port}`,
+    ...(payload !== undefined ? { 'Content-Type': 'application/json' } : {}),
+    ...options.headers,
+  };
   return new Promise((resolve, reject) => {
     const req = http.request({ host: '127.0.0.1', port, method, path: url, headers }, (res) => {
       const chunks: Buffer[] = [];
@@ -51,9 +64,15 @@ test('DNS rebinding : Host étranger refusé, Host local accepté', async () => 
 });
 
 test('écritures : même origine et JSON uniquement', async () => {
-  const cross = await request('POST', '/api/specs', { body: { spec: { name: 'x', blocks: [] } }, headers: { Origin: 'http://evil.example' } });
+  const cross = await request('POST', '/api/specs', {
+    body: { spec: { name: 'x', blocks: [] } },
+    headers: { Origin: 'http://evil.example' },
+  });
   assert.equal(cross.status, 403);
-  const site = await request('POST', '/api/specs', { body: { spec: { name: 'x', blocks: [] } }, headers: { 'Sec-Fetch-Site': 'cross-site' } });
+  const site = await request('POST', '/api/specs', {
+    body: { spec: { name: 'x', blocks: [] } },
+    headers: { 'Sec-Fetch-Site': 'cross-site' },
+  });
   assert.equal(site.status, 403);
   const form = await request('POST', '/api/specs', { body: 'spec=1', headers: { 'Content-Type': 'application/x-www-form-urlencoded' } });
   assert.equal(form.status, 415);
@@ -90,18 +109,28 @@ test('API registre : textes de licence restaurés, état d’aperçu', async () 
 });
 
 test('specs : création, conflit, remplacement archivé, historique, renommage, suppression', async () => {
-  const spec = { name: 'site-client', title: 'Site client', theme: 'demo-src/theme', blocks: [{ id: 'demo-src/card', note: 'hero', page: 'Accueil' }] };
+  const spec = {
+    name: 'site-client',
+    title: 'Site client',
+    theme: 'demo-src/theme',
+    blocks: [{ id: 'demo-src/card', note: 'hero', page: 'Accueil' }],
+  };
   assert.equal((await request('POST', '/api/specs', { body: { spec } })).status, 200);
   const again = await request('POST', '/api/specs', { body: { spec } });
   assert.equal(again.status, 409);
   assert.equal(again.json().exists, true);
-  const bad = await request('POST', '/api/specs', { body: { spec: { ...spec, blocks: [{ id: 'demo-src/theme', note: '' }] }, overwrite: true } });
+  const bad = await request('POST', '/api/specs', {
+    body: { spec: { ...spec, blocks: [{ id: 'demo-src/theme', note: '' }] }, overwrite: true },
+  });
   assert.equal(bad.status, 400, 'un thème n’est pas un bloc');
   const unknown = await request('POST', '/api/specs', { body: { spec: { ...spec, extra: 1 }, overwrite: true } });
   assert.equal(unknown.status, 400, 'champ inconnu refusé');
   assert.equal((await request('POST', '/api/specs', { body: { spec: { ...spec, title: 'Version 2' }, overwrite: true } })).status, 200);
   const list = (await request('GET', '/api/specs')).json();
-  assert.deepEqual(list.map((s: { name: string; versions: number }) => [s.name, s.versions]), [['site-client', 1]]);
+  assert.deepEqual(
+    list.map((s: { name: string; versions: number }) => [s.name, s.versions]),
+    [['site-client', 1]],
+  );
   const history = (await request('GET', '/api/specs/site-client/history')).json();
   assert.equal(history.length, 1);
   const old = (await request('GET', `/api/specs/site-client/history/${history[0].stamp}`)).json();
@@ -114,11 +143,19 @@ test('specs : création, conflit, remplacement archivé, historique, renommage, 
   assert.equal((await request('DELETE', '/api/specs/site-boulangerie')).status, 200);
   assert.equal((await request('GET', '/api/specs/site-boulangerie')).status, 404);
   const afterDelete = (await request('GET', '/api/specs/site-boulangerie/history')).json();
-  assert.ok(afterDelete.some((v: { deleted: boolean }) => v.deleted), 'suppression archivée');
+  assert.ok(
+    afterDelete.some((v: { deleted: boolean }) => v.deleted),
+    'suppression archivée',
+  );
 });
 
 test('thèmes personnels : création, skin CSS, valeurs dangereuses refusées, suppression', async () => {
-  const theme = { name: 'Boulangerie', light: { '--background': '#fffaf0', '--primary': 'oklch(0.55 0.15 60)' }, dark: { '--background': '#1a1410' }, radius: '12px' };
+  const theme = {
+    name: 'Boulangerie',
+    light: { '--background': '#fffaf0', '--primary': 'oklch(0.55 0.15 60)' },
+    dark: { '--background': '#1a1410' },
+    radius: '12px',
+  };
   const created = await request('POST', '/api/themes', { body: { theme } });
   assert.equal(created.status, 200, created.text);
   assert.equal(created.json().id, 'perso/boulangerie');
@@ -131,7 +168,11 @@ test('thèmes personnels : création, skin CSS, valeurs dangereuses refusées, s
     const res = await request('POST', '/api/themes', { body: { theme: { name: 'Pirate', light: { '--background': value } } } });
     assert.equal(res.status, 400, value);
   }
-  assert.equal((await request('GET', '/api/registry')).json().items.some((i: { id: string }) => i.id === 'perso/boulangerie'), true, 'thème indexé');
+  assert.equal(
+    (await request('GET', '/api/registry')).json().items.some((i: { id: string }) => i.id === 'perso/boulangerie'),
+    true,
+    'thème indexé',
+  );
   assert.equal((await request('DELETE', '/api/themes/perso/boulangerie')).status, 200);
   assert.equal((await request('GET', '/api/skin.css?id=perso/boulangerie')).status, 404);
   assert.equal((await request('DELETE', '/api/themes/demo-src/theme')).status, 404, 'seuls les thèmes personnels se suppriment');
@@ -151,4 +192,34 @@ test('registre shadcn : index, item installable, dépendances en URL', async () 
   assert.ok(!item.files.some((f: { path: string }) => f.path === 'lib/utils.ts'), 'cn fourni par la dépendance utils de shadcn');
   assert.equal(item.meta.licenseStatus, 'restricted');
   assert.equal((await request('GET', '/r/demo-src/absent.json')).status, 404);
+});
+
+test('enrichissement français : affiché et cherchable si à jour, ignoré si le code a changé', async () => {
+  const items = JSON.parse(fs.readFileSync(path.join(root, 'registry/index.json'), 'utf8')).items as { id: string; contentHash: string }[];
+  const card = items.find((i) => i.id === 'demo-src/card')!;
+  const button = items.find((i) => i.id === 'shadcn/button')!;
+  const entry = (hash: string, description: string) => ({
+    hash,
+    description,
+    usages: ['page d’accueil'],
+    keywords: ['carte animée'],
+    model: 'test',
+    at: '',
+  });
+  fs.writeFileSync(
+    path.join(root, 'registry/_enrichment.json'),
+    JSON.stringify({
+      items: { [card.id]: entry(card.contentHash, 'Carte qui s’anime au survol.'), [button.id]: entry('ancien-hash', 'Bouton obsolète') },
+    }),
+  );
+  const reg = (await request('GET', '/api/registry')).json();
+  const enriched = reg.items.find((i: { id: string }) => i.id === card.id);
+  assert.equal(enriched.descriptionFr, 'Carte qui s’anime au survol.');
+  assert.deepEqual(enriched.keywords, ['carte animée']);
+  assert.equal(reg.items.find((i: { id: string }) => i.id === button.id).descriptionFr, undefined, 'version périmée ignorée');
+  const catalogue = (await request('GET', '/api/catalog')).json();
+  const c = catalogue.components.find((x: { id: string }) => x.id === card.id);
+  assert.equal(c.description, 'Carte qui s’anime au survol.');
+  assert.match(c.search_terms, /carte animee/);
+  fs.rmSync(path.join(root, 'registry/_enrichment.json'));
 });

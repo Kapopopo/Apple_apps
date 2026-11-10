@@ -17,16 +17,34 @@ const { classify, matches } = await import('../../shared/taxonomy.js');
 const MIT = `MIT License\n\nCopyright (c) 2026 Exemple\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so.`;
 
 const draft = (over: object = {}) => ({
-  id: 'demo-src/button', name: 'Button', type: 'component' as const, category: 'Boutons', tags: [], description: 'Un bouton', framework: 'react' as const,
-  dependencies: ['motion'], registryDependencies: [], source: 'Demo', sourceId: 'demo-src', sourceUrl: 'https://example.com/button',
-  license: 'MIT', licenseStatus: 'open' as const, files: [{ path: 'src/button.tsx', role: 'source' as const }], preview: { kind: 'none' as const }, ...over,
+  id: 'demo-src/button',
+  name: 'Button',
+  type: 'component' as const,
+  category: 'Boutons',
+  tags: [],
+  description: 'Un bouton',
+  framework: 'react' as const,
+  dependencies: ['motion'],
+  registryDependencies: [],
+  source: 'Demo',
+  sourceId: 'demo-src',
+  sourceUrl: 'https://example.com/button',
+  license: 'MIT',
+  licenseStatus: 'open' as const,
+  files: [{ path: 'src/button.tsx', role: 'source' as const }],
+  preview: { kind: 'none' as const },
+  ...over,
 });
 
 test('écriture idempotente : ajout, inchangé, mise à jour, jamais de doublon', () => {
   const files = new Map([['src/button.tsx', 'export const Button = () => <button />;']]);
   assert.equal(writeItem(draft(), files), 'added');
   const first = allMeta()[0].meta;
-  assert.equal(writeItem(draft({ sourceCommit: 'abc' }), files), 'unchanged', 'un nouveau commit sans changement de contenu ne réécrit pas');
+  assert.equal(
+    writeItem(draft({ sourceCommit: 'abc' }), files),
+    'unchanged',
+    'un nouveau commit sans changement de contenu ne réécrit pas',
+  );
   assert.equal(writeItem(draft(), new Map([['src/button.tsx', 'export const Button = () => <a />;']])), 'updated');
   const metas = allMeta();
   assert.equal(metas.length, 1);
@@ -52,13 +70,25 @@ test('chemins de fichiers externes confinés au dossier de l’item', () => {
 
 test('licences : liste blanche, clauses restrictives, absence', () => {
   assert.equal(detectLicense(MIT), 'MIT');
-  assert.equal(checkLicense(MIT + '\n\n---\n\nNot covered by this licence: the Demo name and the photographs.\n').notes, 'Hors licence : the Demo name and the photographs.');
-  const commons = 'MIT + Commons Clause License Condition v1.0 + Attribution\nPermission is hereby granted, free of charge...\nAttribution Requirement\nCommons Clause Restriction';
+  assert.equal(
+    checkLicense(MIT + '\n\n---\n\nNot covered by this licence: the Demo name and the photographs.\n').notes,
+    'Hors licence : the Demo name and the photographs.',
+  );
+  const commons =
+    'MIT + Commons Clause License Condition v1.0 + Attribution\nPermission is hereby granted, free of charge...\nAttribution Requirement\nCommons Clause Restriction';
   assert.equal(checkLicense(commons).status, 'rejected');
-  const accepted = checkLicense(commons, { license: 'LicenseRef-MIT-Commons-Clause-Attribution', attribution: 'Crédit obligatoire', notes: 'ok' });
+  const accepted = checkLicense(commons, {
+    license: 'LicenseRef-MIT-Commons-Clause-Attribution',
+    attribution: 'Crédit obligatoire',
+    notes: 'ok',
+  });
   assert.equal(accepted.status, 'restricted');
   assert.equal(accepted.attribution, 'Crédit obligatoire');
-  assert.equal(checkLicense(commons, { license: 'LicenseRef-Autre', attribution: '', notes: '' }).status, 'rejected', 'une acceptation ne vaut que pour le texte exact');
+  assert.equal(
+    checkLicense(commons, { license: 'LicenseRef-Autre', attribution: '', notes: '' }).status,
+    'rejected',
+    'une acceptation ne vaut que pour le texte exact',
+  );
   assert.equal(checkLicense(null).status, 'rejected');
   assert.equal(checkLicense('All rights reserved.').reason, 'Licence non reconnue ou ambiguë');
   assert.equal(detectLicense('Licensed for non-commercial use only'), 'LicenseRef-NonCommercial');
@@ -66,8 +96,14 @@ test('licences : liste blanche, clauses restrictives, absence', () => {
 
 test('graphe d’imports : fichiers internes, dépendances de registre, paquets npm', () => {
   const repo = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-repo-'));
-  const write = (rel: string, code: string) => { fs.mkdirSync(path.dirname(path.join(repo, rel)), { recursive: true }); fs.writeFileSync(path.join(repo, rel), code); };
-  write('components/ui/card.tsx', "import { cn } from '@/lib/utils';\nimport { motion } from 'motion/react';\nimport type { X } from 'types-only';\nimport { helper } from './helper';\nimport React from 'react';");
+  const write = (rel: string, code: string) => {
+    fs.mkdirSync(path.dirname(path.join(repo, rel)), { recursive: true });
+    fs.writeFileSync(path.join(repo, rel), code);
+  };
+  write(
+    'components/ui/card.tsx',
+    "import { cn } from '@/lib/utils';\nimport { motion } from 'motion/react';\nimport type { X } from 'types-only';\nimport { helper } from './helper';\nimport React from 'react';",
+  );
   write('components/ui/helper.ts', "export const helper = 1; import './missing';");
   write('lib/utils.ts', "import { clsx } from 'clsx';");
   const w = walk(repo, ['components/ui/card.tsx'], 'src/card', new Map([['lib/utils.ts', 'src/utils']]), { '@/': '' });
@@ -78,7 +114,9 @@ test('graphe d’imports : fichiers internes, dépendances de registre, paquets 
 });
 
 test('thème : custom properties clair/sombre, typographie et rayons séparés', () => {
-  const { tokens, css } = extractTheme(':root{--background:#fff;--font-sans:Inter;--radius:8px;--shadow-x:0}\n.dark{--background:#000}\nbody{color:red}\n@media (prefers-color-scheme: dark){:root:not([data-theme=light]){--ink:#eee}}');
+  const { tokens, css } = extractTheme(
+    ':root{--background:#fff;--font-sans:Inter;--radius:8px;--shadow-x:0}\n.dark{--background:#000}\nbody{color:red}\n@media (prefers-color-scheme: dark){:root:not([data-theme=light]){--ink:#eee}}',
+  );
   assert.equal(tokens.colors.light['--background'], '#fff');
   assert.equal(tokens.colors.dark['--background'], '#000');
   assert.equal(tokens.colors.dark['--ink'], '#eee');

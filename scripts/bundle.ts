@@ -11,7 +11,15 @@ import path from 'node:path';
 import { getSpec, listSpecs } from '../shared/specs.js';
 import { specBundle } from '../shared/spec-bundle.js';
 
-interface Args { spec?: string; out?: string; src?: string; alias: string; demos: boolean; dryRun: boolean; force: boolean }
+interface Args {
+  spec?: string;
+  out?: string;
+  src?: string;
+  alias: string;
+  demos: boolean;
+  dryRun: boolean;
+  force: boolean;
+}
 
 function parse(argv: string[]): Args {
   const args: Args = { alias: '@/', demos: false, dryRun: false, force: false };
@@ -33,12 +41,24 @@ function main() {
   const args = parse(process.argv.slice(2));
   if (!args.spec || !args.out) {
     console.error('Usage : npm run bundle -- <spec> --out <dossier du projet> [--src src] [--alias @/] [--demos] [--dry-run] [--force]');
-    console.error(`Specs : ${listSpecs().map((s) => s.spec.name).join(', ') || 'aucune'}`);
+    console.error(
+      `Specs : ${
+        listSpecs()
+          .map((s) => s.spec.name)
+          .join(', ') || 'aucune'
+      }`,
+    );
     process.exit(2);
   }
   const stored = getSpec(args.spec);
-  if (!stored) { console.error(`Spec introuvable : ${args.spec}`); process.exit(1); }
-  if (!/^(relative|[@~#$][\w-]*\/)$/.test(args.alias)) { console.error(`Alias invalide : ${args.alias}`); process.exit(2); }
+  if (!stored) {
+    console.error(`Spec introuvable : ${args.spec}`);
+    process.exit(1);
+  }
+  if (!/^(relative|[@~#$][\w-]*\/)$/.test(args.alias)) {
+    console.error(`Alias invalide : ${args.alias}`);
+    process.exit(2);
+  }
 
   const out = path.resolve(args.out);
   const srcDir = path.resolve(out, args.src ?? (fs.existsSync(path.join(out, 'src')) ? 'src' : '.'));
@@ -61,18 +81,29 @@ function main() {
   let written = 0;
   for (const w of writes) {
     const same = fs.existsSync(w.target) && fs.readFileSync(w.target, 'utf8') === w.content;
-    if (args.dryRun) { console.log(`${same ? '=' : fs.existsSync(w.target) ? '~' : '+'} ${w.label}`); continue; }
+    if (args.dryRun) {
+      console.log(`${same ? '=' : fs.existsSync(w.target) ? '~' : '+'} ${w.label}`);
+      continue;
+    }
     if (same) continue;
     fs.mkdirSync(path.dirname(w.target), { recursive: true });
     fs.writeFileSync(w.target, w.content);
     written++;
   }
 
-  console.log(`\nSpec « ${stored.spec.title || stored.spec.name} » : ${writes.length} fichiers${args.dryRun ? ' (simulation)' : `, ${written} écrits`} dans ${out}`);
+  console.log(
+    `\nSpec « ${stored.spec.title || stored.spec.name} » : ${writes.length} fichiers${args.dryRun ? ' (simulation)' : `, ${written} écrits`} dans ${out}`,
+  );
   if (bundle.install) console.log(`Paquets à installer :\n  ${bundle.install}`);
   if (bundle.missing.length) console.log(`À vérifier (imports non résolus) :\n  ${bundle.missing.join('\n  ')}`);
-  if (args.alias !== 'relative') console.log(`Alias : les imports utilisent « ${args.alias} » → ${path.relative(out, srcDir) || '.'}/ (tsconfig paths).`);
+  if (args.alias !== 'relative')
+    console.log(`Alias : les imports utilisent « ${args.alias} » → ${path.relative(out, srcDir) || '.'}/ (tsconfig paths).`);
   console.log('Crédits : CREDITS.md (attributions obligatoires à conserver).');
 }
 
-try { main(); } catch (error) { console.error((error as Error).message); process.exit(1); }
+try {
+  main();
+} catch (error) {
+  console.error((error as Error).message);
+  process.exit(1);
+}
