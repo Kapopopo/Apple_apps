@@ -340,7 +340,7 @@ input[type='checkbox'] {
   font-weight: 400;
 }
 .lic {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   padding: 1px 7px;
   border-radius: 5px;
@@ -557,7 +557,6 @@ pre.code {
   background: var(--raised);
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow);
 }
 .menu-list button {
   display: flex;

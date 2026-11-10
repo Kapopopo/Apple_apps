@@ -167,7 +167,7 @@
 .curves {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 14px;
   align-content: center;
@@ -175,7 +175,7 @@
 .curves figure {
   margin: 0;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--faint);
 }
 .curves svg {
@@ -195,7 +195,7 @@
   grid-column: 1 / -1;
   margin: 2px 0 0;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--faint);
 }
 .badge {
@@ -203,7 +203,7 @@
   left: 8px;
   top: 8px;
   z-index: 2;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   padding: 3px 8px;
   border-radius: 999px;
@@ -288,7 +288,7 @@
   flex-direction: column;
 }
 .spec-title small {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--faint);
 }
 .spec-head h2 {
@@ -509,7 +509,7 @@
 }
 .block-title small {
   color: var(--faint);
-  font-size: 11px;
+  font-size: 12px;
 }
 .block-tools {
   display: flex;
@@ -748,7 +748,6 @@ dialog[data-kind='page'] {
   display: block;
   width: 100%;
   border: 0;
-  transition: height 0.2s var(--ease);
 }
 .page-note {
   color: var(--accent);
@@ -841,13 +840,13 @@ dialog[data-kind='theme'] {
   color: var(--faint);
   font-weight: 400;
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
 }
 .token-row input:not([type]) {
   min-height: 26px;
   padding: 2px 6px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 3px;
 }
 .theme-preview {
