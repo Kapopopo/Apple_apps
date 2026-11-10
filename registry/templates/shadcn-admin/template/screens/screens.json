@@ -1,0 +1,50 @@
+[
+ {
+  "file": "01-desktop.jpg",
+  "path": "/",
+  "title": "Tableau de bord",
+  "viewport": "desktop"
+ },
+ {
+  "file": "02-desktop.jpg",
+  "path": "/tasks",
+  "title": "Tâches",
+  "viewport": "desktop"
+ },
+ {
+  "file": "03-desktop.jpg",
+  "path": "/users",
+  "title": "Utilisateurs",
+  "viewport": "desktop"
+ },
+ {
+  "file": "04-desktop.jpg",
+  "path": "/chats",
+  "title": "Messagerie",
+  "viewport": "desktop"
+ },
+ {
+  "file": "05-desktop.jpg",
+  "path": "/apps",
+  "title": "Applications",
+  "viewport": "desktop"
+ },
+ {
+  "file": "06-desktop.jpg",
+  "path": "/settings",
+  "title": "Réglages",
+  "viewport": "desktop"
+ },
+ {
+  "file": "07-desktop.jpg",
+  "path": "/sign-in",
+  "title": "Connexion",
+  "viewport": "desktop"
+ },
+ {
+  "file": "00-mobile.jpg",
+  "path": "/",
+  "title": "Tableau de bord (mobile)",
+  "viewport": "mobile"
+ }
+]

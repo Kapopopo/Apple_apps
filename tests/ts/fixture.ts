@@ -154,5 +154,49 @@ export async function seedRegistry() {
       ['easings.css', ':root { --ease-out-cubic: cubic-bezier(0.33, 1, 0.68, 1); }\n'],
     ]),
   );
+  writeItem(
+    {
+      ...base,
+      id: 'demo-site/template',
+      name: 'Demo Site',
+      type: 'template',
+      category: 'Sites vitrines',
+      framework: 'react',
+      source: 'Demo Site',
+      sourceId: 'demo-site',
+      sourceUrl: 'https://example.com/demo-site',
+      preview: { kind: 'none' },
+      dependencies: ['next@15.0.0'],
+      template: {
+        kind: 'Site vitrine',
+        stack: 'Next.js',
+        demo: 'https://example.com',
+        pages: [{ path: '/', title: 'Accueil' }],
+        install: 'npm install',
+        dev: 'npm run dev',
+        env: ['API_KEY'],
+        skipped: [],
+      },
+      files: [
+        { path: 'package.json', role: 'source' },
+        { path: 'app/page.tsx', role: 'source' },
+        { path: 'public/logo.png', role: 'asset' },
+      ],
+    },
+    new Map<string, string | Buffer>([
+      ['package.json', '{ "name": "demo-site", "scripts": { "dev": "next dev" } }\n'],
+      ['app/page.tsx', 'export default function Page() {\n  return <h1>Bonjour</h1>;\n}\n'],
+      ['public/logo.png', Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0xff])],
+    ]),
+    new Map([['LICENSE', 'MIT License\n\nCopyright (c) 2026 Demo\n']]),
+  );
+  const { REGISTRY } = await import('../../shared/paths.js');
+  const screens = path.join(REGISTRY, 'templates', 'demo-site', 'template', 'screens');
+  fs.mkdirSync(screens, { recursive: true });
+  fs.writeFileSync(path.join(screens, '01-desktop.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
+  fs.writeFileSync(
+    path.join(screens, 'screens.json'),
+    JSON.stringify([{ file: '01-desktop.jpg', path: '/', title: 'Accueil', viewport: 'desktop' }]),
+  );
   buildIndex();
 }

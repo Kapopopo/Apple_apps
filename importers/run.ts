@@ -3,13 +3,15 @@
  * npm run update                  → idem au dernier commit de chaque source, verrous mis à jour
  * npm run outdated                → sources qui ont publié depuis le verrou (registry/_updates.json), sans rien importer
  * npm run import -- github --source rare-ui [--offline] [--update]
- * npm run import -- local | fontshare | easings | index
+ * npm run import -- local | fontshare | easings | templates | index
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import { REGISTRY } from '../shared/paths.js';
 import { buildIndex } from '../shared/registry.js';
-import { importGithub, outdated } from './github.js';
+import { importGithub, outdated, readLock } from './github.js';
+import { importTemplates, loadTemplateSources } from './templates.js';
+import { remoteHead } from './lib/git.js';
 import { importLocal } from './local.js';
 import { importFontshare } from './fontshare.js';
 import { importEasings } from './easings.js';
@@ -25,7 +27,15 @@ const offline = flag('offline') === true;
 const update = flag('update') === true;
 
 if (command === 'outdated') {
-  const rows = outdated();
+  const lock = readLock();
+  const rows = [
+    ...outdated(),
+    ...loadTemplateSources().map((t) => {
+      const latest = remoteHead(t.repo);
+      const locked = lock[`template-${t.id}`]?.commit;
+      return { id: `template-${t.id}`, name: t.name, locked, latest, behind: locked !== latest };
+    }),
+  ];
   const behind = rows.filter((r) => r.behind);
   for (const r of rows)
     console.log(`${r.behind ? '↑' : '='} ${r.name.padEnd(18)} ${r.locked?.slice(0, 7) ?? 'jamais'} → ${r.latest.slice(0, 7)}`);
@@ -42,6 +52,7 @@ const steps: Record<string, () => unknown> = {
   local: () => importLocal(),
   fontshare: () => importFontshare(),
   easings: () => importEasings(),
+  templates: () => importTemplates({ only, offline, update }),
   index: () => undefined,
 };
 
@@ -51,7 +62,7 @@ if (command !== 'all' && !steps[command]) {
 }
 
 let failed = false;
-for (const name of command === 'all' ? ['local', 'easings', 'github', 'fontshare'] : [command]) {
+for (const name of command === 'all' ? ['local', 'easings', 'github', 'templates', 'fontshare'] : [command]) {
   try {
     await steps[name]();
   } catch (error) {

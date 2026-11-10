@@ -82,9 +82,53 @@ export interface ComponentOptions {
   targetAlias?: string;
 }
 
+/** Template complet : vue d'ensemble, arborescence et fichiers demandés (jamais tout le code d'un coup). */
+export function templateMarkdown(idOrSlug: string, wanted: string[] = []): string | null {
+  const entry = getEntry(idOrSlug) ?? getEntry(`${idOrSlug}/template`);
+  const item = entry ? getItem(entry.id) : undefined;
+  if (!item || item.meta.type !== 'template' || !item.meta.template) return null;
+  const { meta } = item;
+  const t = meta.template!;
+  const parts = [
+    metaHeader(meta),
+    '',
+    '## Template',
+    '',
+    `- Type de site : ${t.kind} · stack : ${t.stack}`,
+    t.demo ? `- Démo officielle : ${t.demo}` : '- Démo officielle : aucune en ligne',
+    t.pages.length ? `- Pages : ${t.pages.map((p) => `${p.title} (\`${p.path}\`)`).join(', ')}` : '',
+    `- Démarrer un projet : \`npm --prefix "${ROOT}" run scaffold -- ${meta.id} --out <dossier du projet>\` puis \`${t.install}\` et \`${t.dev}\``,
+    t.env.length ? `- Variables d’environnement à renseigner : ${t.env.map((v) => `\`${v}\``).join(', ')}` : '',
+    t.skipped.length ? `- Fichiers non repris (trop lourds) : ${t.skipped.join(', ')}` : '',
+    '',
+    `## Arborescence (${meta.files.length} fichiers)`,
+    '',
+    fence('tree.txt', meta.files.map((f) => f.path).join('\n')),
+  ].filter((l) => l !== null);
+  const files = itemFiles(meta.id);
+  const chosen = wanted.length
+    ? files.filter((f) => wanted.includes(f.path))
+    : files.filter((f) => /^(README\.md|package\.json)$/.test(f.path));
+  const missing = wanted.filter((w) => !files.some((f) => f.path === w));
+  let size = parts.join('\n').length;
+  const shown: string[] = [];
+  for (const f of chosen) {
+    const block = `### \`${f.path}\`\n\n${fence(f.path, f.content)}`;
+    if (size + block.length > MAX_INLINE) break;
+    shown.push(block);
+    size += block.length;
+  }
+  if (shown.length) parts.push('', '## Fichiers', '', shown.join('\n\n'));
+  if (missing.length) parts.push('', `Fichiers absents du template : ${missing.join(', ')}`);
+  parts.push('', 'Pour lire d’autres fichiers : get_template avec `files: ["chemin", …]` (chemins de l’arborescence).');
+  return parts.join('\n');
+}
+
 export function componentMarkdown(id: string, opts: ComponentOptions = {}): string | null {
   const item = getItem(id);
   if (!item) return null;
+  // Un template complet compte des centaines de fichiers : vue d'ensemble seulement (get_template).
+  if (item.meta.type === 'template') return templateMarkdown(id);
   const { meta } = item;
   const o = { demo: opts.demo ?? true, docs: opts.docs ?? true, dependencies: opts.dependencies ?? true };
   const parts = [metaHeader(meta)];
@@ -211,6 +255,7 @@ export function specSummary(spec: Spec) {
   return {
     ...spec,
     theme: spec.theme ? describeItem(spec.theme) : null,
+    template: spec.template ? describeItem(spec.template) : null,
     fonts: spec.fonts.map(describeItem),
     easings: spec.easings.map(describeItem),
     sounds: spec.sounds.map(describeItem),
@@ -281,6 +326,16 @@ export function buildFromSpecPrompt(spec: Spec, mode: PromptMode = 'light', alia
     );
   if (missing.length)
     out.push('', `⚠ Items introuvables dans le registre (à signaler, ne pas inventer) : ${[...new Set(missing)].join(', ')}`);
+  if (spec.template) {
+    const t = getItem(spec.template)?.meta;
+    out.push(
+      '',
+      '## Point de départ : template',
+      t
+        ? `Le projet part du template \`${t.id}\` (${t.name} — ${t.template?.kind ?? ''}). Commence par \`npm --prefix "${ROOT}" run scaffold -- ${t.id} --out <dossier du projet>\` (ou get_template pour lire ses fichiers), garde sa structure et remplace son contenu par celui du brief, puis intègre les blocs ci-dessous à leurs pages.`
+        : `Template introuvable : ${spec.template} (à signaler, ne pas inventer).`,
+    );
+  }
   out.push('', '## Mise en place');
   if (bundle.install) out.push(`- Paquets (une seule commande) : \`${bundle.install}\``);
   out.push(
@@ -337,6 +392,11 @@ export function specBundleMarkdown(spec: Spec, opts: { alias?: string; includeCo
     `- Installation : ${bundle.install ? `\`${bundle.install}\`` : 'aucun paquet'}`,
     `- Chemins relatifs à la racine source du projet (dossier visé par l’alias \`${alias}\`, souvent src/) ; CREDITS.md à la racine du projet.`,
     `- Écriture directe : \`npm --prefix "${ROOT}" run bundle -- ${spec.name} --out <dossier du projet>\``,
+    ...(spec.template
+      ? [
+          `- Template de départ : \`${spec.template}\` → \`npm --prefix "${ROOT}" run scaffold -- ${spec.template} --out <dossier du projet>\` avant le bundle`,
+        ]
+      : []),
   ];
   if (bundle.missing.length) out.push(`- ⚠ Non résolus : ${bundle.missing.join(', ')}`);
   out.push('', '## Fichiers', '', files.map((f) => `- \`${f.path}\` (${f.itemId}${roleLabel(f)})`).join('\n'));

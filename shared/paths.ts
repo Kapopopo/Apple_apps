@@ -34,6 +34,7 @@ export const KIND_DIRS = {
   font: 'fonts',
   easing: 'easings',
   sound: 'sounds',
+  template: 'templates',
 } as const;
 
 /** Refuse tout chemin qui sortirait du dossier parent (fichiers issus de sources externes). */

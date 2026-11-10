@@ -96,7 +96,7 @@ test('pages et fichiers : CSP, nosniff, aucune sortie du dossier web', async () 
 
 test('API registre : textes de licence restaurés, état d’aperçu', async () => {
   const reg = (await request('GET', '/api/registry')).json();
-  assert.equal(reg.count, 5);
+  assert.equal(reg.count, 6);
   assert.ok(reg.sources['demo-src']);
   const card = reg.items.find((i: { id: string }) => i.id === 'demo-src/card');
   assert.equal(card.previewState, 'interactive', 'aperçus construits, pas encore d’audit');
@@ -222,4 +222,29 @@ test('enrichissement français : affiché et cherchable si à jour, ignoré si l
   assert.equal(c.description, 'Carte qui s’anime au survol.');
   assert.match(c.search_terms, /carte animee/);
   fs.rmSync(path.join(root, 'registry/_enrichment.json'));
+});
+
+test('templates : captures servies, payload du builder, copie complète par scaffold', async () => {
+  const reg = (await request('GET', '/api/registry')).json();
+  const tpl = reg.items.find((i: { id: string }) => i.id === 'demo-site/template');
+  assert.equal(tpl.type, 'template');
+  assert.match(tpl.screens[0].url, /^\/template-screens\/demo-site\/01-desktop\.jpg\?v=/);
+  const shot = await request('GET', tpl.screens[0].url);
+  assert.equal(shot.status, 200);
+  assert.equal(shot.headers['content-type'], 'image/jpeg');
+  assert.equal((await request('GET', '/template-screens/demo-site/..%2F..%2Fmeta.json')).status, 404);
+  const item = (await request('GET', '/api/registry/item?id=demo-site/template')).json();
+  assert.match(item.files.find((f: { path: string }) => f.path === 'public/logo.png').content, /fichier binaire, 10 octets/);
+  const { scaffold } = await import('../../scripts/scaffold.js');
+  const out = fs.mkdtempSync(path.join(root, 'projet-'));
+  scaffold('demo-site', out);
+  assert.deepEqual(
+    [...fs.readFileSync(path.join(out, 'public/logo.png'))],
+    [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a, 0x00, 0xff],
+    'binaire intact',
+  );
+  assert.match(fs.readFileSync(path.join(out, 'ATLAS.md'), 'utf8'), /API_KEY/);
+  assert.ok(fs.existsSync(path.join(out, 'LICENSE')));
+  assert.throws(() => scaffold('demo-site', out), /pas vide/);
+  assert.throws(() => scaffold('inconnu', path.join(root, 'autre')), /introuvable/);
 });

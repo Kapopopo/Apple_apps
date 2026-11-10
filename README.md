@@ -33,6 +33,7 @@ L’audit est incrémental : il ne refait que les items dont le code, l’emprei
 2. **Builder** : nommer la spec, coller le brief, choisir un thème (ou **Créer** le vôtre : couleurs clair/sombre, rayon, aperçu en direct), des polices, des courbes et des sons ; ordonner les blocs, leur donner une **page** et une **consigne** ; **Aperçu de la page** empile les blocs aux couleurs du thème ; **Enregistrer**.
 3. **Claude Code**, dans ce dépôt : `/mcp__atlas__build-from-spec <nom>`. Le MCP fournit le plan, le thème, une seule commande `npm install`, puis le code bloc par bloc (`get_component` avec `target_alias`) ou en une fois (`get_spec_bundle`).
 4. **Ou directement** dans le projet : `npm run bundle -- <nom> --out ../mon-projet` (composants, thème CSS, polices, easings, `CREDITS.md` ; rien n’est écrasé sans `--force`).
+   **Partir d’un site complet** : choisir un template dans le builder (onglet *Templates*, « Partir de ce template »), puis `npm run scaffold -- <template> --out ../mon-projet` avant le bundle. Le MCP l’indique aussi en tête du plan.
 5. **Crédits** : `CREDITS.md` liste chaque source et les attributions obligatoires à afficher (Rare UI, React Bits…).
 
 Un composant seul s’installe aussi dans un projet shadcn : `npx shadcn@latest add http://localhost:8000/r/<source>/<slug>.json` (le serveur Atlas doit tourner).
@@ -46,6 +47,7 @@ registry/
   fonts/fontshare/<slug>/    polices : métadonnées + lien CSS, aucun fichier de police
   easings/atlas/easings-standard/   courbes, ressorts Motion, durées
   sounds/<source>/<slug>/    sons d’interface (Web Audio, sans fichier audio)
+  templates/<id>/template/   sites complets : tout le dépôt dans files/, captures de la démo dans screens/
   index.json                 généré : résumé de tous les items, textes de licence communs par source
   _previews.json             résultat de l’audit (état, hash du code, chunk, vignette)
   _enrichment.json           descriptions françaises générées (npm run enrich), si présent
@@ -57,23 +59,24 @@ Chaque dossier contient `meta.json`, `files/` (chemins du repo d’origine) et `
 | Champ | Rôle |
 |---|---|
 | `id` | `source/slug`, stable : il fixe le dossier, donc pas de doublon |
-| `type` | `component` · `section` · `screen` · `theme` · `font` · `easing` · `sound` · `lib` (helpers et primitives requis par d’autres items, masqués de l’interface) |
+| `type` | `component` · `section` · `screen` · `theme` · `font` · `easing` · `sound` · `template` (site complet) · `lib` (helpers et primitives requis par d’autres items, masqués de l’interface) |
 | `category`, `tags` | catégories françaises (`shared/taxonomy.ts`), tags dérivés du nom, de la description et des dépendances |
 | `framework` | `react` · `react-native` · `agnostic` |
 | `dependencies`, `registryDependencies` | paquets npm ; autres items requis, résolus récursivement par le MCP et le bundle |
 | `source`, `sourceUrl`, `sourcePath`, `sourceCommit` | provenance exacte (lien GitHub au commit importé) |
 | `license`, `licenseStatus`, `licenseNotes`, `attribution` | voir *Licences* |
-| `files[]` | `path`, `role` (`source`, `style`, `demo`, `doc`, `theme`), `target` conseillé |
+| `files[]` | `path`, `role` (`source`, `style`, `demo`, `doc`, `theme`, `data`, `asset` = fichier binaire d’un template), `target` conseillé |
+| `template` | templates seulement : type de site, stack, démo, pages, commandes, variables d’environnement, fichiers écartés |
 | `preview` | `live` (app previews), `atlas-demo` (démos existantes), `none` (+ raison) |
 | `sound` | moteur (`react-bits` ou `bencho`) et noms des sons |
 | `importedAt`, `updatedAt`, `contentHash` | relance idempotente : même contenu, rien n’est réécrit |
 
-État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices. Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
+État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices, et 6 templates complets. Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
 
 ## Sources et importers
 
 ```bash
-npm run import                         # local, easings, github, fontshare, puis l’index (commits verrouillés)
+npm run import                         # local, easings, github, templates, fontshare, puis l’index (commits verrouillés)
 npm run import:github -- --source reui --offline   # une source, depuis .cache/sources sans réseau
 npm run outdated                       # sources qui ont publié depuis leur verrou (registry/_updates.json), sans rien importer
 npm run update                         # derniers commits + aperçus + audit ; met à jour importers/lock.json
@@ -97,6 +100,30 @@ npm run refresh                        # import + aperçus + audit aux commits v
 Les sources sont déclarées dans [importers/sources.json](importers/sources.json) (alias d’import, démos, thème, dossiers extraits). Les clones vont dans `.cache/sources/` (gitignoré), **partiels** quand la source le permet : seuls les dossiers utiles sont extraits (≈ 0,7 Go au lieu de 1,5 Go ; supprimer un dossier de cache pour le recloner en partiel). Le code cloné est **lu, jamais exécuté**. Un item disparu en amont n’est jamais supprimé : il est signalé dans `missingUpstream` du journal.
 
 **Aperçus React Native (PanelUI)** : non retenus. 141 composants dépendent de `uniwind` (Tailwind compilé par Metro/Babel) et de Reanimated ; la variante PanelUI Web couvre les mêmes composants avec aperçus, et le détail d’un composant natif renvoie vers ses équivalents.
+
+### Templates complets
+
+Six sites entiers, choisis pour couvrir des besoins différents (tous MIT, maintenus, avec démo officielle sauf le blog) :
+
+| Template | Type | Stack | Fichiers | Captures |
+|---|---|---|---|---|
+| [launch-ui](https://github.com/launch-ui/launch-ui) | site vitrine (landing page) | Next.js, Tailwind 4, shadcn/ui | 58 | 2 |
+| [saas-starter](https://github.com/nextjs/saas-starter) | SaaS : landing, comptes, tableau de bord, paiement | Next.js, Postgres (Drizzle), Stripe | 53 | 5 |
+| [shadcn-admin](https://github.com/satnaing/shadcn-admin) | application d’administration (tâches, utilisateurs, messagerie, réglages) | Vite, React, TanStack Router | 259 | 8 |
+| [studio-admin](https://github.com/arhamkhnz/next-shadcn-admin-dashboard) | tableaux de bord métier (CRM, finance, analytics, e-commerce) | Next.js, Tailwind 4, shadcn/ui | 359 | 7 |
+| [starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) | blog MDX (tags, recherche, commentaires, newsletter) | Next.js, Contentlayer, Tailwind | 103 | image du dépôt |
+| [magicui-portfolio](https://github.com/magicuidesign/portfolio) | portfolio / CV en ligne | Next.js, Magic UI | 87 | 3 |
+
+```bash
+npm run import:templates               # clone au commit verrouillé, copie tout le dépôt (registry/templates/<id>/template/)
+npm run capture:templates              # captures bureau + mobile des pages déclarées, sur la démo officielle
+npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entier + LICENSE + ATLAS.md
+```
+
+- **Repris** : tout le dépôt, images comprises (≤ 1,5 Mo par fichier, 12 Mo par template). **Écartés** : `node_modules`, builds, verrous de paquets, `.env*` (seul `.env.example` est gardé), `.github`, fichiers trop lourds (listés dans `template.skipped`).
+- `meta.json → template` : type de site, stack, démo, pages, commandes `install`/`dev` (gestionnaire déduit du verrou), variables d’environnement à renseigner (lues dans `.env.example`).
+- Le code des templates est **copié, jamais exécuté** ici : les captures viennent des démos officielles (`importers/sources.json → templates[].pages`), pas d’un build local.
+- `ATLAS.md`, écrit par `scaffold` dans le projet, rappelle la source, la licence, les commandes et les variables à renseigner.
 
 **Vérification hebdomadaire** (Windows) : `npm run schedule` enregistre une tâche qui lance `npm run outdated` le lundi à 9 h (aucun import automatique ; le builder signale les sources à mettre à jour) ; `npm run unschedule` la retire.
 
@@ -127,6 +154,7 @@ Les sources sont déclarées dans [importers/sources.json](importers/sources.jso
 - **Aperçus à la demande** : vignette de l’audit, aperçu monté au survol, au focus ou au toucher (« Animer au survol ») ou dès qu’il est visible (« Animations auto ») ; au plus 12 aperçus actifs, démontés hors écran.
 - **Recherche** bilingue classée par pertinence ; vues **Nouveautés**, favoris ; **équivalents** d’un composant dans les autres bibliothèques.
 - **Builder** : menu de la spec (nouvelle, dupliquer, renommer, historique et restauration, supprimer), page par bloc, aperçu composé, « Thème de la spec » appliqué aux aperçus, éditeur de thème, sons jouables, commande shadcn dans le détail, ouverture par `/builder#spec=<nom>` ou `#item=<id>`.
+- **Templates** : onglet dédié du builder (captures bureau et mobile, pages, commande `scaffold` à copier, variables d’environnement, arborescence, README) ; un template par spec, emplacement « Template » sous le thème.
 - Le **prompt texte** du catalogue reste disponible pour un assistant sans MCP.
 
 ## Aperçus et audit
@@ -145,9 +173,10 @@ TypeScript, `@modelcontextprotocol/sdk`, stdio. Relit le registre et les specs �
 | `get_spec(name)` | thème, polices, easings, sons, blocs ordonnés avec page et consigne ; pour chaque item : type, source, licence, attribution, dépendances, aperçu interactif, ou `found: false` |
 | `get_spec_bundle(name, target_alias?)` | tout le code de la spec prêt à poser : chemins cibles, imports réécrits, thème CSS, polices, easings, `CREDITS.md`, une commande `npm install` |
 | `get_component(id, target_alias?)` | **les fichiers source réels**, licence, paquets npm, dépendances de registre, démo, docs ; avec `target_alias` (`@/`, `~/`, `relative`) : chemins et imports adaptés au projet |
+| `get_template(id, files?)` | template complet : type, stack, pages, commande `scaffold`, variables d’environnement, arborescence, README et `package.json` ; avec `files`, le contenu de fichiers précis |
 | `get_theme(id)` | tokens et CSS d’un thème, styles et lien d’une police, courbes, ressorts et durées |
 | `search_registry(…, interactive_only?)` | recherche bilingue ; à pertinence égale, les items à aperçu vérifié passent devant |
-| `create_spec(…)` | enregistre une spec (ids vérifiés ; version remplacée archivée) |
+| `create_spec(…)` | enregistre une spec, template de départ compris (ids vérifiés ; version remplacée archivée) |
 
 Prompt **`build-from-spec`** : mode `light` par défaut (plan, thème, installation, appels `get_component` par bloc), `full` pour tout le code inline (≈ 180 ko max).
 

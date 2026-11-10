@@ -1,0 +1,423 @@
+{
+  "id": "magicui-portfolio/template",
+  "name": "Portfolio Magic UI",
+  "type": "template",
+  "category": "Portfolios",
+  "tags": [
+    "animé",
+    "portfolios",
+    "template"
+  ],
+  "description": "Portfolio minimaliste sur une page (expériences, formation, compétences, projets, contact) avec blog MDX ; tout le contenu se règle dans un seul fichier de données.",
+  "framework": "react",
+  "dependencies": [
+    "@content-collections/mdx@^0.2.2",
+    "@radix-ui/react-accordion@^1.2.12",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-icons@^1.3.2",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tailwindcss/postcss@^4.1.18",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "content-collections@^0.2.1",
+    "lucide-react@^0.562.0",
+    "motion@^12.23.27",
+    "next-themes@^0.4.6",
+    "next@16.1.1",
+    "react-dom@^19.2.3",
+    "react-markdown@^10.1.0",
+    "react@^19.2.3",
+    "rehype-pretty-code@^0.14.1",
+    "remark-gfm@^4.0.1",
+    "shiki@^3.20.0",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss-animate@^1.0.7",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+  ],
+  "registryDependencies": [],
+  "source": "Portfolio Magic UI",
+  "sourceId": "magicui-portfolio",
+  "sourceUrl": "https://github.com/magicuidesign/portfolio/tree/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+  "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 Dillion Verma",
+  "files": [
+    {
+      "path": ".eslintrc.json",
+      "role": "source"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    },
+    {
+      "path": "components.json",
+      "role": "source"
+    },
+    {
+      "path": "content/api-design-principles.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/building-design-systems.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/git-workflow-guide.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/nextjs-performance-tips.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/remote-work-productivity.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/testing-react-apps.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content/typescript-best-practices.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "content-collections.ts",
+      "role": "source"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "next.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "public/atomic.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/buildspace.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/fonts/CabinetGrotesk-Medium.ttf",
+      "role": "asset"
+    },
+    {
+      "path": "public/fonts/ClashDisplay-Semibold.ttf",
+      "role": "asset"
+    },
+    {
+      "path": "public/ib.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/laurier.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/lime.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/me.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/mitremedia.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/nvidia.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/shopify.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/splunk.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/waterloo.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/app/blog/[slug]/opengraph-image.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/blog/[slug]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/blog/opengraph-image.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/blog/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/favicon.ico",
+      "role": "asset"
+    },
+    {
+      "path": "src/app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/opengraph-image.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/icons.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/magicui/blur-fade-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/magicui/blur-fade.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/magicui/dock.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/magicui/flickering-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/mdx/code-block.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/mdx/media-container.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/mode-toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/navbar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/project-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/section/contact-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/section/hackathons-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/section/projects-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/section/work-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/theme-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/timeline.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/csharp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/docker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/golang.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/golangDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/java.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/kubernetes.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/nextjsIconDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/nextjsLogoDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/nextjsLogoLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/nodejs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/postgresql.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/postgresqlWordmarkDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/postgresqlWordmarkLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/python.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/reactDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/reactLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/reactWordmarkDark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/reactWordmarkLight.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/svgs/typescript.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/data/resume.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/pagination.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/remark-code-meta.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/mdx-components.tsx",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "Portfolio / CV en ligne",
+    "stack": "Next.js, Tailwind CSS, Magic UI, shadcn/ui",
+    "demo": "https://portfolio-magicui.vercel.app",
+    "pages": [
+      {
+        "path": "/",
+        "title": "Accueil"
+      },
+      {
+        "path": "/blog",
+        "title": "Blog"
+      }
+    ],
+    "install": "pnpm install",
+    "dev": "pnpm run dev",
+    "env": [],
+    "skipped": []
+  },
+  "contentHash": "643bf345e8bfa3a1",
+  "importedAt": "2026-11-10T15:07:18.667Z"
+}

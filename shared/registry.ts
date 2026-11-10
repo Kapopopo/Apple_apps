@@ -6,7 +6,8 @@ import { Meta, type IndexEntry, type ItemType, type RegistryIndex, type SourceIn
 import { normalize } from './taxonomy.js';
 
 export type Draft = Omit<Meta, 'contentHash' | 'importedAt' | 'updatedAt'>;
-export type FileMap = Map<string, string>;
+/** Contenu texte, ou binaire (images et polices des templates, rôle `asset`). */
+export type FileMap = Map<string, string | Buffer>;
 export type WriteResult = 'added' | 'updated' | 'unchanged';
 
 export function itemDir(id: string, type: ItemType, root = REGISTRY): string {
@@ -229,7 +230,12 @@ export function removeFromIndex(id: string, root = REGISTRY): void {
 }
 
 export function readFiles(meta: Meta, dir: string): { path: string; role: string; target?: string; content: string }[] {
-  return meta.files.map((f) => ({ ...f, content: fs.readFileSync(safeJoin(path.join(dir, 'files'), f.path), 'utf8') }));
+  return meta.files.map((f) => {
+    const file = safeJoin(path.join(dir, 'files'), f.path);
+    // Fichier binaire : jamais renvoyé comme texte (MCP, API), seulement signalé.
+    const content = f.role === 'asset' ? `[fichier binaire, ${fs.statSync(file).size} octets]` : fs.readFileSync(file, 'utf8');
+    return { ...f, content };
+  });
 }
 
 export interface RunLog {

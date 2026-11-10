@@ -4,11 +4,15 @@
  */
 import * as z from 'zod';
 
-/** `lib` : helpers (cn, hooks…) requis par d'autres items ; `sound` : sons d'interface (Web Audio). */
-export const ITEM_TYPES = ['component', 'section', 'screen', 'theme', 'font', 'easing', 'sound', 'lib'] as const;
+/**
+ * `lib` : helpers (cn, hooks…) requis par d'autres items ; `sound` : sons d'interface (Web Audio) ;
+ * `template` : application ou site complet (toutes ses pages), point de départ d'un projet.
+ */
+export const ITEM_TYPES = ['component', 'section', 'screen', 'theme', 'font', 'easing', 'sound', 'lib', 'template'] as const;
 export const BLOCK_TYPES = ['component', 'section', 'screen', 'lib'] as const;
 export const FRAMEWORKS = ['react', 'react-native', 'agnostic'] as const;
-export const FILE_ROLES = ['source', 'style', 'demo', 'doc', 'theme', 'data'] as const;
+/** `asset` : fichier binaire d'un template (image, police), stocké tel quel. */
+export const FILE_ROLES = ['source', 'style', 'demo', 'doc', 'theme', 'data', 'asset'] as const;
 
 export const FileEntry = z.object({
   /** Chemin relatif dans `files/`, identique au chemin d'origine dans le repo source. */
@@ -68,6 +72,21 @@ export type EasingToken = z.infer<typeof EasingToken>;
 /** Sons d'interface : `react-bits` = une recette jouée par le moteur React Bits ; `bencho` = `play(nom)` de sounds.ts. */
 export const SoundInfo = z.object({ engine: z.enum(['react-bits', 'bencho']), names: z.array(z.string()).min(1) });
 
+/** Template complet : nature du site, pages capturées sur la démo officielle, commandes et variables d'environnement. */
+export const TemplateInfo = z.object({
+  kind: z.string(),
+  stack: z.string(),
+  demo: z.union([z.string().url(), z.literal('')]),
+  pages: z.array(z.object({ path: z.string(), title: z.string() })),
+  install: z.string(),
+  dev: z.string(),
+  /** Variables à renseigner (.env.example), sans valeur. */
+  env: z.array(z.string()).default([]),
+  /** Fichiers binaires non repris (trop lourds) : à récupérer dans le dépôt d'origine si besoin. */
+  skipped: z.array(z.string()).default([]),
+});
+export type TemplateInfo = z.infer<typeof TemplateInfo>;
+
 export const Meta = z.object({
   id: z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/),
   name: z.string().min(1),
@@ -99,6 +118,7 @@ export const Meta = z.object({
   tokens: ThemeTokens.optional(),
   easings: z.array(EasingToken).optional(),
   sound: SoundInfo.optional(),
+  template: TemplateInfo.optional(),
   contentHash: z.string(),
   importedAt: z.string(),
   updatedAt: z.string().optional(),
@@ -121,6 +141,8 @@ export const Spec = z.object({
   stack: z.string().max(300).default(''),
   style: z.string().max(1000).default(''),
   theme: z.string().regex(ITEM_ID).nullable().default(null),
+  /** Template complet servant de base au projet (facultatif). */
+  template: z.string().regex(ITEM_ID).nullable().default(null),
   fonts: z.array(z.string().regex(ITEM_ID)).max(20).default([]),
   easings: z.array(z.string().regex(ITEM_ID)).max(20).default([]),
   sounds: z.array(z.string().regex(ITEM_ID)).max(40).default([]),

@@ -77,6 +77,7 @@ export function checkReferences(spec: Spec, items: Pick<IndexEntry, 'id' | 'type
   for (const id of spec.fonts) expect(id, ['font'], 'Police');
   for (const id of spec.easings) expect(id, ['easing'], 'Easing');
   for (const id of spec.sounds) expect(id, ['sound'], 'Son');
+  if (spec.template) expect(spec.template, ['template'], 'Template');
   for (const b of spec.blocks) expect(b.id, BLOCK_TYPES, 'Bloc');
   return errors;
 }

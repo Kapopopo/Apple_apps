@@ -40,6 +40,7 @@ export const TYPE_LABEL = {
   easing: 'Mouvement',
   sound: 'Son',
   lib: 'Utilitaire',
+  template: 'Template',
 };
 export const STYLE_TYPES = new Set(['theme', 'font', 'easing', 'sound']);
 
@@ -198,6 +199,7 @@ export const blankSpec = () => ({
   stack: '',
   style: '',
   theme: null,
+  template: null,
   fonts: [],
   easings: [],
   sounds: [],
@@ -211,6 +213,7 @@ export function readDraft() {
   for (const k of ['name', 'title', 'brief', 'stack', 'style']) if (typeof spec[k] !== 'string') spec[k] = '';
   for (const k of ['fonts', 'easings', 'sounds']) spec[k] = Array.isArray(spec[k]) ? spec[k].filter((x) => typeof x === 'string') : [];
   if (typeof spec.theme !== 'string') spec.theme = null;
+  if (typeof spec.template !== 'string') spec.template = null;
   if (typeof spec.loadedFrom !== 'string') spec.loadedFrom = null;
   spec.blocks = (Array.isArray(spec.blocks) ? spec.blocks : []).filter((b) => b && typeof b.id === 'string').map(cleanBlock);
   return spec;

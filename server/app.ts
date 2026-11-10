@@ -178,6 +178,12 @@ const routes: Handler = async (req, res, url) => {
     });
     return;
   }
+  // Captures des templates (pages de la démo officielle), stockées avec l'item dans le registre.
+  const shot = p.match(/^\/template-screens\/([a-z0-9-]+)\/([\w.-]+\.(?:jpg|png|webp))$/);
+  if (shot) {
+    sendFile(req, res, path.join(REGISTRY, 'templates', shot[1], 'template', 'screens'), shot[2], { cache: 'max-age=3600' });
+    return;
+  }
   if (p.startsWith('/thumbs/') && p.endsWith('.jpg')) {
     sendFile(req, res, THUMBS, p.slice(8), { cache: url.searchParams.has('v') ? 'max-age=31536000, immutable' : 'no-cache' });
     return;

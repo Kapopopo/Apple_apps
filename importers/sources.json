@@ -372,5 +372,159 @@
         "sounds"
       ]
     }
+  ],
+  "templates": [
+    {
+      "id": "launch-ui",
+      "name": "Launch UI",
+      "repo": "https://github.com/launch-ui/launch-ui",
+      "demo": "https://www.launchuicomponents.com",
+      "kind": "Site vitrine (landing page)",
+      "category": "Sites vitrines",
+      "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
+      "description": "Landing page complète et récente : hero, logos, fonctionnalités, statistiques, tarifs, FAQ, appel à l’action et pied de page, en sections réutilisables.",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Accueil"
+        }
+      ]
+    },
+    {
+      "id": "saas-starter",
+      "name": "Next.js SaaS Starter",
+      "repo": "https://github.com/nextjs/saas-starter",
+      "demo": "https://next-saas-start.vercel.app",
+      "kind": "SaaS (landing, comptes, tableau de bord, paiement)",
+      "category": "SaaS",
+      "stack": "Next.js, Postgres (Drizzle), Stripe, shadcn/ui",
+      "description": "Starter SaaS officiel de Vercel : page d’accueil, tarifs reliés à Stripe, inscription et connexion, tableau de bord avec équipe, rôles et journal d’activité.",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Accueil"
+        },
+        {
+          "path": "/pricing",
+          "title": "Tarifs"
+        },
+        {
+          "path": "/sign-in",
+          "title": "Connexion"
+        },
+        {
+          "path": "/sign-up",
+          "title": "Inscription"
+        }
+      ]
+    },
+    {
+      "id": "shadcn-admin",
+      "name": "Shadcn Admin",
+      "repo": "https://github.com/satnaing/shadcn-admin",
+      "demo": "https://shadcn-admin.netlify.app",
+      "kind": "Application d’administration",
+      "category": "Administration",
+      "stack": "Vite, React, TanStack Router, shadcn/ui",
+      "description": "Back-office complet : tableau de bord, tâches, utilisateurs, messagerie, applications, réglages, pages d’authentification et d’erreur, recherche globale, thèmes clair et sombre.",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Tableau de bord"
+        },
+        {
+          "path": "/tasks",
+          "title": "Tâches"
+        },
+        {
+          "path": "/users",
+          "title": "Utilisateurs"
+        },
+        {
+          "path": "/chats",
+          "title": "Messagerie"
+        },
+        {
+          "path": "/apps",
+          "title": "Applications"
+        },
+        {
+          "path": "/settings",
+          "title": "Réglages"
+        },
+        {
+          "path": "/sign-in",
+          "title": "Connexion"
+        }
+      ]
+    },
+    {
+      "id": "studio-admin",
+      "name": "Studio Admin",
+      "repo": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard",
+      "demo": "https://studio-admin.arhamkhnz.com",
+      "kind": "Tableaux de bord métier",
+      "category": "Tableaux de bord",
+      "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
+      "description": "Plusieurs tableaux de bord prêts à adapter (vue d’ensemble, CRM, finance, analytique, productivité, e-commerce…) avec préréglages de thème et mises en page configurables.",
+      "pages": [
+        {
+          "path": "/dashboard/default",
+          "title": "Vue d’ensemble"
+        },
+        {
+          "path": "/dashboard/crm",
+          "title": "CRM"
+        },
+        {
+          "path": "/dashboard/finance",
+          "title": "Finance"
+        },
+        {
+          "path": "/dashboard/analytics",
+          "title": "Analytique"
+        },
+        {
+          "path": "/dashboard/productivity",
+          "title": "Productivité"
+        },
+        {
+          "path": "/dashboard/ecommerce",
+          "title": "E-commerce"
+        }
+      ]
+    },
+    {
+      "id": "starter-blog",
+      "name": "Tailwind Next.js Starter Blog",
+      "repo": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+      "demo": "",
+      "kind": "Blog",
+      "category": "Blogs",
+      "stack": "Next.js, MDX (Contentlayer), Tailwind CSS",
+      "description": "Blog de référence : articles MDX, étiquettes, recherche, commentaires, newsletter, analytique, plusieurs mises en page d’article, pages projets et à propos.",
+      "pages": [],
+      "cover": "public/static/images/twitter-card.png"
+    },
+    {
+      "id": "magicui-portfolio",
+      "name": "Portfolio Magic UI",
+      "repo": "https://github.com/magicuidesign/portfolio",
+      "demo": "https://portfolio-magicui.vercel.app",
+      "kind": "Portfolio / CV en ligne",
+      "category": "Portfolios",
+      "stack": "Next.js, Tailwind CSS, Magic UI, shadcn/ui",
+      "description": "Portfolio minimaliste sur une page (expériences, formation, compétences, projets, contact) avec blog MDX ; tout le contenu se règle dans un seul fichier de données.",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Accueil"
+        },
+        {
+          "path": "/blog",
+          "title": "Blog"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,302 @@
+{
+  "id": "saas-starter/template",
+  "name": "Next.js SaaS Starter",
+  "type": "template",
+  "category": "SaaS",
+  "tags": [
+    "saas",
+    "template"
+  ],
+  "description": "Starter SaaS officiel de Vercel : page d’accueil, tarifs reliés à Stripe, inscription et connexion, tableau de bord avec équipe, rôles et journal d’activité.",
+  "framework": "react",
+  "dependencies": [
+    "@tailwindcss/postcss@4.1.7",
+    "@types/node@^22.15.18",
+    "@types/react-dom@19.1.5",
+    "@types/react@19.1.4",
+    "autoprefixer@^10.4.21",
+    "bcryptjs@^3.0.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "dotenv@^16.5.0",
+    "drizzle-kit@^0.31.1",
+    "drizzle-orm@^0.43.1",
+    "jose@^6.0.11",
+    "lucide-react@^0.511.0",
+    "next@15.6.0-canary.59",
+    "postcss@^8.5.3",
+    "postgres@^3.4.5",
+    "radix-ui@^1.4.2",
+    "react-dom@19.1.0",
+    "react@19.1.0",
+    "server-only@^0.0.1",
+    "stripe@^18.1.0",
+    "swr@^2.3.3",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0",
+    "typescript@^5.8.3",
+    "zod@^3.24.4"
+  ],
+  "registryDependencies": [],
+  "source": "Next.js SaaS Starter",
+  "sourceId": "saas-starter",
+  "sourceUrl": "https://github.com/nextjs/saas-starter/tree/6e33e58b1e553a41fe22e6b941a7229a002de361",
+  "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Vercel",
+  "files": [
+    {
+      "path": ".env.example",
+      "role": "source"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/activity/loading.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/activity/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/general/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/dashboard/security/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/pricing/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/pricing/submit-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/terminal.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(login)/actions.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/(login)/login.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(login)/sign-in/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(login)/sign-up/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/api/stripe/checkout/route.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/api/stripe/webhook/route.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/api/team/route.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/api/user/route.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/favicon.ico",
+      "role": "asset"
+    },
+    {
+      "path": "app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "app/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/avatar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/dropdown-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components.json",
+      "role": "source"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/auth/middleware.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/auth/session.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/drizzle.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/migrations/0000_soft_the_anarchist.sql",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/migrations/meta/0000_snapshot.json",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/migrations/meta/_journal.json",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/queries.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/seed.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/setup.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/payments/actions.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/payments/stripe.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "middleware.ts",
+      "role": "source"
+    },
+    {
+      "path": "next.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "SaaS (landing, comptes, tableau de bord, paiement)",
+    "stack": "Next.js, Postgres (Drizzle), Stripe, shadcn/ui",
+    "demo": "https://next-saas-start.vercel.app",
+    "pages": [
+      {
+        "path": "/",
+        "title": "Accueil"
+      },
+      {
+        "path": "/pricing",
+        "title": "Tarifs"
+      },
+      {
+        "path": "/sign-in",
+        "title": "Connexion"
+      },
+      {
+        "path": "/sign-up",
+        "title": "Inscription"
+      }
+    ],
+    "install": "pnpm install",
+    "dev": "pnpm run dev",
+    "env": [
+      "POSTGRES_URL",
+      "STRIPE_SECRET_KEY",
+      "STRIPE_WEBHOOK_SECRET",
+      "BASE_URL",
+      "AUTH_SECRET"
+    ],
+    "skipped": []
+  },
+  "contentHash": "55388c0f94d670bd",
+  "importedAt": "2026-11-10T15:06:54.021Z"
+}

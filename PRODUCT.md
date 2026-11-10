@@ -12,7 +12,7 @@ Un seul utilisateur : le propriétaire du repo, développeur freelance. Usage pr
 
 ## Product Purpose
 
-Centraliser des composants UI, sections, écrans, thèmes, polices et easings gratuits venant de plusieurs sites, pour ne plus refaire le tour des sites. Le succès : passer d'un brief à une spec exploitable par Claude Code en quelques minutes, avec le vrai code et des licences tracées.
+Centraliser des composants UI, sections, écrans, thèmes, polices et easings gratuits venant de plusieurs sites, ainsi que quelques sites complets servant de point de départ (templates : vitrine, SaaS, administration, tableaux de bord, blog, portfolio), pour ne plus refaire le tour des sites. Le succès : passer d'un brief à une spec exploitable par Claude Code en quelques minutes, avec le vrai code et des licences tracées.
 
 ## Positioning
 
@@ -22,14 +22,14 @@ Le registre contient le code source réel (pas des liens) avec licence et proven
 
 - Application web locale servie par `npm start` (serveur TypeScript, http://localhost:8000), deux pages conservées (décision du 2026-11-05) :
   - `/` Catalogue : essayer les composants — sélection Atlas (44 démos), tous les composants interactifs du registre, nouveautés, favoris, prompt texte. « Ajouter » alimente directement la spec en cours (panier unique partagé avec le builder).
-  - `/builder` : composer la spec (thème — y compris un thème personnel créé sur place —, polices, mouvement, sons, blocs ordonnés par page + consignes), aperçu composé de la page, sauvegarde dans `specs/` avec historique, renommage, duplication, presets.
+  - `/builder` : composer la spec (template de départ éventuel, thème — y compris un thème personnel créé sur place —, polices, mouvement, sons, blocs ordonnés par page + consignes), aperçu composé de la page, sauvegarde dans `specs/` avec historique, renommage, duplication, presets.
 - **Uniquement de l'interactif dans l'interface** (décision du 2026-11-05) : un composant n'apparaît que s'il fonctionne en direct (démo Atlas ou aperçu live validé par l'audit). Les fiches « lien + capture », les fonds One Prompt Design et les composants React Native restent dans `data/` ou le registre (accessibles au MCP) mais ne sont plus affichés.
 - Claude Code consomme les specs via le serveur MCP `atlas` (code réel, bundle prêt à poser, CREDITS.md) ; `npm run bundle` écrit tout dans un projet.
 
 ## Capabilities and Constraints
 
 - Vanilla HTML/CSS/JS sans build pour `web/` ; CSP stricte (pas de style inline en HTML, pas de script inline, pas de CDN). Les polices Fontshare peuvent être chargées par le builder uniquement.
-- Les aperçus de code tiers restent dans des iframes sandboxées.
+- Les aperçus de code tiers restent dans des iframes sandboxées. Les templates complets ne sont jamais exécutés localement : ils sont montrés par des captures de leur démo officielle.
 - Langue de l'interface : français.
 - Les licences restreintes (Rare UI, React Bits, polices ITF FFL) doivent rester visibles avec leur attribution.
 - L'utilisateur autorise l'import de tout composant utile publié gratuitement pour être copié (licence ouverte, ou gratuite avec conditions marquée `restricted`). Le contenu payant (Pro) ou explicitement fermé reste exclu, même pour un usage non commercial.

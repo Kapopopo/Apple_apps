@@ -5942,6 +5942,100 @@
       ],
       "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
       "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "launch-ui",
+      "at": "2026-11-10T15:06:49.896Z",
+      "added": [
+        "launch-ui/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "launch-ui : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "saas-starter",
+      "at": "2026-11-10T15:06:53.641Z",
+      "added": [
+        "saas-starter/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "shadcn-admin",
+      "at": "2026-11-10T15:06:57.505Z",
+      "added": [
+        "shadcn-admin/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "studio-admin",
+      "at": "2026-11-10T15:07:04.677Z",
+      "added": [
+        "studio-admin/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "starter-blog",
+      "at": "2026-11-10T15:07:14.396Z",
+      "added": [
+        "starter-blog/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "starter-blog : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "b45bef66b40c63b6f57c15ee8cd090682238df4c",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "magicui-portfolio",
+      "at": "2026-11-10T15:07:18.064Z",
+      "added": [
+        "magicui-portfolio/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+      "license": "MIT"
     }
   ]
 }

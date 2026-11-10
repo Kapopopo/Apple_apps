@@ -1,0 +1,44 @@
+[
+ {
+  "file": "01-desktop.jpg",
+  "path": "/dashboard/default",
+  "title": "Vue d’ensemble",
+  "viewport": "desktop"
+ },
+ {
+  "file": "02-desktop.jpg",
+  "path": "/dashboard/crm",
+  "title": "CRM",
+  "viewport": "desktop"
+ },
+ {
+  "file": "03-desktop.jpg",
+  "path": "/dashboard/finance",
+  "title": "Finance",
+  "viewport": "desktop"
+ },
+ {
+  "file": "04-desktop.jpg",
+  "path": "/dashboard/analytics",
+  "title": "Analytique",
+  "viewport": "desktop"
+ },
+ {
+  "file": "05-desktop.jpg",
+  "path": "/dashboard/productivity",
+  "title": "Productivité",
+  "viewport": "desktop"
+ },
+ {
+  "file": "06-desktop.jpg",
+  "path": "/dashboard/ecommerce",
+  "title": "E-commerce",
+  "viewport": "desktop"
+ },
+ {
+  "file": "00-mobile.jpg",
+  "path": "/dashboard/default",
+  "title": "Vue d’ensemble (mobile)",
+  "viewport": "mobile"
+ }
+]

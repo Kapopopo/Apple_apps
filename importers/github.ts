@@ -1231,6 +1231,13 @@ function writeLock(sources: Record<string, LockEntry>) {
   );
 }
 
+/** Enregistre le commit importé d'une entrée (relit le fichier : plusieurs importers l'alimentent). */
+export function writeLockEntry(id: string, commit: string) {
+  const lock = readLock();
+  lock[id] = { commit, importedAt: new Date().toISOString() };
+  writeLock(lock);
+}
+
 export function importGithub(options: { only?: string; offline?: boolean; update?: boolean } = {}) {
   const runs = [];
   const lock = readLock();

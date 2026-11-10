@@ -656,6 +656,46 @@
 .facts .btn {
   width: 100%;
 }
+/* Templates : captures des pages */
+.template-shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+.shot {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.shot img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+}
+.shot.mobile img {
+  aspect-ratio: 390 / 600;
+  object-fit: cover;
+}
+.shot figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 10px;
+  font-size: 12px;
+  color: var(--ink);
+}
+.shot figcaption small {
+  color: var(--faint);
+  font-family: var(--mono);
+}
+.template-facts {
+  max-width: 820px;
+}
 .files {
   margin-top: 22px;
 }

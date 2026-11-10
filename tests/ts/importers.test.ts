@@ -102,3 +102,34 @@ test('démos de route : registre paresseux rendu statique, limité aux entrées 
   assert.equal(labelOf('<Label htmlFor={id}>Simple input</Label>'), 'Simple input');
   assert.equal(labelOf('<div>{x}</div>'), undefined);
 });
+
+test('templates : fichiers repris (sans dépendances, verrous ni secrets), commandes et variables', async () => {
+  const { collectTemplateFiles, templateRuntime } = await import('../../importers/templates.js');
+  const repo = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-tpl-'));
+  const write = (rel: string, content: string | Buffer) => {
+    fs.mkdirSync(path.dirname(path.join(repo, rel)), { recursive: true });
+    fs.writeFileSync(path.join(repo, rel), content);
+  };
+  write('package.json', JSON.stringify({ scripts: { dev: 'next dev' }, dependencies: { next: '15.0.0' } }));
+  write('pnpm-lock.yaml', 'lockfileVersion: 9');
+  write('app/page.tsx', 'export default () => null;');
+  write('app/globals.css', 'body{}');
+  write('node_modules/x/index.js', 'x');
+  write('.env', 'SECRET=1');
+  write('.env.example', 'POSTGRES_URL=\n# commentaire\nexport AUTH_SECRET=xyz\n');
+  write('public/logo.png', Buffer.from([1, 0, 2]));
+  const { files, entries } = collectTemplateFiles(repo);
+  assert.deepEqual(entries.map((e) => `${e.path}:${e.role}`).sort(), [
+    '.env.example:source',
+    'app/globals.css:style',
+    'app/page.tsx:source',
+    'package.json:source',
+    'public/logo.png:asset',
+  ]);
+  assert.ok(Buffer.isBuffer(files.get('public/logo.png')));
+  const runtime = templateRuntime(repo);
+  assert.equal(runtime.install, 'pnpm install');
+  assert.equal(runtime.dev, 'pnpm run dev');
+  assert.deepEqual(runtime.env, ['POSTGRES_URL', 'AUTH_SECRET']);
+  assert.deepEqual(runtime.dependencies, ['next@15.0.0']);
+});

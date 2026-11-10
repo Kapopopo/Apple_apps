@@ -48,6 +48,30 @@
     "shadcn": {
       "commit": "8a3536678a528cc012b9e62484290e79d0be410f",
       "importedAt": "2026-11-10T13:21:52.253Z"
+    },
+    "template-launch-ui": {
+      "commit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+      "importedAt": "2026-11-10T15:06:52.053Z"
+    },
+    "template-magicui-portfolio": {
+      "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+      "importedAt": "2026-11-10T15:07:20.251Z"
+    },
+    "template-saas-starter": {
+      "commit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+      "importedAt": "2026-11-10T15:06:55.672Z"
+    },
+    "template-shadcn-admin": {
+      "commit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+      "importedAt": "2026-11-10T15:07:02.638Z"
+    },
+    "template-starter-blog": {
+      "commit": "b45bef66b40c63b6f57c15ee8cd090682238df4c",
+      "importedAt": "2026-11-10T15:07:16.421Z"
+    },
+    "template-studio-admin": {
+      "commit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+      "importedAt": "2026-11-10T15:07:12.645Z"
     }
   }
 }

@@ -1,0 +1,1536 @@
+{
+  "id": "studio-admin/template",
+  "name": "Studio Admin",
+  "type": "template",
+  "category": "Tableaux de bord",
+  "tags": [
+    "tableaux de bord",
+    "template"
+  ],
+  "description": "Plusieurs tableaux de bord prêts à adapter (vue d’ensemble, CRM, finance, analytique, productivité, e-commerce…) avec préréglages de thème et mises en page configurables.",
+  "framework": "react",
+  "dependencies": [
+    "@base-ui/react@^1.9.0",
+    "@dnd-kit/abstract@^0.5.3",
+    "@dnd-kit/helpers@^0.5.3",
+    "@dnd-kit/react@^0.5.3",
+    "@fullcalendar/react@^7.1.4",
+    "@hookform/resolvers@^5.9.2",
+    "@shadcn/react@^0.3.1",
+    "@tanstack/react-table@^9.3.1",
+    "class-variance-authority@^0.7.1",
+    "cmdk@^1.1.1",
+    "cn@^0.5.2",
+    "d3-geo@^3.1.2",
+    "date-fns@^4.4.0",
+    "embla-carousel-react@^8.6.0",
+    "geist@^1.9.2",
+    "input-otp@^1.5.0",
+    "lucide-react@^1.71.0",
+    "next-themes@^0.4.6",
+    "next@^16.4.6",
+    "radix-ui@^1.8.1",
+    "react-day-picker@^10.0.2",
+    "react-dom@^19.3.1",
+    "react-hook-form@^7.91.0",
+    "react-resizable-panels@^4.21.0",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "shiki@^4.6.0",
+    "simple-icons@^16.37.0",
+    "sonner@^2.0.8",
+    "temporal-polyfill@^1.0.8",
+    "topojson-client@^3.1.0",
+    "vaul@^1.1.2",
+    "zod@^4.6.7",
+    "zustand@^5.1.0"
+  ],
+  "registryDependencies": [],
+  "source": "Studio Admin",
+  "sourceId": "studio-admin",
+  "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/tree/3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+  "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 Mohammed Arham Khan",
+  "files": [
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "doc"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "role": "doc"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    },
+    {
+      "path": "biome.json",
+      "role": "source"
+    },
+    {
+      "path": "components.json",
+      "role": "source"
+    },
+    {
+      "path": "media/dashboard.png",
+      "role": "asset"
+    },
+    {
+      "path": "media/default/default-dark.webp",
+      "role": "asset"
+    },
+    {
+      "path": "media/default/default-light.webp",
+      "role": "asset"
+    },
+    {
+      "path": "next.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/footer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/github-star-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/intro.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/landing-theme-switcher.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_components/showcase.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/_hooks/use-github-star-count.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(external)/landing.module.css",
+      "role": "style"
+    },
+    {
+      "path": "src/app/(external)/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/_components/login-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/_components/register-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/_components/social-auth/google-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/v1/login/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/v1/register/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/v2/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/v2/login/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/auth/v2/register/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat-conversation-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat-header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat-profile-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat-thread.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/chat.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/_components/use-chat.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/chat/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/_components/analytics-actions-manager-queue.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/_components/analytics-actions-risk-ledger.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/_components/analytics-drivers-coverage-triage.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/_components/analytics-drivers-forecast-target.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/_components/analytics-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/analytics-v1/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/crm.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/insight-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/operational-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/overview-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/recent-leads-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/recent-leads-table/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/_components/recent-leads-table/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/crm-v1/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/chart-area-interactive.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/data.json",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/proposal-sections-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/proposal-sections-table/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/proposal-sections-table/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/_components/section-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/default-v1/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/card-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/cash-flow-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/income-reliability.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/kpis/monthly-cash-flow.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/kpis/net-worth.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/kpis/primary-account.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/kpis/savings-rate.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/_components/spending-breakdown.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/finance-v1/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/(legacy)/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/[...not-found]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/header/account-switcher.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/header/github-repositories-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/header/layout-controls.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/header/search-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/header/theme-switcher.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/sidebar/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/sidebar/nav-main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/sidebar/nav-user.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/_components/sidebar/support-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/_components/assignment-status.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/_components/class-schedule.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/_components/kpi-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/_components/performance-highlights.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/_components/upcoming-events.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/academy/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/analytics-kpi-strip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/analytics-toolbar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/realtime-visitors.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/top-pages.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/top-traffic-sources.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/_components/traffic-quality.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/analytics/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/calendar/_components/calendar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/calendar/_components/events-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/calendar/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/chat/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/coming-soon/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/kpi-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/opportunities-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/opportunities-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/opportunities-table/data.json",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/opportunities-table/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/pipeline-activity.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/_components/task-reminders.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/crm/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/data.json",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/metric-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/performance-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/recent-customers-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/recent-customers-table/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/recent-customers-table/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/_components/subscriber-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/default/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/customer-reviews.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/inventory.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/kpi-strip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/recent-orders-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/recent-orders-table/data.json",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/recent-orders-table/formatters.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/recent-orders-table/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/recent-orders.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/store-traffic.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/top-products.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/_components/traffic-sources.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/ecommerce/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/file-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/file-grid-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/file-list-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/file-manager-toolbar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/_components/folders-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/file-manager/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/balance-distribution-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/finance-notification.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/income-breakdown.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/overview-kpis.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/quick-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/transactions-overview-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/upcoming-transactions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/wallet.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/finance/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/infrastructure/_components/infrastructure-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/infrastructure/_components/infrastructure-header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/infrastructure/_components/project-environments.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/infrastructure/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/client-selector.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-adjustments.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-items.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-paper.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice-preview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/invoice.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/print-invoice.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/_components/use-visible-center-position.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/invoice/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-column.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-list-dnd.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-table-columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-table-dnd.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/kanban.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/sortable-task-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/task-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/task-priority.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/task-status.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/types.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/_components/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/kanban/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/_components/logistics.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/_components/shipment-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/_components/shipment-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/_components/shipment-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/_components/shipment-route-map.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/logistics/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/mail/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/chart-grid.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/patient-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/patient-detail.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/patient-monitoring.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/patient-trends.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/realtime-utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/use-patient-vital-series.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/use-realtime-tick.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/vital-waveform.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/_components/waveform-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/patient-monitoring/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/calendar-panel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/focus-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/projects-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/quick-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/quote-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/recent-notes-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/summary-cards.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/tasks-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/_components/weekly-summary-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/productivity/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/add-product-drawer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/product-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/product-images-field.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/products-columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/products-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/_components/products.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/products/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-documents.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-employment-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-personal-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-status-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/_components/profile-time-off-details.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/profile/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/roles/_components/roles-table/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/roles/_components/roles-table/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/roles/_components/roles-table/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/roles/_components/roles.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/roles/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/task-priority-filter.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/task-status-filter.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/tasks-toolbar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/_components/tasks.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/tasks/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/users/_components/data.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/users/_components/users-columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/users/_components/users-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/users/_components/users.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/dashboard/users/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/data.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail-inbox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail-layout-config.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail-list.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail-view.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/mail.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/_components/use-mail.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/mail/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/(main)/unauthorized/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/apple-icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "src/app/icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/opengraph-image.alt.txt",
+      "role": "source"
+    },
+    {
+      "path": "src/app/opengraph-image.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/app/robots.txt",
+      "role": "source"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/app/twitter-image.alt.txt",
+      "role": "source"
+    },
+    {
+      "path": "src/app/twitter-image.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/components/app-logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/calendar/event-calendar-views.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/date-range-picker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/simple-icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/accordion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/aspect-ratio.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/attachment.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/breadcrumb.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/bubble.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/button-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/carousel.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/chart.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/code-block.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/combobox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/context-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/direction.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/drawer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/empty.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/field.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/hover-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/input-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/input-otp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/item.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/kbd.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/label.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/marker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/menubar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/message-scroller.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/message.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/native-select.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/navigation-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/pagination.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/popover.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/progress.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/questionnaire.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/resizable.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/slider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sonner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/spinner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/toggle-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/trace.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/config/app-config.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/data/users.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-highlighted-code.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-lg.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-mobile.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/app-icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/cookie.client.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/data-table-features.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/fonts/registry.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/highlighter.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/local-storage.client.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/layout.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/preference-runtime.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/preferences-config.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/preferences-storage.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/theme-utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/preferences/theme.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/navigation/sidebar/sidebar-items.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/proxy.disabled.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/scripts/generate-theme-presets.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/scripts/theme-boot.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/server/server-actions.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/stores/preferences/preferences-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/stores/preferences/preferences-store.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/styles/flag-icons/flags.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/presets/brutalist.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/presets/soft-pop.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/presets/tangerine.css",
+      "role": "style"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.scripts.json",
+      "role": "source"
+    },
+    {
+      "path": "vercel.json",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "Tableaux de bord métier",
+    "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
+    "demo": "https://studio-admin.arhamkhnz.com",
+    "pages": [
+      {
+        "path": "/dashboard/default",
+        "title": "Vue d’ensemble"
+      },
+      {
+        "path": "/dashboard/crm",
+        "title": "CRM"
+      },
+      {
+        "path": "/dashboard/finance",
+        "title": "Finance"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "title": "Analytique"
+      },
+      {
+        "path": "/dashboard/productivity",
+        "title": "Productivité"
+      },
+      {
+        "path": "/dashboard/ecommerce",
+        "title": "E-commerce"
+      }
+    ],
+    "install": "npm install",
+    "dev": "npm run dev",
+    "env": [],
+    "skipped": []
+  },
+  "contentHash": "f02f336b232e8621",
+  "importedAt": "2026-11-10T15:07:09.581Z"
+}

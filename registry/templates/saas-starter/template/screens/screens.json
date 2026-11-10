@@ -1,0 +1,32 @@
+[
+ {
+  "file": "01-desktop.jpg",
+  "path": "/",
+  "title": "Accueil",
+  "viewport": "desktop"
+ },
+ {
+  "file": "02-desktop.jpg",
+  "path": "/pricing",
+  "title": "Tarifs",
+  "viewport": "desktop"
+ },
+ {
+  "file": "03-desktop.jpg",
+  "path": "/sign-in",
+  "title": "Connexion",
+  "viewport": "desktop"
+ },
+ {
+  "file": "04-desktop.jpg",
+  "path": "/sign-up",
+  "title": "Inscription",
+  "viewport": "desktop"
+ },
+ {
+  "file": "00-mobile.jpg",
+  "path": "/",
+  "title": "Accueil (mobile)",
+  "viewport": "mobile"
+ }
+]

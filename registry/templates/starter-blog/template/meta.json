@@ -1,0 +1,507 @@
+{
+  "id": "starter-blog/template",
+  "name": "Tailwind Next.js Starter Blog",
+  "type": "template",
+  "category": "Blogs",
+  "tags": [
+    "blogs",
+    "template"
+  ],
+  "description": "Blog de référence : articles MDX, étiquettes, recherche, commentaires, newsletter, analytique, plusieurs mises en page d’article, pages projets et à propos.",
+  "framework": "react",
+  "dependencies": [
+    "@headlessui/react@2.2.9",
+    "@next/bundle-analyzer@15.5.12",
+    "@tailwindcss/forms@^0.5.11",
+    "@tailwindcss/postcss@^4.1.18",
+    "@tailwindcss/typography@^0.5.19",
+    "body-scroll-lock@^3.1.5",
+    "contentlayer2@0.5.8",
+    "esbuild@0.27.3",
+    "github-slugger@^2.0.0",
+    "gray-matter@^4.0.3",
+    "hast-util-from-html-isomorphic@^2.0.0",
+    "image-size@2.0.2",
+    "next-contentlayer2@0.5.8",
+    "next-themes@^0.4.6",
+    "next@15.5.12",
+    "pliny@0.4.1",
+    "postcss@^8.5.6",
+    "react-dom@19.2.4",
+    "react@19.2.4",
+    "reading-time@1.5.0",
+    "rehype-autolink-headings@^7.1.0",
+    "rehype-citation@^2.3.2",
+    "rehype-katex-notranslate@^1.1.4",
+    "rehype-katex@^7.0.1",
+    "rehype-preset-minify@7.0.1",
+    "rehype-prism-plus@^2.0.2",
+    "rehype-slug@^6.0.0",
+    "remark-gfm@^4.0.1",
+    "remark-github-blockquote-alert@^2.0.1",
+    "remark-math@^6.0.0",
+    "remark@^15.0.1",
+    "tailwindcss@^4.1.18",
+    "unist-util-visit@^5.1.0"
+  ],
+  "registryDependencies": [],
+  "source": "Tailwind Next.js Starter Blog",
+  "sourceId": "starter-blog",
+  "sourceUrl": "https://github.com/timlrx/tailwind-nextjs-starter-blog/tree/b45bef66b40c63b6f57c15ee8cd090682238df4c",
+  "sourceCommit": "b45bef66b40c63b6f57c15ee8cd090682238df4c",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2021-2025 Timothy Lin",
+  "files": [
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "role": "source"
+    },
+    {
+      "path": ".env.example",
+      "role": "source"
+    },
+    {
+      "path": ".gitattributes",
+      "role": "source"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": ".yarnrc.yml",
+      "role": "source"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    },
+    {
+      "path": "app/Main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/api/newsletter/route.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/blog/[...slug]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/blog/page/[page]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/blog/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/projects/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/robots.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/seo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/sitemap.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/tag-data.json",
+      "role": "source"
+    },
+    {
+      "path": "app/tags/[tag]/page/[page]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/tags/[tag]/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/tags/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/theme-providers.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Comments.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Footer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Image.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/LayoutWrapper.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Link.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/MDXComponents.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/MobileNav.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/PageTitle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ScrollTopAndComment.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/SearchButton.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/SectionContainer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/TableWrapper.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/Tag.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/ThemeSwitch.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/social-icons/icons.tsx",
+      "role": "source"
+    },
+    {
+      "path": "components/social-icons/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "contentlayer.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "css/prism.css",
+      "role": "style"
+    },
+    {
+      "path": "css/tailwind.css",
+      "role": "style"
+    },
+    {
+      "path": "data/authors/default.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/authors/sparrowhawk.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/code-sample.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/deriving-ols-estimator.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/github-markdown-guide.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/guide-to-using-images-in-nextjs.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/introducing-tailwind-nextjs-starter-blog.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/my-fancy-title.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/nested-route/introducing-multi-part-posts-with-nested-routing.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/new-features-in-v1.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/pictures-of-canada.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/release-of-tailwind-nextjs-starter-blog-v2.0.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/blog/the-time-machine.mdx",
+      "role": "doc"
+    },
+    {
+      "path": "data/headerNavLinks.ts",
+      "role": "source"
+    },
+    {
+      "path": "data/logo.svg",
+      "role": "source"
+    },
+    {
+      "path": "data/projectsData.ts",
+      "role": "source"
+    },
+    {
+      "path": "data/references-data.bib",
+      "role": "source"
+    },
+    {
+      "path": "data/siteMetadata.js",
+      "role": "source"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "role": "source"
+    },
+    {
+      "path": "faq/custom-mdx-component.md",
+      "role": "doc"
+    },
+    {
+      "path": "faq/customize-kbar-search.md",
+      "role": "doc"
+    },
+    {
+      "path": "faq/deploy-with-docker.md",
+      "role": "doc"
+    },
+    {
+      "path": "jsconfig.json",
+      "role": "source"
+    },
+    {
+      "path": "layouts/AuthorLayout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "layouts/ListLayout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "layouts/ListLayoutWithTags.tsx",
+      "role": "source"
+    },
+    {
+      "path": "layouts/PostBanner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "layouts/PostLayout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "layouts/PostSimple.tsx",
+      "role": "source"
+    },
+    {
+      "path": "next-env.d.ts",
+      "role": "source"
+    },
+    {
+      "path": "next.config.js",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "postcss.config.js",
+      "role": "source"
+    },
+    {
+      "path": "prettier.config.js",
+      "role": "source"
+    },
+    {
+      "path": "public/static/favicons/android-chrome-96x96.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/apple-touch-icon.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/browserconfig.xml",
+      "role": "source"
+    },
+    {
+      "path": "public/static/favicons/favicon-16x16.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/favicon-32x32.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/favicon.ico",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/mstile-150x150.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/favicons/safari-pinned-tab.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/static/favicons/site.webmanifest",
+      "role": "source"
+    },
+    {
+      "path": "public/static/images/avatar.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/canada/lake.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/canada/maple.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/canada/mountains.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/canada/toronto.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/github-traffic.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/google.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/logo.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/ocean.jpeg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/sparrowhawk-avatar.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/time-machine.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "public/static/images/twitter-card.png",
+      "role": "asset"
+    },
+    {
+      "path": "scripts/postbuild.mjs",
+      "role": "source"
+    },
+    {
+      "path": "scripts/rss.mjs",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "Blog",
+    "stack": "Next.js, MDX (Contentlayer), Tailwind CSS",
+    "demo": "",
+    "pages": [],
+    "install": "yarn install",
+    "dev": "yarn run dev",
+    "env": [
+      "NEXT_PUBLIC_GISCUS_REPO",
+      "NEXT_PUBLIC_GISCUS_REPOSITORY_ID",
+      "NEXT_PUBLIC_GISCUS_CATEGORY",
+      "NEXT_PUBLIC_GISCUS_CATEGORY_ID",
+      "NEXT_PUBLIC_UTTERANCES_REPO",
+      "NEXT_PUBLIC_DISQUS_SHORTNAME",
+      "MAILCHIMP_API_KEY",
+      "MAILCHIMP_API_SERVER",
+      "MAILCHIMP_AUDIENCE_ID",
+      "BUTTONDOWN_API_KEY",
+      "CONVERTKIT_API_KEY",
+      "CONVERTKIT_FORM_ID",
+      "KLAVIYO_API_KEY",
+      "KLAVIYO_LIST_ID",
+      "REVUE_API_KEY",
+      "EMAILOCTOPUS_API_KEY",
+      "EMAILOCTOPUS_LIST_ID",
+      "BEEHIIV_API_KEY",
+      "BEEHIIV_PUBLICATION_ID"
+    ],
+    "skipped": [
+      ".yarn/releases/yarn-3.6.1.cjs (2177 ko)"
+    ]
+  },
+  "contentHash": "671dc579c8c84354",
+  "importedAt": "2026-11-10T15:07:15.127Z"
+}

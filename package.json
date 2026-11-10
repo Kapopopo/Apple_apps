@@ -30,7 +30,10 @@
     "check": "tsc -p tsconfig.json --noEmit && eslint . && prettier --check . && npm test",
     "test:e2e": "node --import tsx --test --test-concurrency=1 tests/e2e/*.test.ts",
     "setup": "npm ci --ignore-scripts && npm --prefix previews ci && npm --prefix demos ci --ignore-scripts && git config core.hooksPath .githooks",
-    "enrich": "tsx scripts/enrich.ts"
+    "enrich": "tsx scripts/enrich.ts",
+    "import:templates": "tsx importers/run.ts templates",
+    "capture:templates": "tsx scripts/capture-templates.ts",
+    "scaffold": "tsx scripts/scaffold.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",

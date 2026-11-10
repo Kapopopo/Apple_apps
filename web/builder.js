@@ -33,6 +33,7 @@ import {
 const PAGE = 24;
 const TYPES = [
   ['', 'Tout'],
+  ['template', 'Templates'],
   ['component', 'Composants'],
   ['section', 'Sections'],
   ['screen', 'Écrans'],
@@ -41,7 +42,7 @@ const TYPES = [
   ['easing', 'Mouvement'],
   ['sound', 'Sons'],
 ];
-const RANK = { component: 0, section: 1, screen: 2, theme: 3, easing: 4, font: 5, sound: 6 };
+const RANK = { template: 0, component: 1, section: 2, screen: 3, theme: 4, easing: 5, font: 6, sound: 7 };
 const FILTERS = ['#q', '#f-category', '#f-tag', '#f-source', '#f-license'];
 
 let items = [],
@@ -97,6 +98,10 @@ function curveSvg(b) {
 }
 
 function staticVisual(i) {
+  if (i.type === 'template')
+    return i.screens?.[0]
+      ? `<img class="thumb" src="${esc(i.screens[0].url)}" alt="" loading="lazy" decoding="async">`
+      : `<div class="placeholder">${icon('layers')}Template complet</div>`;
   if (i.type === 'font')
     return `<div class="font-sample" data-font-css="${esc(i.font?.cssUrl || '')}" data-font="${esc(i.font?.family || i.name)}"><span class="big">Aa Gg</span><span class="line">Le vif zéphyr jubile sur les kumquats</span><span class="line">0123456789 · ${esc((i.font?.styles || []).length)} styles</span></div>`;
   if (i.type === 'theme') {
@@ -161,6 +166,7 @@ function hydrateVisuals(root) {
 
 const inSpec = (id) =>
   spec.theme === id ||
+  spec.template === id ||
   spec.fonts.includes(id) ||
   spec.easings.includes(id) ||
   spec.sounds.includes(id) ||
@@ -168,6 +174,7 @@ const inSpec = (id) =>
 function actionLabel(i) {
   const yes = inSpec(i.id);
   if (i.type === 'theme') return yes ? `${icon('check')}Thème choisi` : 'Choisir ce thème';
+  if (i.type === 'template') return yes ? `${icon('check')}Template choisi` : 'Partir de ce template';
   return yes ? `${icon('check')}Dans la spec` : `${icon('plus')}Ajouter`;
 }
 
@@ -251,6 +258,7 @@ function toggle(id) {
   if (!i) return;
   const flip = (list) => (list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
   if (i.type === 'theme') spec.theme = spec.theme === id ? null : id;
+  else if (i.type === 'template') spec.template = spec.template === id ? null : id;
   else if (i.type === 'font') spec.fonts = flip(spec.fonts);
   else if (i.type === 'easing') spec.easings = flip(spec.easings);
   else if (i.type === 'sound') spec.sounds = flip(spec.sounds);
@@ -292,6 +300,10 @@ function renderSpec() {
     : 'Brouillon non enregistré';
   $('#guide').hidden = !!(spec.blocks.length || spec.theme || spec.name);
   for (const b of $$('[data-saved-only]')) b.disabled = !spec.loadedFrom;
+  const template = spec.template && byId.get(spec.template);
+  $('#s-template').innerHTML = template
+    ? `<span class="token"><span>${esc(template.name)}</span><button data-toggle="${esc(template.id)}" aria-label="Retirer le template">${icon('x')}</button></span>`
+    : '<button class="ask" data-show="template">Choisir dans la galerie</button>';
   const theme = spec.theme && byId.get(spec.theme);
   $('#s-theme').innerHTML = theme
     ? `<span class="token theme-token"><span class="mini">${themeColors(theme.id)
@@ -331,7 +343,7 @@ function renderSpec() {
         })
         .join('')
     : '<li class="empty">Ajoutez des composants, sections ou écrans depuis la galerie (ou depuis le catalogue). Glissez-les ensuite pour les ordonner ; la colonne « Page » répartit un site en plusieurs pages.</li>';
-  const restricted = [spec.theme, ...spec.fonts, ...spec.sounds, ...spec.blocks.map((b) => b.id)]
+  const restricted = [spec.template, spec.theme, ...spec.fonts, ...spec.sounds, ...spec.blocks.map((b) => b.id)]
     .map((id) => id && byId.get(id))
     .filter((i) => i && i.licenseStatus === 'restricted');
   const bySource = [...new Map(restricted.map((i) => [i.sourceId, i])).values()];
@@ -438,6 +450,7 @@ const specBody = (preset) => ({
   stack: spec.stack,
   style: spec.style,
   theme: spec.theme,
+  template: spec.template,
   fonts: spec.fonts,
   easings: spec.easings,
   sounds: spec.sounds,
@@ -944,6 +957,34 @@ function equivalents(i) {
     .slice(0, 8);
 }
 
+/** Détail d'un template : captures des pages, nature du site, commandes, variables, fichiers (liste). */
+function templateDetail(i, meta) {
+  const t = meta.template || {};
+  const shots = i.screens || [];
+  const demo = safeHttps(t.demo || '');
+  const scaffold = `npm run scaffold -- ${i.id} --out ../mon-projet`;
+  return `
+    <h2 id="detail-title">${esc(i.name)}</h2>
+    <p class="detail-meta">Template · ${esc(t.kind || i.category)} · ${esc(t.stack || '')} · <code>${esc(i.id)}</code></p>
+    ${shots.length ? `<div class="template-shots">${shots.map((s) => `<figure class="shot ${s.viewport === 'mobile' ? 'mobile' : ''}"><img src="${esc(s.url)}" alt="Capture : ${esc(s.title)}" loading="lazy"><figcaption>${esc(s.title)} <small>${esc(s.path)}</small></figcaption></figure>`).join('')}</div>` : '<p class="help">Pas encore de captures : npm run capture:templates.</p>'}
+    <dl class="facts template-facts">
+      <dt>Description</dt><dd>${esc(meta.description || '—')}</dd>
+      ${t.pages?.length ? `<dt>Pages</dt><dd>${t.pages.map((p) => `${esc(p.title)} <code>${esc(p.path)}</code>`).join(' · ')}</dd>` : ''}
+      <dt>Démarrer</dt><dd><div class="command-line"><code>${esc(scaffold)}</code><button class="btn icon-only ghost small" id="copy-scaffold" aria-label="Copier la commande">${icon('copy')}</button></div><span class="help">Puis <code>${esc(t.install || 'npm install')}</code> et <code>${esc(t.dev || 'npm run dev')}</code> dans le dossier créé.</span></dd>
+      ${t.env?.length ? `<dt>Variables d’environnement</dt><dd>${t.env.map((v) => `<code>${esc(v)}</code>`).join(' ')}</dd>` : ''}
+      <dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span>${meta.attribution ? `<br><span class="help">${esc(meta.attribution)}</span>` : ''}</dd>
+      <dt>Source</dt><dd>${safeHttps(meta.sourceUrl) ? `<a href="${esc(safeHttps(meta.sourceUrl))}" target="_blank" rel="noopener noreferrer">Dépôt au commit importé ${icon('external')}</a>` : ''}${demo ? ` · <a href="${esc(demo)}" target="_blank" rel="noopener noreferrer">Démo officielle ${icon('external')}</a>` : ''}</dd>
+      <dd class="facts-actions"><button class="btn primary" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button></dd>
+    </dl>
+    <div class="files"><h3>Fichiers (${meta.files.length})${t.skipped?.length ? ` · ${t.skipped.length} non repris (trop lourds)` : ''}</h3>
+      <details><summary>Arborescence</summary><pre class="code"><code>${esc(meta.files.map((f) => f.path).join('\n'))}</code></pre></details>
+      ${meta.files
+        .filter((f) => /(^|\/)(README\.md|package\.json)$/.test(f.path))
+        .map((f) => `<details><summary>${esc(f.path)}</summary><pre class="code"><code>${esc(f.content)}</code></pre></details>`)
+        .join('')}
+    </div>`;
+}
+
 async function showDetail(id) {
   const i = byId.get(id);
   if (!i) return;
@@ -953,6 +994,13 @@ async function showDetail(id) {
     meta = await api(`/api/registry/item?id=${encodeURIComponent(id)}`);
   } catch {
     $('#detail-body').innerHTML = '<p>Impossible de lire cet item.</p>';
+    return;
+  }
+  if (i.type === 'template') {
+    $('#detail-body').innerHTML = templateDetail(i, meta);
+    $('#copy-scaffold')?.addEventListener('click', async () =>
+      toast((await copyText(`npm run scaffold -- ${i.id} --out ../mon-projet`)) ? 'Commande copiée.' : 'Copie impossible.'),
+    );
     return;
   }
   const deps = meta.dependencies.length ? `<code>npm install ${esc(meta.dependencies.join(' '))}</code>` : 'Aucun';
@@ -1102,7 +1150,7 @@ async function loadRegistry() {
   }
   // Galerie : ce qui est interactif, plus thèmes, polices, mouvement et sons. Le reste du registre reste accessible au MCP.
   const shown = all
-    .filter((i) => STYLE_TYPES.has(i.type) || (i.interactive && i.type !== 'lib'))
+    .filter((i) => STYLE_TYPES.has(i.type) || i.type === 'template' || (i.interactive && i.type !== 'lib'))
     .sort((a, b) => RANK[a.type] - RANK[b.type] || a.name.localeCompare(b.name, 'fr'));
   items = Object.keys(RANK).flatMap((t) =>
     interleave(

@@ -1,0 +1,1150 @@
+{
+  "id": "shadcn-admin/template",
+  "name": "Shadcn Admin",
+  "type": "template",
+  "category": "Administration",
+  "tags": [
+    "administration",
+    "template"
+  ],
+  "description": "Back-office complet : tableau de bord, tâches, utilisateurs, messagerie, applications, réglages, pages d’authentification et d’erreur, recherche globale, thèmes clair et sombre.",
+  "framework": "react",
+  "dependencies": [
+    "@clerk/react@^6.4.3",
+    "@hookform/resolvers@^5.2.2",
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-checkbox@^1.3.3",
+    "@radix-ui/react-collapsible@^1.1.12",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-icons@^1.3.2",
+    "@radix-ui/react-label@^2.1.8",
+    "@radix-ui/react-popover@^1.1.15",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-select@^2.2.6",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-switch@^1.2.6",
+    "@radix-ui/react-tabs@^1.1.13",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tailwindcss/vite@^4.2.2",
+    "@tanstack/react-query@^5.99.0",
+    "@tanstack/react-router@^1.168.22",
+    "@tanstack/react-table@^8.21.3",
+    "axios@^1.15.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "date-fns@^4.1.0",
+    "input-otp@^1.4.2",
+    "lucide-react@^1.8.0",
+    "react-day-picker@9.14.0",
+    "react-dom@^19.2.5",
+    "react-hook-form@^7.72.1",
+    "react-top-loading-bar@^3.0.2",
+    "react@^19.2.5",
+    "recharts@^3.8.1",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.3.6",
+    "zustand@^5.0.12"
+  ],
+  "registryDependencies": [],
+  "source": "Shadcn Admin",
+  "sourceId": "shadcn-admin",
+  "sourceUrl": "https://github.com/satnaing/shadcn-admin/tree/e16c87f213a5ba5e45964e9b67c792105ec74d26",
+  "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 Sat Naing",
+  "files": [
+    {
+      "path": ".env.example",
+      "role": "source"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": ".prettierignore",
+      "role": "source"
+    },
+    {
+      "path": ".prettierrc",
+      "role": "source"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "role": "doc"
+    },
+    {
+      "path": "README.md",
+      "role": "doc"
+    },
+    {
+      "path": "components.json",
+      "role": "source"
+    },
+    {
+      "path": "cz.yaml",
+      "role": "source"
+    },
+    {
+      "path": "eslint.config.js",
+      "role": "source"
+    },
+    {
+      "path": "index.html",
+      "role": "source"
+    },
+    {
+      "path": "knip.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "netlify.toml",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "public/images/favicon.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/images/favicon.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/images/favicon_light.png",
+      "role": "asset"
+    },
+    {
+      "path": "public/images/favicon_light.svg",
+      "role": "source"
+    },
+    {
+      "path": "public/images/shadcn-admin.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-discord.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-docker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-facebook.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-figma.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-github.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-gitlab.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-gmail.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-medium.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-notion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-skype.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-slack.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-stripe.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-telegram.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-trello.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-whatsapp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/icon-zoom.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/brand-icons/index.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/clerk-full-logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/clerk-logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-dir.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-layout-compact.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-layout-default.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-layout-full.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-sidebar-floating.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-sidebar-inset.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-sidebar-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-theme-dark.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-theme-light.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/custom/icon-theme-system.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/coming-soon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/command-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/config-drawer.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/config-drawer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/confirm-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/confirm-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/bulk-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/column-header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/faceted-filter.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/index.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/pagination.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/toolbar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/data-table/view-options.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/date-picker.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/app-sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/app-title.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/authenticated-layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/data/sidebar-data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/nav-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/nav-user.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/team-switcher.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/top-nav.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/layout/types.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/learn-more.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/long-text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/navigation-progress.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/password-input.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/password-input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/profile-dropdown.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/search.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/select-dropdown.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/sign-out-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/sign-out-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/skip-to-main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/theme-switch.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/alert-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/alert.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/avatar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/calendar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/checkbox.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/collapsible.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/command.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/dropdown-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/input-otp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/input.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/label.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/popover.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/radio-group.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/scroll-area.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/select.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sheet.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sidebar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/skeleton.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/sonner.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/switch.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/tabs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/textarea.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/config/fonts.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/context/direction-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/context/font-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/context/layout-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/context/search-provider.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/context/search-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/context/theme-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/apps/data/apps.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/apps/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/auth-layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/forgot-password/components/forgot-password-form.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/forgot-password/components/forgot-password-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/forgot-password/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/otp/components/otp-form.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/otp/components/otp-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/otp/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-in/assets/dashboard-dark.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/features/auth/sign-in/assets/dashboard-light.png",
+      "role": "asset"
+    },
+    {
+      "path": "src/features/auth/sign-in/components/user-auth-form.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-in/components/user-auth-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-in/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-in/sign-in-2.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-up/components/sign-up-form.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-up/components/sign-up-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/auth/sign-up/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/chats/components/new-chat.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/chats/data/chat-types.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/chats/data/convo.json",
+      "role": "source"
+    },
+    {
+      "path": "src/features/chats/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/dashboard/components/analytics-chart.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/dashboard/components/analytics.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/dashboard/components/overview.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/dashboard/components/recent-sales.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/dashboard/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/errors/forbidden.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/errors/general-error.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/errors/maintenance-error.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/errors/not-found-error.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/errors/unauthorized-error.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/account/account-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/account/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/appearance/appearance-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/appearance/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/components/content-section.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/components/sidebar-nav.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/display/display-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/display/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/notifications/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/notifications/notifications-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/profile/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/settings/profile/profile-form.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/data-table-bulk-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/data-table-row-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-dialogs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-import-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-import-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-multi-delete-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-multi-delete-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-mutate-drawer.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-mutate-drawer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-primary-buttons.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/components/tasks-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/data/data.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/data/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/data/tasks.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/tasks/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/data-table-bulk-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/data-table-row-actions.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-action-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-action-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-columns.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-delete-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-delete-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-dialogs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-invite-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-invite-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-multi-delete-dialog.test.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-multi-delete-dialog.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-primary-buttons.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/components/users-table.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/data/data.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/data/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/data/users.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/users/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-dialog-state.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-mobile.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-table-url-state.test.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/hooks/use-table-url-state.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/cookies.test.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/cookies.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/handle-server-error.test.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/handle-server-error.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/show-submitted-data.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/utils.test.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routeTree.gen.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(auth)/forgot-password.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(auth)/otp.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(auth)/sign-in-2.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(auth)/sign-in.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(auth)/sign-up.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(errors)/401.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(errors)/403.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(errors)/404.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(errors)/500.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/(errors)/503.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/__root.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/apps/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/chats/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/errors/$error.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/help-center/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/route.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/account.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/appearance.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/display.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/notifications.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/settings/route.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/tasks/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/_authenticated/users/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/(auth)/route.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/(auth)/sign-in.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/(auth)/sign-up.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/_authenticated/route.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/_authenticated/user-management.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/routes/clerk/route.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/stores/auth-store.test.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/stores/auth-store.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/styles/index.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/theme.css",
+      "role": "style"
+    },
+    {
+      "path": "src/tanstack-table.d.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/test-utils/cookies.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/test-utils/tanstack-table.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.app.json",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.node.json",
+      "role": "source"
+    },
+    {
+      "path": "vite.config.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "Application d’administration",
+    "stack": "Vite, React, TanStack Router, shadcn/ui",
+    "demo": "https://shadcn-admin.netlify.app",
+    "pages": [
+      {
+        "path": "/",
+        "title": "Tableau de bord"
+      },
+      {
+        "path": "/tasks",
+        "title": "Tâches"
+      },
+      {
+        "path": "/users",
+        "title": "Utilisateurs"
+      },
+      {
+        "path": "/chats",
+        "title": "Messagerie"
+      },
+      {
+        "path": "/apps",
+        "title": "Applications"
+      },
+      {
+        "path": "/settings",
+        "title": "Réglages"
+      },
+      {
+        "path": "/sign-in",
+        "title": "Connexion"
+      }
+    ],
+    "install": "pnpm install",
+    "dev": "pnpm run dev",
+    "env": [
+      "VITE_CLERK_PUBLISHABLE_KEY"
+    ],
+    "skipped": []
+  },
+  "contentHash": "49a4320262242a1d",
+  "importedAt": "2026-11-10T15:07:00.179Z"
+}

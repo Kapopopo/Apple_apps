@@ -76,6 +76,7 @@ test('outils et prompt exposés ; seul create_spec écrit', async () => {
     'get_component',
     'get_spec',
     'get_spec_bundle',
+    'get_template',
     'get_theme',
     'list_specs',
     'search_registry',
@@ -202,4 +203,20 @@ test('prompt build-from-spec : light par défaut, full avec le code', async () =
     argument: { name: 'name', value: 'zz-test' },
   });
   assert.ok(completion.completion.values.includes(SPEC));
+});
+
+test('get_template : vue d’ensemble, commandes, fichiers à la demande ; get_component ne déverse pas le template', async () => {
+  const md = await textOf('get_template', { id: 'saas-starter' });
+  assert.match(md, /Démarrer un projet : `npm --prefix ".+" run scaffold -- saas-starter\/template --out/);
+  assert.match(md, /POSTGRES_URL/);
+  assert.match(md, /## Arborescence \(\d+ fichiers\)/);
+  assert.match(md, /### `package.json`/);
+  const one = await textOf('get_template', { id: 'saas-starter/template', files: ['app/layout.tsx'] });
+  assert.match(one, /### `app\/layout.tsx`/);
+  assert.ok(!one.includes('### `package.json`'));
+  assert.equal((await call('get_template', { id: 'shadcn/button' })).isError, true);
+  const component = await textOf('get_component', { id: 'saas-starter/template' });
+  assert.match(component, /## Arborescence/);
+  const templates = JSON.parse(await textOf('search_registry', { type: 'template' }));
+  assert.ok(templates.length >= 6);
 });

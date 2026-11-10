@@ -1,0 +1,14 @@
+[
+ {
+  "file": "01-desktop.jpg",
+  "path": "/",
+  "title": "Accueil",
+  "viewport": "desktop"
+ },
+ {
+  "file": "00-mobile.jpg",
+  "path": "/",
+  "title": "Accueil (mobile)",
+  "viewport": "mobile"
+ }
+]

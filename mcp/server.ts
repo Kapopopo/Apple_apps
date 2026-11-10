@@ -2,7 +2,15 @@ import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { completable } from '@modelcontextprotocol/sdk/server/completable.js';
 import * as z from 'zod';
 import { ITEM_TYPES, FRAMEWORKS, SPEC_NAME } from '../shared/schema.js';
-import { buildFromSpecPrompt, componentMarkdown, specBundleMarkdown, specSummary, themeMarkdown, type PromptMode } from './format.js';
+import {
+  buildFromSpecPrompt,
+  componentMarkdown,
+  specBundleMarkdown,
+  specSummary,
+  templateMarkdown,
+  themeMarkdown,
+  type PromptMode,
+} from './format.js';
 import { enrichmentFor, getItem, getSpec, index, listSpecs, saveSpec, searchRegistry, specHistory } from './store.js';
 
 const READ_ONLY = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false } as const;
@@ -58,6 +66,7 @@ export function createServer() {
           preset,
           file,
           theme: spec.theme,
+          template: spec.template,
           blocks: spec.blocks.length,
           pages: [...new Set(spec.blocks.map((b) => b.page).filter(Boolean))],
           updatedAt: spec.updatedAt ?? spec.createdAt ?? null,
@@ -136,6 +145,38 @@ export function createServer() {
         return fail(`Item introuvable : ${id}.${near.length ? ` Proches : ${near.join(', ')}` : ''}`);
       }
       return text(md);
+    },
+  );
+
+  server.registerTool(
+    'get_template',
+    {
+      title: 'Template complet',
+      description:
+        'Décrire un template complet du registre (site ou application : SaaS, vitrine, administration, tableaux de bord, blog, portfolio) : type de site, stack, pages, commandes, variables d’environnement, licence et arborescence ; avec `files`, renvoyer le contenu de fichiers précis. Pour copier tout le template dans un projet : la commande scaffold indiquée.',
+      inputSchema: z
+        .object({
+          id: z.string().min(1).describe('ex. saas-starter/template ou saas-starter'),
+          files: z
+            .array(z.string().min(1))
+            .max(40)
+            .optional()
+            .describe('Chemins (tels que listés dans l’arborescence) dont renvoyer le contenu'),
+        })
+        .strict(),
+      annotations: READ_ONLY,
+    },
+    async ({ id, files }) => {
+      const md = templateMarkdown(id, files ?? []);
+      if (md) return text(md);
+      return fail(
+        `Template introuvable : ${id}. Templates : ${
+          index()
+            .filter((e) => e.type === 'template')
+            .map((e) => e.id)
+            .join(', ') || 'aucun'
+        }`,
+      );
     },
   );
 
@@ -222,6 +263,7 @@ export function createServer() {
           stack: z.string().max(300).optional(),
           style: z.string().max(1000).optional().describe('Direction visuelle'),
           theme: ITEM_ID.nullable().optional(),
+          template: ITEM_ID.nullable().optional().describe('Template complet servant de base (type template)'),
           fonts: z.array(ITEM_ID).max(20).optional(),
           easings: z.array(ITEM_ID).max(20).optional(),
           sounds: z.array(ITEM_ID).max(40).optional(),
