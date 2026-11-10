@@ -2,7 +2,7 @@
   "id": "reui/c-filters-10",
   "name": "Nested groups in a popover",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "filters",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-10.tsx"
   },
-  "contentHash": "f956c4e035098d14",
-  "importedAt": "2026-11-10T13:14:56.513Z"
+  "contentHash": "ad3f824768348183",
+  "importedAt": "2026-11-10T13:14:56.513Z",
+  "updatedAt": "2026-11-10T13:48:14.388Z"
 }

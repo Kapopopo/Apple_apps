@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-325",
-  "name": "Full name",
+  "name": "Dialog 325",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "authentication",
     "dialog",
@@ -40,7 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-325.tsx"
   },
-  "contentHash": "84cad2cb99f0354c",
+  "contentHash": "7c3c28cdf3216922",
   "importedAt": "2026-11-05T17:59:41.548Z",
-  "updatedAt": "2026-11-10T13:12:56.165Z"
+  "updatedAt": "2026-11-10T13:48:16.728Z"
 }

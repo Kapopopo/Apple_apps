@@ -2,7 +2,7 @@
   "id": "reui/c-spinner-6",
   "name": "Button loading states",
   "type": "component",
-  "category": "Boutons",
+  "category": "Chargement",
   "tags": [
     "exemple",
     "pending buttons",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-6.tsx"
   },
-  "contentHash": "cb08443cc3cc9c3f",
-  "importedAt": "2026-11-10T13:15:01.910Z"
+  "contentHash": "f3f7b82a631df316",
+  "importedAt": "2026-11-10T13:15:01.910Z",
+  "updatedAt": "2026-11-10T13:48:14.907Z"
 }

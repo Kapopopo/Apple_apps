@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-21",
   "name": "Data grid with loading skeleton",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-21.tsx"
   },
-  "contentHash": "ca19a6a1cd10b09f",
-  "importedAt": "2026-11-10T13:14:54.728Z"
+  "contentHash": "3801e131bee12eb7",
+  "importedAt": "2026-11-10T13:14:54.728Z",
+  "updatedAt": "2026-11-10T13:48:14.126Z"
 }

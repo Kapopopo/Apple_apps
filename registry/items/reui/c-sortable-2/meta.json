@@ -2,7 +2,7 @@
   "id": "reui/c-sortable-2",
   "name": "Sortable list of items with grid layout",
   "type": "component",
-  "category": "Fonds",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "grid layout",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-2.tsx"
   },
-  "contentHash": "e57f542f563d77ca",
-  "importedAt": "2026-11-10T13:15:01.756Z"
+  "contentHash": "9233671bcc79cd10",
+  "importedAt": "2026-11-10T13:15:01.756Z",
+  "updatedAt": "2026-11-10T13:48:14.870Z"
 }

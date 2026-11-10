@@ -2,7 +2,7 @@
   "id": "reui/c-sortable-7",
   "name": "Sortable image gallery grid with frame",
   "type": "component",
-  "category": "Fonds",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "image gallery",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-7.tsx"
   },
-  "contentHash": "db5676ace5554c57",
-  "importedAt": "2026-11-10T13:15:01.824Z"
+  "contentHash": "2f97de06f1efb272",
+  "importedAt": "2026-11-10T13:15:01.824Z",
+  "updatedAt": "2026-11-10T13:48:14.887Z"
 }

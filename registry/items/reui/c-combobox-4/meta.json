@@ -2,7 +2,7 @@
   "id": "reui/c-combobox-4",
   "name": "A combobox with a clear button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "clear button",
     "combobox",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/combobox/c-combobox-4.tsx"
   },
-  "contentHash": "ebad563676c163e9",
-  "importedAt": "2026-11-10T13:14:53.995Z"
+  "contentHash": "01fb9336eb48035c",
+  "importedAt": "2026-11-10T13:14:53.995Z",
+  "updatedAt": "2026-11-10T13:48:14.021Z"
 }

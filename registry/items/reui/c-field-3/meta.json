@@ -2,7 +2,7 @@
   "id": "reui/c-field-3",
   "name": "Field with select control",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/field/c-field-3.tsx"
   },
-  "contentHash": "670008e5bd9ca796",
-  "importedAt": "2026-11-10T13:14:55.927Z"
+  "contentHash": "4fad4275ddfe95ac",
+  "importedAt": "2026-11-10T13:14:55.927Z",
+  "updatedAt": "2026-11-10T13:48:14.268Z"
 }

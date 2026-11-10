@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-28",
   "name": "Input group with a menu button (three dots) at the end",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "3d",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-28.tsx"
   },
-  "contentHash": "a7be62881c253e17",
-  "importedAt": "2026-11-10T13:14:57.916Z"
+  "contentHash": "18f0bc9ba366fef4",
+  "importedAt": "2026-11-10T13:14:57.916Z",
+  "updatedAt": "2026-11-10T13:48:14.523Z"
 }

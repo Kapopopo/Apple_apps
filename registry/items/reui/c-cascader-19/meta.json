@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-19",
   "name": "Status and priority colour dots via renderLabel.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "color dots",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-19.tsx"
   },
-  "contentHash": "4d53f46c6a744f70",
-  "importedAt": "2026-11-10T13:14:52.852Z"
+  "contentHash": "199783bdee96ac6a",
+  "importedAt": "2026-11-10T13:14:52.852Z",
+  "updatedAt": "2026-11-10T13:48:13.919Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-skeleton-4",
   "name": "Skeleton loader for a form.",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Chargement",
   "tags": [
     "exemple",
     "form",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-4.tsx"
   },
-  "contentHash": "863a3d271391ce90",
-  "importedAt": "2026-11-10T13:15:01.229Z"
+  "contentHash": "11dca82b6074c6a3",
+  "importedAt": "2026-11-10T13:15:01.229Z",
+  "updatedAt": "2026-11-10T13:48:14.819Z"
 }

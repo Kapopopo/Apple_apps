@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-334",
-  "name": "W/ chevron",
+  "name": "Accordion 334",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -33,7 +33,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-334.tsx"
   },
-  "contentHash": "07f1cd6283f64981",
+  "contentHash": "62a28804135bd32f",
   "importedAt": "2026-11-05T17:59:41.593Z",
-  "updatedAt": "2026-11-10T13:12:56.228Z"
+  "updatedAt": "2026-11-10T13:48:16.759Z"
 }

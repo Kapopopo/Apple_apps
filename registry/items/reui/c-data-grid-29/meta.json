@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-29",
   "name": "Data grid with row pinning support",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -42,7 +42,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-29.tsx"
   },
-  "contentHash": "ceb217e78c25ed5f",
+  "contentHash": "2ef28a4a598ca958",
   "importedAt": "2026-11-10T13:14:54.858Z",
-  "updatedAt": "2026-11-10T13:25:20.861Z"
+  "updatedAt": "2026-11-10T13:48:14.157Z"
 }

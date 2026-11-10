@@ -2,7 +2,7 @@
   "id": "reui/c-hover-card-6",
   "name": "Hover card inside a dialog.",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Cartes",
   "tags": [
     "exemple",
     "hover-card",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/hover-card/c-hover-card-6.tsx"
   },
-  "contentHash": "ce3e5b1c02ff3a35",
-  "importedAt": "2026-11-10T13:14:56.939Z"
+  "contentHash": "6c244e34f566e2b8",
+  "importedAt": "2026-11-10T13:14:56.939Z",
+  "updatedAt": "2026-11-10T13:48:14.436Z"
 }

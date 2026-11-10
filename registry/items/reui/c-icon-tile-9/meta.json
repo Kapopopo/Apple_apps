@@ -2,7 +2,7 @@
   "id": "reui/c-icon-tile-9",
   "name": "Text content",
   "type": "component",
-  "category": "Texte",
+  "category": "Illustrations",
   "tags": [
     "exemple",
     "icon-tile",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/icon-tile/c-icon-tile-9.tsx"
   },
-  "contentHash": "d188a4fcce1484b5",
-  "importedAt": "2026-11-10T13:14:57.119Z"
+  "contentHash": "32bee47b9251e179",
+  "importedAt": "2026-11-10T13:14:57.119Z",
+  "updatedAt": "2026-11-10T13:48:14.448Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-5",
   "name": "Custom rows with avatars and role badges.",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "Formulaires",
   "tags": [
     "avatar rows",
     "cascader",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-5.tsx"
   },
-  "contentHash": "f100b89041d58ec3",
-  "importedAt": "2026-11-10T13:14:52.596Z"
+  "contentHash": "6f8138afa6d6b7d3",
+  "importedAt": "2026-11-10T13:14:52.596Z",
+  "updatedAt": "2026-11-10T13:48:13.879Z"
 }

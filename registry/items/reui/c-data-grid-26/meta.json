@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-26",
   "name": "Data grid with per-column aggregate footer",
   "type": "section",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "aggregate footer",
     "data-grid",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-26.tsx"
   },
-  "contentHash": "1ccf977b5abbf72e",
-  "importedAt": "2026-11-10T13:14:54.808Z"
+  "contentHash": "db91f40137870fbc",
+  "importedAt": "2026-11-10T13:14:54.808Z",
+  "updatedAt": "2026-11-10T13:48:14.145Z"
 }

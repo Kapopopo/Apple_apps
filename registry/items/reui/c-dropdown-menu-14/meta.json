@@ -2,7 +2,7 @@
   "id": "reui/c-dropdown-menu-14",
   "name": "User profile dropdown menu with theme toggle and status selector",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "dropdown-menu",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-14.tsx"
   },
-  "contentHash": "590267dd6d4a2291",
-  "importedAt": "2026-11-10T13:14:55.387Z"
+  "contentHash": "bdfc1e587ac12c21",
+  "importedAt": "2026-11-10T13:14:55.387Z",
+  "updatedAt": "2026-11-10T13:48:14.222Z"
 }

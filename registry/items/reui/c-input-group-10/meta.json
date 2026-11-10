@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-10",
   "name": "Input group with action button addon",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "action button",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-10.tsx"
   },
-  "contentHash": "4f51d060d81fc97c",
-  "importedAt": "2026-11-10T13:14:57.704Z"
+  "contentHash": "5da53a9695d85118",
+  "importedAt": "2026-11-10T13:14:57.704Z",
+  "updatedAt": "2026-11-10T13:48:14.495Z"
 }

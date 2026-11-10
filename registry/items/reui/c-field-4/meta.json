@@ -2,7 +2,7 @@
   "id": "reui/c-field-4",
   "name": "Field with radio groups and checkboxes",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-4.tsx"
   },
-  "contentHash": "af24e72a5aff9ec9",
-  "importedAt": "2026-11-10T13:14:55.938Z"
+  "contentHash": "d2ec8ac82f880329",
+  "importedAt": "2026-11-10T13:14:55.938Z",
+  "updatedAt": "2026-11-10T13:48:14.275Z"
 }

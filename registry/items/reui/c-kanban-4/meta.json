@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-4",
   "name": "Minimal kanban with stacked frame",
   "type": "component",
-  "category": "Indicateurs",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "kanban",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-4.tsx"
   },
-  "contentHash": "fb5cac3c9ade6cdd",
-  "importedAt": "2026-11-10T13:14:58.330Z"
+  "contentHash": "af3203692b77d56d",
+  "importedAt": "2026-11-10T13:14:58.330Z",
+  "updatedAt": "2026-11-10T13:48:14.567Z"
 }

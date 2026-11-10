@@ -2,7 +2,7 @@
   "id": "reui/c-toggle-3",
   "name": "Toggle buttons in different sizes.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "text sizes",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-3.tsx"
   },
-  "contentHash": "0f43cd327cec2ff8",
-  "importedAt": "2026-11-10T13:15:03.549Z"
+  "contentHash": "aa18c7f2b22ce388",
+  "importedAt": "2026-11-10T13:15:03.549Z",
+  "updatedAt": "2026-11-10T13:48:14.995Z"
 }

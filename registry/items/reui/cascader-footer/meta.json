@@ -2,7 +2,7 @@
   "id": "reui/cascader-footer",
   "name": "Cascader Footer",
   "type": "section",
-  "category": "Autres composants",
+  "category": "Formulaires",
   "tags": [
     "web"
   ],
@@ -38,7 +38,7 @@
     "kind": "live",
     "entry": "components/reui/cascader/cascader-footer.tsx"
   },
-  "contentHash": "c2209730084316e4",
+  "contentHash": "0b564d253f1e336b",
   "importedAt": "2026-11-05T17:59:38.046Z",
-  "updatedAt": "2026-11-05T18:07:49.669Z"
+  "updatedAt": "2026-11-10T13:48:13.422Z"
 }

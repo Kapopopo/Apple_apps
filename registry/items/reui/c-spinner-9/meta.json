@@ -2,7 +2,7 @@
   "id": "reui/c-spinner-9",
   "name": "Inline loading text with spinner",
   "type": "component",
-  "category": "Texte",
+  "category": "Chargement",
   "tags": [
     "exemple",
     "inline text",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-9.tsx"
   },
-  "contentHash": "52449796a7781a35",
-  "importedAt": "2026-11-10T13:15:01.945Z"
+  "contentHash": "fac62fe65ab93ac1",
+  "importedAt": "2026-11-10T13:15:01.945Z",
+  "updatedAt": "2026-11-10T13:48:14.914Z"
 }

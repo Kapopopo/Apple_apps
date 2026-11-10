@@ -2,7 +2,7 @@
   "id": "reui/c-questionnaire-4",
   "name": "Segmented progress with step labels",
   "type": "component",
-  "category": "Indicateurs",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "questionnaire",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/questionnaire/c-questionnaire-4.tsx"
   },
-  "contentHash": "0b5c7e5da6b5738a",
-  "importedAt": "2026-11-10T13:14:59.770Z"
+  "contentHash": "d68d7eb48a74cc5d",
+  "importedAt": "2026-11-10T13:14:59.770Z",
+  "updatedAt": "2026-11-10T13:48:14.712Z"
 }

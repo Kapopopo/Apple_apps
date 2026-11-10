@@ -2,7 +2,7 @@
   "id": "reui/c-popover-3",
   "name": "Popover with form.",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "exemple",
     "inline form",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/popover/c-popover-3.tsx"
   },
-  "contentHash": "f1fb09fb2666253b",
-  "importedAt": "2026-11-10T13:14:59.351Z"
+  "contentHash": "0984b2434b884005",
+  "importedAt": "2026-11-10T13:14:59.351Z",
+  "updatedAt": "2026-11-10T13:48:14.682Z"
 }

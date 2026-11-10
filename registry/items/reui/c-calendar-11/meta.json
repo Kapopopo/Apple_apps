@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-11",
   "name": "Current month button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "current month button",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-11.tsx"
   },
-  "contentHash": "07d4ebffe46e07a5",
-  "importedAt": "2026-11-10T13:13:07.852Z"
+  "contentHash": "84d87425eff146db",
+  "importedAt": "2026-11-10T13:13:07.852Z",
+  "updatedAt": "2026-11-10T13:48:13.774Z"
 }

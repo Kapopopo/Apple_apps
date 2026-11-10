@@ -2,7 +2,7 @@
   "id": "reui/c-field-7",
   "name": "Settings form with validation",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/field/c-field-7.tsx"
   },
-  "contentHash": "34003feced903584",
-  "importedAt": "2026-11-10T13:14:55.972Z"
+  "contentHash": "090f62e8988d6b30",
+  "importedAt": "2026-11-10T13:14:55.972Z",
+  "updatedAt": "2026-11-10T13:48:14.289Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-collapsible-2",
   "name": "Collapsible with checkbox settings",
   "type": "component",
-  "category": "Formulaires",
+  "category": "FAQ",
   "tags": [
     "checkbox settings",
     "collapsible",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/collapsible/c-collapsible-2.tsx"
   },
-  "contentHash": "ba12ea7a8de6ec36",
-  "importedAt": "2026-11-10T13:14:53.710Z"
+  "contentHash": "34ee397ab1b0f68d",
+  "importedAt": "2026-11-10T13:14:53.710Z",
+  "updatedAt": "2026-11-10T13:48:14.003Z"
 }

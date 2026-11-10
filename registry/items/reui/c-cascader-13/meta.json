@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-13",
   "name": "Columns mode with independently scrolling panels.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "columns mode",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-13.tsx"
   },
-  "contentHash": "fb2e1cc0464552bf",
-  "importedAt": "2026-11-10T13:14:52.753Z"
+  "contentHash": "f1e6ee32f9cab5a3",
+  "importedAt": "2026-11-10T13:14:52.753Z",
+  "updatedAt": "2026-11-10T13:48:13.905Z"
 }

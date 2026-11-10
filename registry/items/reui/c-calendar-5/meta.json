@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-5",
   "name": "Custom select day style",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "circular days",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-5.tsx"
   },
-  "contentHash": "ee9938107ed37c3e",
-  "importedAt": "2026-11-10T13:13:07.770Z"
+  "contentHash": "f86dbf49c9468f53",
+  "importedAt": "2026-11-10T13:13:07.770Z",
+  "updatedAt": "2026-11-10T13:48:13.751Z"
 }

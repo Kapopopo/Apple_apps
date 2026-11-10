@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-11",
   "name": "Data grid with sortable columns",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-11.tsx"
   },
-  "contentHash": "88f86075583a13b6",
-  "importedAt": "2026-11-10T13:14:54.589Z"
+  "contentHash": "d72e5d12f65ac9f4",
+  "importedAt": "2026-11-10T13:14:54.589Z",
+  "updatedAt": "2026-11-10T13:48:14.091Z"
 }

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T13:26:23.569Z",
+ "generatedAt": "2026-11-10T13:48:23.988Z",
  "count": 3609,
  "sources": {
   "atlas": {
@@ -5448,7 +5448,7 @@
    "id": "cult-ui/kanban-board",
    "name": "Kanban Board",
    "type": "component",
-   "category": "Cartes",
+   "category": "Listes et tâches",
    "tags": [
     "animé",
     "drag",
@@ -5474,8 +5474,9 @@
     "entry": "registry/default/example/kanban-board-demo.tsx",
     "demo": "source"
    },
-   "contentHash": "6bc757608322b475",
+   "contentHash": "9b1c8aa42e0972f5",
    "importedAt": "2026-11-05T17:59:32.942Z",
+   "updatedAt": "2026-11-10T13:48:10.567Z",
    "dir": "items/cult-ui/kanban-board",
    "fileCount": 2,
    "group": "kanban board"
@@ -31736,7 +31737,7 @@
   },
   {
    "id": "origin-ui/comp-128",
-   "name": "Talent Agency",
+   "name": "Button 128",
    "type": "component",
    "category": "Boutons",
    "tags": [
@@ -31763,12 +31764,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-128.tsx"
    },
-   "contentHash": "605b7c0dc78ab51c",
+   "contentHash": "6a5f386efcc20830",
    "importedAt": "2026-11-05T17:59:40.597Z",
-   "updatedAt": "2026-11-10T13:12:55.082Z",
+   "updatedAt": "2026-11-10T13:48:16.628Z",
    "dir": "items/origin-ui/comp-128",
    "fileCount": 1,
-   "group": "talent agency"
+   "group": "button"
   },
   {
    "id": "origin-ui/comp-129",
@@ -39702,7 +39703,7 @@
   },
   {
    "id": "origin-ui/comp-320",
-   "name": "Project name",
+   "name": "Dialog 320",
    "type": "component",
    "category": "Fenêtres et panneaux",
    "tags": [
@@ -39735,12 +39736,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-320.tsx"
    },
-   "contentHash": "9fb193bc00b6c75d",
+   "contentHash": "4fc2eff17e9f3ce6",
    "importedAt": "2026-11-05T17:59:41.532Z",
-   "updatedAt": "2026-11-10T13:12:56.148Z",
+   "updatedAt": "2026-11-10T13:48:16.695Z",
    "dir": "items/origin-ui/comp-320",
    "fileCount": 1,
-   "group": "project name"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-321",
@@ -39825,9 +39826,9 @@
   },
   {
    "id": "origin-ui/comp-323",
-   "name": "Why did you give this rating?",
+   "name": "Dialog 323",
    "type": "component",
-   "category": "Listes et tâches",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "dialog",
     "feedback",
@@ -39859,12 +39860,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-323.tsx"
    },
-   "contentHash": "6d5dbc6b7fb69427",
+   "contentHash": "c64a110879abda39",
    "importedAt": "2026-11-05T17:59:41.541Z",
-   "updatedAt": "2026-11-10T13:12:56.156Z",
+   "updatedAt": "2026-11-10T13:48:16.724Z",
    "dir": "items/origin-ui/comp-323",
    "fileCount": 1,
-   "group": "why did you give this rating"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-324",
@@ -39908,9 +39909,9 @@
   },
   {
    "id": "origin-ui/comp-325",
-   "name": "Full name",
+   "name": "Dialog 325",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "authentication",
     "dialog",
@@ -39941,16 +39942,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-325.tsx"
    },
-   "contentHash": "84cad2cb99f0354c",
+   "contentHash": "7c3c28cdf3216922",
    "importedAt": "2026-11-05T17:59:41.548Z",
-   "updatedAt": "2026-11-10T13:12:56.165Z",
+   "updatedAt": "2026-11-10T13:48:16.728Z",
    "dir": "items/origin-ui/comp-325",
    "fileCount": 1,
-   "group": "full name"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-326",
-   "name": "Email (dialog)",
+   "name": "Dialog 326",
    "type": "component",
    "category": "Fenêtres et panneaux",
    "tags": [
@@ -39984,18 +39985,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-326.tsx"
    },
-   "contentHash": "51b5b355a247c2b6",
+   "contentHash": "8c0fe6f21f39e625",
    "importedAt": "2026-11-05T17:59:41.554Z",
-   "updatedAt": "2026-11-10T13:12:56.173Z",
+   "updatedAt": "2026-11-10T13:48:16.733Z",
    "dir": "items/origin-ui/comp-326",
    "fileCount": 1,
-   "group": "email dialog"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-327",
-   "name": "Invite via email",
+   "name": "Dialog 327",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "dialog",
     "form",
@@ -40030,18 +40031,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-327.tsx"
    },
-   "contentHash": "2c2337d662158a83",
+   "contentHash": "e58bd2bdc7301a7f",
    "importedAt": "2026-11-05T17:59:41.558Z",
-   "updatedAt": "2026-11-10T13:12:56.181Z",
+   "updatedAt": "2026-11-10T13:48:16.737Z",
    "dir": "items/origin-ui/comp-327",
    "fileCount": 1,
-   "group": "invite via email"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-328",
-   "name": "Name on card",
+   "name": "Dialog 328",
    "type": "component",
-   "category": "Cartes",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "checkout",
     "credit card",
@@ -40077,18 +40078,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-328.tsx"
    },
-   "contentHash": "5670fd498b70de70",
+   "contentHash": "bdf0e54ca830ea95",
    "importedAt": "2026-11-05T17:59:41.561Z",
-   "updatedAt": "2026-11-10T13:12:56.189Z",
+   "updatedAt": "2026-11-10T13:48:16.742Z",
    "dir": "items/origin-ui/comp-328",
    "fileCount": 1,
-   "group": "name on card"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-329",
-   "name": "Name on card",
+   "name": "Dialog 329",
    "type": "component",
-   "category": "Cartes",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "checkout",
     "credit card",
@@ -40125,12 +40126,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-329.tsx"
    },
-   "contentHash": "9fc35c59722b8ed1",
+   "contentHash": "244db0fdf75012a8",
    "importedAt": "2026-11-05T17:59:41.564Z",
-   "updatedAt": "2026-11-10T13:12:56.196Z",
+   "updatedAt": "2026-11-10T13:48:16.746Z",
    "dir": "items/origin-ui/comp-329",
    "fileCount": 1,
-   "group": "name on card"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-33",
@@ -40166,7 +40167,7 @@
   },
   {
    "id": "origin-ui/comp-330",
-   "name": "Essential (dialog)",
+   "name": "Dialog 330",
    "type": "component",
    "category": "Fenêtres et panneaux",
    "tags": [
@@ -40199,18 +40200,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-330.tsx"
    },
-   "contentHash": "05a132e8e6d67918",
+   "contentHash": "5cb497ce20f3e5a6",
    "importedAt": "2026-11-05T17:59:41.571Z",
-   "updatedAt": "2026-11-10T13:12:56.204Z",
+   "updatedAt": "2026-11-10T13:48:16.749Z",
    "dir": "items/origin-ui/comp-330",
    "fileCount": 1,
-   "group": "essential dialog"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-331",
-   "name": "First name",
+   "name": "Dialog 331",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "avatar",
     "dialog",
@@ -40248,12 +40249,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-331.tsx"
    },
-   "contentHash": "0440c5d6fac011f4",
+   "contentHash": "f19934de640159bb",
    "importedAt": "2026-11-05T17:59:41.574Z",
-   "updatedAt": "2026-11-10T13:12:56.214Z",
+   "updatedAt": "2026-11-10T13:48:16.752Z",
    "dir": "items/origin-ui/comp-331",
    "fileCount": 3,
-   "group": "first name"
+   "group": "dialog"
   },
   {
    "id": "origin-ui/comp-332",
@@ -40339,7 +40340,7 @@
   },
   {
    "id": "origin-ui/comp-334",
-   "name": "W/ chevron",
+   "name": "Accordion 334",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40365,16 +40366,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-334.tsx"
    },
-   "contentHash": "07f1cd6283f64981",
+   "contentHash": "62a28804135bd32f",
    "importedAt": "2026-11-05T17:59:41.593Z",
-   "updatedAt": "2026-11-10T13:12:56.228Z",
+   "updatedAt": "2026-11-10T13:48:16.759Z",
    "dir": "items/origin-ui/comp-334",
    "fileCount": 1,
-   "group": "w chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-335",
-   "name": "W/ plus-minus",
+   "name": "Accordion 335",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40403,16 +40404,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-335.tsx"
    },
-   "contentHash": "b25892d6de737c34",
+   "contentHash": "e106ba467536e798",
    "importedAt": "2026-11-05T17:59:41.595Z",
-   "updatedAt": "2026-11-10T13:12:56.236Z",
+   "updatedAt": "2026-11-10T13:48:16.762Z",
    "dir": "items/origin-ui/comp-335",
    "fileCount": 1,
-   "group": "w plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-336",
-   "name": "W/ left chevron",
+   "name": "Accordion 336",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40438,16 +40439,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-336.tsx"
    },
-   "contentHash": "233cc08e3d19fa5b",
+   "contentHash": "82d930beeafe1a5e",
    "importedAt": "2026-11-05T17:59:41.602Z",
-   "updatedAt": "2026-11-10T13:12:56.246Z",
+   "updatedAt": "2026-11-10T13:48:16.765Z",
    "dir": "items/origin-ui/comp-336",
    "fileCount": 1,
-   "group": "w left chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-337",
-   "name": "W/ left plus-minus",
+   "name": "Accordion 337",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40476,18 +40477,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-337.tsx"
    },
-   "contentHash": "b6aa8fa340d33200",
+   "contentHash": "3a465ae7310e8e89",
    "importedAt": "2026-11-05T17:59:41.606Z",
-   "updatedAt": "2026-11-10T13:12:56.254Z",
+   "updatedAt": "2026-11-10T13:48:16.769Z",
    "dir": "items/origin-ui/comp-337",
    "fileCount": 1,
-   "group": "w left plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-338",
-   "name": "W/ icon and chevron",
+   "name": "Accordion 338",
    "type": "component",
-   "category": "Illustrations",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40513,18 +40514,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-338.tsx"
    },
-   "contentHash": "b2c39f06206b6408",
+   "contentHash": "ff7daf86a62f35fd",
    "importedAt": "2026-11-05T17:59:41.610Z",
-   "updatedAt": "2026-11-10T13:12:56.262Z",
+   "updatedAt": "2026-11-10T13:48:16.773Z",
    "dir": "items/origin-ui/comp-338",
    "fileCount": 1,
-   "group": "w icon and chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-339",
-   "name": "W/ icon and plus-minus",
+   "name": "Accordion 339",
    "type": "component",
-   "category": "Illustrations",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40551,12 +40552,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-339.tsx"
    },
-   "contentHash": "5ce68763c064f235",
+   "contentHash": "5c1e5fa04e0cc28f",
    "importedAt": "2026-11-05T17:59:41.614Z",
-   "updatedAt": "2026-11-10T13:12:56.271Z",
+   "updatedAt": "2026-11-10T13:48:16.776Z",
    "dir": "items/origin-ui/comp-339",
    "fileCount": 1,
-   "group": "w icon and plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-34",
@@ -40597,7 +40598,7 @@
   },
   {
    "id": "origin-ui/comp-340",
-   "name": "W/ sub-header and chevron",
+   "name": "Accordion 340",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40626,16 +40627,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-340.tsx"
    },
-   "contentHash": "d57ee09b77f64624",
+   "contentHash": "f8bd2f4d9ff8712b",
    "importedAt": "2026-11-05T17:59:41.623Z",
-   "updatedAt": "2026-11-10T13:12:56.288Z",
+   "updatedAt": "2026-11-10T13:48:16.781Z",
    "dir": "items/origin-ui/comp-340",
    "fileCount": 1,
-   "group": "w sub header and chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-341",
-   "name": "W/ sub-header and plus-minus",
+   "name": "Accordion 341",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -40664,18 +40665,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-341.tsx"
    },
-   "contentHash": "9c4be6483c4bc418",
+   "contentHash": "6c88eb1364fc4247",
    "importedAt": "2026-11-05T17:59:41.626Z",
-   "updatedAt": "2026-11-10T13:12:56.296Z",
+   "updatedAt": "2026-11-10T13:48:16.784Z",
    "dir": "items/origin-ui/comp-341",
    "fileCount": 1,
-   "group": "w sub header and plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-342",
-   "name": "W/ icon, sub-header, and chevron",
+   "name": "Accordion 342",
    "type": "component",
-   "category": "Illustrations",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40702,18 +40703,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-342.tsx"
    },
-   "contentHash": "2dad20c4cd35cd9d",
+   "contentHash": "82162294da76e34f",
    "importedAt": "2026-11-05T17:59:41.630Z",
-   "updatedAt": "2026-11-10T13:12:56.303Z",
+   "updatedAt": "2026-11-10T13:48:16.788Z",
    "dir": "items/origin-ui/comp-342",
    "fileCount": 1,
-   "group": "w icon sub header and chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-343",
-   "name": "W/ icon, sub-header, and plus-minus",
+   "name": "Accordion 343",
    "type": "component",
-   "category": "Illustrations",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40740,18 +40741,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-343.tsx"
    },
-   "contentHash": "49701ae2cda02aed",
+   "contentHash": "c627256bfbe1cb8c",
    "importedAt": "2026-11-05T17:59:41.634Z",
-   "updatedAt": "2026-11-10T13:12:56.311Z",
+   "updatedAt": "2026-11-10T13:48:16.792Z",
    "dir": "items/origin-ui/comp-343",
    "fileCount": 1,
-   "group": "w icon sub header and plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-344",
-   "name": "Tabs w/ chevron",
+   "name": "Accordion 344",
    "type": "component",
-   "category": "Navigation",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40775,18 +40776,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-344.tsx"
    },
-   "contentHash": "5678bce99a0ecd99",
+   "contentHash": "465719dbb2286008",
    "importedAt": "2026-11-05T17:59:41.637Z",
-   "updatedAt": "2026-11-10T13:12:56.318Z",
+   "updatedAt": "2026-11-10T13:48:16.797Z",
    "dir": "items/origin-ui/comp-344",
    "fileCount": 1,
-   "group": "tabs w chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-345",
-   "name": "Tabs w/ plus-minus",
+   "name": "Accordion 345",
    "type": "component",
-   "category": "Navigation",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40813,18 +40814,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-345.tsx"
    },
-   "contentHash": "288e5478e383a2f4",
+   "contentHash": "7cb21d1f09554880",
    "importedAt": "2026-11-05T17:59:41.650Z",
-   "updatedAt": "2026-11-10T13:12:56.326Z",
+   "updatedAt": "2026-11-10T13:48:16.800Z",
    "dir": "items/origin-ui/comp-345",
    "fileCount": 1,
-   "group": "tabs w plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-346",
-   "name": "Tabs w/ left chevron",
+   "name": "Accordion 346",
    "type": "component",
-   "category": "Navigation",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40848,18 +40849,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-346.tsx"
    },
-   "contentHash": "fa12b14d15f00a90",
+   "contentHash": "2401632547dcd8fa",
    "importedAt": "2026-11-05T17:59:41.655Z",
-   "updatedAt": "2026-11-10T13:12:56.338Z",
+   "updatedAt": "2026-11-10T13:48:16.805Z",
    "dir": "items/origin-ui/comp-346",
    "fileCount": 1,
-   "group": "tabs w left chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-347",
-   "name": "Tabs w/ left plus-minus",
+   "name": "Accordion 347",
    "type": "component",
-   "category": "Navigation",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40886,18 +40887,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-347.tsx"
    },
-   "contentHash": "63e65dc9aa9aca69",
+   "contentHash": "8a2bec55204382e8",
    "importedAt": "2026-11-05T17:59:41.660Z",
-   "updatedAt": "2026-11-10T13:12:56.346Z",
+   "updatedAt": "2026-11-10T13:48:16.809Z",
    "dir": "items/origin-ui/comp-347",
    "fileCount": 1,
-   "group": "tabs w left plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-348",
-   "name": "Table w/ chevron",
+   "name": "Accordion 348",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40921,18 +40922,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-348.tsx"
    },
-   "contentHash": "7902a1543b21a573",
+   "contentHash": "6c8c35272fcc78b9",
    "importedAt": "2026-11-05T17:59:41.664Z",
-   "updatedAt": "2026-11-10T13:12:56.354Z",
+   "updatedAt": "2026-11-10T13:48:16.812Z",
    "dir": "items/origin-ui/comp-348",
    "fileCount": 1,
-   "group": "table w chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-349",
-   "name": "Table w/ plus-minus",
+   "name": "Accordion 349",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -40959,12 +40960,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-349.tsx"
    },
-   "contentHash": "d3d14a2baa3dfa9d",
+   "contentHash": "22c2e7ad0e2317f9",
    "importedAt": "2026-11-05T17:59:41.672Z",
-   "updatedAt": "2026-11-10T13:12:56.362Z",
+   "updatedAt": "2026-11-10T13:48:16.815Z",
    "dir": "items/origin-ui/comp-349",
    "fileCount": 1,
-   "group": "table w plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-35",
@@ -41005,9 +41006,9 @@
   },
   {
    "id": "origin-ui/comp-350",
-   "name": "Table w/ left chevron",
+   "name": "Accordion 350",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -41031,18 +41032,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-350.tsx"
    },
-   "contentHash": "b678bb38fa231c1a",
+   "contentHash": "dcb2c41d343a1255",
    "importedAt": "2026-11-05T17:59:41.682Z",
-   "updatedAt": "2026-11-10T13:12:56.384Z",
+   "updatedAt": "2026-11-10T13:48:16.819Z",
    "dir": "items/origin-ui/comp-350",
    "fileCount": 1,
-   "group": "table w left chevron"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-351",
-   "name": "Table w/ left plus-minus",
+   "name": "Accordion 351",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "radix",
@@ -41069,16 +41070,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-351.tsx"
    },
-   "contentHash": "4a55e1b9eafc7a5a",
+   "contentHash": "0cf39aa07feb54ef",
    "importedAt": "2026-11-05T17:59:41.686Z",
-   "updatedAt": "2026-11-10T13:12:56.392Z",
+   "updatedAt": "2026-11-10T13:48:16.822Z",
    "dir": "items/origin-ui/comp-351",
    "fileCount": 1,
-   "group": "table w left plus minus"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-352",
-   "name": "Multi-level (accordion)",
+   "name": "Accordion 352",
    "type": "component",
    "category": "FAQ",
    "tags": [
@@ -41108,18 +41109,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-352.tsx"
    },
-   "contentHash": "cf52a934752bdcf1",
+   "contentHash": "e9fc5d88ca6594b9",
    "importedAt": "2026-11-05T17:59:41.690Z",
-   "updatedAt": "2026-11-10T13:12:56.400Z",
+   "updatedAt": "2026-11-10T13:48:16.826Z",
    "dir": "items/origin-ui/comp-352",
    "fileCount": 1,
-   "group": "multi level accordion"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-353",
-   "name": "Multi-level w/ icon",
+   "name": "Accordion 353",
    "type": "component",
-   "category": "Illustrations",
+   "category": "FAQ",
    "tags": [
     "accordion",
     "collapsible",
@@ -41147,12 +41148,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-353.tsx"
    },
-   "contentHash": "41907c3abbdde142",
+   "contentHash": "2580dc9c30774ca9",
    "importedAt": "2026-11-05T17:59:41.694Z",
-   "updatedAt": "2026-11-10T13:12:56.408Z",
+   "updatedAt": "2026-11-10T13:48:16.829Z",
    "dir": "items/origin-ui/comp-353",
    "fileCount": 1,
-   "group": "multi level w icon"
+   "group": "accordion"
   },
   {
    "id": "origin-ui/comp-354",
@@ -41599,7 +41600,7 @@
   },
   {
    "id": "origin-ui/comp-365",
-   "name": "Building a Design System with Next.js and Tailwind CSS",
+   "name": "Tooltip 365",
    "type": "component",
    "category": "Fenêtres et panneaux",
    "tags": [
@@ -41628,12 +41629,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-365.tsx"
    },
-   "contentHash": "3f598bf450909858",
+   "contentHash": "bd9d862575157f39",
    "importedAt": "2026-11-05T17:59:41.739Z",
-   "updatedAt": "2026-11-10T13:12:56.430Z",
+   "updatedAt": "2026-11-10T13:48:16.836Z",
    "dir": "items/origin-ui/comp-365",
    "fileCount": 1,
-   "group": "building a design system with next js and tailwind css"
+   "group": "tooltip"
   },
   {
    "id": "origin-ui/comp-366",
@@ -42292,7 +42293,7 @@
   },
   {
    "id": "origin-ui/comp-381",
-   "name": "Real Time",
+   "name": "Popover 381",
    "type": "component",
    "category": "Fenêtres et panneaux",
    "tags": [
@@ -42324,12 +42325,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-381.tsx"
    },
-   "contentHash": "7627a57997172411",
+   "contentHash": "2ad1612209feefaa",
    "importedAt": "2026-11-05T17:59:41.808Z",
-   "updatedAt": "2026-11-10T13:12:56.465Z",
+   "updatedAt": "2026-11-10T13:48:16.842Z",
    "dir": "items/origin-ui/comp-381",
    "fileCount": 1,
-   "group": "real time"
+   "group": "popover"
   },
   {
    "id": "origin-ui/comp-382",
@@ -42566,9 +42567,9 @@
   },
   {
    "id": "origin-ui/comp-388",
-   "name": "Send us feedback",
+   "name": "Popover 388",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "feedback",
     "form",
@@ -42596,12 +42597,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-388.tsx"
    },
-   "contentHash": "b2ac750ba97db7b8",
+   "contentHash": "136a01d0e48495d4",
    "importedAt": "2026-11-05T17:59:41.831Z",
-   "updatedAt": "2026-11-10T13:12:56.475Z",
+   "updatedAt": "2026-11-10T13:48:16.847Z",
    "dir": "items/origin-ui/comp-388",
    "fileCount": 1,
-   "group": "send us feedback"
+   "group": "popover"
   },
   {
    "id": "origin-ui/comp-389",
@@ -45557,9 +45558,9 @@
   },
   {
    "id": "origin-ui/comp-463",
-   "name": "Rows per page",
+   "name": "Pagination 463",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "pagination",
     "radix",
@@ -45588,12 +45589,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-463.tsx"
    },
-   "contentHash": "cafd7e2f84da39cd",
+   "contentHash": "b594e2d9836f40be",
    "importedAt": "2026-11-05T17:59:42.146Z",
-   "updatedAt": "2026-11-10T13:12:56.595Z",
+   "updatedAt": "2026-11-10T13:48:16.872Z",
    "dir": "items/origin-ui/comp-463",
    "fileCount": 2,
-   "group": "rows per page"
+   "group": "pagination"
   },
   {
    "id": "origin-ui/comp-464",
@@ -45635,9 +45636,9 @@
   },
   {
    "id": "origin-ui/comp-465",
-   "name": "Go to page",
+   "name": "Pagination 465",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "input",
     "pagination",
@@ -45666,12 +45667,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-465.tsx"
    },
-   "contentHash": "b406721eea2e7b42",
+   "contentHash": "210f62a813b1ec48",
    "importedAt": "2026-11-05T17:59:42.154Z",
-   "updatedAt": "2026-11-10T13:12:56.608Z",
+   "updatedAt": "2026-11-10T13:48:16.877Z",
    "dir": "items/origin-ui/comp-465",
    "fileCount": 2,
-   "group": "go to page"
+   "group": "pagination"
   },
   {
    "id": "origin-ui/comp-466",
@@ -46402,9 +46403,9 @@
   },
   {
    "id": "origin-ui/comp-483",
-   "name": "Rows per page",
+   "name": "Table 483",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Tableaux de données",
    "tags": [
     "badge",
     "checkbox",
@@ -46444,12 +46445,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-483.tsx"
    },
-   "contentHash": "6ede30d794750b73",
+   "contentHash": "66b6bed162a1979c",
    "importedAt": "2026-11-05T17:59:42.222Z",
-   "updatedAt": "2026-11-10T13:12:56.644Z",
+   "updatedAt": "2026-11-10T13:48:16.888Z",
    "dir": "items/origin-ui/comp-483",
    "fileCount": 1,
-   "group": "rows per page"
+   "group": "table"
   },
   {
    "id": "origin-ui/comp-484",
@@ -46503,9 +46504,9 @@
   },
   {
    "id": "origin-ui/comp-485",
-   "name": "Rows per page",
+   "name": "Table 485",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Tableaux de données",
    "tags": [
     "badge",
     "checkbox",
@@ -46551,12 +46552,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-485.tsx"
    },
-   "contentHash": "d11f3b059de70d7e",
+   "contentHash": "78475e7b2ca173f1",
    "importedAt": "2026-11-05T17:59:42.229Z",
-   "updatedAt": "2026-11-10T13:12:56.653Z",
+   "updatedAt": "2026-11-10T13:48:16.892Z",
    "dir": "items/origin-ui/comp-485",
    "fileCount": 1,
-   "group": "rows per page"
+   "group": "table"
   },
   {
    "id": "origin-ui/comp-486",
@@ -47245,9 +47246,9 @@
   },
   {
    "id": "origin-ui/comp-502",
-   "name": "Enter date",
+   "name": "Calendar 502",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "date",
@@ -47278,18 +47279,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-502.tsx"
    },
-   "contentHash": "7a62606217ce8718",
+   "contentHash": "42beaab9bd395c09",
    "importedAt": "2026-11-05T17:59:42.290Z",
-   "updatedAt": "2026-11-10T13:12:56.691Z",
+   "updatedAt": "2026-11-10T13:48:16.899Z",
    "dir": "items/origin-ui/comp-502",
    "fileCount": 1,
-   "group": "enter date"
+   "group": "calendar"
   },
   {
    "id": "origin-ui/comp-503",
-   "name": "Enter time",
+   "name": "Calendar 503",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "date",
@@ -47320,12 +47321,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-503.tsx"
    },
-   "contentHash": "1c7b3bdcd761dc70",
+   "contentHash": "52c33b116b92cf5a",
    "importedAt": "2026-11-05T17:59:42.294Z",
-   "updatedAt": "2026-11-10T13:12:56.698Z",
+   "updatedAt": "2026-11-10T13:48:16.902Z",
    "dir": "items/origin-ui/comp-503",
    "fileCount": 1,
-   "group": "enter time"
+   "group": "calendar"
   },
   {
    "id": "origin-ui/comp-504",
@@ -47645,9 +47646,9 @@
   },
   {
    "id": "origin-ui/comp-511",
-   "name": "Date picker",
+   "name": "Calendar 511",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "button",
     "calendar",
@@ -47681,18 +47682,18 @@
     "kind": "live",
     "entry": "registry/default/components/comp-511.tsx"
    },
-   "contentHash": "477d575583bb530d",
+   "contentHash": "c59167bd5d934950",
    "importedAt": "2026-11-05T17:59:42.323Z",
-   "updatedAt": "2026-11-10T13:12:56.718Z",
+   "updatedAt": "2026-11-10T13:48:16.907Z",
    "dir": "items/origin-ui/comp-511",
    "fileCount": 1,
-   "group": "date picker"
+   "group": "calendar"
   },
   {
    "id": "origin-ui/comp-512",
-   "name": "Date range picker",
+   "name": "Calendar 512",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "button",
     "calendar",
@@ -47726,12 +47727,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-512.tsx"
    },
-   "contentHash": "35d0fc831f398eb5",
+   "contentHash": "fd5653dd9f1af1f6",
    "importedAt": "2026-11-05T17:59:42.326Z",
-   "updatedAt": "2026-11-10T13:12:56.724Z",
+   "updatedAt": "2026-11-10T13:48:16.910Z",
    "dir": "items/origin-ui/comp-512",
    "fileCount": 1,
-   "group": "date range picker"
+   "group": "calendar"
   },
   {
    "id": "origin-ui/comp-513",
@@ -50987,7 +50988,7 @@
   },
   {
    "id": "origin-ui/comp-592",
-   "name": "Test mode",
+   "name": "Navbar, navigation 592",
    "type": "component",
    "category": "Navigation",
    "tags": [
@@ -51019,12 +51020,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-592.tsx"
    },
-   "contentHash": "38cc66618b977467",
+   "contentHash": "5b2b855d830ef37d",
    "importedAt": "2026-11-05T17:59:42.942Z",
-   "updatedAt": "2026-11-10T13:12:56.839Z",
+   "updatedAt": "2026-11-10T13:48:16.935Z",
    "dir": "items/origin-ui/comp-592",
    "fileCount": 4,
-   "group": "test mode"
+   "group": "navbar navigation"
   },
   {
    "id": "origin-ui/comp-593",
@@ -51107,7 +51108,7 @@
   },
   {
    "id": "origin-ui/comp-595",
-   "name": "Basic UI",
+   "name": "Navbar, navigation 595",
    "type": "component",
    "category": "Navigation",
    "tags": [
@@ -51135,15 +51136,16 @@
     "kind": "live",
     "entry": "registry/default/components/comp-595.tsx"
    },
-   "contentHash": "12e6adcc08c1b7a0",
+   "contentHash": "bda139250b12127b",
    "importedAt": "2026-11-05T17:59:42.960Z",
-   "updatedAt": "2026-11-10T13:12:56.857Z",
+   "updatedAt": "2026-11-10T13:48:16.944Z",
    "dir": "items/origin-ui/comp-595",
-   "fileCount": 1
+   "fileCount": 1,
+   "group": "navbar navigation"
   },
   {
    "id": "origin-ui/comp-596",
-   "name": "Power (navbar, navigation)",
+   "name": "Navbar, navigation 596",
    "type": "component",
    "category": "Navigation",
    "tags": [
@@ -51175,12 +51177,12 @@
     "kind": "live",
     "entry": "registry/default/components/comp-596.tsx"
    },
-   "contentHash": "0148399d766b4c7b",
+   "contentHash": "eacdd03fc29f4f4d",
    "importedAt": "2026-11-05T17:59:42.963Z",
-   "updatedAt": "2026-11-10T13:12:56.864Z",
+   "updatedAt": "2026-11-10T13:48:16.948Z",
    "dir": "items/origin-ui/comp-596",
    "fileCount": 1,
-   "group": "power navbar navigation"
+   "group": "navbar navigation"
   },
   {
    "id": "origin-ui/comp-597",
@@ -54276,7 +54278,7 @@
    "id": "panelui-web/chip",
    "name": "Chip",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "web"
    ],
@@ -54300,8 +54302,9 @@
     "entry": "apps/docs/components/web-demos/chip/overview.tsx",
     "demo": "source"
    },
-   "contentHash": "d5d933854a85f8e3",
+   "contentHash": "19ddaedf7736a783",
    "importedAt": "2026-11-05T00:16:56.546Z",
+   "updatedAt": "2026-11-10T13:48:21.106Z",
    "dir": "items/panelui-web/chip",
    "fileCount": 2,
    "group": "chip"
@@ -56864,7 +56867,7 @@
    "id": "panelui/chip",
    "name": "Chip",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "expo"
    ],
@@ -56894,8 +56897,9 @@
     "kind": "none",
     "reason": "Composant React Native (Expo) : pas de rendu web"
    },
-   "contentHash": "0cbcd1bb11d866bc",
+   "contentHash": "a16f9f1c113b4b5a",
    "importedAt": "2026-11-05T00:16:55.859Z",
+   "updatedAt": "2026-11-10T13:48:21.017Z",
    "dir": "items/panelui/chip",
    "fileCount": 1,
    "group": "chip"
@@ -79121,7 +79125,7 @@
    "id": "reui/c-alert-10",
    "name": "Alert with icon and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "alert",
     "exemple",
@@ -79146,8 +79150,9 @@
     "kind": "live",
     "entry": "components/alert/c-alert-10.tsx"
    },
-   "contentHash": "19936788af894fd7",
+   "contentHash": "7d6a91cf81bdbde6",
    "importedAt": "2026-11-10T13:13:04.481Z",
+   "updatedAt": "2026-11-10T13:48:13.578Z",
    "dir": "items/reui/c-alert-10",
    "fileCount": 1,
    "group": "alert with icon and action buttons",
@@ -79157,7 +79162,7 @@
    "id": "reui/c-alert-11",
    "name": "Alert with description and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "alert",
     "description & actions",
@@ -79182,8 +79187,9 @@
     "kind": "live",
     "entry": "components/alert/c-alert-11.tsx"
    },
-   "contentHash": "954ab50de45213c0",
+   "contentHash": "32cb73ed8e2571ca",
    "importedAt": "2026-11-10T13:13:04.489Z",
+   "updatedAt": "2026-11-10T13:48:13.583Z",
    "dir": "items/reui/c-alert-11",
    "fileCount": 1,
    "group": "alert with description and action buttons",
@@ -79562,7 +79568,7 @@
    "id": "reui/c-alert-3",
    "name": "Alert with icon and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "alert",
     "exemple",
@@ -79587,8 +79593,9 @@
     "kind": "live",
     "entry": "components/alert/c-alert-3.tsx"
    },
-   "contentHash": "8efbd0161a8a7d39",
+   "contentHash": "82124e12b31b6ac0",
    "importedAt": "2026-11-10T13:13:04.407Z",
+   "updatedAt": "2026-11-10T13:48:13.563Z",
    "dir": "items/reui/c-alert-3",
    "fileCount": 1,
    "group": "alert with icon and action buttons",
@@ -79598,7 +79605,7 @@
    "id": "reui/c-alert-4",
    "name": "Destructive alert with icon and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "alert",
     "exemple",
@@ -79622,8 +79629,9 @@
     "kind": "live",
     "entry": "components/alert/c-alert-4.tsx"
    },
-   "contentHash": "8b16623e72f99366",
+   "contentHash": "adaba080a40ff501",
    "importedAt": "2026-11-10T13:13:04.419Z",
+   "updatedAt": "2026-11-10T13:48:13.568Z",
    "dir": "items/reui/c-alert-4",
    "fileCount": 1,
    "group": "destructive alert with icon and action buttons",
@@ -79633,7 +79641,7 @@
    "id": "reui/c-alert-5",
    "name": "Info alert with icon and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "alert",
     "exemple",
@@ -79657,8 +79665,9 @@
     "kind": "live",
     "entry": "components/alert/c-alert-5.tsx"
    },
-   "contentHash": "d0813e48a87576f6",
+   "contentHash": "42017300c578dc5d",
    "importedAt": "2026-11-10T13:13:04.430Z",
+   "updatedAt": "2026-11-10T13:48:13.572Z",
    "dir": "items/reui/c-alert-5",
    "fileCount": 1,
    "group": "info alert with icon and action buttons",
@@ -79808,7 +79817,7 @@
    "id": "reui/c-alert-dialog-1",
    "name": "Basic alert dialog with title, description, and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "alert-dialog",
     "basic",
@@ -79833,8 +79842,9 @@
     "kind": "live",
     "entry": "components/alert-dialog/c-alert-dialog-1.tsx"
    },
-   "contentHash": "fd92afd01d88557a",
+   "contentHash": "e7d6003c499660c9",
    "importedAt": "2026-11-10T13:13:04.610Z",
+   "updatedAt": "2026-11-10T13:48:13.591Z",
    "dir": "items/reui/c-alert-dialog-1",
    "fileCount": 1,
    "group": "alert dialog with title description and action buttons",
@@ -80135,7 +80145,7 @@
    "id": "reui/c-alert-dialog-5",
    "name": "Destructive alert dialog for irreversible actions like deletion",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "alert-dialog",
     "destructive delete",
@@ -80160,8 +80170,9 @@
     "kind": "live",
     "entry": "components/alert-dialog/c-alert-dialog-5.tsx"
    },
-   "contentHash": "1b3096feb3bc61fd",
+   "contentHash": "ef7e3ac6ab3d17f9",
    "importedAt": "2026-11-10T13:13:04.662Z",
+   "updatedAt": "2026-11-10T13:48:13.597Z",
    "dir": "items/reui/c-alert-dialog-5",
    "fileCount": 1,
    "group": "destructive alert dialog for irreversible actions like deletion",
@@ -80496,7 +80507,7 @@
    "id": "reui/c-aspect-ratio-6",
    "name": "3:2 classic photography aspect ratio",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Effets et interactions",
    "tags": [
     "aspect-ratio",
     "classic photo",
@@ -80520,8 +80531,9 @@
     "kind": "live",
     "entry": "components/aspect-ratio/c-aspect-ratio-6.tsx"
    },
-   "contentHash": "7d087adb0d342d9e",
+   "contentHash": "8271d86c4ae45b2f",
    "importedAt": "2026-11-10T13:13:04.962Z",
+   "updatedAt": "2026-11-10T13:48:13.608Z",
    "dir": "items/reui/c-aspect-ratio-6",
    "fileCount": 1,
    "group": "classic photography aspect ratio",
@@ -81428,7 +81440,7 @@
    "id": "reui/c-avatar-14",
    "name": "Avatar with light background color fallback",
    "type": "component",
-   "category": "Fonds",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81452,8 +81464,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-14.tsx"
    },
-   "contentHash": "f37a7bd2cbd8b78e",
+   "contentHash": "35385fdab5d2d3d9",
    "importedAt": "2026-11-10T13:13:05.392Z",
+   "updatedAt": "2026-11-10T13:48:13.626Z",
    "dir": "items/reui/c-avatar-14",
    "fileCount": 1,
    "group": "avatar with light background color fallback",
@@ -81463,7 +81476,7 @@
    "id": "reui/c-avatar-15",
    "name": "Avatar with a solid background color fallback",
    "type": "component",
-   "category": "Fonds",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81487,8 +81500,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-15.tsx"
    },
-   "contentHash": "a869845859a2cabe",
+   "contentHash": "a96b422e8994c0fc",
    "importedAt": "2026-11-10T13:13:05.405Z",
+   "updatedAt": "2026-11-10T13:48:13.629Z",
    "dir": "items/reui/c-avatar-15",
    "fileCount": 1,
    "group": "avatar with a solid background color fallback",
@@ -81604,7 +81618,7 @@
    "id": "reui/c-avatar-19",
    "name": "Avatar inside small outline button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81629,8 +81643,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-19.tsx"
    },
-   "contentHash": "0d9a53cc0b589985",
+   "contentHash": "bce8b87130d81ca1",
    "importedAt": "2026-11-10T13:13:05.450Z",
+   "updatedAt": "2026-11-10T13:48:13.634Z",
    "dir": "items/reui/c-avatar-19",
    "fileCount": 1,
    "group": "avatar inside small outline button",
@@ -81675,7 +81690,7 @@
    "id": "reui/c-avatar-20",
    "name": "Avatar social proof with text label",
    "type": "component",
-   "category": "Texte",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81699,8 +81714,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-20.tsx"
    },
-   "contentHash": "e685644bd0359038",
+   "contentHash": "9b67060a3029d1cc",
    "importedAt": "2026-11-10T13:13:05.463Z",
+   "updatedAt": "2026-11-10T13:48:13.637Z",
    "dir": "items/reui/c-avatar-20",
    "fileCount": 1,
    "group": "avatar social proof with text label",
@@ -81891,7 +81907,7 @@
    "id": "reui/c-avatar-26",
    "name": "Pilled small outline button with avatar",
    "type": "component",
-   "category": "Boutons",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81916,8 +81932,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-26.tsx"
    },
-   "contentHash": "ae8ade8156a6566a",
+   "contentHash": "4db28f542647cc2f",
    "importedAt": "2026-11-10T13:13:05.541Z",
+   "updatedAt": "2026-11-10T13:48:13.644Z",
    "dir": "items/reui/c-avatar-26",
    "fileCount": 1,
    "group": "pilled small outline button with avatar",
@@ -81927,7 +81944,7 @@
    "id": "reui/c-avatar-27",
    "name": "Pilled small button with avatar",
    "type": "component",
-   "category": "Boutons",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -81952,8 +81969,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-27.tsx"
    },
-   "contentHash": "757341a4ab57167f",
+   "contentHash": "13d9e7aeaabd0972",
    "importedAt": "2026-11-10T13:13:05.553Z",
+   "updatedAt": "2026-11-10T13:48:13.648Z",
    "dir": "items/reui/c-avatar-27",
    "fileCount": 1,
    "group": "pilled small button with avatar",
@@ -81998,7 +82016,7 @@
    "id": "reui/c-avatar-29",
    "name": "Avatar group with icon count and button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "exemple",
@@ -82024,8 +82042,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-29.tsx"
    },
-   "contentHash": "3924bfa712641c20",
+   "contentHash": "7d614b915ec742e2",
    "importedAt": "2026-11-10T13:13:05.578Z",
+   "updatedAt": "2026-11-10T13:48:13.652Z",
    "dir": "items/reui/c-avatar-29",
    "fileCount": 1,
    "group": "avatar group with icon count and button",
@@ -82248,7 +82267,7 @@
    "id": "reui/c-avatar-35",
    "name": "Compact avatar dropdown menu",
    "type": "component",
-   "category": "Navigation",
+   "category": "Images et galeries",
    "tags": [
     "avatar",
     "dropdown menu",
@@ -82274,8 +82293,9 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-35.tsx"
    },
-   "contentHash": "a149524aa915f4b2",
+   "contentHash": "96c23f1f213bf886",
    "importedAt": "2026-11-10T13:13:05.653Z",
+   "updatedAt": "2026-11-10T13:48:13.658Z",
    "dir": "items/reui/c-avatar-35",
    "fileCount": 1,
    "group": "compact avatar dropdown menu",
@@ -83551,7 +83571,7 @@
    "id": "reui/c-breadcrumb-14",
    "name": "Button-style breadcrumb",
    "type": "component",
-   "category": "Boutons",
+   "category": "Navigation",
    "tags": [
     "breadcrumb",
     "button style",
@@ -83576,8 +83596,9 @@
     "kind": "live",
     "entry": "components/breadcrumb/c-breadcrumb-14.tsx"
    },
-   "contentHash": "cb34c4c482f198de",
+   "contentHash": "8f27c1a5a5180191",
    "importedAt": "2026-11-10T13:13:06.145Z",
+   "updatedAt": "2026-11-10T13:48:13.681Z",
    "dir": "items/reui/c-breadcrumb-14",
    "fileCount": 1,
    "group": "button style breadcrumb",
@@ -88493,7 +88514,7 @@
    "id": "reui/c-calendar-11",
    "name": "Current month button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "current month button",
@@ -88521,8 +88542,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-11.tsx"
    },
-   "contentHash": "07d4ebffe46e07a5",
+   "contentHash": "84d87425eff146db",
    "importedAt": "2026-11-10T13:13:07.852Z",
+   "updatedAt": "2026-11-10T13:48:13.774Z",
    "dir": "items/reui/c-calendar-11",
    "fileCount": 1,
    "group": "current month button",
@@ -88532,7 +88554,7 @@
    "id": "reui/c-calendar-12",
    "name": "Today button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -88560,8 +88582,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-12.tsx"
    },
-   "contentHash": "2d8cb87e871cb821",
+   "contentHash": "e0ade2eab57a25b4",
    "importedAt": "2026-11-10T13:13:07.864Z",
+   "updatedAt": "2026-11-10T13:48:13.780Z",
    "dir": "items/reui/c-calendar-12",
    "fileCount": 1,
    "group": "today button",
@@ -88921,7 +88944,7 @@
    "id": "reui/c-calendar-21",
    "name": "Display 2 months with range picker",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -88948,8 +88971,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-21.tsx"
    },
-   "contentHash": "f1d8ee1f7d84e286",
+   "contentHash": "1821ba01ce6a20a6",
    "importedAt": "2026-11-10T13:13:07.991Z",
+   "updatedAt": "2026-11-10T13:48:13.792Z",
    "dir": "items/reui/c-calendar-21",
    "fileCount": 1,
    "group": "display months with range picker",
@@ -89037,7 +89061,7 @@
    "id": "reui/c-calendar-24",
    "name": "Calendar with date picker",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "date picker",
@@ -89065,8 +89089,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-24.tsx"
    },
-   "contentHash": "174e154b9b8e14fa",
+   "contentHash": "dbf686214e42fa17",
    "importedAt": "2026-11-10T13:13:08.040Z",
+   "updatedAt": "2026-11-10T13:48:13.801Z",
    "dir": "items/reui/c-calendar-24",
    "fileCount": 1,
    "group": "calendar with date picker",
@@ -89076,7 +89101,7 @@
    "id": "reui/c-calendar-25",
    "name": "Calendar with date range picker",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "date range picker",
@@ -89106,8 +89131,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-25.tsx"
    },
-   "contentHash": "88ea8732f25c553d",
+   "contentHash": "ae15ab89b3b12ca9",
    "importedAt": "2026-11-10T13:13:08.056Z",
+   "updatedAt": "2026-11-10T13:48:13.806Z",
    "dir": "items/reui/c-calendar-25",
    "fileCount": 1,
    "group": "calendar with date range picker",
@@ -89117,7 +89143,7 @@
    "id": "reui/c-calendar-26",
    "name": "Calendar with date picker and year view",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -89149,8 +89175,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-26.tsx"
    },
-   "contentHash": "4c1450785e29a76d",
+   "contentHash": "6fddec0a8b5ee447",
    "importedAt": "2026-11-10T13:13:08.070Z",
+   "updatedAt": "2026-11-10T13:48:13.811Z",
    "dir": "items/reui/c-calendar-26",
    "fileCount": 1,
    "group": "calendar with date picker and year view",
@@ -89160,7 +89187,7 @@
    "id": "reui/c-calendar-27",
    "name": "Calendar with date and appointment picker",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -89191,8 +89218,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-27.tsx"
    },
-   "contentHash": "1d38b4c2aa4eb988",
+   "contentHash": "0fe2e86dd5cdcc58",
    "importedAt": "2026-11-10T13:13:08.082Z",
+   "updatedAt": "2026-11-10T13:48:13.815Z",
    "dir": "items/reui/c-calendar-27",
    "fileCount": 1,
    "group": "calendar with date and appointment picker",
@@ -89202,7 +89230,7 @@
    "id": "reui/c-calendar-28",
    "name": "Calendar with date picker and presets",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -89231,8 +89259,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-28.tsx"
    },
-   "contentHash": "bca2126f8db845ef",
+   "contentHash": "21ad87dc2963e58d",
    "importedAt": "2026-11-10T13:13:08.095Z",
+   "updatedAt": "2026-11-10T13:48:13.819Z",
    "dir": "items/reui/c-calendar-28",
    "fileCount": 1,
    "group": "calendar with date picker and presets",
@@ -89242,7 +89271,7 @@
    "id": "reui/c-calendar-29",
    "name": "Range calendar with date picker and presets",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -89272,8 +89301,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-29.tsx"
    },
-   "contentHash": "b4b996099997d68b",
+   "contentHash": "934963c46265cbf5",
    "importedAt": "2026-11-10T13:13:08.109Z",
+   "updatedAt": "2026-11-10T13:48:13.824Z",
    "dir": "items/reui/c-calendar-29",
    "fileCount": 1,
    "group": "range calendar with date picker and presets",
@@ -89321,7 +89351,7 @@
    "id": "reui/c-calendar-30",
    "name": "Calendar with date and time range picker",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "date time range",
@@ -89352,8 +89382,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-30.tsx"
    },
-   "contentHash": "65a9a3561824d500",
+   "contentHash": "94259119ea2c4fc0",
    "importedAt": "2026-11-10T13:13:08.122Z",
+   "updatedAt": "2026-11-10T13:48:13.828Z",
    "dir": "items/reui/c-calendar-30",
    "fileCount": 1,
    "group": "calendar with date and time range picker",
@@ -89401,7 +89432,7 @@
    "id": "reui/c-calendar-5",
    "name": "Custom select day style",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "circular days",
@@ -89426,8 +89457,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-5.tsx"
    },
-   "contentHash": "ee9938107ed37c3e",
+   "contentHash": "f86dbf49c9468f53",
    "importedAt": "2026-11-10T13:13:07.770Z",
+   "updatedAt": "2026-11-10T13:48:13.751Z",
    "dir": "items/reui/c-calendar-5",
    "fileCount": 1,
    "group": "custom select day style",
@@ -89437,7 +89469,7 @@
    "id": "reui/c-calendar-6",
    "name": "Custom select range style",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "circular range",
@@ -89465,8 +89497,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-6.tsx"
    },
-   "contentHash": "a9e017e204226b9d",
+   "contentHash": "235d7fe70cb7f2ea",
    "importedAt": "2026-11-10T13:13:07.782Z",
+   "updatedAt": "2026-11-10T13:48:13.757Z",
    "dir": "items/reui/c-calendar-6",
    "fileCount": 1,
    "group": "custom select range style",
@@ -89551,7 +89584,7 @@
    "id": "reui/c-calendar-9",
    "name": "Year select with navigation",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Calendriers",
    "tags": [
     "calendar",
     "exemple",
@@ -89579,8 +89612,9 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-9.tsx"
    },
-   "contentHash": "825a50e5d72a3048",
+   "contentHash": "2932a5f5ea6a9c1e",
    "importedAt": "2026-11-10T13:13:07.822Z",
+   "updatedAt": "2026-11-10T13:48:13.766Z",
    "dir": "items/reui/c-calendar-9",
    "fileCount": 1,
    "group": "year select with navigation",
@@ -89700,7 +89734,7 @@
    "id": "reui/c-card-12",
    "name": "Advanced clean login form card",
    "type": "section",
-   "category": "Formulaires",
+   "category": "Cartes",
    "tags": [
     "card",
     "exemple",
@@ -89728,8 +89762,9 @@
     "kind": "live",
     "entry": "components/card/c-card-12.tsx"
    },
-   "contentHash": "86092dae04158bda",
+   "contentHash": "23383e420d7bdf9d",
    "importedAt": "2026-11-10T13:13:08.264Z",
+   "updatedAt": "2026-11-10T13:48:13.843Z",
    "dir": "items/reui/c-card-12",
    "fileCount": 1,
    "group": "advanced clean login form card",
@@ -89811,7 +89846,7 @@
    "id": "reui/c-card-15",
    "name": "Stat card with trend and overflow menu",
    "type": "component",
-   "category": "Navigation",
+   "category": "Cartes",
    "tags": [
     "card",
     "exemple",
@@ -89839,8 +89874,9 @@
     "kind": "live",
     "entry": "components/card/c-card-15.tsx"
    },
-   "contentHash": "93889c85878aab1a",
+   "contentHash": "0c4fcd69dd0f883c",
    "importedAt": "2026-11-10T13:13:08.304Z",
+   "updatedAt": "2026-11-10T13:48:13.850Z",
    "dir": "items/reui/c-card-15",
    "fileCount": 1,
    "group": "stat card with trend and overflow menu",
@@ -90102,7 +90138,7 @@
    "id": "reui/c-card-6",
    "name": "Card with dropdown menu",
    "type": "component",
-   "category": "Navigation",
+   "category": "Cartes",
    "tags": [
     "card",
     "dropdown menu",
@@ -90129,8 +90165,9 @@
     "kind": "live",
     "entry": "components/card/c-card-6.tsx"
    },
-   "contentHash": "9ee59b4b978de083",
+   "contentHash": "143f34049c79eb25",
    "importedAt": "2026-11-10T13:13:08.191Z",
+   "updatedAt": "2026-11-10T13:48:13.835Z",
    "dir": "items/reui/c-card-6",
    "fileCount": 1,
    "group": "card with dropdown menu",
@@ -90718,7 +90755,7 @@
    "id": "reui/c-cascader-11",
    "name": "Two-line rows with descriptions and a disabled option.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -90744,8 +90781,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-11.tsx"
    },
-   "contentHash": "37f5dde63103a178",
+   "contentHash": "22652e3dc79bd149",
    "importedAt": "2026-11-10T13:14:52.711Z",
+   "updatedAt": "2026-11-10T13:48:13.897Z",
    "dir": "items/reui/c-cascader-11",
    "fileCount": 1,
    "group": "two line rows with descriptions and a disabled option",
@@ -90755,7 +90793,7 @@
    "id": "reui/c-cascader-12",
    "name": "Form field that submits like a native input.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -90781,8 +90819,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-12.tsx"
    },
-   "contentHash": "f99f5071ec1262dc",
+   "contentHash": "fbc2f7f993c8e31e",
    "importedAt": "2026-11-10T13:14:52.730Z",
+   "updatedAt": "2026-11-10T13:48:13.901Z",
    "dir": "items/reui/c-cascader-12",
    "fileCount": 1,
    "group": "form field that submits like a native input",
@@ -90792,7 +90831,7 @@
    "id": "reui/c-cascader-13",
    "name": "Columns mode with independently scrolling panels.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "columns mode",
@@ -90820,8 +90859,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-13.tsx"
    },
-   "contentHash": "fb2e1cc0464552bf",
+   "contentHash": "f1e6ee32f9cab5a3",
    "importedAt": "2026-11-10T13:14:52.753Z",
+   "updatedAt": "2026-11-10T13:48:13.905Z",
    "dir": "items/reui/c-cascader-13",
    "fileCount": 1,
    "group": "columns mode with independently scrolling panels",
@@ -90867,7 +90907,7 @@
    "id": "reui/c-cascader-15",
    "name": "Async drill-down that loads before it navigates.",
    "type": "component",
-   "category": "Navigation",
+   "category": "Formulaires",
    "tags": [
     "async loading",
     "cascader",
@@ -90893,8 +90933,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-15.tsx"
    },
-   "contentHash": "bbe3d0337e5ba875",
+   "contentHash": "5522f00043a60519",
    "importedAt": "2026-11-10T13:14:52.788Z",
+   "updatedAt": "2026-11-10T13:48:13.909Z",
    "dir": "items/reui/c-cascader-15",
    "fileCount": 1,
    "group": "async drill down that loads before it navigates",
@@ -90904,7 +90945,7 @@
    "id": "reui/c-cascader-16",
    "name": "Virtualized level with thousands of rows.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -90931,8 +90972,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-16.tsx"
    },
-   "contentHash": "a01bf9f4bbac3170",
+   "contentHash": "d998ae36a93fc2a7",
    "importedAt": "2026-11-10T13:14:52.808Z",
+   "updatedAt": "2026-11-10T13:48:13.912Z",
    "dir": "items/reui/c-cascader-16",
    "fileCount": 1,
    "group": "virtualized level with thousands of rows",
@@ -90942,7 +90984,7 @@
    "id": "reui/c-cascader-17",
    "name": "Consumer-rendered removable chips with path-aware labels.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -90968,8 +91010,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-17.tsx"
    },
-   "contentHash": "ae347fd0afef6050",
+   "contentHash": "dddf4e9d6f7be3d8",
    "importedAt": "2026-11-10T13:14:52.821Z",
+   "updatedAt": "2026-11-10T13:48:13.915Z",
    "dir": "items/reui/c-cascader-17",
    "fileCount": 1,
    "group": "consumer rendered removable chips with path aware labels",
@@ -91015,7 +91058,7 @@
    "id": "reui/c-cascader-19",
    "name": "Status and priority colour dots via renderLabel.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "color dots",
@@ -91040,8 +91083,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-19.tsx"
    },
-   "contentHash": "4d53f46c6a744f70",
+   "contentHash": "199783bdee96ac6a",
    "importedAt": "2026-11-10T13:14:52.852Z",
+   "updatedAt": "2026-11-10T13:48:13.919Z",
    "dir": "items/reui/c-cascader-19",
    "fileCount": 1,
    "group": "status and priority colour dots via renderlabel",
@@ -91087,7 +91131,7 @@
    "id": "reui/c-cascader-20",
    "name": "Expense accounts with a colour inherited down each branch.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -91113,8 +91157,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-20.tsx"
    },
-   "contentHash": "dfd7deb845c7379e",
+   "contentHash": "781ccdee2ca64377",
    "importedAt": "2026-11-10T13:14:52.870Z",
+   "updatedAt": "2026-11-10T13:48:13.922Z",
    "dir": "items/reui/c-cascader-20",
    "fileCount": 1,
    "group": "expense accounts with a colour inherited down each branch",
@@ -91197,7 +91242,7 @@
    "id": "reui/c-cascader-4",
    "name": "Pinned footer with a side-anchored import flyout.",
    "type": "section",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -91222,8 +91267,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-4.tsx"
    },
-   "contentHash": "48f1b4a419029a54",
+   "contentHash": "d73bad6d31649563",
    "importedAt": "2026-11-10T13:14:52.568Z",
+   "updatedAt": "2026-11-10T13:48:13.867Z",
    "dir": "items/reui/c-cascader-4",
    "fileCount": 9,
    "group": "pinned footer with a side anchored import flyout",
@@ -91233,7 +91279,7 @@
    "id": "reui/c-cascader-5",
    "name": "Custom rows with avatars and role badges.",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Formulaires",
    "tags": [
     "avatar rows",
     "cascader",
@@ -91260,8 +91306,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-5.tsx"
    },
-   "contentHash": "f100b89041d58ec3",
+   "contentHash": "6f8138afa6d6b7d3",
    "importedAt": "2026-11-10T13:14:52.596Z",
+   "updatedAt": "2026-11-10T13:48:13.879Z",
    "dir": "items/reui/c-cascader-5",
    "fileCount": 1,
    "group": "custom rows with avatars and role badges",
@@ -91308,7 +91355,7 @@
    "id": "reui/c-cascader-7",
    "name": "Embedded panel without a popover.",
    "type": "component",
-   "category": "Fenêtres et panneaux",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "embedded panel",
@@ -91333,8 +91380,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-7.tsx"
    },
-   "contentHash": "b14b7363670ca498",
+   "contentHash": "229d520abbcc74b8",
    "importedAt": "2026-11-10T13:14:52.658Z",
+   "updatedAt": "2026-11-10T13:48:13.885Z",
    "dir": "items/reui/c-cascader-7",
    "fileCount": 1,
    "group": "embedded panel without a popover",
@@ -91344,7 +91392,7 @@
    "id": "reui/c-cascader-8",
    "name": "Flat adjacency data with a parent pointer.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "exemple",
@@ -91369,8 +91417,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-8.tsx"
    },
-   "contentHash": "7f7db50ed1013972",
+   "contentHash": "0ff7b138f7a642c3",
    "importedAt": "2026-11-10T13:14:52.670Z",
+   "updatedAt": "2026-11-10T13:48:13.889Z",
    "dir": "items/reui/c-cascader-8",
    "fileCount": 1,
    "group": "flat adjacency data with a parent pointer",
@@ -91380,7 +91429,7 @@
    "id": "reui/c-cascader-9",
    "name": "Controlled path, value, query and open state.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "cascader",
     "controlled state",
@@ -91405,8 +91454,9 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-9.tsx"
    },
-   "contentHash": "2c3056c9171e721a",
+   "contentHash": "3e8cdce13314bfeb",
    "importedAt": "2026-11-10T13:14:52.681Z",
+   "updatedAt": "2026-11-10T13:48:13.892Z",
    "dir": "items/reui/c-cascader-9",
    "fileCount": 1,
    "group": "controlled path value query and open state",
@@ -93361,7 +93411,7 @@
    "id": "reui/c-code-block-13",
    "name": "Search in file",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93390,8 +93440,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-13.tsx"
    },
-   "contentHash": "dae68380ae1786e2",
+   "contentHash": "4c4e5df84f8f5395",
    "importedAt": "2026-11-10T13:14:53.519Z",
+   "updatedAt": "2026-11-10T13:48:13.975Z",
    "dir": "items/reui/c-code-block-13",
    "fileCount": 1,
    "group": "search in file",
@@ -93401,7 +93452,7 @@
    "id": "reui/c-code-block-14",
    "name": "File tabs in a dense frame",
    "type": "component",
-   "category": "Navigation",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93427,8 +93478,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-14.tsx"
    },
-   "contentHash": "d05bc3e2375c21f8",
+   "contentHash": "213771bc51f06830",
    "importedAt": "2026-11-10T13:14:53.534Z",
+   "updatedAt": "2026-11-10T13:48:13.980Z",
    "dir": "items/reui/c-code-block-14",
    "fileCount": 1,
    "group": "file tabs in a dense frame",
@@ -93619,7 +93671,7 @@
    "id": "reui/c-code-block-2",
    "name": "Pinned copy button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93645,8 +93697,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-2.tsx"
    },
-   "contentHash": "b97451cedf77824e",
+   "contentHash": "a0bdf7e173fb3587",
    "importedAt": "2026-11-10T13:14:53.394Z",
+   "updatedAt": "2026-11-10T13:48:13.952Z",
    "dir": "items/reui/c-code-block-2",
    "fileCount": 1,
    "group": "pinned copy button",
@@ -93803,7 +93856,7 @@
    "id": "reui/c-code-block-24",
    "name": "Fix with AI on the failing line",
    "type": "component",
-   "category": "IA et messages",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93830,8 +93883,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-24.tsx"
    },
-   "contentHash": "10e4a0ba9bd71ca5",
+   "contentHash": "b7d6bcc65b7d5c9d",
    "importedAt": "2026-11-10T13:14:53.654Z",
+   "updatedAt": "2026-11-10T13:48:13.991Z",
    "dir": "items/reui/c-code-block-24",
    "fileCount": 1,
    "group": "fix with ai on the failing line",
@@ -93841,7 +93895,7 @@
    "id": "reui/c-code-block-25",
    "name": "Reference lines in chat",
    "type": "component",
-   "category": "IA et messages",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93868,8 +93922,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-25.tsx"
    },
-   "contentHash": "f3e0ce51bc5dd07e",
+   "contentHash": "41d83afb996ff671",
    "importedAt": "2026-11-10T13:14:53.665Z",
+   "updatedAt": "2026-11-10T13:48:13.995Z",
    "dir": "items/reui/c-code-block-25",
    "fileCount": 1,
    "group": "reference lines in chat",
@@ -93953,7 +94008,7 @@
    "id": "reui/c-code-block-3",
    "name": "Streaming agent response",
    "type": "component",
-   "category": "IA et messages",
+   "category": "Code",
    "tags": [
     "code-block",
     "exemple",
@@ -93982,8 +94037,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-3.tsx"
    },
-   "contentHash": "f0eef69160014100",
+   "contentHash": "06744b56ca302289",
    "importedAt": "2026-11-10T13:14:53.397Z",
+   "updatedAt": "2026-11-10T13:48:13.958Z",
    "dir": "items/reui/c-code-block-3",
    "fileCount": 1,
    "group": "streaming agent response",
@@ -93993,7 +94049,7 @@
    "id": "reui/c-code-block-4",
    "name": "AI chat with code fences",
    "type": "component",
-   "category": "IA et messages",
+   "category": "Code",
    "tags": [
     "ai chat",
     "code-block",
@@ -94020,8 +94076,9 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-4.tsx"
    },
-   "contentHash": "1115acdecc87c202",
+   "contentHash": "ccb0f07a08067cb3",
    "importedAt": "2026-11-10T13:14:53.413Z",
+   "updatedAt": "2026-11-10T13:48:13.963Z",
    "dir": "items/reui/c-code-block-4",
    "fileCount": 1,
    "group": "ai chat with code fences",
@@ -94284,7 +94341,7 @@
    "id": "reui/c-collapsible-2",
    "name": "Collapsible with checkbox settings",
    "type": "component",
-   "category": "Formulaires",
+   "category": "FAQ",
    "tags": [
     "checkbox settings",
     "collapsible",
@@ -94312,8 +94369,9 @@
     "kind": "live",
     "entry": "components/collapsible/c-collapsible-2.tsx"
    },
-   "contentHash": "ba12ea7a8de6ec36",
+   "contentHash": "34ee397ab1b0f68d",
    "importedAt": "2026-11-10T13:14:53.710Z",
+   "updatedAt": "2026-11-10T13:48:14.003Z",
    "dir": "items/reui/c-collapsible-2",
    "fileCount": 1,
    "group": "collapsible with checkbox settings",
@@ -94398,7 +94456,7 @@
    "id": "reui/c-collapsible-5",
    "name": "Collapsible form fields",
    "type": "component",
-   "category": "Formulaires",
+   "category": "FAQ",
    "tags": [
     "collapsible",
     "exemple",
@@ -94426,8 +94484,9 @@
     "kind": "live",
     "entry": "components/collapsible/c-collapsible-5.tsx"
    },
-   "contentHash": "ce9e250a602ad0b9",
+   "contentHash": "59e72fc222bd1b7f",
    "importedAt": "2026-11-10T13:14:53.744Z",
+   "updatedAt": "2026-11-10T13:48:14.007Z",
    "dir": "items/reui/c-collapsible-5",
    "fileCount": 1,
    "group": "collapsible form fields",
@@ -95973,7 +96032,7 @@
    "id": "reui/c-combobox-4",
    "name": "A combobox with a clear button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "clear button",
     "combobox",
@@ -95998,8 +96057,9 @@
     "kind": "live",
     "entry": "components/combobox/c-combobox-4.tsx"
    },
-   "contentHash": "ebad563676c163e9",
+   "contentHash": "01fb9336eb48035c",
    "importedAt": "2026-11-10T13:14:53.995Z",
+   "updatedAt": "2026-11-10T13:48:14.021Z",
    "dir": "items/reui/c-combobox-4",
    "fileCount": 1,
    "group": "a combobox with a clear button",
@@ -96696,7 +96756,7 @@
    "id": "reui/c-context-menu-6",
    "name": "Context menu with checkbox items.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "checkbox items",
     "context-menu",
@@ -96720,8 +96780,9 @@
     "kind": "live",
     "entry": "components/context-menu/c-context-menu-6.tsx"
    },
-   "contentHash": "850324bc108aaf67",
+   "contentHash": "e89f8de7191e307f",
    "importedAt": "2026-11-10T13:14:54.431Z",
+   "updatedAt": "2026-11-10T13:48:14.046Z",
    "dir": "items/reui/c-context-menu-6",
    "fileCount": 1,
    "group": "context menu with checkbox items",
@@ -96731,7 +96792,7 @@
    "id": "reui/c-context-menu-7",
    "name": "Context menu with radio items.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "context-menu",
     "exemple",
@@ -96755,8 +96816,9 @@
     "kind": "live",
     "entry": "components/context-menu/c-context-menu-7.tsx"
    },
-   "contentHash": "1d7eef36c754cb6b",
+   "contentHash": "62f91983d3a74438",
    "importedAt": "2026-11-10T13:14:54.441Z",
+   "updatedAt": "2026-11-10T13:48:14.050Z",
    "dir": "items/reui/c-context-menu-7",
    "fileCount": 1,
    "group": "context menu with radio items",
@@ -96836,7 +96898,7 @@
    "id": "reui/c-data-grid-1",
    "name": "Data grid with pagination",
    "type": "component",
-   "category": "Navigation",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -96863,8 +96925,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-1.tsx"
    },
-   "contentHash": "b13a2068cb692a85",
+   "contentHash": "8843c13d0fb02cee",
    "importedAt": "2026-11-10T13:14:54.470Z",
+   "updatedAt": "2026-11-10T13:48:14.056Z",
    "dir": "items/reui/c-data-grid-1",
    "fileCount": 1,
    "group": "data grid with pagination",
@@ -96874,7 +96937,7 @@
    "id": "reui/c-data-grid-10",
    "name": "Data grid with column icons",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "column icons",
     "data-grid",
@@ -96902,8 +96965,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-10.tsx"
    },
-   "contentHash": "2f2df7ff04b04157",
+   "contentHash": "5ebf0e5d4564cf5c",
    "importedAt": "2026-11-10T13:14:54.575Z",
+   "updatedAt": "2026-11-10T13:48:14.087Z",
    "dir": "items/reui/c-data-grid-10",
    "fileCount": 1,
    "group": "data grid with column icons",
@@ -96913,7 +96977,7 @@
    "id": "reui/c-data-grid-11",
    "name": "Data grid with sortable columns",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -96941,8 +97005,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-11.tsx"
    },
-   "contentHash": "88f86075583a13b6",
+   "contentHash": "d72e5d12f65ac9f4",
    "importedAt": "2026-11-10T13:14:54.589Z",
+   "updatedAt": "2026-11-10T13:48:14.091Z",
    "dir": "items/reui/c-data-grid-11",
    "fileCount": 1,
    "group": "data grid with sortable columns",
@@ -96952,7 +97017,7 @@
    "id": "reui/c-data-grid-12",
    "name": "Data grid with movable columns",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -96980,8 +97045,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-12.tsx"
    },
-   "contentHash": "9429051e1adc1e00",
+   "contentHash": "89de339458ac33bc",
    "importedAt": "2026-11-10T13:14:54.603Z",
+   "updatedAt": "2026-11-10T13:48:14.094Z",
    "dir": "items/reui/c-data-grid-12",
    "fileCount": 1,
    "group": "data grid with movable columns",
@@ -96991,7 +97057,7 @@
    "id": "reui/c-data-grid-13",
    "name": "Data grid with draggable columns",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "drag",
@@ -97023,8 +97089,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-13.tsx"
    },
-   "contentHash": "3d858e7e5f394da5",
+   "contentHash": "0fd899c71f6c316c",
    "importedAt": "2026-11-10T13:14:54.614Z",
+   "updatedAt": "2026-11-10T13:48:14.097Z",
    "dir": "items/reui/c-data-grid-13",
    "fileCount": 1,
    "group": "data grid with draggable columns",
@@ -97034,7 +97101,7 @@
    "id": "reui/c-data-grid-14",
    "name": "Data grid with draggable rows",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "drag",
@@ -97065,8 +97132,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-14.tsx"
    },
-   "contentHash": "6fbdae762f244d1d",
+   "contentHash": "3729bbe9c70da4a0",
    "importedAt": "2026-11-10T13:14:54.629Z",
+   "updatedAt": "2026-11-10T13:48:14.100Z",
    "dir": "items/reui/c-data-grid-14",
    "fileCount": 1,
    "group": "data grid with draggable rows",
@@ -97076,7 +97144,7 @@
    "id": "reui/c-data-grid-15",
    "name": "Data grid with column resizing",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "column resizing",
     "data-grid",
@@ -97105,8 +97173,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-15.tsx"
    },
-   "contentHash": "c3fc8869916abaa5",
+   "contentHash": "86061e6c93470a0c",
    "importedAt": "2026-11-10T13:14:54.643Z",
+   "updatedAt": "2026-11-10T13:48:14.104Z",
    "dir": "items/reui/c-data-grid-15",
    "fileCount": 1,
    "group": "data grid with column resizing",
@@ -97116,7 +97185,7 @@
    "id": "reui/c-data-grid-16",
    "name": "Data grid with pinnable columns",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97145,8 +97214,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-16.tsx"
    },
-   "contentHash": "c8aca23bf09fb878",
+   "contentHash": "aa38dab335b94703",
    "importedAt": "2026-11-10T13:14:54.656Z",
+   "updatedAt": "2026-11-10T13:48:14.107Z",
    "dir": "items/reui/c-data-grid-16",
    "fileCount": 1,
    "group": "data grid with pinnable columns",
@@ -97156,7 +97226,7 @@
    "id": "reui/c-data-grid-17",
    "name": "Data grid with sticky header",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97185,8 +97255,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-17.tsx"
    },
-   "contentHash": "a9f4c3cf8fb5ab88",
+   "contentHash": "e4359ab6ad0be426",
    "importedAt": "2026-11-10T13:14:54.670Z",
+   "updatedAt": "2026-11-10T13:48:14.111Z",
    "dir": "items/reui/c-data-grid-17",
    "fileCount": 1,
    "group": "data grid with sticky header",
@@ -97196,7 +97267,7 @@
    "id": "reui/c-data-grid-18",
    "name": "Data grid with column controls",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "column controls",
     "data-grid",
@@ -97225,8 +97296,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-18.tsx"
    },
-   "contentHash": "f203550a98d27388",
+   "contentHash": "178cfcd0d96c6810",
    "importedAt": "2026-11-10T13:14:54.684Z",
+   "updatedAt": "2026-11-10T13:48:14.114Z",
    "dir": "items/reui/c-data-grid-18",
    "fileCount": 1,
    "group": "data grid with column controls",
@@ -97236,7 +97308,7 @@
    "id": "reui/c-data-grid-19",
    "name": "Data grid with card container",
    "type": "component",
-   "category": "Cartes",
+   "category": "Tableaux de données",
    "tags": [
     "card container",
     "data-grid",
@@ -97266,8 +97338,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-19.tsx"
    },
-   "contentHash": "4b48114bbe011e74",
+   "contentHash": "9a6e5986324ddc4d",
    "importedAt": "2026-11-10T13:14:54.698Z",
+   "updatedAt": "2026-11-10T13:48:14.118Z",
    "dir": "items/reui/c-data-grid-19",
    "fileCount": 1,
    "group": "data grid with card container",
@@ -97277,7 +97350,7 @@
    "id": "reui/c-data-grid-2",
    "name": "Data grid with cell border",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "cell borders",
     "data-grid",
@@ -97306,8 +97379,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-2.tsx"
    },
-   "contentHash": "e6a96654e4dc3d16",
+   "contentHash": "d2363b878f48a88e",
    "importedAt": "2026-11-10T13:14:54.475Z",
+   "updatedAt": "2026-11-10T13:48:14.060Z",
    "dir": "items/reui/c-data-grid-2",
    "fileCount": 1,
    "group": "data grid with cell border",
@@ -97317,7 +97391,7 @@
    "id": "reui/c-data-grid-20",
    "name": "Data grid with column visibility controls",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "column visibility",
     "data-grid",
@@ -97347,8 +97421,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-20.tsx"
    },
-   "contentHash": "c2c424250120c89f",
+   "contentHash": "9b0fc2d0ea16cf86",
    "importedAt": "2026-11-10T13:14:54.714Z",
+   "updatedAt": "2026-11-10T13:48:14.122Z",
    "dir": "items/reui/c-data-grid-20",
    "fileCount": 1,
    "group": "data grid with column visibility controls",
@@ -97358,7 +97433,7 @@
    "id": "reui/c-data-grid-21",
    "name": "Data grid with loading skeleton",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97389,8 +97464,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-21.tsx"
    },
-   "contentHash": "ca19a6a1cd10b09f",
+   "contentHash": "3801e131bee12eb7",
    "importedAt": "2026-11-10T13:14:54.728Z",
+   "updatedAt": "2026-11-10T13:48:14.126Z",
    "dir": "items/reui/c-data-grid-21",
    "fileCount": 1,
    "group": "data grid with loading skeleton",
@@ -97400,7 +97476,7 @@
    "id": "reui/c-data-grid-22",
    "name": "Data grid with CRUD features",
    "type": "section",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "crud admin",
     "data-grid",
@@ -97437,9 +97513,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-22.tsx"
    },
-   "contentHash": "47aced694ba2844d",
+   "contentHash": "fa51ee74504551eb",
    "importedAt": "2026-11-10T13:14:54.742Z",
-   "updatedAt": "2026-11-10T13:25:20.781Z",
+   "updatedAt": "2026-11-10T13:48:14.130Z",
    "dir": "items/reui/c-data-grid-22",
    "fileCount": 1,
    "group": "data grid with crud features",
@@ -97449,7 +97525,7 @@
    "id": "reui/c-data-grid-23",
    "name": "Data grid with CRUD in frame container",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "crud in frame",
     "data-grid",
@@ -97486,9 +97562,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-23.tsx"
    },
-   "contentHash": "6776bc493f774052",
+   "contentHash": "5f078ff56596beb7",
    "importedAt": "2026-11-10T13:14:54.758Z",
-   "updatedAt": "2026-11-10T13:25:20.799Z",
+   "updatedAt": "2026-11-10T13:48:14.133Z",
    "dir": "items/reui/c-data-grid-23",
    "fileCount": 1,
    "group": "data grid with crud in frame container",
@@ -97498,7 +97574,7 @@
    "id": "reui/c-data-grid-24",
    "name": "Data grid with column totals footer",
    "type": "section",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97532,9 +97608,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-24.tsx"
    },
-   "contentHash": "8656117e6d15331b",
+   "contentHash": "1190bc6cbab57805",
    "importedAt": "2026-11-10T13:14:54.774Z",
-   "updatedAt": "2026-11-10T13:25:20.812Z",
+   "updatedAt": "2026-11-10T13:48:14.137Z",
    "dir": "items/reui/c-data-grid-24",
    "fileCount": 1,
    "group": "data grid with column totals footer",
@@ -97544,7 +97620,7 @@
    "id": "reui/c-data-grid-25",
    "name": "Data grid with summary stats footer",
    "type": "section",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97574,8 +97650,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-25.tsx"
    },
-   "contentHash": "841d4d6ddc0bcb0a",
+   "contentHash": "428236b31b42f64f",
    "importedAt": "2026-11-10T13:14:54.788Z",
+   "updatedAt": "2026-11-10T13:48:14.141Z",
    "dir": "items/reui/c-data-grid-25",
    "fileCount": 1,
    "group": "data grid with summary stats footer",
@@ -97585,7 +97662,7 @@
    "id": "reui/c-data-grid-26",
    "name": "Data grid with per-column aggregate footer",
    "type": "section",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "aggregate footer",
     "data-grid",
@@ -97615,8 +97692,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-26.tsx"
    },
-   "contentHash": "1ccf977b5abbf72e",
+   "contentHash": "db91f40137870fbc",
    "importedAt": "2026-11-10T13:14:54.808Z",
+   "updatedAt": "2026-11-10T13:48:14.145Z",
    "dir": "items/reui/c-data-grid-26",
    "fileCount": 1,
    "group": "data grid with per column aggregate footer",
@@ -97626,7 +97704,7 @@
    "id": "reui/c-data-grid-27",
    "name": "Data grid with local infinite scroll",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97657,8 +97735,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-27.tsx"
    },
-   "contentHash": "1bc930ec7e2c908a",
+   "contentHash": "4528a60961e40155",
    "importedAt": "2026-11-10T13:14:54.824Z",
+   "updatedAt": "2026-11-10T13:48:14.148Z",
    "dir": "items/reui/c-data-grid-27",
    "fileCount": 1,
    "group": "data grid with local infinite scroll",
@@ -97668,7 +97747,7 @@
    "id": "reui/c-data-grid-28",
    "name": "Data grid with remote infinite scroll",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97699,8 +97778,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-28.tsx"
    },
-   "contentHash": "3ffc36c0813f23ae",
+   "contentHash": "e7a0e6cabcabec16",
    "importedAt": "2026-11-10T13:14:54.842Z",
+   "updatedAt": "2026-11-10T13:48:14.153Z",
    "dir": "items/reui/c-data-grid-28",
    "fileCount": 1,
    "group": "data grid with remote infinite scroll",
@@ -97710,7 +97790,7 @@
    "id": "reui/c-data-grid-29",
    "name": "Data grid with row pinning support",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97743,9 +97823,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-29.tsx"
    },
-   "contentHash": "ceb217e78c25ed5f",
+   "contentHash": "2ef28a4a598ca958",
    "importedAt": "2026-11-10T13:14:54.858Z",
-   "updatedAt": "2026-11-10T13:25:20.861Z",
+   "updatedAt": "2026-11-10T13:48:14.157Z",
    "dir": "items/reui/c-data-grid-29",
    "fileCount": 1,
    "group": "data grid with row pinning support",
@@ -97755,7 +97835,7 @@
    "id": "reui/c-data-grid-3",
    "name": "Data grid with dense layout",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "dense layout",
@@ -97783,8 +97863,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-3.tsx"
    },
-   "contentHash": "c6ff91e7a0aea0cc",
+   "contentHash": "c2b96341b55e6343",
    "importedAt": "2026-11-10T13:14:54.477Z",
+   "updatedAt": "2026-11-10T13:48:14.064Z",
    "dir": "items/reui/c-data-grid-3",
    "fileCount": 1,
    "group": "data grid with dense layout",
@@ -97794,7 +97875,7 @@
    "id": "reui/c-data-grid-30",
    "name": "Data grid with tree rows",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97823,8 +97904,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-30.tsx"
    },
-   "contentHash": "aba99248c3ba679e",
+   "contentHash": "4c2bfa40831209de",
    "importedAt": "2026-11-10T13:14:54.874Z",
+   "updatedAt": "2026-11-10T13:48:14.162Z",
    "dir": "items/reui/c-data-grid-30",
    "fileCount": 1,
    "group": "data grid with tree rows",
@@ -97834,7 +97916,7 @@
    "id": "reui/c-data-grid-31",
    "name": "Data grid with spreadsheet editing",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97872,8 +97954,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-31.tsx"
    },
-   "contentHash": "6ff7b1d862b20574",
+   "contentHash": "51f60aec0da8feaa",
    "importedAt": "2026-11-10T13:14:54.894Z",
+   "updatedAt": "2026-11-10T13:48:14.167Z",
    "dir": "items/reui/c-data-grid-31",
    "fileCount": 1,
    "group": "data grid with spreadsheet editing",
@@ -97883,7 +97966,7 @@
    "id": "reui/c-data-grid-32",
    "name": "Data grid with column virtualization",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "column virtualization",
     "data-grid",
@@ -97912,8 +97995,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-32.tsx"
    },
-   "contentHash": "993f8abc2ca84f32",
+   "contentHash": "6a24b3db0eedc6a6",
    "importedAt": "2026-11-10T13:14:54.912Z",
+   "updatedAt": "2026-11-10T13:48:14.173Z",
    "dir": "items/reui/c-data-grid-32",
    "fileCount": 1,
    "group": "data grid with column virtualization",
@@ -97923,7 +98007,7 @@
    "id": "reui/c-data-grid-33",
    "name": "Data grid with localized labels",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97953,8 +98037,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-33.tsx"
    },
-   "contentHash": "61419ebe6fbc8ace",
+   "contentHash": "2e0eee8672ed4542",
    "importedAt": "2026-11-10T13:14:54.927Z",
+   "updatedAt": "2026-11-10T13:48:14.177Z",
    "dir": "items/reui/c-data-grid-33",
    "fileCount": 1,
    "group": "data grid with localized labels",
@@ -97964,7 +98049,7 @@
    "id": "reui/c-data-grid-34",
    "name": "Data grid with server side pagination",
    "type": "component",
-   "category": "Navigation",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -97997,8 +98082,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-34.tsx"
    },
-   "contentHash": "f82b8a66aeb7c584",
+   "contentHash": "7aea1a661f1c540e",
    "importedAt": "2026-11-10T13:14:54.943Z",
+   "updatedAt": "2026-11-10T13:48:14.182Z",
    "dir": "items/reui/c-data-grid-34",
    "fileCount": 1,
    "group": "data grid with server side pagination",
@@ -98048,7 +98134,7 @@
    "id": "reui/c-data-grid-5",
    "name": "Data grid with striped rows",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -98076,8 +98162,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-5.tsx"
    },
-   "contentHash": "0a54615f56f502b1",
+   "contentHash": "3fd74cff7af9aefd",
    "importedAt": "2026-11-10T13:14:54.507Z",
+   "updatedAt": "2026-11-10T13:48:14.069Z",
    "dir": "items/reui/c-data-grid-5",
    "fileCount": 1,
    "group": "data grid with striped rows",
@@ -98126,7 +98213,7 @@
    "id": "reui/c-data-grid-7",
    "name": "Data grid with row selection",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -98154,8 +98241,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-7.tsx"
    },
-   "contentHash": "09c654e3a3c3b750",
+   "contentHash": "76b0693049b138ce",
    "importedAt": "2026-11-10T13:14:54.535Z",
+   "updatedAt": "2026-11-10T13:48:14.075Z",
    "dir": "items/reui/c-data-grid-7",
    "fileCount": 1,
    "group": "data grid with row selection",
@@ -98165,7 +98253,7 @@
    "id": "reui/c-data-grid-8",
    "name": "Data grid with expandable rows",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "data-grid",
     "exemple",
@@ -98194,8 +98282,9 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-8.tsx"
    },
-   "contentHash": "92cfb1424c717d0c",
+   "contentHash": "3af4f43037a3ba55",
    "importedAt": "2026-11-10T13:14:54.549Z",
+   "updatedAt": "2026-11-10T13:48:14.081Z",
    "dir": "items/reui/c-data-grid-8",
    "fileCount": 1,
    "group": "data grid with expandable rows",
@@ -98436,7 +98525,7 @@
    "id": "reui/c-dialog-10",
    "name": "Dialog with full width button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "dialog",
     "exemple",
@@ -98461,8 +98550,9 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-10.tsx"
    },
-   "contentHash": "7cb52cb6fefac200",
+   "contentHash": "a1c9f704cd649c88",
    "importedAt": "2026-11-10T13:14:55.104Z",
+   "updatedAt": "2026-11-10T13:48:14.201Z",
    "dir": "items/reui/c-dialog-10",
    "fileCount": 1,
    "group": "dialog with full width button",
@@ -98546,7 +98636,7 @@
    "id": "reui/c-dialog-4",
    "name": "Dialog without a close button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "dialog",
     "exemple",
@@ -98571,8 +98661,9 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-4.tsx"
    },
-   "contentHash": "3f91c1f449388724",
+   "contentHash": "db87b34b8699d4b3",
    "importedAt": "2026-11-10T13:14:55.030Z",
+   "updatedAt": "2026-11-10T13:48:14.190Z",
    "dir": "items/reui/c-dialog-4",
    "fileCount": 1,
    "group": "dialog without a close button",
@@ -98582,7 +98673,7 @@
    "id": "reui/c-dialog-5",
    "name": "Dialog with custom close button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "custom close button",
     "dialog",
@@ -98609,8 +98700,9 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-5.tsx"
    },
-   "contentHash": "1a48b202c54a0264",
+   "contentHash": "da204e7b69098433",
    "importedAt": "2026-11-10T13:14:55.044Z",
+   "updatedAt": "2026-11-10T13:48:14.194Z",
    "dir": "items/reui/c-dialog-5",
    "fileCount": 1,
    "group": "dialog with custom close button",
@@ -99132,7 +99224,7 @@
    "id": "reui/c-dropdown-menu-14",
    "name": "User profile dropdown menu with theme toggle and status selector",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "dropdown-menu",
     "exemple",
@@ -99160,8 +99252,9 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-14.tsx"
    },
-   "contentHash": "590267dd6d4a2291",
+   "contentHash": "bdfc1e587ac12c21",
    "importedAt": "2026-11-10T13:14:55.387Z",
+   "updatedAt": "2026-11-10T13:48:14.222Z",
    "dir": "items/reui/c-dropdown-menu-14",
    "fileCount": 1,
    "group": "user profile dropdown menu with theme toggle and status selector",
@@ -99463,7 +99556,7 @@
    "id": "reui/c-dropdown-menu-6",
    "name": "Dropdown menu with checkboxes",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "checkboxes",
     "dropdown-menu",
@@ -99488,8 +99581,9 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-6.tsx"
    },
-   "contentHash": "072c8857512851bd",
+   "contentHash": "aece79c430e6444d",
    "importedAt": "2026-11-10T13:14:55.243Z",
+   "updatedAt": "2026-11-10T13:48:14.211Z",
    "dir": "items/reui/c-dropdown-menu-6",
    "fileCount": 1,
    "group": "dropdown menu with checkboxes",
@@ -99499,7 +99593,7 @@
    "id": "reui/c-dropdown-menu-7",
    "name": "Dropdown menu with radio groups",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "dropdown-menu",
     "exemple",
@@ -99524,8 +99618,9 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-7.tsx"
    },
-   "contentHash": "712bb835674610f9",
+   "contentHash": "45fbd66b547f715a",
    "importedAt": "2026-11-10T13:14:55.254Z",
+   "updatedAt": "2026-11-10T13:48:14.215Z",
    "dir": "items/reui/c-dropdown-menu-7",
    "fileCount": 1,
    "group": "dropdown menu with radio groups",
@@ -100852,7 +100947,7 @@
    "id": "reui/c-field-1",
    "name": "Fields with input groups",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -100878,8 +100973,9 @@
     "kind": "live",
     "entry": "components/field/c-field-1.tsx"
    },
-   "contentHash": "90ff41305594699e",
+   "contentHash": "a61e2647acc1dcf9",
    "importedAt": "2026-11-10T13:14:55.903Z",
+   "updatedAt": "2026-11-10T13:48:14.250Z",
    "dir": "items/reui/c-field-1",
    "fileCount": 1,
    "group": "fields with input groups",
@@ -100889,7 +100985,7 @@
    "id": "reui/c-field-10",
    "name": "Notification preferences form",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -100915,8 +101011,9 @@
     "kind": "live",
     "entry": "components/field/c-field-10.tsx"
    },
-   "contentHash": "bd6c84135fcf51cd",
+   "contentHash": "6b46723db26bdf57",
    "importedAt": "2026-11-10T13:14:56.009Z",
+   "updatedAt": "2026-11-10T13:48:14.298Z",
    "dir": "items/reui/c-field-10",
    "fileCount": 1,
    "group": "notification preferences form",
@@ -100926,7 +101023,7 @@
    "id": "reui/c-field-11",
    "name": "Form with validation errors",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -100953,8 +101050,9 @@
     "kind": "live",
     "entry": "components/field/c-field-11.tsx"
    },
-   "contentHash": "2ab99fdd4bf211b2",
+   "contentHash": "7c1fc8894e8eaa74",
    "importedAt": "2026-11-10T13:14:56.022Z",
+   "updatedAt": "2026-11-10T13:48:14.303Z",
    "dir": "items/reui/c-field-11",
    "fileCount": 1,
    "group": "form with validation errors",
@@ -100964,7 +101062,7 @@
    "id": "reui/c-field-2",
    "name": "Field with input and textarea",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -100990,8 +101088,9 @@
     "kind": "live",
     "entry": "components/field/c-field-2.tsx"
    },
-   "contentHash": "aa95cfb87c16d3b8",
+   "contentHash": "2c8e8468d7f5f397",
    "importedAt": "2026-11-10T13:14:55.914Z",
+   "updatedAt": "2026-11-10T13:48:14.262Z",
    "dir": "items/reui/c-field-2",
    "fileCount": 1,
    "group": "field with input and textarea",
@@ -101001,7 +101100,7 @@
    "id": "reui/c-field-3",
    "name": "Field with select control",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101026,8 +101125,9 @@
     "kind": "live",
     "entry": "components/field/c-field-3.tsx"
    },
-   "contentHash": "670008e5bd9ca796",
+   "contentHash": "4fad4275ddfe95ac",
    "importedAt": "2026-11-10T13:14:55.927Z",
+   "updatedAt": "2026-11-10T13:48:14.268Z",
    "dir": "items/reui/c-field-3",
    "fileCount": 1,
    "group": "field with select control",
@@ -101037,7 +101137,7 @@
    "id": "reui/c-field-4",
    "name": "Field with radio groups and checkboxes",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101063,8 +101163,9 @@
     "kind": "live",
     "entry": "components/field/c-field-4.tsx"
    },
-   "contentHash": "af24e72a5aff9ec9",
+   "contentHash": "d2ec8ac82f880329",
    "importedAt": "2026-11-10T13:14:55.938Z",
+   "updatedAt": "2026-11-10T13:48:14.275Z",
    "dir": "items/reui/c-field-4",
    "fileCount": 1,
    "group": "field with radio groups and checkboxes",
@@ -101074,7 +101175,7 @@
    "id": "reui/c-field-5",
    "name": "Filed with slider and switch",
    "type": "component",
-   "category": "Curseurs",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101100,8 +101201,9 @@
     "kind": "live",
     "entry": "components/field/c-field-5.tsx"
    },
-   "contentHash": "99c387e798f4d1da",
+   "contentHash": "eb008c5236187e25",
    "importedAt": "2026-11-10T13:14:55.949Z",
+   "updatedAt": "2026-11-10T13:48:14.280Z",
    "dir": "items/reui/c-field-5",
    "fileCount": 1,
    "group": "filed with slider and switch",
@@ -101111,7 +101213,7 @@
    "id": "reui/c-field-6",
    "name": "Field with OTP input",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101137,8 +101239,9 @@
     "kind": "live",
     "entry": "components/field/c-field-6.tsx"
    },
-   "contentHash": "8b4a514f9381bafe",
+   "contentHash": "87804bd764b25cd9",
    "importedAt": "2026-11-10T13:14:55.960Z",
+   "updatedAt": "2026-11-10T13:48:14.284Z",
    "dir": "items/reui/c-field-6",
    "fileCount": 1,
    "group": "field with otp input",
@@ -101148,7 +101251,7 @@
    "id": "reui/c-field-7",
    "name": "Settings form with validation",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101177,8 +101280,9 @@
     "kind": "live",
     "entry": "components/field/c-field-7.tsx"
    },
-   "contentHash": "34003feced903584",
+   "contentHash": "090f62e8988d6b30",
    "importedAt": "2026-11-10T13:14:55.972Z",
+   "updatedAt": "2026-11-10T13:48:14.289Z",
    "dir": "items/reui/c-field-7",
    "fileCount": 1,
    "group": "settings form with validation",
@@ -101188,7 +101292,7 @@
    "id": "reui/c-field-8",
    "name": "Permission settings with checkboxes",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fonds",
    "tags": [
     "exemple",
     "field",
@@ -101213,8 +101317,9 @@
     "kind": "live",
     "entry": "components/field/c-field-8.tsx"
    },
-   "contentHash": "4a15ff01dbeb45ec",
+   "contentHash": "1d91b1b50a35d1e1",
    "importedAt": "2026-11-10T13:14:55.983Z",
+   "updatedAt": "2026-11-10T13:48:14.294Z",
    "dir": "items/reui/c-field-8",
    "fileCount": 1,
    "group": "permission settings with checkboxes",
@@ -101652,7 +101757,7 @@
    "id": "reui/c-file-type-6",
    "name": "Data grid file browser",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "exemple",
     "file browser",
@@ -101680,8 +101785,9 @@
     "kind": "live",
     "entry": "components/file-type/c-file-type-6.tsx"
    },
-   "contentHash": "a4c0392a6efcc5bb",
+   "contentHash": "69138465af11c049",
    "importedAt": "2026-11-10T13:14:56.082Z",
+   "updatedAt": "2026-11-10T13:48:14.309Z",
    "dir": "items/reui/c-file-type-6",
    "fileCount": 1,
    "group": "data grid file browser",
@@ -102195,7 +102301,7 @@
    "id": "reui/c-filters-1",
    "name": "Everything in one filter bar",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102220,8 +102326,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-1.tsx"
    },
-   "contentHash": "a6a0566e559d3c68",
+   "contentHash": "e9e7bbea168a3d68",
    "importedAt": "2026-11-10T13:14:56.376Z",
+   "updatedAt": "2026-11-10T13:48:14.327Z",
    "dir": "items/reui/c-filters-1",
    "fileCount": 1,
    "group": "everything in one filter bar",
@@ -102231,7 +102338,7 @@
    "id": "reui/c-filters-10",
    "name": "Nested groups in a popover",
    "type": "component",
-   "category": "Fenêtres et panneaux",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102262,8 +102369,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-10.tsx"
    },
-   "contentHash": "f956c4e035098d14",
+   "contentHash": "ad3f824768348183",
    "importedAt": "2026-11-10T13:14:56.513Z",
+   "updatedAt": "2026-11-10T13:48:14.388Z",
    "dir": "items/reui/c-filters-10",
    "fileCount": 1,
    "group": "nested groups in a popover",
@@ -102273,7 +102381,7 @@
    "id": "reui/c-filters-11",
    "name": "Nested groups inline, walked back out",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102300,8 +102408,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-11.tsx"
    },
-   "contentHash": "c58a0aece1a8a42d",
+   "contentHash": "5ae35109b74669b1",
    "importedAt": "2026-11-10T13:14:56.529Z",
+   "updatedAt": "2026-11-10T13:48:14.392Z",
    "dir": "items/reui/c-filters-11",
    "fileCount": 1,
    "group": "nested groups inline walked back out",
@@ -102311,7 +102420,7 @@
    "id": "reui/c-filters-12",
    "name": "Controlled, sized and translated",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Formulaires",
    "tags": [
     "controlled & translated",
     "exemple",
@@ -102338,8 +102447,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-12.tsx"
    },
-   "contentHash": "838163061aa78178",
+   "contentHash": "e8aa35ce703574e9",
    "importedAt": "2026-11-10T13:14:56.546Z",
+   "updatedAt": "2026-11-10T13:48:14.396Z",
    "dir": "items/reui/c-filters-12",
    "fileCount": 1,
    "group": "controlled sized and translated",
@@ -102349,7 +102459,7 @@
    "id": "reui/c-filters-2",
    "name": "Nested attributes at workspace scale",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102373,8 +102483,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-2.tsx"
    },
-   "contentHash": "9a2187a274bbf675",
+   "contentHash": "7faf074c39c01329",
    "importedAt": "2026-11-10T13:14:56.381Z",
+   "updatedAt": "2026-11-10T13:48:14.332Z",
    "dir": "items/reui/c-filters-2",
    "fileCount": 1,
    "group": "nested attributes at workspace scale",
@@ -102384,7 +102495,7 @@
    "id": "reui/c-filters-3",
    "name": "Status and priority colour badges",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102409,8 +102520,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-3.tsx"
    },
-   "contentHash": "a9345fb5019096f9",
+   "contentHash": "6ee32a45ddfce22f",
    "importedAt": "2026-11-10T13:14:56.386Z",
+   "updatedAt": "2026-11-10T13:48:14.336Z",
    "dir": "items/reui/c-filters-3",
    "fileCount": 1,
    "group": "status and priority colour badges",
@@ -102420,7 +102532,7 @@
    "id": "reui/c-filters-4",
    "name": "Avatars, paging and a restored view",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Formulaires",
    "tags": [
     "avatars & paging",
     "exemple",
@@ -102446,8 +102558,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-4.tsx"
    },
-   "contentHash": "440b788c06d7c84a",
+   "contentHash": "3f7f4ec9af9b9daa",
    "importedAt": "2026-11-10T13:14:56.407Z",
+   "updatedAt": "2026-11-10T13:48:14.340Z",
    "dir": "items/reui/c-filters-4",
    "fileCount": 1,
    "group": "avatars paging and a restored view",
@@ -102457,7 +102570,7 @@
    "id": "reui/c-filters-5",
    "name": "A date and a date range editor",
    "type": "component",
-   "category": "Calendriers",
+   "category": "Formulaires",
    "tags": [
     "date editors",
     "exemple",
@@ -102484,8 +102597,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-5.tsx"
    },
-   "contentHash": "f4d0aebf8849afb1",
+   "contentHash": "5d1db0531caf6d7a",
    "importedAt": "2026-11-10T13:14:56.423Z",
+   "updatedAt": "2026-11-10T13:48:14.371Z",
    "dir": "items/reui/c-filters-5",
    "fileCount": 1,
    "group": "a date and a date range editor",
@@ -102495,7 +102609,7 @@
    "id": "reui/c-filters-6",
    "name": "Sliders as the value editor",
    "type": "component",
-   "category": "Code",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102521,8 +102635,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-6.tsx"
    },
-   "contentHash": "a50d3c332a0b1634",
+   "contentHash": "f6fcbc63a535457b",
    "importedAt": "2026-11-10T13:14:56.440Z",
+   "updatedAt": "2026-11-10T13:48:14.375Z",
    "dir": "items/reui/c-filters-6",
    "fileCount": 1,
    "group": "sliders as the value editor",
@@ -102532,7 +102647,7 @@
    "id": "reui/c-filters-7",
    "name": "Filtering a table",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "filters",
@@ -102562,8 +102677,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-7.tsx"
    },
-   "contentHash": "e384915d26b36ffd",
+   "contentHash": "f3cca2581b0623ac",
    "importedAt": "2026-11-10T13:14:56.456Z",
+   "updatedAt": "2026-11-10T13:48:14.379Z",
    "dir": "items/reui/c-filters-7",
    "fileCount": 1,
    "group": "filtering a table",
@@ -102573,7 +102689,7 @@
    "id": "reui/c-filters-8",
    "name": "Choice controls as editors",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "choice controls",
     "exemple",
@@ -102604,8 +102720,9 @@
     "kind": "live",
     "entry": "components/filters/c-filters-8.tsx"
    },
-   "contentHash": "b856de46690a0ae0",
+   "contentHash": "a44dfafaa7cdbfa0",
    "importedAt": "2026-11-10T13:14:56.474Z",
+   "updatedAt": "2026-11-10T13:48:14.383Z",
    "dir": "items/reui/c-filters-8",
    "fileCount": 1,
    "group": "choice controls as editors",
@@ -103321,7 +103438,7 @@
    "id": "reui/c-gantt-1",
    "name": "Gantt chart with settings menu and schedulable rows",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "dataviz",
     "exemple",
@@ -103356,8 +103473,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-1.tsx"
    },
-   "contentHash": "f37091d6c98cde11",
+   "contentHash": "0e5bef2ebab0d9ba",
    "importedAt": "2026-11-10T13:14:56.789Z",
+   "updatedAt": "2026-11-10T13:48:14.409Z",
    "dir": "items/reui/c-gantt-1",
    "fileCount": 1,
    "group": "gantt chart with settings menu and schedulable rows",
@@ -103367,7 +103485,7 @@
    "id": "reui/c-gantt-2",
    "name": "Gantt chart with drag-to-reorder tree rows",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "dataviz",
     "drag",
@@ -103396,8 +103514,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-2.tsx"
    },
-   "contentHash": "4afb92de024e5b9d",
+   "contentHash": "f3602f1973d5dd56",
    "importedAt": "2026-11-10T13:14:56.795Z",
+   "updatedAt": "2026-11-10T13:48:14.413Z",
    "dir": "items/reui/c-gantt-2",
    "fileCount": 1,
    "group": "gantt chart with drag to reorder tree rows",
@@ -103407,7 +103526,7 @@
    "id": "reui/c-gantt-3",
    "name": "Gantt chart with quarter roadmap and rollups",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "dataviz",
     "exemple",
@@ -103436,8 +103555,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-3.tsx"
    },
-   "contentHash": "801400a0a7edfdf0",
+   "contentHash": "07307b8336a6f4cb",
    "importedAt": "2026-11-10T13:14:56.800Z",
+   "updatedAt": "2026-11-10T13:48:14.417Z",
    "dir": "items/reui/c-gantt-3",
    "fileCount": 1,
    "group": "gantt chart with quarter roadmap and rollups",
@@ -103447,7 +103567,7 @@
    "id": "reui/c-gantt-4",
    "name": "Gantt chart with weekly capacity board",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "capacity board",
     "dataviz",
@@ -103477,8 +103597,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-4.tsx"
    },
-   "contentHash": "8d1117102770038d",
+   "contentHash": "f5d236046ab00095",
    "importedAt": "2026-11-10T13:14:56.818Z",
+   "updatedAt": "2026-11-10T13:48:14.420Z",
    "dir": "items/reui/c-gantt-4",
    "fileCount": 1,
    "group": "gantt chart with weekly capacity board",
@@ -103488,7 +103609,7 @@
    "id": "reui/c-gantt-5",
    "name": "Gantt chart with task table and progress",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "dataviz",
     "exemple",
@@ -103519,8 +103640,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-5.tsx"
    },
-   "contentHash": "41352a9b05b81d2a",
+   "contentHash": "e14cf58cea4c4bd6",
    "importedAt": "2026-11-10T13:14:56.835Z",
+   "updatedAt": "2026-11-10T13:48:14.423Z",
    "dir": "items/reui/c-gantt-5",
    "fileCount": 1,
    "group": "gantt chart with task table and progress",
@@ -103530,7 +103652,7 @@
    "id": "reui/c-gantt-6",
    "name": "Gantt chart with as-built baseline tracking",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "baseline tracking",
     "dataviz",
@@ -103558,8 +103680,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-6.tsx"
    },
-   "contentHash": "67c3f83047c66638",
+   "contentHash": "b4f6b3c84d2c4b6e",
    "importedAt": "2026-11-10T13:14:56.850Z",
+   "updatedAt": "2026-11-10T13:48:14.426Z",
    "dir": "items/reui/c-gantt-6",
    "fileCount": 1,
    "group": "gantt chart with as built baseline tracking",
@@ -103569,7 +103692,7 @@
    "id": "reui/c-gantt-7",
    "name": "Gantt chart with dependency arrows and milestones",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Calendriers",
    "tags": [
     "dataviz",
     "dependencies & milestones",
@@ -103597,8 +103720,9 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-7.tsx"
    },
-   "contentHash": "898bfc1c913cc811",
+   "contentHash": "b0be9f692c9f754c",
    "importedAt": "2026-11-10T13:14:56.867Z",
+   "updatedAt": "2026-11-10T13:48:14.429Z",
    "dir": "items/reui/c-gantt-7",
    "fileCount": 1,
    "group": "gantt chart with dependency arrows and milestones",
@@ -103795,7 +103919,7 @@
    "id": "reui/c-hover-card-6",
    "name": "Hover card inside a dialog.",
    "type": "component",
-   "category": "Fenêtres et panneaux",
+   "category": "Cartes",
    "tags": [
     "exemple",
     "hover-card",
@@ -103822,8 +103946,9 @@
     "kind": "live",
     "entry": "components/hover-card/c-hover-card-6.tsx"
    },
-   "contentHash": "ce3e5b1c02ff3a35",
+   "contentHash": "6c244e34f566e2b8",
    "importedAt": "2026-11-10T13:14:56.939Z",
+   "updatedAt": "2026-11-10T13:48:14.436Z",
    "dir": "items/reui/c-hover-card-6",
    "fileCount": 1,
    "group": "hover card inside a dialog",
@@ -104195,7 +104320,7 @@
    "id": "reui/c-icon-tile-11",
    "name": "Feature card",
    "type": "section",
-   "category": "Cartes",
+   "category": "Illustrations",
    "tags": [
     "exemple",
     "feature card",
@@ -104220,8 +104345,9 @@
     "kind": "live",
     "entry": "components/icon-tile/c-icon-tile-11.tsx"
    },
-   "contentHash": "4663b13cb9070cfe",
+   "contentHash": "27d866b9a72f57fe",
    "importedAt": "2026-11-10T13:14:57.142Z",
+   "updatedAt": "2026-11-10T13:48:14.453Z",
    "dir": "items/reui/c-icon-tile-11",
    "fileCount": 1,
    "group": "feature card",
@@ -104687,7 +104813,7 @@
    "id": "reui/c-icon-tile-9",
    "name": "Text content",
    "type": "component",
-   "category": "Texte",
+   "category": "Illustrations",
    "tags": [
     "exemple",
     "icon-tile",
@@ -104711,8 +104837,9 @@
     "kind": "live",
     "entry": "components/icon-tile/c-icon-tile-9.tsx"
    },
-   "contentHash": "d188a4fcce1484b5",
+   "contentHash": "32bee47b9251e179",
    "importedAt": "2026-11-10T13:14:57.119Z",
+   "updatedAt": "2026-11-10T13:48:14.448Z",
    "dir": "items/reui/c-icon-tile-9",
    "fileCount": 1,
    "group": "text content",
@@ -105880,7 +106007,7 @@
    "id": "reui/c-input-group-10",
    "name": "Input group with action button addon",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "action button",
     "exemple",
@@ -105905,8 +106032,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-10.tsx"
    },
-   "contentHash": "4f51d060d81fc97c",
+   "contentHash": "5da53a9695d85118",
    "importedAt": "2026-11-10T13:14:57.704Z",
+   "updatedAt": "2026-11-10T13:48:14.495Z",
    "dir": "items/reui/c-input-group-10",
    "fileCount": 1,
    "group": "input group with action button addon",
@@ -105916,7 +106044,7 @@
    "id": "reui/c-input-group-11",
    "name": "Input group with icon button action",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "icon button",
@@ -105943,8 +106071,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-11.tsx"
    },
-   "contentHash": "e454070b9695a652",
+   "contentHash": "bb290e3d0e607d15",
    "importedAt": "2026-11-10T13:14:57.715Z",
+   "updatedAt": "2026-11-10T13:48:14.499Z",
    "dir": "items/reui/c-input-group-11",
    "fileCount": 1,
    "group": "input group with icon button action",
@@ -106324,7 +106453,7 @@
    "id": "reui/c-input-group-21",
    "name": "Input group with multiple icons/buttons at the end",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "input-group",
@@ -106351,8 +106480,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-21.tsx"
    },
-   "contentHash": "bee285fc1b930621",
+   "contentHash": "b409ea62db874fdf",
    "importedAt": "2026-11-10T13:14:57.832Z",
+   "updatedAt": "2026-11-10T13:48:14.507Z",
    "dir": "items/reui/c-input-group-21",
    "fileCount": 1,
    "group": "input group with multiple icons buttons at the end",
@@ -106508,7 +106638,7 @@
    "id": "reui/c-input-group-26",
    "name": "Textarea input group with action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "input-group",
@@ -106533,8 +106663,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-26.tsx"
    },
-   "contentHash": "db9e39a53eded437",
+   "contentHash": "3c900add7e39aafc",
    "importedAt": "2026-11-10T13:14:57.894Z",
+   "updatedAt": "2026-11-10T13:48:14.514Z",
    "dir": "items/reui/c-input-group-26",
    "fileCount": 1,
    "group": "textarea input group with action buttons",
@@ -106544,7 +106675,7 @@
    "id": "reui/c-input-group-27",
    "name": "Input group wrapped in a button group with text prefixes/suffixes",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "button group",
     "exemple",
@@ -106570,8 +106701,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-27.tsx"
    },
-   "contentHash": "af2498ccad41ed9e",
+   "contentHash": "8845704acb66b0e4",
    "importedAt": "2026-11-10T13:14:57.906Z",
+   "updatedAt": "2026-11-10T13:48:14.518Z",
    "dir": "items/reui/c-input-group-27",
    "fileCount": 1,
    "group": "input group wrapped in a button group with text prefixes suffixes",
@@ -106581,7 +106713,7 @@
    "id": "reui/c-input-group-28",
    "name": "Input group with a menu button (three dots) at the end",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "3d",
     "exemple",
@@ -106609,8 +106741,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-28.tsx"
    },
-   "contentHash": "a7be62881c253e17",
+   "contentHash": "18f0bc9ba366fef4",
    "importedAt": "2026-11-10T13:14:57.916Z",
+   "updatedAt": "2026-11-10T13:48:14.523Z",
    "dir": "items/reui/c-input-group-28",
    "fileCount": 1,
    "group": "input group with a menu button three dots at the end",
@@ -106803,7 +106936,7 @@
    "id": "reui/c-input-group-33",
    "name": "Project save interface with status and action buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "input-group",
@@ -106829,8 +106962,9 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-33.tsx"
    },
-   "contentHash": "ba4c7e1e29444fee",
+   "contentHash": "9c98a8808da6e5a7",
    "importedAt": "2026-11-10T13:14:57.975Z",
+   "updatedAt": "2026-11-10T13:48:14.532Z",
    "dir": "items/reui/c-input-group-33",
    "fileCount": 1,
    "group": "project save interface with status and action buttons",
@@ -107987,7 +108121,7 @@
    "id": "reui/c-kanban-1",
    "name": "Kanban board with placeholder overlay",
    "type": "component",
-   "category": "Boutons",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "kanban",
@@ -108015,8 +108149,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-1.tsx"
    },
-   "contentHash": "fa711fe4fa138c7a",
+   "contentHash": "fa47829c29b0a9e7",
    "importedAt": "2026-11-10T13:14:58.303Z",
+   "updatedAt": "2026-11-10T13:48:14.553Z",
    "dir": "items/reui/c-kanban-1",
    "fileCount": 1,
    "group": "kanban board with placeholder overlay",
@@ -108026,7 +108161,7 @@
    "id": "reui/c-kanban-2",
    "name": "Kanban board with dynamic overlay",
    "type": "component",
-   "category": "Boutons",
+   "category": "Listes et tâches",
    "tags": [
     "dynamic overlay",
     "exemple",
@@ -108054,8 +108189,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-2.tsx"
    },
-   "contentHash": "e2687663870b9c3f",
+   "contentHash": "c0528fb8c7b7cc21",
    "importedAt": "2026-11-10T13:14:58.309Z",
+   "updatedAt": "2026-11-10T13:48:14.558Z",
    "dir": "items/reui/c-kanban-2",
    "fileCount": 1,
    "group": "kanban board with dynamic overlay",
@@ -108065,7 +108201,7 @@
    "id": "reui/c-kanban-3",
    "name": "Kanban board with frame columns",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "frame columns",
@@ -108091,8 +108227,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-3.tsx"
    },
-   "contentHash": "5da0501362ef0e18",
+   "contentHash": "f64af3464727137f",
    "importedAt": "2026-11-10T13:14:58.314Z",
+   "updatedAt": "2026-11-10T13:48:14.562Z",
    "dir": "items/reui/c-kanban-3",
    "fileCount": 1,
    "group": "kanban board with frame columns",
@@ -108102,7 +108239,7 @@
    "id": "reui/c-kanban-4",
    "name": "Minimal kanban with stacked frame",
    "type": "component",
-   "category": "Indicateurs",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "kanban",
@@ -108130,8 +108267,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-4.tsx"
    },
-   "contentHash": "fb5cac3c9ade6cdd",
+   "contentHash": "af3203692b77d56d",
    "importedAt": "2026-11-10T13:14:58.330Z",
+   "updatedAt": "2026-11-10T13:48:14.567Z",
    "dir": "items/reui/c-kanban-4",
    "fileCount": 1,
    "group": "minimal kanban with stacked frame",
@@ -108141,7 +108279,7 @@
    "id": "reui/c-kanban-5",
    "name": "Feature roadmap kanban with progress",
    "type": "section",
-   "category": "Indicateurs",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "feature roadmap",
@@ -108168,8 +108306,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-5.tsx"
    },
-   "contentHash": "6635f46105736331",
+   "contentHash": "d38330f169c10c97",
    "importedAt": "2026-11-10T13:14:58.345Z",
+   "updatedAt": "2026-11-10T13:48:14.572Z",
    "dir": "items/reui/c-kanban-5",
    "fileCount": 1,
    "group": "feature roadmap kanban with progress",
@@ -108179,7 +108318,7 @@
    "id": "reui/c-kanban-6",
    "name": "Kanban board persisted to a backend",
    "type": "component",
-   "category": "Boutons",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "kanban",
@@ -108208,8 +108347,9 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-6.tsx"
    },
-   "contentHash": "210cb01313173fd1",
+   "contentHash": "4c06bfe0d9e26da6",
    "importedAt": "2026-11-10T13:14:58.362Z",
+   "updatedAt": "2026-11-10T13:48:14.575Z",
    "dir": "items/reui/c-kanban-6",
    "fileCount": 1,
    "group": "kanban board persisted to a backend",
@@ -109350,7 +109490,7 @@
    "id": "reui/c-message-2",
    "name": "Avatars on both sides",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "IA et messages",
    "tags": [
     "avatars",
     "exemple",
@@ -109376,8 +109516,9 @@
     "kind": "live",
     "entry": "components/message/c-message-2.tsx"
    },
-   "contentHash": "3c567d47ce073703",
+   "contentHash": "319edbcabf522613",
    "importedAt": "2026-11-10T13:14:58.736Z",
+   "updatedAt": "2026-11-10T13:48:14.595Z",
    "dir": "items/reui/c-message-2",
    "fileCount": 1,
    "group": "avatars on both sides",
@@ -109783,7 +109924,7 @@
    "id": "reui/c-message-scroller-6",
    "name": "Thread navigator for stepping turns",
    "type": "component",
-   "category": "Navigation",
+   "category": "IA et messages",
    "tags": [
     "exemple",
     "message-scroller",
@@ -109813,8 +109954,9 @@
     "kind": "live",
     "entry": "components/message-scroller/c-message-scroller-6.tsx"
    },
-   "contentHash": "17a21af45b1d7baa",
+   "contentHash": "613953ce1e53c570",
    "importedAt": "2026-11-10T13:14:58.896Z",
+   "updatedAt": "2026-11-10T13:48:14.608Z",
    "dir": "items/reui/c-message-scroller-6",
    "fileCount": 1,
    "group": "thread navigator for stepping turns",
@@ -110140,7 +110282,7 @@
    "id": "reui/c-navigation-menu-4",
    "name": "Navigation menu with grid layout and learn more button.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "learn more button",
@@ -110165,8 +110307,9 @@
     "kind": "live",
     "entry": "components/navigation-menu/c-navigation-menu-4.tsx"
    },
-   "contentHash": "5a4a3f28969763c9",
+   "contentHash": "6e5910a780b97d4a",
    "importedAt": "2026-11-10T13:14:59.018Z",
+   "updatedAt": "2026-11-10T13:48:14.618Z",
    "dir": "items/reui/c-navigation-menu-4",
    "fileCount": 1,
    "group": "navigation menu with grid layout and learn more button",
@@ -110281,7 +110424,7 @@
    "id": "reui/c-number-field-4",
    "name": "Number field with buttons on right",
    "type": "component",
-   "category": "Boutons",
+   "category": "Indicateurs",
    "tags": [
     "buttons on right",
     "exemple",
@@ -110305,8 +110448,9 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-4.tsx"
    },
-   "contentHash": "7dc0c304e3cbe6b2",
+   "contentHash": "3e1733002169d296",
    "importedAt": "2026-11-10T13:14:59.044Z",
+   "updatedAt": "2026-11-10T13:48:14.624Z",
    "dir": "items/reui/c-number-field-4",
    "fileCount": 1,
    "group": "number field with buttons on right",
@@ -110316,7 +110460,7 @@
    "id": "reui/c-number-field-5",
    "name": "Number field with spinner buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Indicateurs",
    "tags": [
     "exemple",
     "number-field",
@@ -110340,8 +110484,9 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-5.tsx"
    },
-   "contentHash": "68c4ad864d2b4f6c",
+   "contentHash": "3fa496cbb8e1a4ea",
    "importedAt": "2026-11-10T13:14:59.054Z",
+   "updatedAt": "2026-11-10T13:48:14.627Z",
    "dir": "items/reui/c-number-field-5",
    "fileCount": 1,
    "group": "number field with spinner buttons",
@@ -110351,7 +110496,7 @@
    "id": "reui/c-number-field-6",
    "name": "Number field in form",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Indicateurs",
    "tags": [
     "exemple",
     "form validation",
@@ -110383,8 +110528,9 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-6.tsx"
    },
-   "contentHash": "1467fa549cbd2ba7",
+   "contentHash": "1b5afd312c645160",
    "importedAt": "2026-11-10T13:14:59.067Z",
+   "updatedAt": "2026-11-10T13:48:14.631Z",
    "dir": "items/reui/c-number-field-6",
    "fileCount": 1,
    "group": "number field in form",
@@ -110464,7 +110610,7 @@
    "id": "reui/c-pagination-11",
    "name": "Pagination with outline style buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "outline strip",
@@ -110488,8 +110634,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-11.tsx"
    },
-   "contentHash": "2c9fb193fcc23000",
+   "contentHash": "68a83e96869d3dc1",
    "importedAt": "2026-11-10T13:14:59.190Z",
+   "updatedAt": "2026-11-10T13:48:14.651Z",
    "dir": "items/reui/c-pagination-11",
    "fileCount": 1,
    "group": "pagination with outline style buttons",
@@ -110499,7 +110646,7 @@
    "id": "reui/c-pagination-12",
    "name": "Rows per page select with range info and first/prev/next/last icons",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "pagination",
@@ -110524,8 +110671,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-12.tsx"
    },
-   "contentHash": "b4197ac2b3fd1fed",
+   "contentHash": "cd2621da383f6ed8",
    "importedAt": "2026-11-10T13:14:59.202Z",
+   "updatedAt": "2026-11-10T13:48:14.655Z",
    "dir": "items/reui/c-pagination-12",
    "fileCount": 1,
    "group": "rows per page select with range info and first prev next last icons",
@@ -110535,7 +110683,7 @@
    "id": "reui/c-pagination-13",
    "name": "Pagination with page select dropdown and first/last navigation",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "page select",
@@ -110560,8 +110708,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-13.tsx"
    },
-   "contentHash": "0f6f5cfb7cbfd824",
+   "contentHash": "5a23bc5d0c781b38",
    "importedAt": "2026-11-10T13:14:59.213Z",
+   "updatedAt": "2026-11-10T13:48:14.659Z",
    "dir": "items/reui/c-pagination-13",
    "fileCount": 1,
    "group": "pagination with page select dropdown and first last navigation",
@@ -110571,7 +110720,7 @@
    "id": "reui/c-pagination-14",
    "name": "Numbered pagination with go-to-page input",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "full width go-to",
@@ -110596,8 +110745,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-14.tsx"
    },
-   "contentHash": "2149677b1ffc2a91",
+   "contentHash": "60dca23be9c293b2",
    "importedAt": "2026-11-10T13:14:59.227Z",
+   "updatedAt": "2026-11-10T13:48:14.663Z",
    "dir": "items/reui/c-pagination-14",
    "fileCount": 1,
    "group": "numbered pagination with go to page input",
@@ -110607,7 +110757,7 @@
    "id": "reui/c-pagination-15",
    "name": "Pagination with page info, numbered pages, ellipsis, and per-page select",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "info & per-page",
@@ -110632,8 +110782,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-15.tsx"
    },
-   "contentHash": "bcdd88ce712b0893",
+   "contentHash": "03585d155b7b7e67",
    "importedAt": "2026-11-10T13:14:59.236Z",
+   "updatedAt": "2026-11-10T13:48:14.668Z",
    "dir": "items/reui/c-pagination-15",
    "fileCount": 1,
    "group": "pagination with page info numbered pages ellipsis and per page select",
@@ -110714,7 +110865,7 @@
    "id": "reui/c-pagination-4",
    "name": "Pagination with circle buttons.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Navigation",
    "tags": [
     "circle buttons",
     "exemple",
@@ -110739,8 +110890,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-4.tsx"
    },
-   "contentHash": "eea43c27b663b5be",
+   "contentHash": "f974f1e0b5cc0fff",
    "importedAt": "2026-11-10T13:14:59.112Z",
+   "updatedAt": "2026-11-10T13:48:14.637Z",
    "dir": "items/reui/c-pagination-4",
    "fileCount": 1,
    "group": "pagination with circle buttons",
@@ -110750,7 +110902,7 @@
    "id": "reui/c-pagination-5",
    "name": "Pagination with go-to-page input",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Navigation",
    "tags": [
     "compact go-to",
     "exemple",
@@ -110775,8 +110927,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-5.tsx"
    },
-   "contentHash": "1a14ad289b21caa6",
+   "contentHash": "c482ecccc899ceb1",
    "importedAt": "2026-11-10T13:14:59.125Z",
+   "updatedAt": "2026-11-10T13:48:14.642Z",
    "dir": "items/reui/c-pagination-5",
    "fileCount": 1,
    "group": "pagination with go to page input",
@@ -110822,7 +110975,7 @@
    "id": "reui/c-pagination-7",
    "name": "Pagination with arrows buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Navigation",
    "tags": [
     "arrow links",
     "exemple",
@@ -110846,8 +110999,9 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-7.tsx"
    },
-   "contentHash": "92573a0ddc6c0ad4",
+   "contentHash": "fe3f3fa3b4ea25a7",
    "importedAt": "2026-11-10T13:14:59.147Z",
+   "updatedAt": "2026-11-10T13:48:14.646Z",
    "dir": "items/reui/c-pagination-7",
    "fileCount": 1,
    "group": "pagination with arrows buttons",
@@ -111353,7 +111507,7 @@
    "id": "reui/c-popover-3",
    "name": "Popover with form.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "exemple",
     "inline form",
@@ -111380,8 +111534,9 @@
     "kind": "live",
     "entry": "components/popover/c-popover-3.tsx"
    },
-   "contentHash": "f1fb09fb2666253b",
+   "contentHash": "0984b2434b884005",
    "importedAt": "2026-11-10T13:14:59.351Z",
+   "updatedAt": "2026-11-10T13:48:14.682Z",
    "dir": "items/reui/c-popover-3",
    "fileCount": 1,
    "group": "popover with form",
@@ -111753,7 +111908,7 @@
    "id": "reui/c-progress-5",
    "name": "File upload list with progress & status.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Indicateurs",
    "tags": [
     "exemple",
     "file uploads",
@@ -111778,8 +111933,9 @@
     "kind": "live",
     "entry": "components/progress/c-progress-5.tsx"
    },
-   "contentHash": "21d6e142aacaa8b0",
+   "contentHash": "df5bb826b99c101e",
    "importedAt": "2026-11-10T13:14:59.660Z",
+   "updatedAt": "2026-11-10T13:48:14.696Z",
    "dir": "items/reui/c-progress-5",
    "fileCount": 1,
    "group": "file upload list with progress status",
@@ -111789,7 +111945,7 @@
    "id": "reui/c-progress-6",
    "name": "Progress bar with slider.",
    "type": "component",
-   "category": "Curseurs",
+   "category": "Indicateurs",
    "tags": [
     "exemple",
     "progress",
@@ -111814,8 +111970,9 @@
     "kind": "live",
     "entry": "components/progress/c-progress-6.tsx"
    },
-   "contentHash": "1e2da904fe1c672f",
+   "contentHash": "1dd9c07429d3a770",
    "importedAt": "2026-11-10T13:14:59.672Z",
+   "updatedAt": "2026-11-10T13:48:14.701Z",
    "dir": "items/reui/c-progress-6",
    "fileCount": 1,
    "group": "progress bar with slider",
@@ -111932,7 +112089,7 @@
    "id": "reui/c-questionnaire-2",
    "name": "Multi-select answers",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "multi-select",
@@ -111959,8 +112116,9 @@
     "kind": "live",
     "entry": "components/questionnaire/c-questionnaire-2.tsx"
    },
-   "contentHash": "1e959f6e161c65cd",
+   "contentHash": "a02cceff42f7b43b",
    "importedAt": "2026-11-10T13:14:59.734Z",
+   "updatedAt": "2026-11-10T13:48:14.707Z",
    "dir": "items/reui/c-questionnaire-2",
    "fileCount": 1,
    "group": "multi select answers",
@@ -112008,7 +112166,7 @@
    "id": "reui/c-questionnaire-4",
    "name": "Segmented progress with step labels",
    "type": "component",
-   "category": "Indicateurs",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "questionnaire",
@@ -112034,8 +112192,9 @@
     "kind": "live",
     "entry": "components/questionnaire/c-questionnaire-4.tsx"
    },
-   "contentHash": "0b5c7e5da6b5738a",
+   "contentHash": "d68d7eb48a74cc5d",
    "importedAt": "2026-11-10T13:14:59.770Z",
+   "updatedAt": "2026-11-10T13:48:14.712Z",
    "dir": "items/reui/c-questionnaire-4",
    "fileCount": 1,
    "group": "segmented progress with step labels",
@@ -113063,7 +113222,7 @@
    "id": "reui/c-rating-9",
    "name": "Rating with review text input",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "rating",
@@ -113091,8 +113250,9 @@
     "kind": "live",
     "entry": "components/rating/c-rating-9.tsx"
    },
-   "contentHash": "e178cc730fbf4d19",
+   "contentHash": "5cf7e351c8e99a51",
    "importedAt": "2026-11-10T13:15:00.156Z",
+   "updatedAt": "2026-11-10T13:48:14.732Z",
    "dir": "items/reui/c-rating-9",
    "fileCount": 1,
    "group": "rating with review text input",
@@ -113898,7 +114058,7 @@
    "id": "reui/c-select-14",
    "name": "Select component with Button side by side",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "select",
@@ -113923,8 +114083,9 @@
     "kind": "live",
     "entry": "components/select/c-select-14.tsx"
    },
-   "contentHash": "f95182d678b709c3",
+   "contentHash": "97b6db732dc07ed7",
    "importedAt": "2026-11-10T13:15:00.549Z",
+   "updatedAt": "2026-11-10T13:48:14.753Z",
    "dir": "items/reui/c-select-14",
    "fileCount": 1,
    "group": "select with button side by side",
@@ -114188,7 +114349,7 @@
    "id": "reui/c-select-21",
    "name": "Select with clear button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "clear button",
     "exemple",
@@ -114213,8 +114374,9 @@
     "kind": "live",
     "entry": "components/select/c-select-21.tsx"
    },
-   "contentHash": "33a1f781fd9aa10e",
+   "contentHash": "fc87672e5224b8c6",
    "importedAt": "2026-11-10T13:15:00.651Z",
+   "updatedAt": "2026-11-10T13:48:14.762Z",
    "dir": "items/reui/c-select-21",
    "fileCount": 1,
    "group": "select with clear button",
@@ -115122,7 +115284,7 @@
    "id": "reui/c-sheet-1",
    "name": "Sheet containing a form for editing profile information",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "exemple",
     "profile editor",
@@ -115149,8 +115311,9 @@
     "kind": "live",
     "entry": "components/sheet/c-sheet-1.tsx"
    },
-   "contentHash": "67f56d3b95ae60cd",
+   "contentHash": "32c4eb51d9f0a561",
    "importedAt": "2026-11-10T13:15:00.897Z",
+   "updatedAt": "2026-11-10T13:48:14.781Z",
    "dir": "items/reui/c-sheet-1",
    "fileCount": 1,
    "group": "sheet containing a form for editing profile information",
@@ -115160,7 +115323,7 @@
    "id": "reui/c-sheet-2",
    "name": "Sheet without a corner close button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "exemple",
     "no close button",
@@ -115187,8 +115350,9 @@
     "kind": "live",
     "entry": "components/sheet/c-sheet-2.tsx"
    },
-   "contentHash": "fe82e285cb35b999",
+   "contentHash": "97b77fe161a4131a",
    "importedAt": "2026-11-10T13:15:00.910Z",
+   "updatedAt": "2026-11-10T13:48:14.787Z",
    "dir": "items/reui/c-sheet-2",
    "fileCount": 1,
    "group": "sheet without a corner close button",
@@ -115920,7 +116084,7 @@
    "id": "reui/c-skeleton-1",
    "name": "Skeleton loader for avatars and user info.",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Chargement",
    "tags": [
     "avatar info",
     "exemple",
@@ -115944,8 +116108,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-1.tsx"
    },
-   "contentHash": "2a873fe6747d2ae3",
+   "contentHash": "97300e4b509f6e67",
    "importedAt": "2026-11-10T13:15:01.198Z",
+   "updatedAt": "2026-11-10T13:48:14.805Z",
    "dir": "items/reui/c-skeleton-1",
    "fileCount": 1,
    "group": "skeleton loader for avatars and user info",
@@ -115991,7 +116156,7 @@
    "id": "reui/c-skeleton-2",
    "name": "Skeleton loader for a card component.",
    "type": "component",
-   "category": "Cartes",
+   "category": "Chargement",
    "tags": [
     "card",
     "exemple",
@@ -116016,8 +116181,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-2.tsx"
    },
-   "contentHash": "7969ebb06f8454d1",
+   "contentHash": "516cc5caecd26d31",
    "importedAt": "2026-11-10T13:15:01.207Z",
+   "updatedAt": "2026-11-10T13:48:14.810Z",
    "dir": "items/reui/c-skeleton-2",
    "fileCount": 1,
    "group": "skeleton loader for a card",
@@ -116027,7 +116193,7 @@
    "id": "reui/c-skeleton-3",
    "name": "Skeleton loader for text and paragraphs.",
    "type": "component",
-   "category": "Texte",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "skeleton",
@@ -116051,8 +116217,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-3.tsx"
    },
-   "contentHash": "e05aaf26370288f9",
+   "contentHash": "9c96c12584237d0e",
    "importedAt": "2026-11-10T13:15:01.218Z",
+   "updatedAt": "2026-11-10T13:48:14.815Z",
    "dir": "items/reui/c-skeleton-3",
    "fileCount": 1,
    "group": "skeleton loader for text and paragraphs",
@@ -116062,7 +116229,7 @@
    "id": "reui/c-skeleton-4",
    "name": "Skeleton loader for a form.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "form",
@@ -116086,8 +116253,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-4.tsx"
    },
-   "contentHash": "863a3d271391ce90",
+   "contentHash": "11dca82b6074c6a3",
    "importedAt": "2026-11-10T13:15:01.229Z",
+   "updatedAt": "2026-11-10T13:48:14.819Z",
    "dir": "items/reui/c-skeleton-4",
    "fileCount": 1,
    "group": "skeleton loader for a form",
@@ -116097,7 +116265,7 @@
    "id": "reui/c-skeleton-5",
    "name": "Skeleton loader for a data table.",
    "type": "component",
-   "category": "Tableaux de données",
+   "category": "Chargement",
    "tags": [
     "data table",
     "exemple",
@@ -116121,8 +116289,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-5.tsx"
    },
-   "contentHash": "a065d8a12690498f",
+   "contentHash": "a6d957a9e01e3ac5",
    "importedAt": "2026-11-10T13:15:01.239Z",
+   "updatedAt": "2026-11-10T13:48:14.823Z",
    "dir": "items/reui/c-skeleton-5",
    "fileCount": 1,
    "group": "skeleton loader for a data table",
@@ -116204,7 +116373,7 @@
    "id": "reui/c-skeleton-8",
    "name": "Skeleton loader for a card grid",
    "type": "component",
-   "category": "Cartes",
+   "category": "Chargement",
    "tags": [
     "card grid",
     "exemple",
@@ -116229,8 +116398,9 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-8.tsx"
    },
-   "contentHash": "3196e9d49871d31c",
+   "contentHash": "bfc0867791ca4321",
    "importedAt": "2026-11-10T13:15:01.272Z",
+   "updatedAt": "2026-11-10T13:48:14.828Z",
    "dir": "items/reui/c-skeleton-8",
    "fileCount": 1,
    "group": "skeleton loader for a card grid",
@@ -116742,7 +116912,7 @@
    "id": "reui/c-sonner-10",
    "name": "Toast with upload progress simulation",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Notifications",
    "tags": [
     "exemple",
     "sonner",
@@ -116769,8 +116939,9 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-10.tsx"
    },
-   "contentHash": "a54ff1fa7a49a71d",
+   "contentHash": "9f701eaa71b464bb",
    "importedAt": "2026-11-10T13:15:01.592Z",
+   "updatedAt": "2026-11-10T13:48:14.853Z",
    "dir": "items/reui/c-sonner-10",
    "fileCount": 1,
    "group": "toast with upload progress simulation",
@@ -117043,7 +117214,7 @@
    "id": "reui/c-sonner-18",
    "name": "Toast with close button on top-right",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "close top right",
     "exemple",
@@ -117069,8 +117240,9 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-18.tsx"
    },
-   "contentHash": "c7a9fdcc4c46834b",
+   "contentHash": "29808d7ff17f6d50",
    "importedAt": "2026-11-10T13:15:01.705Z",
+   "updatedAt": "2026-11-10T13:48:14.862Z",
    "dir": "items/reui/c-sonner-18",
    "fileCount": 1,
    "group": "toast with close button on top right",
@@ -117341,7 +117513,7 @@
    "id": "reui/c-sonner-6",
    "name": "Toast with action button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "action button",
     "exemple",
@@ -117367,8 +117539,9 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-6.tsx"
    },
-   "contentHash": "7f16e1f2c07e20c3",
+   "contentHash": "b50644fa7b929e8c",
    "importedAt": "2026-11-10T13:15:01.535Z",
+   "updatedAt": "2026-11-10T13:48:14.844Z",
    "dir": "items/reui/c-sonner-6",
    "fileCount": 1,
    "group": "toast with action button",
@@ -117415,7 +117588,7 @@
    "id": "reui/c-sonner-8",
    "name": "Toast with custom close and cancel buttons",
    "type": "component",
-   "category": "Boutons",
+   "category": "Notifications",
    "tags": [
     "action & cancel",
     "exemple",
@@ -117441,8 +117614,9 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-8.tsx"
    },
-   "contentHash": "ee5734f64aaa0726",
+   "contentHash": "8c4b25da20e2e1af",
    "importedAt": "2026-11-10T13:15:01.560Z",
+   "updatedAt": "2026-11-10T13:48:14.848Z",
    "dir": "items/reui/c-sonner-8",
    "fileCount": 1,
    "group": "toast with custom close and cancel buttons",
@@ -117529,7 +117703,7 @@
    "id": "reui/c-sortable-2",
    "name": "Sortable list of items with grid layout",
    "type": "component",
-   "category": "Fonds",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "grid layout",
@@ -117556,8 +117730,9 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-2.tsx"
    },
-   "contentHash": "e57f542f563d77ca",
+   "contentHash": "9233671bcc79cd10",
    "importedAt": "2026-11-10T13:15:01.756Z",
+   "updatedAt": "2026-11-10T13:48:14.870Z",
    "dir": "items/reui/c-sortable-2",
    "fileCount": 1,
    "group": "sortable list of items with grid layout",
@@ -117679,7 +117854,7 @@
    "id": "reui/c-sortable-6",
    "name": "Sortable sidebar navigation with frame",
    "type": "component",
-   "category": "Navigation",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "sidebar navigation",
@@ -117705,8 +117880,9 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-6.tsx"
    },
-   "contentHash": "de2e8ed0e571beed",
+   "contentHash": "3c4d5b9359a82ac0",
    "importedAt": "2026-11-10T13:15:01.808Z",
+   "updatedAt": "2026-11-10T13:48:14.881Z",
    "dir": "items/reui/c-sortable-6",
    "fileCount": 1,
    "group": "sortable sidebar navigation with frame",
@@ -117716,7 +117892,7 @@
    "id": "reui/c-sortable-7",
    "name": "Sortable image gallery grid with frame",
    "type": "component",
-   "category": "Fonds",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "image gallery",
@@ -117741,8 +117917,9 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-7.tsx"
    },
-   "contentHash": "db5676ace5554c57",
+   "contentHash": "2f97de06f1efb272",
    "importedAt": "2026-11-10T13:15:01.824Z",
+   "updatedAt": "2026-11-10T13:48:14.887Z",
    "dir": "items/reui/c-sortable-7",
    "fileCount": 1,
    "group": "sortable image gallery grid with frame",
@@ -117859,7 +118036,7 @@
    "id": "reui/c-spinner-11",
    "name": "Spinner overlay on card",
    "type": "component",
-   "category": "Cartes",
+   "category": "Chargement",
    "tags": [
     "card overlay",
     "exemple",
@@ -117884,8 +118061,9 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-11.tsx"
    },
-   "contentHash": "ba60a852f56e9ee5",
+   "contentHash": "f61b06d7d8b6e6a7",
    "importedAt": "2026-11-10T13:15:01.964Z",
+   "updatedAt": "2026-11-10T13:48:14.918Z",
    "dir": "items/reui/c-spinner-11",
    "fileCount": 1,
    "group": "spinner overlay on card",
@@ -117930,7 +118108,7 @@
    "id": "reui/c-spinner-2",
    "name": "Spinners in buttons.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "in buttons",
@@ -117955,8 +118133,9 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-2.tsx"
    },
-   "contentHash": "0649e7a4ca4184e1",
+   "contentHash": "4efdabcc5273f38a",
    "importedAt": "2026-11-10T13:15:01.864Z",
+   "updatedAt": "2026-11-10T13:48:14.896Z",
    "dir": "items/reui/c-spinner-2",
    "fileCount": 1,
    "group": "spinners in buttons",
@@ -118002,7 +118181,7 @@
    "id": "reui/c-spinner-4",
    "name": "Spinner in input group.",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "in input group",
@@ -118028,8 +118207,9 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-4.tsx"
    },
-   "contentHash": "be6753d000972564",
+   "contentHash": "274a68107dc0e3a0",
    "importedAt": "2026-11-10T13:15:01.888Z",
+   "updatedAt": "2026-11-10T13:48:14.902Z",
    "dir": "items/reui/c-spinner-4",
    "fileCount": 1,
    "group": "spinner in input group",
@@ -118076,7 +118256,7 @@
    "id": "reui/c-spinner-6",
    "name": "Button loading states",
    "type": "component",
-   "category": "Boutons",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "pending buttons",
@@ -118101,8 +118281,9 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-6.tsx"
    },
-   "contentHash": "cb08443cc3cc9c3f",
+   "contentHash": "f3f7b82a631df316",
    "importedAt": "2026-11-10T13:15:01.910Z",
+   "updatedAt": "2026-11-10T13:48:14.907Z",
    "dir": "items/reui/c-spinner-6",
    "fileCount": 1,
    "group": "button loading states",
@@ -118184,7 +118365,7 @@
    "id": "reui/c-spinner-9",
    "name": "Inline loading text with spinner",
    "type": "component",
-   "category": "Texte",
+   "category": "Chargement",
    "tags": [
     "exemple",
     "inline text",
@@ -118208,8 +118389,9 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-9.tsx"
    },
-   "contentHash": "52449796a7781a35",
+   "contentHash": "fac62fe65ab93ac1",
    "importedAt": "2026-11-10T13:15:01.945Z",
+   "updatedAt": "2026-11-10T13:48:14.914Z",
    "dir": "items/reui/c-spinner-9",
    "fileCount": 1,
    "group": "inline loading text with spinner",
@@ -118737,7 +118919,7 @@
    "id": "reui/c-stepper-22",
    "name": "Stepper with color-coded bottom bars",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Navigation",
    "tags": [
     "bottom color bars",
     "exemple",
@@ -118764,8 +118946,9 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-22.tsx"
    },
-   "contentHash": "5f5395bfb0d57b69",
+   "contentHash": "f12cb774df5e3eb1",
    "importedAt": "2026-11-10T13:15:02.275Z",
+   "updatedAt": "2026-11-10T13:48:14.930Z",
    "dir": "items/reui/c-stepper-22",
    "fileCount": 1,
    "group": "stepper with color coded bottom bars",
@@ -118775,7 +118958,7 @@
    "id": "reui/c-stepper-23",
    "name": "Stepper with top color bars and card art",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "stepper",
@@ -118801,8 +118984,9 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-23.tsx"
    },
-   "contentHash": "9d6d2b35c9fdfd62",
+   "contentHash": "fe372da4610d0179",
    "importedAt": "2026-11-10T13:15:02.290Z",
+   "updatedAt": "2026-11-10T13:48:14.935Z",
    "dir": "items/reui/c-stepper-23",
    "fileCount": 1,
    "group": "stepper with top color bars and card art",
@@ -119553,7 +119737,7 @@
    "id": "reui/c-stepper-42",
    "name": "Stepper with vertical status bars",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Navigation",
    "tags": [
     "exemple",
     "stepper",
@@ -119579,8 +119763,9 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-42.tsx"
    },
-   "contentHash": "5aab2dd4621e01e3",
+   "contentHash": "224df5ce75ba448d",
    "importedAt": "2026-11-10T13:15:02.596Z",
+   "updatedAt": "2026-11-10T13:48:14.947Z",
    "dir": "items/reui/c-stepper-42",
    "fileCount": 1,
    "group": "stepper with vertical status bars",
@@ -119590,7 +119775,7 @@
    "id": "reui/c-stepper-43",
    "name": "Stepper with sub-steps in a collapsible card",
    "type": "component",
-   "category": "FAQ",
+   "category": "Navigation",
    "tags": [
     "collapsible sub-steps",
     "exemple",
@@ -119618,8 +119803,9 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-43.tsx"
    },
-   "contentHash": "15c8c944347c8b36",
+   "contentHash": "bbf19b119043521d",
    "importedAt": "2026-11-10T13:15:02.615Z",
+   "updatedAt": "2026-11-10T13:48:14.950Z",
    "dir": "items/reui/c-stepper-43",
    "fileCount": 1,
    "group": "stepper with sub steps in a collapsible card",
@@ -122084,7 +122270,7 @@
    "id": "reui/c-timeline-11",
    "name": "Activity feed timeline with user avatars",
    "type": "component",
-   "category": "Images et galeries",
+   "category": "Listes et tâches",
    "tags": [
     "avatar activity",
     "exemple",
@@ -122109,8 +122295,9 @@
     "kind": "live",
     "entry": "components/timeline/c-timeline-11.tsx"
    },
-   "contentHash": "18354470486b98ae",
+   "contentHash": "578c1c49e77c922c",
    "importedAt": "2026-11-10T13:15:03.502Z",
+   "updatedAt": "2026-11-10T13:48:14.986Z",
    "dir": "items/reui/c-timeline-11",
    "fileCount": 1,
    "group": "activity feed timeline with user avatars",
@@ -122617,7 +122804,7 @@
    "id": "reui/c-toggle-14",
    "name": "Toggle as mute/unmute button",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "mute button",
@@ -122641,8 +122828,9 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-14.tsx"
    },
-   "contentHash": "1925b3fe230127e3",
+   "contentHash": "ecc62289f445d3b6",
    "importedAt": "2026-11-10T13:15:03.674Z",
+   "updatedAt": "2026-11-10T13:48:15.005Z",
    "dir": "items/reui/c-toggle-14",
    "fileCount": 1,
    "group": "toggle as mute unmute button",
@@ -122652,7 +122840,7 @@
    "id": "reui/c-toggle-2",
    "name": "Toggle buttons with outline variant.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "outline",
@@ -122676,8 +122864,9 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-2.tsx"
    },
-   "contentHash": "0373f605be51d689",
+   "contentHash": "3e553951cbe91bca",
    "importedAt": "2026-11-10T13:15:03.538Z",
+   "updatedAt": "2026-11-10T13:48:14.991Z",
    "dir": "items/reui/c-toggle-2",
    "fileCount": 1,
    "group": "toggle buttons with outline variant",
@@ -122687,7 +122876,7 @@
    "id": "reui/c-toggle-3",
    "name": "Toggle buttons in different sizes.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "exemple",
     "text sizes",
@@ -122711,8 +122900,9 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-3.tsx"
    },
-   "contentHash": "0f43cd327cec2ff8",
+   "contentHash": "aa18c7f2b22ce388",
    "importedAt": "2026-11-10T13:15:03.549Z",
+   "updatedAt": "2026-11-10T13:48:14.995Z",
    "dir": "items/reui/c-toggle-3",
    "fileCount": 1,
    "group": "toggle buttons in different sizes",
@@ -122722,7 +122912,7 @@
    "id": "reui/c-toggle-4",
    "name": "Toggle with button and icon.",
    "type": "component",
-   "category": "Boutons",
+   "category": "Formulaires",
    "tags": [
     "button comparison",
     "exemple",
@@ -122747,8 +122937,9 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-4.tsx"
    },
-   "contentHash": "675650dea44f5b19",
+   "contentHash": "d00b9befe7a752b0",
    "importedAt": "2026-11-10T13:15:03.560Z",
+   "updatedAt": "2026-11-10T13:48:14.998Z",
    "dir": "items/reui/c-toggle-4",
    "fileCount": 1,
    "group": "toggle with button and icon",
@@ -123604,7 +123795,7 @@
    "id": "reui/c-tooltip-12",
    "name": "Tooltip on disabled button with wrapper",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "disabled button",
     "exemple",
@@ -123629,8 +123820,9 @@
     "kind": "live",
     "entry": "components/tooltip/c-tooltip-12.tsx"
    },
-   "contentHash": "2b3b5f7253b5d2ca",
+   "contentHash": "1bfffa0072ef48bb",
    "importedAt": "2026-11-10T13:15:04.001Z",
+   "updatedAt": "2026-11-10T13:48:15.021Z",
    "dir": "items/reui/c-tooltip-12",
    "fileCount": 1,
    "group": "tooltip on disabled button with wrapper",
@@ -123748,7 +123940,7 @@
    "id": "reui/c-tooltip-16",
    "name": "Tooltip with action button inside",
    "type": "component",
-   "category": "Boutons",
+   "category": "Fenêtres et panneaux",
    "tags": [
     "exemple",
     "tooltip",
@@ -123773,8 +123965,9 @@
     "kind": "live",
     "entry": "components/tooltip/c-tooltip-16.tsx"
    },
-   "contentHash": "17ba0176544dadb7",
+   "contentHash": "f786c571725fa634",
    "importedAt": "2026-11-10T13:15:04.046Z",
+   "updatedAt": "2026-11-10T13:48:15.025Z",
    "dir": "items/reui/c-tooltip-16",
    "fileCount": 1,
    "group": "tooltip with action button inside",
@@ -125081,7 +125274,7 @@
    "id": "reui/c-tree-6",
    "name": "Organization chart tree with avatars",
    "type": "component",
-   "category": "Graphiques",
+   "category": "Listes et tâches",
    "tags": [
     "dataviz",
     "exemple",
@@ -125110,8 +125303,9 @@
     "kind": "live",
     "entry": "components/tree/c-tree-6.tsx"
    },
-   "contentHash": "723bec0cbc5e44e4",
+   "contentHash": "6da319ab1972fec9",
    "importedAt": "2026-11-10T13:15:04.446Z",
+   "updatedAt": "2026-11-10T13:48:15.042Z",
    "dir": "items/reui/c-tree-6",
    "fileCount": 1,
    "group": "organization chart tree with avatars",
@@ -125121,7 +125315,7 @@
    "id": "reui/c-tree-7",
    "name": "Permissions tree with checkboxes",
    "type": "component",
-   "category": "Formulaires",
+   "category": "Listes et tâches",
    "tags": [
     "exemple",
     "permissions",
@@ -125149,8 +125343,9 @@
     "kind": "live",
     "entry": "components/tree/c-tree-7.tsx"
    },
-   "contentHash": "c57fd6e7dde848e6",
+   "contentHash": "c55013eb27612cb5",
    "importedAt": "2026-11-10T13:15:04.464Z",
+   "updatedAt": "2026-11-10T13:48:15.046Z",
    "dir": "items/reui/c-tree-7",
    "fileCount": 1,
    "group": "permissions tree with checkboxes",
@@ -125160,7 +125355,7 @@
    "id": "reui/cascader",
    "name": "Cascader",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "web"
    ],
@@ -125194,9 +125389,9 @@
     "entry": "components/cascader/c-cascader-1.tsx",
     "demo": "source"
    },
-   "contentHash": "16ac4b9ce1f75fec",
+   "contentHash": "99f1e9e61a31b71b",
    "importedAt": "2026-11-05T17:59:38.068Z",
-   "updatedAt": "2026-11-10T13:13:02.797Z",
+   "updatedAt": "2026-11-10T13:48:13.431Z",
    "dir": "items/reui/cascader",
    "fileCount": 14,
    "group": "cascader"
@@ -125308,7 +125503,7 @@
    "id": "reui/cascader-footer",
    "name": "Cascader Footer",
    "type": "section",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "web"
    ],
@@ -125336,9 +125531,9 @@
     "kind": "live",
     "entry": "components/reui/cascader/cascader-footer.tsx"
    },
-   "contentHash": "c2209730084316e4",
+   "contentHash": "0b564d253f1e336b",
    "importedAt": "2026-11-05T17:59:38.046Z",
-   "updatedAt": "2026-11-05T18:07:49.669Z",
+   "updatedAt": "2026-11-10T13:48:13.422Z",
    "dir": "items/reui/cascader-footer",
    "fileCount": 1,
    "group": "cascader footer"
@@ -125657,7 +125852,7 @@
    "id": "reui/data-grid",
    "name": "Data Grid",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "web"
    ],
@@ -125699,9 +125894,9 @@
     "entry": "components/data-grid/c-data-grid-1.tsx",
     "demo": "source"
    },
-   "contentHash": "72e40b398cec8bc7",
+   "contentHash": "8a7346565bae3cbf",
    "importedAt": "2026-11-05T17:59:38.117Z",
-   "updatedAt": "2026-11-10T13:13:02.951Z",
+   "updatedAt": "2026-11-10T13:48:13.455Z",
    "dir": "items/reui/data-grid",
    "fileCount": 15,
    "group": "data grid"
@@ -126683,7 +126878,7 @@
    "id": "reui/file-type",
    "name": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
    "type": "component",
-   "category": "Fonds",
+   "category": "Tableaux de données",
    "tags": [
     "web"
    ],
@@ -126706,9 +126901,9 @@
     "entry": "components/file-type/c-file-type-1.tsx",
     "demo": "source"
    },
-   "contentHash": "5a4375d66e801369",
+   "contentHash": "c23f25fd5e898292",
    "importedAt": "2026-11-05T17:59:38.172Z",
-   "updatedAt": "2026-11-10T13:13:03.299Z",
+   "updatedAt": "2026-11-10T13:48:13.482Z",
    "dir": "items/reui/file-type",
    "fileCount": 4,
    "group": "shadcn file type icon in brand and family colors outline solid light and mono variants sizes down to px for data grid rows and resolution from a file name or mime type"
@@ -126717,7 +126912,7 @@
    "id": "reui/filters",
    "name": "Filters",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Formulaires",
    "tags": [
     "web"
    ],
@@ -126768,9 +126963,9 @@
     "entry": "components/filters/c-filters-1.tsx",
     "demo": "source"
    },
-   "contentHash": "5efd0aa1734de595",
+   "contentHash": "8da11f56e79c731d",
    "importedAt": "2026-11-05T17:59:38.241Z",
-   "updatedAt": "2026-11-10T13:13:03.454Z",
+   "updatedAt": "2026-11-10T13:48:13.496Z",
    "dir": "items/reui/filters",
    "fileCount": 17,
    "group": "filters"
@@ -127272,7 +127467,7 @@
    "id": "reui/gantt",
    "name": "Headless-first gantt - horizontal resource timeline with day-to-year scales, external CRUD contract, and a subscribable store.",
    "type": "component",
-   "category": "Listes et tâches",
+   "category": "Calendriers",
    "tags": [
     "web"
    ],
@@ -127312,9 +127507,9 @@
     "entry": "components/gantt/c-gantt-1.tsx",
     "demo": "source"
    },
-   "contentHash": "08076beb116c3320",
+   "contentHash": "ba06f99a32e74a88",
    "importedAt": "2026-11-05T17:59:38.278Z",
-   "updatedAt": "2026-11-10T13:13:03.667Z",
+   "updatedAt": "2026-11-10T13:48:13.520Z",
    "dir": "items/reui/gantt",
    "fileCount": 12,
    "group": "headless first gantt horizontal resource timeline with day to year scales external crud contract and a subscribable store"
@@ -127685,7 +127880,7 @@
    "id": "reui/kanban",
    "name": "Kanban",
    "type": "component",
-   "category": "Autres composants",
+   "category": "Listes et tâches",
    "tags": [
     "web"
    ],
@@ -127711,9 +127906,9 @@
     "entry": "components/kanban/c-kanban-1.tsx",
     "demo": "source"
    },
-   "contentHash": "2f74662a06c76b04",
+   "contentHash": "61584ca6dbc6af86",
    "importedAt": "2026-11-05T17:59:38.294Z",
-   "updatedAt": "2026-11-10T13:13:03.820Z",
+   "updatedAt": "2026-11-10T13:48:13.538Z",
    "dir": "items/reui/kanban",
    "fileCount": 4,
    "group": "kanban"

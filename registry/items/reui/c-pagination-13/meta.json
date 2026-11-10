@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-13",
   "name": "Pagination with page select dropdown and first/last navigation",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "page select",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-13.tsx"
   },
-  "contentHash": "0f6f5cfb7cbfd824",
-  "importedAt": "2026-11-10T13:14:59.213Z"
+  "contentHash": "5a23bc5d0c781b38",
+  "importedAt": "2026-11-10T13:14:59.213Z",
+  "updatedAt": "2026-11-10T13:48:14.659Z"
 }

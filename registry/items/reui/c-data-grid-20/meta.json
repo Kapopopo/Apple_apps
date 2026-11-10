@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-20",
   "name": "Data grid with column visibility controls",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "column visibility",
     "data-grid",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-20.tsx"
   },
-  "contentHash": "c2c424250120c89f",
-  "importedAt": "2026-11-10T13:14:54.714Z"
+  "contentHash": "9b0fc2d0ea16cf86",
+  "importedAt": "2026-11-10T13:14:54.714Z",
+  "updatedAt": "2026-11-10T13:48:14.122Z"
 }

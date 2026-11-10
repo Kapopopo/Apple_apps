@@ -2,7 +2,7 @@
   "id": "reui/c-filters-5",
   "name": "A date and a date range editor",
   "type": "component",
-  "category": "Calendriers",
+  "category": "Formulaires",
   "tags": [
     "date editors",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-5.tsx"
   },
-  "contentHash": "f4d0aebf8849afb1",
-  "importedAt": "2026-11-10T13:14:56.423Z"
+  "contentHash": "5d1db0531caf6d7a",
+  "importedAt": "2026-11-10T13:14:56.423Z",
+  "updatedAt": "2026-11-10T13:48:14.371Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-card-12",
   "name": "Advanced clean login form card",
   "type": "section",
-  "category": "Formulaires",
+  "category": "Cartes",
   "tags": [
     "card",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/card/c-card-12.tsx"
   },
-  "contentHash": "86092dae04158bda",
-  "importedAt": "2026-11-10T13:13:08.264Z"
+  "contentHash": "23383e420d7bdf9d",
+  "importedAt": "2026-11-10T13:13:08.264Z",
+  "updatedAt": "2026-11-10T13:48:13.843Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-12",
   "name": "Today button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-12.tsx"
   },
-  "contentHash": "2d8cb87e871cb821",
-  "importedAt": "2026-11-10T13:13:07.864Z"
+  "contentHash": "e0ade2eab57a25b4",
+  "importedAt": "2026-11-10T13:13:07.864Z",
+  "updatedAt": "2026-11-10T13:48:13.780Z"
 }

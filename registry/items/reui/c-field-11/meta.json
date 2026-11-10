@@ -2,7 +2,7 @@
   "id": "reui/c-field-11",
   "name": "Form with validation errors",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/field/c-field-11.tsx"
   },
-  "contentHash": "2ab99fdd4bf211b2",
-  "importedAt": "2026-11-10T13:14:56.022Z"
+  "contentHash": "7c1fc8894e8eaa74",
+  "importedAt": "2026-11-10T13:14:56.022Z",
+  "updatedAt": "2026-11-10T13:48:14.303Z"
 }

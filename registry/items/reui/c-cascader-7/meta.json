@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-7",
   "name": "Embedded panel without a popover.",
   "type": "component",
-  "category": "Fenêtres et panneaux",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "embedded panel",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-7.tsx"
   },
-  "contentHash": "b14b7363670ca498",
-  "importedAt": "2026-11-10T13:14:52.658Z"
+  "contentHash": "229d520abbcc74b8",
+  "importedAt": "2026-11-10T13:14:52.658Z",
+  "updatedAt": "2026-11-10T13:48:13.885Z"
 }

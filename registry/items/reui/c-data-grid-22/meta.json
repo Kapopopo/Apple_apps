@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-22",
   "name": "Data grid with CRUD features",
   "type": "section",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "crud admin",
     "data-grid",
@@ -46,7 +46,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-22.tsx"
   },
-  "contentHash": "47aced694ba2844d",
+  "contentHash": "fa51ee74504551eb",
   "importedAt": "2026-11-10T13:14:54.742Z",
-  "updatedAt": "2026-11-10T13:25:20.781Z"
+  "updatedAt": "2026-11-10T13:48:14.130Z"
 }

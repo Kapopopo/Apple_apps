@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-7",
   "name": "Gantt chart with dependency arrows and milestones",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "dataviz",
     "dependencies & milestones",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-7.tsx"
   },
-  "contentHash": "898bfc1c913cc811",
-  "importedAt": "2026-11-10T13:14:56.867Z"
+  "contentHash": "b0be9f692c9f754c",
+  "importedAt": "2026-11-10T13:14:56.867Z",
+  "updatedAt": "2026-11-10T13:48:14.429Z"
 }

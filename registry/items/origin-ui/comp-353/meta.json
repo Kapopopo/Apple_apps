@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-353",
-  "name": "Multi-level w/ icon",
+  "name": "Accordion 353",
   "type": "component",
-  "category": "Illustrations",
+  "category": "FAQ",
   "tags": [
     "accordion",
     "collapsible",
@@ -37,7 +37,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-353.tsx"
   },
-  "contentHash": "41907c3abbdde142",
+  "contentHash": "2580dc9c30774ca9",
   "importedAt": "2026-11-05T17:59:41.694Z",
-  "updatedAt": "2026-11-10T13:12:56.408Z"
+  "updatedAt": "2026-11-10T13:48:16.829Z"
 }

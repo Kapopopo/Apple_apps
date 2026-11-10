@@ -2,7 +2,7 @@
   "id": "reui/c-stepper-43",
   "name": "Stepper with sub-steps in a collapsible card",
   "type": "component",
-  "category": "FAQ",
+  "category": "Navigation",
   "tags": [
     "collapsible sub-steps",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-43.tsx"
   },
-  "contentHash": "15c8c944347c8b36",
-  "importedAt": "2026-11-10T13:15:02.615Z"
+  "contentHash": "bbf19b119043521d",
+  "importedAt": "2026-11-10T13:15:02.615Z",
+  "updatedAt": "2026-11-10T13:48:14.950Z"
 }

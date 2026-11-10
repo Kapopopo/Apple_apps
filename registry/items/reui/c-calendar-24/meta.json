@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-24",
   "name": "Calendar with date picker",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "date picker",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-24.tsx"
   },
-  "contentHash": "174e154b9b8e14fa",
-  "importedAt": "2026-11-10T13:13:08.040Z"
+  "contentHash": "dbf686214e42fa17",
+  "importedAt": "2026-11-10T13:13:08.040Z",
+  "updatedAt": "2026-11-10T13:48:13.801Z"
 }

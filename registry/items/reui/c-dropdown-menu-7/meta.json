@@ -2,7 +2,7 @@
   "id": "reui/c-dropdown-menu-7",
   "name": "Dropdown menu with radio groups",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "dropdown-menu",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-7.tsx"
   },
-  "contentHash": "712bb835674610f9",
-  "importedAt": "2026-11-10T13:14:55.254Z"
+  "contentHash": "45fbd66b547f715a",
+  "importedAt": "2026-11-10T13:14:55.254Z",
+  "updatedAt": "2026-11-10T13:48:14.215Z"
 }

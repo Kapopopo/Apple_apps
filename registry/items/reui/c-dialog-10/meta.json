@@ -2,7 +2,7 @@
   "id": "reui/c-dialog-10",
   "name": "Dialog with full width button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "dialog",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-10.tsx"
   },
-  "contentHash": "7cb52cb6fefac200",
-  "importedAt": "2026-11-10T13:14:55.104Z"
+  "contentHash": "a1c9f704cd649c88",
+  "importedAt": "2026-11-10T13:14:55.104Z",
+  "updatedAt": "2026-11-10T13:48:14.201Z"
 }

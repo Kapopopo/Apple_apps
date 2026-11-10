@@ -2,7 +2,7 @@
   "id": "reui/c-dialog-5",
   "name": "Dialog with custom close button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "custom close button",
     "dialog",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-5.tsx"
   },
-  "contentHash": "1a48b202c54a0264",
-  "importedAt": "2026-11-10T13:14:55.044Z"
+  "contentHash": "da204e7b69098433",
+  "importedAt": "2026-11-10T13:14:55.044Z",
+  "updatedAt": "2026-11-10T13:48:14.194Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-30",
   "name": "Data grid with tree rows",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-30.tsx"
   },
-  "contentHash": "aba99248c3ba679e",
-  "importedAt": "2026-11-10T13:14:54.874Z"
+  "contentHash": "4c2bfa40831209de",
+  "importedAt": "2026-11-10T13:14:54.874Z",
+  "updatedAt": "2026-11-10T13:48:14.162Z"
 }

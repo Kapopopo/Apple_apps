@@ -2,7 +2,7 @@
   "id": "reui/c-field-1",
   "name": "Fields with input groups",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-1.tsx"
   },
-  "contentHash": "90ff41305594699e",
-  "importedAt": "2026-11-10T13:14:55.903Z"
+  "contentHash": "a61e2647acc1dcf9",
+  "importedAt": "2026-11-10T13:14:55.903Z",
+  "updatedAt": "2026-11-10T13:48:14.250Z"
 }

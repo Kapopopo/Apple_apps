@@ -2,7 +2,7 @@
   "id": "reui/c-context-menu-6",
   "name": "Context menu with checkbox items.",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "checkbox items",
     "context-menu",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/context-menu/c-context-menu-6.tsx"
   },
-  "contentHash": "850324bc108aaf67",
-  "importedAt": "2026-11-10T13:14:54.431Z"
+  "contentHash": "e89f8de7191e307f",
+  "importedAt": "2026-11-10T13:14:54.431Z",
+  "updatedAt": "2026-11-10T13:48:14.046Z"
 }

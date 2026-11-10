@@ -2,7 +2,7 @@
   "id": "reui/c-field-10",
   "name": "Notification preferences form",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-10.tsx"
   },
-  "contentHash": "bd6c84135fcf51cd",
-  "importedAt": "2026-11-10T13:14:56.009Z"
+  "contentHash": "6b46723db26bdf57",
+  "importedAt": "2026-11-10T13:14:56.009Z",
+  "updatedAt": "2026-11-10T13:48:14.298Z"
 }

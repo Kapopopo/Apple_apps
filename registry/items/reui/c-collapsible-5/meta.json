@@ -2,7 +2,7 @@
   "id": "reui/c-collapsible-5",
   "name": "Collapsible form fields",
   "type": "component",
-  "category": "Formulaires",
+  "category": "FAQ",
   "tags": [
     "collapsible",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/collapsible/c-collapsible-5.tsx"
   },
-  "contentHash": "ce9e250a602ad0b9",
-  "importedAt": "2026-11-10T13:14:53.744Z"
+  "contentHash": "59e72fc222bd1b7f",
+  "importedAt": "2026-11-10T13:14:53.744Z",
+  "updatedAt": "2026-11-10T13:48:14.007Z"
 }

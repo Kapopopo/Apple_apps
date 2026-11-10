@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-9",
   "name": "Year select with navigation",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-9.tsx"
   },
-  "contentHash": "825a50e5d72a3048",
-  "importedAt": "2026-11-10T13:13:07.822Z"
+  "contentHash": "2932a5f5ea6a9c1e",
+  "importedAt": "2026-11-10T13:13:07.822Z",
+  "updatedAt": "2026-11-10T13:48:13.766Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-4",
   "name": "AI chat with code fences",
   "type": "component",
-  "category": "IA et messages",
+  "category": "Code",
   "tags": [
     "ai chat",
     "code-block",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-4.tsx"
   },
-  "contentHash": "1115acdecc87c202",
-  "importedAt": "2026-11-10T13:14:53.413Z"
+  "contentHash": "ccb0f07a08067cb3",
+  "importedAt": "2026-11-10T13:14:53.413Z",
+  "updatedAt": "2026-11-10T13:48:13.963Z"
 }

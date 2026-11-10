@@ -2,7 +2,7 @@
   "id": "reui/c-filters-1",
   "name": "Everything in one filter bar",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "filters",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-1.tsx"
   },
-  "contentHash": "a6a0566e559d3c68",
-  "importedAt": "2026-11-10T13:14:56.376Z"
+  "contentHash": "e9e7bbea168a3d68",
+  "importedAt": "2026-11-10T13:14:56.376Z",
+  "updatedAt": "2026-11-10T13:48:14.327Z"
 }

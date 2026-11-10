@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-26",
   "name": "Calendar with date picker and year view",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "exemple",
@@ -41,6 +41,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-26.tsx"
   },
-  "contentHash": "4c1450785e29a76d",
-  "importedAt": "2026-11-10T13:13:08.070Z"
+  "contentHash": "6fddec0a8b5ee447",
+  "importedAt": "2026-11-10T13:13:08.070Z",
+  "updatedAt": "2026-11-10T13:48:13.811Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-2",
   "name": "Data grid with cell border",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "cell borders",
     "data-grid",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-2.tsx"
   },
-  "contentHash": "e6a96654e4dc3d16",
-  "importedAt": "2026-11-10T13:14:54.475Z"
+  "contentHash": "d2363b878f48a88e",
+  "importedAt": "2026-11-10T13:14:54.475Z",
+  "updatedAt": "2026-11-10T13:48:14.060Z"
 }

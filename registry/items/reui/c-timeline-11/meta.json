@@ -2,7 +2,7 @@
   "id": "reui/c-timeline-11",
   "name": "Activity feed timeline with user avatars",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "Listes et tâches",
   "tags": [
     "avatar activity",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/timeline/c-timeline-11.tsx"
   },
-  "contentHash": "18354470486b98ae",
-  "importedAt": "2026-11-10T13:15:03.502Z"
+  "contentHash": "578c1c49e77c922c",
+  "importedAt": "2026-11-10T13:15:03.502Z",
+  "updatedAt": "2026-11-10T13:48:14.986Z"
 }

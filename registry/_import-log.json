@@ -5326,6 +5326,622 @@
       ],
       "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
       "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "shadcn",
+      "at": "2026-11-10T13:48:06.455Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 185,
+      "missingUpstream": [],
+      "skipped": [
+        {
+          "item": "shadcn/sidebar-controlled",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-footer",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-group-action",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-group-collapsible",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-group",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-header",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-menu-action",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-menu-badge",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-menu-collapsible",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-menu-sub",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-menu",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/sidebar-rsc",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/style",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "shadcn/theme-daylight",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "shadcn/theme-emerald",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "shadcn/theme-midnight",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "shadcn/v0-login-01",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-01",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-02",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-03",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-04",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-05",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-06",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-07",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-08",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-09",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-10",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-11",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-12",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-13",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-14",
+          "reason": "Type shadcn non géré : registry:internal"
+        },
+        {
+          "item": "shadcn/v0-sidebar-15",
+          "reason": "Type shadcn non géré : registry:internal"
+        }
+      ],
+      "warnings": [],
+      "commit": "8a3536678a528cc012b9e62484290e79d0be410f",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "magic-ui",
+      "at": "2026-11-10T13:48:07.245Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 81,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "37ce829f18dd7d0a7219531a4249b664419933ea",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "motion-primitives",
+      "at": "2026-11-10T13:48:08.808Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 34,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "120f64f6ca60348e251f929e9c81f11ccbe45eda",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "cult-ui",
+      "at": "2026-11-10T13:48:09.840Z",
+      "added": [],
+      "updated": [
+        "cult-ui/kanban-board"
+      ],
+      "unchanged": 137,
+      "missingUpstream": [],
+      "skipped": [
+        {
+          "item": "cult-ui/animated-badge",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-button",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-card",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-composer",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-dropzone",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-field",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-input",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-notification",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-number",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-progress",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-search",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-segmented",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-select",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-switch",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-tabs",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-toast",
+          "reason": "Aucun contenu inline"
+        },
+        {
+          "item": "cult-ui/animated-toggle-group",
+          "reason": "Aucun contenu inline"
+        }
+      ],
+      "warnings": [],
+      "commit": "d71b1428b811c2779d46ea41b7ef8c9f9c9991c2",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "kokonut-ui",
+      "at": "2026-11-10T13:48:11.376Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 117,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "9976111a38abe05a47229867611db02646b597ef",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "reui",
+      "at": "2026-11-10T13:48:12.775Z",
+      "added": [],
+      "updated": [
+        "reui/cascader-footer",
+        "reui/cascader",
+        "reui/data-grid",
+        "reui/file-type",
+        "reui/filters",
+        "reui/gantt",
+        "reui/kanban",
+        "reui/c-alert-3",
+        "reui/c-alert-4",
+        "reui/c-alert-5",
+        "reui/c-alert-10",
+        "reui/c-alert-11",
+        "reui/c-alert-dialog-1",
+        "reui/c-alert-dialog-5",
+        "reui/c-aspect-ratio-6",
+        "reui/c-avatar-14",
+        "reui/c-avatar-15",
+        "reui/c-avatar-19",
+        "reui/c-avatar-20",
+        "reui/c-avatar-26",
+        "reui/c-avatar-27",
+        "reui/c-avatar-29",
+        "reui/c-avatar-35",
+        "reui/c-breadcrumb-14",
+        "reui/c-calendar-5",
+        "reui/c-calendar-6",
+        "reui/c-calendar-9",
+        "reui/c-calendar-11",
+        "reui/c-calendar-12",
+        "reui/c-calendar-21",
+        "reui/c-calendar-24",
+        "reui/c-calendar-25",
+        "reui/c-calendar-26",
+        "reui/c-calendar-27",
+        "reui/c-calendar-28",
+        "reui/c-calendar-29",
+        "reui/c-calendar-30",
+        "reui/c-card-6",
+        "reui/c-card-12",
+        "reui/c-card-15",
+        "reui/c-cascader-4",
+        "reui/c-cascader-5",
+        "reui/c-cascader-7",
+        "reui/c-cascader-8",
+        "reui/c-cascader-9",
+        "reui/c-cascader-11",
+        "reui/c-cascader-12",
+        "reui/c-cascader-13",
+        "reui/c-cascader-15",
+        "reui/c-cascader-16",
+        "reui/c-cascader-17",
+        "reui/c-cascader-19",
+        "reui/c-cascader-20",
+        "reui/c-code-block-2",
+        "reui/c-code-block-3",
+        "reui/c-code-block-4",
+        "reui/c-code-block-13",
+        "reui/c-code-block-14",
+        "reui/c-code-block-24",
+        "reui/c-code-block-25",
+        "reui/c-collapsible-2",
+        "reui/c-collapsible-5",
+        "reui/c-combobox-4",
+        "reui/c-context-menu-6",
+        "reui/c-context-menu-7",
+        "reui/c-data-grid-1",
+        "reui/c-data-grid-2",
+        "reui/c-data-grid-3",
+        "reui/c-data-grid-5",
+        "reui/c-data-grid-7",
+        "reui/c-data-grid-8",
+        "reui/c-data-grid-10",
+        "reui/c-data-grid-11",
+        "reui/c-data-grid-12",
+        "reui/c-data-grid-13",
+        "reui/c-data-grid-14",
+        "reui/c-data-grid-15",
+        "reui/c-data-grid-16",
+        "reui/c-data-grid-17",
+        "reui/c-data-grid-18",
+        "reui/c-data-grid-19",
+        "reui/c-data-grid-20",
+        "reui/c-data-grid-21",
+        "reui/c-data-grid-22",
+        "reui/c-data-grid-23",
+        "reui/c-data-grid-24",
+        "reui/c-data-grid-25",
+        "reui/c-data-grid-26",
+        "reui/c-data-grid-27",
+        "reui/c-data-grid-28",
+        "reui/c-data-grid-29",
+        "reui/c-data-grid-30",
+        "reui/c-data-grid-31",
+        "reui/c-data-grid-32",
+        "reui/c-data-grid-33",
+        "reui/c-data-grid-34",
+        "reui/c-dialog-4",
+        "reui/c-dialog-5",
+        "reui/c-dialog-10",
+        "reui/c-dropdown-menu-6",
+        "reui/c-dropdown-menu-7",
+        "reui/c-dropdown-menu-14",
+        "reui/c-field-1",
+        "reui/c-field-2",
+        "reui/c-field-3",
+        "reui/c-field-4",
+        "reui/c-field-5",
+        "reui/c-field-6",
+        "reui/c-field-7",
+        "reui/c-field-8",
+        "reui/c-field-10",
+        "reui/c-field-11",
+        "reui/c-file-type-6",
+        "reui/c-filters-1",
+        "reui/c-filters-2",
+        "reui/c-filters-3",
+        "reui/c-filters-4",
+        "reui/c-filters-5",
+        "reui/c-filters-6",
+        "reui/c-filters-7",
+        "reui/c-filters-8",
+        "reui/c-filters-10",
+        "reui/c-filters-11",
+        "reui/c-filters-12",
+        "reui/c-gantt-1",
+        "reui/c-gantt-2",
+        "reui/c-gantt-3",
+        "reui/c-gantt-4",
+        "reui/c-gantt-5",
+        "reui/c-gantt-6",
+        "reui/c-gantt-7",
+        "reui/c-hover-card-6",
+        "reui/c-icon-tile-9",
+        "reui/c-icon-tile-11",
+        "reui/c-input-group-10",
+        "reui/c-input-group-11",
+        "reui/c-input-group-21",
+        "reui/c-input-group-26",
+        "reui/c-input-group-27",
+        "reui/c-input-group-28",
+        "reui/c-input-group-33",
+        "reui/c-kanban-1",
+        "reui/c-kanban-2",
+        "reui/c-kanban-3",
+        "reui/c-kanban-4",
+        "reui/c-kanban-5",
+        "reui/c-kanban-6",
+        "reui/c-message-2",
+        "reui/c-message-scroller-6",
+        "reui/c-navigation-menu-4",
+        "reui/c-number-field-4",
+        "reui/c-number-field-5",
+        "reui/c-number-field-6",
+        "reui/c-pagination-4",
+        "reui/c-pagination-5",
+        "reui/c-pagination-7",
+        "reui/c-pagination-11",
+        "reui/c-pagination-12",
+        "reui/c-pagination-13",
+        "reui/c-pagination-14",
+        "reui/c-pagination-15",
+        "reui/c-popover-3",
+        "reui/c-progress-5",
+        "reui/c-progress-6",
+        "reui/c-questionnaire-2",
+        "reui/c-questionnaire-4",
+        "reui/c-rating-9",
+        "reui/c-select-14",
+        "reui/c-select-21",
+        "reui/c-sheet-1",
+        "reui/c-sheet-2",
+        "reui/c-skeleton-1",
+        "reui/c-skeleton-2",
+        "reui/c-skeleton-3",
+        "reui/c-skeleton-4",
+        "reui/c-skeleton-5",
+        "reui/c-skeleton-8",
+        "reui/c-sonner-6",
+        "reui/c-sonner-8",
+        "reui/c-sonner-10",
+        "reui/c-sonner-18",
+        "reui/c-sortable-2",
+        "reui/c-sortable-6",
+        "reui/c-sortable-7",
+        "reui/c-spinner-2",
+        "reui/c-spinner-4",
+        "reui/c-spinner-6",
+        "reui/c-spinner-9",
+        "reui/c-spinner-11",
+        "reui/c-stepper-22",
+        "reui/c-stepper-23",
+        "reui/c-stepper-42",
+        "reui/c-stepper-43",
+        "reui/c-timeline-11",
+        "reui/c-toggle-2",
+        "reui/c-toggle-3",
+        "reui/c-toggle-4",
+        "reui/c-toggle-14",
+        "reui/c-tooltip-12",
+        "reui/c-tooltip-16",
+        "reui/c-tree-6",
+        "reui/c-tree-7"
+      ],
+      "unchanged": 1213,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "reui : 1264 exemples officiels, 87 familles"
+      ],
+      "commit": "067aa0dc7f8bbfec1cd76fc5ad31f842be5f569a",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "origin-ui",
+      "at": "2026-11-10T13:48:15.785Z",
+      "added": [],
+      "updated": [
+        "origin-ui/comp-128",
+        "origin-ui/comp-320",
+        "origin-ui/comp-323",
+        "origin-ui/comp-325",
+        "origin-ui/comp-326",
+        "origin-ui/comp-327",
+        "origin-ui/comp-328",
+        "origin-ui/comp-329",
+        "origin-ui/comp-330",
+        "origin-ui/comp-331",
+        "origin-ui/comp-334",
+        "origin-ui/comp-335",
+        "origin-ui/comp-336",
+        "origin-ui/comp-337",
+        "origin-ui/comp-338",
+        "origin-ui/comp-339",
+        "origin-ui/comp-340",
+        "origin-ui/comp-341",
+        "origin-ui/comp-342",
+        "origin-ui/comp-343",
+        "origin-ui/comp-344",
+        "origin-ui/comp-345",
+        "origin-ui/comp-346",
+        "origin-ui/comp-347",
+        "origin-ui/comp-348",
+        "origin-ui/comp-349",
+        "origin-ui/comp-350",
+        "origin-ui/comp-351",
+        "origin-ui/comp-352",
+        "origin-ui/comp-353",
+        "origin-ui/comp-365",
+        "origin-ui/comp-381",
+        "origin-ui/comp-388",
+        "origin-ui/comp-463",
+        "origin-ui/comp-465",
+        "origin-ui/comp-483",
+        "origin-ui/comp-485",
+        "origin-ui/comp-502",
+        "origin-ui/comp-503",
+        "origin-ui/comp-511",
+        "origin-ui/comp-512",
+        "origin-ui/comp-592",
+        "origin-ui/comp-595",
+        "origin-ui/comp-596"
+      ],
+      "unchanged": 603,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "890a79a5368b3cdebbdd860aa1908f2843fd7ddc",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "react-bits",
+      "at": "2026-11-10T13:48:17.683Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 419,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "react-bits : 200 sons importés (moteur SoundEngine-TS)",
+        "react-bits : 218 composants retenus (variantes -TS-TW puis -TS-CSS) sur 872 fichiers"
+      ],
+      "commit": "4dc7b5b7772e1217c8fb8d2a7aa074302180e5b4",
+      "license": "LicenseRef-Commons-Clause"
+    },
+    {
+      "importer": "github",
+      "source": "rare-ui",
+      "at": "2026-11-10T13:48:18.538Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 31,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
+      "license": "LicenseRef-MIT-Commons-Clause-Attribution"
+    },
+    {
+      "importer": "github",
+      "source": "easyui",
+      "at": "2026-11-10T13:48:19.230Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 133,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "easyui/ai-response : import interne non résolu « ./ai-response »"
+      ],
+      "commit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "panelui",
+      "at": "2026-11-10T13:48:20.977Z",
+      "added": [],
+      "updated": [
+        "panelui/chip",
+        "panelui-web/chip"
+      ],
+      "unchanged": 235,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
+      "license": "MIT"
+    },
+    {
+      "importer": "github",
+      "source": "bencho",
+      "at": "2026-11-10T13:48:22.650Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 71,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "bencho : 24 sons importés depuis sounds/sounds.ts"
+      ],
+      "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
+      "license": "MIT"
     }
   ]
 }

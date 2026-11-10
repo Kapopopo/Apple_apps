@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-27",
   "name": "Pilled small button with avatar",
   "type": "component",
-  "category": "Boutons",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-27.tsx"
   },
-  "contentHash": "757341a4ab57167f",
-  "importedAt": "2026-11-10T13:13:05.553Z"
+  "contentHash": "13d9e7aeaabd0972",
+  "importedAt": "2026-11-10T13:13:05.553Z",
+  "updatedAt": "2026-11-10T13:48:13.648Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-20",
   "name": "Avatar social proof with text label",
   "type": "component",
-  "category": "Texte",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-20.tsx"
   },
-  "contentHash": "e685644bd0359038",
-  "importedAt": "2026-11-10T13:13:05.463Z"
+  "contentHash": "9b67060a3029d1cc",
+  "importedAt": "2026-11-10T13:13:05.463Z",
+  "updatedAt": "2026-11-10T13:48:13.637Z"
 }

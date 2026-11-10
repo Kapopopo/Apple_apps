@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-327",
-  "name": "Invite via email",
+  "name": "Dialog 327",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "dialog",
     "form",
@@ -44,7 +44,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-327.tsx"
   },
-  "contentHash": "2c2337d662158a83",
+  "contentHash": "e58bd2bdc7301a7f",
   "importedAt": "2026-11-05T17:59:41.558Z",
-  "updatedAt": "2026-11-10T13:12:56.181Z"
+  "updatedAt": "2026-11-10T13:48:16.737Z"
 }

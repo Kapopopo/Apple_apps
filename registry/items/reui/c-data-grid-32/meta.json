@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-32",
   "name": "Data grid with column virtualization",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "column virtualization",
     "data-grid",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-32.tsx"
   },
-  "contentHash": "993f8abc2ca84f32",
-  "importedAt": "2026-11-10T13:14:54.912Z"
+  "contentHash": "6a24b3db0eedc6a6",
+  "importedAt": "2026-11-10T13:14:54.912Z",
+  "updatedAt": "2026-11-10T13:48:14.173Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-465",
-  "name": "Go to page",
+  "name": "Pagination 465",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "input",
     "pagination",
@@ -42,7 +42,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-465.tsx"
   },
-  "contentHash": "b406721eea2e7b42",
+  "contentHash": "210f62a813b1ec48",
   "importedAt": "2026-11-05T17:59:42.154Z",
-  "updatedAt": "2026-11-10T13:12:56.608Z"
+  "updatedAt": "2026-11-10T13:48:16.877Z"
 }

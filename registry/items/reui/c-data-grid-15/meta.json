@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-15",
   "name": "Data grid with column resizing",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "column resizing",
     "data-grid",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-15.tsx"
   },
-  "contentHash": "c3fc8869916abaa5",
-  "importedAt": "2026-11-10T13:14:54.643Z"
+  "contentHash": "86061e6c93470a0c",
+  "importedAt": "2026-11-10T13:14:54.643Z",
+  "updatedAt": "2026-11-10T13:48:14.104Z"
 }

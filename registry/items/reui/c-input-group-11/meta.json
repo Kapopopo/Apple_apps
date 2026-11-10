@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-11",
   "name": "Input group with icon button action",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "icon button",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-11.tsx"
   },
-  "contentHash": "e454070b9695a652",
-  "importedAt": "2026-11-10T13:14:57.715Z"
+  "contentHash": "bb290e3d0e607d15",
+  "importedAt": "2026-11-10T13:14:57.715Z",
+  "updatedAt": "2026-11-10T13:48:14.499Z"
 }

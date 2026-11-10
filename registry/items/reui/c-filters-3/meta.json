@@ -2,7 +2,7 @@
   "id": "reui/c-filters-3",
   "name": "Status and priority colour badges",
   "type": "component",
-  "category": "Autres composants",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "filters",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-3.tsx"
   },
-  "contentHash": "a9345fb5019096f9",
-  "importedAt": "2026-11-10T13:14:56.386Z"
+  "contentHash": "6ee32a45ddfce22f",
+  "importedAt": "2026-11-10T13:14:56.386Z",
+  "updatedAt": "2026-11-10T13:48:14.336Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-19",
   "name": "Data grid with card container",
   "type": "component",
-  "category": "Cartes",
+  "category": "Tableaux de données",
   "tags": [
     "card container",
     "data-grid",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-19.tsx"
   },
-  "contentHash": "4b48114bbe011e74",
-  "importedAt": "2026-11-10T13:14:54.698Z"
+  "contentHash": "9a6e5986324ddc4d",
+  "importedAt": "2026-11-10T13:14:54.698Z",
+  "updatedAt": "2026-11-10T13:48:14.118Z"
 }

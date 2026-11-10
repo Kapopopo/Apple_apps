@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-5",
   "name": "Gantt chart with task table and progress",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "dataviz",
     "exemple",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-5.tsx"
   },
-  "contentHash": "41352a9b05b81d2a",
-  "importedAt": "2026-11-10T13:14:56.835Z"
+  "contentHash": "e14cf58cea4c4bd6",
+  "importedAt": "2026-11-10T13:14:56.835Z",
+  "updatedAt": "2026-11-10T13:48:14.423Z"
 }

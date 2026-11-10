@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-28",
   "name": "Calendar with date picker and presets",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-28.tsx"
   },
-  "contentHash": "bca2126f8db845ef",
-  "importedAt": "2026-11-10T13:13:08.095Z"
+  "contentHash": "21ad87dc2963e58d",
+  "importedAt": "2026-11-10T13:13:08.095Z",
+  "updatedAt": "2026-11-10T13:48:13.819Z"
 }

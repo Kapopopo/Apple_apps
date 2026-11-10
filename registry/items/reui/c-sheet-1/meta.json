@@ -2,7 +2,7 @@
   "id": "reui/c-sheet-1",
   "name": "Sheet containing a form for editing profile information",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "exemple",
     "profile editor",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/sheet/c-sheet-1.tsx"
   },
-  "contentHash": "67f56d3b95ae60cd",
-  "importedAt": "2026-11-10T13:15:00.897Z"
+  "contentHash": "32c4eb51d9f0a561",
+  "importedAt": "2026-11-10T13:15:00.897Z",
+  "updatedAt": "2026-11-10T13:48:14.781Z"
 }

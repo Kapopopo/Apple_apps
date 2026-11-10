@@ -2,7 +2,7 @@
   "id": "reui/c-sonner-10",
   "name": "Toast with upload progress simulation",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Notifications",
   "tags": [
     "exemple",
     "sonner",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-10.tsx"
   },
-  "contentHash": "a54ff1fa7a49a71d",
-  "importedAt": "2026-11-10T13:15:01.592Z"
+  "contentHash": "9f701eaa71b464bb",
+  "importedAt": "2026-11-10T13:15:01.592Z",
+  "updatedAt": "2026-11-10T13:48:14.853Z"
 }

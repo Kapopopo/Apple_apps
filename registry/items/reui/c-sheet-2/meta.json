@@ -2,7 +2,7 @@
   "id": "reui/c-sheet-2",
   "name": "Sheet without a corner close button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "exemple",
     "no close button",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/sheet/c-sheet-2.tsx"
   },
-  "contentHash": "fe82e285cb35b999",
-  "importedAt": "2026-11-10T13:15:00.910Z"
+  "contentHash": "97b77fe161a4131a",
+  "importedAt": "2026-11-10T13:15:00.910Z",
+  "updatedAt": "2026-11-10T13:48:14.787Z"
 }

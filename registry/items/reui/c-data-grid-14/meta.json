@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-14",
   "name": "Data grid with draggable rows",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "drag",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-14.tsx"
   },
-  "contentHash": "6fbdae762f244d1d",
-  "importedAt": "2026-11-10T13:14:54.629Z"
+  "contentHash": "3729bbe9c70da4a0",
+  "importedAt": "2026-11-10T13:14:54.629Z",
+  "updatedAt": "2026-11-10T13:48:14.100Z"
 }

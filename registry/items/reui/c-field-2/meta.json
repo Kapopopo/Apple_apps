@@ -2,7 +2,7 @@
   "id": "reui/c-field-2",
   "name": "Field with input and textarea",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-2.tsx"
   },
-  "contentHash": "aa95cfb87c16d3b8",
-  "importedAt": "2026-11-10T13:14:55.914Z"
+  "contentHash": "2c8e8468d7f5f397",
+  "importedAt": "2026-11-10T13:14:55.914Z",
+  "updatedAt": "2026-11-10T13:48:14.262Z"
 }

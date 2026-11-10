@@ -2,7 +2,7 @@
   "id": "reui/c-stepper-42",
   "name": "Stepper with vertical status bars",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "stepper",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-42.tsx"
   },
-  "contentHash": "5aab2dd4621e01e3",
-  "importedAt": "2026-11-10T13:15:02.596Z"
+  "contentHash": "224df5ce75ba448d",
+  "importedAt": "2026-11-10T13:15:02.596Z",
+  "updatedAt": "2026-11-10T13:48:14.947Z"
 }

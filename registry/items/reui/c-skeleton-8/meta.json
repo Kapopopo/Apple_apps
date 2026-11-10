@@ -2,7 +2,7 @@
   "id": "reui/c-skeleton-8",
   "name": "Skeleton loader for a card grid",
   "type": "component",
-  "category": "Cartes",
+  "category": "Chargement",
   "tags": [
     "card grid",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-8.tsx"
   },
-  "contentHash": "3196e9d49871d31c",
-  "importedAt": "2026-11-10T13:15:01.272Z"
+  "contentHash": "bfc0867791ca4321",
+  "importedAt": "2026-11-10T13:15:01.272Z",
+  "updatedAt": "2026-11-10T13:48:14.828Z"
 }

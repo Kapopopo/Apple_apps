@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-3",
   "name": "Kanban board with frame columns",
   "type": "component",
-  "category": "Autres composants",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "frame columns",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-3.tsx"
   },
-  "contentHash": "5da0501362ef0e18",
-  "importedAt": "2026-11-10T13:14:58.314Z"
+  "contentHash": "f64af3464727137f",
+  "importedAt": "2026-11-10T13:14:58.314Z",
+  "updatedAt": "2026-11-10T13:48:14.562Z"
 }

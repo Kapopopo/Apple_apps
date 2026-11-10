@@ -2,7 +2,7 @@
   "id": "reui/c-dialog-4",
   "name": "Dialog without a close button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "dialog",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/dialog/c-dialog-4.tsx"
   },
-  "contentHash": "3f91c1f449388724",
-  "importedAt": "2026-11-10T13:14:55.030Z"
+  "contentHash": "db87b34b8699d4b3",
+  "importedAt": "2026-11-10T13:14:55.030Z",
+  "updatedAt": "2026-11-10T13:48:14.190Z"
 }

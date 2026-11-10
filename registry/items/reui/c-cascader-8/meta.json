@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-8",
   "name": "Flat adjacency data with a parent pointer.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-8.tsx"
   },
-  "contentHash": "7f7db50ed1013972",
-  "importedAt": "2026-11-10T13:14:52.670Z"
+  "contentHash": "0ff7b138f7a642c3",
+  "importedAt": "2026-11-10T13:14:52.670Z",
+  "updatedAt": "2026-11-10T13:48:13.889Z"
 }

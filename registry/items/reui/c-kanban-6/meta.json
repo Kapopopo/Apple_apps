@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-6",
   "name": "Kanban board persisted to a backend",
   "type": "component",
-  "category": "Boutons",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "kanban",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-6.tsx"
   },
-  "contentHash": "210cb01313173fd1",
-  "importedAt": "2026-11-10T13:14:58.362Z"
+  "contentHash": "4c06bfe0d9e26da6",
+  "importedAt": "2026-11-10T13:14:58.362Z",
+  "updatedAt": "2026-11-10T13:48:14.575Z"
 }

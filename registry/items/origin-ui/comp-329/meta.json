@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-329",
-  "name": "Name on card",
+  "name": "Dialog 329",
   "type": "component",
-  "category": "Cartes",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "checkout",
     "credit card",
@@ -46,7 +46,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-329.tsx"
   },
-  "contentHash": "9fc35c59722b8ed1",
+  "contentHash": "244db0fdf75012a8",
   "importedAt": "2026-11-05T17:59:41.564Z",
-  "updatedAt": "2026-11-10T13:12:56.196Z"
+  "updatedAt": "2026-11-10T13:48:16.746Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-35",
   "name": "Compact avatar dropdown menu",
   "type": "component",
-  "category": "Navigation",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "dropdown menu",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-35.tsx"
   },
-  "contentHash": "a149524aa915f4b2",
-  "importedAt": "2026-11-10T13:13:05.653Z"
+  "contentHash": "96c23f1f213bf886",
+  "importedAt": "2026-11-10T13:13:05.653Z",
+  "updatedAt": "2026-11-10T13:48:13.658Z"
 }

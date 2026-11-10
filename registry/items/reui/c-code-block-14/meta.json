@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-14",
   "name": "File tabs in a dense frame",
   "type": "component",
-  "category": "Navigation",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-14.tsx"
   },
-  "contentHash": "d05bc3e2375c21f8",
-  "importedAt": "2026-11-10T13:14:53.534Z"
+  "contentHash": "213771bc51f06830",
+  "importedAt": "2026-11-10T13:14:53.534Z",
+  "updatedAt": "2026-11-10T13:48:13.980Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-511",
-  "name": "Date picker",
+  "name": "Calendar 511",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "button",
     "calendar",
@@ -43,7 +43,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-511.tsx"
   },
-  "contentHash": "477d575583bb530d",
+  "contentHash": "c59167bd5d934950",
   "importedAt": "2026-11-05T17:59:42.323Z",
-  "updatedAt": "2026-11-10T13:12:56.718Z"
+  "updatedAt": "2026-11-10T13:48:16.907Z"
 }

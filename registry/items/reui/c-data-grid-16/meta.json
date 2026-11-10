@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-16",
   "name": "Data grid with pinnable columns",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-16.tsx"
   },
-  "contentHash": "c8aca23bf09fb878",
-  "importedAt": "2026-11-10T13:14:54.656Z"
+  "contentHash": "aa38dab335b94703",
+  "importedAt": "2026-11-10T13:14:54.656Z",
+  "updatedAt": "2026-11-10T13:48:14.107Z"
 }

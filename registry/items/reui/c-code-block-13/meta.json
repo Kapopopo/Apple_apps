@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-13",
   "name": "Search in file",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-13.tsx"
   },
-  "contentHash": "dae68380ae1786e2",
-  "importedAt": "2026-11-10T13:14:53.519Z"
+  "contentHash": "4c4e5df84f8f5395",
+  "importedAt": "2026-11-10T13:14:53.519Z",
+  "updatedAt": "2026-11-10T13:48:13.975Z"
 }

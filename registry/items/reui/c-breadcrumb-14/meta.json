@@ -2,7 +2,7 @@
   "id": "reui/c-breadcrumb-14",
   "name": "Button-style breadcrumb",
   "type": "component",
-  "category": "Boutons",
+  "category": "Navigation",
   "tags": [
     "breadcrumb",
     "button style",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/breadcrumb/c-breadcrumb-14.tsx"
   },
-  "contentHash": "cb34c4c482f198de",
-  "importedAt": "2026-11-10T13:13:06.145Z"
+  "contentHash": "8f27c1a5a5180191",
+  "importedAt": "2026-11-10T13:13:06.145Z",
+  "updatedAt": "2026-11-10T13:48:13.681Z"
 }

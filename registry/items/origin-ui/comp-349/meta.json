@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-349",
-  "name": "Table w/ plus-minus",
+  "name": "Accordion 349",
   "type": "component",
-  "category": "Tableaux de données",
+  "category": "FAQ",
   "tags": [
     "accordion",
     "radix",
@@ -36,7 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-349.tsx"
   },
-  "contentHash": "d3d14a2baa3dfa9d",
+  "contentHash": "22c2e7ad0e2317f9",
   "importedAt": "2026-11-05T17:59:41.672Z",
-  "updatedAt": "2026-11-10T13:12:56.362Z"
+  "updatedAt": "2026-11-10T13:48:16.815Z"
 }

@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-336",
-  "name": "W/ left chevron",
+  "name": "Accordion 336",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -33,7 +33,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-336.tsx"
   },
-  "contentHash": "233cc08e3d19fa5b",
+  "contentHash": "82d930beeafe1a5e",
   "importedAt": "2026-11-05T17:59:41.602Z",
-  "updatedAt": "2026-11-10T13:12:56.246Z"
+  "updatedAt": "2026-11-10T13:48:16.765Z"
 }

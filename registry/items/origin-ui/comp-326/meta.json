@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-326",
-  "name": "Email (dialog)",
+  "name": "Dialog 326",
   "type": "component",
   "category": "Fenêtres et panneaux",
   "tags": [
@@ -41,7 +41,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-326.tsx"
   },
-  "contentHash": "51b5b355a247c2b6",
+  "contentHash": "8c0fe6f21f39e625",
   "importedAt": "2026-11-05T17:59:41.554Z",
-  "updatedAt": "2026-11-10T13:12:56.173Z"
+  "updatedAt": "2026-11-10T13:48:16.733Z"
 }

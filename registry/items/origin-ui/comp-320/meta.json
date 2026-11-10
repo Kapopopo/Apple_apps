@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-320",
-  "name": "Project name",
+  "name": "Dialog 320",
   "type": "component",
   "category": "Fenêtres et panneaux",
   "tags": [
@@ -40,7 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-320.tsx"
   },
-  "contentHash": "9fb193bc00b6c75d",
+  "contentHash": "4fc2eff17e9f3ce6",
   "importedAt": "2026-11-05T17:59:41.532Z",
-  "updatedAt": "2026-11-10T13:12:56.148Z"
+  "updatedAt": "2026-11-10T13:48:16.695Z"
 }

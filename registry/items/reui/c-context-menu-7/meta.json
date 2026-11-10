@@ -2,7 +2,7 @@
   "id": "reui/c-context-menu-7",
   "name": "Context menu with radio items.",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "context-menu",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/context-menu/c-context-menu-7.tsx"
   },
-  "contentHash": "1d7eef36c754cb6b",
-  "importedAt": "2026-11-10T13:14:54.441Z"
+  "contentHash": "62f91983d3a74438",
+  "importedAt": "2026-11-10T13:14:54.441Z",
+  "updatedAt": "2026-11-10T13:48:14.050Z"
 }

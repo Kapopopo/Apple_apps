@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-18",
   "name": "Data grid with column controls",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "column controls",
     "data-grid",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-18.tsx"
   },
-  "contentHash": "f203550a98d27388",
-  "importedAt": "2026-11-10T13:14:54.684Z"
+  "contentHash": "178cfcd0d96c6810",
+  "importedAt": "2026-11-10T13:14:54.684Z",
+  "updatedAt": "2026-11-10T13:48:14.114Z"
 }

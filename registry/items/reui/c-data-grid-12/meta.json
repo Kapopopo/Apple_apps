@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-12",
   "name": "Data grid with movable columns",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-12.tsx"
   },
-  "contentHash": "9429051e1adc1e00",
-  "importedAt": "2026-11-10T13:14:54.603Z"
+  "contentHash": "89de339458ac33bc",
+  "importedAt": "2026-11-10T13:14:54.603Z",
+  "updatedAt": "2026-11-10T13:48:14.094Z"
 }

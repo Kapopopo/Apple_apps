@@ -2,7 +2,7 @@
   "id": "reui/c-stepper-23",
   "name": "Stepper with top color bars and card art",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "stepper",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-23.tsx"
   },
-  "contentHash": "9d6d2b35c9fdfd62",
-  "importedAt": "2026-11-10T13:15:02.290Z"
+  "contentHash": "fe372da4610d0179",
+  "importedAt": "2026-11-10T13:15:02.290Z",
+  "updatedAt": "2026-11-10T13:48:14.935Z"
 }

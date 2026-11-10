@@ -2,7 +2,7 @@
   "id": "reui/c-alert-dialog-5",
   "name": "Destructive alert dialog for irreversible actions like deletion",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "alert-dialog",
     "destructive delete",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/alert-dialog/c-alert-dialog-5.tsx"
   },
-  "contentHash": "1b3096feb3bc61fd",
-  "importedAt": "2026-11-10T13:13:04.662Z"
+  "contentHash": "ef7e3ac6ab3d17f9",
+  "importedAt": "2026-11-10T13:13:04.662Z",
+  "updatedAt": "2026-11-10T13:48:13.597Z"
 }

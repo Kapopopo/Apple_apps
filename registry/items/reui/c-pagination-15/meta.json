@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-15",
   "name": "Pagination with page info, numbered pages, ellipsis, and per-page select",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "info & per-page",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-15.tsx"
   },
-  "contentHash": "bcdd88ce712b0893",
-  "importedAt": "2026-11-10T13:14:59.236Z"
+  "contentHash": "03585d155b7b7e67",
+  "importedAt": "2026-11-10T13:14:59.236Z",
+  "updatedAt": "2026-11-10T13:48:14.668Z"
 }

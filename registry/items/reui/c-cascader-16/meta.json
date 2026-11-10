@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-16",
   "name": "Virtualized level with thousands of rows.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-16.tsx"
   },
-  "contentHash": "a01bf9f4bbac3170",
-  "importedAt": "2026-11-10T13:14:52.808Z"
+  "contentHash": "d998ae36a93fc2a7",
+  "importedAt": "2026-11-10T13:14:52.808Z",
+  "updatedAt": "2026-11-10T13:48:13.912Z"
 }

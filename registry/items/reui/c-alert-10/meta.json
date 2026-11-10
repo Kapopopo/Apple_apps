@@ -2,7 +2,7 @@
   "id": "reui/c-alert-10",
   "name": "Alert with icon and action buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Notifications",
   "tags": [
     "alert",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/alert/c-alert-10.tsx"
   },
-  "contentHash": "19936788af894fd7",
-  "importedAt": "2026-11-10T13:13:04.481Z"
+  "contentHash": "7d6a91cf81bdbde6",
+  "importedAt": "2026-11-10T13:13:04.481Z",
+  "updatedAt": "2026-11-10T13:48:13.578Z"
 }

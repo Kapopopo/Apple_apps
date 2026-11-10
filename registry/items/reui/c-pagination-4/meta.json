@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-4",
   "name": "Pagination with circle buttons.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Navigation",
   "tags": [
     "circle buttons",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-4.tsx"
   },
-  "contentHash": "eea43c27b663b5be",
-  "importedAt": "2026-11-10T13:14:59.112Z"
+  "contentHash": "f974f1e0b5cc0fff",
+  "importedAt": "2026-11-10T13:14:59.112Z",
+  "updatedAt": "2026-11-10T13:48:14.637Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-502",
-  "name": "Enter date",
+  "name": "Calendar 502",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "date",
@@ -40,7 +40,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-502.tsx"
   },
-  "contentHash": "7a62606217ce8718",
+  "contentHash": "42beaab9bd395c09",
   "importedAt": "2026-11-05T17:59:42.290Z",
-  "updatedAt": "2026-11-10T13:12:56.691Z"
+  "updatedAt": "2026-11-10T13:48:16.899Z"
 }

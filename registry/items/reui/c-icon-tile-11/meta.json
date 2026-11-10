@@ -2,7 +2,7 @@
   "id": "reui/c-icon-tile-11",
   "name": "Feature card",
   "type": "section",
-  "category": "Cartes",
+  "category": "Illustrations",
   "tags": [
     "exemple",
     "feature card",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/icon-tile/c-icon-tile-11.tsx"
   },
-  "contentHash": "4663b13cb9070cfe",
-  "importedAt": "2026-11-10T13:14:57.142Z"
+  "contentHash": "27d866b9a72f57fe",
+  "importedAt": "2026-11-10T13:14:57.142Z",
+  "updatedAt": "2026-11-10T13:48:14.453Z"
 }

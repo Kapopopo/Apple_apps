@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-9",
   "name": "Controlled path, value, query and open state.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "controlled state",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-9.tsx"
   },
-  "contentHash": "2c3056c9171e721a",
-  "importedAt": "2026-11-10T13:14:52.681Z"
+  "contentHash": "3e8cdce13314bfeb",
+  "importedAt": "2026-11-10T13:14:52.681Z",
+  "updatedAt": "2026-11-10T13:48:13.892Z"
 }

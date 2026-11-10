@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-2",
   "name": "Kanban board with dynamic overlay",
   "type": "component",
-  "category": "Boutons",
+  "category": "Listes et tâches",
   "tags": [
     "dynamic overlay",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-2.tsx"
   },
-  "contentHash": "e2687663870b9c3f",
-  "importedAt": "2026-11-10T13:14:58.309Z"
+  "contentHash": "c0528fb8c7b7cc21",
+  "importedAt": "2026-11-10T13:14:58.309Z",
+  "updatedAt": "2026-11-10T13:48:14.558Z"
 }

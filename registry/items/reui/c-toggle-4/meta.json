@@ -2,7 +2,7 @@
   "id": "reui/c-toggle-4",
   "name": "Toggle with button and icon.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "button comparison",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-4.tsx"
   },
-  "contentHash": "675650dea44f5b19",
-  "importedAt": "2026-11-10T13:15:03.560Z"
+  "contentHash": "d00b9befe7a752b0",
+  "importedAt": "2026-11-10T13:15:03.560Z",
+  "updatedAt": "2026-11-10T13:48:14.998Z"
 }

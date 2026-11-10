@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-12",
   "name": "Rows per page select with range info and first/prev/next/last icons",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "pagination",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-12.tsx"
   },
-  "contentHash": "b4197ac2b3fd1fed",
-  "importedAt": "2026-11-10T13:14:59.202Z"
+  "contentHash": "cd2621da383f6ed8",
+  "importedAt": "2026-11-10T13:14:59.202Z",
+  "updatedAt": "2026-11-10T13:48:14.655Z"
 }

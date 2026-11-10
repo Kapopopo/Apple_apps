@@ -2,7 +2,7 @@
   "id": "reui/c-card-15",
   "name": "Stat card with trend and overflow menu",
   "type": "component",
-  "category": "Navigation",
+  "category": "Cartes",
   "tags": [
     "card",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/card/c-card-15.tsx"
   },
-  "contentHash": "93889c85878aab1a",
-  "importedAt": "2026-11-10T13:13:08.304Z"
+  "contentHash": "0c4fcd69dd0f883c",
+  "importedAt": "2026-11-10T13:13:08.304Z",
+  "updatedAt": "2026-11-10T13:48:13.850Z"
 }

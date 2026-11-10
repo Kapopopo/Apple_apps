@@ -2,7 +2,7 @@
   "id": "reui/c-number-field-5",
   "name": "Number field with spinner buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Indicateurs",
   "tags": [
     "exemple",
     "number-field",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-5.tsx"
   },
-  "contentHash": "68c4ad864d2b4f6c",
-  "importedAt": "2026-11-10T13:14:59.054Z"
+  "contentHash": "3fa496cbb8e1a4ea",
+  "importedAt": "2026-11-10T13:14:59.054Z",
+  "updatedAt": "2026-11-10T13:48:14.627Z"
 }

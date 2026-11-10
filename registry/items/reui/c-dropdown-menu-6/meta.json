@@ -2,7 +2,7 @@
   "id": "reui/c-dropdown-menu-6",
   "name": "Dropdown menu with checkboxes",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "checkboxes",
     "dropdown-menu",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/dropdown-menu/c-dropdown-menu-6.tsx"
   },
-  "contentHash": "072c8857512851bd",
-  "importedAt": "2026-11-10T13:14:55.243Z"
+  "contentHash": "aece79c430e6444d",
+  "importedAt": "2026-11-10T13:14:55.243Z",
+  "updatedAt": "2026-11-10T13:48:14.211Z"
 }

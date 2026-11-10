@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-1",
   "name": "Data grid with pagination",
   "type": "component",
-  "category": "Navigation",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-1.tsx"
   },
-  "contentHash": "b13a2068cb692a85",
-  "importedAt": "2026-11-10T13:14:54.470Z"
+  "contentHash": "8843c13d0fb02cee",
+  "importedAt": "2026-11-10T13:14:54.470Z",
+  "updatedAt": "2026-11-10T13:48:14.056Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-message-scroller-6",
   "name": "Thread navigator for stepping turns",
   "type": "component",
-  "category": "Navigation",
+  "category": "IA et messages",
   "tags": [
     "exemple",
     "message-scroller",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/message-scroller/c-message-scroller-6.tsx"
   },
-  "contentHash": "17a21af45b1d7baa",
-  "importedAt": "2026-11-10T13:14:58.896Z"
+  "contentHash": "613953ce1e53c570",
+  "importedAt": "2026-11-10T13:14:58.896Z",
+  "updatedAt": "2026-11-10T13:48:14.608Z"
 }

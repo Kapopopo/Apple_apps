@@ -2,7 +2,7 @@
   "id": "panelui-web/chip",
   "name": "Chip",
   "type": "component",
-  "category": "Autres composants",
+  "category": "Formulaires",
   "tags": [
     "web"
   ],
@@ -38,6 +38,7 @@
     "entry": "apps/docs/components/web-demos/chip/overview.tsx",
     "demo": "source"
   },
-  "contentHash": "d5d933854a85f8e3",
-  "importedAt": "2026-11-05T00:16:56.546Z"
+  "contentHash": "19ddaedf7736a783",
+  "importedAt": "2026-11-05T00:16:56.546Z",
+  "updatedAt": "2026-11-10T13:48:21.106Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-19",
   "name": "Avatar inside small outline button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-19.tsx"
   },
-  "contentHash": "0d9a53cc0b589985",
-  "importedAt": "2026-11-10T13:13:05.450Z"
+  "contentHash": "bce8b87130d81ca1",
+  "importedAt": "2026-11-10T13:13:05.450Z",
+  "updatedAt": "2026-11-10T13:48:13.634Z"
 }

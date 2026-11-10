@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-14",
   "name": "Avatar with light background color fallback",
   "type": "component",
-  "category": "Fonds",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-14.tsx"
   },
-  "contentHash": "f37a7bd2cbd8b78e",
-  "importedAt": "2026-11-10T13:13:05.392Z"
+  "contentHash": "35385fdab5d2d3d9",
+  "importedAt": "2026-11-10T13:13:05.392Z",
+  "updatedAt": "2026-11-10T13:48:13.626Z"
 }

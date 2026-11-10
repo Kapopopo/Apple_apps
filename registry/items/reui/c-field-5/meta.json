@@ -2,7 +2,7 @@
   "id": "reui/c-field-5",
   "name": "Filed with slider and switch",
   "type": "component",
-  "category": "Curseurs",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-5.tsx"
   },
-  "contentHash": "99c387e798f4d1da",
-  "importedAt": "2026-11-10T13:14:55.949Z"
+  "contentHash": "eb008c5236187e25",
+  "importedAt": "2026-11-10T13:14:55.949Z",
+  "updatedAt": "2026-11-10T13:48:14.280Z"
 }

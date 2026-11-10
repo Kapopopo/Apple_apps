@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-483",
-  "name": "Rows per page",
+  "name": "Table 483",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Tableaux de données",
   "tags": [
     "badge",
     "checkbox",
@@ -49,7 +49,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-483.tsx"
   },
-  "contentHash": "6ede30d794750b73",
+  "contentHash": "66b6bed162a1979c",
   "importedAt": "2026-11-05T17:59:42.222Z",
-  "updatedAt": "2026-11-10T13:12:56.644Z"
+  "updatedAt": "2026-11-10T13:48:16.888Z"
 }

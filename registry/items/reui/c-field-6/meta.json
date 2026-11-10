@@ -2,7 +2,7 @@
   "id": "reui/c-field-6",
   "name": "Field with OTP input",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/field/c-field-6.tsx"
   },
-  "contentHash": "8b4a514f9381bafe",
-  "importedAt": "2026-11-10T13:14:55.960Z"
+  "contentHash": "87804bd764b25cd9",
+  "importedAt": "2026-11-10T13:14:55.960Z",
+  "updatedAt": "2026-11-10T13:48:14.284Z"
 }

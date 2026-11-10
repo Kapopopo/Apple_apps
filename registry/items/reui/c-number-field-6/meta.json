@@ -2,7 +2,7 @@
   "id": "reui/c-number-field-6",
   "name": "Number field in form",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Indicateurs",
   "tags": [
     "exemple",
     "form validation",
@@ -41,6 +41,7 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-6.tsx"
   },
-  "contentHash": "1467fa549cbd2ba7",
-  "importedAt": "2026-11-10T13:14:59.067Z"
+  "contentHash": "1b5afd312c645160",
+  "importedAt": "2026-11-10T13:14:59.067Z",
+  "updatedAt": "2026-11-10T13:48:14.631Z"
 }

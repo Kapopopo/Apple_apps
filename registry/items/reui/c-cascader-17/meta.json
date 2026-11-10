@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-17",
   "name": "Consumer-rendered removable chips with path-aware labels.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-17.tsx"
   },
-  "contentHash": "ae347fd0afef6050",
-  "importedAt": "2026-11-10T13:14:52.821Z"
+  "contentHash": "dddf4e9d6f7be3d8",
+  "importedAt": "2026-11-10T13:14:52.821Z",
+  "updatedAt": "2026-11-10T13:48:13.915Z"
 }

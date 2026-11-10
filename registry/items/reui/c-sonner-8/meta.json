@@ -2,7 +2,7 @@
   "id": "reui/c-sonner-8",
   "name": "Toast with custom close and cancel buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Notifications",
   "tags": [
     "action & cancel",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-8.tsx"
   },
-  "contentHash": "ee5734f64aaa0726",
-  "importedAt": "2026-11-10T13:15:01.560Z"
+  "contentHash": "8c4b25da20e2e1af",
+  "importedAt": "2026-11-10T13:15:01.560Z",
+  "updatedAt": "2026-11-10T13:48:14.848Z"
 }

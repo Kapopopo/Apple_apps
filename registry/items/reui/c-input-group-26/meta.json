@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-26",
   "name": "Textarea input group with action buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "input-group",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-26.tsx"
   },
-  "contentHash": "db9e39a53eded437",
-  "importedAt": "2026-11-10T13:14:57.894Z"
+  "contentHash": "3c900add7e39aafc",
+  "importedAt": "2026-11-10T13:14:57.894Z",
+  "updatedAt": "2026-11-10T13:48:14.514Z"
 }

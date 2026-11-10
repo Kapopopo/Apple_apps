@@ -2,7 +2,7 @@
   "id": "reui/c-file-type-6",
   "name": "Data grid file browser",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "exemple",
     "file browser",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/file-type/c-file-type-6.tsx"
   },
-  "contentHash": "a4c0392a6efcc5bb",
-  "importedAt": "2026-11-10T13:14:56.082Z"
+  "contentHash": "69138465af11c049",
+  "importedAt": "2026-11-10T13:14:56.082Z",
+  "updatedAt": "2026-11-10T13:48:14.309Z"
 }

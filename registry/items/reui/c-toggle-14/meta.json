@@ -2,7 +2,7 @@
   "id": "reui/c-toggle-14",
   "name": "Toggle as mute/unmute button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "mute button",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-14.tsx"
   },
-  "contentHash": "1925b3fe230127e3",
-  "importedAt": "2026-11-10T13:15:03.674Z"
+  "contentHash": "ecc62289f445d3b6",
+  "importedAt": "2026-11-10T13:15:03.674Z",
+  "updatedAt": "2026-11-10T13:48:15.005Z"
 }

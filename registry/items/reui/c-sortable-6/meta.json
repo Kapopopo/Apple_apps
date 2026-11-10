@@ -2,7 +2,7 @@
   "id": "reui/c-sortable-6",
   "name": "Sortable sidebar navigation with frame",
   "type": "component",
-  "category": "Navigation",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "sidebar navigation",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/sortable/c-sortable-6.tsx"
   },
-  "contentHash": "de2e8ed0e571beed",
-  "importedAt": "2026-11-10T13:15:01.808Z"
+  "contentHash": "3c4d5b9359a82ac0",
+  "importedAt": "2026-11-10T13:15:01.808Z",
+  "updatedAt": "2026-11-10T13:48:14.881Z"
 }

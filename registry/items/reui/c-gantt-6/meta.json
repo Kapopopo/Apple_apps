@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-6",
   "name": "Gantt chart with as-built baseline tracking",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "baseline tracking",
     "dataviz",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-6.tsx"
   },
-  "contentHash": "67c3f83047c66638",
-  "importedAt": "2026-11-10T13:14:56.850Z"
+  "contentHash": "b4f6b3c84d2c4b6e",
+  "importedAt": "2026-11-10T13:14:56.850Z",
+  "updatedAt": "2026-11-10T13:48:14.426Z"
 }

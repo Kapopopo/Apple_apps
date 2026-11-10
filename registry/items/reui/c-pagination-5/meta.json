@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-5",
   "name": "Pagination with go-to-page input",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "compact go-to",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-5.tsx"
   },
-  "contentHash": "1a14ad289b21caa6",
-  "importedAt": "2026-11-10T13:14:59.125Z"
+  "contentHash": "c482ecccc899ceb1",
+  "importedAt": "2026-11-10T13:14:59.125Z",
+  "updatedAt": "2026-11-10T13:48:14.642Z"
 }

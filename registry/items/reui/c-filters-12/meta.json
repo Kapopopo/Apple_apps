@@ -2,7 +2,7 @@
   "id": "reui/c-filters-12",
   "name": "Controlled, sized and translated",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "Formulaires",
   "tags": [
     "controlled & translated",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-12.tsx"
   },
-  "contentHash": "838163061aa78178",
-  "importedAt": "2026-11-10T13:14:56.546Z"
+  "contentHash": "e8aa35ce703574e9",
+  "importedAt": "2026-11-10T13:14:56.546Z",
+  "updatedAt": "2026-11-10T13:48:14.396Z"
 }

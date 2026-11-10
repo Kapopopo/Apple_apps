@@ -2,7 +2,7 @@
   "id": "reui/c-card-6",
   "name": "Card with dropdown menu",
   "type": "component",
-  "category": "Navigation",
+  "category": "Cartes",
   "tags": [
     "card",
     "dropdown menu",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/card/c-card-6.tsx"
   },
-  "contentHash": "9ee59b4b978de083",
-  "importedAt": "2026-11-10T13:13:08.191Z"
+  "contentHash": "143f34049c79eb25",
+  "importedAt": "2026-11-10T13:13:08.191Z",
+  "updatedAt": "2026-11-10T13:48:13.835Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-25",
   "name": "Reference lines in chat",
   "type": "component",
-  "category": "IA et messages",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-25.tsx"
   },
-  "contentHash": "f3e0ce51bc5dd07e",
-  "importedAt": "2026-11-10T13:14:53.665Z"
+  "contentHash": "41d83afb996ff671",
+  "importedAt": "2026-11-10T13:14:53.665Z",
+  "updatedAt": "2026-11-10T13:48:13.995Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-24",
   "name": "Data grid with column totals footer",
   "type": "section",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -43,7 +43,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-24.tsx"
   },
-  "contentHash": "8656117e6d15331b",
+  "contentHash": "1190bc6cbab57805",
   "importedAt": "2026-11-10T13:14:54.774Z",
-  "updatedAt": "2026-11-10T13:25:20.812Z"
+  "updatedAt": "2026-11-10T13:48:14.137Z"
 }

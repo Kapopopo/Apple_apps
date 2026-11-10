@@ -2,7 +2,7 @@
   "id": "reui/c-message-2",
   "name": "Avatars on both sides",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "IA et messages",
   "tags": [
     "avatars",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/message/c-message-2.tsx"
   },
-  "contentHash": "3c567d47ce073703",
-  "importedAt": "2026-11-10T13:14:58.736Z"
+  "contentHash": "319edbcabf522613",
+  "importedAt": "2026-11-10T13:14:58.736Z",
+  "updatedAt": "2026-11-10T13:48:14.595Z"
 }

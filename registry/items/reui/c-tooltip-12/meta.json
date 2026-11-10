@@ -2,7 +2,7 @@
   "id": "reui/c-tooltip-12",
   "name": "Tooltip on disabled button with wrapper",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "disabled button",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/tooltip/c-tooltip-12.tsx"
   },
-  "contentHash": "2b3b5f7253b5d2ca",
-  "importedAt": "2026-11-10T13:15:04.001Z"
+  "contentHash": "1bfffa0072ef48bb",
+  "importedAt": "2026-11-10T13:15:04.001Z",
+  "updatedAt": "2026-11-10T13:48:15.021Z"
 }

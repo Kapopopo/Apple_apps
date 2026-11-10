@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-3",
   "name": "Data grid with dense layout",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "dense layout",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-3.tsx"
   },
-  "contentHash": "c6ff91e7a0aea0cc",
-  "importedAt": "2026-11-10T13:14:54.477Z"
+  "contentHash": "c2b96341b55e6343",
+  "importedAt": "2026-11-10T13:14:54.477Z",
+  "updatedAt": "2026-11-10T13:48:14.064Z"
 }

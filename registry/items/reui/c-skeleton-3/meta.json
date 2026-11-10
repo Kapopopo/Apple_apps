@@ -2,7 +2,7 @@
   "id": "reui/c-skeleton-3",
   "name": "Skeleton loader for text and paragraphs.",
   "type": "component",
-  "category": "Texte",
+  "category": "Chargement",
   "tags": [
     "exemple",
     "skeleton",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-3.tsx"
   },
-  "contentHash": "e05aaf26370288f9",
-  "importedAt": "2026-11-10T13:15:01.218Z"
+  "contentHash": "9c96c12584237d0e",
+  "importedAt": "2026-11-10T13:15:01.218Z",
+  "updatedAt": "2026-11-10T13:48:14.815Z"
 }

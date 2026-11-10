@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-21",
   "name": "Display 2 months with range picker",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-21.tsx"
   },
-  "contentHash": "f1d8ee1f7d84e286",
-  "importedAt": "2026-11-10T13:13:07.991Z"
+  "contentHash": "1821ba01ce6a20a6",
+  "importedAt": "2026-11-10T13:13:07.991Z",
+  "updatedAt": "2026-11-10T13:48:13.792Z"
 }

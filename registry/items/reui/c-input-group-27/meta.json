@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-27",
   "name": "Input group wrapped in a button group with text prefixes/suffixes",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "button group",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-27.tsx"
   },
-  "contentHash": "af2498ccad41ed9e",
-  "importedAt": "2026-11-10T13:14:57.906Z"
+  "contentHash": "8845704acb66b0e4",
+  "importedAt": "2026-11-10T13:14:57.906Z",
+  "updatedAt": "2026-11-10T13:48:14.518Z"
 }

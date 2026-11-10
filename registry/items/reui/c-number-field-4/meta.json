@@ -2,7 +2,7 @@
   "id": "reui/c-number-field-4",
   "name": "Number field with buttons on right",
   "type": "component",
-  "category": "Boutons",
+  "category": "Indicateurs",
   "tags": [
     "buttons on right",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/number-field/c-number-field-4.tsx"
   },
-  "contentHash": "7dc0c304e3cbe6b2",
-  "importedAt": "2026-11-10T13:14:59.044Z"
+  "contentHash": "3e1733002169d296",
+  "importedAt": "2026-11-10T13:14:59.044Z",
+  "updatedAt": "2026-11-10T13:48:14.624Z"
 }

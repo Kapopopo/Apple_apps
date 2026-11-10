@@ -2,7 +2,7 @@
   "id": "reui/c-skeleton-2",
   "name": "Skeleton loader for a card component.",
   "type": "component",
-  "category": "Cartes",
+  "category": "Chargement",
   "tags": [
     "card",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-2.tsx"
   },
-  "contentHash": "7969ebb06f8454d1",
-  "importedAt": "2026-11-10T13:15:01.207Z"
+  "contentHash": "516cc5caecd26d31",
+  "importedAt": "2026-11-10T13:15:01.207Z",
+  "updatedAt": "2026-11-10T13:48:14.810Z"
 }

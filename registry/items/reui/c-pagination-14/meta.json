@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-14",
   "name": "Numbered pagination with go-to-page input",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "full width go-to",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-14.tsx"
   },
-  "contentHash": "2149677b1ffc2a91",
-  "importedAt": "2026-11-10T13:14:59.227Z"
+  "contentHash": "60dca23be9c293b2",
+  "importedAt": "2026-11-10T13:14:59.227Z",
+  "updatedAt": "2026-11-10T13:48:14.663Z"
 }

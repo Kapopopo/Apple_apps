@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-11",
   "name": "Pagination with outline style buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "outline strip",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-11.tsx"
   },
-  "contentHash": "2c9fb193fcc23000",
-  "importedAt": "2026-11-10T13:14:59.190Z"
+  "contentHash": "68a83e96869d3dc1",
+  "importedAt": "2026-11-10T13:14:59.190Z",
+  "updatedAt": "2026-11-10T13:48:14.651Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-toggle-2",
   "name": "Toggle buttons with outline variant.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "outline",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/toggle/c-toggle-2.tsx"
   },
-  "contentHash": "0373f605be51d689",
-  "importedAt": "2026-11-10T13:15:03.538Z"
+  "contentHash": "3e553951cbe91bca",
+  "importedAt": "2026-11-10T13:15:03.538Z",
+  "updatedAt": "2026-11-10T13:48:14.991Z"
 }

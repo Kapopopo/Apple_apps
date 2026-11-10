@@ -2,7 +2,7 @@
   "id": "reui/c-sonner-18",
   "name": "Toast with close button on top-right",
   "type": "component",
-  "category": "Boutons",
+  "category": "Notifications",
   "tags": [
     "close top right",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-18.tsx"
   },
-  "contentHash": "c7a9fdcc4c46834b",
-  "importedAt": "2026-11-10T13:15:01.705Z"
+  "contentHash": "29808d7ff17f6d50",
+  "importedAt": "2026-11-10T13:15:01.705Z",
+  "updatedAt": "2026-11-10T13:48:14.862Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-spinner-11",
   "name": "Spinner overlay on card",
   "type": "component",
-  "category": "Cartes",
+  "category": "Chargement",
   "tags": [
     "card overlay",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/spinner/c-spinner-11.tsx"
   },
-  "contentHash": "ba60a852f56e9ee5",
-  "importedAt": "2026-11-10T13:15:01.964Z"
+  "contentHash": "f61b06d7d8b6e6a7",
+  "importedAt": "2026-11-10T13:15:01.964Z",
+  "updatedAt": "2026-11-10T13:48:14.918Z"
 }

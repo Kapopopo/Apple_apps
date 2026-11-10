@@ -2,7 +2,7 @@
   "id": "reui/c-input-group-33",
   "name": "Project save interface with status and action buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "input-group",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/input-group/c-input-group-33.tsx"
   },
-  "contentHash": "ba4c7e1e29444fee",
-  "importedAt": "2026-11-10T13:14:57.975Z"
+  "contentHash": "9c98a8808da6e5a7",
+  "importedAt": "2026-11-10T13:14:57.975Z",
+  "updatedAt": "2026-11-10T13:48:14.532Z"
 }

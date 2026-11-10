@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-8",
   "name": "Data grid with expandable rows",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-8.tsx"
   },
-  "contentHash": "92cfb1424c717d0c",
-  "importedAt": "2026-11-10T13:14:54.549Z"
+  "contentHash": "3af4f43037a3ba55",
+  "importedAt": "2026-11-10T13:14:54.549Z",
+  "updatedAt": "2026-11-10T13:48:14.081Z"
 }

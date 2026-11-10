@@ -2,7 +2,7 @@
   "id": "reui/c-tooltip-16",
   "name": "Tooltip with action button inside",
   "type": "component",
-  "category": "Boutons",
+  "category": "Fenêtres et panneaux",
   "tags": [
     "exemple",
     "tooltip",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/tooltip/c-tooltip-16.tsx"
   },
-  "contentHash": "17ba0176544dadb7",
-  "importedAt": "2026-11-10T13:15:04.046Z"
+  "contentHash": "f786c571725fa634",
+  "importedAt": "2026-11-10T13:15:04.046Z",
+  "updatedAt": "2026-11-10T13:48:15.025Z"
 }

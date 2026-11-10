@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-26",
   "name": "Pilled small outline button with avatar",
   "type": "component",
-  "category": "Boutons",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-26.tsx"
   },
-  "contentHash": "ae8ade8156a6566a",
-  "importedAt": "2026-11-10T13:13:05.541Z"
+  "contentHash": "4db28f542647cc2f",
+  "importedAt": "2026-11-10T13:13:05.541Z",
+  "updatedAt": "2026-11-10T13:48:13.644Z"
 }

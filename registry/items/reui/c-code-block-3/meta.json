@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-3",
   "name": "Streaming agent response",
   "type": "component",
-  "category": "IA et messages",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-3.tsx"
   },
-  "contentHash": "f0eef69160014100",
-  "importedAt": "2026-11-10T13:14:53.397Z"
+  "contentHash": "06744b56ca302289",
+  "importedAt": "2026-11-10T13:14:53.397Z",
+  "updatedAt": "2026-11-10T13:48:13.958Z"
 }

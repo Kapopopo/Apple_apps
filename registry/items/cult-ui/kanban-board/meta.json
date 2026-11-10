@@ -2,7 +2,7 @@
   "id": "cult-ui/kanban-board",
   "name": "Kanban Board",
   "type": "component",
-  "category": "Cartes",
+  "category": "Listes et tâches",
   "tags": [
     "animé",
     "drag",
@@ -39,6 +39,7 @@
     "entry": "registry/default/example/kanban-board-demo.tsx",
     "demo": "source"
   },
-  "contentHash": "6bc757608322b475",
-  "importedAt": "2026-11-05T17:59:32.942Z"
+  "contentHash": "9b1c8aa42e0972f5",
+  "importedAt": "2026-11-05T17:59:32.942Z",
+  "updatedAt": "2026-11-10T13:48:10.567Z"
 }

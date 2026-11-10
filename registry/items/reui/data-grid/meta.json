@@ -2,7 +2,7 @@
   "id": "reui/data-grid",
   "name": "Data Grid",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "web"
   ],
@@ -119,7 +119,7 @@
     "entry": "components/data-grid/c-data-grid-1.tsx",
     "demo": "source"
   },
-  "contentHash": "72e40b398cec8bc7",
+  "contentHash": "8a7346565bae3cbf",
   "importedAt": "2026-11-05T17:59:38.117Z",
-  "updatedAt": "2026-11-10T13:13:02.951Z"
+  "updatedAt": "2026-11-10T13:48:13.455Z"
 }

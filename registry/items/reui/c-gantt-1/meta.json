@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-1",
   "name": "Gantt chart with settings menu and schedulable rows",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "dataviz",
     "exemple",
@@ -44,6 +44,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-1.tsx"
   },
-  "contentHash": "f37091d6c98cde11",
-  "importedAt": "2026-11-10T13:14:56.789Z"
+  "contentHash": "0e5bef2ebab0d9ba",
+  "importedAt": "2026-11-10T13:14:56.789Z",
+  "updatedAt": "2026-11-10T13:48:14.409Z"
 }

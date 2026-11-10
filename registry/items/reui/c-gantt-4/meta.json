@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-4",
   "name": "Gantt chart with weekly capacity board",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "capacity board",
     "dataviz",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-4.tsx"
   },
-  "contentHash": "8d1117102770038d",
-  "importedAt": "2026-11-10T13:14:56.818Z"
+  "contentHash": "f5d236046ab00095",
+  "importedAt": "2026-11-10T13:14:56.818Z",
+  "updatedAt": "2026-11-10T13:48:14.420Z"
 }

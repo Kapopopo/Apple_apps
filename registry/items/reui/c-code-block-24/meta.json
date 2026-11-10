@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-24",
   "name": "Fix with AI on the failing line",
   "type": "component",
-  "category": "IA et messages",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-24.tsx"
   },
-  "contentHash": "10e4a0ba9bd71ca5",
-  "importedAt": "2026-11-10T13:14:53.654Z"
+  "contentHash": "b7d6bcc65b7d5c9d",
+  "importedAt": "2026-11-10T13:14:53.654Z",
+  "updatedAt": "2026-11-10T13:48:13.991Z"
 }

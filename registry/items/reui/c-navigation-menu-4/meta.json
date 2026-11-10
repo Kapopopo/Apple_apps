@@ -2,7 +2,7 @@
   "id": "reui/c-navigation-menu-4",
   "name": "Navigation menu with grid layout and learn more button.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Navigation",
   "tags": [
     "exemple",
     "learn more button",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/navigation-menu/c-navigation-menu-4.tsx"
   },
-  "contentHash": "5a4a3f28969763c9",
-  "importedAt": "2026-11-10T13:14:59.018Z"
+  "contentHash": "6e5910a780b97d4a",
+  "importedAt": "2026-11-10T13:14:59.018Z",
+  "updatedAt": "2026-11-10T13:48:14.618Z"
 }

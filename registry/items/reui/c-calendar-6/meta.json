@@ -2,7 +2,7 @@
   "id": "reui/c-calendar-6",
   "name": "Custom select range style",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Calendriers",
   "tags": [
     "calendar",
     "circular range",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/calendar/c-calendar-6.tsx"
   },
-  "contentHash": "a9e017e204226b9d",
-  "importedAt": "2026-11-10T13:13:07.782Z"
+  "contentHash": "235d7fe70cb7f2ea",
+  "importedAt": "2026-11-10T13:13:07.782Z",
+  "updatedAt": "2026-11-10T13:48:13.757Z"
 }

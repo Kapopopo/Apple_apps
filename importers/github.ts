@@ -489,6 +489,33 @@ const prettify = (name: string) =>
 const depBase = (d: string) => (d.startsWith('@') ? '@' + d.slice(1).split('@')[0] : d.split('@')[0]);
 const stripTarget = (p: string) => p.replace(/^@?\/*/, '');
 
+/** Tags d'exemples dont le libellé visible décrit l'exemple lui-même (champs de formulaire). */
+const FIELD_TAGS = new Set([
+  'input',
+  'label',
+  'select',
+  'native select',
+  'textarea',
+  'checkbox',
+  'radio',
+  'switch',
+  'slider',
+  'range',
+  'otp',
+  'date',
+  'time',
+  'datepicker',
+  'file',
+  'combobox',
+  'autocomplete',
+  'password',
+  'search',
+  'email',
+  'phone',
+  'number',
+  'form',
+]);
+
 /** Libellé visible dans le code d'un exemple (Origin UI) : <Label>…</Label> ou premier titre. */
 export function labelOf(code: string): string | undefined {
   const m = code.match(/<Label\b[^>]*>\s*([^<>{}]{3,60}?)\s*<\/Label>/) ?? code.match(/<h[1-4]\b[^>]*>\s*([^<>{}]{3,60}?)\s*<\/h[1-4]>/);
@@ -939,7 +966,9 @@ function importBuilt(ctx: Ctx & { src: BuiltSource }) {
       const tags = item.meta?.tags ?? [];
       const number = item.name.match(/(\d+)$/)?.[1];
       // Origin UI : nom tiré du libellé visible dans le code (« Simple input »), sinon des tags (« Input 01 »).
-      const label = variant.nameFromTags ? labelOf(itemFiles[0].content ?? '') : undefined;
+      // Le libellé ne nomme l'exemple que pour un champ de formulaire (« Simple input ») ; ailleurs
+      // (tableau avec « Rows per page »…) c'est un contrôle secondaire : nom tiré des tags.
+      const label = variant.nameFromTags && FIELD_TAGS.has(tags[0]) ? labelOf(itemFiles[0].content ?? '') : undefined;
       const labelled =
         label && !label.includes(' ') && tags[0] && normalize(label) !== normalize(tags[0]) ? `${label} (${tags[0]})` : label;
       const name =
@@ -1004,9 +1033,12 @@ function importBuilt(ctx: Ctx & { src: BuiltSource }) {
       const description = exampleDescription(ex) || `${prettify(family)} : ${ex.meta?.label ?? name}.`;
       const blockedPkg = dependencies.map(depBase).find((d) => blocked.has(d));
       const entry = ex.files[0].path;
+      // Catégorie d'après la famille (data-grid → Tableaux de données), le titre ne servant qu'en repli.
+      const byFamily = classify(family.replace(/-/g, ' '));
       collector.write(
         base(ctx, variant.id, slug, {
           name,
+          category: byFamily !== 'Autres composants' ? byFamily : classify(`${family} ${name}`, description),
           type: refineType(name, 'component'),
           framework: variant.framework,
           description,

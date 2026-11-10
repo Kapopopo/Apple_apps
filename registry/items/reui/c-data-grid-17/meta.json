@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-17",
   "name": "Data grid with sticky header",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-17.tsx"
   },
-  "contentHash": "a9f4c3cf8fb5ab88",
-  "importedAt": "2026-11-10T13:14:54.670Z"
+  "contentHash": "e4359ab6ad0be426",
+  "importedAt": "2026-11-10T13:14:54.670Z",
+  "updatedAt": "2026-11-10T13:48:14.111Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-rating-9",
   "name": "Rating with review text input",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "rating",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/rating/c-rating-9.tsx"
   },
-  "contentHash": "e178cc730fbf4d19",
-  "importedAt": "2026-11-10T13:15:00.156Z"
+  "contentHash": "5cf7e351c8e99a51",
+  "importedAt": "2026-11-10T13:15:00.156Z",
+  "updatedAt": "2026-11-10T13:48:14.732Z"
 }

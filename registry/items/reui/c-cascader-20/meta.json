@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-20",
   "name": "Expense accounts with a colour inherited down each branch.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-20.tsx"
   },
-  "contentHash": "dfd7deb845c7379e",
-  "importedAt": "2026-11-10T13:14:52.870Z"
+  "contentHash": "781ccdee2ca64377",
+  "importedAt": "2026-11-10T13:14:52.870Z",
+  "updatedAt": "2026-11-10T13:48:13.922Z"
 }

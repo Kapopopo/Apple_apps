@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-12",
   "name": "Form field that submits like a native input.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-12.tsx"
   },
-  "contentHash": "f99f5071ec1262dc",
-  "importedAt": "2026-11-10T13:14:52.730Z"
+  "contentHash": "fbc2f7f993c8e31e",
+  "importedAt": "2026-11-10T13:14:52.730Z",
+  "updatedAt": "2026-11-10T13:48:13.901Z"
 }

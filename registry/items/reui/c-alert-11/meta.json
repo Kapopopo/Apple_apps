@@ -2,7 +2,7 @@
   "id": "reui/c-alert-11",
   "name": "Alert with description and action buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Notifications",
   "tags": [
     "alert",
     "description & actions",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/alert/c-alert-11.tsx"
   },
-  "contentHash": "954ab50de45213c0",
-  "importedAt": "2026-11-10T13:13:04.489Z"
+  "contentHash": "32cb73ed8e2571ca",
+  "importedAt": "2026-11-10T13:13:04.489Z",
+  "updatedAt": "2026-11-10T13:48:13.583Z"
 }

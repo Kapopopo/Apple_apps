@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-23",
   "name": "Data grid with CRUD in frame container",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "crud in frame",
     "data-grid",
@@ -46,7 +46,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-23.tsx"
   },
-  "contentHash": "6776bc493f774052",
+  "contentHash": "5f078ff56596beb7",
   "importedAt": "2026-11-10T13:14:54.758Z",
-  "updatedAt": "2026-11-10T13:25:20.799Z"
+  "updatedAt": "2026-11-10T13:48:14.133Z"
 }

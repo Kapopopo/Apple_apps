@@ -2,7 +2,7 @@
   "id": "reui/c-tree-7",
   "name": "Permissions tree with checkboxes",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "permissions",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/tree/c-tree-7.tsx"
   },
-  "contentHash": "c57fd6e7dde848e6",
-  "importedAt": "2026-11-10T13:15:04.464Z"
+  "contentHash": "c55013eb27612cb5",
+  "importedAt": "2026-11-10T13:15:04.464Z",
+  "updatedAt": "2026-11-10T13:48:15.046Z"
 }

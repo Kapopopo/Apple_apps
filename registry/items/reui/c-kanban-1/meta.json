@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-1",
   "name": "Kanban board with placeholder overlay",
   "type": "component",
-  "category": "Boutons",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "kanban",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-1.tsx"
   },
-  "contentHash": "fa711fe4fa138c7a",
-  "importedAt": "2026-11-10T13:14:58.303Z"
+  "contentHash": "fa47829c29b0a9e7",
+  "importedAt": "2026-11-10T13:14:58.303Z",
+  "updatedAt": "2026-11-10T13:48:14.553Z"
 }

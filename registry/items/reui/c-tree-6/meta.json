@@ -2,7 +2,7 @@
   "id": "reui/c-tree-6",
   "name": "Organization chart tree with avatars",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Listes et tâches",
   "tags": [
     "dataviz",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/tree/c-tree-6.tsx"
   },
-  "contentHash": "723bec0cbc5e44e4",
-  "importedAt": "2026-11-10T13:15:04.446Z"
+  "contentHash": "6da319ab1972fec9",
+  "importedAt": "2026-11-10T13:15:04.446Z",
+  "updatedAt": "2026-11-10T13:48:15.042Z"
 }

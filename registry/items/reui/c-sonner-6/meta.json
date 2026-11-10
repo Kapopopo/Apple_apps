@@ -2,7 +2,7 @@
   "id": "reui/c-sonner-6",
   "name": "Toast with action button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Notifications",
   "tags": [
     "action button",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/sonner/c-sonner-6.tsx"
   },
-  "contentHash": "7f16e1f2c07e20c3",
-  "importedAt": "2026-11-10T13:15:01.535Z"
+  "contentHash": "b50644fa7b929e8c",
+  "importedAt": "2026-11-10T13:15:01.535Z",
+  "updatedAt": "2026-11-10T13:48:14.844Z"
 }

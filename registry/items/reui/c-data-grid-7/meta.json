@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-7",
   "name": "Data grid with row selection",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-7.tsx"
   },
-  "contentHash": "09c654e3a3c3b750",
-  "importedAt": "2026-11-10T13:14:54.535Z"
+  "contentHash": "76b0693049b138ce",
+  "importedAt": "2026-11-10T13:14:54.535Z",
+  "updatedAt": "2026-11-10T13:48:14.075Z"
 }

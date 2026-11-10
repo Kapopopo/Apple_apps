@@ -2,7 +2,7 @@
   "id": "reui/c-kanban-5",
   "name": "Feature roadmap kanban with progress",
   "type": "section",
-  "category": "Indicateurs",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "feature roadmap",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/kanban/c-kanban-5.tsx"
   },
-  "contentHash": "6635f46105736331",
-  "importedAt": "2026-11-10T13:14:58.345Z"
+  "contentHash": "d38330f169c10c97",
+  "importedAt": "2026-11-10T13:14:58.345Z",
+  "updatedAt": "2026-11-10T13:48:14.572Z"
 }

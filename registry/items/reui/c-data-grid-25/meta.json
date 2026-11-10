@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-25",
   "name": "Data grid with summary stats footer",
   "type": "section",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-25.tsx"
   },
-  "contentHash": "841d4d6ddc0bcb0a",
-  "importedAt": "2026-11-10T13:14:54.788Z"
+  "contentHash": "428236b31b42f64f",
+  "importedAt": "2026-11-10T13:14:54.788Z",
+  "updatedAt": "2026-11-10T13:48:14.141Z"
 }

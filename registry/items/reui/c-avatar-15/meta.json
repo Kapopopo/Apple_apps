@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-15",
   "name": "Avatar with a solid background color fallback",
   "type": "component",
-  "category": "Fonds",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-15.tsx"
   },
-  "contentHash": "a869845859a2cabe",
-  "importedAt": "2026-11-10T13:13:05.405Z"
+  "contentHash": "a96b422e8994c0fc",
+  "importedAt": "2026-11-10T13:13:05.405Z",
+  "updatedAt": "2026-11-10T13:48:13.629Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-15",
   "name": "Async drill-down that loads before it navigates.",
   "type": "component",
-  "category": "Navigation",
+  "category": "Formulaires",
   "tags": [
     "async loading",
     "cascader",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-15.tsx"
   },
-  "contentHash": "bbe3d0337e5ba875",
-  "importedAt": "2026-11-10T13:14:52.788Z"
+  "contentHash": "5522f00043a60519",
+  "importedAt": "2026-11-10T13:14:52.788Z",
+  "updatedAt": "2026-11-10T13:48:13.909Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-pagination-7",
   "name": "Pagination with arrows buttons",
   "type": "component",
-  "category": "Boutons",
+  "category": "Navigation",
   "tags": [
     "arrow links",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/pagination/c-pagination-7.tsx"
   },
-  "contentHash": "92573a0ddc6c0ad4",
-  "importedAt": "2026-11-10T13:14:59.147Z"
+  "contentHash": "fe3f3fa3b4ea25a7",
+  "importedAt": "2026-11-10T13:14:59.147Z",
+  "updatedAt": "2026-11-10T13:48:14.646Z"
 }

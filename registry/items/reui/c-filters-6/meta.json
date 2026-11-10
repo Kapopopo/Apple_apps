@@ -2,7 +2,7 @@
   "id": "reui/c-filters-6",
   "name": "Sliders as the value editor",
   "type": "component",
-  "category": "Code",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "filters",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-6.tsx"
   },
-  "contentHash": "a50d3c332a0b1634",
-  "importedAt": "2026-11-10T13:14:56.440Z"
+  "contentHash": "f6fcbc63a535457b",
+  "importedAt": "2026-11-10T13:14:56.440Z",
+  "updatedAt": "2026-11-10T13:48:14.375Z"
 }

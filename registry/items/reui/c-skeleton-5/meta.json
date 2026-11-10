@@ -2,7 +2,7 @@
   "id": "reui/c-skeleton-5",
   "name": "Skeleton loader for a data table.",
   "type": "component",
-  "category": "Tableaux de données",
+  "category": "Chargement",
   "tags": [
     "data table",
     "exemple",
@@ -33,6 +33,7 @@
     "kind": "live",
     "entry": "components/skeleton/c-skeleton-5.tsx"
   },
-  "contentHash": "a065d8a12690498f",
-  "importedAt": "2026-11-10T13:15:01.239Z"
+  "contentHash": "a6d957a9e01e3ac5",
+  "importedAt": "2026-11-10T13:15:01.239Z",
+  "updatedAt": "2026-11-10T13:48:14.823Z"
 }

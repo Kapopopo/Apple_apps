@@ -2,7 +2,7 @@
   "id": "reui/c-avatar-29",
   "name": "Avatar group with icon count and button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Images et galeries",
   "tags": [
     "avatar",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/avatar/c-avatar-29.tsx"
   },
-  "contentHash": "3924bfa712641c20",
-  "importedAt": "2026-11-10T13:13:05.578Z"
+  "contentHash": "7d614b915ec742e2",
+  "importedAt": "2026-11-10T13:13:05.578Z",
+  "updatedAt": "2026-11-10T13:48:13.652Z"
 }

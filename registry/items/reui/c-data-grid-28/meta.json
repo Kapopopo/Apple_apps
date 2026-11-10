@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-28",
   "name": "Data grid with remote infinite scroll",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-28.tsx"
   },
-  "contentHash": "3ffc36c0813f23ae",
-  "importedAt": "2026-11-10T13:14:54.842Z"
+  "contentHash": "e7a0e6cabcabec16",
+  "importedAt": "2026-11-10T13:14:54.842Z",
+  "updatedAt": "2026-11-10T13:48:14.153Z"
 }

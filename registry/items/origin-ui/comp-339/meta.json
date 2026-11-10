@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-339",
-  "name": "W/ icon and plus-minus",
+  "name": "Accordion 339",
   "type": "component",
-  "category": "Illustrations",
+  "category": "FAQ",
   "tags": [
     "accordion",
     "radix",
@@ -36,7 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-339.tsx"
   },
-  "contentHash": "5ce68763c064f235",
+  "contentHash": "5c1e5fa04e0cc28f",
   "importedAt": "2026-11-05T17:59:41.614Z",
-  "updatedAt": "2026-11-10T13:12:56.271Z"
+  "updatedAt": "2026-11-10T13:48:16.776Z"
 }

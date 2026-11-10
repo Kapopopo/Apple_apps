@@ -2,7 +2,7 @@
   "id": "panelui/chip",
   "name": "Chip",
   "type": "component",
-  "category": "Autres composants",
+  "category": "Formulaires",
   "tags": [
     "expo"
   ],
@@ -39,6 +39,7 @@
     "kind": "none",
     "reason": "Composant React Native (Expo) : pas de rendu web"
   },
-  "contentHash": "0cbcd1bb11d866bc",
-  "importedAt": "2026-11-05T00:16:55.859Z"
+  "contentHash": "a16f9f1c113b4b5a",
+  "importedAt": "2026-11-05T00:16:55.859Z",
+  "updatedAt": "2026-11-10T13:48:21.017Z"
 }

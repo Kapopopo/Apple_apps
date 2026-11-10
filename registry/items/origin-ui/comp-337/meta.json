@@ -1,6 +1,6 @@
 {
   "id": "origin-ui/comp-337",
-  "name": "W/ left plus-minus",
+  "name": "Accordion 337",
   "type": "component",
   "category": "FAQ",
   "tags": [
@@ -36,7 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-337.tsx"
   },
-  "contentHash": "b6aa8fa340d33200",
+  "contentHash": "3a465ae7310e8e89",
   "importedAt": "2026-11-05T17:59:41.606Z",
-  "updatedAt": "2026-11-10T13:12:56.254Z"
+  "updatedAt": "2026-11-10T13:48:16.769Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-10",
   "name": "Data grid with column icons",
   "type": "component",
-  "category": "Fonds",
+  "category": "Tableaux de données",
   "tags": [
     "column icons",
     "data-grid",
@@ -37,6 +37,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-10.tsx"
   },
-  "contentHash": "2f2df7ff04b04157",
-  "importedAt": "2026-11-10T13:14:54.575Z"
+  "contentHash": "5ebf0e5d4564cf5c",
+  "importedAt": "2026-11-10T13:14:54.575Z",
+  "updatedAt": "2026-11-10T13:48:14.087Z"
 }

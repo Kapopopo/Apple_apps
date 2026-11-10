@@ -2,7 +2,7 @@
   "id": "reui/c-field-8",
   "name": "Permission settings with checkboxes",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Fonds",
   "tags": [
     "exemple",
     "field",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/field/c-field-8.tsx"
   },
-  "contentHash": "4a15ff01dbeb45ec",
-  "importedAt": "2026-11-10T13:14:55.983Z"
+  "contentHash": "1d91b1b50a35d1e1",
+  "importedAt": "2026-11-10T13:14:55.983Z",
+  "updatedAt": "2026-11-10T13:48:14.294Z"
 }

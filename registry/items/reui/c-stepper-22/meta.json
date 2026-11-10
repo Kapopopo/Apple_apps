@@ -2,7 +2,7 @@
   "id": "reui/c-stepper-22",
   "name": "Stepper with color-coded bottom bars",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Navigation",
   "tags": [
     "bottom color bars",
     "exemple",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/stepper/c-stepper-22.tsx"
   },
-  "contentHash": "5f5395bfb0d57b69",
-  "importedAt": "2026-11-10T13:15:02.275Z"
+  "contentHash": "f12cb774df5e3eb1",
+  "importedAt": "2026-11-10T13:15:02.275Z",
+  "updatedAt": "2026-11-10T13:48:14.930Z"
 }

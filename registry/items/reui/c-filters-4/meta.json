@@ -2,7 +2,7 @@
   "id": "reui/c-filters-4",
   "name": "Avatars, paging and a restored view",
   "type": "component",
-  "category": "Images et galeries",
+  "category": "Formulaires",
   "tags": [
     "avatars & paging",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-4.tsx"
   },
-  "contentHash": "440b788c06d7c84a",
-  "importedAt": "2026-11-10T13:14:56.407Z"
+  "contentHash": "3f7f4ec9af9b9daa",
+  "importedAt": "2026-11-10T13:14:56.407Z",
+  "updatedAt": "2026-11-10T13:48:14.340Z"
 }

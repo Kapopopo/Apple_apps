@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-2",
   "name": "Gantt chart with drag-to-reorder tree rows",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "dataviz",
     "drag",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-2.tsx"
   },
-  "contentHash": "4afb92de024e5b9d",
-  "importedAt": "2026-11-10T13:14:56.795Z"
+  "contentHash": "f3602f1973d5dd56",
+  "importedAt": "2026-11-10T13:14:56.795Z",
+  "updatedAt": "2026-11-10T13:48:14.413Z"
 }

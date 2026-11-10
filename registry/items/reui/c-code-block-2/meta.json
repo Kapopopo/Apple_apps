@@ -2,7 +2,7 @@
   "id": "reui/c-code-block-2",
   "name": "Pinned copy button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Code",
   "tags": [
     "code-block",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/code-block/c-code-block-2.tsx"
   },
-  "contentHash": "b97451cedf77824e",
-  "importedAt": "2026-11-10T13:14:53.394Z"
+  "contentHash": "a0bdf7e173fb3587",
+  "importedAt": "2026-11-10T13:14:53.394Z",
+  "updatedAt": "2026-11-10T13:48:13.952Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-343",
-  "name": "W/ icon, sub-header, and plus-minus",
+  "name": "Accordion 343",
   "type": "component",
-  "category": "Illustrations",
+  "category": "FAQ",
   "tags": [
     "accordion",
     "radix",
@@ -36,7 +36,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-343.tsx"
   },
-  "contentHash": "49701ae2cda02aed",
+  "contentHash": "c627256bfbe1cb8c",
   "importedAt": "2026-11-05T17:59:41.634Z",
-  "updatedAt": "2026-11-10T13:12:56.311Z"
+  "updatedAt": "2026-11-10T13:48:16.792Z"
 }

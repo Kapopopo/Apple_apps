@@ -2,7 +2,7 @@
   "id": "reui/c-filters-7",
   "name": "Filtering a table",
   "type": "component",
-  "category": "Tableaux de données",
+  "category": "Formulaires",
   "tags": [
     "exemple",
     "filters",
@@ -39,6 +39,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-7.tsx"
   },
-  "contentHash": "e384915d26b36ffd",
-  "importedAt": "2026-11-10T13:14:56.456Z"
+  "contentHash": "f3cca2581b0623ac",
+  "importedAt": "2026-11-10T13:14:56.456Z",
+  "updatedAt": "2026-11-10T13:48:14.379Z"
 }

@@ -2,7 +2,7 @@
   "id": "reui/c-progress-6",
   "name": "Progress bar with slider.",
   "type": "component",
-  "category": "Curseurs",
+  "category": "Indicateurs",
   "tags": [
     "exemple",
     "progress",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/progress/c-progress-6.tsx"
   },
-  "contentHash": "1e2da904fe1c672f",
-  "importedAt": "2026-11-10T13:14:59.672Z"
+  "contentHash": "1dd9c07429d3a770",
+  "importedAt": "2026-11-10T13:14:59.672Z",
+  "updatedAt": "2026-11-10T13:48:14.701Z"
 }

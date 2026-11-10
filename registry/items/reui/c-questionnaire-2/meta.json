@@ -2,7 +2,7 @@
   "id": "reui/c-questionnaire-2",
   "name": "Multi-select answers",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Listes et tâches",
   "tags": [
     "exemple",
     "multi-select",
@@ -36,6 +36,7 @@
     "kind": "live",
     "entry": "components/questionnaire/c-questionnaire-2.tsx"
   },
-  "contentHash": "1e959f6e161c65cd",
-  "importedAt": "2026-11-10T13:14:59.734Z"
+  "contentHash": "a02cceff42f7b43b",
+  "importedAt": "2026-11-10T13:14:59.734Z",
+  "updatedAt": "2026-11-10T13:48:14.707Z"
 }

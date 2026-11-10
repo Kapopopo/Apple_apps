@@ -2,7 +2,7 @@
   "id": "reui/c-filters-8",
   "name": "Choice controls as editors",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "choice controls",
     "exemple",
@@ -40,6 +40,7 @@
     "kind": "live",
     "entry": "components/filters/c-filters-8.tsx"
   },
-  "contentHash": "b856de46690a0ae0",
-  "importedAt": "2026-11-10T13:14:56.474Z"
+  "contentHash": "a44dfafaa7cdbfa0",
+  "importedAt": "2026-11-10T13:14:56.474Z",
+  "updatedAt": "2026-11-10T13:48:14.383Z"
 }

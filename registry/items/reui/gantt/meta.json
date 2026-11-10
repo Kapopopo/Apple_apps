@@ -2,7 +2,7 @@
   "id": "reui/gantt",
   "name": "Headless-first gantt - horizontal resource timeline with day-to-year scales, external CRUD contract, and a subscribable store.",
   "type": "component",
-  "category": "Listes et tâches",
+  "category": "Calendriers",
   "tags": [
     "web"
   ],
@@ -102,7 +102,7 @@
     "entry": "components/gantt/c-gantt-1.tsx",
     "demo": "source"
   },
-  "contentHash": "08076beb116c3320",
+  "contentHash": "ba06f99a32e74a88",
   "importedAt": "2026-11-05T17:59:38.278Z",
-  "updatedAt": "2026-11-10T13:13:03.667Z"
+  "updatedAt": "2026-11-10T13:48:13.520Z"
 }

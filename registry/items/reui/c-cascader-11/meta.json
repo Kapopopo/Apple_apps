@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-11",
   "name": "Two-line rows with descriptions and a disabled option.",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -35,6 +35,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-11.tsx"
   },
-  "contentHash": "37f5dde63103a178",
-  "importedAt": "2026-11-10T13:14:52.711Z"
+  "contentHash": "22652e3dc79bd149",
+  "importedAt": "2026-11-10T13:14:52.711Z",
+  "updatedAt": "2026-11-10T13:48:13.897Z"
 }

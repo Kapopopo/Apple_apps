@@ -2,7 +2,7 @@
   "id": "reui/c-select-21",
   "name": "Select with clear button",
   "type": "component",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "clear button",
     "exemple",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/select/c-select-21.tsx"
   },
-  "contentHash": "33a1f781fd9aa10e",
-  "importedAt": "2026-11-10T13:15:00.651Z"
+  "contentHash": "fc87672e5224b8c6",
+  "importedAt": "2026-11-10T13:15:00.651Z",
+  "updatedAt": "2026-11-10T13:48:14.762Z"
 }

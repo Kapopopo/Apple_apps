@@ -2,7 +2,7 @@
   "id": "reui/c-data-grid-34",
   "name": "Data grid with server side pagination",
   "type": "component",
-  "category": "Navigation",
+  "category": "Tableaux de données",
   "tags": [
     "data-grid",
     "exemple",
@@ -42,6 +42,7 @@
     "kind": "live",
     "entry": "components/data-grid/c-data-grid-34.tsx"
   },
-  "contentHash": "f82b8a66aeb7c584",
-  "importedAt": "2026-11-10T13:14:54.943Z"
+  "contentHash": "7aea1a661f1c540e",
+  "importedAt": "2026-11-10T13:14:54.943Z",
+  "updatedAt": "2026-11-10T13:48:14.182Z"
 }

@@ -1,8 +1,8 @@
 {
   "id": "origin-ui/comp-344",
-  "name": "Tabs w/ chevron",
+  "name": "Accordion 344",
   "type": "component",
-  "category": "Navigation",
+  "category": "FAQ",
   "tags": [
     "accordion",
     "radix",
@@ -33,7 +33,7 @@
     "kind": "live",
     "entry": "registry/default/components/comp-344.tsx"
   },
-  "contentHash": "5678bce99a0ecd99",
+  "contentHash": "465719dbb2286008",
   "importedAt": "2026-11-05T17:59:41.637Z",
-  "updatedAt": "2026-11-10T13:12:56.318Z"
+  "updatedAt": "2026-11-10T13:48:16.797Z"
 }

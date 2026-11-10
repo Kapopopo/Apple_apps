@@ -2,7 +2,7 @@
   "id": "reui/c-cascader-4",
   "name": "Pinned footer with a side-anchored import flyout.",
   "type": "section",
-  "category": "Boutons",
+  "category": "Formulaires",
   "tags": [
     "cascader",
     "exemple",
@@ -66,6 +66,7 @@
     "kind": "live",
     "entry": "components/cascader/c-cascader-4.tsx"
   },
-  "contentHash": "48f1b4a419029a54",
-  "importedAt": "2026-11-10T13:14:52.568Z"
+  "contentHash": "d73bad6d31649563",
+  "importedAt": "2026-11-10T13:14:52.568Z",
+  "updatedAt": "2026-11-10T13:48:13.867Z"
 }

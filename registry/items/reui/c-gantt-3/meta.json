@@ -2,7 +2,7 @@
   "id": "reui/c-gantt-3",
   "name": "Gantt chart with quarter roadmap and rollups",
   "type": "component",
-  "category": "Graphiques",
+  "category": "Calendriers",
   "tags": [
     "dataviz",
     "exemple",
@@ -38,6 +38,7 @@
     "kind": "live",
     "entry": "components/gantt/c-gantt-3.tsx"
   },
-  "contentHash": "801400a0a7edfdf0",
-  "importedAt": "2026-11-10T13:14:56.800Z"
+  "contentHash": "07307b8336a6f4cb",
+  "importedAt": "2026-11-10T13:14:56.800Z",
+  "updatedAt": "2026-11-10T13:48:14.417Z"
 }

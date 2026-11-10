@@ -2,7 +2,7 @@
   "id": "reui/c-progress-5",
   "name": "File upload list with progress & status.",
   "type": "component",
-  "category": "Formulaires",
+  "category": "Indicateurs",
   "tags": [
     "exemple",
     "file uploads",
@@ -34,6 +34,7 @@
     "kind": "live",
     "entry": "components/progress/c-progress-5.tsx"
   },
-  "contentHash": "21d6e142aacaa8b0",
-  "importedAt": "2026-11-10T13:14:59.660Z"
+  "contentHash": "df5bb826b99c101e",
+  "importedAt": "2026-11-10T13:14:59.660Z",
+  "updatedAt": "2026-11-10T13:48:14.696Z"
 }
