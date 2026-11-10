@@ -84,6 +84,9 @@ export function targetOf(ref: Pick<FileRef, 'rel' | 'role'>, meta: Meta): string
     if (m) return `${m[1] === 'ui' ? 'components/ui' : m[1]}/${m[2]}`;
   }
   const [source, slug] = meta.id.split('/');
+  // Utilitaires et hooks partagés par plusieurs composants d'une source : un seul emplacement par source.
+  const shared = ref.role !== 'demo' && ref.rel.match(/(?:^|\/)((?:lib|hooks|utils|helpers)\/.+)$/);
+  if (shared) return `components/atlas/${source}/${shared[1]}`;
   const root = commonRoot(meta);
   const inner = root && ref.rel.startsWith(root + '/') ? ref.rel.slice(root.length + 1) : path.posix.basename(ref.rel);
   return `components/atlas/${source}/${slug}/${ref.role === 'demo' ? 'demo/' : ''}${inner}`;
