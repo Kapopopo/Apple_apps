@@ -20,7 +20,7 @@
     "test": "node --import tsx --test tests/ts/*.test.ts",
     "update": "tsx importers/run.ts --update && npm run previews && npm run audit",
     "outdated": "tsx importers/run.ts outdated",
-    "audit": "npm --prefix previews run audit",
+    "audit": "npm --prefix previews run audit --",
     "refresh": "npm run import && npm run previews && npm run audit",
     "schedule": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/schedule.ps1",
     "unschedule": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/unschedule.ps1",

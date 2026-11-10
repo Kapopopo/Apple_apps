@@ -136,3 +136,10 @@ html.dark .atlas-sound button span,
 html.dark .atlas-sound p {
   color: #9d9c96;
 }
+/* Vignette d'un son : pupitre agrandi pour rester lisible dans la carte (le mode carte réduit la scène). */
+html.card .atlas-sound {
+  zoom: 2;
+}
+html.card .atlas-sound p {
+  display: none;
+}

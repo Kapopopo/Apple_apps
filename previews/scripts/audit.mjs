@@ -14,6 +14,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import zlib from 'node:zlib';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -48,7 +49,12 @@ if (!fs.existsSync(path.join(BUILD, 'index.html'))) {
 const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', 'index.json'), 'utf8'));
 const previous = fs.existsSync(OUT) ? (JSON.parse(fs.readFileSync(OUT, 'utf8')).results ?? {}) : {};
 
-/* Chunk compilé de chaque item (manifeste Vite) : un changement de code, de shim ou de dépendance change son nom. */
+/*
+ * Empreinte du chunk compilé de chaque item (manifeste Vite) : son code, ses shims et ses dépendances
+ * propres. Les noms de fichiers hachés qu'il importe sont retirés : retoucher l'app d'aperçus
+ * (main.tsx, base.css) renomme tous les chunks sans changer leur rendu, et ne relance donc pas l'audit
+ * complet (« --only id1,id2 » ou « --all » pour forcer).
+ */
 const manifestFile = path.join(BUILD, '.vite', 'manifest.json');
 const manifest = fs.existsSync(manifestFile) ? JSON.parse(fs.readFileSync(manifestFile, 'utf8')) : {};
 const posix = (p) => p.split(path.sep).join('/');
@@ -56,7 +62,10 @@ function chunkOf(item) {
   if (item.preview?.kind !== 'live') return 'atlas-demo';
   const meta = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry', item.dir, 'meta.json'), 'utf8'));
   const key = posix(path.relative(PREVIEWS, path.join(ROOT, 'registry', item.dir, 'files', meta.preview.entry)));
-  return manifest[key]?.file ?? null;
+  const file = manifest[key]?.file;
+  if (!file || !fs.existsSync(path.join(BUILD, file))) return null;
+  const code = fs.readFileSync(path.join(BUILD, file), 'utf8').replace(/[\w.-]+-[\w-]{8}\.(?:js|css)/g, '');
+  return 'sha1:' + crypto.createHash('sha1').update(code).digest('hex').slice(0, 16);
 }
 
 const targets = index.items

@@ -25,7 +25,7 @@ npm run previews  # compile les aperçus du registre (≈ 2 min) → web/registr
 npm run audit     # vérifie chaque aperçu dans Chrome, capture les vignettes → registry/_previews.json, web/thumbs/
 ```
 
-L’audit est incrémental : il ne refait que les items dont le code, le chunk compilé ou la vignette ont changé (`-- --all` pour tout refaire).
+L’audit est incrémental : il ne refait que les items dont le code, l’empreinte du chunk compilé ou la vignette ont changé (`npm run audit -- --all` pour tout refaire, `-- --only id1,id2` pour une liste). Une retouche de l’app d’aperçus elle-même (`main.tsx`, `base.css`) ne relance rien : passer `--only` ou `--all`.
 
 ## Projet client : du brief au code
 
