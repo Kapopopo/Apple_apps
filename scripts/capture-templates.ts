@@ -10,7 +10,9 @@
  *   npm run capture:templates [-- --only saas-starter] [--sections | --pages] [--slug hero,faq]
  */
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { REGISTRY } from '../shared/paths.js';
 import { readMeta } from '../shared/registry.js';
 import { loadTemplateSources, pageUrl, textCheck, type TemplateSectionDef } from '../importers/templates.js';
@@ -26,12 +28,19 @@ const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const DESKTOP = { width: 1440, height: 900 };
 /** Hauteur maximale capturée (px CSS) : au-delà, le haut du bloc suffit à le reconnaître. */
 const MAX_HEIGHT = 1800;
+/** Page entière : hauteur maximale capturée (px CSS) et réduction de l'image (1440 → 864 px de large). */
+const FULL_MAX_HEIGHT = 9000;
+const FULL_SCALE = 0.6;
 
 export interface Screen {
   file: string;
   path: string;
   title: string;
-  viewport: 'desktop' | 'mobile';
+  /** full : la page d'accueil entière (visuel de l'en-tête de la fiche). */
+  viewport: 'desktop' | 'mobile' | 'full';
+  /** Dimensions de la page d'origine en px CSS (page entière seulement). */
+  width?: number;
+  height?: number;
 }
 export interface SectionShot {
   slug: string;
@@ -64,6 +73,69 @@ async function shoot(page: Page, url: string, file: string, size: { width: numbe
   });
   fs.writeFileSync(file, Buffer.from(r.data, 'base64'));
   return true;
+}
+
+/**
+ * Page d'accueil entière : la fenêtre prend la hauteur du document le temps de la capture (contenu peint,
+ * apparitions au défilement déjà déclenchées), dans la limite de FULL_MAX_HEIGHT.
+ */
+async function captureFullPage(page: Page, url: string, file: string): Promise<{ width: number; height: number } | null> {
+  await page.viewport(DESKTOP.width, DESKTOP.height);
+  if (!(await open(page, url))) return null;
+  await page.evaluate(SCROLL_THROUGH);
+  await wait(800);
+  const measure = async () =>
+    Math.min(
+      await page.evaluate<number>('Math.max(document.documentElement.scrollHeight, document.body?.scrollHeight ?? 0)'),
+      FULL_MAX_HEIGHT,
+    );
+  let height = await measure();
+  // Deux ajustements : une hauteur en vh peut grandir avec la fenêtre.
+  for (let k = 0; k < 2; k++) {
+    await page.viewport(DESKTOP.width, height);
+    await wait(1200);
+    const next = await measure();
+    if (next === height) break;
+    height = next;
+  }
+  await page.evaluate('window.scrollTo(0, 0)');
+  await wait(300);
+  const r = await page.send('Page.captureScreenshot', {
+    format: 'jpeg',
+    quality: 76,
+    clip: { x: 0, y: 0, width: DESKTOP.width, height, scale: FULL_SCALE },
+  });
+  fs.writeFileSync(file, Buffer.from(r.data, 'base64'));
+  await page.viewport(DESKTOP.width, DESKTOP.height);
+  return { width: DESKTOP.width, height };
+}
+
+/**
+ * Sans démo du template entier (Launch UI) : la page d'accueil reconstituée en empilant ses sections
+ * capturées, dans l'ordre déclaré (celui de la page). Rendu par Chrome, sans outil d'image.
+ */
+async function composeFullPage(page: Page, dir: string, shots: SectionShot[]): Promise<{ width: number; height: number } | null> {
+  if (!shots.length) return null;
+  const width = Math.round(DESKTOP.width * FULL_SCALE);
+  const html = `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:#000}img{display:block;width:${width}px;height:auto}</style>${shots
+    .map((s) => `<img src="${pathToFileURL(path.join(dir, s.file)).href}" alt="">`)
+    .join('')}`;
+  const tmp = path.join(os.tmpdir(), `atlas-page-entiere-${process.pid}.html`);
+  fs.writeFileSync(tmp, html);
+  try {
+    await page.viewport(width, 900);
+    await page.goto(pathToFileURL(tmp).href);
+    await page.waitFor(`document.readyState === 'complete' && [...document.images].every((i) => i.complete && i.naturalWidth > 0)`, 20000);
+    const height = await page.evaluate<number>('document.documentElement.scrollHeight');
+    await page.viewport(width, height);
+    await wait(300);
+    const r = await page.send('Page.captureScreenshot', { format: 'jpeg', quality: 80, clip: { x: 0, y: 0, width, height, scale: 1 } });
+    fs.writeFileSync(path.join(dir, 'full.jpg'), Buffer.from(r.data, 'base64'));
+    return { width: DESKTOP.width, height: Math.round(height / FULL_SCALE) };
+  } finally {
+    fs.rmSync(tmp, { force: true });
+    await page.viewport(DESKTOP.width, DESKTOP.height);
+  }
 }
 
 /** Fait défiler toute la page pour déclencher les apparitions au défilement, puis revient en haut. */
@@ -201,7 +273,8 @@ try {
     const page = await browser.page(DESKTOP.width, DESKTOP.height);
 
     if (doPages) {
-      for (const f of fs.readdirSync(dir)) if (!f.startsWith('section-')) fs.rmSync(path.join(dir, f));
+      // Seulement les fichiers de cette étape : les captures de sections et sections.json restent.
+      for (const f of fs.readdirSync(dir)) if (!f.startsWith('section')) fs.rmSync(path.join(dir, f));
       const screens: Screen[] = [];
       if (src.demo) {
         for (const [i, p] of src.pages.entries()) {
@@ -216,6 +289,10 @@ try {
           (await shoot(page, pageUrl(src.demo, first.path), path.join(dir, '00-mobile.jpg'), { width: 390, height: 844, mobile: true }))
         )
           screens.push({ file: '00-mobile.jpg', path: first.path, title: `${first.title} (mobile)`, viewport: 'mobile' });
+        const full = first && (await captureFullPage(page, pageUrl(src.demo, first.path), path.join(dir, 'full.jpg')));
+        if (full)
+          screens.unshift({ file: 'full.jpg', path: first.path, title: `${first.title} : page entière`, viewport: 'full', ...full });
+        else if (first) console.log(`  ${src.id} : page entière indisponible`);
       }
       if (!screens.length && src.cover) {
         const cover = path.join(itemDir, 'files', src.cover);
@@ -256,6 +333,21 @@ try {
         .filter((s): s is SectionShot => !!s);
       fs.writeFileSync(index, JSON.stringify(shots, null, 1) + '\n');
       console.log(`${src.id} : ${fresh.size}/${todo.length} section(s) capturée(s), ${shots.length}/${src.sections.length} au total`);
+    }
+
+    if (!src.demo && src.sections?.length) {
+      const sectionsFile = path.join(dir, 'sections.json'),
+        screensFile = path.join(dir, 'screens.json');
+      const shots: SectionShot[] = fs.existsSync(sectionsFile) ? JSON.parse(fs.readFileSync(sectionsFile, 'utf8')) : [];
+      const screens: Screen[] = (fs.existsSync(screensFile) ? JSON.parse(fs.readFileSync(screensFile, 'utf8')) : []).filter(
+        (x: Screen) => x.viewport !== 'full',
+      );
+      const full = await composeFullPage(page, dir, shots);
+      if (full) {
+        screens.unshift({ file: 'full.jpg', path: '/', title: 'Page d’accueil : sections assemblées', viewport: 'full', ...full });
+        console.log(`${src.id} : page entière reconstituée à partir de ${shots.length} sections`);
+      }
+      fs.writeFileSync(screensFile, JSON.stringify(screens, null, 1) + '\n');
     }
   }
 } finally {

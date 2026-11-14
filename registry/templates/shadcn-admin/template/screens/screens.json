@@ -1,5 +1,13 @@
 [
  {
+  "file": "full.jpg",
+  "path": "/",
+  "title": "Tableau de bord : page entière",
+  "viewport": "full",
+  "width": 1440,
+  "height": 900
+ },
+ {
   "file": "01-desktop.jpg",
   "path": "/",
   "title": "Tableau de bord",

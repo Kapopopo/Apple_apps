@@ -45,7 +45,11 @@ export interface TemplateScreen {
   url: string;
   title: string;
   path: string;
+  /** desktop, mobile, ou full : la page d'accueil entière. */
   viewport: string;
+  /** Dimensions de la page d'origine en px CSS (page entière). */
+  width?: number;
+  height?: number;
 }
 
 /** Captures d'un template (npm run capture:templates), versionnées par leur date pour le cache navigateur. */
@@ -53,12 +57,15 @@ export function templateScreens(e: IndexEntry): TemplateScreen[] {
   const file = path.join(REGISTRY, e.dir, 'screens', 'screens.json');
   try {
     const v = Math.round(fs.statSync(file).mtimeMs).toString(36);
-    const list: { file: string; title: string; path: string; viewport: string }[] = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const list: { file: string; title: string; path: string; viewport: string; width?: number; height?: number }[] = JSON.parse(
+      fs.readFileSync(file, 'utf8'),
+    );
     return list.map((s) => ({
       url: `/template-screens/${e.sourceId}/${s.file}?v=${v}`,
       title: s.title,
       path: s.path,
       viewport: s.viewport,
+      ...(s.width && s.height ? { width: s.width, height: s.height } : {}),
     }));
   } catch {
     return [];

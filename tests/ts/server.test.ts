@@ -229,6 +229,9 @@ test('templates : captures servies, payload du builder, copie complète par scaf
   const tpl = reg.items.find((i: { id: string }) => i.id === 'demo-site/template');
   assert.equal(tpl.type, 'template');
   assert.match(tpl.screens[0].url, /^\/template-screens\/demo-site\/01-desktop\.jpg\?v=/);
+  const full = tpl.screens.find((s: { viewport: string }) => s.viewport === 'full');
+  assert.deepEqual([full.width, full.height], [1440, 4000], 'page entière : dimensions transmises au builder');
+  assert.equal((await request('GET', full.url)).status, 200);
   const shot = await request('GET', tpl.screens[0].url);
   assert.equal(shot.status, 200);
   assert.equal(shot.headers['content-type'], 'image/jpeg');

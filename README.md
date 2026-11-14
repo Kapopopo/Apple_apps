@@ -116,7 +116,7 @@ Six sites entiers, choisis pour couvrir des besoins différents (tous MIT et mai
 
 ```bash
 npm run import:templates               # clone au commit verrouillé, copie tout le dépôt (registry/templates/<id>/template/)
-npm run capture:templates              # pages (bureau + mobile) et sections, sur la démo officielle
+npm run capture:templates              # pages (bureau + mobile), page d’accueil entière et sections, sur la démo officielle
 npm run capture:templates -- --only studio-admin --sections   # un template, sections seulement
 npm run capture:templates -- --only studio-admin --sections --slug crm-kpis,crm-meetings   # recapturer quelques sections
 npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entier + LICENSE + ATLAS.md
@@ -128,6 +128,7 @@ npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entie
 - Capture : l’élément déclaré (`find`, `text`, `up`) est photographié à sa taille réelle sur la démo, après vérification que son texte visible figure dans le code de la section (titre et libellés ; les lignes générées, dates ou données aléatoires, ne comptent pas contre elle) ; sinon la capture est refusée, car une démo qui montre une autre variante tromperait. `verify: false` pour un contenu entièrement généré (calendrier). Une capture presque uniforme (zone non peinte) est refusée aussi. Images dans `registry/templates/<id>/template/screens/section-*.jpg` + `sections.json`.
 - Launch UI n’a pas de démo du template gratuit (le site montre les variantes Pro) : ses sections sont capturées sur sa documentation officielle, où chaque variante `default` est rendue à l’identique du dépôt, puis sortie de son cadre réduit (`isolate`).
 - Le blog n’a pas de démo fidèle en ligne (déploiement officiel suspendu, les copies tiers sont en v1) : pas de sections capturées.
+- **Page entière** (`screens/full.jpg`, `viewport: "full"` dans `screens.json`) : la page d’accueil sur toute sa hauteur (≤ 9 000 px, réduite à 864 px de large), visuel de l’en-tête de la fiche, qui fait défiler tout le site au survol. Pour Launch UI, elle est reconstituée en empilant ses sections capturées dans l’ordre de `app/page.tsx`.
 - Bundle et MCP : les fichiers d’un template gardent son arborescence sous `components/atlas/<template>/` ; plusieurs sections du même template partagent leurs fichiers communs.
 
 - **Repris** : tout le dépôt, images comprises (≤ 1,5 Mo par fichier, 12 Mo par template). **Écartés** : `node_modules`, builds, verrous de paquets, `.env*` (seul `.env.example` est gardé), `.github`, fichiers trop lourds (listés dans `template.skipped`).

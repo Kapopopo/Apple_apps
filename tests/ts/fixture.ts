@@ -227,9 +227,13 @@ export async function seedRegistry() {
   fs.mkdirSync(screens, { recursive: true });
   fs.writeFileSync(path.join(screens, '01-desktop.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
   fs.writeFileSync(path.join(screens, 'section-hero.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
+  fs.writeFileSync(path.join(screens, 'full.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
   fs.writeFileSync(
     path.join(screens, 'screens.json'),
-    JSON.stringify([{ file: '01-desktop.jpg', path: '/', title: 'Accueil', viewport: 'desktop' }]),
+    JSON.stringify([
+      { file: '01-desktop.jpg', path: '/', title: 'Accueil', viewport: 'desktop' },
+      { file: 'full.jpg', path: '/', title: 'Accueil : page entière', viewport: 'full', width: 1440, height: 4000 },
+    ]),
   );
   fs.writeFileSync(
     path.join(screens, 'sections.json'),

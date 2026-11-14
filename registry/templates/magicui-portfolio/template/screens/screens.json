@@ -1,5 +1,13 @@
 [
  {
+  "file": "full.jpg",
+  "path": "/",
+  "title": "Accueil : page entière",
+  "viewport": "full",
+  "width": 1440,
+  "height": 7755
+ },
+ {
   "file": "01-desktop.jpg",
   "path": "/",
   "title": "Accueil",

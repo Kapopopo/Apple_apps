@@ -681,18 +681,94 @@ dialog[data-kind='template'] #detail-body {
 }
 .tpl-head.has-cover {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 340px;
   align-items: center;
-  gap: 32px;
+  gap: 36px;
   padding-right: 76px;
 }
 .tpl-cover {
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
 }
-.tpl-cover img {
+.tpl-cover.section-img img {
   aspect-ratio: 16 / 10;
   max-height: none;
+}
+/* Page d'accueil entière : cadre de navigateur, tout le site défile au survol (durée selon sa longueur). */
+.tpl-cover.full {
+  --window-h: 236px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: #0a0c0b;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+  transition: border-color 0.2s var(--ease);
+}
+.tpl-cover.full:hover {
+  border-color: #4a5550;
+}
+.cover-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 26px;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.cover-dots {
+  display: flex;
+  flex: none;
+  gap: 4px;
+}
+.cover-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--line-strong);
+}
+.cover-host {
+  overflow: hidden;
+  color: var(--faint);
+  font-family: var(--mono);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cover-window {
+  display: block;
+  height: var(--window-h);
+  overflow: hidden;
+}
+.cover-window img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.9s var(--ease);
+}
+.tpl-cover.full:hover .cover-window img,
+.tpl-cover.full:focus-visible .cover-window img {
+  transform: translateY(min(0px, calc(-100% + var(--window-h))));
+  transition: transform var(--scroll-time, 6s) cubic-bezier(0.45, 0, 0.55, 1);
+}
+.tpl-cover.full .shot-zoom {
+  top: 34px;
+}
+.tpl-cover.full:hover .shot-zoom,
+.tpl-cover.full:focus-visible .shot-zoom {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tpl-cover.full:hover .cover-window img,
+  .tpl-cover.full:focus-visible .cover-window img {
+    transform: none;
+  }
 }
 #detail-body .tpl-head h2 {
   font-size: 28px;
@@ -1213,8 +1289,14 @@ dialog[data-kind='template'] #detail-body {
     display: block;
     padding: 22px 56px 18px 18px;
   }
-  .tpl-cover {
+  .tpl-cover.section-img {
     display: none;
+  }
+  .tpl-cover.full {
+    --window-h: 190px;
+    /* Même largeur que le contenu en dessous : l'en-tête garde une marge droite pour le bouton Fermer. */
+    width: calc(100% + 38px);
+    margin-top: 18px;
   }
   #detail-body .tpl-head h2 {
     font-size: 23px;

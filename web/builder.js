@@ -100,7 +100,10 @@ function curveSvg(b) {
 function staticVisual(i) {
   if (i.type === 'template') {
     // Sans capture de page : la première section assez haute pour servir de visuel (pas une barre de navigation).
-    const cover = i.screens?.[0]?.url || (i.sections || []).map((id) => byId.get(id)?.shot).find((s) => s && s.height >= 300)?.url;
+    const cover =
+      i.screens?.find((s) => s.viewport !== 'full')?.url ||
+      (i.sections || []).map((id) => byId.get(id)?.shot).find((s) => s && s.height >= 300)?.url ||
+      i.screens?.[0]?.url;
     return cover
       ? `<img class="thumb" src="${esc(cover)}" alt="" loading="lazy" decoding="async">`
       : `<div class="placeholder">${icon('layers')}Template complet</div>`;
@@ -1030,7 +1033,7 @@ function templateAside(i, meta, t) {
     <dl class="tpl-facts">
       <div><dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span></dd></div>
       <div><dt>Sections</dt><dd>${(i.sections || []).length || '—'}</dd></div>
-      <div><dt>Pages capturées</dt><dd>${(i.screens || []).length || '—'}</dd></div>
+      <div><dt>Pages capturées</dt><dd>${(i.screens || []).filter((x) => x.viewport !== 'full').length || '—'}</dd></div>
       <div><dt>Fichiers</dt><dd>${meta.files.length}${t.skipped?.length ? ` <span class="faint">+ ${t.skipped.length} non repris</span>` : ''}</dd></div>
       <div><dt>Gestionnaire</dt><dd>${esc((t.install || 'npm install').split(' ')[0])}</dd></div>
     </dl>
@@ -1047,10 +1050,29 @@ function templateDetail(i, meta, views) {
   const readme = meta.files.filter((f) => /(^|\/)(README\.md|package\.json)$/.test(f.path));
   const sections = templateSections(i, t, views);
   const firstPage = views.length;
-  const pages = templatePages(i.screens || [], views);
-  // Visuel de l'en-tête : la première page capturée, sinon la première section assez haute (pas une barre).
-  const coverIndex = (i.screens || []).length ? firstPage : views.findIndex((v) => v.id && byId.get(v.id)?.shot?.height >= 300);
-  const cover = views[coverIndex];
+  const screens = (i.screens || []).filter((x) => x.viewport !== 'full');
+  const pages = templatePages(screens, views);
+  const full = (i.screens || []).find((x) => x.viewport === 'full');
+  const demo = safeHttps(t.demo || '');
+  const host = demo ? new URL(demo).host : '';
+  let cover = '';
+  if (full) {
+    // Page d'accueil entière : cadre de navigateur qui fait défiler tout le site au survol.
+    views.push({
+      url: full.url,
+      title: full.title,
+      sub: host ? host + (full.path === '/' ? '' : full.path) : 'Reconstituée à partir des sections capturées',
+    });
+    cover = `<button class="tpl-cover full" data-view="${views.length - 1}" data-ratio="${full.width && full.height ? (full.height / full.width).toFixed(3) : ''}" aria-label="Voir la page entière : ${esc(full.title)}">
+      <span class="cover-bar" aria-hidden="true"><span class="cover-dots"><span></span><span></span><span></span></span><span class="cover-host">${esc(host || 'sections assemblées')}</span></span>
+      <span class="cover-window"><img src="${esc(full.url)}" alt="" decoding="async"></span>
+      <span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button>`;
+  } else {
+    // Sans page entière : la première page capturée, sinon la première section assez haute (pas une barre).
+    const k = screens.length ? firstPage : views.findIndex((v) => v.id && byId.get(v.id)?.shot?.height >= 300);
+    if (views[k])
+      cover = `<button class="tpl-cover section-img" data-view="${k}" aria-label="Agrandir : ${esc(views[k].title)}"><img src="${esc(views[k].url)}" alt="" decoding="async"><span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button>`;
+  }
   return `<div class="tpl">
     <header class="tpl-head${cover ? ' has-cover' : ''}">
       <div class="tpl-intro">
@@ -1058,7 +1080,7 @@ function templateDetail(i, meta, views) {
         ${meta.description ? `<p class="tpl-summary">${esc(meta.description)}</p>` : ''}
         <ul class="tpl-tags" aria-label="Nature et technologies"><li class="kind">${esc(t.kind || i.category)}</li>${stack.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
       </div>
-      ${cover ? `<button class="tpl-cover section-img" data-view="${coverIndex}" aria-label="Agrandir : ${esc(cover.title)}"><img src="${esc(cover.url)}" alt="" decoding="async"><span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button>` : ''}
+      ${cover}
     </header>
     <div class="tpl-layout">
       <div class="tpl-main">
@@ -1102,7 +1124,8 @@ function bindTemplateDetail(root, i, views) {
     opener = null;
   /** Captures visibles (filtre appliqué) du bloc de la capture affichée : sections ou pages, dans l'ordre de la fiche. */
   const order = () => {
-    const scope = $(`[data-view="${current}"]`, layout)?.closest('.tpl-section') ?? layout;
+    const button = $(`[data-view="${current}"]`, layout);
+    const scope = button ? (button.closest('.tpl-section') ?? layout) : head;
     return $$('[data-view]', scope)
       .filter((b) => !b.closest('[hidden]'))
       .map((b) => Number(b.dataset.view));
@@ -1174,6 +1197,9 @@ function bindTemplateDetail(root, i, views) {
   $('#copy-scaffold', root)?.addEventListener('click', async () =>
     toast((await copyText(`npm run scaffold -- ${i.id} --out ../mon-projet`)) ? 'Commande copiée.' : 'Copie impossible.'),
   );
+  const full = $('.tpl-cover.full', root);
+  if (full?.dataset.ratio)
+    full.style.setProperty('--scroll-time', `${Math.min(14, Math.max(2.5, Number(full.dataset.ratio) * 1.7)).toFixed(1)}s`);
   templateViewer = { isOpen: () => viewer.isConnected && !viewer.hidden, close };
 }
 $('#detail').addEventListener('cancel', (e) => {
