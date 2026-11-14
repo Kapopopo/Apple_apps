@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-10T15:07:21.516Z",
- "count": 3615,
+ "generatedAt": "2026-11-14T21:00:35.613Z",
+ "count": 3676,
  "sources": {
   "atlas": {
    "name": "Component Atlas",
@@ -25933,6 +25933,414 @@
    "group": "wheel picker"
   },
   {
+   "id": "launch-ui/cta",
+   "name": "Appel à l’action",
+   "type": "section",
+   "category": "Appel à l’action",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Appel à l’action du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/cta/default.tsx",
+   "sourcePath": "components/sections/cta/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/cta",
+    "publicAssets": []
+   },
+   "contentHash": "11fabd7b8373f4d4",
+   "importedAt": "2026-11-14T21:00:19.017Z",
+   "dir": "items/launch-ui/cta",
+   "fileCount": 9,
+   "group": "appel a l action",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/faq",
+   "name": "Questions fréquentes",
+   "type": "section",
+   "category": "FAQ",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Questions fréquentes du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-accordion@^1.3.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "next@16.4.5",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/faq/default.tsx",
+   "sourcePath": "components/sections/faq/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/faq",
+    "publicAssets": []
+   },
+   "contentHash": "c033e713099411e1",
+   "importedAt": "2026-11-14T21:00:19.009Z",
+   "dir": "items/launch-ui/faq",
+   "fileCount": 7,
+   "group": "questions frequentes",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/footer",
+   "name": "Pied de page",
+   "type": "section",
+   "category": "Pied de page",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Pied de page du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-dropdown-menu@^2.2.1",
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "next-themes@^0.4.6",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/footer/default.tsx",
+   "sourcePath": "components/sections/footer/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/footer",
+    "publicAssets": []
+   },
+   "contentHash": "f501ff6185e0305c",
+   "importedAt": "2026-11-14T21:00:19.024Z",
+   "dir": "items/launch-ui/footer",
+   "fileCount": 10,
+   "group": "pied de page",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/hero",
+   "name": "Hero avec capture produit",
+   "type": "section",
+   "category": "Hero",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Hero avec capture produit du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "next@16.4.5",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/hero/default.tsx",
+   "sourcePath": "components/sections/hero/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/hero",
+    "publicAssets": [
+     "public/dashboard-dark.png",
+     "public/dashboard-light.png"
+    ]
+   },
+   "contentHash": "3712dbd27fdebd40",
+   "importedAt": "2026-11-14T21:00:18.964Z",
+   "dir": "items/launch-ui/hero",
+   "fileCount": 13,
+   "group": "hero avec capture produit",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/items",
+   "name": "Grille de fonctionnalités",
+   "type": "section",
+   "category": "Fonctionnalités",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Grille de fonctionnalités du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/items/default.tsx",
+   "sourcePath": "components/sections/items/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/items",
+    "publicAssets": []
+   },
+   "contentHash": "11a380d9bf148e2c",
+   "importedAt": "2026-11-14T21:00:18.989Z",
+   "dir": "items/launch-ui/items",
+   "fileCount": 6,
+   "group": "grille de fonctionnalites",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/logos",
+   "name": "Logos des technologies",
+   "type": "section",
+   "category": "Logos",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Logos des technologies du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/logos/default.tsx",
+   "sourcePath": "components/sections/logos/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/logos",
+    "publicAssets": []
+   },
+   "contentHash": "defb4ee077d3e0c4",
+   "importedAt": "2026-11-14T21:00:18.975Z",
+   "dir": "items/launch-ui/logos",
+   "fileCount": 13,
+   "group": "logos des technologies",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/navbar",
+   "name": "Barre de navigation",
+   "type": "section",
+   "category": "Navigation",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Barre de navigation du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-dialog@^1.3.1",
+    "@radix-ui/react-navigation-menu@^1.4.1",
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "next@16.4.5",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/navbar/default.tsx",
+   "sourcePath": "components/sections/navbar/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/navbar",
+    "publicAssets": []
+   },
+   "contentHash": "2d37e3608752c937",
+   "importedAt": "2026-11-14T21:00:18.952Z",
+   "dir": "items/launch-ui/navbar",
+   "fileCount": 11,
+   "group": "barre de navigation",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/pricing",
+   "name": "Tarifs en trois colonnes",
+   "type": "section",
+   "category": "Tarifs",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Tarifs en trois colonnes du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-slot@^1.5.0",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "next@16.4.5",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/pricing/default.tsx",
+   "sourcePath": "components/sections/pricing/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/pricing",
+    "publicAssets": []
+   },
+   "contentHash": "82427db868a2813f",
+   "importedAt": "2026-11-14T21:00:19.002Z",
+   "dir": "items/launch-ui/pricing",
+   "fileCount": 8,
+   "group": "tarifs en trois colonnes",
+   "isNew": true
+  },
+  {
+   "id": "launch-ui/stats",
+   "name": "Chiffres clés",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "launch-ui",
+    "template"
+   ],
+   "description": "Chiffres clés du template Launch UI (site vitrine (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "react@19.3.1",
+    "tailwind-merge@^3.7.0",
+    "tailwindcss@^4.3.4",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Launch UI",
+   "sourceId": "launch-ui",
+   "sourceUrl": "https://github.com/launch-ui/launch-ui/blob/9387bec9436335ef9a109a2efe7fbe7631976158/components/sections/stats/default.tsx",
+   "sourcePath": "components/sections/stats/default.tsx",
+   "sourceCommit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "launch-ui/template",
+    "page": "https://www.launchuicomponents.com/docs/sections/stats",
+    "publicAssets": []
+   },
+   "contentHash": "0058776cdf3e2de4",
+   "importedAt": "2026-11-14T21:00:18.996Z",
+   "dir": "items/launch-ui/stats",
+   "fileCount": 6,
+   "group": "chiffres cles",
+   "isNew": true
+  },
+  {
    "id": "launch-ui/template",
    "name": "Launch UI",
    "type": "template",
@@ -25974,13 +26382,8 @@
    "template": {
     "kind": "Site vitrine (landing page)",
     "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
-    "demo": "https://www.launchuicomponents.com",
-    "pages": [
-     {
-      "path": "/",
-      "title": "Accueil"
-     }
-    ],
+    "demo": "",
+    "pages": [],
     "install": "npm install",
     "dev": "npm run dev",
     "env": [],
@@ -25988,8 +26391,9 @@
      "public/og.jpg (3332 ko)"
     ]
    },
-   "contentHash": "e14349ad81e839ac",
+   "contentHash": "13f2d89c3e155c2e",
    "importedAt": "2026-11-10T15:06:50.345Z",
+   "updatedAt": "2026-11-14T21:00:18.885Z",
    "dir": "templates/launch-ui/template",
    "fileCount": 58
   },
@@ -28751,6 +29155,304 @@
    "group": "word rotate"
   },
   {
+   "id": "magicui-portfolio/contact",
+   "name": "Contact",
+   "type": "section",
+   "category": "Formulaires",
+   "tags": [
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Contact du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "next@16.1.1",
+    "react@^19.2.3",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/components/section/contact-section.tsx",
+   "sourcePath": "src/components/section/contact-section.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "494caef259b08df9",
+   "importedAt": "2026-11-14T21:00:34.555Z",
+   "dir": "items/magicui-portfolio/contact",
+   "fileCount": 17,
+   "group": "contact",
+   "isNew": true
+  },
+  {
+   "id": "magicui-portfolio/dock",
+   "name": "Dock de navigation flottant",
+   "type": "section",
+   "category": "Navigation",
+   "tags": [
+    "animé",
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Dock de navigation flottant du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-icons@^1.3.2",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "motion@^12.23.27",
+    "next-themes@^0.4.6",
+    "react@^19.2.3",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/components/navbar.tsx",
+   "sourcePath": "src/components/navbar.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "f0b10d5f973106ca",
+   "importedAt": "2026-11-14T21:00:34.471Z",
+   "dir": "items/magicui-portfolio/dock",
+   "fileCount": 21,
+   "group": "dock de navigation flottant",
+   "isNew": true
+  },
+  {
+   "id": "magicui-portfolio/hackathons",
+   "name": "Hackathons (frise chronologique)",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Hackathons (frise chronologique) du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "next@16.1.1",
+    "react@^19.2.3",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/components/section/hackathons-section.tsx",
+   "sourcePath": "src/components/section/hackathons-section.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "cfbcb9af6a21cae7",
+   "importedAt": "2026-11-14T21:00:34.534Z",
+   "dir": "items/magicui-portfolio/hackathons",
+   "fileCount": 18,
+   "group": "hackathons frise chronologique",
+   "isNew": true
+  },
+  {
+   "id": "magicui-portfolio/page",
+   "name": "Page portfolio (présentation, parcours, compétences)",
+   "type": "screen",
+   "category": "Portfolios",
+   "tags": [
+    "animé",
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Page portfolio (présentation, parcours, compétences) du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-accordion@^1.2.12",
+    "@radix-ui/react-avatar@^1.1.11",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "motion@^12.23.27",
+    "next@16.1.1",
+    "react@^19.2.3",
+    "react-markdown@^10.1.0",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/app/page.tsx",
+   "sourcePath": "src/app/page.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "95924c94e8047ea9",
+   "importedAt": "2026-11-14T21:00:34.436Z",
+   "dir": "items/magicui-portfolio/page",
+   "fileCount": 28,
+   "group": "page portfolio presentation parcours competences",
+   "isNew": true
+  },
+  {
+   "id": "magicui-portfolio/projects",
+   "name": "Projets (cartes vidéo)",
+   "type": "section",
+   "category": "Cartes",
+   "tags": [
+    "animé",
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Projets (cartes vidéo) du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "motion@^12.23.27",
+    "next@16.1.1",
+    "react@^19.2.3",
+    "react-markdown@^10.1.0",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/components/section/projects-section.tsx",
+   "sourcePath": "src/components/section/projects-section.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "f71ddb11df551fb9",
+   "importedAt": "2026-11-14T21:00:34.512Z",
+   "dir": "items/magicui-portfolio/projects",
+   "fileCount": 19,
+   "group": "projets cartes video",
+   "isNew": true
+  },
+  {
    "id": "magicui-portfolio/template",
    "name": "Portfolio Magic UI",
    "type": "template",
@@ -28823,6 +29525,62 @@
    "importedAt": "2026-11-10T15:07:18.667Z",
    "dir": "templates/magicui-portfolio/template",
    "fileCount": 87
+  },
+  {
+   "id": "magicui-portfolio/work",
+   "name": "Expérience professionnelle",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "magicui-portfolio",
+    "template"
+   ],
+   "description": "Expérience professionnelle du template Portfolio Magic UI (portfolio / cv en ligne) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-accordion@^1.2.12",
+    "clsx@^2.1.1",
+    "lucide-react@^0.562.0",
+    "react@^19.2.3",
+    "tailwind-merge@^3.4.0",
+    "tailwindcss@^4.1.18",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Portfolio Magic UI",
+   "sourceId": "magicui-portfolio",
+   "sourceUrl": "https://github.com/magicuidesign/portfolio/blob/5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b/src/components/section/work-section.tsx",
+   "sourcePath": "src/components/section/work-section.tsx",
+   "sourceCommit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "magicui-portfolio/template",
+    "page": "/",
+    "publicAssets": [
+     "public/atomic.png",
+     "public/buildspace.jpg",
+     "public/ib.png",
+     "public/laurier.png",
+     "public/lime.svg",
+     "public/me.png",
+     "public/mitremedia.png",
+     "public/nvidia.png",
+     "public/shopify.svg",
+     "public/splunk.svg",
+     "public/waterloo.png"
+    ]
+   },
+   "contentHash": "8dec6b5d2f57f41e",
+   "importedAt": "2026-11-14T21:00:34.495Z",
+   "dir": "items/magicui-portfolio/work",
+   "fileCount": 17,
+   "group": "experience professionnelle",
+   "isNew": true
   },
   {
    "id": "motion-primitives/accordion",
@@ -130672,6 +131430,212 @@
    "isNew": true
   },
   {
+   "id": "saas-starter/header",
+   "name": "En-tête avec menu utilisateur",
+   "type": "section",
+   "category": "Navigation",
+   "tags": [
+    "saas-starter",
+    "template"
+   ],
+   "description": "En-tête avec menu utilisateur du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "bcryptjs@^3.0.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "dotenv@^16.5.0",
+    "drizzle-orm@^0.43.1",
+    "jose@^6.0.11",
+    "lucide-react@^0.511.0",
+    "next@15.6.0-canary.59",
+    "postgres@^3.4.5",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "stripe@^18.1.0",
+    "swr@^2.3.3",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0",
+    "zod@^3.24.4"
+   ],
+   "registryDependencies": [],
+   "source": "Next.js SaaS Starter",
+   "sourceId": "saas-starter",
+   "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(dashboard)/layout.tsx",
+   "sourcePath": "app/(dashboard)/layout.tsx",
+   "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "3d8f86c273ba669d",
+   "importedAt": "2026-11-14T21:00:23.524Z",
+   "dir": "items/saas-starter/header",
+   "fileCount": 13,
+   "group": "en tete avec menu utilisateur",
+   "isNew": true
+  },
+  {
+   "id": "saas-starter/landing",
+   "name": "Page d’accueil SaaS (hero, terminal, atouts, appel à l’action)",
+   "type": "screen",
+   "category": "Pages d’accueil",
+   "tags": [
+    "saas-starter",
+    "template"
+   ],
+   "description": "Page d’accueil SaaS (hero, terminal, atouts, appel à l’action) du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.511.0",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0"
+   ],
+   "registryDependencies": [],
+   "source": "Next.js SaaS Starter",
+   "sourceId": "saas-starter",
+   "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(dashboard)/page.tsx",
+   "sourcePath": "app/(dashboard)/page.tsx",
+   "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "65796f68c2e7fe46",
+   "importedAt": "2026-11-14T21:00:23.537Z",
+   "dir": "items/saas-starter/landing",
+   "fileCount": 5,
+   "group": "page d accueil saas hero terminal atouts appel a l action",
+   "isNew": true
+  },
+  {
+   "id": "saas-starter/login",
+   "name": "Connexion et inscription",
+   "type": "screen",
+   "category": "Authentification",
+   "tags": [
+    "saas-starter",
+    "template"
+   ],
+   "description": "Connexion et inscription du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "bcryptjs@^3.0.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "dotenv@^16.5.0",
+    "drizzle-orm@^0.43.1",
+    "jose@^6.0.11",
+    "lucide-react@^0.511.0",
+    "next@15.6.0-canary.59",
+    "postgres@^3.4.5",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "stripe@^18.1.0",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0",
+    "zod@^3.24.4"
+   ],
+   "registryDependencies": [],
+   "source": "Next.js SaaS Starter",
+   "sourceId": "saas-starter",
+   "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(login)/login.tsx",
+   "sourcePath": "app/(login)/login.tsx",
+   "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/sign-in",
+    "publicAssets": []
+   },
+   "contentHash": "59dc52ca3cac6e76",
+   "importedAt": "2026-11-14T21:00:23.555Z",
+   "dir": "items/saas-starter/login",
+   "fileCount": 13,
+   "group": "connexion et inscription",
+   "isNew": true
+  },
+  {
+   "id": "saas-starter/pricing",
+   "name": "Tarifs reliés à Stripe",
+   "type": "screen",
+   "category": "Tarifs",
+   "tags": [
+    "saas-starter",
+    "template"
+   ],
+   "description": "Tarifs reliés à Stripe du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "bcryptjs@^3.0.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "dotenv@^16.5.0",
+    "drizzle-orm@^0.43.1",
+    "jose@^6.0.11",
+    "lucide-react@^0.511.0",
+    "next@15.6.0-canary.59",
+    "postgres@^3.4.5",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "react-dom@19.1.0",
+    "stripe@^18.1.0",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0",
+    "zod@^3.24.4"
+   ],
+   "registryDependencies": [],
+   "source": "Next.js SaaS Starter",
+   "sourceId": "saas-starter",
+   "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(dashboard)/pricing/page.tsx",
+   "sourcePath": "app/(dashboard)/pricing/page.tsx",
+   "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/pricing",
+    "publicAssets": []
+   },
+   "contentHash": "837b0c6cf09c26e2",
+   "importedAt": "2026-11-14T21:00:23.544Z",
+   "dir": "items/saas-starter/pricing",
+   "fileCount": 12,
+   "group": "tarifs relies a stripe",
+   "isNew": true
+  },
+  {
    "id": "saas-starter/template",
    "name": "Next.js SaaS Starter",
    "type": "template",
@@ -130759,6 +131723,504 @@
    "importedAt": "2026-11-10T15:06:54.021Z",
    "dir": "templates/saas-starter/template",
    "fileCount": 53
+  },
+  {
+   "id": "shadcn-admin/apps",
+   "name": "Intégrations (applications connectées)",
+   "type": "screen",
+   "category": "Cartes",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Intégrations (applications connectées) du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-select@^2.2.6",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/apps/index.tsx",
+   "sourcePath": "src/features/apps/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/apps",
+    "publicAssets": []
+   },
+   "contentHash": "bdc00babb2f34174",
+   "importedAt": "2026-11-14T21:00:26.528Z",
+   "dir": "items/shadcn-admin/apps",
+   "fileCount": 66,
+   "group": "integrations applications connectees",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/chats",
+   "name": "Messagerie",
+   "type": "screen",
+   "category": "IA et messages",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Messagerie du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "date-fns@^4.1.0",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/chats/index.tsx",
+   "sourcePath": "src/features/chats/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/chats",
+    "publicAssets": []
+   },
+   "contentHash": "deb882eb7c91233c",
+   "importedAt": "2026-11-14T21:00:26.492Z",
+   "dir": "items/shadcn-admin/chats",
+   "fileCount": 52,
+   "group": "messagerie",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/dashboard",
+   "name": "Tableau de bord (indicateurs, graphique, ventes)",
+   "type": "screen",
+   "category": "Tableaux de bord",
+   "tags": [
+    "dataviz",
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Tableau de bord (indicateurs, graphique, ventes) du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tabs@^1.1.13",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "recharts@^3.8.1",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/dashboard/index.tsx",
+   "sourcePath": "src/features/dashboard/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "cbf708560601c265",
+   "importedAt": "2026-11-14T21:00:26.301Z",
+   "dir": "items/shadcn-admin/dashboard",
+   "fileCount": 54,
+   "group": "tableau de bord indicateurs graphique ventes",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/overview-chart",
+   "name": "Graphique de revenus mensuels",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Graphique de revenus mensuels du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "recharts@^3.8.1",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/dashboard/components/overview.tsx",
+   "sourcePath": "src/features/dashboard/components/overview.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "4efba42389458d66",
+   "importedAt": "2026-11-14T21:00:26.352Z",
+   "dir": "items/shadcn-admin/overview-chart",
+   "fileCount": 3,
+   "group": "graphique de revenus mensuels",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/recent-sales",
+   "name": "Ventes récentes",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Ventes récentes du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-avatar@^1.1.11",
+    "clsx@^2.1.1",
+    "react@^19.2.5",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/dashboard/components/recent-sales.tsx",
+   "sourcePath": "src/features/dashboard/components/recent-sales.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "4db35a064d7e69ef",
+   "importedAt": "2026-11-14T21:00:26.358Z",
+   "dir": "items/shadcn-admin/recent-sales",
+   "fileCount": 5,
+   "group": "ventes recentes",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/settings",
+   "name": "Réglages du profil",
+   "type": "screen",
+   "category": "Formulaires",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Réglages du profil du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@hookform/resolvers@^5.2.2",
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-label@^2.1.8",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-select@^2.2.6",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "react-hook-form@^7.72.1",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.3.6",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/settings/index.tsx",
+   "sourcePath": "src/features/settings/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/settings",
+    "publicAssets": []
+   },
+   "contentHash": "c0c133e4f50ea7e5",
+   "importedAt": "2026-11-14T21:00:26.575Z",
+   "dir": "items/shadcn-admin/settings",
+   "fileCount": 56,
+   "group": "reglages du profil",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/sidebar",
+   "name": "Barre latérale d’administration",
+   "type": "section",
+   "category": "Navigation",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Barre latérale d’administration du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-collapsible@^1.1.12",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/components/layout/app-sidebar.tsx",
+   "sourcePath": "src/components/layout/app-sidebar.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "a7dc6e638d16272d",
+   "importedAt": "2026-11-14T21:00:26.253Z",
+   "dir": "items/shadcn-admin/sidebar",
+   "fileCount": 30,
+   "group": "barre laterale d administration",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/sign-in",
+   "name": "Connexion",
+   "type": "screen",
+   "category": "Authentification",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Connexion du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@hookform/resolvers@^5.2.2",
+    "@radix-ui/react-label@^2.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@tanstack/react-router@^1.168.22",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "react-hook-form@^7.72.1",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.3.6",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/auth/sign-in/index.tsx",
+   "sourcePath": "src/features/auth/sign-in/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/sign-in",
+    "publicAssets": []
+   },
+   "contentHash": "062d238535db5a3d",
+   "importedAt": "2026-11-14T21:00:26.611Z",
+   "dir": "items/shadcn-admin/sign-in",
+   "fileCount": 32,
+   "group": "connexion",
+   "isNew": true
+  },
+  {
+   "id": "shadcn-admin/tasks",
+   "name": "Tâches : tableau filtrable",
+   "type": "screen",
+   "category": "Tableaux de données",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Tâches : tableau filtrable du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@faker-js/faker@^10.4.0",
+    "@hookform/resolvers@^5.2.2",
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-checkbox@^1.3.3",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-icons@^1.3.2",
+    "@radix-ui/react-label@^2.1.8",
+    "@radix-ui/react-popover@^1.1.15",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-select@^2.2.6",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "@tanstack/react-table@^8.21.3",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "react-hook-form@^7.72.1",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.3.6",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/tasks/index.tsx",
+   "sourcePath": "src/features/tasks/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/tasks",
+    "publicAssets": []
+   },
+   "contentHash": "32192e4991f273da",
+   "importedAt": "2026-11-14T21:00:26.366Z",
+   "dir": "items/shadcn-admin/tasks",
+   "fileCount": 79,
+   "group": "taches tableau filtrable",
+   "isNew": true
   },
   {
    "id": "shadcn-admin/template",
@@ -130872,6 +132334,74 @@
    "importedAt": "2026-11-10T15:07:00.179Z",
    "dir": "templates/shadcn-admin/template",
    "fileCount": 259
+  },
+  {
+   "id": "shadcn-admin/users",
+   "name": "Utilisateurs : tableau et invitations",
+   "type": "screen",
+   "category": "Tableaux de données",
+   "tags": [
+    "shadcn-admin",
+    "template"
+   ],
+   "description": "Utilisateurs : tableau et invitations du template Shadcn Admin (application d’administration) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@faker-js/faker@^10.4.0",
+    "@hookform/resolvers@^5.2.2",
+    "@radix-ui/react-alert-dialog@^1.1.15",
+    "@radix-ui/react-avatar@^1.1.11",
+    "@radix-ui/react-checkbox@^1.3.3",
+    "@radix-ui/react-dialog@^1.1.15",
+    "@radix-ui/react-direction@^1.1.1",
+    "@radix-ui/react-dropdown-menu@^2.1.16",
+    "@radix-ui/react-icons@^1.3.2",
+    "@radix-ui/react-label@^2.1.8",
+    "@radix-ui/react-popover@^1.1.15",
+    "@radix-ui/react-radio-group@^1.3.8",
+    "@radix-ui/react-scroll-area@^1.2.10",
+    "@radix-ui/react-select@^2.2.6",
+    "@radix-ui/react-separator@^1.1.8",
+    "@radix-ui/react-slot@^1.2.4",
+    "@radix-ui/react-tooltip@^1.2.8",
+    "@tanstack/react-router@^1.168.22",
+    "@tanstack/react-table@^8.21.3",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "cmdk@1.1.1",
+    "lucide-react@^1.8.0",
+    "react@^19.2.5",
+    "react-hook-form@^7.72.1",
+    "sonner@^2.0.7",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss@^4.2.2",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.3.6",
+    "zustand@^5.0.12"
+   ],
+   "registryDependencies": [],
+   "source": "Shadcn Admin",
+   "sourceId": "shadcn-admin",
+   "sourceUrl": "https://github.com/satnaing/shadcn-admin/blob/e16c87f213a5ba5e45964e9b67c792105ec74d26/src/features/users/index.tsx",
+   "sourcePath": "src/features/users/index.tsx",
+   "sourceCommit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "shadcn-admin/template",
+    "page": "/users",
+    "publicAssets": []
+   },
+   "contentHash": "8fcd2385f05e2333",
+   "importedAt": "2026-11-14T21:00:26.428Z",
+   "dir": "items/shadcn-admin/users",
+   "fileCount": 82,
+   "group": "utilisateurs tableau et invitations",
+   "isNew": true
   },
   {
    "id": "shadcn/accordion",
@@ -137699,6 +139229,1466 @@
    "importedAt": "2026-11-10T15:07:15.127Z",
    "dir": "templates/starter-blog/template",
    "fileCount": 103
+  },
+  {
+   "id": "studio-admin/analytics-kpis",
+   "name": "Indicateurs d’audience",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Indicateurs d’audience du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/analytics/_components/analytics-kpi-strip.tsx",
+   "sourcePath": "src/app/(main)/dashboard/analytics/_components/analytics-kpi-strip.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/analytics",
+    "publicAssets": []
+   },
+   "contentHash": "928bd654be44fa37",
+   "importedAt": "2026-11-14T21:00:31.628Z",
+   "dir": "items/studio-admin/analytics-kpis",
+   "fileCount": 7,
+   "group": "indicateurs d audience",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/analytics-pages",
+   "name": "Performance des pages (tableau)",
+   "type": "section",
+   "category": "Tableaux de données",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Performance des pages (tableau) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/analytics/_components/top-pages.tsx",
+   "sourcePath": "src/app/(main)/dashboard/analytics/_components/top-pages.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/analytics",
+    "publicAssets": []
+   },
+   "contentHash": "8d4ba22edbc70cbb",
+   "importedAt": "2026-11-14T21:00:31.654Z",
+   "dir": "items/studio-admin/analytics-pages",
+   "fileCount": 7,
+   "group": "performance des pages tableau",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/analytics-quality",
+   "name": "Qualité du trafic (graphique)",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Qualité du trafic (graphique) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/analytics/_components/traffic-quality.tsx",
+   "sourcePath": "src/app/(main)/dashboard/analytics/_components/traffic-quality.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/analytics",
+    "publicAssets": []
+   },
+   "contentHash": "0d8ad9c63e165521",
+   "importedAt": "2026-11-14T21:00:31.638Z",
+   "dir": "items/studio-admin/analytics-quality",
+   "fileCount": 7,
+   "group": "qualite du trafic graphique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/analytics-realtime",
+   "name": "Visiteurs en temps réel",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Visiteurs en temps réel du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/analytics/_components/realtime-visitors.tsx",
+   "sourcePath": "src/app/(main)/dashboard/analytics/_components/realtime-visitors.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/analytics",
+    "publicAssets": []
+   },
+   "contentHash": "b048ea25631c66c7",
+   "importedAt": "2026-11-14T21:00:31.645Z",
+   "dir": "items/studio-admin/analytics-realtime",
+   "fileCount": 7,
+   "group": "visiteurs en temps reel",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/analytics-sources",
+   "name": "Sources de trafic",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Sources de trafic du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/analytics/_components/top-traffic-sources.tsx",
+   "sourcePath": "src/app/(main)/dashboard/analytics/_components/top-traffic-sources.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/analytics",
+    "publicAssets": []
+   },
+   "contentHash": "c16aed3610208337",
+   "importedAt": "2026-11-14T21:00:31.665Z",
+   "dir": "items/studio-admin/analytics-sources",
+   "fileCount": 8,
+   "group": "sources de trafic",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/crm-kpis",
+   "name": "Pipeline commercial (indicateurs)",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Pipeline commercial (indicateurs) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/crm/_components/kpi-cards.tsx",
+   "sourcePath": "src/app/(main)/dashboard/crm/_components/kpi-cards.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/crm",
+    "publicAssets": []
+   },
+   "contentHash": "786cbf749889d1a5",
+   "importedAt": "2026-11-14T21:00:31.529Z",
+   "dir": "items/studio-admin/crm-kpis",
+   "fileCount": 7,
+   "group": "pipeline commercial indicateurs",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/crm-lead-flow",
+   "name": "Flux de prospects (graphique)",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Flux de prospects (graphique) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/crm/_components/pipeline-activity.tsx",
+   "sourcePath": "src/app/(main)/dashboard/crm/_components/pipeline-activity.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/crm",
+    "publicAssets": []
+   },
+   "contentHash": "9d50f1593a5e8e17",
+   "importedAt": "2026-11-14T21:00:31.537Z",
+   "dir": "items/studio-admin/crm-lead-flow",
+   "fileCount": 9,
+   "group": "flux de prospects graphique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/crm-meetings",
+   "name": "Rendez-vous et objectif du mois",
+   "type": "section",
+   "category": "Calendriers",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Rendez-vous et objectif du mois du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/crm/_components/task-reminders.tsx",
+   "sourcePath": "src/app/(main)/dashboard/crm/_components/task-reminders.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/crm",
+    "publicAssets": []
+   },
+   "contentHash": "31105912338435ae",
+   "importedAt": "2026-11-14T21:00:31.546Z",
+   "dir": "items/studio-admin/crm-meetings",
+   "fileCount": 7,
+   "group": "rendez vous et objectif du mois",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/crm-opportunities",
+   "name": "Opportunités récentes (tableau)",
+   "type": "section",
+   "category": "Tableaux de données",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Opportunités récentes (tableau) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@tanstack/react-table@^9.3.1",
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.6.7"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/crm/_components/opportunities-section.tsx",
+   "sourcePath": "src/app/(main)/dashboard/crm/_components/opportunities-section.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/crm",
+    "publicAssets": []
+   },
+   "contentHash": "2d38bea60c2f0f7e",
+   "importedAt": "2026-11-14T21:00:31.555Z",
+   "dir": "items/studio-admin/crm-opportunities",
+   "fileCount": 17,
+   "group": "opportunites recentes tableau",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/default-activity",
+   "name": "Activité clients (graphique)",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Activité clients (graphique) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/default/_components/performance-overview.tsx",
+   "sourcePath": "src/app/(main)/dashboard/default/_components/performance-overview.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/default",
+    "publicAssets": []
+   },
+   "contentHash": "b1b6b7207435832a",
+   "importedAt": "2026-11-14T21:00:31.501Z",
+   "dir": "items/studio-admin/default-activity",
+   "fileCount": 9,
+   "group": "activite clients graphique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/default-customers",
+   "name": "Clients récents (tableau)",
+   "type": "section",
+   "category": "Tableaux de données",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Clients récents (tableau) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@tanstack/react-table@^9.3.1",
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0",
+    "zod@^4.6.7"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/default/_components/subscriber-overview.tsx",
+   "sourcePath": "src/app/(main)/dashboard/default/_components/subscriber-overview.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/default",
+    "publicAssets": []
+   },
+   "contentHash": "4386c09aa73ee64b",
+   "importedAt": "2026-11-14T21:00:31.512Z",
+   "dir": "items/studio-admin/default-customers",
+   "fileCount": 19,
+   "group": "clients recents tableau",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/default-metrics",
+   "name": "Indicateurs clés (4 cartes)",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Indicateurs clés (4 cartes) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/default/_components/metric-cards.tsx",
+   "sourcePath": "src/app/(main)/dashboard/default/_components/metric-cards.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/default",
+    "publicAssets": []
+   },
+   "contentHash": "198fbbbc3779a824",
+   "importedAt": "2026-11-14T21:00:31.491Z",
+   "dir": "items/studio-admin/default-metrics",
+   "fileCount": 7,
+   "group": "indicateurs cles cartes",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-inventory",
+   "name": "Inventaire",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Inventaire du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/inventory.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/inventory.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "35ca0178ebf11459",
+   "importedAt": "2026-11-14T21:00:31.794Z",
+   "dir": "items/studio-admin/ecommerce-inventory",
+   "fileCount": 8,
+   "group": "inventaire",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-kpis",
+   "name": "Ventes de la boutique (indicateurs et graphique)",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Ventes de la boutique (indicateurs et graphique) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/kpi-strip.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/kpi-strip.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "d2667abee8cb3a78",
+   "importedAt": "2026-11-14T21:00:31.758Z",
+   "dir": "items/studio-admin/ecommerce-kpis",
+   "fileCount": 7,
+   "group": "ventes de la boutique indicateurs et graphique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-orders",
+   "name": "Commandes récentes (tableau)",
+   "type": "section",
+   "category": "Tableaux de données",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Commandes récentes (tableau) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "@tanstack/react-table@^9.3.1",
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/recent-orders.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/recent-orders.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "aa9bcea10ffca7fb",
+   "importedAt": "2026-11-14T21:00:31.821Z",
+   "dir": "items/studio-admin/ecommerce-orders",
+   "fileCount": 19,
+   "group": "commandes recentes tableau",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-products",
+   "name": "Meilleurs produits",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Meilleurs produits du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/top-products.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/top-products.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "dbb9b397099bea8d",
+   "importedAt": "2026-11-14T21:00:31.781Z",
+   "dir": "items/studio-admin/ecommerce-products",
+   "fileCount": 7,
+   "group": "meilleurs produits",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-reviews",
+   "name": "Avis clients",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Avis clients du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/customer-reviews.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/customer-reviews.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "4004bcda651f6898",
+   "importedAt": "2026-11-14T21:00:31.808Z",
+   "dir": "items/studio-admin/ecommerce-reviews",
+   "fileCount": 8,
+   "group": "avis clients",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/ecommerce-traffic",
+   "name": "Trafic de la boutique",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Trafic de la boutique du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/ecommerce/_components/store-traffic.tsx",
+   "sourcePath": "src/app/(main)/dashboard/ecommerce/_components/store-traffic.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/ecommerce",
+    "publicAssets": []
+   },
+   "contentHash": "96ff7ccee24d77dd",
+   "importedAt": "2026-11-14T21:00:31.771Z",
+   "dir": "items/studio-admin/ecommerce-traffic",
+   "fileCount": 7,
+   "group": "trafic de la boutique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-actions",
+   "name": "Virement rapide et raccourcis",
+   "type": "section",
+   "category": "Paiement",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Virement rapide et raccourcis du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/quick-actions.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/quick-actions.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "b0f8bbc12520faf7",
+   "importedAt": "2026-11-14T21:00:31.617Z",
+   "dir": "items/studio-admin/finance-actions",
+   "fileCount": 14,
+   "group": "virement rapide et raccourcis",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-allocation",
+   "name": "Répartition des comptes",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Répartition des comptes du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/balance-distribution-card.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/balance-distribution-card.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "08cd6acb2767f69b",
+   "importedAt": "2026-11-14T21:00:31.592Z",
+   "dir": "items/studio-admin/finance-allocation",
+   "fileCount": 9,
+   "group": "repartition des comptes",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-bills",
+   "name": "Factures à venir",
+   "type": "section",
+   "category": "Paiement",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Factures à venir du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "simple-icons@^16.37.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/upcoming-transactions.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/upcoming-transactions.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "1543d76388001bc2",
+   "importedAt": "2026-11-14T21:00:31.609Z",
+   "dir": "items/studio-admin/finance-bills",
+   "fileCount": 9,
+   "group": "factures a venir",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-income",
+   "name": "Sources de revenus",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Sources de revenus du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/income-breakdown.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/income-breakdown.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "a1aa711a47d88eb8",
+   "importedAt": "2026-11-14T21:00:31.576Z",
+   "dir": "items/studio-admin/finance-income",
+   "fileCount": 7,
+   "group": "sources de revenus",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-kpis",
+   "name": "Patrimoine et trésorerie (indicateurs)",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Patrimoine et trésorerie (indicateurs) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/overview-kpis.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/overview-kpis.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "b451159858827665",
+   "importedAt": "2026-11-14T21:00:31.569Z",
+   "dir": "items/studio-admin/finance-kpis",
+   "fileCount": 7,
+   "group": "patrimoine et tresorerie indicateurs",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-spending",
+   "name": "Dépenses de la semaine (graphique)",
+   "type": "section",
+   "category": "Graphiques",
+   "tags": [
+    "dataviz",
+    "studio-admin",
+    "template"
+   ],
+   "description": "Dépenses de la semaine (graphique) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "recharts@^3.8.0",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/transactions-overview-card.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/transactions-overview-card.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "3fa548234d778d5c",
+   "importedAt": "2026-11-14T21:00:31.584Z",
+   "dir": "items/studio-admin/finance-spending",
+   "fileCount": 9,
+   "group": "depenses de la semaine graphique",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/finance-wallet",
+   "name": "Portefeuille de cartes",
+   "type": "section",
+   "category": "Paiement",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Portefeuille de cartes du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "simple-icons@^16.37.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/wallet.tsx",
+   "sourcePath": "src/app/(main)/dashboard/finance/_components/wallet.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+   },
+   "contentHash": "ebb3cd4e28384597",
+   "importedAt": "2026-11-14T21:00:31.601Z",
+   "dir": "items/studio-admin/finance-wallet",
+   "fileCount": 8,
+   "group": "portefeuille de cartes",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-calendar",
+   "name": "Calendrier mensuel",
+   "type": "section",
+   "category": "Calendriers",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Calendrier mensuel du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "react-day-picker@^10.0.2",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/calendar-panel.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/calendar-panel.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "188123d329fc8124",
+   "importedAt": "2026-11-14T21:00:31.720Z",
+   "dir": "items/studio-admin/productivity-calendar",
+   "fileCount": 8,
+   "group": "calendrier mensuel",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-focus",
+   "name": "Minuteur de concentration",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Minuteur de concentration du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/focus-card.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/focus-card.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "3c95b6c81bffbe17",
+   "importedAt": "2026-11-14T21:00:31.733Z",
+   "dir": "items/studio-admin/productivity-focus",
+   "fileCount": 7,
+   "group": "minuteur de concentration",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-notes",
+   "name": "Notes récentes",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Notes récentes du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/recent-notes-card.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/recent-notes-card.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "5841e5964a55f877",
+   "importedAt": "2026-11-14T21:00:31.747Z",
+   "dir": "items/studio-admin/productivity-notes",
+   "fileCount": 7,
+   "group": "notes recentes",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-projects",
+   "name": "Projets en cours",
+   "type": "section",
+   "category": "Cartes",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Projets en cours du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "date-fns@^4.4.0",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/projects-section.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/projects-section.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "f55186c44b35fd49",
+   "importedAt": "2026-11-14T21:00:31.705Z",
+   "dir": "items/studio-admin/productivity-projects",
+   "fileCount": 10,
+   "group": "projets en cours",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-summary",
+   "name": "Résumé du jour (3 cartes)",
+   "type": "section",
+   "category": "Indicateurs",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Résumé du jour (3 cartes) du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/summary-cards.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/summary-cards.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "cf69e0eda8edc18b",
+   "importedAt": "2026-11-14T21:00:31.678Z",
+   "dir": "items/studio-admin/productivity-summary",
+   "fileCount": 6,
+   "group": "resume du jour cartes",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/productivity-tasks",
+   "name": "Tâches du jour",
+   "type": "section",
+   "category": "Listes et tâches",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Tâches du jour du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "lucide-react@^1.71.0",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/productivity/_components/tasks-section.tsx",
+   "sourcePath": "src/app/(main)/dashboard/productivity/_components/tasks-section.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/productivity",
+    "publicAssets": []
+   },
+   "contentHash": "94499e05ddabc999",
+   "importedAt": "2026-11-14T21:00:31.691Z",
+   "dir": "items/studio-admin/productivity-tasks",
+   "fileCount": 9,
+   "group": "taches du jour",
+   "isNew": true
+  },
+  {
+   "id": "studio-admin/sidebar",
+   "name": "Barre latérale de tableau de bord",
+   "type": "section",
+   "category": "Navigation",
+   "tags": [
+    "studio-admin",
+    "template"
+   ],
+   "description": "Barre latérale de tableau de bord du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "cn@^0.5.2",
+    "geist@^1.9.2",
+    "lucide-react@^1.71.0",
+    "next@^16.4.6",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "simple-icons@^16.37.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0",
+    "zustand@^5.1.0"
+   ],
+   "registryDependencies": [],
+   "source": "Studio Admin",
+   "sourceId": "studio-admin",
+   "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/_components/sidebar/app-sidebar.tsx",
+   "sourcePath": "src/app/(main)/dashboard/_components/sidebar/app-sidebar.tsx",
+   "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+   "license": "MIT",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/default",
+    "publicAssets": []
+   },
+   "contentHash": "8fece78065764a54",
+   "importedAt": "2026-11-14T21:00:31.453Z",
+   "dir": "items/studio-admin/sidebar",
+   "fileCount": 39,
+   "group": "barre laterale de tableau de bord",
+   "isNew": true
   },
   {
    "id": "studio-admin/template",

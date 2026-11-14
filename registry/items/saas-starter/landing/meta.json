@@ -1,0 +1,64 @@
+{
+  "id": "saas-starter/landing",
+  "name": "Page d’accueil SaaS (hero, terminal, atouts, appel à l’action)",
+  "type": "screen",
+  "category": "Pages d’accueil",
+  "tags": [
+    "saas-starter",
+    "template"
+  ],
+  "description": "Page d’accueil SaaS (hero, terminal, atouts, appel à l’action) du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+  "framework": "react",
+  "dependencies": [
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "lucide-react@^0.511.0",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0"
+  ],
+  "registryDependencies": [],
+  "source": "Next.js SaaS Starter",
+  "sourceId": "saas-starter",
+  "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(dashboard)/page.tsx",
+  "sourcePath": "app/(dashboard)/page.tsx",
+  "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Vercel",
+  "files": [
+    {
+      "path": "app/(dashboard)/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/terminal.tsx",
+      "role": "source"
+    },
+    {
+      "path": "lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+  },
+  "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/",
+    "publicAssets": []
+  },
+  "contentHash": "65796f68c2e7fe46",
+  "importedAt": "2026-11-14T21:00:23.537Z"
+}

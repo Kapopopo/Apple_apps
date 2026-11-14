@@ -378,15 +378,114 @@
       "id": "launch-ui",
       "name": "Launch UI",
       "repo": "https://github.com/launch-ui/launch-ui",
-      "demo": "https://www.launchuicomponents.com",
+      "demo": "",
       "kind": "Site vitrine (landing page)",
       "category": "Sites vitrines",
       "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
       "description": "Landing page complète et récente : hero, logos, fonctionnalités, statistiques, tarifs, FAQ, appel à l’action et pied de page, en sections réutilisables.",
-      "pages": [
+      "pages": [],
+      "styles": [
+        "app/globals.css"
+      ],
+      "sections": [
         {
-          "path": "/",
-          "title": "Accueil"
+          "slug": "navbar",
+          "name": "Barre de navigation",
+          "category": "Navigation",
+          "entry": [
+            "components/sections/navbar/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/navbar",
+          "find": "#example-default header",
+          "isolate": true
+        },
+        {
+          "slug": "hero",
+          "name": "Hero avec capture produit",
+          "category": "Hero",
+          "entry": [
+            "components/sections/hero/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/hero",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "logos",
+          "name": "Logos des technologies",
+          "category": "Logos",
+          "entry": [
+            "components/sections/logos/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/logos",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "items",
+          "name": "Grille de fonctionnalités",
+          "category": "Fonctionnalités",
+          "entry": [
+            "components/sections/items/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/items",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "stats",
+          "name": "Chiffres clés",
+          "category": "Indicateurs",
+          "entry": [
+            "components/sections/stats/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/stats",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "pricing",
+          "name": "Tarifs en trois colonnes",
+          "category": "Tarifs",
+          "entry": [
+            "components/sections/pricing/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/pricing",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "faq",
+          "name": "Questions fréquentes",
+          "category": "FAQ",
+          "entry": [
+            "components/sections/faq/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/faq",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "cta",
+          "name": "Appel à l’action",
+          "category": "Appel à l’action",
+          "entry": [
+            "components/sections/cta/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/cta",
+          "find": "#example-default section",
+          "isolate": true
+        },
+        {
+          "slug": "footer",
+          "name": "Pied de page",
+          "category": "Pied de page",
+          "entry": [
+            "components/sections/footer/default.tsx"
+          ],
+          "page": "https://www.launchuicomponents.com/docs/sections/footer",
+          "find": "#example-default footer",
+          "isolate": true
         }
       ]
     },
@@ -415,6 +514,54 @@
         {
           "path": "/sign-up",
           "title": "Inscription"
+        }
+      ],
+      "styles": [
+        "app/globals.css"
+      ],
+      "sections": [
+        {
+          "slug": "header",
+          "name": "En-tête avec menu utilisateur",
+          "category": "Navigation",
+          "entry": [
+            "app/(dashboard)/layout.tsx"
+          ],
+          "page": "/",
+          "find": "header"
+        },
+        {
+          "slug": "landing",
+          "name": "Page d’accueil SaaS (hero, terminal, atouts, appel à l’action)",
+          "category": "Pages d’accueil",
+          "type": "screen",
+          "entry": [
+            "app/(dashboard)/page.tsx"
+          ],
+          "page": "/",
+          "find": "main"
+        },
+        {
+          "slug": "pricing",
+          "name": "Tarifs reliés à Stripe",
+          "category": "Tarifs",
+          "type": "screen",
+          "entry": [
+            "app/(dashboard)/pricing/page.tsx"
+          ],
+          "page": "/pricing",
+          "find": "main"
+        },
+        {
+          "slug": "login",
+          "name": "Connexion et inscription",
+          "category": "Authentification",
+          "type": "screen",
+          "entry": [
+            "app/(login)/login.tsx"
+          ],
+          "page": "/sign-in",
+          "find": "@viewport"
         }
       ]
     },
@@ -456,6 +603,121 @@
           "path": "/sign-in",
           "title": "Connexion"
         }
+      ],
+      "styles": [
+        "src/styles/index.css"
+      ],
+      "sections": [
+        {
+          "slug": "sidebar",
+          "name": "Barre latérale d’administration",
+          "category": "Navigation",
+          "entry": [
+            "src/components/layout/app-sidebar.tsx"
+          ],
+          "page": "/",
+          "find": "[data-slot=sidebar]"
+        },
+        {
+          "slug": "dashboard",
+          "name": "Tableau de bord (indicateurs, graphique, ventes)",
+          "category": "Tableaux de bord",
+          "type": "screen",
+          "entry": [
+            "src/features/dashboard/index.tsx"
+          ],
+          "page": "/",
+          "find": "main"
+        },
+        {
+          "slug": "overview-chart",
+          "name": "Graphique de revenus mensuels",
+          "category": "Graphiques",
+          "entry": [
+            "src/features/dashboard/components/overview.tsx"
+          ],
+          "page": "/",
+          "find": "[data-slot=card-content]",
+          "text": "Jan Feb Mar"
+        },
+        {
+          "slug": "recent-sales",
+          "name": "Ventes récentes",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/features/dashboard/components/recent-sales.tsx"
+          ],
+          "page": "/",
+          "find": "[data-slot=card-content]",
+          "text": "Olivia Martin"
+        },
+        {
+          "slug": "tasks",
+          "name": "Tâches : tableau filtrable",
+          "category": "Tableaux de données",
+          "type": "screen",
+          "entry": [
+            "src/features/tasks/index.tsx"
+          ],
+          "page": "/tasks",
+          "find": "main"
+        },
+        {
+          "slug": "users",
+          "name": "Utilisateurs : tableau et invitations",
+          "category": "Tableaux de données",
+          "type": "screen",
+          "entry": [
+            "src/features/users/index.tsx"
+          ],
+          "page": "/users",
+          "find": "main"
+        },
+        {
+          "slug": "chats",
+          "name": "Messagerie",
+          "category": "IA et messages",
+          "type": "screen",
+          "entry": [
+            "src/features/chats/index.tsx"
+          ],
+          "page": "/chats",
+          "find": "main"
+        },
+        {
+          "slug": "apps",
+          "name": "Intégrations (applications connectées)",
+          "category": "Cartes",
+          "type": "screen",
+          "entry": [
+            "src/features/apps/index.tsx"
+          ],
+          "page": "/apps",
+          "find": "main"
+        },
+        {
+          "slug": "settings",
+          "name": "Réglages du profil",
+          "category": "Formulaires",
+          "type": "screen",
+          "entry": [
+            "src/features/settings/index.tsx",
+            "src/features/settings/profile/index.tsx"
+          ],
+          "page": "/settings",
+          "find": "main"
+        },
+        {
+          "slug": "sign-in",
+          "name": "Connexion",
+          "category": "Authentification",
+          "type": "screen",
+          "entry": [
+            "src/features/auth/sign-in/index.tsx"
+          ],
+          "page": "/sign-in",
+          "find": "@viewport"
+        }
       ]
     },
     {
@@ -492,6 +754,369 @@
           "path": "/dashboard/ecommerce",
           "title": "E-commerce"
         }
+      ],
+      "styles": [
+        "src/app/globals.css"
+      ],
+      "sections": [
+        {
+          "slug": "sidebar",
+          "name": "Barre latérale de tableau de bord",
+          "category": "Navigation",
+          "entry": [
+            "src/app/(main)/dashboard/_components/sidebar/app-sidebar.tsx"
+          ],
+          "page": "/dashboard/default",
+          "find": "[data-slot=sidebar]"
+        },
+        {
+          "slug": "default-metrics",
+          "name": "Indicateurs clés (4 cartes)",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/default/_components/metric-cards.tsx"
+          ],
+          "page": "/dashboard/default",
+          "find": "[data-slot=card]",
+          "text": "Total Revenue",
+          "up": 1
+        },
+        {
+          "slug": "default-activity",
+          "name": "Activité clients (graphique)",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/default/_components/performance-overview.tsx"
+          ],
+          "page": "/dashboard/default",
+          "find": "[data-slot=card]",
+          "text": "Customer Activity"
+        },
+        {
+          "slug": "default-customers",
+          "name": "Clients récents (tableau)",
+          "category": "Tableaux de données",
+          "entry": [
+            "src/app/(main)/dashboard/default/_components/subscriber-overview.tsx"
+          ],
+          "page": "/dashboard/default",
+          "find": "[data-slot=card]",
+          "text": "Recent customer records"
+        },
+        {
+          "slug": "crm-kpis",
+          "name": "Pipeline commercial (indicateurs)",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/crm/_components/kpi-cards.tsx"
+          ],
+          "page": "/dashboard/crm",
+          "find": "section",
+          "text": "Pipeline Overview"
+        },
+        {
+          "slug": "crm-lead-flow",
+          "name": "Flux de prospects (graphique)",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/crm/_components/pipeline-activity.tsx"
+          ],
+          "page": "/dashboard/crm",
+          "find": "[data-slot=card]",
+          "text": "Qualified Lead Flow"
+        },
+        {
+          "slug": "crm-meetings",
+          "name": "Rendez-vous et objectif du mois",
+          "category": "Calendriers",
+          "entry": [
+            "src/app/(main)/dashboard/crm/_components/task-reminders.tsx"
+          ],
+          "page": "/dashboard/crm",
+          "find": "section",
+          "text": "Upcoming Meetings"
+        },
+        {
+          "slug": "crm-opportunities",
+          "name": "Opportunités récentes (tableau)",
+          "category": "Tableaux de données",
+          "entry": [
+            "src/app/(main)/dashboard/crm/_components/opportunities-section.tsx"
+          ],
+          "page": "/dashboard/crm",
+          "find": "section",
+          "text": "Recent Opportunities"
+        },
+        {
+          "slug": "finance-kpis",
+          "name": "Patrimoine et trésorerie (indicateurs)",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/overview-kpis.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Net worth",
+          "up": 1
+        },
+        {
+          "slug": "finance-income",
+          "name": "Sources de revenus",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/income-breakdown.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Income sources"
+        },
+        {
+          "slug": "finance-spending",
+          "name": "Dépenses de la semaine (graphique)",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/transactions-overview-card.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Spending Overview"
+        },
+        {
+          "slug": "finance-allocation",
+          "name": "Répartition des comptes",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/balance-distribution-card.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Account Allocation"
+        },
+        {
+          "slug": "finance-wallet",
+          "name": "Portefeuille de cartes",
+          "category": "Paiement",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/wallet.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Revolut"
+        },
+        {
+          "slug": "finance-bills",
+          "name": "Factures à venir",
+          "category": "Paiement",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/upcoming-transactions.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Upcoming Bills"
+        },
+        {
+          "slug": "finance-actions",
+          "name": "Virement rapide et raccourcis",
+          "category": "Paiement",
+          "entry": [
+            "src/app/(main)/dashboard/finance/_components/quick-actions.tsx"
+          ],
+          "page": "/dashboard/finance",
+          "find": "[data-slot=card]",
+          "text": "Quick Transfer",
+          "up": 1
+        },
+        {
+          "slug": "analytics-kpis",
+          "name": "Indicateurs d’audience",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/analytics/_components/analytics-kpi-strip.tsx"
+          ],
+          "page": "/dashboard/analytics",
+          "find": "[data-slot=card]",
+          "text": "Unique Visitors",
+          "up": 1
+        },
+        {
+          "slug": "analytics-quality",
+          "name": "Qualité du trafic (graphique)",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/analytics/_components/traffic-quality.tsx"
+          ],
+          "page": "/dashboard/analytics",
+          "find": "[data-slot=card]",
+          "text": "Traffic Quality"
+        },
+        {
+          "slug": "analytics-realtime",
+          "name": "Visiteurs en temps réel",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/analytics/_components/realtime-visitors.tsx"
+          ],
+          "page": "/dashboard/analytics",
+          "find": "[data-slot=card]",
+          "text": "Realtime Visitors"
+        },
+        {
+          "slug": "analytics-pages",
+          "name": "Performance des pages (tableau)",
+          "category": "Tableaux de données",
+          "entry": [
+            "src/app/(main)/dashboard/analytics/_components/top-pages.tsx"
+          ],
+          "page": "/dashboard/analytics",
+          "find": "[data-slot=card]",
+          "text": "Page Performance"
+        },
+        {
+          "slug": "analytics-sources",
+          "name": "Sources de trafic",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/analytics/_components/top-traffic-sources.tsx"
+          ],
+          "page": "/dashboard/analytics",
+          "find": "[data-slot=card]",
+          "text": "Traffic Sources"
+        },
+        {
+          "slug": "productivity-summary",
+          "name": "Résumé du jour (3 cartes)",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/summary-cards.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "[data-slot=card]",
+          "text": "Deep Work",
+          "up": 1
+        },
+        {
+          "slug": "productivity-tasks",
+          "name": "Tâches du jour",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/tasks-section.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "section section",
+          "text": "Tasks"
+        },
+        {
+          "slug": "productivity-projects",
+          "name": "Projets en cours",
+          "category": "Cartes",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/projects-section.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "section section",
+          "text": "Projects"
+        },
+        {
+          "slug": "productivity-calendar",
+          "name": "Calendrier mensuel",
+          "category": "Calendriers",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/calendar-panel.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "[data-slot=card]",
+          "text": "Mo Tu We",
+          "verify": false
+        },
+        {
+          "slug": "productivity-focus",
+          "name": "Minuteur de concentration",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/focus-card.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "[data-slot=card]",
+          "text": "Full focus"
+        },
+        {
+          "slug": "productivity-notes",
+          "name": "Notes récentes",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/app/(main)/dashboard/productivity/_components/recent-notes-card.tsx"
+          ],
+          "page": "/dashboard/productivity",
+          "find": "[data-slot=card]",
+          "text": "Recent Notes"
+        },
+        {
+          "slug": "ecommerce-kpis",
+          "name": "Ventes de la boutique (indicateurs et graphique)",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/kpi-strip.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Total Sales",
+          "up": 2
+        },
+        {
+          "slug": "ecommerce-traffic",
+          "name": "Trafic de la boutique",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/store-traffic.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Store Traffic"
+        },
+        {
+          "slug": "ecommerce-products",
+          "name": "Meilleurs produits",
+          "category": "Graphiques",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/top-products.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Top Products"
+        },
+        {
+          "slug": "ecommerce-inventory",
+          "name": "Inventaire",
+          "category": "Indicateurs",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/inventory.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Inventory"
+        },
+        {
+          "slug": "ecommerce-reviews",
+          "name": "Avis clients",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/customer-reviews.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Reviews"
+        },
+        {
+          "slug": "ecommerce-orders",
+          "name": "Commandes récentes (tableau)",
+          "category": "Tableaux de données",
+          "entry": [
+            "src/app/(main)/dashboard/ecommerce/_components/recent-orders.tsx"
+          ],
+          "page": "/dashboard/ecommerce",
+          "find": "[data-slot=card]",
+          "text": "Recent Orders"
+        }
       ]
     },
     {
@@ -523,6 +1148,73 @@
         {
           "path": "/blog",
           "title": "Blog"
+        }
+      ],
+      "styles": [
+        "src/app/globals.css"
+      ],
+      "sections": [
+        {
+          "slug": "page",
+          "name": "Page portfolio (présentation, parcours, compétences)",
+          "category": "Portfolios",
+          "type": "screen",
+          "entry": [
+            "src/app/page.tsx"
+          ],
+          "page": "/",
+          "find": "main"
+        },
+        {
+          "slug": "dock",
+          "name": "Dock de navigation flottant",
+          "category": "Navigation",
+          "entry": [
+            "src/components/navbar.tsx"
+          ],
+          "page": "/",
+          "find": ".fixed.inset-x-0.bottom-4 > *",
+          "isolate": true
+        },
+        {
+          "slug": "work",
+          "name": "Expérience professionnelle",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/components/section/work-section.tsx"
+          ],
+          "page": "/",
+          "find": "main > section#work"
+        },
+        {
+          "slug": "projects",
+          "name": "Projets (cartes vidéo)",
+          "category": "Cartes",
+          "entry": [
+            "src/components/section/projects-section.tsx"
+          ],
+          "page": "/",
+          "find": "main > section#projects"
+        },
+        {
+          "slug": "hackathons",
+          "name": "Hackathons (frise chronologique)",
+          "category": "Listes et tâches",
+          "entry": [
+            "src/components/section/hackathons-section.tsx"
+          ],
+          "page": "/",
+          "find": "main > section#hackathons"
+        },
+        {
+          "slug": "contact",
+          "name": "Contact",
+          "category": "Formulaires",
+          "entry": [
+            "src/components/section/contact-section.tsx"
+          ],
+          "page": "/",
+          "find": "main > section#contact"
         }
       ]
     }

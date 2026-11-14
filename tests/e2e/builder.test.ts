@@ -127,6 +127,40 @@ test('aperçu composé de la page et éditeur de thème', async (t) => {
   await page.evaluate(`document.querySelector('#detail').close(); true`);
 });
 
+test('template : sections capturées, ajout d’une section à la spec, commande scaffold lisible', async (t) => {
+  if (!browser) return t.skip('Chrome introuvable');
+  await page.click('#reset');
+  await page.click('[data-type="template"]');
+  await page.waitFor(`!!document.querySelector('[data-detail="launch-ui/template"]')`);
+  await page.click('[data-detail="launch-ui/template"]');
+  await page.waitFor(`document.querySelectorAll('#detail[open] .section-shot').length >= 5`);
+  assert.ok(
+    await page.evaluate<boolean>(`document.querySelector('#detail .command-line code').getBoundingClientRect().width > 300`),
+    'commande scaffold affichée en entier (pas écrasée par le bouton copier)',
+  );
+  await page.click('#detail [data-toggle="launch-ui/hero"]');
+  await page.waitFor(`document.querySelector('#detail [data-toggle="launch-ui/hero"]').getAttribute('aria-pressed') === 'true'`);
+  assert.match(await page.evaluate<string>(`document.querySelector('#s-blocks').textContent`), /Hero avec capture produit/);
+  await page.evaluate(`document.querySelector('#detail').close(); true`);
+  await page.click('#preview-page');
+  await page.waitFor(`!!document.querySelector('#detail[open] #page-frames')`);
+  // La section rejoint la page des derniers blocs : ouvrir son onglet si la spec en a plusieurs.
+  await page.evaluate(`(() => {
+    const p = document.querySelector('#s-blocks [data-detail="launch-ui/hero"]').closest('.block').querySelector('[data-page]').value;
+    document.querySelector('[data-page-tab="' + CSS.escape(p) + '"]')?.click();
+    return true;
+  })()`);
+  await page.waitFor(`!!document.querySelector('#detail[open] #page-frames img.page-shot')`);
+  await page.evaluate(`document.querySelector('#detail').close(); true`);
+  await page.click('#s-blocks [data-detail="launch-ui/hero"]');
+  await page.waitFor(`!!document.querySelector('#detail[open] .back-template')`);
+  await page.click('#detail .back-template');
+  await page.waitFor(`document.querySelectorAll('#detail[open] .section-shot').length >= 5`);
+  await page.click('#detail [data-toggle="launch-ui/hero"]');
+  await page.evaluate(`document.querySelector('#detail').close(); true`);
+  assert.doesNotMatch(await page.evaluate<string>(`document.querySelector('#s-blocks').textContent`), /Hero avec capture produit/);
+});
+
 test('preset chargé comme point de départ, aucune erreur JavaScript', async (t) => {
   if (!browser) return t.skip('Chrome introuvable');
   await page.waitFor(`!!document.querySelector('#load-spec option[value^="preset:"]')`);

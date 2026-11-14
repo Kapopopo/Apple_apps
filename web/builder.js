@@ -98,10 +98,14 @@ function curveSvg(b) {
 }
 
 function staticVisual(i) {
-  if (i.type === 'template')
-    return i.screens?.[0]
-      ? `<img class="thumb" src="${esc(i.screens[0].url)}" alt="" loading="lazy" decoding="async">`
+  if (i.type === 'template') {
+    // Sans capture de page : la première section assez haute pour servir de visuel (pas une barre de navigation).
+    const cover = i.screens?.[0]?.url || (i.sections || []).map((id) => byId.get(id)?.shot).find((s) => s && s.height >= 300)?.url;
+    return cover
+      ? `<img class="thumb" src="${esc(cover)}" alt="" loading="lazy" decoding="async">`
       : `<div class="placeholder">${icon('layers')}Template complet</div>`;
+  }
+  if (i.shot) return `<img class="thumb shot-thumb" src="${esc(i.shot.url)}" alt="" loading="lazy" decoding="async">`;
   if (i.type === 'font')
     return `<div class="font-sample" data-font-css="${esc(i.font?.cssUrl || '')}" data-font="${esc(i.font?.family || i.name)}"><span class="big">Aa Gg</span><span class="line">Le vif zéphyr jubile sur les kumquats</span><span class="line">0123456789 · ${esc((i.font?.styles || []).length)} styles</span></div>`;
   if (i.type === 'theme') {
@@ -337,7 +341,7 @@ function renderSpec() {
               : '';
           lastPage = b.page || '';
           return `${header}<li class="block" draggable="true" data-index="${k}">
-      <div class="block-head"><span class="block-num">${k + 1}</span><span class="handle" aria-hidden="true">${icon('grip')}</span><span class="block-title"><strong>${esc(i?.name || b.id)}</strong><small>${esc(i ? `${TYPE_LABEL[i.type]} · ${i.source}${i.interactive ? '' : ' · sans aperçu web'}` : 'introuvable dans le registre')}</small></span>
+      <div class="block-head"><span class="block-num">${k + 1}</span><span class="handle" aria-hidden="true">${icon('grip')}</span><span class="block-title"><strong>${esc(i?.name || b.id)}</strong><small>${esc(i ? `${TYPE_LABEL[i.type]} · ${i.source}${i.interactive ? '' : i.shot ? ' · capture du template' : ' · sans aperçu web'}` : 'introuvable dans le registre')}</small></span>
       <span class="block-tools"><button class="btn icon-only ghost" data-move="${k}" data-dir="-1" aria-label="Monter" ${k === 0 ? 'disabled' : ''}>${icon('up')}</button><button class="btn icon-only ghost" data-move="${k}" data-dir="1" aria-label="Descendre" ${k === spec.blocks.length - 1 ? 'disabled' : ''}>${icon('down')}</button><button class="btn icon-only ghost" data-detail="${esc(b.id)}" aria-label="Voir le code">${icon('code')}</button><button class="btn icon-only ghost" data-remove="${k}" aria-label="Retirer">${icon('x')}</button></span></div>
       <div class="block-fields"><textarea data-note="${k}" rows="1" maxlength="2000" placeholder="Consigne : emplacement, contenu, variante…" aria-label="Consigne pour ${esc(i?.name || b.id)}">${esc(b.note)}</textarea><input data-page="${k}" value="${esc(b.page || '')}" list="pages-list" maxlength="60" placeholder="Page" aria-label="Page de ${esc(i?.name || b.id)}"></div></li>`;
         })
@@ -700,15 +704,18 @@ function showPagePreview(page = pagesOf()[0] ?? '') {
   const pages = pagesOf();
   const blocks = spec.blocks.filter((b) => !pages.length || (b.page || '') === page);
   const theme = spec.theme && byId.get(spec.theme);
+  const unpaged = pages.length > 0 && spec.blocks.some((b) => !b.page);
   openDialog(
     `<div class="page-preview-head"><div><h2 id="detail-title">Aperçu de la page${page ? ` « ${esc(page)} »` : ''}</h2><p class="help">Blocs empilés dans l’ordre${theme ? `, aux couleurs du thème ${esc(theme.name)}` : ''}. Chaque bloc reste isolé (aperçu sandboxé) : l’assemblage réel se fait dans le projet.</p></div>
-    ${pages.length > 1 ? `<div class="page-tabs" role="tablist">${pages.map((p) => `<button class="chip" role="tab" data-page-tab="${esc(p)}" aria-selected="${p === page}" aria-pressed="${p === page}">${esc(p)}</button>`).join('')}${spec.blocks.some((b) => !b.page) ? `<button class="chip" role="tab" data-page-tab="" aria-pressed="${page === ''}">Sans page</button>` : ''}</div>` : ''}</div>
+    ${pages.length + (unpaged ? 1 : 0) > 1 ? `<div class="page-tabs" role="tablist">${pages.map((p) => `<button class="chip" role="tab" data-page-tab="${esc(p)}" aria-selected="${p === page}" aria-pressed="${p === page}">${esc(p)}</button>`).join('')}${unpaged ? `<button class="chip" role="tab" data-page-tab="" aria-selected="${page === ''}" aria-pressed="${page === ''}">Sans page</button>` : ''}</div>` : ''}</div>
     <div class="page-frames ${$('#f-light').checked ? 'light' : ''}" id="page-frames">${
       blocks
         .map((b) => {
           const i = byId.get(b.id);
           if (!i) return `<div class="page-missing">${icon('x')}${esc(b.id)} : introuvable dans le registre</div>`;
           const note = b.note ? `<span class="page-note">${esc(b.note)}</span>` : '';
+          if (!i.interactive && i.shot)
+            return `<figure class="page-block"><figcaption>${esc(i.name)} <small>${esc(i.source)} · capture</small>${note}</figcaption><img class="page-shot" src="${esc(i.shot.url)}" alt="Capture : ${esc(i.name)}" width="${i.shot.width}" height="${i.shot.height}" loading="lazy" decoding="async"></figure>`;
           if (!i.interactive)
             return `<div class="page-missing">${icon('code')}<strong>${esc(i.name)}</strong> — pas d’aperçu web (${esc(i.framework === 'react-native' ? 'React Native' : i.preview.reason || 'code seul')}) ; le code est transmis par le MCP.${note}</div>`;
           const live = i.preview.kind === 'live';
@@ -957,7 +964,37 @@ function equivalents(i) {
     .slice(0, 8);
 }
 
-/** Détail d'un template : captures des pages, nature du site, commandes, variables, fichiers (liste). */
+/** Carte d'une section de template : capture, nature, code, ajout à la spec. */
+function sectionCard(s) {
+  // Barre très fine (navigation) : vignette recadrée à gauche, lisible ; l’image entière s’ouvre au clic.
+  const wide = s.shot && s.shot.width / s.shot.height > 7;
+  const visual = s.shot
+    ? `<a class="section-img" href="${esc(s.shot.url)}" target="_blank" rel="noopener" aria-label="Agrandir la capture : ${esc(s.name)}"><img src="${esc(s.shot.url)}" alt="" width="${s.shot.width}" height="${s.shot.height}" loading="lazy" decoding="async"></a>`
+    : `<div class="section-img placeholder">${icon('code')}Pas de capture (code seul)</div>`;
+  return `<figure class="section-shot${wide ? ' wide' : ''}" data-card="${esc(s.id)}">${visual}
+    <figcaption><span class="section-name"><strong>${esc(s.name)}</strong><small>${esc(s.category)} · ${esc(TYPE_LABEL[s.type])}</small></span>
+    <span class="section-actions"><button class="btn small ghost" data-detail="${esc(s.id)}">${icon('code')}Code</button><button class="btn small" data-toggle="${esc(s.id)}" aria-pressed="${inSpec(s.id)}">${actionLabel(s)}</button></span></figcaption></figure>`;
+}
+
+/** Sections d'un template, regroupées par page de la démo quand il en a plusieurs. */
+function templateSections(i, t) {
+  const list = (i.sections || []).map((id) => byId.get(id)).filter(Boolean);
+  if (!list.length)
+    return `<p class="help">${t.demo ? 'Sections pas encore capturées : npm run capture:templates.' : 'Pas de sections : ce template n’a pas de démo en ligne fidèle à son code (le code complet reste disponible ci-dessous).'}</p>`;
+  const groups = new Map();
+  for (const s of list) {
+    const label = t.pages?.find((p) => p.path === s.fromTemplate?.page)?.title || '';
+    groups.set(label, [...(groups.get(label) || []), s]);
+  }
+  const several = groups.size > 1;
+  return `<section class="template-sections" aria-labelledby="tpl-sections">
+    <div class="template-sections-head"><h3 id="tpl-sections">Sections <span class="count">${list.length}</span></h3>
+    <p class="help">Captures de la démo officielle, vérifiées contre le code. « Ajouter » place la section dans la spec : son code, ses imports et la feuille de styles du template suivent.</p></div>
+    ${[...groups].map(([label, items]) => `${several && label ? `<h4 class="section-group">${esc(label)}</h4>` : ''}<div class="section-shots">${items.map(sectionCard).join('')}</div>`).join('')}
+  </section>`;
+}
+
+/** Détail d'un template : sections à ajouter, captures des pages, nature du site, commandes, variables, fichiers. */
 function templateDetail(i, meta) {
   const t = meta.template || {};
   const shots = i.screens || [];
@@ -966,7 +1003,8 @@ function templateDetail(i, meta) {
   return `
     <h2 id="detail-title">${esc(i.name)}</h2>
     <p class="detail-meta">Template · ${esc(t.kind || i.category)} · ${esc(t.stack || '')} · <code>${esc(i.id)}</code></p>
-    ${shots.length ? `<div class="template-shots">${shots.map((s) => `<figure class="shot ${s.viewport === 'mobile' ? 'mobile' : ''}"><img src="${esc(s.url)}" alt="Capture : ${esc(s.title)}" loading="lazy"><figcaption>${esc(s.title)} <small>${esc(s.path)}</small></figcaption></figure>`).join('')}</div>` : '<p class="help">Pas encore de captures : npm run capture:templates.</p>'}
+    ${templateSections(i, t)}
+    ${shots.length ? `<h3 class="template-pages-title">Pages <span class="count">${shots.length}</span></h3><div class="template-shots">${shots.map((s) => `<figure class="shot ${s.viewport === 'mobile' ? 'mobile' : ''}"><img src="${esc(s.url)}" alt="Capture : ${esc(s.title)}" loading="lazy"><figcaption>${esc(s.title)} <small>${esc(s.path)}</small></figcaption></figure>`).join('')}</div>` : ''}
     <dl class="facts template-facts">
       <dt>Description</dt><dd>${esc(meta.description || '—')}</dd>
       ${t.pages?.length ? `<dt>Pages</dt><dd>${t.pages.map((p) => `${esc(p.title)} <code>${esc(p.path)}</code>`).join(' · ')}</dd>` : ''}
@@ -1015,6 +1053,8 @@ async function showDetail(id) {
       <div class="detail-visual">${i.interactive && (!STYLE_TYPES.has(i.type) || i.type === 'sound') ? `<div class="visual detail-zone ${i.preview.kind === 'atlas-demo' ? 'stage' : $('#f-light').checked ? 'light' : ''}" data-preview="${esc(i.id)}"></div>` : `<div class="visual">${staticVisual({ ...i, _colors: meta.tokens?.colors?.light || i._colors, _easings: meta.easings || i._easings })}</div>`}</div>
       <dl class="facts">
         <dt>Description</dt><dd>${esc(i.descriptionFr || meta.description || '—')}${i.descriptionFr && meta.description ? `<br><span class="help">${esc(meta.description)}</span>` : ''}</dd>
+        ${i.fromTemplate ? `<dt>Template</dt><dd><button class="btn small ghost back-template" data-detail="${esc(i.fromTemplate.id)}">${icon('layers')}${esc(byId.get(i.fromTemplate.id)?.name || i.fromTemplate.id)} : toutes ses sections</button></dd>` : ''}
+        ${i.fromTemplate?.publicAssets?.length ? `<dt>Images du dossier public/</dt><dd>${i.fromTemplate.publicAssets.map((a) => `<code>${esc(a)}</code>`).join(' ')}<br><span class="help">Référencées par le code, non incluses : à reprendre du template (scaffold).</span></dd>` : ''}
         ${i.usages?.length ? `<dt>Cas d’usage</dt><dd>${i.usages.map(esc).join(' · ')}</dd>` : ''}
         <dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span>${meta.licenseNotes ? `<br><span class="help">${esc(meta.licenseNotes)}</span>` : ''}</dd>
         ${meta.attribution ? `<dt>Attribution</dt><dd>${esc(meta.attribution)}</dd>` : ''}

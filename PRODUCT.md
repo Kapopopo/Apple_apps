@@ -29,7 +29,7 @@ Le registre contient le code source réel (pas des liens) avec licence et proven
 ## Capabilities and Constraints
 
 - Vanilla HTML/CSS/JS sans build pour `web/` ; CSP stricte (pas de style inline en HTML, pas de script inline, pas de CDN). Les polices Fontshare peuvent être chargées par le builder uniquement.
-- Les aperçus de code tiers restent dans des iframes sandboxées. Les templates complets ne sont jamais exécutés localement : ils sont montrés par des captures de leur démo officielle.
+- Les aperçus de code tiers restent dans des iframes sandboxées. Les templates complets ne sont jamais exécutés localement : ils sont montrés par des captures de leur démo officielle, page par page et section par section ; chaque section capturée s’ajoute à la spec comme un bloc (décision du 2026-11-14 : une capture vérifiée contre le code compte comme visuel, à défaut d’aperçu interactif).
 - Langue de l'interface : français.
 - Les licences restreintes (Rare UI, React Bits, polices ITF FFL) doivent rester visibles avec leur attribution.
 - L'utilisateur autorise l'import de tout composant utile publié gratuitement pour être copié (licence ouverte, ou gratuite avec conditions marquée `restricted`). Le contenu payant (Pro) ou explicitement fermé reste exclu, même pour un usage non commercial.

@@ -1,0 +1,30 @@
+[
+ {
+  "slug": "header",
+  "file": "section-header.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 69
+ },
+ {
+  "slug": "landing",
+  "file": "section-landing.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1024
+ },
+ {
+  "slug": "pricing",
+  "file": "section-pricing.jpg",
+  "page": "/pricing",
+  "width": 607,
+  "height": 432
+ },
+ {
+  "slug": "login",
+  "file": "section-login.jpg",
+  "page": "/sign-in",
+  "width": 1440,
+  "height": 900
+ }
+]

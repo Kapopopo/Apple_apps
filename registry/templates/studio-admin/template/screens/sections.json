@@ -1,0 +1,226 @@
+[
+ {
+  "slug": "sidebar",
+  "file": "section-sidebar.jpg",
+  "page": "/dashboard/default",
+  "width": 272,
+  "height": 1602
+ },
+ {
+  "slug": "default-metrics",
+  "file": "section-default-metrics.jpg",
+  "page": "/dashboard/default",
+  "width": 1120,
+  "height": 154
+ },
+ {
+  "slug": "default-activity",
+  "file": "section-default-activity.jpg",
+  "page": "/dashboard/default",
+  "width": 1120,
+  "height": 408
+ },
+ {
+  "slug": "default-customers",
+  "file": "section-default-customers.jpg",
+  "page": "/dashboard/default",
+  "width": 1120,
+  "height": 856
+ },
+ {
+  "slug": "crm-kpis",
+  "file": "section-crm-kpis.jpg",
+  "page": "/dashboard/crm",
+  "width": 1120,
+  "height": 210
+ },
+ {
+  "slug": "crm-lead-flow",
+  "file": "section-crm-lead-flow.jpg",
+  "page": "/dashboard/crm",
+  "width": 1120,
+  "height": 364
+ },
+ {
+  "slug": "crm-meetings",
+  "file": "section-crm-meetings.jpg",
+  "page": "/dashboard/crm",
+  "width": 1120,
+  "height": 165
+ },
+ {
+  "slug": "crm-opportunities",
+  "file": "section-crm-opportunities.jpg",
+  "page": "/dashboard/crm",
+  "width": 1120,
+  "height": 834
+ },
+ {
+  "slug": "finance-kpis",
+  "file": "section-finance-kpis.jpg",
+  "page": "/dashboard/finance",
+  "width": 552,
+  "height": 249
+ },
+ {
+  "slug": "finance-income",
+  "file": "section-finance-income.jpg",
+  "page": "/dashboard/finance",
+  "width": 552,
+  "height": 166
+ },
+ {
+  "slug": "finance-spending",
+  "file": "section-finance-spending.jpg",
+  "page": "/dashboard/finance",
+  "width": 647,
+  "height": 276
+ },
+ {
+  "slug": "finance-allocation",
+  "file": "section-finance-allocation.jpg",
+  "page": "/dashboard/finance",
+  "width": 458,
+  "height": 276
+ },
+ {
+  "slug": "finance-wallet",
+  "file": "section-finance-wallet.jpg",
+  "page": "/dashboard/finance",
+  "width": 363,
+  "height": 362
+ },
+ {
+  "slug": "finance-bills",
+  "file": "section-finance-bills.jpg",
+  "page": "/dashboard/finance",
+  "width": 363,
+  "height": 360
+ },
+ {
+  "slug": "finance-actions",
+  "file": "section-finance-actions.jpg",
+  "page": "/dashboard/finance",
+  "width": 363,
+  "height": 358
+ },
+ {
+  "slug": "analytics-kpis",
+  "file": "section-analytics-kpis.jpg",
+  "page": "/dashboard/analytics",
+  "width": 1120,
+  "height": 128
+ },
+ {
+  "slug": "analytics-quality",
+  "file": "section-analytics-quality.jpg",
+  "page": "/dashboard/analytics",
+  "width": 647,
+  "height": 356
+ },
+ {
+  "slug": "analytics-realtime",
+  "file": "section-analytics-realtime.jpg",
+  "page": "/dashboard/analytics",
+  "width": 458,
+  "height": 356
+ },
+ {
+  "slug": "analytics-pages",
+  "file": "section-analytics-pages.jpg",
+  "page": "/dashboard/analytics",
+  "width": 647,
+  "height": 366
+ },
+ {
+  "slug": "analytics-sources",
+  "file": "section-analytics-sources.jpg",
+  "page": "/dashboard/analytics",
+  "width": 458,
+  "height": 366
+ },
+ {
+  "slug": "productivity-summary",
+  "file": "section-productivity-summary.jpg",
+  "page": "/dashboard/productivity",
+  "width": 834,
+  "height": 124
+ },
+ {
+  "slug": "productivity-tasks",
+  "file": "section-productivity-tasks.jpg",
+  "page": "/dashboard/productivity",
+  "width": 834,
+  "height": 306
+ },
+ {
+  "slug": "productivity-projects",
+  "file": "section-productivity-projects.jpg",
+  "page": "/dashboard/productivity",
+  "width": 834,
+  "height": 193
+ },
+ {
+  "slug": "productivity-calendar",
+  "file": "section-productivity-calendar.jpg",
+  "page": "/dashboard/productivity",
+  "width": 262,
+  "height": 339
+ },
+ {
+  "slug": "productivity-focus",
+  "file": "section-productivity-focus.jpg",
+  "page": "/dashboard/productivity",
+  "width": 262,
+  "height": 130
+ },
+ {
+  "slug": "productivity-notes",
+  "file": "section-productivity-notes.jpg",
+  "page": "/dashboard/productivity",
+  "width": 262,
+  "height": 244
+ },
+ {
+  "slug": "ecommerce-kpis",
+  "file": "section-ecommerce-kpis.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 1120,
+  "height": 370
+ },
+ {
+  "slug": "ecommerce-traffic",
+  "file": "section-ecommerce-traffic.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 458,
+  "height": 308
+ },
+ {
+  "slug": "ecommerce-products",
+  "file": "section-ecommerce-products.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 363,
+  "height": 335
+ },
+ {
+  "slug": "ecommerce-inventory",
+  "file": "section-ecommerce-inventory.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 363,
+  "height": 335
+ },
+ {
+  "slug": "ecommerce-reviews",
+  "file": "section-ecommerce-reviews.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 363,
+  "height": 335
+ },
+ {
+  "slug": "ecommerce-orders",
+  "file": "section-ecommerce-orders.jpg",
+  "page": "/dashboard/ecommerce",
+  "width": 1120,
+  "height": 808
+ }
+]

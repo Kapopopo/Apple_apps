@@ -190,13 +190,50 @@ export async function seedRegistry() {
     ]),
     new Map([['LICENSE', 'MIT License\n\nCopyright (c) 2026 Demo\n']]),
   );
+  // Section extraite du template : son fichier, un import local, la feuille de styles du template.
+  writeItem(
+    {
+      ...base,
+      id: 'demo-site/hero',
+      name: 'Hero de démonstration',
+      type: 'section',
+      category: 'Hero',
+      source: 'Demo Site',
+      sourceId: 'demo-site',
+      sourceUrl: 'https://example.com/demo-site/blob/abc/components/hero/default.tsx',
+      preview: { kind: 'none', reason: 'Section de template : capture de la démo officielle' },
+      fromTemplate: { id: 'demo-site/template', page: '/', publicAssets: ['public/logo.png'] },
+      files: [
+        { path: 'components/hero/default.tsx', role: 'source' },
+        { path: 'components/ui/badge.tsx', role: 'source' },
+        { path: 'app/globals.css', role: 'style' },
+      ],
+    },
+    new Map<string, string | Buffer>([
+      [
+        'components/hero/default.tsx',
+        'import { Badge } from \'@/components/ui/badge\';\n\nexport default function Hero() {\n  return (\n    <section>\n      <Badge>Nouveau</Badge>\n      <img src="/logo.png" alt="" />\n    </section>\n  );\n}\n',
+      ],
+      [
+        'components/ui/badge.tsx',
+        'export function Badge({ children }: { children: React.ReactNode }) {\n  return <span>{children}</span>;\n}\n',
+      ],
+      ['app/globals.css', ':root {\n  --brand: #0a7;\n}\n'],
+    ]),
+    new Map([['LICENSE', 'MIT License\n\nCopyright (c) 2026 Demo\n']]),
+  );
   const { REGISTRY } = await import('../../shared/paths.js');
   const screens = path.join(REGISTRY, 'templates', 'demo-site', 'template', 'screens');
   fs.mkdirSync(screens, { recursive: true });
   fs.writeFileSync(path.join(screens, '01-desktop.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
+  fs.writeFileSync(path.join(screens, 'section-hero.jpg'), Buffer.from([0xff, 0xd8, 0xff, 0xd9]));
   fs.writeFileSync(
     path.join(screens, 'screens.json'),
     JSON.stringify([{ file: '01-desktop.jpg', path: '/', title: 'Accueil', viewport: 'desktop' }]),
+  );
+  fs.writeFileSync(
+    path.join(screens, 'sections.json'),
+    JSON.stringify([{ slug: 'hero', file: 'section-hero.jpg', page: '/', width: 1440, height: 600 }]),
   );
   buildIndex();
 }

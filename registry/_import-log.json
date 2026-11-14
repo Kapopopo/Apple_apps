@@ -6036,6 +6036,156 @@
       "warnings": [],
       "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
       "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "launch-ui",
+      "at": "2026-11-14T21:00:18.483Z",
+      "added": [
+        "launch-ui/navbar",
+        "launch-ui/hero",
+        "launch-ui/logos",
+        "launch-ui/items",
+        "launch-ui/stats",
+        "launch-ui/pricing",
+        "launch-ui/faq",
+        "launch-ui/cta",
+        "launch-ui/footer"
+      ],
+      "updated": [
+        "launch-ui/template"
+      ],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "launch-ui : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "saas-starter",
+      "at": "2026-11-14T21:00:23.137Z",
+      "added": [
+        "saas-starter/header",
+        "saas-starter/landing",
+        "saas-starter/pricing",
+        "saas-starter/login"
+      ],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "shadcn-admin",
+      "at": "2026-11-14T21:00:24.171Z",
+      "added": [
+        "shadcn-admin/sidebar",
+        "shadcn-admin/dashboard",
+        "shadcn-admin/overview-chart",
+        "shadcn-admin/recent-sales",
+        "shadcn-admin/tasks",
+        "shadcn-admin/users",
+        "shadcn-admin/chats",
+        "shadcn-admin/apps",
+        "shadcn-admin/settings",
+        "shadcn-admin/sign-in"
+      ],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "studio-admin",
+      "at": "2026-11-14T21:00:27.239Z",
+      "added": [
+        "studio-admin/sidebar",
+        "studio-admin/default-metrics",
+        "studio-admin/default-activity",
+        "studio-admin/default-customers",
+        "studio-admin/crm-kpis",
+        "studio-admin/crm-lead-flow",
+        "studio-admin/crm-meetings",
+        "studio-admin/crm-opportunities",
+        "studio-admin/finance-kpis",
+        "studio-admin/finance-income",
+        "studio-admin/finance-spending",
+        "studio-admin/finance-allocation",
+        "studio-admin/finance-wallet",
+        "studio-admin/finance-bills",
+        "studio-admin/finance-actions",
+        "studio-admin/analytics-kpis",
+        "studio-admin/analytics-quality",
+        "studio-admin/analytics-realtime",
+        "studio-admin/analytics-pages",
+        "studio-admin/analytics-sources",
+        "studio-admin/productivity-summary",
+        "studio-admin/productivity-tasks",
+        "studio-admin/productivity-projects",
+        "studio-admin/productivity-calendar",
+        "studio-admin/productivity-focus",
+        "studio-admin/productivity-notes",
+        "studio-admin/ecommerce-kpis",
+        "studio-admin/ecommerce-traffic",
+        "studio-admin/ecommerce-products",
+        "studio-admin/ecommerce-inventory",
+        "studio-admin/ecommerce-reviews",
+        "studio-admin/ecommerce-orders"
+      ],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "starter-blog",
+      "at": "2026-11-14T21:00:32.430Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "starter-blog : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "b45bef66b40c63b6f57c15ee8cd090682238df4c",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "magicui-portfolio",
+      "at": "2026-11-14T21:00:33.840Z",
+      "added": [
+        "magicui-portfolio/page",
+        "magicui-portfolio/dock",
+        "magicui-portfolio/work",
+        "magicui-portfolio/projects",
+        "magicui-portfolio/hackathons",
+        "magicui-portfolio/contact"
+      ],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+      "license": "MIT"
     }
   ]
 }

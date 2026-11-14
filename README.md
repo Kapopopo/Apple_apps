@@ -71,7 +71,7 @@ Chaque dossier contient `meta.json`, `files/` (chemins du repo d’origine) et `
 | `sound` | moteur (`react-bits` ou `bencho`) et noms des sons |
 | `importedAt`, `updatedAt`, `contentHash` | relance idempotente : même contenu, rien n’est réécrit |
 
-État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices, et 6 templates complets. Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
+État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices, et 6 templates complets (61 sections et écrans). Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
 
 ## Sources et importers
 
@@ -103,26 +103,36 @@ Les sources sont déclarées dans [importers/sources.json](importers/sources.jso
 
 ### Templates complets
 
-Six sites entiers, choisis pour couvrir des besoins différents (tous MIT, maintenus, avec démo officielle sauf le blog) :
+Six sites entiers, choisis pour couvrir des besoins différents (tous MIT et maintenus), découpés en **61 sections et écrans** capturés :
 
-| Template | Type | Stack | Fichiers | Captures |
-|---|---|---|---|---|
-| [launch-ui](https://github.com/launch-ui/launch-ui) | site vitrine (landing page) | Next.js, Tailwind 4, shadcn/ui | 58 | 2 |
-| [saas-starter](https://github.com/nextjs/saas-starter) | SaaS : landing, comptes, tableau de bord, paiement | Next.js, Postgres (Drizzle), Stripe | 53 | 5 |
-| [shadcn-admin](https://github.com/satnaing/shadcn-admin) | application d’administration (tâches, utilisateurs, messagerie, réglages) | Vite, React, TanStack Router | 259 | 8 |
-| [studio-admin](https://github.com/arhamkhnz/next-shadcn-admin-dashboard) | tableaux de bord métier (CRM, finance, analytics, e-commerce) | Next.js, Tailwind 4, shadcn/ui | 359 | 7 |
-| [starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) | blog MDX (tags, recherche, commentaires, newsletter) | Next.js, Contentlayer, Tailwind | 103 | image du dépôt |
-| [magicui-portfolio](https://github.com/magicuidesign/portfolio) | portfolio / CV en ligne | Next.js, Magic UI | 87 | 3 |
+| Template | Type | Stack | Fichiers | Sections | Captures |
+| --- | --- | --- | --- | --- | --- |
+| [launch-ui](https://github.com/launch-ui/launch-ui) | site vitrine (landing page) | Next.js, Tailwind 4, shadcn/ui | 58 | 9 | documentation officielle (variantes gratuites) |
+| [saas-starter](https://github.com/nextjs/saas-starter) | SaaS : landing, comptes, tableau de bord, paiement | Next.js, Postgres (Drizzle), Stripe | 53 | 4 | démo officielle |
+| [shadcn-admin](https://github.com/satnaing/shadcn-admin) | application d’administration (tâches, utilisateurs, messagerie, réglages) | Vite, React, TanStack Router | 259 | 10 | démo officielle |
+| [studio-admin](https://github.com/arhamkhnz/next-shadcn-admin-dashboard) | tableaux de bord métier (CRM, finance, analytics, productivité, e-commerce) | Next.js, Tailwind 4, shadcn/ui | 359 | 32 | démo officielle |
+| [starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) | blog MDX (tags, recherche, commentaires, newsletter) | Next.js, Contentlayer, Tailwind | 103 | — | image du dépôt (pas de démo fidèle en ligne) |
+| [magicui-portfolio](https://github.com/magicuidesign/portfolio) | portfolio / CV en ligne | Next.js, Magic UI | 87 | 6 | démo officielle |
 
 ```bash
 npm run import:templates               # clone au commit verrouillé, copie tout le dépôt (registry/templates/<id>/template/)
-npm run capture:templates              # captures bureau + mobile des pages déclarées, sur la démo officielle
+npm run capture:templates              # pages (bureau + mobile) et sections, sur la démo officielle
+npm run capture:templates -- --only studio-admin --sections   # un template, sections seulement
+npm run capture:templates -- --only studio-admin --sections --slug crm-kpis,crm-meetings   # recapturer quelques sections
 npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entier + LICENSE + ATLAS.md
 ```
 
+**Sections** : chaque template est aussi découpé en sections et écrans (`templates[].sections` dans `sources.json`), qui deviennent des items du registre (`launch-ui/hero`, `studio-admin/crm-kpis`…), ajoutables à une spec comme n’importe quel bloc.
+
+- Code d’une section : son fichier d’entrée, ses imports locaux suivis récursivement (relatifs et alias `@/` du tsconfig) et la feuille de styles globale du template (`styles`) ; paquets npm aux versions du `package.json` du template. Les images de `public/` référencées sont listées (`fromTemplate.publicAssets`), pas copiées.
+- Capture : l’élément déclaré (`find`, `text`, `up`) est photographié à sa taille réelle sur la démo, après vérification que son texte visible figure dans le code de la section (titre et libellés ; les lignes générées, dates ou données aléatoires, ne comptent pas contre elle) ; sinon la capture est refusée, car une démo qui montre une autre variante tromperait. `verify: false` pour un contenu entièrement généré (calendrier). Une capture presque uniforme (zone non peinte) est refusée aussi. Images dans `registry/templates/<id>/template/screens/section-*.jpg` + `sections.json`.
+- Launch UI n’a pas de démo du template gratuit (le site montre les variantes Pro) : ses sections sont capturées sur sa documentation officielle, où chaque variante `default` est rendue à l’identique du dépôt, puis sortie de son cadre réduit (`isolate`).
+- Le blog n’a pas de démo fidèle en ligne (déploiement officiel suspendu, les copies tiers sont en v1) : pas de sections capturées.
+- Bundle et MCP : les fichiers d’un template gardent son arborescence sous `components/atlas/<template>/` ; plusieurs sections du même template partagent leurs fichiers communs.
+
 - **Repris** : tout le dépôt, images comprises (≤ 1,5 Mo par fichier, 12 Mo par template). **Écartés** : `node_modules`, builds, verrous de paquets, `.env*` (seul `.env.example` est gardé), `.github`, fichiers trop lourds (listés dans `template.skipped`).
 - `meta.json → template` : type de site, stack, démo, pages, commandes `install`/`dev` (gestionnaire déduit du verrou), variables d’environnement à renseigner (lues dans `.env.example`).
-- Le code des templates est **copié, jamais exécuté** ici : les captures viennent des démos officielles (`importers/sources.json → templates[].pages`), pas d’un build local.
+- Le code des templates est **copié, jamais exécuté** ici : les captures viennent des démos officielles (`importers/sources.json → templates[].pages` et `sections`), pas d’un build local.
 - `ATLAS.md`, écrit par `scaffold` dans le projet, rappelle la source, la licence, les commandes et les variables à renseigner.
 
 **Vérification hebdomadaire** (Windows) : `npm run schedule` enregistre une tâche qui lance `npm run outdated` le lundi à 9 h (aucun import automatique ; le builder signale les sources à mettre à jour) ; `npm run unschedule` la retire.
@@ -154,7 +164,7 @@ npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entie
 - **Aperçus à la demande** : vignette de l’audit, aperçu monté au survol, au focus ou au toucher (« Animer au survol ») ou dès qu’il est visible (« Animations auto ») ; au plus 12 aperçus actifs, démontés hors écran.
 - **Recherche** bilingue classée par pertinence ; vues **Nouveautés**, favoris ; **équivalents** d’un composant dans les autres bibliothèques.
 - **Builder** : menu de la spec (nouvelle, dupliquer, renommer, historique et restauration, supprimer), page par bloc, aperçu composé, « Thème de la spec » appliqué aux aperçus, éditeur de thème, sons jouables, commande shadcn dans le détail, ouverture par `/builder#spec=<nom>` ou `#item=<id>`.
-- **Templates** : onglet dédié du builder (captures bureau et mobile, pages, commande `scaffold` à copier, variables d’environnement, arborescence, README) ; un template par spec, emplacement « Template » sous le thème.
+- **Templates** : onglet dédié du builder ; la fiche d’un template montre ses **sections** (capture, « Ajouter » à la spec, code), regroupées par page, puis les captures des pages, la commande `scaffold` à copier, les variables d’environnement, l’arborescence et le README ; un template par spec, emplacement « Template » sous le thème. Les sections ajoutées apparaissent dans l’aperçu de la page par leur capture.
 - Le **prompt texte** du catalogue reste disponible pour un assistant sans MCP.
 
 ## Aperçus et audit
@@ -173,7 +183,7 @@ TypeScript, `@modelcontextprotocol/sdk`, stdio. Relit le registre et les specs �
 | `get_spec(name)` | thème, polices, easings, sons, blocs ordonnés avec page et consigne ; pour chaque item : type, source, licence, attribution, dépendances, aperçu interactif, ou `found: false` |
 | `get_spec_bundle(name, target_alias?)` | tout le code de la spec prêt à poser : chemins cibles, imports réécrits, thème CSS, polices, easings, `CREDITS.md`, une commande `npm install` |
 | `get_component(id, target_alias?)` | **les fichiers source réels**, licence, paquets npm, dépendances de registre, démo, docs ; avec `target_alias` (`@/`, `~/`, `relative`) : chemins et imports adaptés au projet |
-| `get_template(id, files?)` | template complet : type, stack, pages, commande `scaffold`, variables d’environnement, arborescence, README et `package.json` ; avec `files`, le contenu de fichiers précis |
+| `get_template(id, files?)` | template complet : type, stack, pages, sections (ids des items), commande `scaffold`, variables d’environnement, arborescence, README et `package.json` ; avec `files`, le contenu de fichiers précis |
 | `get_theme(id)` | tokens et CSS d’un thème, styles et lien d’une police, courbes, ressorts et durées |
 | `search_registry(…, interactive_only?)` | recherche bilingue ; à pertinence égale, les items à aperçu vérifié passent devant |
 | `create_spec(…)` | enregistre une spec, template de départ compris (ids vérifiés ; version remplacée archivée) |

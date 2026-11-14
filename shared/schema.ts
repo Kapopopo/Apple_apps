@@ -87,6 +87,19 @@ export const TemplateInfo = z.object({
 });
 export type TemplateInfo = z.infer<typeof TemplateInfo>;
 
+/**
+ * Section ou écran extrait d'un template complet : le fichier qui la rend, ses imports locaux et la
+ * feuille de styles globale du template ; capturée sur la page indiquée de la démo officielle.
+ */
+export const FromTemplate = z.object({
+  id: z.string().regex(/^[a-z0-9-]+\/template$/),
+  /** Page de la démo où la section a été capturée (chemin ou URL complète). */
+  page: z.string(),
+  /** Images du dossier public/ du template référencées par le code (non incluses dans l'item). */
+  publicAssets: z.array(z.string()).default([]),
+});
+export type FromTemplate = z.infer<typeof FromTemplate>;
+
 export const Meta = z.object({
   id: z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+$/),
   name: z.string().min(1),
@@ -119,6 +132,7 @@ export const Meta = z.object({
   easings: z.array(EasingToken).optional(),
   sound: SoundInfo.optional(),
   template: TemplateInfo.optional(),
+  fromTemplate: FromTemplate.optional(),
   contentHash: z.string(),
   importedAt: z.string(),
   updatedAt: z.string().optional(),

@@ -1,0 +1,101 @@
+{
+  "id": "saas-starter/pricing",
+  "name": "Tarifs reliés à Stripe",
+  "type": "screen",
+  "category": "Tarifs",
+  "tags": [
+    "saas-starter",
+    "template"
+  ],
+  "description": "Tarifs reliés à Stripe du template Next.js SaaS Starter (saas (landing, comptes, tableau de bord, paiement)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+  "framework": "react",
+  "dependencies": [
+    "bcryptjs@^3.0.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "dotenv@^16.5.0",
+    "drizzle-orm@^0.43.1",
+    "jose@^6.0.11",
+    "lucide-react@^0.511.0",
+    "next@15.6.0-canary.59",
+    "postgres@^3.4.5",
+    "radix-ui@^1.4.2",
+    "react@19.1.0",
+    "react-dom@19.1.0",
+    "stripe@^18.1.0",
+    "tailwind-merge@^3.3.0",
+    "tailwindcss@4.1.7",
+    "tw-animate-css@^1.3.0",
+    "zod@^3.24.4"
+  ],
+  "registryDependencies": [],
+  "source": "Next.js SaaS Starter",
+  "sourceId": "saas-starter",
+  "sourceUrl": "https://github.com/nextjs/saas-starter/blob/6e33e58b1e553a41fe22e6b941a7229a002de361/app/(dashboard)/pricing/page.tsx",
+  "sourcePath": "app/(dashboard)/pricing/page.tsx",
+  "sourceCommit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2025 Vercel",
+  "files": [
+    {
+      "path": "app/(dashboard)/pricing/page.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "lib/payments/actions.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/payments/stripe.ts",
+      "role": "source"
+    },
+    {
+      "path": "app/(dashboard)/pricing/submit-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "lib/auth/middleware.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/schema.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/queries.ts",
+      "role": "source"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "lib/db/drizzle.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/auth/session.ts",
+      "role": "source"
+    },
+    {
+      "path": "lib/utils.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+  },
+  "fromTemplate": {
+    "id": "saas-starter/template",
+    "page": "/pricing",
+    "publicAssets": []
+  },
+  "contentHash": "837b0c6cf09c26e2",
+  "importedAt": "2026-11-14T21:00:23.544Z"
+}

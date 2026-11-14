@@ -1,0 +1,75 @@
+{
+  "id": "studio-admin/finance-wallet",
+  "name": "Portefeuille de cartes",
+  "type": "section",
+  "category": "Paiement",
+  "tags": [
+    "studio-admin",
+    "template"
+  ],
+  "description": "Portefeuille de cartes du template Studio Admin (tableaux de bord métier) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+  "framework": "react",
+  "dependencies": [
+    "cn@^0.5.2",
+    "radix-ui@^1.8.1",
+    "react@^19.3.1",
+    "shadcn@^4.23.0",
+    "simple-icons@^16.37.0",
+    "tailwindcss@^4.1.5",
+    "tw-animate-css@^1.4.0"
+  ],
+  "registryDependencies": [],
+  "source": "Studio Admin",
+  "sourceId": "studio-admin",
+  "sourceUrl": "https://github.com/arhamkhnz/next-shadcn-admin-dashboard/blob/3d1d6f4abf4231b258c81da25da1ccbc38d9b954/src/app/(main)/dashboard/finance/_components/wallet.tsx",
+  "sourcePath": "src/app/(main)/dashboard/finance/_components/wallet.tsx",
+  "sourceCommit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+  "license": "MIT",
+  "licenseStatus": "open",
+  "attribution": "Conserver la notice MIT : Copyright (c) 2024 Mohammed Arham Khan",
+  "files": [
+    {
+      "path": "src/app/(main)/dashboard/finance/_components/wallet.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/app/globals.css",
+      "role": "style"
+    },
+    {
+      "path": "src/components/simple-icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/separator.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/styles/presets/brutalist.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/presets/soft-pop.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/presets/tangerine.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+  },
+  "fromTemplate": {
+    "id": "studio-admin/template",
+    "page": "/dashboard/finance",
+    "publicAssets": []
+  },
+  "contentHash": "ebb3cd4e28384597",
+  "importedAt": "2026-11-14T21:00:31.601Z"
+}

@@ -1,0 +1,44 @@
+[
+ {
+  "slug": "page",
+  "file": "section-page.jpg",
+  "page": "/",
+  "width": 624,
+  "height": 1800
+ },
+ {
+  "slug": "dock",
+  "file": "section-dock.jpg",
+  "page": "/",
+  "width": 364,
+  "height": 56
+ },
+ {
+  "slug": "work",
+  "file": "section-work.jpg",
+  "page": "/",
+  "width": 624,
+  "height": 412
+ },
+ {
+  "slug": "projects",
+  "file": "section-projects.jpg",
+  "page": "/",
+  "width": 624,
+  "height": 1180
+ },
+ {
+  "slug": "hackathons",
+  "file": "section-hackathons.jpg",
+  "page": "/",
+  "width": 624,
+  "height": 1800
+ },
+ {
+  "slug": "contact",
+  "file": "section-contact.jpg",
+  "page": "/",
+  "width": 624,
+  "height": 194
+ }
+]

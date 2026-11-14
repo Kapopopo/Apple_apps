@@ -4,7 +4,7 @@ import { bundleItems, type BundleFile } from '../shared/bundle.js';
 import { loadAliases } from '../shared/resolve.js';
 import { specBundle } from '../shared/spec-bundle.js';
 import type { EasingToken, Meta, Spec } from '../shared/schema.js';
-import { dependencyClosure, enrichmentFor, getEntry, getItem, itemFiles, previewOf } from './store.js';
+import { dependencyClosure, enrichmentFor, getEntry, getItem, index, itemFiles, previewOf } from './store.js';
 
 const FENCE: Record<string, string> = { tsx: 'tsx', ts: 'ts', jsx: 'jsx', js: 'js', css: 'css', md: 'md', mdx: 'mdx', json: 'json' };
 export const fence = (file: string, content: string) => {
@@ -34,6 +34,15 @@ export function metaHeader(meta: Meta): string {
   if (meta.dependencies.length) lines.push(`- Paquets npm : \`npm install ${meta.dependencies.join(' ')}\``);
   if (meta.registryDependencies.length) lines.push(`- Dépendances du registre : ${meta.registryDependencies.join(', ')}`);
   if (meta.theme) lines.push(`- Thème d'origine : ${meta.theme} (get_theme pour les tokens)`);
+  if (meta.fromTemplate) {
+    lines.push(
+      `- Extrait du template \`${meta.fromTemplate.id}\` (capture : ${meta.fromTemplate.page}) : fichiers du dépôt d'origine, imports locaux et feuille de styles globale du template inclus (rôle style : tokens et utilitaires dont la section dépend).`,
+    );
+    if (meta.fromTemplate.publicAssets.length)
+      lines.push(
+        `- Images de public/ référencées, non incluses : ${meta.fromTemplate.publicAssets.join(', ')} (les reprendre du template avec scaffold, ou les remplacer).`,
+      );
+  }
   return lines.join('\n');
 }
 
@@ -100,11 +109,18 @@ export function templateMarkdown(idOrSlug: string, wanted: string[] = []): strin
     `- Démarrer un projet : \`npm --prefix "${ROOT}" run scaffold -- ${meta.id} --out <dossier du projet>\` puis \`${t.install}\` et \`${t.dev}\``,
     t.env.length ? `- Variables d’environnement à renseigner : ${t.env.map((v) => `\`${v}\``).join(', ')}` : '',
     t.skipped.length ? `- Fichiers non repris (trop lourds) : ${t.skipped.join(', ')}` : '',
-    '',
-    `## Arborescence (${meta.files.length} fichiers)`,
-    '',
-    fence('tree.txt', meta.files.map((f) => f.path).join('\n')),
   ].filter((l) => l !== null);
+  const sections = index().filter((e) => e.fromTemplate?.id === meta.id);
+  if (sections.length)
+    parts.push(
+      '',
+      `## Sections (${sections.length})`,
+      '',
+      'Chacune est un item du registre (get_component, ou bloc d’une spec) : fichier du dépôt, imports locaux et feuille de styles du template.',
+      '',
+      ...sections.map((s) => `- \`${s.id}\` — ${s.name} (${s.type === 'screen' ? 'écran' : 'section'}, ${s.category})`),
+    );
+  parts.push('', `## Arborescence (${meta.files.length} fichiers)`, '', fence('tree.txt', meta.files.map((f) => f.path).join('\n')));
   const files = itemFiles(meta.id);
   const chosen = wanted.length
     ? files.filter((f) => wanted.includes(f.path))

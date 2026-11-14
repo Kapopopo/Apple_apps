@@ -1,0 +1,72 @@
+[
+ {
+  "slug": "sidebar",
+  "file": "section-sidebar.jpg",
+  "page": "/",
+  "width": 256,
+  "height": 900
+ },
+ {
+  "slug": "dashboard",
+  "file": "section-dashboard.jpg",
+  "page": "/",
+  "width": 1176,
+  "height": 792
+ },
+ {
+  "slug": "overview-chart",
+  "file": "section-overview-chart.jpg",
+  "page": "/",
+  "width": 645,
+  "height": 350
+ },
+ {
+  "slug": "recent-sales",
+  "file": "section-recent-sales.jpg",
+  "page": "/",
+  "width": 480,
+  "height": 318
+ },
+ {
+  "slug": "tasks",
+  "file": "section-tasks.jpg",
+  "page": "/tasks",
+  "width": 1176,
+  "height": 820
+ },
+ {
+  "slug": "users",
+  "file": "section-users.jpg",
+  "page": "/users",
+  "width": 1176,
+  "height": 820
+ },
+ {
+  "slug": "chats",
+  "file": "section-chats.jpg",
+  "page": "/chats",
+  "width": 1176,
+  "height": 820
+ },
+ {
+  "slug": "apps",
+  "file": "section-apps.jpg",
+  "page": "/apps",
+  "width": 1176,
+  "height": 820
+ },
+ {
+  "slug": "settings",
+  "file": "section-settings.jpg",
+  "page": "/settings",
+  "width": 1176,
+  "height": 820
+ },
+ {
+  "slug": "sign-in",
+  "file": "section-sign-in.jpg",
+  "page": "/sign-in",
+  "width": 1440,
+  "height": 900
+ }
+]

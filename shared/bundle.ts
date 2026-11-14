@@ -84,6 +84,8 @@ export function targetOf(ref: Pick<FileRef, 'rel' | 'role'>, meta: Meta): string
     if (m) return `${m[1] === 'ui' ? 'components/ui' : m[1]}/${m[2]}`;
   }
   const [source, slug] = meta.id.split('/');
+  // Template et sections de template : arborescence du dépôt d'origine (sans src/), commune à toutes ses sections.
+  if (meta.type === 'template' || meta.fromTemplate) return `components/atlas/${source}/${ref.rel.replace(/^src\//, '')}`;
   // Utilitaires et hooks partagés par plusieurs composants d'une source : un seul emplacement par source.
   const shared = ref.role !== 'demo' && ref.rel.match(/(?:^|\/)((?:lib|hooks|utils|helpers)\/.+)$/);
   if (shared) return `components/atlas/${source}/${shared[1]}`;

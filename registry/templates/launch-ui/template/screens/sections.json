@@ -1,0 +1,65 @@
+[
+ {
+  "slug": "navbar",
+  "file": "section-navbar.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/navbar",
+  "width": 1440,
+  "height": 84
+ },
+ {
+  "slug": "hero",
+  "file": "section-hero.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/hero",
+  "width": 1440,
+  "height": 1585
+ },
+ {
+  "slug": "logos",
+  "file": "section-logos.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/logos",
+  "width": 1440,
+  "height": 395
+ },
+ {
+  "slug": "items",
+  "file": "section-items.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/items",
+  "width": 1440,
+  "height": 689
+ },
+ {
+  "slug": "stats",
+  "file": "section-stats.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/stats",
+  "width": 1440,
+  "height": 401
+ },
+ {
+  "slug": "pricing",
+  "file": "section-pricing.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/pricing",
+  "width": 1440,
+  "height": 971
+ },
+ {
+  "slug": "faq",
+  "file": "section-faq.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/faq",
+  "width": 1440,
+  "height": 679
+ },
+ {
+  "slug": "cta",
+  "file": "section-cta.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/cta",
+  "width": 1440,
+  "height": 389
+ },
+ {
+  "slug": "footer",
+  "file": "section-footer.jpg",
+  "page": "https://www.launchuicomponents.com/docs/sections/footer",
+  "width": 1440,
+  "height": 285
+ }
+]

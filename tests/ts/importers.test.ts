@@ -133,3 +133,59 @@ test('templates : fichiers repris (sans dépendances, verrous ni secrets), comma
   assert.deepEqual(runtime.env, ['POSTGRES_URL', 'AUTH_SECRET']);
   assert.deepEqual(runtime.dependencies, ['next@15.0.0']);
 });
+
+test('sections de template : imports locaux suivis (alias du tsconfig), styles globaux, paquets, images de public/', async () => {
+  const { sectionFiles } = await import('../../importers/templates.js');
+  const files = new Map<string, string | Buffer>([
+    ['tsconfig.json', '{ "compilerOptions": { "paths": { "@/*": ["./src/*"] } } }'],
+    ['src/app/globals.css', '@import "tailwindcss";\n@import "../styles/utils.css";\n'],
+    ['src/styles/utils.css', '.glass { backdrop-filter: blur(8px); }\n'],
+    [
+      'src/components/sections/hero.tsx',
+      "import { Button } from '@/components/ui/button';\nimport data from './hero.json';\nimport { motion } from 'motion/react';\nimport { Ghost } from '@/components/absent';\nexport const Hero = () => <img src=\"/hero.png\" />;\n",
+    ],
+    ['src/components/sections/hero.json', '{ "title": "Bonjour" }'],
+    ['src/components/ui/button.tsx', "import { cn } from '@/lib/utils';\nimport { Slot } from '@radix-ui/react-slot';\n"],
+    ['src/lib/utils.ts', "import { clsx } from 'clsx';\n"],
+    ['src/components/unused.tsx', 'export {}'],
+    ['public/hero.png', Buffer.from([1, 2, 3])],
+  ]);
+  const r = sectionFiles(files, ['src/components/sections/hero.tsx'], ['src/app/globals.css']);
+  assert.deepEqual(r.paths.sort(), [
+    'src/app/globals.css',
+    'src/components/sections/hero.json',
+    'src/components/sections/hero.tsx',
+    'src/components/ui/button.tsx',
+    'src/lib/utils.ts',
+    'src/styles/utils.css',
+  ]);
+  assert.deepEqual(r.packages, ['@radix-ui/react-slot', 'clsx', 'motion', 'tailwindcss']);
+  assert.deepEqual(r.missing, ['@/components/absent (src/components/sections/hero.tsx)']);
+  assert.deepEqual(r.publicAssets, ['public/hero.png']);
+});
+
+test('captures de template : URL des pages, texte de la démo vérifié contre le code', async () => {
+  const { pageUrl, textMatchesCode } = await import('../../importers/templates.js');
+  assert.equal(pageUrl('https://demo.dev', '/'), 'https://demo.dev');
+  assert.equal(pageUrl('https://demo.dev/', '/pricing'), 'https://demo.dev/pricing');
+  assert.equal(pageUrl('', 'https://docs.dev/sections/hero'), 'https://docs.dev/sections/hero');
+  const code =
+    'title = "Questions and Answers";\nconst faq = [{ question: "Why use Launch UI instead of a no-code tool?" }, { question: "Are Figma files included?" }];\n<p>Here&apos;s a list of your tasks</p>';
+  assert.ok(textMatchesCode('Questions and Answers\nWhy use Launch UI instead of a no-code tool?\nAre Figma files included?', code));
+  assert.ok(
+    textMatchesCode("QUESTIONS AND ANSWERS\nHere's a list of your tasks\nTASK-9366", code),
+    'casse, entités JSX, données aléatoires minoritaires',
+  );
+  assert.ok(
+    !textMatchesCode(
+      'Questions and Answers\nWhy good design is critical for your business?\nWho builds the best landing pages?\nCan I get a refund?',
+      code,
+    ),
+    'autre variante de la section',
+  );
+  assert.ok(textMatchesCode('42 %\n1,234', code), 'rien de vérifiable : accepté');
+  const table =
+    "const head = ['Views', 'Avg Time', 'Bounce']; const rows = [{ page: '/dashboard', views: '64.2k' }]; const title = 'Page Performance';";
+  assert.ok(textMatchesCode('Page Performance\nViews\tAvg Time\tBounce\n/dashboard\t64.2k\t3m 12s', table), 'cellules de tableau');
+  assert.ok(textMatchesCode('Traffic Quality\nWeek 1\nWeek 2', 'title="Traffic Quality" label: `Week ${i}`'), 'libellés générés ignorés');
+});

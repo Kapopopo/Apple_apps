@@ -18,6 +18,10 @@ export interface EnrichedEntry extends IndexEntry {
   previewState: string;
   thumb?: string;
   screens?: TemplateScreen[];
+  /** Template : ses sections (ids), dans l'ordre de la page. */
+  sections?: string[];
+  /** Section de template : capture faite sur la démo officielle. */
+  shot?: SectionShot;
   /** Enrichissement en français (npm run enrich), si à jour pour ce code. */
   descriptionFr?: string;
   usages?: string[];
@@ -61,13 +65,43 @@ export function templateScreens(e: IndexEntry): TemplateScreen[] {
   }
 }
 
+export interface SectionShot {
+  url: string;
+  width: number;
+  height: number;
+}
+
+/** Captures des sections d'un template (slug → image), dans l'ordre de capture. */
+export function sectionShots(e: Pick<IndexEntry, 'dir' | 'sourceId'>): Map<string, SectionShot> {
+  const file = path.join(REGISTRY, e.dir, 'screens', 'sections.json');
+  try {
+    const v = Math.round(fs.statSync(file).mtimeMs).toString(36);
+    const list: { slug: string; file: string; width: number; height: number }[] = JSON.parse(fs.readFileSync(file, 'utf8'));
+    return new Map(
+      list.map((s) => [s.slug, { url: `/template-screens/${e.sourceId}/${s.file}?v=${v}`, width: s.width, height: s.height }]),
+    );
+  } catch {
+    return new Map();
+  }
+}
+
 /** Index pour le builder : chaque item avec son état d'aperçu et sa vignette. */
 export function registryPayload() {
   const index = readIndex();
   const audit = loadAudit(),
     built = previewsBuilt(),
     enriched = loadEnrichment();
+  // Sections de chaque template : capturées d'abord (ordre de la page), puis celles sans capture.
+  const shots = new Map(index.items.filter((e) => e.type === 'template').map((e) => [e.id, sectionShots(e)]));
+  const sectionsOf = new Map<string, string[]>();
+  for (const e of index.items) if (e.fromTemplate) sectionsOf.set(e.fromTemplate.id, [...(sectionsOf.get(e.fromTemplate.id) ?? []), e.id]);
+  for (const [tpl, ids] of sectionsOf) {
+    const order = [...(shots.get(tpl)?.keys() ?? [])].map((slug) => `${tpl.split('/')[0]}/${slug}`);
+    const rank = (id: string) => (order.includes(id) ? order.indexOf(id) : order.length);
+    ids.sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+  }
   const items: EnrichedEntry[] = index.items.map((e) => {
+    const shot = e.fromTemplate ? shots.get(e.fromTemplate.id)?.get(e.id.split('/')[1]) : undefined;
     const state = previewState(e, audit, built);
     const thumb = state === 'interactive' ? thumbUrl(e, audit) : undefined;
     const fr = enrichmentFor(e, enriched);
@@ -77,7 +111,8 @@ export function registryPayload() {
       previewState: state,
       ...(thumb ? { thumb } : {}),
       ...(fr ? { descriptionFr: fr.description, usages: fr.usages, keywords: fr.keywords } : {}),
-      ...(e.type === 'template' ? { screens: templateScreens(e) } : {}),
+      ...(e.type === 'template' ? { screens: templateScreens(e), sections: sectionsOf.get(e.id) ?? [] } : {}),
+      ...(shot ? { shot } : {}),
     };
   });
   return {

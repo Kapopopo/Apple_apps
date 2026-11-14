@@ -220,3 +220,15 @@ test('get_template : vue d’ensemble, commandes, fichiers à la demande ; get_c
   const templates = JSON.parse(await textOf('search_registry', { type: 'template' }));
   assert.ok(templates.length >= 6);
 });
+
+test('sections de template : listées par get_template, code complet par get_component, trouvées par la recherche', async () => {
+  const md = await textOf('get_template', { id: 'launch-ui' });
+  assert.match(md, /## Sections \(\d+\)/);
+  assert.match(md, /`launch-ui\/hero` — /);
+  const hero = await textOf('get_component', { id: 'launch-ui/hero' });
+  assert.match(hero, /Extrait du template `launch-ui\/template`/);
+  assert.match(hero, /components\/sections\/hero\/default\.tsx/);
+  assert.match(hero, /app\/globals\.css/);
+  const found = JSON.parse(await textOf('search_registry', { query: 'tarifs', type: 'section' }));
+  assert.ok(Array.isArray(found));
+});

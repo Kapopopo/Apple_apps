@@ -275,13 +275,8 @@
   "template": {
     "kind": "Site vitrine (landing page)",
     "stack": "Next.js, Tailwind CSS 4, shadcn/ui",
-    "demo": "https://www.launchuicomponents.com",
-    "pages": [
-      {
-        "path": "/",
-        "title": "Accueil"
-      }
-    ],
+    "demo": "",
+    "pages": [],
     "install": "npm install",
     "dev": "npm run dev",
     "env": [],
@@ -289,6 +284,7 @@
       "public/og.jpg (3332 ko)"
     ]
   },
-  "contentHash": "e14349ad81e839ac",
-  "importedAt": "2026-11-10T15:06:50.345Z"
+  "contentHash": "13f2d89c3e155c2e",
+  "importedAt": "2026-11-10T15:06:50.345Z",
+  "updatedAt": "2026-11-14T21:00:18.885Z"
 }

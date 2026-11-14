@@ -96,7 +96,7 @@ test('pages et fichiers : CSP, nosniff, aucune sortie du dossier web', async () 
 
 test('API registre : textes de licence restaurés, état d’aperçu', async () => {
   const reg = (await request('GET', '/api/registry')).json();
-  assert.equal(reg.count, 6);
+  assert.equal(reg.count, 7);
   assert.ok(reg.sources['demo-src']);
   const card = reg.items.find((i: { id: string }) => i.id === 'demo-src/card');
   assert.equal(card.previewState, 'interactive', 'aperçus construits, pas encore d’audit');
@@ -247,4 +247,29 @@ test('templates : captures servies, payload du builder, copie complète par scaf
   assert.ok(fs.existsSync(path.join(out, 'LICENSE')));
   assert.throws(() => scaffold('demo-site', out), /pas vide/);
   assert.throws(() => scaffold('inconnu', path.join(root, 'autre')), /introuvable/);
+});
+
+test('sections de template : capture dans le payload, rattachement au template, bundle à l’arborescence du template', async () => {
+  const reg = (await request('GET', '/api/registry')).json();
+  const tpl = reg.items.find((i: { id: string }) => i.id === 'demo-site/template');
+  assert.deepEqual(tpl.sections, ['demo-site/hero']);
+  const hero = reg.items.find((i: { id: string }) => i.id === 'demo-site/hero');
+  assert.equal(hero.fromTemplate.id, 'demo-site/template');
+  assert.equal(hero.interactive, false);
+  assert.match(hero.shot.url, /^\/template-screens\/demo-site\/section-hero\.jpg\?v=/);
+  assert.equal(hero.shot.width, 1440);
+  assert.equal((await request('GET', hero.shot.url)).status, 200);
+  const { bundleItems } = await import('../../shared/bundle.js');
+  const bundle = bundleItems(['demo-site/hero']);
+  assert.deepEqual(
+    bundle.files.map((f) => f.path),
+    [
+      'components/atlas/demo-site/app/globals.css',
+      'components/atlas/demo-site/components/hero/default.tsx',
+      'components/atlas/demo-site/components/ui/badge.tsx',
+    ],
+  );
+  const code = bundle.files.find((f) => f.path.endsWith('hero/default.tsx'))!.content;
+  assert.match(code, /from '@\/components\/atlas\/demo-site\/components\/ui\/badge'/);
+  assert.deepEqual(bundle.missing, []);
 });
