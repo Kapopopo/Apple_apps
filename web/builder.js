@@ -964,69 +964,228 @@ function equivalents(i) {
     .slice(0, 8);
 }
 
-/** Carte d'une section de template : capture, nature, code, ajout à la spec. */
-function sectionCard(s) {
-  // Barre très fine (navigation) : vignette recadrée à gauche, lisible ; l’image entière s’ouvre au clic.
-  const wide = s.shot && s.shot.width / s.shot.height > 7;
+/* ---------- Fiche d'un template ---------- */
+
+/** Page de la démo (titre déclaré) où une section a été capturée : sert au filtre et aux groupes. */
+const sectionGroup = (s, t) => t.pages?.find((p) => p.path === s.fromTemplate?.page)?.title || '';
+
+/** Carte d'une section : capture (s'agrandit dans la fiche), nom, code, ajout à la spec. */
+function sectionCard(s, view) {
+  const ratio = s.shot ? s.shot.height / s.shot.width : 0;
+  // Barre très fine (navigation) : vignette recadrée à gauche, lisible. Capture haute : coupée, avec un fondu.
+  const shape = ratio && ratio < 1 / 7 ? ' wide' : ratio > 1.3 ? ' tall' : '';
   const visual = s.shot
-    ? `<a class="section-img" href="${esc(s.shot.url)}" target="_blank" rel="noopener" aria-label="Agrandir la capture : ${esc(s.name)}"><img src="${esc(s.shot.url)}" alt="" width="${s.shot.width}" height="${s.shot.height}" loading="lazy" decoding="async"></a>`
-    : `<div class="section-img placeholder">${icon('code')}Pas de capture (code seul)</div>`;
-  return `<figure class="section-shot${wide ? ' wide' : ''}" data-card="${esc(s.id)}">${visual}
-    <figcaption><span class="section-name"><strong>${esc(s.name)}</strong><small>${esc(s.category)} · ${esc(TYPE_LABEL[s.type])}</small></span>
-    <span class="section-actions"><button class="btn small ghost" data-detail="${esc(s.id)}">${icon('code')}Code</button><button class="btn small" data-toggle="${esc(s.id)}" aria-pressed="${inSpec(s.id)}">${actionLabel(s)}</button></span></figcaption></figure>`;
+    ? `<button class="section-img${shape}" data-view="${view}" aria-label="Agrandir la capture : ${esc(s.name)}"><img src="${esc(s.shot.url)}" alt="" width="${s.shot.width}" height="${s.shot.height}" loading="lazy" decoding="async"><span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button>`
+    : `<div class="section-img placeholder">${icon('code')}Pas de capture</div>`;
+  return `<figure class="section-shot${inSpec(s.id) ? ' in-spec' : ''}" data-card="${esc(s.id)}">${visual}
+    <figcaption><span class="section-name"><strong>${esc(s.name)}</strong><small>${esc(s.category)}${s.type === 'screen' ? ' · écran' : ''}</small></span>
+    <span class="section-actions"><button class="btn icon-only ghost small" data-detail="${esc(s.id)}" aria-label="Code : ${esc(s.name)}" title="Code">${icon('code')}</button><button class="btn small add" data-toggle="${esc(s.id)}" aria-pressed="${inSpec(s.id)}">${actionLabel(s)}</button></span></figcaption></figure>`;
 }
 
-/** Sections d'un template, regroupées par page de la démo quand il en a plusieurs. */
-function templateSections(i, t) {
+/** Sections du template, filtrables par page de la démo ; chaque capture rejoint la visionneuse (`views`). */
+function templateSections(i, t, views) {
   const list = (i.sections || []).map((id) => byId.get(id)).filter(Boolean);
   if (!list.length)
-    return `<p class="help">${t.demo ? 'Sections pas encore capturées : npm run capture:templates.' : 'Pas de sections : ce template n’a pas de démo en ligne fidèle à son code (le code complet reste disponible ci-dessous).'}</p>`;
+    return `<section class="tpl-section" aria-labelledby="tpl-sections"><div class="tpl-bar"><h3 id="tpl-sections">Sections</h3></div>
+      <p class="tpl-empty">${t.demo ? 'Sections pas encore capturées : <code>npm run capture:templates</code>.' : 'Pas de sections : ce template n’a pas de démo en ligne fidèle à son code. Son code complet reste disponible plus bas et par <code>scaffold</code>.'}</p></section>`;
   const groups = new Map();
-  for (const s of list) {
-    const label = t.pages?.find((p) => p.path === s.fromTemplate?.page)?.title || '';
-    groups.set(label, [...(groups.get(label) || []), s]);
-  }
+  for (const s of list) groups.set(sectionGroup(s, t), [...(groups.get(sectionGroup(s, t)) || []), s]);
   const several = groups.size > 1;
-  return `<section class="template-sections" aria-labelledby="tpl-sections">
-    <div class="template-sections-head"><h3 id="tpl-sections">Sections <span class="count">${list.length}</span></h3>
-    <p class="help">Captures de la démo officielle, vérifiées contre le code. « Ajouter » place la section dans la spec : son code, ses imports et la feuille de styles du template suivent.</p></div>
-    ${[...groups].map(([label, items]) => `${several && label ? `<h4 class="section-group">${esc(label)}</h4>` : ''}<div class="section-shots">${items.map(sectionCard).join('')}</div>`).join('')}
+  const card = (s) => {
+    if (!s.shot) return sectionCard(s, -1);
+    views.push({ url: s.shot.url, title: s.name, sub: `${s.category}${s.type === 'screen' ? ' · écran' : ''}`, id: s.id });
+    return sectionCard(s, views.length - 1);
+  };
+  return `<section class="tpl-section" aria-labelledby="tpl-sections">
+    <div class="tpl-bar"><h3 id="tpl-sections">Sections <span class="count">${list.length}</span></h3>
+      ${several ? `<div class="tpl-filter" role="group" aria-label="Filtrer les sections par page"><button class="chip" data-filter="*" aria-pressed="true">Toutes <small>${list.length}</small></button>${[...groups].map(([label, items]) => `<button class="chip" data-filter="${esc(label)}" aria-pressed="false">${esc(label || 'Autres')} <small>${items.length}</small></button>`).join('')}</div>` : ''}</div>
+    <p class="help tpl-lead">Captures de la démo officielle, vérifiées contre le code. Une section ajoutée apporte son code, ses imports et la feuille de styles du template.</p>
+    ${[...groups].map(([label, items]) => `<div class="section-group-block" data-group="${esc(label)}">${several ? `<h4 class="section-group">${esc(label || 'Autres')} <span class="count">${items.length}</span></h4>` : ''}<div class="section-shots">${items.map(card).join('')}</div></div>`).join('')}
   </section>`;
 }
 
-/** Détail d'un template : sections à ajouter, captures des pages, nature du site, commandes, variables, fichiers. */
-function templateDetail(i, meta) {
-  const t = meta.template || {};
-  const shots = i.screens || [];
-  const demo = safeHttps(t.demo || '');
-  const scaffold = `npm run scaffold -- ${i.id} --out ../mon-projet`;
-  return `
-    <h2 id="detail-title">${esc(i.name)}</h2>
-    <p class="detail-meta">Template · ${esc(t.kind || i.category)} · ${esc(t.stack || '')} · <code>${esc(i.id)}</code></p>
-    ${templateSections(i, t)}
-    ${shots.length ? `<h3 class="template-pages-title">Pages <span class="count">${shots.length}</span></h3><div class="template-shots">${shots.map((s) => `<figure class="shot ${s.viewport === 'mobile' ? 'mobile' : ''}"><img src="${esc(s.url)}" alt="Capture : ${esc(s.title)}" loading="lazy"><figcaption>${esc(s.title)} <small>${esc(s.path)}</small></figcaption></figure>`).join('')}</div>` : ''}
-    <dl class="facts template-facts">
-      <dt>Description</dt><dd>${esc(meta.description || '—')}</dd>
-      ${t.pages?.length ? `<dt>Pages</dt><dd>${t.pages.map((p) => `${esc(p.title)} <code>${esc(p.path)}</code>`).join(' · ')}</dd>` : ''}
-      <dt>Démarrer</dt><dd><div class="command-line"><code>${esc(scaffold)}</code><button class="btn icon-only ghost small" id="copy-scaffold" aria-label="Copier la commande">${icon('copy')}</button></div><span class="help">Puis <code>${esc(t.install || 'npm install')}</code> et <code>${esc(t.dev || 'npm run dev')}</code> dans le dossier créé.</span></dd>
-      ${t.env?.length ? `<dt>Variables d’environnement</dt><dd>${t.env.map((v) => `<code>${esc(v)}</code>`).join(' ')}</dd>` : ''}
-      <dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span>${meta.attribution ? `<br><span class="help">${esc(meta.attribution)}</span>` : ''}</dd>
-      <dt>Source</dt><dd>${safeHttps(meta.sourceUrl) ? `<a href="${esc(safeHttps(meta.sourceUrl))}" target="_blank" rel="noopener noreferrer">Dépôt au commit importé ${icon('external')}</a>` : ''}${demo ? ` · <a href="${esc(demo)}" target="_blank" rel="noopener noreferrer">Démo officielle ${icon('external')}</a>` : ''}</dd>
-      <dd class="facts-actions"><button class="btn primary" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button></dd>
-    </dl>
-    <div class="files"><h3>Fichiers (${meta.files.length})${t.skipped?.length ? ` · ${t.skipped.length} non repris (trop lourds)` : ''}</h3>
-      <details><summary>Arborescence</summary><pre class="code"><code>${esc(meta.files.map((f) => f.path).join('\n'))}</code></pre></details>
-      ${meta.files
-        .filter((f) => /(^|\/)(README\.md|package\.json)$/.test(f.path))
-        .map((f) => `<details><summary>${esc(f.path)}</summary><pre class="code"><code>${esc(f.content)}</code></pre></details>`)
-        .join('')}
-    </div>`;
+/** Pages capturées sur la démo, en bande défilante ; elles s'ouvrent aussi dans la visionneuse. */
+function templatePages(shots, views) {
+  if (!shots.length) return '';
+  const cards = shots.map((s) => {
+    views.push({ url: s.url, title: s.title, sub: s.path });
+    return `<figure class="page-card${s.viewport === 'mobile' ? ' mobile' : ''}"><button class="section-img" data-view="${views.length - 1}" aria-label="Agrandir la page : ${esc(s.title)}"><img src="${esc(s.url)}" alt="" loading="lazy" decoding="async"><span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button><figcaption><strong>${esc(s.title)}</strong><small>${esc(s.path)}</small></figcaption></figure>`;
+  });
+  return `<section class="tpl-section" aria-labelledby="tpl-pages"><div class="tpl-bar"><h3 id="tpl-pages">Pages <span class="count">${shots.length}</span></h3></div>
+    <div class="page-strip">${cards.join('')}</div></section>`;
 }
+
+/** Panneau latéral : action principale, commande de démarrage, faits, variables, licence, liens. */
+function templateAside(i, meta, t) {
+  const demo = safeHttps(t.demo || ''),
+    repo = safeHttps(meta.sourceUrl);
+  const env = t.env || [];
+  const envChips = (list) => list.map((v) => `<li><code>${esc(v)}</code></li>`).join('');
+  return `<aside class="tpl-aside" aria-label="Démarrer avec ce template">
+    <div class="tpl-cta-block"><button class="btn primary tpl-cta" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button>
+      <p class="help">Base de la spec : Claude Code part de ce template et y intègre les blocs.</p></div>
+    <div class="tpl-block"><h3>Démarrer</h3>
+      <div class="command-line"><code><span>npm run scaffold --</span> <span>${esc(i.id)}</span> <span>--out ../mon-projet</span></code><button class="btn icon-only ghost small" id="copy-scaffold" aria-label="Copier la commande" title="Copier">${icon('copy')}</button></div>
+      <p class="help">Puis <code>${esc(t.install || 'npm install')}</code> et <code>${esc(t.dev || 'npm run dev')}</code> dans le dossier créé.</p></div>
+    <dl class="tpl-facts">
+      <div><dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span></dd></div>
+      <div><dt>Sections</dt><dd>${(i.sections || []).length || '—'}</dd></div>
+      <div><dt>Pages capturées</dt><dd>${(i.screens || []).length || '—'}</dd></div>
+      <div><dt>Fichiers</dt><dd>${meta.files.length}${t.skipped?.length ? ` <span class="faint">+ ${t.skipped.length} non repris</span>` : ''}</dd></div>
+      <div><dt>Gestionnaire</dt><dd>${esc((t.install || 'npm install').split(' ')[0])}</dd></div>
+    </dl>
+    ${env.length ? `<div class="tpl-block"><h3>Variables d’environnement <span class="count">${env.length}</span></h3><ul class="env-list">${envChips(env.slice(0, 6))}</ul>${env.length > 6 ? `<details class="env-more"><summary>${env.length - 6} autres</summary><ul class="env-list">${envChips(env.slice(6))}</ul></details>` : ''}</div>` : ''}
+    ${meta.attribution ? `<p class="help tpl-credit">${esc(meta.attribution)}</p>` : ''}
+    ${demo || repo ? `<div class="tpl-links">${demo ? `<a class="btn small" href="${esc(demo)}" target="_blank" rel="noopener noreferrer">${icon('external')}Démo officielle</a>` : ''}${repo ? `<a class="btn small" href="${esc(repo)}" target="_blank" rel="noopener noreferrer">${icon('external')}Dépôt</a>` : ''}</div>` : ''}
+  </aside>`;
+}
+
+/** Détail d'un template : en-tête, sections et pages à gauche, panneau de démarrage à droite, visionneuse. */
+function templateDetail(i, meta, views) {
+  const t = meta.template || {};
+  const stack = (t.stack || '').split(/,\s*/).filter(Boolean);
+  const readme = meta.files.filter((f) => /(^|\/)(README\.md|package\.json)$/.test(f.path));
+  const sections = templateSections(i, t, views);
+  const firstPage = views.length;
+  const pages = templatePages(i.screens || [], views);
+  // Visuel de l'en-tête : la première page capturée, sinon la première section assez haute (pas une barre).
+  const coverIndex = (i.screens || []).length ? firstPage : views.findIndex((v) => v.id && byId.get(v.id)?.shot?.height >= 300);
+  const cover = views[coverIndex];
+  return `<div class="tpl">
+    <header class="tpl-head${cover ? ' has-cover' : ''}">
+      <div class="tpl-intro">
+        <h2 id="detail-title">${esc(i.name)}</h2>
+        ${meta.description ? `<p class="tpl-summary">${esc(meta.description)}</p>` : ''}
+        <ul class="tpl-tags" aria-label="Nature et technologies"><li class="kind">${esc(t.kind || i.category)}</li>${stack.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+      </div>
+      ${cover ? `<button class="tpl-cover section-img" data-view="${coverIndex}" aria-label="Agrandir : ${esc(cover.title)}"><img src="${esc(cover.url)}" alt="" decoding="async"><span class="shot-zoom" aria-hidden="true">${icon('expand')}</span></button>` : ''}
+    </header>
+    <div class="tpl-layout">
+      <div class="tpl-main">
+        ${sections}
+        ${pages}
+        <section class="tpl-section tpl-files" aria-labelledby="tpl-files"><div class="tpl-bar"><h3 id="tpl-files">Fichiers <span class="count">${meta.files.length}</span></h3></div>
+          <details><summary>${icon('folder')}Arborescence</summary><pre class="code"><code>${esc(meta.files.map((f) => f.path).join('\n'))}</code></pre></details>
+          ${readme.map((f) => `<details><summary>${icon('code')}${esc(f.path)}</summary><pre class="code"><code>${esc(f.content)}</code></pre></details>`).join('')}
+        </section>
+      </div>
+      ${templateAside(i, meta, t)}
+    </div>
+    <div class="shot-viewer" hidden>
+      <div class="viewer-bar">
+        <div class="viewer-title"><strong class="viewer-name"></strong><small class="viewer-sub"></small></div>
+        <div class="viewer-actions">
+          <button class="btn icon-only ghost viewer-prev" data-viewer="-1" aria-label="Capture précédente" title="Précédente (←)">${icon('arrow')}</button>
+          <span class="viewer-pos count" aria-live="polite"></span>
+          <button class="btn icon-only ghost" data-viewer="1" aria-label="Capture suivante" title="Suivante (→)">${icon('arrow')}</button>
+          <button class="btn small ghost viewer-code" data-detail="" hidden>${icon('code')}Code</button>
+          <button class="btn small viewer-add" data-toggle="" hidden></button>
+          <button class="btn icon-only ghost" data-viewer="close" aria-label="Fermer la capture" title="Fermer (Échap)">${icon('x')}</button>
+        </div>
+      </div>
+      <div class="viewer-stage" tabindex="-1"></div>
+    </div>
+  </div>`;
+}
+
+/** Visionneuse de la fiche ouverte (Échap la ferme avant la fenêtre). */
+let templateViewer = null;
+
+/** Comportements de la fiche : filtre par page, visionneuse (flèches, Échap), copie de la commande. */
+function bindTemplateDetail(root, i, views) {
+  const viewer = $('.shot-viewer', root),
+    stage = $('.viewer-stage', viewer),
+    img = document.createElement('img'), // ajoutée à l'ouverture, retirée à la fermeture
+    layout = $('.tpl-layout', root),
+    head = $('.tpl-head', root);
+  let current = -1,
+    opener = null;
+  /** Captures visibles (filtre appliqué) du bloc de la capture affichée : sections ou pages, dans l'ordre de la fiche. */
+  const order = () => {
+    const scope = $(`[data-view="${current}"]`, layout)?.closest('.tpl-section') ?? layout;
+    return $$('[data-view]', scope)
+      .filter((b) => !b.closest('[hidden]'))
+      .map((b) => Number(b.dataset.view));
+  };
+  const show = (k) => {
+    const v = views[k];
+    if (!v) return;
+    current = k;
+    img.classList.add('loading');
+    img.onload = () => img.classList.remove('loading');
+    img.src = v.url;
+    if (!img.isConnected) stage.append(img);
+    img.alt = `Capture : ${v.title}`;
+    $('.viewer-name', viewer).textContent = v.title;
+    $('.viewer-sub', viewer).textContent = v.sub;
+    const seq = order(),
+      pos = seq.indexOf(k);
+    $('.viewer-pos', viewer).textContent = `${pos + 1} / ${seq.length}`;
+    $('[data-viewer="-1"]', viewer).disabled = pos <= 0;
+    $('[data-viewer="1"]', viewer).disabled = pos >= seq.length - 1;
+    const code = $('.viewer-code', viewer),
+      add = $('.viewer-add', viewer);
+    code.hidden = add.hidden = !v.id;
+    code.dataset.detail = v.id || '';
+    add.dataset.toggle = v.id || '';
+    if (v.id) {
+      add.innerHTML = actionLabel(byId.get(v.id));
+      add.setAttribute('aria-pressed', String(inSpec(v.id)));
+    }
+    stage.scrollTo(0, 0);
+  };
+  const step = (dir) => {
+    const seq = order(),
+      next = seq[seq.indexOf(current) + dir];
+    if (next !== undefined) show(next);
+  };
+  const close = () => {
+    viewer.hidden = true;
+    layout.inert = head.inert = false;
+    img.remove();
+    img.removeAttribute('src');
+    opener?.focus();
+  };
+  root.addEventListener('click', (e) => {
+    const view = e.target.closest('[data-view]');
+    if (view) {
+      opener = view;
+      viewer.hidden = false;
+      layout.inert = head.inert = true; // la fiche derrière n'est plus atteignable au clavier
+      show(Number(view.dataset.view));
+      stage.focus({ preventScroll: true });
+      return;
+    }
+    const nav = e.target.closest('[data-viewer]');
+    if (nav) return nav.dataset.viewer === 'close' ? close() : step(Number(nav.dataset.viewer));
+    const filter = e.target.closest('[data-filter]');
+    if (filter) {
+      for (const b of $$('[data-filter]', root)) b.setAttribute('aria-pressed', String(b === filter));
+      for (const g of $$('.section-group-block', root))
+        g.hidden = filter.dataset.filter !== '*' && g.dataset.group !== filter.dataset.filter;
+    }
+  });
+  viewer.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      step(e.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+  $('#copy-scaffold', root)?.addEventListener('click', async () =>
+    toast((await copyText(`npm run scaffold -- ${i.id} --out ../mon-projet`)) ? 'Commande copiée.' : 'Copie impossible.'),
+  );
+  templateViewer = { isOpen: () => viewer.isConnected && !viewer.hidden, close };
+}
+$('#detail').addEventListener('cancel', (e) => {
+  if (!templateViewer?.isOpen()) return;
+  e.preventDefault();
+  templateViewer.close();
+});
 
 async function showDetail(id) {
   const i = byId.get(id);
   if (!i) return;
-  openDialog('<p class="help">Chargement…</p>');
+  openDialog('<p class="help">Chargement…</p>', i.type === 'template' ? 'template' : 'detail');
   let meta;
   try {
     meta = await api(`/api/registry/item?id=${encodeURIComponent(id)}`);
@@ -1035,10 +1194,9 @@ async function showDetail(id) {
     return;
   }
   if (i.type === 'template') {
-    $('#detail-body').innerHTML = templateDetail(i, meta);
-    $('#copy-scaffold')?.addEventListener('click', async () =>
-      toast((await copyText(`npm run scaffold -- ${i.id} --out ../mon-projet`)) ? 'Commande copiée.' : 'Copie impossible.'),
-    );
+    const views = [];
+    $('#detail-body').innerHTML = templateDetail(i, meta, views);
+    bindTemplateDetail($('#detail-body .tpl'), i, views);
     return;
   }
   const deps = meta.dependencies.length ? `<code>npm install ${esc(meta.dependencies.join(' '))}</code>` : 'Aucun';

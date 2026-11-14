@@ -135,10 +135,21 @@ test('template : sections capturées, ajout d’une section à la spec, commande
   await page.click('[data-detail="launch-ui/template"]');
   await page.waitFor(`document.querySelectorAll('#detail[open] .section-shot').length >= 5`);
   assert.ok(
-    await page.evaluate<boolean>(`document.querySelector('#detail .command-line code').getBoundingClientRect().width > 300`),
-    'commande scaffold affichée en entier (pas écrasée par le bouton copier)',
+    await page.evaluate<boolean>(
+      `(() => { const c = document.querySelector('#detail .tpl-aside .command-line code'); return c.scrollWidth <= c.clientWidth + 1 && /launch-ui\\/template/.test(c.textContent); })()`,
+    ),
+    'commande scaffold affichée en entier (pas coupée ni écrasée par le bouton copier)',
   );
-  await page.click('#detail [data-toggle="launch-ui/hero"]');
+  // Visionneuse : capture en grand, section suivante, ajout depuis la visionneuse, Échap la referme sans fermer la fiche.
+  await page.click('#detail .section-shot [data-view]');
+  await page.waitFor(`!document.querySelector('#detail .shot-viewer').hidden && !!document.querySelector('#detail .viewer-stage img')`);
+  await page.click('#detail [data-viewer="1"]');
+  assert.match(await page.evaluate<string>(`document.querySelector('#detail .viewer-pos').textContent`), /^2 \/ 9$/);
+  await page.evaluate(`document.querySelector('#detail').dispatchEvent(new Event('cancel', { cancelable: true })); true`);
+  assert.ok(
+    await page.evaluate<boolean>(`document.querySelector('#detail').open && document.querySelector('#detail .shot-viewer').hidden`),
+  );
+  await page.click('#detail .section-shot [data-toggle="launch-ui/hero"]');
   await page.waitFor(`document.querySelector('#detail [data-toggle="launch-ui/hero"]').getAttribute('aria-pressed') === 'true'`);
   assert.match(await page.evaluate<string>(`document.querySelector('#s-blocks').textContent`), /Hero avec capture produit/);
   await page.evaluate(`document.querySelector('#detail').close(); true`);
