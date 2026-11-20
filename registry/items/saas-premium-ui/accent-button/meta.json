@@ -1,0 +1,50 @@
+{
+  "id": "saas-premium-ui/accent-button",
+  "name": "Bouton accent bleu",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "glow",
+    "bleu"
+  ],
+  "description": "Pill bleu en dégradé vertical avec liseré clair et halo bleu, pour le CTA à retenir. Props : size (sm, md, lg), tone (default, deep), icon, iconRight, href, fullWidth.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/accent-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/accent-button.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/accent-button.tsx",
+    "demo": "source"
+  },
+  "contentHash": "c3bddbead12a7868",
+  "importedAt": "2026-11-20T23:20:24.853Z"
+}

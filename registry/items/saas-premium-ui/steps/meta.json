@@ -1,0 +1,60 @@
+{
+  "id": "saas-premium-ui/steps",
+  "name": "Comment ça marche en 3 cartes",
+  "type": "section",
+  "category": "Fonctionnalités",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "steps",
+    "étapes",
+    "comment ça marche",
+    "process",
+    "cartes"
+  ],
+  "description": "Pastille, H2 deux tons, 3 cartes d’étape en verre clair à halo bleu : téléphones sur bleu nuit avec couloir quadrillé, sphère de vignettes, calendrier de publications, puis CTA pill noir. Options : animated (démos d’app qui tournent dans les téléphones, grilles qui défilent, sphère qui zoome, calendrier qui se remplit), tall (visuels de 420 px). Props : badge, title, subtitle, steps, ctaLabel, onCta, animated, tall, photos. IMAGES : placeholders par défaut, mettre vos photos à leur place avec la prop photos.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/app-demos",
+    "saas-premium-ui/calendar-card",
+    "saas-premium-ui/media-sphere",
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/short-video-tile",
+    "saas-premium-ui/step-card",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "sections/steps.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/steps.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/steps.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0e447ab5846d071c",
+  "importedAt": "2026-11-20T23:20:24.984Z"
+}

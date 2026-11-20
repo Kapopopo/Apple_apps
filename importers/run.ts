@@ -3,7 +3,7 @@
  * npm run update                  → idem au dernier commit de chaque source, verrous mis à jour
  * npm run outdated                → sources qui ont publié depuis le verrou (registry/_updates.json), sans rien importer
  * npm run import -- github --source rare-ui [--offline] [--update]
- * npm run import -- local | fontshare | easings | templates | index
+ * npm run import -- local | fontshare | easings | authored | templates | index
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,6 +15,7 @@ import { remoteHead } from './lib/git.js';
 import { importLocal } from './local.js';
 import { importFontshare } from './fontshare.js';
 import { importEasings } from './easings.js';
+import { importAuthored } from './authored.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string) => {
@@ -52,6 +53,7 @@ const steps: Record<string, () => unknown> = {
   local: () => importLocal(),
   fontshare: () => importFontshare(),
   easings: () => importEasings(),
+  authored: () => importAuthored(),
   templates: () => importTemplates({ only, offline, update }),
   index: () => undefined,
 };
@@ -62,7 +64,7 @@ if (command !== 'all' && !steps[command]) {
 }
 
 let failed = false;
-for (const name of command === 'all' ? ['local', 'easings', 'github', 'templates', 'fontshare'] : [command]) {
+for (const name of command === 'all' ? ['local', 'easings', 'authored', 'github', 'templates', 'fontshare'] : [command]) {
   try {
     await steps[name]();
   } catch (error) {

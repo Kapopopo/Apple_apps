@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/step-card",
+  "name": "Carte d’étape à glow bleu",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "card",
+    "étape",
+    "step",
+    "comment ça marche",
+    "glow"
+  ],
+  "description": "Grande carte blanche bordée de bleu pâle avec glow diffus : visuel en haut (scène sombre en perspective par défaut), pill « Étape N · Nom », titre 24 px, texte. Lift au survol, entrée card-in. Props : step, stepName, title, description, visual, visualHeight.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/step-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/step-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/step-card.tsx",
+    "demo": "source"
+  },
+  "contentHash": "283b94aa8a143a71",
+  "importedAt": "2026-11-20T23:20:24.914Z"
+}

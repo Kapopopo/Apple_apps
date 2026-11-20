@@ -1,0 +1,53 @@
+{
+  "id": "saas-premium-ui/locked-overlay",
+  "name": "Overlay de contenu verrouillé",
+  "type": "component",
+  "category": "Fenêtres et panneaux",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "paywall",
+    "verrouillé",
+    "lock",
+    "overlay",
+    "premium"
+  ],
+  "description": "Dégradé vers le noir sur le bas d’un contenu, pill cadenas, gros titre blanc et CTA à bordure lumineuse ; le contenu au-dessus reste visible et inerte. Props : children, label, title, description, ctaLabel, onCta, height, blur.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/glow-button",
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/locked-overlay.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/locked-overlay.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/locked-overlay.tsx",
+    "demo": "source"
+  },
+  "contentHash": "5d66252fe28abee6",
+  "importedAt": "2026-11-20T23:20:24.927Z"
+}

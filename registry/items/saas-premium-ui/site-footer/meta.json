@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/site-footer",
+  "name": "Footer de landing",
+  "type": "section",
+  "category": "Pied de page",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "footer",
+    "pied de page",
+    "liens",
+    "langue"
+  ],
+  "description": "Footer de landing (colonnes Navigation / Informations, email, langue, copyright) avec visuel d’ambiance pleine largeur. Props : columns, email, visual, photo, glass. Exporte NightPhotoVisual (photo fondue en haut et en bas + logo de verre au-dessus de l’horizon et reflet). IMAGES : placeholders par défaut, mettre vos photos à leur place : prop photo (paysage nocturne, lac et montagnes, ~1920×1080) au lieu du paysage placeholder.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/footer",
+    "saas-premium-ui/glass-logo",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "sections/site-footer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/site-footer.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/site-footer.tsx",
+    "demo": "source"
+  },
+  "contentHash": "0f808e64831b3c1c",
+  "importedAt": "2026-11-20T23:20:25.000Z"
+}

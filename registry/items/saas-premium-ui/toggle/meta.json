@@ -1,0 +1,49 @@
+{
+  "id": "saas-premium-ui/toggle",
+  "name": "Interrupteur iOS à knob verre",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "switch",
+    "toggle",
+    "interrupteur",
+    "ios"
+  ],
+  "description": "Interrupteur style iOS, knob en verre qui glisse avec un ressort, piste bleue active. Props : checked / defaultChecked, onCheckedChange, label, tone (light, dark), size (sm, md), disabled.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/toggle.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/toggle.tsx",
+    "demo": "source"
+  },
+  "contentHash": "06cc8dd1f08d71f9",
+  "importedAt": "2026-11-20T23:20:24.890Z"
+}

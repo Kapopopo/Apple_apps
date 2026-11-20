@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-11-10T14:31:08.770Z",
+ "generatedAt": "2026-11-20T23:24:32.028Z",
  "counts": {
-  "ok": 2900,
+  "ok": 2943,
   "empty": 229,
   "error": 43
  },
@@ -20989,6 +20989,307 @@
    "hash": "a8978771d858fe1e",
    "chunk": "sha1:cdb1cd39ef8bdd2e",
    "at": "2026-11-10T14:30:01.372Z"
+  },
+  "saas-premium-ui/accent-button": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "c3bddbead12a7868",
+   "chunk": "sha1:09263061752f0222",
+   "at": "2026-11-20T23:24:19.741Z"
+  },
+  "saas-premium-ui/app-demos": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "898880f2925002c9",
+   "chunk": "sha1:1e8849cd126093a4",
+   "at": "2026-11-20T23:24:19.835Z"
+  },
+  "saas-premium-ui/auth-card": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "81a6f115163b926a",
+   "chunk": "sha1:07fe0dcdebbd6127",
+   "at": "2026-11-20T23:24:19.875Z"
+  },
+  "saas-premium-ui/auth-modal": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "2a47a5dad5701c20",
+   "chunk": "sha1:1a127e4bc38077a5",
+   "at": "2026-11-20T23:24:19.849Z"
+  },
+  "saas-premium-ui/calendar-card": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "cad60a54f6be6e3e",
+   "chunk": "sha1:c121b53a4ad0fb13",
+   "at": "2026-11-20T23:24:19.905Z"
+  },
+  "saas-premium-ui/countdown": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "de12563538e99ce1",
+   "chunk": "sha1:4d49421d8bdae398",
+   "at": "2026-11-20T23:24:19.877Z"
+  },
+  "saas-premium-ui/dark-accordion": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "2eb0ecf0138aaf2b",
+   "chunk": "sha1:9a5d49272b9829f7",
+   "at": "2026-11-20T23:24:21.438Z"
+  },
+  "saas-premium-ui/dark-showcase": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "e0742170de07f1ed",
+   "chunk": "sha1:9d39187990d85fb5",
+   "at": "2026-11-20T23:24:21.802Z"
+  },
+  "saas-premium-ui/dot-grid-background": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "6deb1e00b2030980",
+   "chunk": "sha1:f4c8d94fe571100f",
+   "at": "2026-11-20T23:24:21.729Z"
+  },
+  "saas-premium-ui/faq": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "ca7cc1b81768ac21",
+   "chunk": "sha1:14cf19517ebb623b",
+   "at": "2026-11-20T23:24:21.700Z"
+  },
+  "saas-premium-ui/footer": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "ba16fb5b75d0cf45",
+   "chunk": "sha1:7105e11b5769e5af",
+   "at": "2026-11-20T23:24:21.701Z"
+  },
+  "saas-premium-ui/fullscreen-menu": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "5654cd929d653ecf",
+   "chunk": "sha1:0da51498fa406aba",
+   "at": "2026-11-20T23:24:21.671Z"
+  },
+  "saas-premium-ui/glass-logo": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "d30992fbd2658681",
+   "chunk": "sha1:35d75b48071ad908",
+   "at": "2026-11-20T23:24:23.157Z"
+  },
+  "saas-premium-ui/glow-button": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "b5264dabd5e4991f",
+   "chunk": "sha1:2bf260ecd4ec65d3",
+   "at": "2026-11-20T23:24:23.460Z"
+  },
+  "saas-premium-ui/header": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "0b3b2f44221c51f1",
+   "chunk": "sha1:d3989c4f2a47b9bc",
+   "at": "2026-11-20T23:24:23.441Z"
+  },
+  "saas-premium-ui/hero": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "ed9b120327e8eea4",
+   "chunk": "sha1:c5831bb9859fe6f6",
+   "at": "2026-11-20T23:24:23.497Z"
+  },
+  "saas-premium-ui/horizontal-carousel": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "1855b3c59a56fc9b",
+   "chunk": "sha1:a7172e13cb6720fc",
+   "at": "2026-11-20T23:24:23.494Z"
+  },
+  "saas-premium-ui/landing-demo": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "7fb65f15f711dab9",
+   "chunk": "sha1:77c7d12084a4aca4",
+   "at": "2026-11-20T23:24:24.116Z"
+  },
+  "saas-premium-ui/led-display": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "557e0c0cbe61308e",
+   "chunk": "sha1:7e51bbfed1548326",
+   "at": "2026-11-20T23:24:24.890Z"
+  },
+  "saas-premium-ui/locked-overlay": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "5d66252fe28abee6",
+   "chunk": "sha1:df5d20a1598fb727",
+   "at": "2026-11-20T23:24:25.305Z"
+  },
+  "saas-premium-ui/media-sphere": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "fb370eee141c773f",
+   "chunk": "sha1:25fbf12ff581724d",
+   "at": "2026-11-20T23:24:25.383Z"
+  },
+  "saas-premium-ui/perspective-grid": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "fc3731a99d99bc88",
+   "chunk": "sha1:b0b822e066f2e267",
+   "at": "2026-11-20T23:24:25.281Z"
+  },
+  "saas-premium-ui/phone-mockup": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "a8a4c3cb1512ae31",
+   "chunk": "sha1:e461a697803c245d",
+   "at": "2026-11-20T23:24:25.261Z"
+  },
+  "saas-premium-ui/pill-badge": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "cf7ddfe616cf2b35",
+   "chunk": "sha1:c614cccef4bf50e3",
+   "at": "2026-11-20T23:24:25.881Z"
+  },
+  "saas-premium-ui/pixel-wave-background": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "dc17e6bda5443a9b",
+   "chunk": "sha1:0ad8f4b42975a234",
+   "at": "2026-11-20T23:24:26.660Z"
+  },
+  "saas-premium-ui/pricing": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "c5c12b546f3cd9fb",
+   "chunk": "sha1:634036f981c5b840",
+   "at": "2026-11-20T23:24:27.226Z"
+  },
+  "saas-premium-ui/pricing-card": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "c9ba6326d162443e",
+   "chunk": "sha1:4411214ede3ddc90",
+   "at": "2026-11-20T23:24:27.130Z"
+  },
+  "saas-premium-ui/primary-button": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "6510508bbfbd93cc",
+   "chunk": "sha1:1f7c8bf452a59b5d",
+   "at": "2026-11-20T23:24:27.074Z"
+  },
+  "saas-premium-ui/promo-bar": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "49260d3538eadaba",
+   "chunk": "sha1:2f76ee9b37491ab1",
+   "at": "2026-11-20T23:24:27.170Z"
+  },
+  "saas-premium-ui/review-card": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "15fd247e61422ae9",
+   "chunk": "sha1:62837036529e33a6",
+   "at": "2026-11-20T23:24:27.696Z"
+  },
+  "saas-premium-ui/reviews": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "a2c703fde9b4f8c5",
+   "chunk": "sha1:b3ea5fb67395a3b7",
+   "at": "2026-11-20T23:24:28.487Z"
+  },
+  "saas-premium-ui/rolling-number": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "e17ac41b09e06139",
+   "chunk": "sha1:390f459b20f980b4",
+   "at": "2026-11-20T23:24:28.969Z"
+  },
+  "saas-premium-ui/search-bar": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "e29d04d80d38dba0",
+   "chunk": "sha1:b269cae573837a57",
+   "at": "2026-11-20T23:24:29.008Z"
+  },
+  "saas-premium-ui/section-heading": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "d49106350e5b5c89",
+   "chunk": "sha1:f17d7733209e4124",
+   "at": "2026-11-20T23:24:28.999Z"
+  },
+  "saas-premium-ui/segmented-tabs": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "c0a11c4621d9dd21",
+   "chunk": "sha1:73b308415af57bb1",
+   "at": "2026-11-20T23:24:29.059Z"
+  },
+  "saas-premium-ui/short-video-tile": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "b9ae08dae14e30d0",
+   "chunk": "sha1:a3485221d4ede060",
+   "at": "2026-11-20T23:24:29.422Z"
+  },
+  "saas-premium-ui/site-footer": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "0f808e64831b3c1c",
+   "chunk": "sha1:e054edb741b7361c",
+   "at": "2026-11-20T23:24:30.207Z"
+  },
+  "saas-premium-ui/status-dot": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "7dc0dbc0ff026c80",
+   "chunk": "sha1:56ece5e41581f605",
+   "at": "2026-11-20T23:24:30.776Z"
+  },
+  "saas-premium-ui/step-card": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "283b94aa8a143a71",
+   "chunk": "sha1:e921d11982524de1",
+   "at": "2026-11-20T23:24:30.880Z"
+  },
+  "saas-premium-ui/steps": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "0e447ab5846d071c",
+   "chunk": "sha1:c801c46780857e21",
+   "at": "2026-11-20T23:24:30.954Z"
+  },
+  "saas-premium-ui/terminal-bar": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "752271e030de238a",
+   "chunk": "sha1:e599cccd75a9be70",
+   "at": "2026-11-20T23:24:30.823Z"
+  },
+  "saas-premium-ui/theme-board": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "cbbe94388a0e20dc",
+   "chunk": "sha1:2cc50a4aadfc26a5",
+   "at": "2026-11-20T23:24:31.193Z"
+  },
+  "saas-premium-ui/toggle": {
+   "status": "ok",
+   "thumb": true,
+   "hash": "06cc8dd1f08d71f9",
+   "chunk": "sha1:ab55eb3114cc8c32",
+   "at": "2026-11-20T23:24:31.973Z"
   },
   "shadcn/accordion": {
    "status": "ok",

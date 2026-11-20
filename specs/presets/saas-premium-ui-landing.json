@@ -1,0 +1,21 @@
+{
+  "name": "saas-premium-ui-landing",
+  "title": "Landing Saas premium UI",
+  "brief": "Landing d'une app SaaS mobile : hero avec commande d'installation, vitrine sombre à onglets, comment ça marche en 3 étapes, tarifs (mensuel + offre vedette), avis, FAQ, footer ; connexion par modale.",
+  "stack": "React + TypeScript + Tailwind CSS 4 + Motion",
+  "style": "Thème Saas premium UI : fond gris très clair, blocs noirs arrondis bord à bord, titres majuscules ultra-gras serrés, un seul accent bleu, pills, verre dépoli, halos bleus, micro-animations à ressort. Visuels en placeholders, textes à adapter au projet.",
+  "theme": "saas-premium-ui/theme",
+  "fonts": [],
+  "easings": [],
+  "blocks": [
+    { "id": "saas-premium-ui/hero", "note": "Bandeau promo + header + hero. Remplacer titre, sous-titre et commandes." },
+    { "id": "saas-premium-ui/dark-showcase", "note": "Vitrine sombre : onglet catalogue par défaut ; mockups à remplacer par des captures du produit." },
+    { "id": "saas-premium-ui/steps", "note": "Comment ça marche : 3 étapes du produit." },
+    { "id": "saas-premium-ui/pricing", "note": "Tarifs : offre mensuelle + offre vedette ; ajuster prix et compte à rebours." },
+    { "id": "saas-premium-ui/reviews", "note": "Avis clients réels à la place des avis génériques." },
+    { "id": "saas-premium-ui/faq", "note": "FAQ avant le footer." },
+    { "id": "saas-premium-ui/site-footer", "note": "Footer : visuel d'ambiance à remplacer, liens du site." },
+    { "id": "saas-premium-ui/auth-modal", "note": "Modale de connexion ouverte par les CTA « Commencer »." }
+  ],
+  "preset": true
+}

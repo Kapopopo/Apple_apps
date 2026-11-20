@@ -1,0 +1,54 @@
+{
+  "id": "saas-premium-ui/reviews",
+  "name": "Avis en carrousel",
+  "type": "section",
+  "category": "Carrousels",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "avis",
+    "reviews",
+    "témoignages",
+    "testimonials",
+    "carrousel"
+  ],
+  "description": "H2 deux tons aligné à gauche + accroche + CTA, puis défilement continu bord à bord des cartes d’avis (pause au survol). Options : equalHeight (cartes de même hauteur, citation sur 3 lignes), shot (blocks ou stats : placeholder des captures). Props : badge, title, subtitle, description, reviews, ctaLabel, onCta, equalHeight, shot. IMAGES : placeholders par défaut, mettre vos photos à leur place via la prop image de chaque avis.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/review-card",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "sections/reviews.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/reviews.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/reviews.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a2c703fde9b4f8c5",
+  "importedAt": "2026-11-20T23:20:24.990Z"
+}

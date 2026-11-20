@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/search-bar",
+  "name": "Barre de recherche en verre sombre",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "search",
+    "recherche",
+    "input",
+    "glass",
+    "placeholder animé"
+  ],
+  "description": "Champ de recherche 520×52 en verre sombre (ou clair), loupe, placeholder qui se tape tout seul entre plusieurs suggestions, bouton blanc « Chercher ». Props : suggestions, buttonLabel, onSearch, defaultValue, tone (dark, light), label.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/search-bar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/search-bar.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/search-bar.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e29d04d80d38dba0",
+  "importedAt": "2026-11-20T23:20:24.959Z"
+}

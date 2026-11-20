@@ -1,0 +1,24 @@
+{
+  // Vérification du code React écrit pour Atlas (npm run check:authored). Paquets et types lus dans previews/node_modules.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "lib": ["es2022", "dom", "dom.iterable"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "baseUrl": ".",
+    "typeRoots": ["../previews/node_modules/@types"],
+    "types": ["react", "react-dom"],
+    "paths": {
+      "@/*": ["./saas-premium-ui/src/*"],
+      "*": ["../previews/node_modules/@types/*", "../previews/node_modules/*"]
+    }
+  },
+  "include": ["saas-premium-ui/src/**/*.ts", "saas-premium-ui/src/**/*.tsx"]
+}

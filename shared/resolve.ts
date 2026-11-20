@@ -13,7 +13,12 @@ export const EXTENSIONS = ['', '.tsx', '.ts', '.jsx', '.js', '.mjs', '.css', '/i
 
 /** Alias déclarés dans importers/sources.json (+ démos Atlas vendorisées). */
 export function loadAliases(): Record<string, Aliases> {
-  const map: Record<string, Aliases> = { 'magic-ui': { '@/': 'demos/src/' }, 'motion-primitives': { '@/': 'demos/src/' } };
+  const map: Record<string, Aliases> = {
+    'magic-ui': { '@/': 'demos/src/' },
+    'motion-primitives': { '@/': 'demos/src/' },
+    // Sources écrites pour Atlas (authored/) : @/ = racine de leur src/, conservée telle quelle dans le registre.
+    'saas-premium-ui': { '@/': '' },
+  };
   const file = path.join(ROOT, 'importers', 'sources.json');
   if (!fs.existsSync(file)) return map;
   const cfg = JSON.parse(fs.readFileSync(file, 'utf8'));

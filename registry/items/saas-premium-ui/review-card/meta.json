@@ -1,0 +1,50 @@
+{
+  "id": "saas-premium-ui/review-card",
+  "name": "Carte d’avis avec étoiles vertes",
+  "type": "component",
+  "category": "Cartes",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "avis",
+    "review",
+    "témoignage",
+    "testimonial",
+    "étoiles"
+  ],
+  "description": "Carte d’avis blanche : capture (placeholder), bulle de messages sombre ou texte seul, 5 étoiles vertes, citation, nom et meta. Options : shot (blocks par défaut, ou stats : tableau de bord avec histogramme), equalHeight (h-full + citation limitée à 3 lignes). Props : variant, rating, quote, author, meta, messages, image, shot, equalHeight. IMAGES : placeholders par défaut, mettre vos photos à leur place via image.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/review-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/review-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/review-card.tsx",
+    "demo": "source"
+  },
+  "contentHash": "15fd247e61422ae9",
+  "importedAt": "2026-11-20T23:20:24.918Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "saas-premium-ui/perspective-grid",
+  "name": "Sol en grille bleue en perspective",
+  "type": "component",
+  "category": "Fonds",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "grid",
+    "grille",
+    "perspective",
+    "background",
+    "retro"
+  ],
+  "description": "Sol en grille vu en perspective (rotateX) qui défile en boucle, fondu à l’horizon et lueur au point de fuite ; à placer sous des mockups. Props : color, cell, angle, speed (0 = fixe), horizon, children.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/perspective-grid.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/perspective-grid.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/perspective-grid.tsx",
+    "demo": "source"
+  },
+  "contentHash": "fc3731a99d99bc88",
+  "importedAt": "2026-11-20T23:20:24.934Z"
+}

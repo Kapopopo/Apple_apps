@@ -1,0 +1,50 @@
+{
+  "id": "saas-premium-ui/calendar-card",
+  "name": "Carte calendrier de planification",
+  "type": "component",
+  "category": "Calendriers",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "calendar",
+    "calendrier",
+    "planning",
+    "planification",
+    "publication"
+  ],
+  "description": "Carte calendrier blanche : en-tête (titre, mois, compte), grille L→D, cases planifiées avec vignette, case mise en avant (bordure bleue + heure). Options : fill (cases étirées sur toute la hauteur), coverSlots (vignette pleine case, date en blanc), startDay ≤ 0 + prevMonthDays (jours du mois précédent grisés). Props : title, month, account, weeks, slots, highlight, startDay, renderSlot, compact, fill, coverSlots, prevMonthDays.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/calendar-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/calendar-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/calendar-card.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cad60a54f6be6e3e",
+  "importedAt": "2026-11-20T23:20:24.962Z"
+}

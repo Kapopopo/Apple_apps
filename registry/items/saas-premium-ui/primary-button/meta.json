@@ -1,0 +1,50 @@
+{
+  "id": "saas-premium-ui/primary-button",
+  "name": "Bouton principal pill noir",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "pill"
+  ],
+  "description": "Pill noir plein, ombre douce, flèche ↗ animée au survol, press scale(.97) puis retour spring-md. Props : variant (solid, white, outline), size (sm, md, lg), arrow, icon, addon (pastille intégrée, ex. réduction), href (rendu en lien), fullWidth, disabled.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/primary-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/primary-button.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/primary-button.tsx",
+    "demo": "source"
+  },
+  "contentHash": "6510508bbfbd93cc",
+  "importedAt": "2026-11-20T23:20:24.846Z"
+}

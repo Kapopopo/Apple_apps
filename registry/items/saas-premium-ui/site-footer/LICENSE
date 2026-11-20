@@ -1,0 +1,11 @@
+Thème Saas premium UI — création personnelle (Component Atlas)
+
+Code, tokens et démos écrits pour ce registre, d'après un style SaaS premium
+(couleurs, typographie, rayons, ombres, courbes d'animation, patterns de mise en page).
+Aucun logo, visuel, mockup, texte ni code d'un site existant n'est inclus : visuels en placeholders,
+textes génériques. Libre d'usage dans tes projets.
+
+Polices : Geist et Geist Mono, paquet npm `geist`
+Copyright (c) 2023 Vercel, in collaboration with basement.studio
+SIL Open Font License, Version 1.1 — https://openfontlicense.org
+Les fichiers de police ne sont pas inclus ici : ils sont installés depuis npm.

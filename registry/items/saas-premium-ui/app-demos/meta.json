@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/app-demos",
+  "name": "Démos d’app animées pour mockups",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "démo",
+    "app",
+    "mockup",
+    "animation",
+    "téléphone",
+    "écran"
+  ],
+  "description": "Écrans de démo d’app animés en boucle à glisser dans un téléphone (comme une vidéo) : HabitsDemo (tâches qui se cochent, anneau de progression), FinanceDemo (solde qui défile, courbe, opérations), WorkoutDemo (chrono, rythme cardiaque, égaliseur). PhoneDemo les met à l’échelle dans un PhoneMockup. En pause hors écran, figés sous prefers-reduced-motion.",
+  "framework": "react",
+  "dependencies": [
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/app-demos.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/app-demos.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/app-demos.tsx",
+    "demo": "source"
+  },
+  "contentHash": "898880f2925002c9",
+  "importedAt": "2026-11-20T23:20:24.971Z"
+}

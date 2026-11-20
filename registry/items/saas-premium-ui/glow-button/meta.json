@@ -1,0 +1,52 @@
+{
+  "id": "saas-premium-ui/glow-button",
+  "name": "Bouton à bordure lumineuse tournante",
+  "type": "component",
+  "category": "Boutons",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "glow",
+    "conic-gradient",
+    "border",
+    "animation"
+  ],
+  "description": "Pill noir en majuscules 15 px dont l’anneau bleu nuit porte un reflet conique qui tourne (@property --pl-angle, 4 s linéaire), halo bleu dessous ; figé sous prefers-reduced-motion. Props : size (md, lg), icon, iconRight, halo, href.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/glow-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/glow-button.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/glow-button.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b5264dabd5e4991f",
+  "importedAt": "2026-11-20T23:20:24.859Z"
+}

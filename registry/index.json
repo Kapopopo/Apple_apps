@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-14T21:00:35.613Z",
- "count": 3676,
+ "generatedAt": "2026-11-20T23:20:28.735Z",
+ "count": 3720,
  "sources": {
   "atlas": {
    "name": "Component Atlas",
@@ -102,6 +102,13 @@
    "license": "MIT",
    "licenseStatus": "open",
    "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc"
+  },
+  "saas-premium-ui": {
+   "name": "Saas premium UI",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+   "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées)."
   },
   "saas-starter": {
    "name": "Next.js SaaS Starter",
@@ -131428,6 +131435,1874 @@
    "dir": "items/reui/use-slider-input",
    "fileCount": 1,
    "isNew": true
+  },
+  {
+   "id": "saas-premium-ui/accent-button",
+   "name": "Bouton accent bleu",
+   "type": "component",
+   "category": "Boutons",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "glow",
+    "bleu"
+   ],
+   "description": "Pill bleu en dégradé vertical avec liseré clair et halo bleu, pour le CTA à retenir. Props : size (sm, md, lg), tone (default, deep), icon, iconRight, href, fullWidth.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/accent-button.tsx",
+    "demo": "source"
+   },
+   "contentHash": "c3bddbead12a7868",
+   "importedAt": "2026-11-20T23:20:24.853Z",
+   "dir": "items/saas-premium-ui/accent-button",
+   "fileCount": 2,
+   "group": "bouton accent bleu"
+  },
+  {
+   "id": "saas-premium-ui/app-demos",
+   "name": "Démos d’app animées pour mockups",
+   "type": "component",
+   "category": "Images et galeries",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "démo",
+    "app",
+    "mockup",
+    "animation",
+    "téléphone",
+    "écran"
+   ],
+   "description": "Écrans de démo d’app animés en boucle à glisser dans un téléphone (comme une vidéo) : HabitsDemo (tâches qui se cochent, anneau de progression), FinanceDemo (solde qui défile, courbe, opérations), WorkoutDemo (chrono, rythme cardiaque, égaliseur). PhoneDemo les met à l’échelle dans un PhoneMockup. En pause hors écran, figés sous prefers-reduced-motion.",
+   "framework": "react",
+   "dependencies": [
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/app-demos.tsx",
+    "demo": "source"
+   },
+   "contentHash": "898880f2925002c9",
+   "importedAt": "2026-11-20T23:20:24.971Z",
+   "dir": "items/saas-premium-ui/app-demos",
+   "fileCount": 2,
+   "group": "demos d app animees pour mockups"
+  },
+  {
+   "id": "saas-premium-ui/auth-card",
+   "name": "Carte de connexion avec code par email",
+   "type": "component",
+   "category": "Formulaires",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "login",
+    "connexion",
+    "inscription",
+    "auth",
+    "magic code",
+    "otp"
+   ],
+   "description": "Carte de connexion. modal : carreaux de verre derrière un titre centré majuscules sur 3 lignes (dernière en dégradé, icône inline), bouton fournisseur pill, séparateur texte, champ email gris gravé, bouton noir lumineux ↗, lien, mentions. inline : bordure bleu pâle et halo, explication centrée, label + champ pill blanc, bouton noir. Puis 6 cases de code. Props : variant, titleLines, titleIcon, subtitle, provider (ou null), separator, emailLabel, submitLabel, onSubmitEmail, onSubmitCode, header, footerLink, legal.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/auth-card.tsx",
+    "demo": "source"
+   },
+   "contentHash": "81a6f115163b926a",
+   "importedAt": "2026-11-20T23:20:24.940Z",
+   "dir": "items/saas-premium-ui/auth-card",
+   "fileCount": 2,
+   "group": "carte de connexion avec code par email"
+  },
+  {
+   "id": "saas-premium-ui/auth-modal",
+   "name": "Modale de connexion sur page floutée",
+   "type": "section",
+   "category": "Authentification",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "login",
+    "connexion",
+    "inscription",
+    "modal",
+    "auth",
+    "glass"
+   ],
+   "description": "Modale centrée sur la page assombrie et floutée : carte blanche avec en-tête de carreaux de verre en perspective derrière le titre majuscules 3 lignes (icône inline, dernière ligne en dégradé), bouton fournisseur, email, bouton noir lumineux, code à 6 chiffres ; bouton de fermeture rond cerclé. Échap / clic sur le fond / × ferment. Exporte GlassTiles. Props : open, onOpenChange, background, card (props d’AuthCard), contained.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/auth-card",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/auth-modal.tsx",
+    "demo": "source"
+   },
+   "contentHash": "2a47a5dad5701c20",
+   "importedAt": "2026-11-20T23:20:25.003Z",
+   "dir": "items/saas-premium-ui/auth-modal",
+   "fileCount": 2,
+   "group": "modale de connexion sur page floutee"
+  },
+  {
+   "id": "saas-premium-ui/calendar-card",
+   "name": "Carte calendrier de planification",
+   "type": "component",
+   "category": "Calendriers",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "calendar",
+    "calendrier",
+    "planning",
+    "planification",
+    "publication"
+   ],
+   "description": "Carte calendrier blanche : en-tête (titre, mois, compte), grille L→D, cases planifiées avec vignette, case mise en avant (bordure bleue + heure). Options : fill (cases étirées sur toute la hauteur), coverSlots (vignette pleine case, date en blanc), startDay ≤ 0 + prevMonthDays (jours du mois précédent grisés). Props : title, month, account, weeks, slots, highlight, startDay, renderSlot, compact, fill, coverSlots, prevMonthDays.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/calendar-card.tsx",
+    "demo": "source"
+   },
+   "contentHash": "cad60a54f6be6e3e",
+   "importedAt": "2026-11-20T23:20:24.962Z",
+   "dir": "items/saas-premium-ui/calendar-card",
+   "fileCount": 2,
+   "group": "carte calendrier de planification"
+  },
+  {
+   "id": "saas-premium-ui/countdown",
+   "name": "Compte à rebours en cases mono",
+   "type": "component",
+   "category": "Indicateurs",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "countdown",
+    "compte à rebours",
+    "timer",
+    "promo"
+   ],
+   "description": "Cases mono arrondies à bordure fine, chiffres qui glissent à chaque changement. Props : target (date) ou seconds (durée), units (d, h, m, s), labels, tone (light, dark), size (sm, md), onComplete.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/countdown.tsx",
+    "demo": "source"
+   },
+   "contentHash": "de12563538e99ce1",
+   "importedAt": "2026-11-20T23:20:24.895Z",
+   "dir": "items/saas-premium-ui/countdown",
+   "fileCount": 2,
+   "group": "compte a rebours en cases mono"
+  },
+  {
+   "id": "saas-premium-ui/dark-accordion",
+   "name": "Accordéon FAQ en relief sombre",
+   "type": "component",
+   "category": "FAQ",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "accordion",
+    "accordéon",
+    "faq",
+    "questions"
+   ],
+   "description": "Items en relief « bouton physique » sur fond noir, ouverture grid-template-rows 0fr → 1fr (500 ms ease-out-expo) + fondu, icône + qui pivote en ×. Props : items (id, question, answer), defaultOpen, multiple, tone (dark, light).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/dark-accordion.tsx",
+    "demo": "source"
+   },
+   "contentHash": "2eb0ecf0138aaf2b",
+   "importedAt": "2026-11-20T23:20:24.870Z",
+   "dir": "items/saas-premium-ui/dark-accordion",
+   "fileCount": 2,
+   "group": "accordeon faq en relief sombre"
+  },
+  {
+   "id": "saas-premium-ui/dark-showcase",
+   "name": "Vitrine sombre à onglets",
+   "type": "section",
+   "category": "Fonctionnalités",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "showcase",
+    "vitrine",
+    "onglets",
+    "catalogue",
+    "paywall",
+    "mockups"
+   ],
+   "description": "Barre d’onglets posée sur un bloc noir pur arrondi en haut ; 4 onglets en swipe-in : automatiser (console d’agent animée, calendrier qui se remplit, téléphone), écrans (mur de mockups qui défilent, rangée verrouillée floutée avec accroche), formats (recherche, sphère de vignettes 9:16, contrôles segmentés, CTA lumineux), captures (filtres, rangées de fiches store, fondu avec accroche). Options : autoplay (ms, 0 par défaut ; 7000 = rotation des onglets avec trait qui se remplit, pause au survol), interactiveSphere (sphère cliquable et filtrée par les contrôles). Props : defaultTab, autoplay, interactiveSphere, photos. IMAGES : placeholders par défaut, mettre vos photos à leur place avec la prop photos (vignettes verticales ~180×320).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/accent-button",
+    "saas-premium-ui/calendar-card",
+    "saas-premium-ui/dot-grid-background",
+    "saas-premium-ui/glow-button",
+    "saas-premium-ui/media-sphere",
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/search-bar",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/segmented-tabs",
+    "saas-premium-ui/short-video-tile",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/dark-showcase.tsx",
+    "demo": "source"
+   },
+   "contentHash": "e0742170de07f1ed",
+   "importedAt": "2026-11-20T23:20:24.981Z",
+   "dir": "items/saas-premium-ui/dark-showcase",
+   "fileCount": 2,
+   "group": "vitrine sombre a onglets"
+  },
+  {
+   "id": "saas-premium-ui/dot-grid-background",
+   "name": "Trame de points halftone",
+   "type": "component",
+   "category": "Fonds",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "background",
+    "fond",
+    "dots",
+    "halftone",
+    "halo",
+    "grille"
+   ],
+   "description": "Trame de points dont la densité décroît vers le centre, halos bleus flous qui dérivent (12–15 s, décalés, coupés sous prefers-reduced-motion). Props : tone (light, dark), spacing, dotSize, clearCenter, halo, children (sinon calque absolute).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/dot-grid-background.tsx",
+    "demo": "source"
+   },
+   "contentHash": "6deb1e00b2030980",
+   "importedAt": "2026-11-20T23:20:24.900Z",
+   "dir": "items/saas-premium-ui/dot-grid-background",
+   "fileCount": 2,
+   "group": "trame de points halftone"
+  },
+  {
+   "id": "saas-premium-ui/faq",
+   "name": "FAQ sur bloc noir",
+   "type": "section",
+   "category": "FAQ",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "faq",
+    "questions",
+    "accordéon",
+    "contact"
+   ],
+   "description": "Fond noir pur : en-tête aligné à gauche (pastille sombre, H2 deux tons, accroche), bouton « Nous contacter » à point vert, accordéon en relief dans un cadre. Option blendBottom : fondu du bas vers le bleu nuit d’une photo de footer et filets latéraux fondus (raccord sans couture). Props : badge, title, subtitle, description, items, contactLabel, contactHref, blendBottom.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/dark-accordion",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/status-dot",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/faq.tsx",
+    "demo": "source"
+   },
+   "contentHash": "ca7cc1b81768ac21",
+   "importedAt": "2026-11-20T23:20:24.994Z",
+   "dir": "items/saas-premium-ui/faq",
+   "fileCount": 2,
+   "group": "faq sur bloc noir"
+  },
+  {
+   "id": "saas-premium-ui/footer",
+   "name": "Footer avec visuel d’ambiance",
+   "type": "component",
+   "category": "Navigation",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "footer",
+    "pied de page",
+    "langue",
+    "liens"
+   ],
+   "description": "Footer sombre : grand visuel d’ambiance (420 px mobile, 720 px bureau) puis marque + email + langue / Navigation / Informations, copyright. Visuel par défaut en CSS/SVG (ciel, montagnes, lac, objet de verre) ; option glass : dalle plate (défaut) ou extrudée en 3D qui lévite avec reflet sur le lac. Props : brand, email, columns, languages, copyright, visual, visualHeight, glass. IMAGES : placeholders par défaut, mettre vos photos à leur place via visual.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/fullscreen-menu",
+    "saas-premium-ui/header",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/footer.tsx",
+    "demo": "source"
+   },
+   "contentHash": "ba16fb5b75d0cf45",
+   "importedAt": "2026-11-20T23:20:24.952Z",
+   "dir": "items/saas-premium-ui/footer",
+   "fileCount": 2,
+   "group": "footer avec visuel d ambiance"
+  },
+  {
+   "id": "saas-premium-ui/fullscreen-menu",
+   "name": "Menu plein écran flouté",
+   "type": "component",
+   "category": "Navigation",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "menu",
+    "navigation",
+    "overlay",
+    "burger",
+    "mobile"
+   ],
+   "description": "Overlay clair semi-transparent et flouté, liens 18 px à chevrons et séparateurs fins, entrée en cascade, liens légaux en bas ; Échap ferme, défilement bloqué. Props : open, onClose, links, legalLinks, cta, contained, top.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/fullscreen-menu.tsx",
+    "demo": "source"
+   },
+   "contentHash": "5654cd929d653ecf",
+   "importedAt": "2026-11-20T23:20:24.944Z",
+   "dir": "items/saas-premium-ui/fullscreen-menu",
+   "fileCount": 2,
+   "group": "menu plein ecran floute"
+  },
+  {
+   "id": "saas-premium-ui/glass-logo",
+   "name": "Logo en verre 3D",
+   "type": "component",
+   "category": "Illustrations",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "logo",
+    "verre",
+    "glass",
+    "3d",
+    "glassmorphism"
+   ],
+   "description": "Logo en verre 3D : tuile arrondie inclinée vers la lumière, verre dépoli qui floute le décor, tranche extrudée, liseré lumineux, reflet et éclat qui balaie la surface en boucle, lévitation lente ; symbole générique au centre (remplaçable via children). Exporte GlassMark (version compacte pour un header) et Spark. Animations coupées sous prefers-reduced-motion.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/glass-logo.tsx",
+    "demo": "source"
+   },
+   "contentHash": "d30992fbd2658681",
+   "importedAt": "2026-11-20T23:20:24.965Z",
+   "dir": "items/saas-premium-ui/glass-logo",
+   "fileCount": 2,
+   "group": "logo en verre d"
+  },
+  {
+   "id": "saas-premium-ui/glow-button",
+   "name": "Bouton à bordure lumineuse tournante",
+   "type": "component",
+   "category": "Boutons",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "glow",
+    "conic-gradient",
+    "border",
+    "animation"
+   ],
+   "description": "Pill noir en majuscules 15 px dont l’anneau bleu nuit porte un reflet conique qui tourne (@property --pl-angle, 4 s linéaire), halo bleu dessous ; figé sous prefers-reduced-motion. Props : size (md, lg), icon, iconRight, halo, href.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/glow-button.tsx",
+    "demo": "source"
+   },
+   "contentHash": "b5264dabd5e4991f",
+   "importedAt": "2026-11-20T23:20:24.859Z",
+   "dir": "items/saas-premium-ui/glow-button",
+   "fileCount": 2,
+   "group": "bouton a bordure lumineuse tournante"
+  },
+  {
+   "id": "saas-premium-ui/header",
+   "name": "Header transparent avec burger",
+   "type": "component",
+   "category": "Navigation",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "header",
+    "navbar",
+    "burger",
+    "glass",
+    "menu"
+   ],
+   "description": "Transparent au repos, verre blanc 72 % au défilement ; bureau : liens mono majuscules séparés par « · » + CTA ; mobile : burger → menu plein écran. Options : cta (solid par défaut, ou glow : bordure lumineuse tournante + halo, visible aussi sur mobile), autoDark (verre sombre et texte blanc au-dessus des sections .pl-dark), logoMark (tile ou glass). Exporte Wordmark. Props : logo, links, legalLinks, ctaLabel, onCta, menuCta, sticky, top, contained, scrolled, cta, autoDark, logoMark.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/fullscreen-menu",
+    "saas-premium-ui/glass-logo",
+    "saas-premium-ui/glow-button",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/header.tsx",
+    "demo": "source"
+   },
+   "contentHash": "0b3b2f44221c51f1",
+   "importedAt": "2026-11-20T23:20:24.949Z",
+   "dir": "items/saas-premium-ui/header",
+   "fileCount": 2,
+   "group": "header transparent avec burger"
+  },
+  {
+   "id": "saas-premium-ui/hero",
+   "name": "Hero majuscules avec barre terminal",
+   "type": "section",
+   "category": "Hero",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "hero",
+    "landing",
+    "terminal",
+    "titre",
+    "header",
+    "promo"
+   ],
+   "description": "Bandeau promo + header, H1 majuscules 900 avec icône animée au milieu, accroche grise, barre terminal noire (seul CTA), trame de points. Options : fixedChrome (bandeau + header fixés pendant tout le défilement), header (cta, autoDark, logoMark, logo transmis au header), onStart (CTA « Commencer » du header et du menu). Exporte SwapIcon. Props : titleBefore, titleAfter, subtitle, commands, ctaLabel, onCta, onStart, chrome, promo, links, fixedChrome, header.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/dot-grid-background",
+    "saas-premium-ui/fullscreen-menu",
+    "saas-premium-ui/header",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/promo-bar",
+    "saas-premium-ui/terminal-bar",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/hero.tsx",
+    "demo": "source"
+   },
+   "contentHash": "ed9b120327e8eea4",
+   "importedAt": "2026-11-20T23:20:24.978Z",
+   "dir": "items/saas-premium-ui/hero",
+   "fileCount": 2,
+   "group": "hero majuscules avec barre terminal"
+  },
+  {
+   "id": "saas-premium-ui/horizontal-carousel",
+   "name": "Carrousel horizontal qui déborde du bord",
+   "type": "component",
+   "category": "Carrousels",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "carousel",
+    "carrousel",
+    "scroll",
+    "snap",
+    "slider"
+   ],
+   "description": "Défilement horizontal à scroll-snap : cartes qui débordent du bord (bleed) ou carrousel bord à bord aligné sur la grille (inset), flèches dès 640 px, cartes étirées ou alignées en haut. Exporte CarouselItem. Props : children, bleed, inset, align (stretch, start), gap, controls, tone, label.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/horizontal-carousel.tsx",
+    "demo": "source"
+   },
+   "contentHash": "1855b3c59a56fc9b",
+   "importedAt": "2026-11-20T23:20:24.923Z",
+   "dir": "items/saas-premium-ui/horizontal-carousel",
+   "fileCount": 2,
+   "group": "carrousel horizontal qui deborde du bord"
+  },
+  {
+   "id": "saas-premium-ui/landing-demo",
+   "name": "Landing complète Saas premium UI",
+   "type": "screen",
+   "category": "Pages d’accueil",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "landing",
+    "page",
+    "démo",
+    "saas",
+    "apple-like"
+   ],
+   "description": "Landing complète assemblée comme un vrai site, toutes les options activées : bandeau + header fixés (CTA lumineux, verre sombre auto, logo de verre), hero, vitrine (onglet automatiser, rotation des onglets, sphère cliquable), étapes animées, tarifs avec trame et halos, avis de même hauteur, FAQ raccordée au footer, footer à dalle de verre 3D ; la modale de connexion s’ouvre depuis les CTA et bloque le défilement. IMAGES : placeholders, mettre vos photos à leur place (props photos et footerPhoto).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/auth-modal",
+    "saas-premium-ui/dark-showcase",
+    "saas-premium-ui/faq",
+    "saas-premium-ui/hero",
+    "saas-premium-ui/pricing",
+    "saas-premium-ui/reviews",
+    "saas-premium-ui/site-footer",
+    "saas-premium-ui/steps",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/landing-demo.tsx",
+    "demo": "source"
+   },
+   "contentHash": "7fb65f15f711dab9",
+   "importedAt": "2026-11-20T23:20:25.006Z",
+   "dir": "items/saas-premium-ui/landing-demo",
+   "fileCount": 2,
+   "group": "landing complete saas premium"
+  },
+  {
+   "id": "saas-premium-ui/led-display",
+   "name": "Afficheur LED à matrice de points",
+   "type": "component",
+   "category": "Indicateurs",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "led",
+    "dot matrix",
+    "afficheur",
+    "countdown",
+    "mono"
+   ],
+   "description": "Matrice de points 5×7 en SVG dans un cadre noir épais, avec étiquette en onglet optionnelle. Une ou plusieurs lignes (chiffres, lettres, : - . % €) et/ou un compte à rebours « NJ HH:MM:SS ». Tons accent, white, success, dim, dimAccent, réglables par ligne. Props : text, countdown, label, tone, rowTones, dot, gap, framed.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/led-display.tsx",
+    "demo": "source"
+   },
+   "contentHash": "557e0c0cbe61308e",
+   "importedAt": "2026-11-20T23:20:24.903Z",
+   "dir": "items/saas-premium-ui/led-display",
+   "fileCount": 2,
+   "group": "afficheur led a matrice de points"
+  },
+  {
+   "id": "saas-premium-ui/locked-overlay",
+   "name": "Overlay de contenu verrouillé",
+   "type": "component",
+   "category": "Fenêtres et panneaux",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "paywall",
+    "verrouillé",
+    "lock",
+    "overlay",
+    "premium"
+   ],
+   "description": "Dégradé vers le noir sur le bas d’un contenu, pill cadenas, gros titre blanc et CTA à bordure lumineuse ; le contenu au-dessus reste visible et inerte. Props : children, label, title, description, ctaLabel, onCta, height, blur.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/glow-button",
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/locked-overlay.tsx",
+    "demo": "source"
+   },
+   "contentHash": "5d66252fe28abee6",
+   "importedAt": "2026-11-20T23:20:24.927Z",
+   "dir": "items/saas-premium-ui/locked-overlay",
+   "fileCount": 2,
+   "group": "overlay de contenu verrouille"
+  },
+  {
+   "id": "saas-premium-ui/media-sphere",
+   "name": "Sphère 3D de vignettes",
+   "type": "component",
+   "category": "Images et galeries",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "sphere",
+    "sphère",
+    "3d",
+    "galerie",
+    "vignettes",
+    "globe"
+   ],
+   "description": "Sphère 3D de vignettes en CSS (sans three.js), inclinée, qui tourne lentement, avec ombrage et reflet. Options : selectable (clic → rotation + zoom vers la vignette, mise en avant de plusieurs vignettes), auto (même animation en boucle), match (filtre qui assombrit les vignettes exclues), variety (répartition de N visuels sans doublons voisins), tileAspect (ex. 9/16). Props : size, bands, density, speed, tilt, renderTile, variety, tileAspect, selectable, auto, match, zoom, featureCount. IMAGES : placeholders par défaut, mettre vos photos à leur place via renderTile (ex. ShortVideoTile).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/media-sphere.tsx",
+    "demo": "source"
+   },
+   "contentHash": "fb370eee141c773f",
+   "importedAt": "2026-11-20T23:20:24.956Z",
+   "dir": "items/saas-premium-ui/media-sphere",
+   "fileCount": 2,
+   "group": "sphere d de vignettes"
+  },
+  {
+   "id": "saas-premium-ui/perspective-grid",
+   "name": "Sol en grille bleue en perspective",
+   "type": "component",
+   "category": "Fonds",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "grid",
+    "grille",
+    "perspective",
+    "background",
+    "retro"
+   ],
+   "description": "Sol en grille vu en perspective (rotateX) qui défile en boucle, fondu à l’horizon et lueur au point de fuite ; à placer sous des mockups. Props : color, cell, angle, speed (0 = fixe), horizon, children.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/perspective-grid.tsx",
+    "demo": "source"
+   },
+   "contentHash": "fc3731a99d99bc88",
+   "importedAt": "2026-11-20T23:20:24.934Z",
+   "dir": "items/saas-premium-ui/perspective-grid",
+   "fileCount": 2,
+   "group": "sol en grille bleue en perspective"
+  },
+  {
+   "id": "saas-premium-ui/phone-mockup",
+   "name": "Mockup de smartphone générique",
+   "type": "component",
+   "category": "Images et galeries",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "mockup",
+    "phone",
+    "iphone",
+    "device",
+    "téléphone"
+   ],
+   "description": "Cadre de smartphone générique, écran placeholder clair ou sombre (réduit d’un bloc dans les petits téléphones) ou contenu libre. Exporte ScreenPlaceholder et DarkScreenPlaceholder. Props : children, width, frame, screen, float, tilt, glow, placeholder. IMAGES : placeholders par défaut, mettre vos photos à leur place via children (capture ou vidéo de votre app).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/phone-mockup.tsx",
+    "demo": "source"
+   },
+   "contentHash": "a8a4c3cb1512ae31",
+   "importedAt": "2026-11-20T23:20:24.930Z",
+   "dir": "items/saas-premium-ui/phone-mockup",
+   "fileCount": 2,
+   "group": "mockup de smartphone generique"
+  },
+  {
+   "id": "saas-premium-ui/pill-badge",
+   "name": "Pill badge",
+   "type": "component",
+   "category": "Navigation",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "badge",
+    "pill",
+    "pastille",
+    "statut"
+   ],
+   "description": "Pastille au-dessus des titres de section ou étiquette de statut. Props : variant (neutral, accent, solid, dark, glass), size (sm, md), icon, dot (success, accent, warning, danger) + pulse, italic, pop (entrée à ressort).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/pill-badge.tsx",
+    "demo": "source"
+   },
+   "contentHash": "cf7ddfe616cf2b35",
+   "importedAt": "2026-11-20T23:20:24.839Z",
+   "dir": "items/saas-premium-ui/pill-badge",
+   "fileCount": 2,
+   "group": "pill badge"
+  },
+  {
+   "id": "saas-premium-ui/pixel-wave-background",
+   "name": "Fond de vagues de pixels",
+   "type": "component",
+   "category": "Fonds",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "pixel",
+    "wave",
+    "vagues",
+    "background",
+    "ambiance"
+   ],
+   "description": "Vagues concentriques de pixels qui s’agrandissent et s’estompent, 4 couches à 9, 11, 14 et 17 s ; une couche fixe sous prefers-reduced-motion. Props : tone (accent, white), pixel, origin, opacity, children.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/pixel-wave-background.tsx",
+    "demo": "source"
+   },
+   "contentHash": "dc17e6bda5443a9b",
+   "importedAt": "2026-11-20T23:20:24.937Z",
+   "dir": "items/saas-premium-ui/pixel-wave-background",
+   "fileCount": 2,
+   "group": "fond de vagues de pixels"
+  },
+  {
+   "id": "saas-premium-ui/pricing",
+   "name": "Tarifs sombres avec afficheur LED",
+   "type": "section",
+   "category": "Tarifs",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "pricing",
+    "tarifs",
+    "prix",
+    "led",
+    "countdown",
+    "offre"
+   ],
+   "description": "Bloc sombre arrondi : afficheur LED à points (compte à rebours de l’offre), badge, H2 blanc majuscules, carte mensuelle sombre et carte vedette bleue (badge incliné, prix barré, prix à rouleaux, paiement en 3 fois). Props : badge, title, countdown, plans.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/dot-grid-background",
+    "saas-premium-ui/led-display",
+    "saas-premium-ui/pricing-card",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/pricing.tsx",
+    "demo": "source"
+   },
+   "contentHash": "c5c12b546f3cd9fb",
+   "importedAt": "2026-11-20T23:20:24.987Z",
+   "dir": "items/saas-premium-ui/pricing",
+   "fileCount": 2,
+   "group": "tarifs sombres avec afficheur led"
+  },
+  {
+   "id": "saas-premium-ui/pricing-card",
+   "name": "Carte de prix sombre ou bleue",
+   "type": "component",
+   "category": "Paiement",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "pricing",
+    "tarifs",
+    "prix",
+    "offre",
+    "abonnement"
+   ],
+   "description": "Carte de prix à deux couches : cadre noir et panneau graphite (dark) ou bleu (accent, étiquette inclinée) ; nom + pastille, prix barré puis prix à rouleaux, encart « payer en N fois », bouton blanc à pastille de réduction, features. Option glow : soft (défaut) ou colored (glow marqué bleu / gris bleuté). Props : variant, name, tag, description, price, originalPrice, currency, period, installments, installmentsLabel, features, ctaLabel, onCta, discountLabel, badge, glow.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/rolling-number",
+    "saas-premium-ui/theme",
+    "saas-premium-ui/toggle"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/pricing-card.tsx",
+    "demo": "source"
+   },
+   "contentHash": "c9ba6326d162443e",
+   "importedAt": "2026-11-20T23:20:24.911Z",
+   "dir": "items/saas-premium-ui/pricing-card",
+   "fileCount": 2,
+   "group": "carte de prix sombre ou bleue"
+  },
+  {
+   "id": "saas-premium-ui/primary-button",
+   "name": "Bouton principal pill noir",
+   "type": "component",
+   "category": "Boutons",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bouton",
+    "button",
+    "cta",
+    "pill"
+   ],
+   "description": "Pill noir plein, ombre douce, flèche ↗ animée au survol, press scale(.97) puis retour spring-md. Props : variant (solid, white, outline), size (sm, md, lg), arrow, icon, addon (pastille intégrée, ex. réduction), href (rendu en lien), fullWidth, disabled.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/primary-button.tsx",
+    "demo": "source"
+   },
+   "contentHash": "6510508bbfbd93cc",
+   "importedAt": "2026-11-20T23:20:24.846Z",
+   "dir": "items/saas-premium-ui/primary-button",
+   "fileCount": 2,
+   "group": "bouton principal pill noir"
+  },
+  {
+   "id": "saas-premium-ui/promo-bar",
+   "name": "Bandeau promo",
+   "type": "component",
+   "category": "Notifications",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "bandeau",
+    "promo",
+    "annonce",
+    "banner"
+   ],
+   "description": "Bandeau de 36 px blanc et centré : badge pill bleu en italique, texte ou prix, mini bouton noir, fermeture optionnelle. Props : badge, children, ctaLabel, onCta / ctaHref, fixed, onDismiss.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/promo-bar.tsx",
+    "demo": "source"
+   },
+   "contentHash": "49260d3538eadaba",
+   "importedAt": "2026-11-20T23:20:24.947Z",
+   "dir": "items/saas-premium-ui/promo-bar",
+   "fileCount": 2,
+   "group": "bandeau promo"
+  },
+  {
+   "id": "saas-premium-ui/review-card",
+   "name": "Carte d’avis avec étoiles vertes",
+   "type": "component",
+   "category": "Cartes",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "avis",
+    "review",
+    "témoignage",
+    "testimonial",
+    "étoiles"
+   ],
+   "description": "Carte d’avis blanche : capture (placeholder), bulle de messages sombre ou texte seul, 5 étoiles vertes, citation, nom et meta. Options : shot (blocks par défaut, ou stats : tableau de bord avec histogramme), equalHeight (h-full + citation limitée à 3 lignes). Props : variant, rating, quote, author, meta, messages, image, shot, equalHeight. IMAGES : placeholders par défaut, mettre vos photos à leur place via image.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/review-card.tsx",
+    "demo": "source"
+   },
+   "contentHash": "15fd247e61422ae9",
+   "importedAt": "2026-11-20T23:20:24.918Z",
+   "dir": "items/saas-premium-ui/review-card",
+   "fileCount": 2,
+   "group": "carte d avis avec etoiles vertes"
+  },
+  {
+   "id": "saas-premium-ui/reviews",
+   "name": "Avis en carrousel",
+   "type": "section",
+   "category": "Carrousels",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "avis",
+    "reviews",
+    "témoignages",
+    "testimonials",
+    "carrousel"
+   ],
+   "description": "H2 deux tons aligné à gauche + accroche + CTA, puis défilement continu bord à bord des cartes d’avis (pause au survol). Options : equalHeight (cartes de même hauteur, citation sur 3 lignes), shot (blocks ou stats : placeholder des captures). Props : badge, title, subtitle, description, reviews, ctaLabel, onCta, equalHeight, shot. IMAGES : placeholders par défaut, mettre vos photos à leur place via la prop image de chaque avis.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/review-card",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/reviews.tsx",
+    "demo": "source"
+   },
+   "contentHash": "a2c703fde9b4f8c5",
+   "importedAt": "2026-11-20T23:20:24.990Z",
+   "dir": "items/saas-premium-ui/reviews",
+   "fileCount": 2,
+   "group": "avis en carrousel"
+  },
+  {
+   "id": "saas-premium-ui/rolling-number",
+   "name": "Nombre à rouleaux de chiffres",
+   "type": "component",
+   "category": "Indicateurs",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "number",
+    "compteur",
+    "rolling",
+    "prix",
+    "ticker"
+   ],
+   "description": "Chaque chiffre est une colonne 0–9 qui défile jusqu’à sa valeur à l’apparition puis à chaque changement. Props : value, format (Intl.NumberFormatOptions), locale, prefix, suffix, duration, stagger.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/rolling-number.tsx",
+    "demo": "source"
+   },
+   "contentHash": "e17ac41b09e06139",
+   "importedAt": "2026-11-20T23:20:24.908Z",
+   "dir": "items/saas-premium-ui/rolling-number",
+   "fileCount": 2,
+   "group": "nombre a rouleaux de chiffres"
+  },
+  {
+   "id": "saas-premium-ui/search-bar",
+   "name": "Barre de recherche en verre sombre",
+   "type": "component",
+   "category": "Formulaires",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "search",
+    "recherche",
+    "input",
+    "glass",
+    "placeholder animé"
+   ],
+   "description": "Champ de recherche 520×52 en verre sombre (ou clair), loupe, placeholder qui se tape tout seul entre plusieurs suggestions, bouton blanc « Chercher ». Props : suggestions, buttonLabel, onSearch, defaultValue, tone (dark, light), label.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/search-bar.tsx",
+    "demo": "source"
+   },
+   "contentHash": "e29d04d80d38dba0",
+   "importedAt": "2026-11-20T23:20:24.959Z",
+   "dir": "items/saas-premium-ui/search-bar",
+   "fileCount": 2,
+   "group": "barre de recherche en verre sombre"
+  },
+  {
+   "id": "saas-premium-ui/section-heading",
+   "name": "En-tête de section deux tons",
+   "type": "component",
+   "category": "Texte",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "titre",
+    "heading",
+    "h2",
+    "badge",
+    "deux tons"
+   ],
+   "description": "Badge pill au-dessus (blanc gravé ou sombre), H2 deux tons 30/56 px graisse 600 (encre + gris) ou, dans un bloc sombre, H2 blanc majuscules 800 de 26/46 px avec icône inline optionnelle ; accroche 16,5/18 px ; cascade fade-up au scroll. Exporte InlineIcon. Props : badge, badgeIcon, badgeTone, title, subtitle, icon, iconAt, description, tone (light, dark), align (center, left), as (h1, h2).",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/section-heading.tsx",
+    "demo": "source"
+   },
+   "contentHash": "d49106350e5b5c89",
+   "importedAt": "2026-11-20T23:20:24.975Z",
+   "dir": "items/saas-premium-ui/section-heading",
+   "fileCount": 2,
+   "group": "en tete de section deux tons"
+  },
+  {
+   "id": "saas-premium-ui/segmented-tabs",
+   "name": "Onglets segmentés à indicateur glissant",
+   "type": "component",
+   "category": "Navigation",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "tabs",
+    "onglets",
+    "segmented control",
+    "indicateur"
+   ],
+   "description": "Onglets avec indicateur qui glisse (450 ms ease-ios), clavier ← →. Variantes : pill, ios (contrôle segmenté clair), bar (barre pleine largeur à filets, 2 colonnes sous 640 px). Option progress (variante bar) : le trait de l’onglet actif se remplit pendant N ms puis onProgressEnd (rotation automatique), progressPaused. Props : tabs, value / defaultValue, onChange, variant, tone, size, compactOnMobile, fullWidth, panelId, progress, progressPaused, onProgressEnd.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/segmented-tabs.tsx",
+    "demo": "source"
+   },
+   "contentHash": "c0a11c4621d9dd21",
+   "importedAt": "2026-11-20T23:20:24.865Z",
+   "dir": "items/saas-premium-ui/segmented-tabs",
+   "fileCount": 2,
+   "group": "onglets segmentes a indicateur glissant"
+  },
+  {
+   "id": "saas-premium-ui/short-video-tile",
+   "name": "Vignette de vidéo courte 9:16",
+   "type": "component",
+   "category": "Images et galeries",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "vignette",
+    "short",
+    "vidéo",
+    "réseau social",
+    "carrousel",
+    "9:16"
+   ],
+   "description": "Vignette verticale 9:16 pour MediaSphere ou un calendrier : photo + habillage de réseau social générique (vidéo ou carrousel, deux mises en page A / B, sans logo ni marque), ou photo seule (bare). Exporte ShortVideoPhotos (fournit les photos au sous-arbre), useShortVideoCount, shortVideoMeta. IMAGES : placeholders par défaut, mettre vos photos à leur place avec <ShortVideoPhotos photos={[…]}> (verticales ~180×320, libres de droits).",
+   "framework": "react",
+   "dependencies": [],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/short-video-tile.tsx",
+    "demo": "source"
+   },
+   "contentHash": "b9ae08dae14e30d0",
+   "importedAt": "2026-11-20T23:20:24.968Z",
+   "dir": "items/saas-premium-ui/short-video-tile",
+   "fileCount": 2,
+   "group": "vignette de video courte"
+  },
+  {
+   "id": "saas-premium-ui/site-footer",
+   "name": "Footer de landing",
+   "type": "section",
+   "category": "Pied de page",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "footer",
+    "pied de page",
+    "liens",
+    "langue"
+   ],
+   "description": "Footer de landing (colonnes Navigation / Informations, email, langue, copyright) avec visuel d’ambiance pleine largeur. Props : columns, email, visual, photo, glass. Exporte NightPhotoVisual (photo fondue en haut et en bas + logo de verre au-dessus de l’horizon et reflet). IMAGES : placeholders par défaut, mettre vos photos à leur place : prop photo (paysage nocturne, lac et montagnes, ~1920×1080) au lieu du paysage placeholder.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/footer",
+    "saas-premium-ui/glass-logo",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/site-footer.tsx",
+    "demo": "source"
+   },
+   "contentHash": "0f808e64831b3c1c",
+   "importedAt": "2026-11-20T23:20:25.000Z",
+   "dir": "items/saas-premium-ui/site-footer",
+   "fileCount": 2,
+   "group": "footer de landing"
+  },
+  {
+   "id": "saas-premium-ui/status-dot",
+   "name": "Point de statut pulsant",
+   "type": "component",
+   "category": "Indicateurs",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "statut",
+    "status",
+    "pulse",
+    "point",
+    "en ligne"
+   ],
+   "description": "Point coloré avec anneau qui s’élargit et s’efface en boucle. Props : tone (success, accent, warning, danger), pulse, size (sm, md), label.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/status-dot.tsx",
+    "demo": "source"
+   },
+   "contentHash": "7dc0dbc0ff026c80",
+   "importedAt": "2026-11-20T23:20:24.884Z",
+   "dir": "items/saas-premium-ui/status-dot",
+   "fileCount": 2,
+   "group": "point de statut pulsant"
+  },
+  {
+   "id": "saas-premium-ui/step-card",
+   "name": "Carte d’étape à glow bleu",
+   "type": "component",
+   "category": "Cartes",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "card",
+    "étape",
+    "step",
+    "comment ça marche",
+    "glow"
+   ],
+   "description": "Grande carte blanche bordée de bleu pâle avec glow diffus : visuel en haut (scène sombre en perspective par défaut), pill « Étape N · Nom », titre 24 px, texte. Lift au survol, entrée card-in. Props : step, stepName, title, description, visual, visualHeight.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/step-card.tsx",
+    "demo": "source"
+   },
+   "contentHash": "283b94aa8a143a71",
+   "importedAt": "2026-11-20T23:20:24.914Z",
+   "dir": "items/saas-premium-ui/step-card",
+   "fileCount": 2,
+   "group": "carte d etape a glow bleu"
+  },
+  {
+   "id": "saas-premium-ui/steps",
+   "name": "Comment ça marche en 3 cartes",
+   "type": "section",
+   "category": "Fonctionnalités",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "steps",
+    "étapes",
+    "comment ça marche",
+    "process",
+    "cartes"
+   ],
+   "description": "Pastille, H2 deux tons, 3 cartes d’étape en verre clair à halo bleu : téléphones sur bleu nuit avec couloir quadrillé, sphère de vignettes, calendrier de publications, puis CTA pill noir. Options : animated (démos d’app qui tournent dans les téléphones, grilles qui défilent, sphère qui zoome, calendrier qui se remplit), tall (visuels de 420 px). Props : badge, title, subtitle, steps, ctaLabel, onCta, animated, tall, photos. IMAGES : placeholders par défaut, mettre vos photos à leur place avec la prop photos.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/app-demos",
+    "saas-premium-ui/calendar-card",
+    "saas-premium-ui/media-sphere",
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/short-video-tile",
+    "saas-premium-ui/step-card",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/steps.tsx",
+    "demo": "source"
+   },
+   "contentHash": "0e447ab5846d071c",
+   "importedAt": "2026-11-20T23:20:24.984Z",
+   "dir": "items/saas-premium-ui/steps",
+   "fileCount": 2,
+   "group": "comment ca marche en cartes"
+  },
+  {
+   "id": "saas-premium-ui/terminal-bar",
+   "name": "Barre terminal avec commande animée",
+   "type": "component",
+   "category": "Code",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "terminal",
+    "commande",
+    "install",
+    "typing",
+    "copie"
+   ],
+   "description": "Pill noire avec « $ », commande mono tapée puis effacée en rotation, curseur clignotant, copie au clic (coche dessinée) et bouton bleu à droite. Props : commands, prompt, ctaLabel, onCta / ctaHref, typingSpeed, hold, copyable. Statique sous prefers-reduced-motion.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/accent-button",
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/terminal-bar.tsx",
+    "demo": "source"
+   },
+   "contentHash": "752271e030de238a",
+   "importedAt": "2026-11-20T23:20:24.875Z",
+   "dir": "items/saas-premium-ui/terminal-bar",
+   "fileCount": 2,
+   "group": "barre terminal avec commande animee"
+  },
+  {
+   "id": "saas-premium-ui/theme",
+   "name": "Thème Saas premium UI",
+   "type": "theme",
+   "category": "Thèmes",
+   "tags": [
+    "tokens",
+    "dark mode",
+    "tailwind 4",
+    "motion",
+    "geist",
+    "apple-like",
+    "glass",
+    "saas-premium-ui",
+    "saas premium ui"
+   ],
+   "description": "SaaS mobile « Apple-like » : fond gris très clair, blocs noirs arrondis plein écran, titres ultra-gras en majuscules serrées, un seul accent bleu électrique, pills, verre dépoli, halos bleus et micro-animations à ressort. Fichiers : tokens.css (variables --pl-*, bascule sombre .pl-dark), theme.css (mapping Tailwind 4 : bg-pl-ink, rounded-pl-xl, shadow-pl-card, ease-pl-ios, animate-pl-*, keyframes, garde prefers-reduced-motion), fonts.css (Geist via le paquet npm geist), lib/motion.ts (8 courbes nommées, variants fadeUp, cardIn, sheetIn, popBlur, blurReveal, swipeIn, lineIn, presets press/lift). Style uniquement, aucun asset.",
+   "framework": "agnostic",
+   "dependencies": [
+    "geist@^1.9.1",
+    "motion@^14.9.1",
+    "tailwindcss@^4.3.4"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Planche du thème : saas-premium-ui/theme-board"
+   },
+   "contentHash": "76dc1e451e7f8d7a",
+   "importedAt": "2026-11-20T23:20:24.822Z",
+   "dir": "themes/saas-premium-ui/theme",
+   "fileCount": 4
+  },
+  {
+   "id": "saas-premium-ui/theme-board",
+   "name": "Planche du thème Saas premium UI",
+   "type": "component",
+   "category": "Autres composants",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "tokens",
+    "couleurs",
+    "typographie",
+    "easings"
+   ],
+   "description": "Planche de référence du thème : couleurs, titres (display majuscules, H2 deux tons, mots en dégradé), rayons, ombres, verre et courbes d’animation en mouvement. Sert à vérifier le thème, pas à être posée telle quelle.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/theme-board.tsx",
+    "demo": "source"
+   },
+   "contentHash": "cbbe94388a0e20dc",
+   "importedAt": "2026-11-20T23:20:24.832Z",
+   "dir": "items/saas-premium-ui/theme-board",
+   "fileCount": 2,
+   "group": "planche du theme saas premium"
+  },
+  {
+   "id": "saas-premium-ui/toggle",
+   "name": "Interrupteur iOS à knob verre",
+   "type": "component",
+   "category": "Formulaires",
+   "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "switch",
+    "toggle",
+    "interrupteur",
+    "ios"
+   ],
+   "description": "Interrupteur style iOS, knob en verre qui glisse avec un ressort, piste bleue active. Props : checked / defaultChecked, onCheckedChange, label, tone (light, dark), size (sm, md), disabled.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+   ],
+   "registryDependencies": [
+    "saas-premium-ui/theme"
+   ],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui",
+   "sourceUrl": "",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "theme": "saas-premium-ui/theme",
+   "preview": {
+    "kind": "live",
+    "entry": "demos/toggle.tsx",
+    "demo": "source"
+   },
+   "contentHash": "06cc8dd1f08d71f9",
+   "importedAt": "2026-11-20T23:20:24.890Z",
+   "dir": "items/saas-premium-ui/toggle",
+   "fileCount": 2,
+   "group": "interrupteur ios a knob verre"
   },
   {
    "id": "saas-starter/header",

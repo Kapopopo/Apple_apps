@@ -1,0 +1,49 @@
+{
+  "id": "saas-premium-ui/led-display",
+  "name": "Afficheur LED à matrice de points",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "led",
+    "dot matrix",
+    "afficheur",
+    "countdown",
+    "mono"
+  ],
+  "description": "Matrice de points 5×7 en SVG dans un cadre noir épais, avec étiquette en onglet optionnelle. Une ou plusieurs lignes (chiffres, lettres, : - . % €) et/ou un compte à rebours « NJ HH:MM:SS ». Tons accent, white, success, dim, dimAccent, réglables par ligne. Props : text, countdown, label, tone, rowTones, dot, gap, framed.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/led-display.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/led-display.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/led-display.tsx",
+    "demo": "source"
+  },
+  "contentHash": "557e0c0cbe61308e",
+  "importedAt": "2026-11-20T23:20:24.903Z"
+}

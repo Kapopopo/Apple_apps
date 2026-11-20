@@ -1,0 +1,53 @@
+{
+  "id": "saas-premium-ui/auth-card",
+  "name": "Carte de connexion avec code par email",
+  "type": "component",
+  "category": "Formulaires",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "login",
+    "connexion",
+    "inscription",
+    "auth",
+    "magic code",
+    "otp"
+  ],
+  "description": "Carte de connexion. modal : carreaux de verre derrière un titre centré majuscules sur 3 lignes (dernière en dégradé, icône inline), bouton fournisseur pill, séparateur texte, champ email gris gravé, bouton noir lumineux ↗, lien, mentions. inline : bordure bleu pâle et halo, explication centrée, label + champ pill blanc, bouton noir. Puis 6 cases de code. Props : variant, titleLines, titleIcon, subtitle, provider (ou null), separator, emailLabel, submitLabel, onSubmitEmail, onSubmitCode, header, footerLink, legal.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/auth-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/auth-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/auth-card.tsx",
+    "demo": "source"
+  },
+  "contentHash": "81a6f115163b926a",
+  "importedAt": "2026-11-20T23:20:24.940Z"
+}

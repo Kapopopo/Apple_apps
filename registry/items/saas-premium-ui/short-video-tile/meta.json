@@ -1,0 +1,47 @@
+{
+  "id": "saas-premium-ui/short-video-tile",
+  "name": "Vignette de vidéo courte 9:16",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "vignette",
+    "short",
+    "vidéo",
+    "réseau social",
+    "carrousel",
+    "9:16"
+  ],
+  "description": "Vignette verticale 9:16 pour MediaSphere ou un calendrier : photo + habillage de réseau social générique (vidéo ou carrousel, deux mises en page A / B, sans logo ni marque), ou photo seule (bare). Exporte ShortVideoPhotos (fournit les photos au sous-arbre), useShortVideoCount, shortVideoMeta. IMAGES : placeholders par défaut, mettre vos photos à leur place avec <ShortVideoPhotos photos={[…]}> (verticales ~180×320, libres de droits).",
+  "framework": "react",
+  "dependencies": [],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/short-video-tile.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/short-video-tile.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/short-video-tile.tsx",
+    "demo": "source"
+  },
+  "contentHash": "b9ae08dae14e30d0",
+  "importedAt": "2026-11-20T23:20:24.968Z"
+}

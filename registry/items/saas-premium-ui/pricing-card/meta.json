@@ -1,0 +1,54 @@
+{
+  "id": "saas-premium-ui/pricing-card",
+  "name": "Carte de prix sombre ou bleue",
+  "type": "component",
+  "category": "Paiement",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "pricing",
+    "tarifs",
+    "prix",
+    "offre",
+    "abonnement"
+  ],
+  "description": "Carte de prix à deux couches : cadre noir et panneau graphite (dark) ou bleu (accent, étiquette inclinée) ; nom + pastille, prix barré puis prix à rouleaux, encart « payer en N fois », bouton blanc à pastille de réduction, features. Option glow : soft (défaut) ou colored (glow marqué bleu / gris bleuté). Props : variant, name, tag, description, price, originalPrice, currency, period, installments, installmentsLabel, features, ctaLabel, onCta, discountLabel, badge, glow.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/rolling-number",
+    "saas-premium-ui/theme",
+    "saas-premium-ui/toggle"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/pricing-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/pricing-card.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/pricing-card.tsx",
+    "demo": "source"
+  },
+  "contentHash": "c9ba6326d162443e",
+  "importedAt": "2026-11-20T23:20:24.911Z"
+}

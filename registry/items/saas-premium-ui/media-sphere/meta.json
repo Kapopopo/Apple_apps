@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/media-sphere",
+  "name": "Sphère 3D de vignettes",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "sphere",
+    "sphère",
+    "3d",
+    "galerie",
+    "vignettes",
+    "globe"
+  ],
+  "description": "Sphère 3D de vignettes en CSS (sans three.js), inclinée, qui tourne lentement, avec ombrage et reflet. Options : selectable (clic → rotation + zoom vers la vignette, mise en avant de plusieurs vignettes), auto (même animation en boucle), match (filtre qui assombrit les vignettes exclues), variety (répartition de N visuels sans doublons voisins), tileAspect (ex. 9/16). Props : size, bands, density, speed, tilt, renderTile, variety, tileAspect, selectable, auto, match, zoom, featureCount. IMAGES : placeholders par défaut, mettre vos photos à leur place via renderTile (ex. ShortVideoTile).",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/media-sphere.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/media-sphere.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/media-sphere.tsx",
+    "demo": "source"
+  },
+  "contentHash": "fb370eee141c773f",
+  "importedAt": "2026-11-20T23:20:24.956Z"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "saas-premium-ui/dark-showcase",
+  "name": "Vitrine sombre à onglets",
+  "type": "section",
+  "category": "Fonctionnalités",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "showcase",
+    "vitrine",
+    "onglets",
+    "catalogue",
+    "paywall",
+    "mockups"
+  ],
+  "description": "Barre d’onglets posée sur un bloc noir pur arrondi en haut ; 4 onglets en swipe-in : automatiser (console d’agent animée, calendrier qui se remplit, téléphone), écrans (mur de mockups qui défilent, rangée verrouillée floutée avec accroche), formats (recherche, sphère de vignettes 9:16, contrôles segmentés, CTA lumineux), captures (filtres, rangées de fiches store, fondu avec accroche). Options : autoplay (ms, 0 par défaut ; 7000 = rotation des onglets avec trait qui se remplit, pause au survol), interactiveSphere (sphère cliquable et filtrée par les contrôles). Props : defaultTab, autoplay, interactiveSphere, photos. IMAGES : placeholders par défaut, mettre vos photos à leur place avec la prop photos (vignettes verticales ~180×320).",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/accent-button",
+    "saas-premium-ui/calendar-card",
+    "saas-premium-ui/dot-grid-background",
+    "saas-premium-ui/glow-button",
+    "saas-premium-ui/media-sphere",
+    "saas-premium-ui/phone-mockup",
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/primary-button",
+    "saas-premium-ui/search-bar",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/segmented-tabs",
+    "saas-premium-ui/short-video-tile",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "sections/dark-showcase.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/dark-showcase.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/dark-showcase.tsx",
+    "demo": "source"
+  },
+  "contentHash": "e0742170de07f1ed",
+  "importedAt": "2026-11-20T23:20:24.981Z"
+}

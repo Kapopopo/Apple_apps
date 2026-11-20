@@ -1,0 +1,49 @@
+{
+  "id": "saas-premium-ui/countdown",
+  "name": "Compte à rebours en cases mono",
+  "type": "component",
+  "category": "Indicateurs",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "countdown",
+    "compte à rebours",
+    "timer",
+    "promo"
+  ],
+  "description": "Cases mono arrondies à bordure fine, chiffres qui glissent à chaque changement. Props : target (date) ou seconds (durée), units (d, h, m, s), labels, tone (light, dark), size (sm, md), onComplete.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/countdown.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/countdown.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/countdown.tsx",
+    "demo": "source"
+  },
+  "contentHash": "de12563538e99ce1",
+  "importedAt": "2026-11-20T23:20:24.895Z"
+}

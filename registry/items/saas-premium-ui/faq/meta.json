@@ -1,0 +1,54 @@
+{
+  "id": "saas-premium-ui/faq",
+  "name": "FAQ sur bloc noir",
+  "type": "section",
+  "category": "FAQ",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "section",
+    "faq",
+    "questions",
+    "accordéon",
+    "contact"
+  ],
+  "description": "Fond noir pur : en-tête aligné à gauche (pastille sombre, H2 deux tons, accroche), bouton « Nous contacter » à point vert, accordéon en relief dans un cadre. Option blendBottom : fondu du bas vers le bleu nuit d’une photo de footer et filets latéraux fondus (raccord sans couture). Props : badge, title, subtitle, description, items, contactLabel, contactHref, blendBottom.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.68.0",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/dark-accordion",
+    "saas-premium-ui/section-heading",
+    "saas-premium-ui/status-dot",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "sections/faq.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/faq.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/faq.tsx",
+    "demo": "source"
+  },
+  "contentHash": "ca7cc1b81768ac21",
+  "importedAt": "2026-11-20T23:20:24.994Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "saas-premium-ui/phone-mockup",
+  "name": "Mockup de smartphone générique",
+  "type": "component",
+  "category": "Images et galeries",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "mockup",
+    "phone",
+    "iphone",
+    "device",
+    "téléphone"
+  ],
+  "description": "Cadre de smartphone générique, écran placeholder clair ou sombre (réduit d’un bloc dans les petits téléphones) ou contenu libre. Exporte ScreenPlaceholder et DarkScreenPlaceholder. Props : children, width, frame, screen, float, tilt, glow, placeholder. IMAGES : placeholders par défaut, mettre vos photos à leur place via children (capture ou vidéo de votre app).",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/phone-mockup.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/phone-mockup.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/phone-mockup.tsx",
+    "demo": "source"
+  },
+  "contentHash": "a8a4c3cb1512ae31",
+  "importedAt": "2026-11-20T23:20:24.930Z"
+}

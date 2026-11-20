@@ -1,0 +1,51 @@
+{
+  "id": "saas-premium-ui/section-heading",
+  "name": "En-tête de section deux tons",
+  "type": "component",
+  "category": "Texte",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "titre",
+    "heading",
+    "h2",
+    "badge",
+    "deux tons"
+  ],
+  "description": "Badge pill au-dessus (blanc gravé ou sombre), H2 deux tons 30/56 px graisse 600 (encre + gris) ou, dans un bloc sombre, H2 blanc majuscules 800 de 26/46 px avec icône inline optionnelle ; accroche 16,5/18 px ; cascade fade-up au scroll. Exporte InlineIcon. Props : badge, badgeIcon, badgeTone, title, subtitle, icon, iconAt, description, tone (light, dark), align (center, left), as (h1, h2).",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "motion@^14.9.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/pill-badge",
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/section-heading.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/section-heading.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/section-heading.tsx",
+    "demo": "source"
+  },
+  "contentHash": "d49106350e5b5c89",
+  "importedAt": "2026-11-20T23:20:24.975Z"
+}

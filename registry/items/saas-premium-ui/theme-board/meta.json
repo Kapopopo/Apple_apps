@@ -1,0 +1,48 @@
+{
+  "id": "saas-premium-ui/theme-board",
+  "name": "Planche du thème Saas premium UI",
+  "type": "component",
+  "category": "Autres composants",
+  "tags": [
+    "saas-premium-ui",
+    "saas premium ui",
+    "tokens",
+    "couleurs",
+    "typographie",
+    "easings"
+  ],
+  "description": "Planche de référence du thème : couleurs, titres (display majuscules, H2 deux tons, mots en dégradé), rayons, ombres, verre et courbes d’animation en mouvement. Sert à vérifier le thème, pas à être posée telle quelle.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "tailwind-merge@^3.7.0"
+  ],
+  "registryDependencies": [
+    "saas-premium-ui/theme"
+  ],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Style uniquement, aucun asset : thème réimplémenté (tokens, patterns, recettes d’animation) pour un style SaaS premium. Aucun logo, visuel, mockup, texte ni code d’un site existant n’est repris ; visuels en placeholders, textes génériques. Création personnelle, libre d’usage dans tes projets.",
+  "attribution": "Polices Geist et Geist Mono : paquet npm geist, © Vercel, SIL Open Font License 1.1 (installées, non redistribuées).",
+  "files": [
+    {
+      "path": "components/theme-board.tsx",
+      "role": "source"
+    },
+    {
+      "path": "demos/theme-board.tsx",
+      "role": "demo"
+    }
+  ],
+  "theme": "saas-premium-ui/theme",
+  "preview": {
+    "kind": "live",
+    "entry": "demos/theme-board.tsx",
+    "demo": "source"
+  },
+  "contentHash": "cbbe94388a0e20dc",
+  "importedAt": "2026-11-20T23:20:24.832Z"
+}
