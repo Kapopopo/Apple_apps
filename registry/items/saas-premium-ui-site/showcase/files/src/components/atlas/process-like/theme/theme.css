@@ -1,0 +1,341 @@
+/*
+ * Thème process-like pour Tailwind CSS 4 (équivalent du « preset » : à importer après `@import "tailwindcss"`).
+ * Utilitaires : bg-pl-ink, text-pl-fg-2, rounded-pl-xl, shadow-pl-card, ease-pl-ios, font-pl-mono, animate-pl-float…
+ * Classes : .pl-root (base de page), .pl-dark / .pl-light (bascule des rôles), .pl-glass, .pl-display, .pl-h2…
+ * Boucles d'ambiance en CSS pur, toutes coupées sous prefers-reduced-motion (bloc en fin de fichier).
+ */
+@import '@/components/atlas/process-like/theme/tokens.css';
+
+@property --pl-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@theme inline {
+  --color-pl-bg: var(--pl-bg);
+  --color-pl-bg-soft: var(--pl-bg-soft);
+  --color-pl-bg-soft-2: var(--pl-bg-soft-2);
+  --color-pl-surface: var(--pl-surface);
+  --color-pl-ink: var(--pl-ink);
+  --color-pl-ink-dark: var(--pl-ink-dark-bg);
+  --color-pl-ink-raised: var(--pl-ink-raised-from);
+  --color-pl-ink-raised-to: var(--pl-ink-raised-to);
+  --color-pl-ink-display: var(--pl-ink-display);
+  --color-pl-ink-card: var(--pl-ink-card);
+  --color-pl-ink-footer: var(--pl-ink-footer);
+  --color-pl-muted: var(--pl-muted);
+  --color-pl-muted-2: var(--pl-muted-2);
+  --color-pl-line: var(--pl-line);
+  --color-pl-accent: var(--pl-accent);
+  --color-pl-accent-deep: var(--pl-accent-deep);
+  --color-pl-accent-sky: var(--pl-accent-sky);
+  --color-pl-accent-soft: var(--pl-accent-soft-bg);
+  --color-pl-accent-line: var(--pl-accent-line);
+  --color-pl-link: var(--pl-link);
+  --color-pl-success: var(--pl-success);
+  --color-pl-success-bg: var(--pl-success-bg);
+  --color-pl-success-dot: var(--pl-success-dot);
+  --color-pl-warning: var(--pl-warning);
+  --color-pl-warning-bg: var(--pl-warning-bg);
+  --color-pl-danger: var(--pl-danger);
+  --color-pl-danger-bg: var(--pl-danger-bg);
+
+  /* Rôles qui basculent dans .pl-dark */
+  --color-pl-page: var(--pl-page);
+  --color-pl-fg: var(--pl-fg);
+  --color-pl-fg-2: var(--pl-fg-2);
+  --color-pl-fg-3: var(--pl-fg-3);
+  --color-pl-card: var(--pl-card);
+  --color-pl-card-2: var(--pl-card-2);
+  --color-pl-border: var(--pl-border);
+  --color-pl-fg-sub: var(--pl-fg-sub);
+
+  --font-pl-sans: var(--pl-font-sans);
+  --font-pl-mono: var(--pl-font-mono);
+
+  --radius-pl-xs: var(--pl-r-xs);
+  --radius-pl-sm: var(--pl-r-sm);
+  --radius-pl-md: var(--pl-r-md);
+  --radius-pl-lg: var(--pl-r-lg);
+  --radius-pl-xl: var(--pl-r-xl);
+  --radius-pl-pill: var(--pl-r-pill);
+
+  --shadow-pl-xs: var(--pl-shadow-xs);
+  --shadow-pl-card: var(--pl-shadow-card);
+  --shadow-pl-card-hover: var(--pl-shadow-card-hover);
+  --shadow-pl-btn: var(--pl-shadow-btn);
+  --shadow-pl-dark-item: var(--pl-shadow-dark-item);
+  --shadow-pl-glow: var(--pl-glow-accent);
+  --shadow-pl-glow-soft: var(--pl-glow-soft);
+  --shadow-pl-ring: var(--pl-ring-pulse);
+  --shadow-pl-glow-ring: var(--pl-glow-ring);
+  --shadow-pl-glow-cta: var(--pl-glow-cta);
+  --shadow-pl-dark-card: var(--pl-shadow-dark-card);
+  --shadow-pl-pill: var(--pl-shadow-pill);
+  --shadow-pl-inset: var(--pl-shadow-inset);
+
+  --ease-pl-out-soft: var(--pl-ease-out-soft);
+  --ease-pl-out-expo: var(--pl-ease-out-expo);
+  --ease-pl-ios: var(--pl-ease-ios);
+  --ease-pl-spring-sm: var(--pl-ease-spring-sm);
+  --ease-pl-spring-md: var(--pl-ease-spring-md);
+  --ease-pl-spring-back: var(--pl-ease-spring-back);
+  --ease-pl-inout: var(--pl-ease-inout);
+  --ease-pl-slow-settle: var(--pl-ease-slow-settle);
+  --ease-pl-press: var(--pl-ease-press);
+  --ease-pl-drift: var(--pl-ease-drift);
+
+  --animate-pl-float: pl-float 6s var(--pl-ease-inout) infinite;
+  --animate-pl-breathe: pl-breathe 4s var(--pl-ease-inout) infinite;
+  --animate-pl-ripple: pl-ripple 2.4s var(--pl-ease-out-soft) infinite;
+  --animate-pl-ping: pl-ping 1.6s var(--pl-ease-out-soft) infinite;
+  --animate-pl-ring-pulse: pl-ring-pulse 2s var(--pl-ease-inout) infinite;
+  --animate-pl-spin-border: pl-spin-border 4s linear infinite;
+  --animate-pl-glow-slide: pl-glow-slide 8s var(--pl-ease-inout) infinite alternate;
+  --animate-pl-shimmer: pl-shimmer 2.2s linear infinite;
+  --animate-pl-marquee: pl-marquee 70s linear infinite;
+  --animate-pl-grid-scroll: pl-grid-scroll 2.4s linear infinite;
+  --animate-pl-halo: pl-halo 13s var(--pl-ease-inout) infinite;
+  --animate-pl-caret: pl-caret 1s steps(1) infinite;
+}
+
+/* ---------- Base ---------- */
+
+.pl-root {
+  font-family: var(--pl-font-sans);
+  letter-spacing: var(--pl-tracking-body);
+  background: var(--pl-page);
+  color: var(--pl-fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'ss01', 'cv11';
+}
+.pl-dark {
+  color: var(--pl-fg);
+}
+
+/* ---------- Typographie ---------- */
+
+/* Titre du hero : 900 majuscules, -0.045em, interligne 1.02, encre adoucie et gravée. */
+@utility pl-display {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: var(--pl-tracking-display);
+  line-height: var(--pl-leading-display);
+  text-wrap: balance;
+}
+/* H2 de section : 600, -0.035em, interligne 1.08 ; seconde ligne en --pl-fg-sub. */
+@utility pl-h2 {
+  font-weight: 600;
+  letter-spacing: var(--pl-tracking-h2);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+/* H2 des blocs sombres : 800 majuscules, -0.05em, interligne 1.02. */
+@utility pl-h2-dark {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: var(--pl-tracking-dark);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+/* Texte d'accroche : 16,5 px mobile, 18 px bureau, interligne 1.55. */
+@utility pl-lead {
+  font-size: 16.5px;
+  line-height: 1.55;
+  @media (width >= 40rem) {
+    font-size: 18px;
+  }
+}
+@utility pl-text-gradient {
+  background: linear-gradient(90deg, var(--pl-accent-sky), var(--pl-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@utility pl-engrave {
+  text-shadow: var(--pl-engrave);
+}
+
+/* ---------- Surfaces ---------- */
+
+@utility pl-glass {
+  background: var(--pl-glass-bg);
+  -webkit-backdrop-filter: var(--pl-glass-filter);
+  backdrop-filter: var(--pl-glass-filter);
+  box-shadow: var(--pl-glass-shadow);
+}
+@utility pl-raised {
+  background: linear-gradient(180deg, var(--pl-ink-raised-from), var(--pl-ink-raised-to));
+  box-shadow: var(--pl-shadow-dark-item);
+}
+@utility pl-accent-fill {
+  background: linear-gradient(180deg, #3a55ff 0%, var(--pl-accent-deep) 100%);
+  box-shadow: var(--pl-glow-accent);
+}
+@utility pl-chip {
+  background: #fff;
+  box-shadow:
+    0 0 0 1px #e4e4e8,
+    0 0 0 4px rgb(255 255 255 / 0.7),
+    var(--pl-shadow-pill);
+}
+@utility pl-chip-dark {
+  background: linear-gradient(180deg, #1f1f24, #131316);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.12),
+    0 0 0 1px rgb(255 255 255 / 0.08),
+    0 0 0 4px rgb(255 255 255 / 0.03);
+}
+@utility pl-placeholder {
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.5), transparent 60%), linear-gradient(180deg, var(--pl-bg-soft), var(--pl-bg-soft-2));
+}
+@utility pl-placeholder-dark {
+  background: radial-gradient(120% 80% at 50% 0%, rgb(255 255 255 / 0.08), transparent 60%), linear-gradient(180deg, #1c1c20, #0f0f12);
+}
+
+/* ---------- Keyframes ---------- */
+
+@keyframes pl-float {
+  50% {
+    transform: translateY(-11px);
+  }
+}
+@keyframes pl-breathe {
+  0%,
+  100% {
+    transform: scale(0.94);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+@keyframes pl-ripple {
+  from {
+    transform: scale(0.55);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes pl-ping {
+  from {
+    transform: scale(0.4);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+@keyframes pl-ring-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(34 197 94 / 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(34 197 94 / 0);
+  }
+}
+@keyframes pl-spin-border {
+  to {
+    --pl-angle: 360deg;
+  }
+}
+@keyframes pl-glow-slide {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+@keyframes pl-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+@keyframes pl-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes pl-grid-scroll {
+  to {
+    background-position: 0 44px;
+  }
+}
+@keyframes pl-halo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate3d(6%, -4%, 0) scale(1.12);
+    opacity: 0.85;
+  }
+}
+@keyframes pl-pixel-wave {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes pl-sphere-spin {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes pl-caret {
+  50% {
+    opacity: 0;
+  }
+}
+/* Remplissage du trait d'onglet (temps d'affichage restant avant l'onglet suivant). */
+/* Éclat de lumière qui traverse une surface de verre, puis pause (GlassLogo). */
+@keyframes pl-glass-sweep {
+  0% {
+    transform: translateX(-160%);
+  }
+  45%,
+  100% {
+    transform: translateX(320%);
+  }
+}
+@keyframes pl-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---------- Accessibilité : tout ce qui boucle s'arrête ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  [class*='animate-pl-'],
+  [data-pl-loop] {
+    animation: none !important;
+  }
+  [data-pl-loop='hide'] {
+    display: none !important;
+  }
+}

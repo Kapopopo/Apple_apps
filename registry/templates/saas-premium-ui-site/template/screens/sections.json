@@ -1,0 +1,51 @@
+[
+ {
+  "slug": "hero",
+  "file": "section-hero.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 506
+ },
+ {
+  "slug": "showcase",
+  "file": "section-showcase.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1239
+ },
+ {
+  "slug": "steps",
+  "file": "section-steps.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1185
+ },
+ {
+  "slug": "pricing",
+  "file": "section-pricing.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1228
+ },
+ {
+  "slug": "reviews",
+  "file": "section-reviews.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1012
+ },
+ {
+  "slug": "faq",
+  "file": "section-faq.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 883
+ },
+ {
+  "slug": "footer",
+  "file": "section-footer.jpg",
+  "page": "/",
+  "width": 1440,
+  "height": 1092
+ }
+]

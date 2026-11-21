@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, toPosix } from '../shared/paths.js';
-import { checkLicense, type RestrictedAcceptance } from '../shared/license.js';
+import { checkLicense, type LicenseCheck, type RestrictedAcceptance } from '../shared/license.js';
 import { deriveTags } from '../shared/taxonomy.js';
 import type { FileMap } from '../shared/registry.js';
 import { IMPORT_SPEC, packageName } from '../shared/resolve.js';
@@ -34,6 +34,35 @@ export interface TemplateSource {
   /** Sections et écrans extraits en items du registre, chacun capturé sur la démo. */
   sections?: TemplateSectionDef[];
   acceptRestricted?: RestrictedAcceptance;
+  /**
+   * Dépôt personnel de l'utilisateur, sans fichier LICENSE : importé comme création personnelle
+   * (LicenseRef-Personnel). Sans effet si le dépôt a un LICENSE (vérifié normalement).
+   */
+  personal?: { owner: string; notes: string; attribution?: string };
+}
+
+/** Licence d'un dépôt personnel sans LICENSE, et la notice écrite à la place du fichier. */
+function personalLicense(src: TemplateSource): { license: LicenseCheck; text: string } {
+  const p = src.personal!;
+  return {
+    license: {
+      license: 'LicenseRef-Personnel',
+      status: 'open',
+      reason: 'Création personnelle (déclarée dans sources.json, dépôt sans LICENSE)',
+      notes: p.notes,
+      ...(p.attribution ? { attribution: p.attribution } : {}),
+    },
+    text: `${src.name} — création personnelle de ${p.owner}.
+
+${p.notes}
+${
+  p.attribution
+    ? `
+${p.attribution}
+`
+    : ''
+}`,
+  };
 }
 
 export interface TemplateSectionDef {
@@ -345,8 +374,10 @@ export function importTemplates(options: { only?: string; offline?: boolean; upd
       offline: options.offline,
       commit: options.update ? undefined : lock[`template-${src.id}`]?.commit,
     });
-    const licenseText = readLicenseText(dir);
-    const license = checkLicense(licenseText, src.acceptRestricted);
+    const found = readLicenseText(dir);
+    const personal = !found && src.personal ? personalLicense(src) : null;
+    const licenseText = personal?.text ?? found;
+    const license = personal?.license ?? checkLicense(licenseText, src.acceptRestricted);
     const collector = new Collector('templates', src.id, { commit, license: license.license });
     if (license.status === 'rejected' || !licenseText) {
       collector.skip(src.repo, license.reason);

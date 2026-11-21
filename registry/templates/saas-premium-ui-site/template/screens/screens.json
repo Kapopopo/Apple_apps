@@ -1,0 +1,22 @@
+[
+ {
+  "file": "full.jpg",
+  "path": "/",
+  "title": "Accueil : page entière",
+  "viewport": "full",
+  "width": 1440,
+  "height": 6859
+ },
+ {
+  "file": "01-desktop.jpg",
+  "path": "/",
+  "title": "Accueil",
+  "viewport": "desktop"
+ },
+ {
+  "file": "00-mobile.jpg",
+  "path": "/",
+  "title": "Accueil (mobile)",
+  "viewport": "mobile"
+ }
+]

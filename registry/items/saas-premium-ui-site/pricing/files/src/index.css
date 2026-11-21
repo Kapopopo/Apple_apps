@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@import '@/components/atlas/process-like/theme/theme.css';
+@import '@/styles/atlas-theme.css';
+
+/* Bandeau promo (36 px) + header (66 px) fixés en haut : les ancres de navigation s'arrêtent juste dessous. */
+html {
+  scroll-padding-top: 102px;
+}

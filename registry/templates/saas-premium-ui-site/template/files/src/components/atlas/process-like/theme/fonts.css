@@ -1,0 +1,29 @@
+/*
+ * Geist Sans et Geist Mono : paquet npm `geist` (Vercel, SIL Open Font License 1.1), aucun fichier copié.
+ *
+ * Next.js : ne pas importer ce fichier. Utiliser le chargeur du paquet, qui définit --font-geist-sans / --font-geist-mono
+ * (lus en premier par --pl-font-sans / --pl-font-mono) :
+ *   import { GeistSans } from 'geist/font/sans';
+ *   import { GeistMono } from 'geist/font/mono';
+ *   <html className={`${GeistSans.variable} ${GeistMono.variable}`}>
+ *
+ * Vite et autres bundlers : le champ `exports` du paquet ne publie pas les .woff2. Déclarer un alias
+ * `geist-fonts` → node_modules/geist/dist/fonts, par exemple dans vite.config.ts :
+ *   resolve: { alias: { 'geist-fonts': path.resolve('node_modules/geist/dist/fonts') } }
+ * puis importer ce fichier depuis le JS (`import '@/components/atlas/process-like/theme/fonts.css'` dans main.tsx), pas par un @import de la feuille
+ * Tailwind : Tailwind réécrirait l'URL comme un chemin relatif.
+ */
+@font-face {
+  font-family: 'Geist';
+  src: url('geist-fonts/geist-sans/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('geist-fonts/geist-mono/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

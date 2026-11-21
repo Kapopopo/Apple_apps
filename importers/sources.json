@@ -1217,6 +1217,103 @@
           "find": "main > section#contact"
         }
       ]
+    },
+    {
+      "id": "saas-premium-ui-site",
+      "name": "Saas premium UI",
+      "repo": "https://github.com/theodessaixwalger/Saas-design",
+      "demo": "",
+      "kind": "Site vitrine SaaS (landing page)",
+      "category": "Sites vitrines",
+      "stack": "Vite, React 19, TypeScript, Tailwind CSS 4, Motion",
+      "description": "Landing SaaS premium complète, construite avec le thème Saas premium UI : bandeau promo et header fixés, hero à barre terminal, vitrine sombre à onglets animés (console d’agent, sphère de vidéos courtes), étapes à démos d’app animées, tarifs avec afficheur LED, avis en défilement, FAQ, footer à photo nocturne et logo de verre, modale de connexion.",
+      "pages": [
+        {
+          "path": "/",
+          "title": "Accueil"
+        }
+      ],
+      "styles": [
+        "src/index.css"
+      ],
+      "personal": {
+        "owner": "theodessaixwalger",
+        "notes": "Site personnel construit avec le thème Saas premium UI du registre. Libre d’usage dans tes projets.",
+        "attribution": "Photos des vignettes et du footer : libres de droits (Unsplash et autres), crédits dans CREDITS.md du dépôt. Polices Geist : SIL Open Font License 1.1."
+      },
+      "sections": [
+        {
+          "slug": "hero",
+          "name": "Hero avec barre terminal",
+          "category": "Hero",
+          "entry": [
+            "src/components/atlas/process-like/hero/hero.tsx"
+          ],
+          "page": "/",
+          "find": "section#accueil"
+        },
+        {
+          "slug": "showcase",
+          "name": "Vitrine sombre à onglets",
+          "category": "Fonctionnalités",
+          "entry": [
+            "src/components/atlas/process-like/dark-showcase/dark-showcase.tsx"
+          ],
+          "page": "/",
+          "find": "main > section",
+          "text": "Automatiser"
+        },
+        {
+          "slug": "steps",
+          "name": "Comment ça marche en 3 cartes",
+          "category": "Fonctionnalités",
+          "entry": [
+            "src/components/atlas/process-like/steps/steps.tsx"
+          ],
+          "page": "/",
+          "find": "section#comment-ça-marche"
+        },
+        {
+          "slug": "pricing",
+          "name": "Tarifs avec afficheur LED",
+          "category": "Tarifs",
+          "entry": [
+            "src/components/atlas/process-like/pricing/pricing.tsx"
+          ],
+          "page": "/",
+          "find": "section#tarifs"
+        },
+        {
+          "slug": "reviews",
+          "name": "Avis en défilement",
+          "category": "Carrousels",
+          "entry": [
+            "src/components/atlas/process-like/reviews/reviews.tsx"
+          ],
+          "page": "/",
+          "find": "section#avis"
+        },
+        {
+          "slug": "faq",
+          "name": "Questions fréquentes",
+          "category": "FAQ",
+          "entry": [
+            "src/components/atlas/process-like/faq/faq.tsx"
+          ],
+          "page": "/",
+          "find": "section#questions-fréquentes"
+        },
+        {
+          "slug": "footer",
+          "name": "Footer à photo nocturne",
+          "category": "Pied de page",
+          "entry": [
+            "src/components/atlas/process-like/site-footer/site-footer.tsx"
+          ],
+          "page": "/",
+          "find": "footer.pl-dark"
+        }
+      ]
     }
   ]
 }

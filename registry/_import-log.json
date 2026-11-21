@@ -1,137 +1,6 @@
 {
   "runs": [
     {
-      "importer": "github",
-      "source": "bencho",
-      "at": "2026-11-05T00:18:18.251Z",
-      "added": [],
-      "updated": [
-        "bencho/action-node",
-        "bencho/aspect",
-        "bencho/emoji-reactions",
-        "bencho/generate",
-        "bencho/glass-bubble",
-        "bencho/pull",
-        "bencho/todo-tower"
-      ],
-      "unchanged": 40,
-      "missingUpstream": [],
-      "skipped": [
-        {
-          "item": "assets/",
-          "reason": "Visuels et photos : hors licence ou non nécessaires (exclus)"
-        },
-        {
-          "item": "playground/",
-          "reason": "Application de démonstration du repo (exclue)"
-        },
-        {
-          "item": "sounds/",
-          "reason": "Sons d’interface : type non géré par le registre"
-        }
-      ],
-      "warnings": [],
-      "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
-      "license": "MIT"
-    },
-    {
-      "importer": "local",
-      "source": "magic-ui",
-      "at": "2026-11-05T00:18:20.047Z",
-      "added": [],
-      "updated": [
-        "magic-ui/marquee",
-        "magic-ui/number-ticker",
-        "magic-ui/animated-circular-progress-bar"
-      ],
-      "unchanged": 35,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
-      "importer": "local",
-      "source": "motion-primitives",
-      "at": "2026-11-05T00:18:20.059Z",
-      "added": [],
-      "updated": [
-        "motion-primitives/animated-number"
-      ],
-      "unchanged": 5,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "rare-ui",
-      "at": "2026-11-05T00:18:44.560Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 31,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "commit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
-      "license": "LicenseRef-MIT-Commons-Clause-Attribution"
-    },
-    {
-      "importer": "github",
-      "source": "easyui",
-      "at": "2026-11-05T00:18:44.748Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 133,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [
-        "easyui/ai-response : import interne non résolu « ./ai-response »"
-      ],
-      "commit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "panelui",
-      "at": "2026-11-05T00:18:45.048Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 237,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "commit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "bencho",
-      "at": "2026-11-05T00:18:45.419Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 47,
-      "missingUpstream": [],
-      "skipped": [
-        {
-          "item": "assets/",
-          "reason": "Visuels et photos : hors licence ou non nécessaires (exclus)"
-        },
-        {
-          "item": "playground/",
-          "reason": "Application de démonstration du repo (exclue)"
-        },
-        {
-          "item": "sounds/",
-          "reason": "Sons d’interface : type non géré par le registre"
-        }
-      ],
-      "warnings": [],
-      "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
-      "license": "MIT"
-    },
-    {
       "importer": "local",
       "source": "magic-ui",
       "at": "2026-11-05T00:18:47.422Z",
@@ -5871,6 +5740,112 @@
       "missingUpstream": [],
       "skipped": [],
       "warnings": []
+    },
+    {
+      "importer": "templates",
+      "source": "launch-ui",
+      "at": "2026-11-20T23:57:02.542Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 10,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "launch-ui : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "9387bec9436335ef9a109a2efe7fbe7631976158",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "saas-starter",
+      "at": "2026-11-20T23:57:05.829Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 5,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "6e33e58b1e553a41fe22e6b941a7229a002de361",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "shadcn-admin",
+      "at": "2026-11-20T23:57:07.564Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 11,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "e16c87f213a5ba5e45964e9b67c792105ec74d26",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "studio-admin",
+      "at": "2026-11-20T23:57:10.946Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 33,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "3d1d6f4abf4231b258c81da25da1ccbc38d9b954",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "starter-blog",
+      "at": "2026-11-20T23:57:15.188Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 1,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "starter-blog : 1 fichier(s) trop lourds non repris (listés dans meta.template.skipped)"
+      ],
+      "commit": "b45bef66b40c63b6f57c15ee8cd090682238df4c",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "magicui-portfolio",
+      "at": "2026-11-20T23:57:17.245Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 7,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [],
+      "commit": "5ef12e4c8bd0de3e22e89c2181ee77a35925ec8b",
+      "license": "MIT"
+    },
+    {
+      "importer": "templates",
+      "source": "saas-premium-ui-site",
+      "at": "2026-11-20T23:57:20.788Z",
+      "added": [
+        "saas-premium-ui-site/template",
+        "saas-premium-ui-site/hero",
+        "saas-premium-ui-site/showcase",
+        "saas-premium-ui-site/steps",
+        "saas-premium-ui-site/pricing",
+        "saas-premium-ui-site/reviews",
+        "saas-premium-ui-site/faq",
+        "saas-premium-ui-site/footer"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": [
+        "saas-premium-ui-site/footer : imports locaux introuvables : @/assets/footer/night-lake.jpg (src/components/atlas/process-like/site-footer/site-footer.tsx)"
+      ],
+      "commit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+      "license": "LicenseRef-Personnel"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-20T23:20:28.735Z",
- "count": 3720,
+ "generatedAt": "2026-11-20T23:57:24.682Z",
+ "count": 3728,
  "sources": {
   "atlas": {
    "name": "Component Atlas",
@@ -102,6 +102,13 @@
    "license": "MIT",
    "licenseStatus": "open",
    "attribution": "Conserver la notice MIT : Copyright (c) 2025 Keenthemes Inc"
+  },
+  "saas-premium-ui-site": {
+   "name": "Saas premium UI",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "licenseNotes": "Site personnel construit avec le thème Saas premium UI du registre. Libre d’usage dans tes projets.",
+   "attribution": "Photos des vignettes et du footer : libres de droits (Unsplash et autres), crédits dans CREDITS.md du dépôt. Polices Geist : SIL Open Font License 1.1."
   },
   "saas-premium-ui": {
    "name": "Saas premium UI",
@@ -131435,6 +131442,361 @@
    "dir": "items/reui/use-slider-input",
    "fileCount": 1,
    "isNew": true
+  },
+  {
+   "id": "saas-premium-ui-site/faq",
+   "name": "Questions fréquentes",
+   "type": "section",
+   "category": "FAQ",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Questions fréquentes du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/faq/faq.tsx",
+   "sourcePath": "src/components/atlas/process-like/faq/faq.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "e2568f141554cbb3",
+   "importedAt": "2026-11-20T23:57:22.389Z",
+   "dir": "items/saas-premium-ui-site/faq",
+   "fileCount": 11,
+   "group": "questions frequentes"
+  },
+  {
+   "id": "saas-premium-ui-site/footer",
+   "name": "Footer à photo nocturne",
+   "type": "section",
+   "category": "Pied de page",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Footer à photo nocturne du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/site-footer/site-footer.tsx",
+   "sourcePath": "src/components/atlas/process-like/site-footer/site-footer.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "05d4e973e98c208e",
+   "importedAt": "2026-11-20T23:57:22.414Z",
+   "dir": "items/saas-premium-ui-site/footer",
+   "fileCount": 13,
+   "group": "footer a photo nocturne"
+  },
+  {
+   "id": "saas-premium-ui-site/hero",
+   "name": "Hero avec barre terminal",
+   "type": "section",
+   "category": "Hero",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Hero avec barre terminal du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/hero/hero.tsx",
+   "sourcePath": "src/components/atlas/process-like/hero/hero.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "5a1ef72be9238fbe",
+   "importedAt": "2026-11-20T23:57:22.230Z",
+   "dir": "items/saas-premium-ui-site/hero",
+   "fileCount": 17,
+   "group": "hero avec barre terminal"
+  },
+  {
+   "id": "saas-premium-ui-site/pricing",
+   "name": "Tarifs avec afficheur LED",
+   "type": "section",
+   "category": "Tarifs",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Tarifs avec afficheur LED du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/pricing/pricing.tsx",
+   "sourcePath": "src/components/atlas/process-like/pricing/pricing.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "4485f447ef5cd04c",
+   "importedAt": "2026-11-20T23:57:22.334Z",
+   "dir": "items/saas-premium-ui-site/pricing",
+   "fileCount": 15,
+   "group": "tarifs avec afficheur led"
+  },
+  {
+   "id": "saas-premium-ui-site/reviews",
+   "name": "Avis en défilement",
+   "type": "section",
+   "category": "Carrousels",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Avis en défilement du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/reviews/reviews.tsx",
+   "sourcePath": "src/components/atlas/process-like/reviews/reviews.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "1bce288fa2ee056d",
+   "importedAt": "2026-11-20T23:57:22.365Z",
+   "dir": "items/saas-premium-ui-site/reviews",
+   "fileCount": 11,
+   "group": "avis en defilement"
+  },
+  {
+   "id": "saas-premium-ui-site/showcase",
+   "name": "Vitrine sombre à onglets",
+   "type": "section",
+   "category": "Fonctionnalités",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Vitrine sombre à onglets du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/dark-showcase/dark-showcase.tsx",
+   "sourcePath": "src/components/atlas/process-like/dark-showcase/dark-showcase.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "e1e28129ced0cc9d",
+   "importedAt": "2026-11-20T23:57:22.259Z",
+   "dir": "items/saas-premium-ui-site/showcase",
+   "fileCount": 19,
+   "group": "vitrine sombre a onglets"
+  },
+  {
+   "id": "saas-premium-ui-site/steps",
+   "name": "Comment ça marche en 3 cartes",
+   "type": "section",
+   "category": "Fonctionnalités",
+   "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+   ],
+   "description": "Comment ça marche en 3 cartes du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/steps/steps.tsx",
+   "sourcePath": "src/components/atlas/process-like/steps/steps.tsx",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+   },
+   "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+   },
+   "contentHash": "527d0a873f922e47",
+   "importedAt": "2026-11-20T23:57:22.300Z",
+   "dir": "items/saas-premium-ui-site/steps",
+   "fileCount": 16,
+   "group": "comment ca marche en cartes"
+  },
+  {
+   "id": "saas-premium-ui-site/template",
+   "name": "Saas premium UI",
+   "type": "template",
+   "category": "Sites vitrines",
+   "tags": [
+    "animé",
+    "ia",
+    "sites vitrines",
+    "template"
+   ],
+   "description": "Landing SaaS premium complète, construite avec le thème Saas premium UI : bandeau promo et header fixés, hero à barre terminal, vitrine sombre à onglets animés (console d’agent, sphère de vidéos courtes), étapes à démos d’app animées, tarifs avec afficheur LED, avis en défilement, FAQ, footer à photo nocturne et logo de verre, modale de connexion.",
+   "framework": "react",
+   "dependencies": [
+    "clsx@^2.1.1",
+    "geist@^1.9.2",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react-dom@^19.3.1",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+   ],
+   "registryDependencies": [],
+   "source": "Saas premium UI",
+   "sourceId": "saas-premium-ui-site",
+   "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/tree/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+   "license": "LicenseRef-Personnel",
+   "licenseStatus": "open",
+   "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+   },
+   "template": {
+    "kind": "Site vitrine SaaS (landing page)",
+    "stack": "Vite, React 19, TypeScript, Tailwind CSS 4, Motion",
+    "demo": "",
+    "pages": [
+     {
+      "path": "/",
+      "title": "Accueil"
+     }
+    ],
+    "install": "npm install",
+    "dev": "npm run dev",
+    "env": [],
+    "skipped": []
+   },
+   "contentHash": "70d69e27952b81ad",
+   "importedAt": "2026-11-20T23:57:21.903Z",
+   "dir": "templates/saas-premium-ui-site/template",
+   "fileCount": 143
   },
   {
    "id": "saas-premium-ui/accent-button",

@@ -1,0 +1,628 @@
+{
+  "id": "saas-premium-ui-site/template",
+  "name": "Saas premium UI",
+  "type": "template",
+  "category": "Sites vitrines",
+  "tags": [
+    "animé",
+    "ia",
+    "sites vitrines",
+    "template"
+  ],
+  "description": "Landing SaaS premium complète, construite avec le thème Saas premium UI : bandeau promo et header fixés, hero à barre terminal, vitrine sombre à onglets animés (console d’agent, sphère de vidéos courtes), étapes à démos d’app animées, tarifs avec afficheur LED, avis en défilement, FAQ, footer à photo nocturne et logo de verre, modale de connexion.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "geist@^1.9.2",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react-dom@^19.3.1",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+  ],
+  "registryDependencies": [],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui-site",
+  "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/tree/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+  "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Site personnel construit avec le thème Saas premium UI du registre. Libre d’usage dans tes projets.",
+  "attribution": "Photos des vignettes et du footer : libres de droits (Unsplash et autres), crédits dans CREDITS.md du dépôt. Polices Geist : SIL Open Font License 1.1.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": ".vite/deps/_metadata.json",
+      "role": "source"
+    },
+    {
+      "path": ".vite/deps/package.json",
+      "role": "source"
+    },
+    {
+      "path": "CREDITS.md",
+      "role": "doc"
+    },
+    {
+      "path": "index.html",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "public/favicon.svg",
+      "role": "source"
+    },
+    {
+      "path": "src/App.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/assets/footer/night-lake.jpg",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/01.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/02.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/03.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/04.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/05.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/06.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/07.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/08.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/09.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/10.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/11.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/12.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/13.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/14.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/15.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/16.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/17.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/18.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/19.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/20.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/21.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/22.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/23.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/24.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/25.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/26.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/27.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/28.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/29.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/30.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/31.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/32.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/33.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/34.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/35.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/36.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/37.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/38.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/39.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/40.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/41.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/42.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/43.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/44.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/45.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/46.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/47.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/48.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/49.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/50.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/51.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/52.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/53.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/54.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/55.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/56.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/57.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/58.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/59.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/60.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/61.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/62.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/63.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/64.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/65.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/66.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/67.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/68.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/69.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/70.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/71.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/72.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/73.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/74.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/75.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/76.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/77.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/78.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/79.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/80.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/81.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/82.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/83.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/84.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/85.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/86.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/87.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/assets/short-videos/88.webp",
+      "role": "asset"
+    },
+    {
+      "path": "src/components/atlas/process-like/accent-button/accent-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/auth-card/auth-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/auth-modal/auth-modal.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/calendar-card/calendar-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/dark-accordion/dark-accordion.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/dark-showcase/dark-showcase.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/dot-grid-background/dot-grid-background.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/faq/faq.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/footer/footer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/fullscreen-menu/fullscreen-menu.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/glow-button/glow-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/header/header.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/hero/hero.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/led-display/led-display.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/lib/motion.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/media-sphere/media-sphere.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/media-sphere/short-video-tile.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/phone-mockup/phone-mockup.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/pill-badge/pill-badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/pricing/pricing.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/pricing-card/pricing-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/primary-button/primary-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/promo-bar/promo-bar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/review-card/review-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/reviews/reviews.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/rolling-number/rolling-number.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/search-bar/search-bar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/section-heading/section-heading.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/segmented-tabs/segmented-tabs.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/site-footer/glass-logo.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/site-footer/site-footer.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/status-dot/status-dot.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/step-card/step-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/steps/app-demos.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/steps/steps.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/terminal-bar/terminal-bar.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/theme/fonts.css",
+      "role": "style"
+    },
+    {
+      "path": "src/components/atlas/process-like/theme/theme.css",
+      "role": "style"
+    },
+    {
+      "path": "src/components/atlas/process-like/theme/tokens.css",
+      "role": "style"
+    },
+    {
+      "path": "src/components/atlas/process-like/toggle/toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/index.css",
+      "role": "style"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/main.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/styles/atlas-theme.css",
+      "role": "style"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    },
+    {
+      "path": "vite.config.ts",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Template complet : captures des pages et démo officielle"
+  },
+  "template": {
+    "kind": "Site vitrine SaaS (landing page)",
+    "stack": "Vite, React 19, TypeScript, Tailwind CSS 4, Motion",
+    "demo": "",
+    "pages": [
+      {
+        "path": "/",
+        "title": "Accueil"
+      }
+    ],
+    "install": "npm install",
+    "dev": "npm run dev",
+    "env": [],
+    "skipped": []
+  },
+  "contentHash": "70d69e27952b81ad",
+  "importedAt": "2026-11-20T23:57:21.903Z"
+}

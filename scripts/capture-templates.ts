@@ -8,6 +8,7 @@
  * Sans démo en ligne, l'image de présentation du dépôt (`cover`) sert de visuel.
  *
  *   npm run capture:templates [-- --only saas-starter] [--sections | --pages] [--slug hero,faq]
+ *   --demo <url> (avec --only) : capturer sur une démo locale (build servi en local) sans l'enregistrer comme démo.
  */
 import fs from 'node:fs';
 import os from 'node:os';
@@ -22,6 +23,7 @@ import { decodePng, distinctRatio } from './lib/png.js';
 const args = process.argv.slice(2);
 const only = args.includes('--only') ? args[args.indexOf('--only') + 1] : undefined;
 const slugs = args.includes('--slug') ? args[args.indexOf('--slug') + 1]?.split(',') : undefined;
+const demoOverride = args.includes('--demo') ? args[args.indexOf('--demo') + 1] : undefined;
 const doPages = !args.includes('--sections');
 const doSections = !args.includes('--pages');
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -263,6 +265,7 @@ let failures = 0;
 try {
   for (const src of loadTemplateSources()) {
     if (only && only !== src.id) continue;
+    const demo = only && demoOverride ? demoOverride : src.demo;
     const itemDir = path.join(REGISTRY, 'templates', src.id, 'template');
     if (!fs.existsSync(path.join(itemDir, 'meta.json'))) {
       console.log(`${src.id} : non importé (npm run import -- templates)`);
@@ -276,20 +279,20 @@ try {
       // Seulement les fichiers de cette étape : les captures de sections et sections.json restent.
       for (const f of fs.readdirSync(dir)) if (!f.startsWith('section')) fs.rmSync(path.join(dir, f));
       const screens: Screen[] = [];
-      if (src.demo) {
+      if (demo) {
         for (const [i, p] of src.pages.entries()) {
           const file = `${String(i + 1).padStart(2, '0')}-desktop.jpg`;
-          if (await shoot(page, pageUrl(src.demo, p.path), path.join(dir, file), { ...DESKTOP, mobile: false }))
+          if (await shoot(page, pageUrl(demo, p.path), path.join(dir, file), { ...DESKTOP, mobile: false }))
             screens.push({ file, path: p.path, title: p.title, viewport: 'desktop' });
           else console.log(`  ${src.id} ${p.path} : page indisponible sur la démo, ignorée`);
         }
         const first = src.pages[0];
         if (
           first &&
-          (await shoot(page, pageUrl(src.demo, first.path), path.join(dir, '00-mobile.jpg'), { width: 390, height: 844, mobile: true }))
+          (await shoot(page, pageUrl(demo, first.path), path.join(dir, '00-mobile.jpg'), { width: 390, height: 844, mobile: true }))
         )
           screens.push({ file: '00-mobile.jpg', path: first.path, title: `${first.title} (mobile)`, viewport: 'mobile' });
-        const full = first && (await captureFullPage(page, pageUrl(src.demo, first.path), path.join(dir, 'full.jpg')));
+        const full = first && (await captureFullPage(page, pageUrl(demo, first.path), path.join(dir, 'full.jpg')));
         if (full)
           screens.unshift({ file: 'full.jpg', path: first.path, title: `${first.title} : page entière`, viewport: 'full', ...full });
         else if (first) console.log(`  ${src.id} : page entière indisponible`);
@@ -321,7 +324,7 @@ try {
           console.log(`  ${src.id}/${def.slug} : item absent (npm run import:templates)`);
           continue;
         }
-        const result = await captureSection(page, pageUrl(src.demo, def.page), def, code, path.join(dir, `section-${def.slug}.jpg`));
+        const result = await captureSection(page, pageUrl(demo, def.page), def, code, path.join(dir, `section-${def.slug}.jpg`));
         if (typeof result === 'string') {
           failures++;
           console.log(`  ✗ ${src.id}/${def.slug} : ${result}`);
@@ -335,7 +338,7 @@ try {
       console.log(`${src.id} : ${fresh.size}/${todo.length} section(s) capturée(s), ${shots.length}/${src.sections.length} au total`);
     }
 
-    if (!src.demo && src.sections?.length) {
+    if (!demo && src.sections?.length) {
       const sectionsFile = path.join(dir, 'sections.json'),
         screensFile = path.join(dir, 'screens.json');
       const shots: SectionShot[] = fs.existsSync(sectionsFile) ? JSON.parse(fs.readFileSync(sectionsFile, 'utf8')) : [];

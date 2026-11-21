@@ -1,0 +1,104 @@
+{
+  "id": "saas-premium-ui-site/pricing",
+  "name": "Tarifs avec afficheur LED",
+  "type": "section",
+  "category": "Tarifs",
+  "tags": [
+    "animé",
+    "saas-premium-ui-site",
+    "template"
+  ],
+  "description": "Tarifs avec afficheur LED du template Saas premium UI (site vitrine saas (landing page)) : code du dépôt avec ses imports locaux et la feuille de styles du template.",
+  "framework": "react",
+  "dependencies": [
+    "clsx@^2.1.1",
+    "lucide-react@^1.77.0",
+    "motion@^14.14.0",
+    "react@^19.3.1",
+    "tailwind-merge@^3.7.1",
+    "tailwindcss@^4.3.5"
+  ],
+  "registryDependencies": [],
+  "source": "Saas premium UI",
+  "sourceId": "saas-premium-ui-site",
+  "sourceUrl": "https://github.com/theodessaixwalger/Saas-design/blob/45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc/src/components/atlas/process-like/pricing/pricing.tsx",
+  "sourcePath": "src/components/atlas/process-like/pricing/pricing.tsx",
+  "sourceCommit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Site personnel construit avec le thème Saas premium UI du registre. Libre d’usage dans tes projets.",
+  "attribution": "Photos des vignettes et du footer : libres de droits (Unsplash et autres), crédits dans CREDITS.md du dépôt. Polices Geist : SIL Open Font License 1.1.",
+  "files": [
+    {
+      "path": "src/components/atlas/process-like/pricing/pricing.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/index.css",
+      "role": "style"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/led-display/led-display.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/section-heading/section-heading.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/pricing-card/pricing-card.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/dot-grid-background/dot-grid-background.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/theme/theme.css",
+      "role": "style"
+    },
+    {
+      "path": "src/styles/atlas-theme.css",
+      "role": "style"
+    },
+    {
+      "path": "src/components/atlas/process-like/lib/motion.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/pill-badge/pill-badge.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/rolling-number/rolling-number.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/toggle/toggle.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/primary-button/primary-button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/atlas/process-like/theme/tokens.css",
+      "role": "style"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Section de template : capture de la démo officielle"
+  },
+  "fromTemplate": {
+    "id": "saas-premium-ui-site/template",
+    "page": "/",
+    "publicAssets": []
+  },
+  "contentHash": "4485f447ef5cd04c",
+  "importedAt": "2026-11-20T23:57:22.334Z"
+}
