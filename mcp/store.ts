@@ -83,6 +83,7 @@ export interface SearchArgs {
   query?: string;
   type?: string;
   framework?: string;
+  platform?: string;
   source?: string;
   category?: string;
   license_status?: string;
@@ -103,6 +104,7 @@ export function searchRegistry(args: SearchArgs) {
     (e) =>
       (args.type ? e.type === args.type : e.type !== 'lib') &&
       (!args.framework || e.framework === args.framework) &&
+      (!args.platform || (e.platforms as string[]).includes(args.platform)) &&
       (!args.source || e.sourceId === args.source || normalize(e.source) === normalize(args.source)) &&
       (!args.category || normalize(e.category) === normalize(args.category)) &&
       (!args.license_status || e.licenseStatus === args.license_status) &&

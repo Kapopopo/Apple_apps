@@ -63,6 +63,7 @@ async function api(req: IncomingMessage, res: ServerResponse, url: URL): Promise
         name: spec.name,
         title: spec.title,
         preset: isPreset,
+        target: spec.target,
         theme: spec.theme,
         blocks: spec.blocks.length,
         updatedAt: spec.updatedAt ?? spec.createdAt ?? null,

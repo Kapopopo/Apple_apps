@@ -26,6 +26,7 @@ import {
   setupDialog,
 } from '/lib/common.js';
 import { buildPrompt } from '/lib/prompt.js';
+import { MOBILE_STACK_LINE, supports, unsupportedLabel } from '/lib/mobile.js';
 
 const PAGE = 18;
 const VIEWS = {
@@ -50,6 +51,7 @@ let draft = readDraft();
 const favorites = readFavorites();
 const byId = (id) => data?.byId.get(id);
 const inSpec = (id) => draft.blocks.some((b) => b.id === id);
+const isMobile = () => draft.target === 'mobile';
 const category = (c) => c.type_label || c.curation?.category || 'Autres composants';
 
 const previews = previewController({
@@ -151,7 +153,7 @@ function render() {
   }[view];
   $('#result-count').textContent = list.length;
   $('#scope-text').textContent =
-    `résultat${list.length > 1 ? 's' : ''}${scope}${view === 'recommend' ? ' · une recherche ouvre tout le catalogue' : ''}`;
+    `résultat${list.length > 1 ? 's' : ''}${scope}${view === 'recommend' ? ' · une recherche ouvre tout le catalogue' : ''}${isMobile() ? ' · cible App mobile : le code web ne sera pas copié, seule l’intention est reprise' : ''}`;
   $('#more').hidden = list.length <= visible;
   const active = FILTERS.filter((id) => $('#' + id).value).length;
   $('#filter-count').textContent = active ? `(${active})` : '';
@@ -194,12 +196,20 @@ function render() {
 }
 
 function selectLabel(id) {
-  return inSpec(id) ? `${icon('check')}Dans la spec` : `${icon('plus')}Ajouter`;
+  if (inSpec(id)) return `${icon('check')}Dans la spec`;
+  return `${icon('plus')}${isMobile() && !supports(byId(id), 'mobile') ? 'Ajouter l’intention' : 'Ajouter'}`;
 }
 
 function card(c) {
-  const badge = c.curation ? '<span class="badge live">Sélection Atlas</span>' : c.isNew ? '<span class="badge new">Nouveau</span>' : '';
-  return `<article class="card ${inSpec(c.id) ? 'is-selected' : ''}" data-card="${esc(c.id)}">
+  const off = isMobile() && !supports(c, 'mobile');
+  const badge = off
+    ? `<span class="badge off">${unsupportedLabel(c)}</span>`
+    : c.curation
+      ? '<span class="badge live">Sélection Atlas</span>'
+      : c.isNew
+        ? '<span class="badge new">Nouveau</span>'
+        : '';
+  return `<article class="card ${inSpec(c.id) ? 'is-selected' : ''} ${off ? 'is-off' : ''}" data-card="${esc(c.id)}">
     ${previewZone(c.id, c.name, c.thumb, `${badge}<button class="btn icon-only expand" data-detail="${esc(c.id)}" aria-label="Agrandir ${esc(c.name)}">${icon('expand')}</button>`, c.registry === false ? 'stage' : 'is-registry')}
     <div class="card-body">
       <div class="card-meta"><span>${esc(c.source)}</span>${c.license_status === 'restricted' ? '<span class="lic restricted" title="Licence avec conditions : attribution à prévoir">Conditions</span>' : ''}<button class="fav" data-favorite="${esc(c.id)}" aria-label="${favorites.has(c.id) ? 'Retirer des' : 'Ajouter aux'} favoris : ${esc(c.name)}" aria-pressed="${favorites.has(c.id)}">${icon('heart', favorites.has(c.id) ? 'fill' : '')}</button></div>
@@ -215,10 +225,12 @@ function card(c) {
 function syncSelection() {
   const count = draft.blocks.length;
   $('#selected-count').textContent = count;
-  $('#open-prompt').disabled = !draft.blocks.some((b) => byId(b.id));
-  $('#selection-bar').hidden = !count;
-  document.body.classList.toggle('has-selection', !!count);
-  $('#selection-total').textContent = `${plural(count, 'bloc')} dans la spec${draft.title ? ` « ${draft.title} »` : ''}`;
+  $('#open-prompt').disabled = !data || (!isMobile() && !draft.blocks.some((b) => byId(b.id)));
+  // En mobile le prompt existe sans bloc : la barre reste pour y accéder.
+  $('#selection-bar').hidden = !count && !isMobile();
+  document.body.classList.toggle('has-selection', !!count || isMobile());
+  $('#selection-total').textContent =
+    `${isMobile() ? 'App mobile · ' : ''}${plural(count, 'bloc')} dans la spec${draft.title ? ` « ${draft.title} »` : ''}`;
   $('#fav-count').textContent = data ? data.components.filter((c) => favorites.has(c.id)).length : 0;
   for (const b of $$('[data-select]')) {
     b.innerHTML = selectLabel(b.dataset.select);
@@ -241,9 +253,10 @@ function toggleSelection(id) {
 }
 
 onDraftChange((next) => {
+  const retargeted = next.target !== draft.target;
   draft = next;
   syncSelection();
-  if (view === 'selected') render();
+  if (retargeted || view === 'selected') render();
 });
 
 /* ---------- Détail ---------- */
@@ -331,7 +344,7 @@ document.body.addEventListener('click', (e) => {
     writeDraft(draft);
     syncSelection();
     if (view === 'selected') render();
-    if (draft.blocks.some((b) => byId(b.id))) showPrompt();
+    if (isMobile() || draft.blocks.some((b) => byId(b.id))) showPrompt();
     else {
       $('#detail').close();
       toast('Votre sélection est vide.');
@@ -389,11 +402,15 @@ syncAutoplay();
 
 /* ---------- Prompt (assistants sans MCP) ---------- */
 
-const promptItems = () => draft.blocks.map((b) => byId(b.id)).filter(Boolean);
+/** En mobile, les blocs natifs choisis dans le builder n'ont pas de fiche ici : repris par leur identifiant. */
+const promptItems = () =>
+  draft.blocks
+    .map((b) => byId(b.id) ?? (isMobile() ? { id: b.id, name: b.id.split('/')[1], source: b.id.split('/')[0], unknown: true } : null))
+    .filter(Boolean);
 
 function showPrompt() {
   const items = promptItems();
-  if (!items.length) {
+  if (!items.length && !isMobile()) {
     toast('Ajoutez au moins un composant.');
     return;
   }
@@ -411,7 +428,7 @@ function showPrompt() {
         <label class="field" for="project-brief">Projet</label>
         <textarea id="project-brief" rows="3" placeholder="Ex. Landing page d’un studio de design : hero, projets, témoignages…">${esc(draft.brief)}</textarea>
         <label class="field" for="project-stack">Technologies</label>
-        <select id="project-stack">${[...new Set([stack, ...stacks])].map((s) => `<option ${s === stack ? 'selected' : ''}>${esc(s)}</option>`).join('')}</select>
+        <select id="project-stack" ${isMobile() ? 'disabled' : ''}>${(isMobile() ? [MOBILE_STACK_LINE] : [...new Set([stack, ...stacks])]).map((s) => `<option ${s === stack ? 'selected' : ''}>${esc(s)}</option>`).join('')}</select>
         <label class="field" for="project-style">Direction visuelle</label>
         <input id="project-style" value="${esc(draft.style)}" placeholder="Ex. Minimaliste, vert sauge, fond clair">
         <h3>Composants inclus <span class="count">${items.length}</span></h3>
@@ -436,7 +453,7 @@ function showPrompt() {
   );
   const update = () => {
     draft.brief = $('#project-brief').value;
-    draft.stack = $('#project-stack').value;
+    if (!isMobile()) draft.stack = $('#project-stack').value;
     draft.style = $('#project-style').value;
     for (const input of $$('[data-note]')) {
       const b = draft.blocks.find((x) => x.id === input.dataset.note);

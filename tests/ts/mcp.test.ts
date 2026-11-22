@@ -22,6 +22,7 @@ const index = JSON.parse(fs.readFileSync(path.join(ROOT, 'registry/index.json'),
 }[];
 const SPEC = `zz-test-${process.pid}`;
 const CREATED = `zz-created-${process.pid}`;
+const MOBILE = `zz-mobile-${process.pid}`;
 const specFile = path.join(ROOT, 'specs', `${SPEC}.json`);
 const client = new Client({ name: 'atlas-tests', version: '1.0.0' });
 
@@ -33,7 +34,7 @@ const block = index.find((e) => e.registryDependencies.length && e.licenseStatus
 const theme = index.find((e) => e.type === 'theme' && e.sourceId !== 'perso')!;
 
 const cleanup = () => {
-  for (const name of [SPEC, CREATED]) {
+  for (const name of [SPEC, CREATED, MOBILE]) {
     fs.rmSync(path.join(ROOT, 'specs', `${name}.json`), { force: true });
     fs.rmSync(path.join(ROOT, 'specs', '.history', 'specs', name), { recursive: true, force: true });
   }
@@ -203,6 +204,51 @@ test('prompt build-from-spec : light par défaut, full avec le code', async () =
     argument: { name: 'name', value: 'zz-test' },
   });
   assert.ok(completion.completion.values.includes(SPEC));
+});
+
+test('cible mobile : prompt, bundle, template et composant changent', async () => {
+  const blocks = [{ id: 'shadcn/button', note: 'Action principale' }, { id: 'panelui/card' }];
+  const mobile = { appName: 'Respire', bundleId: 'fr.exemple.respire', layouts: { onboarding: 'fullscreen', paywall: 'cards' } };
+  const created = JSON.parse(await textOf('create_spec', { name: MOBILE, target: 'mobile', mobile, theme: 'mobile-base/lagon', blocks }));
+  assert.equal(created.target, 'mobile');
+  const kept = JSON.parse(await textOf('create_spec', { name: MOBILE, title: 'V2', theme: 'mobile-base/lagon', blocks, overwrite: true }));
+  assert.equal(kept.target, 'mobile', 'overwrite sans target : cible conservée');
+
+  const spec = JSON.parse(await textOf('get_spec', { name: MOBILE }));
+  assert.equal(spec.mobile.appName, 'Respire', 'overwrite sans mobile : app conservée');
+  assert.deepEqual(spec.blocks[0].platforms, ['web']);
+  assert.equal(JSON.parse(await textOf('list_specs')).find((s: { name: string }) => s.name === MOBILE).target, 'mobile');
+
+  const prompt = (
+    (await client.getPrompt({ name: 'build-from-spec', arguments: { name: MOBILE } })).messages[0].content as { text: string }
+  ).text;
+  const command = new RegExp(`node ".+/tsx/dist/cli\\.mjs" ".+/scripts/scaffold\\.ts" mobile-base --spec ${MOBILE} --out \\. --install`);
+  assert.match(prompt, command);
+  assert.match(prompt, /code uniquement la fonctionnalité dans app\/\(main\)\//);
+  for (const expected of ['Expo Router', 'NativeWind', 'RevenueCat', '## Interdits', 'reusables « button »'])
+    assert.ok(prompt.includes(expected), expected);
+  assert.ok(!/npm install|atlas-theme\.css/.test(prompt), 'rien de la stack web');
+
+  const bundle = await textOf('get_spec_bundle', { name: MOBILE });
+  assert.match(bundle, /Installation : `npx expo install /);
+  assert.match(bundle, /components\/atlas\/panelui\/card\/card\.tsx/);
+  assert.ok(!bundle.includes('atlas-theme.css'), 'pas de CSS web');
+  assert.ok(!bundle.includes('### `components/ui/button.tsx`'), 'pas de code web');
+  assert.match(bundle, /déjà dans src\/components\/ui\/button\.tsx/);
+
+  const template = await textOf('get_template', { id: 'mobile-base', spec: MOBILE });
+  assert.match(template, command);
+  assert.match(template, /"bundleId": "fr\.exemple\.respire"/);
+  assert.equal((await call('get_template', { id: 'mobile-base', spec: SPEC })).isError, true, 'spec web refusée');
+  assert.equal((await call('get_template', { id: 'launch-ui', spec: MOBILE })).isError, true, 'autre template refusé');
+
+  const web = await textOf('get_component', { id: 'shadcn/button', target_alias: '@/', platform: 'mobile' });
+  assert.match(web, /reusables « button »/);
+  assert.ok(!web.includes('### `components/ui/button.tsx`'), 'code web non renvoyé');
+
+  const found = JSON.parse(await textOf('search_registry', { platform: 'mobile', type: 'component', limit: 100 }));
+  assert.ok(found.length && found.every((r: { platforms: string[] }) => r.platforms.includes('mobile')), 'filtre platform');
+  assert.equal((await call('create_spec', { name: CREATED + '-web' })).isError, true, 'blocks toujours obligatoire en web');
 });
 
 test('get_template : vue d’ensemble, commandes, fichiers à la demande ; get_component ne déverse pas le template', async () => {

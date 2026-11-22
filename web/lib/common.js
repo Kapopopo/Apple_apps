@@ -1,4 +1,5 @@
 /* Socle commun du catalogue et du builder : utilitaires, stockage, recherche, panier (spec en cours), aperçus. */
+import { cleanMobile, TARGETS } from './mobile.js';
 
 export const $ = (s, root = document) => root.querySelector(s);
 export const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -72,13 +73,32 @@ export const store = {
   },
 };
 
-export function toast(message) {
+/** `action` : { label, run }, affichée comme bouton dans le message (annuler…). */
+export function toast(message, action) {
   const t = $('#toast');
   if (!t) return;
   t.textContent = message;
+  t.classList.toggle('has-action', !!action);
+  if (action) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = action.label;
+    button.onclick = () => {
+      t.classList.remove('visible');
+      action.run();
+    };
+    t.append(button);
+  }
   t.classList.add('visible');
   clearTimeout(toast.timer);
-  toast.timer = setTimeout(() => t.classList.remove('visible'), 3600);
+  toast.timer = setTimeout(
+    () => {
+      t.classList.remove('visible');
+      // Un bouton invisible ne doit pas rester atteignable au clavier.
+      t.querySelector('button')?.remove();
+    },
+    action ? 8000 : 3600,
+  );
 }
 
 /* ---------- Recherche : vocabulaire français → anglais, pertinence ---------- */
@@ -195,6 +215,8 @@ export const FAVORITES_KEY = 'atlas-favs';
 export const blankSpec = () => ({
   name: '',
   title: '',
+  target: 'web',
+  mobile: null,
   brief: '',
   stack: '',
   style: '',
@@ -215,6 +237,8 @@ export function readDraft() {
   if (typeof spec.theme !== 'string') spec.theme = null;
   if (typeof spec.template !== 'string') spec.template = null;
   if (typeof spec.loadedFrom !== 'string') spec.loadedFrom = null;
+  if (!TARGETS.includes(spec.target)) spec.target = 'web';
+  spec.mobile = spec.mobile || spec.target === 'mobile' ? cleanMobile(spec.mobile) : null;
   spec.blocks = (Array.isArray(spec.blocks) ? spec.blocks : []).filter((b) => b && typeof b.id === 'string').map(cleanBlock);
   return spec;
 }

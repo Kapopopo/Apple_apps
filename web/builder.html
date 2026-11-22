@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/builder.css" />
     <script type="module" src="/builder.js"></script>
   </head>
-  <body>
-    <a class="skip" href="#grid">Aller à la galerie</a>
+  <body class="builder">
+    <a class="skip" href="#main">Aller à l’étape en cours</a>
     <header class="appbar">
       <a href="/" class="brand" aria-label="Atlas, catalogue"
         ><span class="brand-mark">a<span>•</span></span
@@ -21,188 +21,419 @@
         <a href="/">Catalogue <small>essayer les composants</small></a>
         <a href="/builder" aria-current="page">Builder <small>composer la spec</small></a>
       </nav>
+      <div class="target" role="group" aria-labelledby="target-label">
+        <span id="target-label">Cible</span>
+        <button data-target="web" aria-pressed="true">
+          <svg class="icon" aria-hidden="true"><use href="/icons.svg#grid" /></svg>Web
+        </button>
+        <button data-target="mobile" aria-pressed="false">
+          <svg class="icon" aria-hidden="true"><use href="/icons.svg#device" /></svg>App mobile
+        </button>
+      </div>
     </header>
+
+    <nav class="stepbar" aria-label="Étapes de la spec">
+      <ol id="steps"></ol>
+    </nav>
+
     <div class="layout">
-      <section class="gallery" aria-label="Registre">
-        <div class="filters">
-          <label class="search"
-            ><svg class="icon" aria-hidden="true"><use href="/icons.svg#search" /></svg
-            ><input
-              id="q"
-              type="search"
-              placeholder="Rechercher dans le registre : bouton, graphique, sidebar, tarifs…"
-              aria-label="Rechercher dans le registre"
-          /></label>
-          <div class="types" id="types" role="group" aria-label="Type d’item"></div>
-          <div class="selects">
-            <select id="f-category" aria-label="Catégorie">
-              <option value="">Toutes les catégories</option>
-            </select>
-            <select id="f-source" aria-label="Source">
-              <option value="">Toutes les sources</option>
-            </select>
-            <select id="f-license" aria-label="Licence">
-              <option value="">Toutes les licences</option>
-              <option value="open">Licence ouverte</option>
-              <option value="restricted">Licence avec conditions</option>
-            </select>
-            <select id="f-tag" aria-label="Tag">
-              <option value="">Tous les tags</option>
-            </select>
-            <button id="reset" class="btn ghost small" hidden>
-              <svg class="icon" aria-hidden="true"><use href="/icons.svg#reset" /></svg>Réinitialiser
-            </button>
-          </div>
-        </div>
-        <div class="gallery-head">
-          <p class="help" id="count" aria-live="polite">Chargement du registre…</p>
-          <p class="help updates" id="updates" hidden></p>
-          <div class="gallery-tools">
-            <label class="check"><input type="checkbox" id="f-light" /> Fond clair</label>
-            <label class="check" title="Recolore les aperçus avec les tokens du thème choisi dans la spec"
-              ><input type="checkbox" id="f-skin" /> Thème de la spec</label
-            >
-            <button class="btn ghost small" id="autoplay" aria-pressed="true">
-              <svg class="icon" aria-hidden="true"><use href="/icons.svg#play" /></svg><span>Animations auto</span>
-            </button>
-            <label class="sort-label"
-              >Trier
-              <select id="f-sort">
-                <option value="relevance">Pertinence</option>
-                <option value="name">Nom A → Z</option>
-                <option value="recent">Plus récents</option>
-              </select></label
-            >
-          </div>
-        </div>
-        <div class="grid" id="grid"></div>
-        <button class="btn more" id="more" hidden>Afficher plus</button>
-      </section>
+      <main class="stage-area" id="main" tabindex="-1">
+        <p class="boot-error" id="boot-error" role="alert" hidden></p>
 
-      <aside class="spec" aria-labelledby="spec-heading">
-        <div class="spec-scroll">
-          <div class="spec-head">
-            <div class="spec-title">
-              <h2 id="spec-heading">Nouvelle spec</h2>
-              <small id="spec-state">Brouillon non enregistré</small>
-            </div>
-            <div class="spec-head-actions">
-              <label class="visually-hidden" for="load-spec">Ouvrir une spec ou un preset</label>
-              <select id="load-spec">
-                <option value="">Ouvrir…</option>
-              </select>
-              <details class="menu" id="spec-menu">
-                <summary class="btn icon-only ghost" aria-label="Actions sur la spec">
-                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#more" /></svg>
-                </summary>
-                <div class="menu-list" role="menu">
-                  <button role="menuitem" id="new-spec">
-                    <svg class="icon" aria-hidden="true"><use href="/icons.svg#plus" /></svg>Nouvelle spec
-                  </button>
-                  <button role="menuitem" id="duplicate-spec">
-                    <svg class="icon" aria-hidden="true"><use href="/icons.svg#duplicate" /></svg>Dupliquer
-                  </button>
-                  <button role="menuitem" id="rename-spec" data-saved-only>
-                    <svg class="icon" aria-hidden="true"><use href="/icons.svg#edit" /></svg>Renommer…
-                  </button>
-                  <button role="menuitem" id="history-spec" data-saved-only>
-                    <svg class="icon" aria-hidden="true"><use href="/icons.svg#history" /></svg>Historique…
-                  </button>
-                  <button role="menuitem" id="delete-spec" data-saved-only class="danger">
-                    <svg class="icon" aria-hidden="true"><use href="/icons.svg#trash" /></svg>Supprimer…
-                  </button>
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <ol class="guide" id="guide">
-            <li>Nommez la spec et collez le brief du client.</li>
-            <li>Choisissez un thème et des blocs (ici ou dans le catalogue), puis ordonnez-les par page.</li>
-            <li>Enregistrez, puis lancez la commande dans Claude Code.</li>
-          </ol>
-
-          <section class="spec-section" aria-labelledby="h-project">
-            <h3 id="h-project">Projet</h3>
-            <div class="row">
-              <label class="field"
-                >Nom du fichier<input
-                  id="s-name"
-                  placeholder="site-boulangerie"
-                  autocomplete="off"
-                  spellcheck="false"
-                  aria-describedby="name-help"
-              /></label>
-              <label class="field">Titre<input id="s-title" placeholder="Site de la boulangerie Dupont" /></label>
-            </div>
-            <div class="slot-row">
-              <span class="slot-label">Template</span>
-              <div id="s-template" class="slot"></div>
-            </div>
-            <p id="name-help" class="help">Enregistré dans specs/<span id="name-preview">nom</span>.json</p>
+        <section class="panel" data-panel="project" aria-labelledby="h-project">
+          <h1 id="h-project" tabindex="-1">Que voulez-vous construire ?</h1>
+          <div class="form">
             <label class="field"
-              >Brief<textarea id="s-brief" rows="2" placeholder="Pour qui, quelles pages, quel objectif…"></textarea>
+              ><span id="title-label">Nom du projet</span
+              ><input id="s-title" maxlength="120" autocomplete="off" placeholder="Site de la boulangerie Dupont"
+            /></label>
+            <label class="field"
+              >Brief<textarea id="s-brief" rows="6" maxlength="5000" placeholder="Pour qui, quelles pages, quel objectif…"></textarea>
             </label>
-            <div class="row">
-              <label class="field">Stack<input id="s-stack" placeholder="Next.js + Tailwind" /></label>
-              <label class="field">Direction visuelle<input id="s-style" placeholder="Chaleureux, crème et brun" /></label>
-            </div>
-          </section>
+            <label class="field" data-only="mobile"
+              >Bundle id<input
+                data-m="bundleId"
+                data-trim
+                maxlength="155"
+                placeholder="com.monstudio.monapp"
+                spellcheck="false"
+                autocomplete="off"
+            /></label>
+            <p class="note" data-only="mobile">
+              Décrivez ce que cette app fait que vos autres apps ne font pas. Apple refuse deux apps qui font la même chose, même avec un
+              thème différent (règle 4.3).
+            </p>
+            <details class="more-options">
+              <summary>Options avancées</summary>
+              <label class="field"
+                >Nom du fichier<input id="s-name" maxlength="64" autocomplete="off" spellcheck="false" aria-describedby="name-help"
+              /></label>
+              <p id="name-help" class="help">Déduit du nom. Enregistré dans specs/<span id="name-preview">nom</span>.json</p>
+              <label class="field" id="stack-web" data-only="web"
+                >Stack<input id="s-stack" maxlength="300" placeholder="Next.js + Tailwind"
+              /></label>
+              <div class="field" data-only="mobile">Stack imposée<span class="stack-locked" id="stack-mobile-text"></span></div>
+              <div class="row" data-only="mobile">
+                <label class="field"
+                  >Slug<input data-m="slug" data-trim maxlength="64" placeholder="Repris du nom de fichier" spellcheck="false"
+                /></label>
+                <label class="field"
+                  >Identifiant App Store<input data-m="iosAppId" data-trim inputmode="numeric" maxlength="15" placeholder="1234567890"
+                /></label>
+              </div>
+            </details>
+          </div>
 
-          <section class="spec-section" aria-labelledby="h-style">
-            <h3 id="h-style">Style</h3>
-            <div class="slot-row">
-              <span class="slot-label">Thème</span>
-              <div class="slot-with-action">
-                <div id="s-theme" class="slot"></div>
-                <button class="btn ghost small" id="create-theme" title="Créer un thème personnel (couleurs, rayon)">
-                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#palette" /></svg>Créer
+          <div class="starts" id="starts-block" hidden>
+            <h2>Gagner du temps</h2>
+            <div class="starts-list" id="starts"></div>
+          </div>
+
+          <div class="templates-block">
+            <h2 data-only="web">Template de départ <small>facultatif</small></h2>
+            <p class="help" data-only="mobile">
+              Squelette imposé : Mobile Base, avec onboarding, paywall et réglages déjà faits.
+              <button class="link" data-detail="mobile-base/template">Voir le squelette</button>
+            </p>
+            <details id="templates-fold" open>
+              <summary data-only="mobile">Templates web, non utilisables dans une app</summary>
+              <div id="s-template" class="templates"></div>
+            </details>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="style" aria-labelledby="h-style" hidden>
+          <div class="panel-head">
+            <h1 id="h-style" tabindex="-1">Quel style ?</h1>
+            <button class="btn" id="vary" data-only="mobile" title="Tire au hasard une palette, une police, des variantes et un espacement">
+              <svg class="icon" aria-hidden="true"><use href="/icons.svg#sparkle" /></svg>Varier
+            </button>
+          </div>
+          <div class="style-slots">
+            <div class="style-slot">
+              <button class="slot-tab" data-type="theme" aria-pressed="true">Thème</button>
+              <div id="s-theme" class="slot"></div>
+            </div>
+            <div class="style-slot">
+              <button class="slot-tab" data-type="font" aria-pressed="false">Polices</button>
+              <div id="s-fonts" class="slot chips"></div>
+            </div>
+            <div class="style-slot">
+              <button class="slot-tab" data-type="easing" aria-pressed="false">Mouvement</button>
+              <div id="s-easings" class="slot chips"></div>
+            </div>
+            <div class="style-slot" id="sounds-row" hidden>
+              <button class="slot-tab" data-type="sound" aria-pressed="false">Sons</button>
+              <div id="s-sounds" class="slot chips"></div>
+            </div>
+          </div>
+          <div class="style-extra">
+            <label class="field"
+              >Direction visuelle, en quelques mots<input id="s-style" maxlength="1000" placeholder="Chaleureux, crème et brun"
+            /></label>
+            <label class="field" data-only="mobile">Espacement<select data-m="layouts.spacing"></select></label>
+            <button class="btn" id="palette-open" type="button" aria-controls="palette-form">
+              <svg class="icon" aria-hidden="true"><use href="/icons.svg#palette" /></svg><span>Créer ma palette</span>
+            </button>
+          </div>
+          <form class="palette" id="palette-form" aria-labelledby="pal-title" novalidate hidden>
+            <div class="pal-entry">
+              <h2 id="pal-title">Ma palette</h2>
+              <p class="help">
+                Ajoutez vos couleurs dans n’importe quel ordre : le fond, le texte et la couleur principale sont choisis parmi elles, le
+                reste et le mode sombre sont calculés. Collez une liste de codes pour tout ajouter d’un coup.
+              </p>
+              <p class="help" id="pal-note" hidden>
+                Le thème choisi a été réglé couleur par couleur : modifiez-le avec «&nbsp;Régler chaque couleur&nbsp;». Ce bloc en créera un
+                nouveau.
+              </p>
+              <label class="field">Nom de la palette<input id="pal-name" maxlength="60" autocomplete="off" /></label>
+              <ul class="pal-list" id="pal-rows" aria-label="Couleurs"></ul>
+              <button class="btn ghost small" id="pal-add" type="button">
+                <svg class="icon" aria-hidden="true"><use href="/icons.svg#plus" /></svg><span>Ajouter une couleur</span>
+              </button>
+              <p class="pal-auto" id="pal-auto"></p>
+              <ul class="pal-messages error" id="pal-errors" aria-live="polite"></ul>
+            </div>
+            <div class="pal-result">
+              <p class="pal-wait" id="pal-wait">L’aperçu apparaît dès la première couleur.</p>
+              <div class="pal-preview" id="pal-preview" aria-hidden="true" hidden></div>
+              <ul class="pal-messages warn" id="pal-warnings" aria-live="polite"></ul>
+            </div>
+            <div class="pal-actions">
+              <button class="btn primary" id="pal-save">
+                <svg class="icon" aria-hidden="true"><use href="/icons.svg#save" /></svg><span>Enregistrer et utiliser</span>
+              </button>
+              <button class="btn ghost" id="pal-cancel" type="button">Annuler</button>
+              <button class="btn ghost" id="create-theme" type="button">Régler chaque couleur</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel" data-panel="onboarding" aria-labelledby="h-onboarding" hidden>
+          <h1 id="h-onboarding" tabindex="-1">Comment l’app se présente-t-elle ?</h1>
+          <div class="layout-choices" id="onboarding-layouts" role="group" aria-label="Variante d’onboarding"></div>
+          <div class="editor-head">
+            <h2>Écrans <small>3 à 5</small></h2>
+            <button type="button" class="btn small" data-m-add="slides">
+              <svg class="icon" aria-hidden="true"><use href="/icons.svg#plus" /></svg>Ajouter un écran
+            </button>
+          </div>
+          <ol class="m-list" id="m-slides"></ol>
+          <div class="editor-head">
+            <h2>Questions <small>facultatif, pour personnaliser l’app</small></h2>
+            <button type="button" class="btn small" data-m-add="questions">
+              <svg class="icon" aria-hidden="true"><use href="/icons.svg#plus" /></svg>Ajouter une question
+            </button>
+          </div>
+          <ol class="m-list" id="m-questions"></ol>
+        </section>
+
+        <section class="panel" data-panel="paywall" aria-labelledby="h-paywall" hidden>
+          <h1 id="h-paywall" tabindex="-1">Qu’achète la personne ?</h1>
+          <div class="layout-choices" id="paywall-layouts" role="group" aria-label="Variante de paywall"></div>
+          <div class="form">
+            <label class="field">Titre<input data-m="paywall.title" maxlength="80" /></label>
+            <label class="field">Sous-titre<input data-m="paywall.subtitle" maxlength="160" /></label>
+            <label class="field"
+              >Avantages, un par ligne (2 à 6)<textarea data-m="paywall.benefits" data-lines="6" rows="4"></textarea>
+            </label>
+            <div class="row three">
+              <label class="field">Illustration<select data-m="paywall.illustration"></select></label>
+              <label class="field">Essai gratuit, en jours<input data-m="trial.days" type="number" min="0" max="90" /></label>
+              <label class="field">Essai sur<select data-m="trial.plan"></select></label>
+            </div>
+            <p class="help">L’essai saisi ici sert au mode test. Le vrai se règle dans App Store Connect.</p>
+
+            <h2>Obligatoire pour publier</h2>
+            <label class="field"
+              >Adresse des CGU<input data-m="termsUrl" data-trim inputmode="url" placeholder="https://…" spellcheck="false"
+            /></label>
+            <label class="field"
+              >Adresse de la politique de confidentialité<input
+                data-m="privacyUrl"
+                data-trim
+                inputmode="url"
+                placeholder="https://…"
+                spellcheck="false"
+            /></label>
+            <label class="field"
+              >Email du support<input
+                data-m="supportEmail"
+                data-trim
+                inputmode="email"
+                placeholder="support@mon-domaine.fr"
+                autocomplete="off"
+            /></label>
+
+            <details class="more-options">
+              <summary>RevenueCat</summary>
+              <div class="row">
+                <label class="field"
+                  >Entitlement<input data-m="revenueCat.entitlement" data-trim maxlength="100" spellcheck="false"
+                /></label>
+                <label class="field"
+                  >Offering<input data-m="revenueCat.offering" data-trim maxlength="100" placeholder="Offering courante" spellcheck="false"
+                /></label>
+              </div>
+              <label class="check"
+                ><input type="checkbox" data-m="revenueCat.useDashboardPaywall" /> Utiliser le paywall dessiné dans le dashboard
+                RevenueCat</label
+              >
+              <p class="help">Les clés API ne vont pas ici : elles se mettent dans le fichier .env.local de l’app créée.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="panel" data-panel="blocks" aria-labelledby="h-blocks" hidden>
+          <h1 id="h-blocks" tabindex="-1">Quels blocs reprendre ?</h1>
+          <p class="note" data-only="mobile">
+            Étape facultative. Le natif vient en premier. Un élément « web only » sert d’intention : son code n’est pas copié.
+          </p>
+        </section>
+
+        <section class="gallery" id="gallery" aria-label="Registre" hidden>
+          <div class="filters">
+            <label class="search"
+              ><svg class="icon" aria-hidden="true"><use href="/icons.svg#search" /></svg
+              ><input id="q" type="search" placeholder="Rechercher" aria-label="Rechercher dans le registre"
+            /></label>
+            <div class="suggestions" id="suggestions" role="group" aria-label="Recherches fréquentes"></div>
+            <div class="filter-line">
+              <div class="types" id="types" role="group" aria-label="Type d’item"></div>
+              <div class="filter-toggles">
+                <button class="btn ghost small" id="filters-toggle" aria-expanded="false" aria-controls="more-filters">
+                  Filtres et affichage<span class="count" id="filters-count"></span>
+                </button>
+                <button class="btn ghost small" id="reset" hidden>
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#reset" /></svg>Réinitialiser
                 </button>
               </div>
             </div>
-            <div class="slot-row">
-              <span class="slot-label">Polices</span>
-              <div id="s-fonts" class="slot chips"></div>
+            <div class="more-filters" id="more-filters" hidden>
+              <div class="selects">
+                <select id="f-category" aria-label="Catégorie">
+                  <option value="">Toutes les catégories</option>
+                </select>
+                <select id="f-source" aria-label="Source">
+                  <option value="">Toutes les sources</option>
+                </select>
+                <select id="f-license" aria-label="Licence">
+                  <option value="">Toutes les licences</option>
+                  <option value="open">Licence ouverte</option>
+                  <option value="restricted">Licence avec conditions</option>
+                </select>
+                <select id="f-tag" aria-label="Tag">
+                  <option value="">Tous les tags</option>
+                </select>
+              </div>
+              <div class="gallery-tools">
+                <label class="check"><input type="checkbox" id="f-light" /> Fond clair</label>
+                <label class="check" title="Recolore les aperçus avec les tokens du thème choisi dans la spec"
+                  ><input type="checkbox" id="f-skin" /> Thème de la spec</label
+                >
+                <button class="btn ghost small" id="autoplay" aria-pressed="true">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#play" /></svg><span>Animations auto</span>
+                </button>
+                <label class="sort-label"
+                  >Trier
+                  <select id="f-sort">
+                    <option value="relevance">Pertinence</option>
+                    <option value="name">Nom A → Z</option>
+                    <option value="recent">Plus récents</option>
+                  </select></label
+                >
+              </div>
             </div>
-            <div class="slot-row">
-              <span class="slot-label">Mouvement</span>
-              <div id="s-easings" class="slot chips"></div>
-            </div>
-            <div class="slot-row" id="sounds-row" hidden>
-              <span class="slot-label">Sons</span>
-              <div id="s-sounds" class="slot chips"></div>
-            </div>
-          </section>
+          </div>
+          <div class="gallery-head">
+            <p class="help" id="count" aria-live="polite">Chargement du registre…</p>
+            <p class="help updates" id="updates" hidden></p>
+          </div>
+          <div class="grid" id="grid"></div>
+          <button class="btn more" id="more" hidden>Afficher plus</button>
+        </section>
 
-          <section class="spec-section" aria-labelledby="h-blocks">
-            <div class="section-title">
-              <h3 id="h-blocks">Blocs <span class="count" id="s-count">0</span></h3>
-              <button class="btn ghost small" id="preview-page" disabled>
-                <svg class="icon" aria-hidden="true"><use href="/icons.svg#eye" /></svg>Aperçu de la page
+        <section class="panel" data-panel="launch" aria-labelledby="launch-title" hidden>
+          <h1 id="launch-title" tabindex="-1">Prêt pour Claude Code</h1>
+          <div id="launch-checks"></div>
+          <button class="btn primary launch-primary" id="save-copy">
+            <svg class="icon" aria-hidden="true"><use href="/icons.svg#copy" /></svg><span>Enregistrer et copier la commande</span>
+          </button>
+          <ol class="launch-steps">
+            <li>
+              <strong>Ouvrir le bon dossier</strong>
+              <p id="launch-where"></p>
+            </li>
+            <li>
+              <strong>Coller la commande dans Claude Code</strong>
+              <div class="command saved" id="command-ready" hidden>
+                <code id="mcp-command"></code>
+                <button class="btn icon-only ghost small" id="copy-command" aria-label="Copier la commande Claude Code">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#copy" /></svg>
+                </button>
+              </div>
+              <p id="command-wait">La commande apparaît quand la spec est enregistrée, pour toujours construire la version affichée.</p>
+            </li>
+          </ol>
+          <details class="more-options">
+            <summary>La commande est inconnue dans Claude Code ?</summary>
+            <p>Enregistrez une fois le MCP Atlas pour tous vos projets, dans un terminal, puis redémarrez Claude Code :</p>
+            <div class="command-line wrap">
+              <code id="mcp-add"></code>
+              <button class="btn icon-only ghost small" id="copy-mcp" aria-label="Copier la commande d’installation du MCP">
+                <svg class="icon" aria-hidden="true"><use href="/icons.svg#copy" /></svg>
               </button>
             </div>
+          </details>
+          <div id="launch-warnings"></div>
+          <div id="launch-attribution"></div>
+        </section>
+      </main>
+
+      <aside class="rail" id="rail" aria-labelledby="spec-heading">
+        <div class="spec-head">
+          <div class="spec-title">
+            <h2 id="spec-heading">Nouvelle spec</h2>
+            <small id="spec-state">Brouillon, pas encore enregistré</small>
+          </div>
+          <div class="spec-head-actions">
+            <label class="visually-hidden" for="load-spec">Ouvrir une spec ou un preset</label>
+            <select id="load-spec">
+              <option value="">Ouvrir…</option>
+            </select>
+            <details class="menu" id="spec-menu">
+              <summary class="btn icon-only ghost" aria-label="Actions sur la spec">
+                <svg class="icon" aria-hidden="true"><use href="/icons.svg#more" /></svg>
+              </summary>
+              <div class="menu-list" role="menu">
+                <button role="menuitem" id="new-spec">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#plus" /></svg>Nouvelle spec
+                </button>
+                <button role="menuitem" id="duplicate-spec">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#duplicate" /></svg>Dupliquer
+                </button>
+                <button role="menuitem" id="save-preset">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#save" /></svg>Enregistrer comme preset
+                </button>
+                <button role="menuitem" id="rename-spec" data-saved-only>
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#edit" /></svg>Renommer…
+                </button>
+                <button role="menuitem" id="history-spec" data-saved-only>
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#history" /></svg>Historique…
+                </button>
+                <button role="menuitem" id="delete-spec" data-saved-only class="danger">
+                  <svg class="icon" aria-hidden="true"><use href="/icons.svg#trash" /></svg>Supprimer…
+                </button>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="rail-scroll">
+          <div id="rail-summary">
+            <ul class="recap" id="recap" aria-label="Récapitulatif"></ul>
+            <figure class="rail-phone" data-only="mobile">
+              <div class="phone" id="rail-phone" aria-hidden="true"></div>
+              <figcaption id="rail-phone-caption"></figcaption>
+            </figure>
+          </div>
+
+          <div id="rail-blocks" hidden>
+            <div class="section-title">
+              <h3>Votre sélection <span class="count" id="s-count">0</span></h3>
+              <button class="btn ghost small" id="preview-page" disabled>
+                <svg class="icon" aria-hidden="true"><use href="/icons.svg#eye" /></svg>Aperçu
+              </button>
+            </div>
+            <label class="field add-page"
+              ><span id="add-page-label">Ajouter les prochains blocs à la page</span
+              ><input id="add-page" list="pages-list" maxlength="60" placeholder="Page unique" autocomplete="off"
+            /></label>
             <datalist id="pages-list"></datalist>
             <ol id="s-blocks" class="blocks"></ol>
             <div id="s-attribution"></div>
-          </section>
-        </div>
-        <div class="spec-footer">
-          <div class="spec-actions">
-            <button class="btn primary" id="save">
-              <svg class="icon" aria-hidden="true"><use href="/icons.svg#save" /></svg>Enregistrer la spec
-            </button>
-            <button class="btn ghost small" id="save-preset">Comme preset</button>
-            <a class="btn ghost small" id="jump-spec" href="#spec-heading">Spec <span class="count" id="jump-count">0</span></a>
-          </div>
-          <div class="command">
-            <code id="mcp-command">/mcp__atlas__build-from-spec nom</code>
-            <button class="btn icon-only ghost small" id="copy-command" aria-label="Copier la commande Claude Code">
-              <svg class="icon" aria-hidden="true"><use href="/icons.svg#copy" /></svg>
-            </button>
           </div>
         </div>
       </aside>
     </div>
+
+    <footer class="actionbar">
+      <button class="btn ghost" id="prev-step">
+        <svg class="icon flip" aria-hidden="true"><use href="/icons.svg#arrow" /></svg><span>Précédent</span>
+      </button>
+      <button class="btn ghost" id="jump-spec" aria-expanded="false" aria-controls="rail">
+        <span id="jump-label">Récapitulatif</span> <span class="count" id="jump-count"></span>
+      </button>
+      <span class="save-state" id="save-state" role="status"></span>
+      <button class="btn" id="save" title="Enregistrer (Ctrl+S)">
+        <svg class="icon" aria-hidden="true"><use href="/icons.svg#save" /></svg>Enregistrer
+      </button>
+      <button class="btn primary" id="next-step">
+        <span>Continuer</span><svg class="icon" aria-hidden="true"><use href="/icons.svg#arrow" /></svg>
+      </button>
+    </footer>
+
     <dialog id="detail" aria-labelledby="detail-title">
       <button class="btn icon-only ghost close" aria-label="Fermer">
         <svg class="icon" aria-hidden="true"><use href="/icons.svg#x" /></svg>

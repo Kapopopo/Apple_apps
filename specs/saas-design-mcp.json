@@ -1,0 +1,70 @@
+{
+  "name": "saas-design-mcp",
+  "title": "PetSitter Journal",
+  "target": "mobile",
+  "mobile": {
+    "appName": "",
+    "slug": "",
+    "bundleId": "",
+    "supportEmail": "",
+    "termsUrl": "",
+    "privacyUrl": "",
+    "iosAppId": "",
+    "revenueCat": {
+      "entitlement": "premium",
+      "offering": "",
+      "useDashboardPaywall": false
+    },
+    "trial": {
+      "days": 7,
+      "plan": "annual"
+    },
+    "layouts": {
+      "onboarding": "fullscreen",
+      "paywall": "benefits",
+      "spacing": "normal"
+    },
+    "slides": [
+      {
+        "title": "Bienvenue",
+        "text": "Présentez ici ce que l’app permet de faire.",
+        "illustration": "target"
+      },
+      {
+        "title": "Simple au quotidien",
+        "text": "Expliquez comment on s’en sert, en une phrase.",
+        "illustration": "target"
+      },
+      {
+        "title": "Des résultats visibles",
+        "text": "Montrez le bénéfice concret pour la personne.",
+        "illustration": "trending-up"
+      }
+    ],
+    "questions": [],
+    "paywall": {
+      "title": "Débloquez toute l’app",
+      "subtitle": "Accès complet pendant toute la durée de l’abonnement.",
+      "illustration": "star",
+      "benefits": [
+        "Toutes les fonctionnalités",
+        "Les mises à jour de l’app",
+        "Résiliable à tout moment"
+      ]
+    }
+  },
+  "brief": "# PETSITTER JOURNAL — PROMPT DE DÉVELOPPEMENT\n\nAgis comme un développeur mobile senior spécialisé en Expo, React Native, TypeScript et UX/UI mobile premium.\n\nTa mission est de développer une application mobile iOS appelée **PetSitter Journal**.\n\nTu ne dois pas simplement produire une maquette ou une démonstration visuelle. Tu dois construire une véritable V1 fonctionnelle, avec une base de données locale, des formulaires opérationnels, des relations entre les données et un système de génération et de partage de comptes rendus.\n\nL'objectif est de réaliser cette première version dans un temps de développement très court. Privilégie la simplicité, la fiabilité et la rapidité d'exécution plutôt que les fonctionnalités secondaires.\n\n---\n\n# 1. CONTEXTE DU PRODUIT\n\n## Présentation\n\nPetSitter Journal est une application destinée aux pet-sitters indépendants.\n\nElle leur permet de gérer leurs animaux en garde et de rédiger facilement des comptes rendus de visite à destination des propriétaires.\n\n## Proposition de valeur\n\n« Chaque visite terminée, un compte rendu professionnel et rassurant à envoyer au propriétaire en quelques secondes. »\n\n## Utilisateurs cibles\n\n- Pet-sitters indépendants.\n- Personnes proposant des services de garde d'animaux.\n- Professionnels réalisant des visites à domicile.\n- Personnes gardant régulièrement plusieurs animaux.\n\n## Objectif principal\n\nPermettre à un pet-sitter de :\n\n1. Enregistrer ses clients et leurs animaux.\n2. Créer des périodes de garde.\n3. Consigner les activités quotidiennes.\n4. Ajouter des photos.\n5. Générer un compte rendu professionnel.\n6. Partager ce compte rendu avec le propriétaire.\n\n## Périmètre technique\n\n- Framework : Expo + React Native.\n- Langage : TypeScript.\n- Plateforme cible : iOS uniquement.\n- Backend : aucun.\n- Base de données : SQLite locale.\n- Authentification : aucune.\n- Synchronisation : aucune.\n- Connexion Internet : non nécessaire pour utiliser les fonctionnalités principales.\n\nL'application doit être utilisable hors connexion.\n\n---\n\n# 2. INSTRUCTIONS AVANT DE CODER\n\nAvant de commencer le développement :\n\n1. Analyse la structure actuelle du projet.\n2. Vérifie le framework et les dépendances déjà installées.\n3. Identifie les composants et les ressources disponibles dans les MCP connectés à Cursor.\n4. Consulte en priorité mon MCP dédié au design et aux composants UI.\n5. Réutilise les composants existants lorsqu'ils sont adaptés.\n6. Respecte les conventions déjà présentes dans le projet.\n\nNe crée pas de nouveaux composants lorsqu'un composant équivalent est déjà disponible dans mon MCP.\n\nNe remplace pas inutilement les dépendances existantes.\n\nSi le projet est vide, initialise une application Expo avec TypeScript et Expo Router en utilisant le template officiel adapté.\n\nNe me demande pas de validation pour chaque décision technique mineure. Prends des décisions pragmatiques.\n\n**Important : commence réellement l'implémentation après ton analyse. Ne te contente pas de me fournir un plan de développement.**\n\n---\n\n# 3. DIRECTION ARTISTIQUE\n\nL'application doit avoir une identité visuelle premium, moderne, chaleureuse et rassurante.\n\nJe ne veux pas d'une interface générique de gestion ou d'un dashboard administratif.\n\n## Palette de couleurs\n\n- Background principal : #F6F4EE\n- Background des cartes : #FFFFFF\n- Vert sauge principal : #788A70\n- Vert foncé : #292E28\n- Terracotta : #C98D6C\n- Texte secondaire : #888D82\n- Bordures : #E8E4DA\n\n## Style général\n\n- Design inspiré des applications iOS premium.\n- Interfaces aérées.\n- Coins arrondis.\n- Cartes élégantes.\n- Hiérarchie typographique très claire.\n- Photographies d'animaux mises en avant.\n- Icônes minimalistes.\n- Couleurs douces.\n- Ombres très légères.\n- Micro-interactions discrètes.\n\nUtilise les polices système iOS si aucune police personnalisée n'est déjà configurée.\n\nRespecte une grille d'espacement cohérente.\n\nUtilise les composants de mon MCP pour les boutons, cartes, champs de formulaire, icônes et autres éléments disponibles.\n\n## Expérience utilisateur\n\nL'application doit être extrêmement simple à utiliser.\n\nUn pet-sitter doit pouvoir :\n\n- Ajouter un animal rapidement.\n- Créer une garde sans manipulations inutiles.\n- Consigner une visite en moins d'une minute.\n- Générer un compte rendu sans avoir à rédiger manuellement un long message.\n\nPrévois des états vides élégants, des confirmations d'actions et des messages d'erreur compréhensibles.\n\nNe surcharge pas les écrans.\n\n---\n\n# 4. NAVIGATION PRINCIPALE\n\nUtilise Expo Router.\n\nLa navigation principale comporte quatre onglets :\n\n1. Aujourd'hui\n2. Animaux\n3. Gardes\n4. Historique\n\nLes paramètres sont accessibles depuis une icône de profil située dans l'en-tête.\n\n## 4.1 Aujourd'hui\n\nC'est l'écran d'accueil.\n\nIl doit afficher :\n\n- Un message de bienvenue.\n- La date du jour.\n- Le nombre de gardes en cours.\n- Les prochaines gardes.\n- Les visites du jour.\n- Les derniers comptes rendus.\n- Un bouton d'action principal « Nouvelle garde ».\n- Un raccourci « Ajouter un animal",
+  "stack": "React + TypeScript + Tailwind CSS 4 + Motion",
+  "style": "Thème process-like : fond gris très clair, blocs noirs arrondis bord à bord, titres majuscules ultra-gras serrés, un seul accent bleu, pills, verre dépoli, halos bleus, micro-animations à ressort. Visuels en placeholders, textes à adapter au projet.",
+  "theme": "perso/palette-petsitter-journal",
+  "template": null,
+  "fonts": [
+    "fontshare/oswald"
+  ],
+  "easings": [],
+  "sounds": [],
+  "blocks": [],
+  "preset": false,
+  "createdAt": "2026-11-22T21:49:11.119Z",
+  "updatedAt": "2026-11-22T21:49:11.119Z"
+}

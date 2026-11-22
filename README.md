@@ -7,7 +7,9 @@ Outil personnel (non commercialisé, **repo privé**) qui centralise des composa
 3. **Catalogue** (`/`) et **builder** (`/builder`) : j’essaie les composants, je compose une spec (thème, blocs par page, consignes) et je l’enregistre (`specs/<nom>.json`).
 4. **Serveur MCP** (`mcp/`) : Claude Code lit la spec et reçoit le **code source réel**, prêt à poser, avec les crédits.
 
-L’interface ne montre **que ce qui est interactif** : un composant n’y apparaît que si son aperçu fonctionne en direct (démo Atlas ou aperçu live validé par l’audit). Le reste du registre (composants React Native, utilitaires, aperçus en erreur) reste accessible au MCP et au bundle.
+L’interface ne montre **que ce qui est interactif** : un composant n’y apparaît que si son aperçu fonctionne en direct (démo Atlas ou aperçu live validé par l’audit). Exception : en cible **App mobile**, le builder montre aussi les composants React Native, sans aperçu. Le reste du registre (utilitaires, aperçus en erreur) reste accessible au MCP et au bundle.
+
+Deux cibles : **Web** (par défaut) et **[App mobile](#nouvelle-app-mobile)** (Expo, template `mobile-base`).
 
 ## Démarrer
 
@@ -30,13 +32,64 @@ L’audit est incrémental : il ne refait que les items dont le code, l’emprei
 ## Projet client : du brief au code
 
 1. **Catalogue** : chercher en français (« tarifs », « graphique », « connexion »…), essayer, **Ajouter** → le composant rejoint la spec en cours, la même que celle du builder.
-2. **Builder** : nommer la spec, coller le brief, choisir un thème (ou **Créer** le vôtre : couleurs clair/sombre, rayon, aperçu en direct), des polices, des courbes et des sons ; ordonner les blocs, leur donner une **page** et une **consigne** ; **Aperçu de la page** empile les blocs aux couleurs du thème ; **Enregistrer**.
+2. **Builder**, en quatre étapes (chacune accessible à tout moment) :
+   - **Projet** : nom (le nom de fichier suit), brief, exemple ou template de départ.
+   - **Style** : thème, ou **Créer ma palette** : trois codes hexa suffisent (secondaire, accent et mode sombre facultatifs, liste collable), aperçu et contrôle de lisibilité en direct ; **Régler chaque couleur** ouvre les 16 tokens et le rayon, polices, courbes, sons, direction visuelle.
+   - **Blocs** : recherche et raccourcis ; la sélection s’ordonne à droite, un clic sur un bloc ouvre sa **consigne** et sa **page** ; **Aperçu** empile les blocs aux couleurs du thème.
+   - **Lancer** : ce qui reste à corriger, puis **Enregistrer et copier la commande**. Elle n’est proposée que si le fichier correspond à ce qui est affiché.
 3. **Claude Code**, dans ce dépôt : `/mcp__atlas__build-from-spec <nom>`. Le MCP fournit le plan, le thème, une seule commande `npm install`, puis le code bloc par bloc (`get_component` avec `target_alias`) ou en une fois (`get_spec_bundle`).
 4. **Ou directement** dans le projet : `npm run bundle -- <nom> --out ../mon-projet` (composants, thème CSS, polices, easings, `CREDITS.md` ; rien n’est écrasé sans `--force`).
-   **Partir d’un site complet** : choisir un template dans le builder (onglet *Templates*, « Partir de ce template »), puis `npm run scaffold -- <template> --out ../mon-projet` avant le bundle. Le MCP l’indique aussi en tête du plan.
+   **Partir d’un site complet** : choisir un template à l’étape *Projet* du builder, puis `npm run scaffold -- <template> --out ../mon-projet` avant le bundle. Le MCP l’indique aussi en tête du plan.
 5. **Crédits** : `CREDITS.md` liste chaque source et les attributions obligatoires à afficher (Rare UI, React Bits…).
 
 Un composant seul s’installe aussi dans un projet shadcn : `npx shadcn@latest add http://localhost:8000/r/<source>/<slug>.json` (le serveur Atlas doit tourner).
+
+## Nouvelle app mobile
+
+Prérequis : **Node 22.13+, 24.3+ ou 26+** (Expo SDK 58 ; `nvm install 22` puis `nvm use 22`) et le MCP enregistré pour tous les projets (commande affichée par « Utiliser avec Claude Code » dans le catalogue).
+
+1. **Builder** → **Cible : App mobile** (en haut), six étapes : **Projet** (nom, brief de la fonctionnalité propre à cette app, bundle id) · **Style** (**Varier** tire palette, police, variantes et espacement) · **Onboarding** (variante choisie sur aperçu, écrans, questions) · **Paywall** (variante, textes, essai, CGU, confidentialité, support, RevenueCat) · **Blocs** (facultatif) · **Lancer** (**Enregistrer et copier la commande**).
+2. Créer un **dossier vide**, y ouvrir Claude Code et lancer `/mcp__atlas__build-from-spec <nom>`. Le prompt commence par une commande unique qui copie le squelette, injecte la config, pose les blocs natifs et installe :
+
+   ```bash
+   node "<atlas>/node_modules/tsx/dist/cli.mjs" "<atlas>/scripts/scaffold.ts" mobile-base --spec <nom> --out . --install
+   ```
+
+   Elle se lance aussi à la main. Ne pas la remplacer par `npm run scaffold -- …` dans PowerShell : `npm.ps1` y avale le `--` et perd `--out`.
+3. `npx expo start --go` pour tester dans Expo Go : sans clés, les achats sont simulés (« Mode test »). Parcours : onboarding → paywall → accueil → réglages.
+4. Coder uniquement `app/(main)/`. Un écran créé ailleurs dans `app/` échappe au paywall.
+
+### Où brancher les clés RevenueCat
+
+Jamais dans le builder ni dans une spec : dans l’app créée.
+
+| Quoi | Où |
+|---|---|
+| Clés publiques `appl_…` / `goog_…` | `.env.local` de l’app (copie de `.env.example`) : `EXPO_PUBLIC_REVENUECAT_IOS_KEY`, `EXPO_PUBLIC_REVENUECAT_ANDROID_KEY` |
+| Les mêmes pour les builds | variables EAS, environnements `development` et `production` (`npx eas-cli env:create`) |
+| Entitlement, offering, paywall du dashboard | builder → étape *Paywall* → *RevenueCat*, puis `src/config/app.ts` |
+| Produits 1 semaine et 1 an, essai gratuit | App Store Connect / Play Console, importés dans RevenueCat |
+
+Les achats réels demandent un development build (`npx eas-cli build --profile development`). Un build de release sans clé ne débloque rien, et un build EAS `production` mal configuré est refusé.
+
+### Checklist avant soumission App Store
+
+La version complète est dans le README de chaque app créée ([source](authored/mobile-base/README.md)).
+
+- [ ] **Fonctionnalité propre à l’app.** Thème, police et variantes ne protègent pas du refus 4.3 : Apple y interdit plusieurs bundle ids pour la même app (4.3a) et les apps impossibles à distinguer de celles qui existent (4.3b) ; des envois répétés peuvent coûter le compte développeur.
+- [ ] Icône, captures, nom, description et mots-clés propres à l’app ; soumission depuis le compte du propriétaire du contenu (4.2.6).
+- [ ] Avantages du paywall tous vrais ; prix débité, durée et renouvellement lisibles ; essai affiché conforme au store (3.1.2).
+- [ ] CGU et confidentialité accessibles depuis le paywall et dans la fiche App Store ; email du support renseigné.
+- [ ] Achat, restauration, annulation et expiration testés en sandbox ou TestFlight, sur un vrai iPhone.
+- [ ] Contrat « Paid Apps », fiscalité et banque actifs ; abonnements joints à la première version soumise.
+- [ ] Bundle id définitif, `assets/icon.png`, identifiant App Store, confidentialité de l’app déclarée, notes de review.
+
+### Ce que change la cible mobile
+
+- **Galerie** : le natif d’abord, puis le web **grisé, badge « web only »**. Un composant web choisi devient une intention : son équivalent react-native-reusables est indiqué (`node scripts/add-ui.js <nom>` dans l’app), son code n’est jamais copié. Templates, sons, thèmes et polices incompatibles sont désactivés.
+- **`platforms`** (calculé à l’indexation, voir [shared/platforms.ts](shared/platforms.ts)) : React → web ; React Native sans Uniwind → mobile ; avec Uniwind → aucune (« hors stack ») ; thème aux tokens shadcn convertibles → les deux ; police → les deux si sa licence est ouverte, web sinon (embarquer une ITF FFL dans une app n’est pas vérifié).
+- **Polices** : les TTF des graisses utiles sont téléchargés depuis Fontshare au scaffold, jamais stockés ici.
+- **Template** : source dans [authored/mobile-base/](authored/mobile-base/), palettes dans [authored/mobile-palettes.ts](authored/mobile-palettes.ts). Après une modification : `npm run import:authored`, puis `npm run check:mobile` (un test échoue si le registre n’est pas à jour).
 
 ## Registre
 
@@ -62,6 +115,7 @@ Chaque dossier contient `meta.json`, `files/` (chemins du repo d’origine) et `
 | `type` | `component` · `section` · `screen` · `theme` · `font` · `easing` · `sound` · `template` (site complet) · `lib` (helpers et primitives requis par d’autres items, masqués de l’interface) |
 | `category`, `tags` | catégories françaises (`shared/taxonomy.ts`), tags dérivés du nom, de la description et des dépendances |
 | `framework` | `react` · `react-native` · `agnostic` |
+| `platforms` | `web`, `mobile` : où l’item s’utilise tel quel ; dans `index.json` seulement (calculé, pour ne pas changer les `contentHash`) |
 | `dependencies`, `registryDependencies` | paquets npm ; autres items requis, résolus récursivement par le MCP et le bundle |
 | `source`, `sourceUrl`, `sourcePath`, `sourceCommit` | provenance exacte (lien GitHub au commit importé) |
 | `license`, `licenseStatus`, `licenseNotes`, `attribution` | voir *Licences* |
@@ -71,7 +125,7 @@ Chaque dossier contient `meta.json`, `files/` (chemins du repo d’origine) et `
 | `sound` | moteur (`react-bits` ou `bencho`) et noms des sons |
 | `importedAt`, `updatedAt`, `contentHash` | relance idempotente : même contenu, rien n’est réécrit |
 
-État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices, et 6 templates complets (61 sections et écrans). Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
+État actuel : 12 sources, ≈ 3 600 items dont 1 264 exemples officiels ReUI, 224 sons, 100 polices, et 6 templates complets importés (61 sections et écrans), plus le template maison mobile-base. Chiffres à jour : `registry/index.json` et `registry/_previews.json`.
 
 ## Sources et importers
 
@@ -119,7 +173,7 @@ npm run import:templates               # clone au commit verrouillé, copie tout
 npm run capture:templates              # pages (bureau + mobile), page d’accueil entière et sections, sur la démo officielle
 npm run capture:templates -- --only studio-admin --sections   # un template, sections seulement
 npm run capture:templates -- --only studio-admin --sections --slug crm-kpis,crm-meetings   # recapturer quelques sections
-npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entier + LICENSE + ATLAS.md
+npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entier + LICENSE + ATLAS.md (PowerShell : voir Nouvelle app mobile)
 ```
 
 **Sections** : chaque template est aussi découpé en sections et écrans (`templates[].sections` dans `sources.json`), qui deviennent des items du registre (`launch-ui/hero`, `studio-admin/crm-kpis`…), ajoutables à une spec comme n’importe quel bloc.
@@ -164,8 +218,8 @@ npm run scaffold -- saas-starter --out ../mon-projet   # copie le template entie
 - **Panier unique** : « Ajouter » (catalogue) et la galerie du builder alimentent la même spec en cours, conservée dans le navigateur et synchronisée entre onglets. Les anciennes sélections du catalogue sont reprises automatiquement.
 - **Aperçus à la demande** : vignette de l’audit, aperçu monté au survol, au focus ou au toucher (« Animer au survol ») ou dès qu’il est visible (« Animations auto ») ; au plus 12 aperçus actifs, démontés hors écran.
 - **Recherche** bilingue classée par pertinence ; vues **Nouveautés**, favoris ; **équivalents** d’un composant dans les autres bibliothèques.
-- **Builder** : menu de la spec (nouvelle, dupliquer, renommer, historique et restauration, supprimer), page par bloc, aperçu composé, « Thème de la spec » appliqué aux aperçus, éditeur de thème, sons jouables, commande shadcn dans le détail, ouverture par `/builder#spec=<nom>` ou `#item=<id>`.
-- **Templates** : onglet dédié du builder ; la fiche d’un template montre ses **sections** (capture, « Ajouter » à la spec, code), regroupées par page, puis les captures des pages, la commande `scaffold` à copier, les variables d’environnement, l’arborescence et le README ; un template par spec, emplacement « Template » sous le thème. Les sections ajoutées apparaissent dans l’aperçu de la page par leur capture.
+- **Builder** : parcours en étapes ([web/lib/steps.js](web/lib/steps.js) : contrôles en français, testés contre le schéma), état brouillon / modifié / enregistré, Ctrl+S, suppressions annulables ; menu de la spec (nouvelle, dupliquer, preset, renommer, historique et restauration, supprimer), page par bloc, aperçu composé, « Thème de la spec » appliqué aux aperçus, éditeur de thème, sons jouables, commande shadcn dans le détail, ouverture par `/builder#spec=<nom>` ou `#item=<id>`.
+- **Templates** : choisis à l’étape Projet du builder ; la fiche d’un template montre ses **sections** (capture, « Ajouter » à la spec, code), regroupées par page, puis les captures des pages, la commande `scaffold` à copier, les variables d’environnement, l’arborescence et le README ; un template par spec, emplacement « Template » sous le thème. Les sections ajoutées apparaissent dans l’aperçu de la page par leur capture.
 - Le **prompt texte** du catalogue reste disponible pour un assistant sans MCP.
 
 ## Aperçus et audit
@@ -180,14 +234,14 @@ TypeScript, `@modelcontextprotocol/sdk`, stdio. Relit le registre et les specs �
 
 | Outil | Rôle |
 |---|---|
-| `list_specs` | specs et presets (pages, nombre de versions) |
-| `get_spec(name)` | thème, polices, easings, sons, blocs ordonnés avec page et consigne ; pour chaque item : type, source, licence, attribution, dépendances, aperçu interactif, ou `found: false` |
-| `get_spec_bundle(name, target_alias?)` | tout le code de la spec prêt à poser : chemins cibles, imports réécrits, thème CSS, polices, easings, `CREDITS.md`, une commande `npm install` |
-| `get_component(id, target_alias?)` | **les fichiers source réels**, licence, paquets npm, dépendances de registre, démo, docs ; avec `target_alias` (`@/`, `~/`, `relative`) : chemins et imports adaptés au projet |
-| `get_template(id, files?)` | template complet : type, stack, pages, sections (ids des items), commande `scaffold`, variables d’environnement, arborescence, README et `package.json` ; avec `files`, le contenu de fichiers précis |
+| `list_specs` | specs et presets (cible, pages, nombre de versions) |
+| `get_spec(name)` | cible et réglages de l’app mobile, thème, polices, easings, sons, blocs ordonnés avec page et consigne ; pour chaque item : type, source, licence, attribution, dépendances, aperçu interactif, ou `found: false` |
+| `get_spec_bundle(name, target_alias?)` | tout le code de la spec prêt à poser : chemins cibles, imports réécrits, thème CSS, polices, easings, `CREDITS.md`, une commande `npm install` ; spec mobile : code natif seul, `npx expo install`, équivalents des blocs web |
+| `get_component(id, target_alias?, platform?)` | **les fichiers source réels**, licence, paquets npm, dépendances de registre, démo, docs ; avec `target_alias` (`@/`, `~/`, `relative`) : chemins et imports adaptés au projet ; `platform: "mobile"` : l’équivalent natif au lieu du code web |
+| `get_template(id, files?, spec?)` | template complet : type, stack, pages, sections (ids des items), commande `scaffold`, variables d’environnement, arborescence, README et `package.json` ; avec `files`, le contenu de fichiers précis ; `mobile-base` + `spec` : commande de création et config injectée |
 | `get_theme(id)` | tokens et CSS d’un thème, styles et lien d’une police, courbes, ressorts et durées |
-| `search_registry(…, interactive_only?)` | recherche bilingue ; à pertinence égale, les items à aperçu vérifié passent devant |
-| `create_spec(…)` | enregistre une spec, template de départ compris (ids vérifiés ; version remplacée archivée) |
+| `search_registry(…, platform?, interactive_only?)` | recherche bilingue ; à pertinence égale, les items à aperçu vérifié passent devant |
+| `create_spec(…)` | enregistre une spec, template de départ, cible et réglages mobiles compris (ids vérifiés ; cible conservée lors d’un remplacement ; version remplacée archivée) |
 
 Prompt **`build-from-spec`** : mode `light` par défaut (plan, thème, installation, appels `get_component` par bloc), `full` pour tout le code inline (≈ 180 ko max).
 
@@ -211,11 +265,12 @@ Identifiants : `ANTHROPIC_API_KEY`, ou un profil `ant auth login`.
 ## Vérifier
 
 ```bash
+npm run check:mobile # installe le template mobile-base et lance tsc --noEmit
 npm run check       # types, ESLint, Prettier, tests unitaires (registre, licences, importers, bundle, serveur, MCP stdio, prompt)
 npm run test:e2e    # catalogue et builder dans Chrome headless, serveur sur un port libre
 ```
 
-La CI (`.github/workflows/ci.yml`) lance `check` puis les e2e à chaque push. Le hook `pre-commit` (activé par `npm run setup`) lance `check`.
+La CI (`.github/workflows/ci.yml`) lance `check`, `check:mobile` et les e2e à chaque push. Le hook `pre-commit` (activé par `npm run setup`) lance `check`.
 
 ## Démos Atlas
 

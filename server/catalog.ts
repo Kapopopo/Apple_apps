@@ -190,6 +190,7 @@ export function cataloguePayload() {
       dependencies: e.dependencies,
       search_terms: terms(e),
       group: e.group,
+      platforms: e.platforms,
       isNew: !!e.isNew,
       importedAt: e.importedAt,
       ...(e.thumb ? { thumb: e.thumb } : {}),

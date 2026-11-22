@@ -12,6 +12,11 @@ demos/src/vendor/
 previews/src/generated/
 previews/missing-modules.txt
 importers/lock.json
+# Config par défaut du template, écrite par shared/mobile.ts (même format que scaffold)
+authored/mobile-base/src/config/app.ts
+authored/mobile-base/src/config/fonts.ts
+authored/mobile-base/src/config/theme.json
+authored/mobile-base/.expo/
 importers/sources.json
 **/package-lock.json
 *.md

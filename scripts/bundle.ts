@@ -10,6 +10,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { getSpec, listSpecs } from '../shared/specs.js';
 import { specBundle } from '../shared/spec-bundle.js';
+import { fromCaller } from '../shared/paths.js';
 
 interface Args {
   spec?: string;
@@ -60,7 +61,7 @@ function main() {
     process.exit(2);
   }
 
-  const out = path.resolve(args.out);
+  const out = fromCaller('bundle', args.out);
   const srcDir = path.resolve(out, args.src ?? (fs.existsSync(path.join(out, 'src')) ? 'src' : '.'));
   const bundle = specBundle(stored.spec, { alias: args.alias, demos: args.demos });
   const writes = [...bundle.extras, ...bundle.files].map((f) => {
@@ -95,6 +96,8 @@ function main() {
     `\nSpec « ${stored.spec.title || stored.spec.name} » : ${writes.length} fichiers${args.dryRun ? ' (simulation)' : `, ${written} écrits`} dans ${out}`,
   );
   if (bundle.install) console.log(`Paquets à installer :\n  ${bundle.install}`);
+  for (const r of bundle.replaced) console.log(`Non copié, ${r.id} : ${r.instruction}`);
+  for (const line of bundle.ignored) console.log(`Ignoré en mobile : ${line}`);
   if (bundle.missing.length) console.log(`À vérifier (imports non résolus) :\n  ${bundle.missing.join('\n  ')}`);
   if (args.alias !== 'relative')
     console.log(`Alias : les imports utilisent « ${args.alias} » → ${path.relative(out, srcDir) || '.'}/ (tsconfig paths).`);

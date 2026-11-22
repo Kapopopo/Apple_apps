@@ -1,10 +1,11 @@
-/* Atlas Builder : galerie du registre + spec en cours (thème, polices, mouvement, sons, blocs ordonnés par page). */
+/* Atlas Builder : une spec en étapes (projet, style, onboarding et paywall en mobile, blocs, lancer), galerie filtrée par étape. */
 import {
   $,
   $$,
   esc,
   icon,
   plural,
+  store,
   norm,
   slugify,
   shortLicense,
@@ -29,23 +30,50 @@ import {
   copyText,
   api,
 } from '/lib/common.js';
+import { cleanMobile, LAYOUT_LABEL, MOBILE_STACK_LINE, selectable, supports, TEMPLATE_ID, unsupportedLabel, vary } from '/lib/mobile.js';
+import { setupMobileForm } from '/lib/mobile-form.js';
+import { fingerprint, issues, nameAfterTitle, ownFirst, palettesFirst, specBody, STEP_LABEL, STEP_TYPES, stepsFor } from '/lib/steps.js';
+import { renderFieldErrors, renderLaunch, renderPhones, renderRecap, renderSteps, setupLayoutChoices, STATUS } from '/lib/flow.js';
+
+import { hexOf, paletteList } from '/lib/palette.js';
+import { setupPalette } from '/lib/palette-form.js';
+
+const STEP_KEY = 'atlas-builder-step';
+const DEFAULT_PALETTE = 'mobile-base/encre';
+/** Recherches fréquentes de l'étape Blocs : [libellé, recherche]. */
+const SUGGESTIONS = {
+  web: [
+    ['Hero', 'hero'],
+    ['Navigation', 'navigation'],
+    ['Tarifs', 'tarifs'],
+    ['Témoignages', 'temoignages'],
+    ['FAQ', 'faq'],
+    ['Formulaire', 'formulaire'],
+    ['Pied de page', 'footer'],
+  ],
+  mobile: [
+    ['Bouton', 'bouton'],
+    ['Carte', 'carte'],
+    ['Onglets', 'tabs'],
+    ['Formulaire', 'formulaire'],
+    ['Dialogue', 'dialog'],
+    ['Progression', 'progress'],
+  ],
+};
 
 const PAGE = 24;
 const TYPES = [
   ['', 'Tout'],
-  ['template', 'Templates'],
   ['component', 'Composants'],
   ['section', 'Sections'],
   ['screen', 'Écrans'],
-  ['theme', 'Thèmes'],
-  ['font', 'Polices'],
-  ['easing', 'Mouvement'],
-  ['sound', 'Sons'],
 ];
 const RANK = { template: 0, component: 1, section: 2, screen: 3, theme: 4, easing: 5, font: 6, sound: 7 };
 const FILTERS = ['#q', '#f-category', '#f-tag', '#f-source', '#f-license'];
 
 let items = [],
+  galleries = { web: [], mobile: [] },
+  shownTarget = '',
   byId = new Map(),
   sources = {},
   previewsBuilt = false,
@@ -54,8 +82,46 @@ let items = [],
   onlyNew = false,
   specs = [];
 let spec = readDraft();
+let step = '',
+  /** Empreinte du fichier enregistré : undefined = pas encore lu, null = absent. */
+  baseline,
+  currentIssues = [],
+  attempted = false,
+  saving = false,
+  palette = null,
+  undoSpec = null,
+  addPage = null,
+  slideIndex = 0;
+const touched = new Set();
+const openBlocks = new Set();
 
-const persist = () => writeDraft(spec);
+function persist() {
+  // Après une autre modification, « Annuler » l'écraserait : il n'est plus proposé.
+  if (undoSpec) {
+    undoSpec = null;
+    $('#toast').classList.remove('visible');
+  }
+  writeDraft(spec);
+  refresh();
+}
+const isMobile = () => spec.target === 'mobile';
+/** En mobile le squelette est imposé ; le template web choisi est gardé pour un retour en Web. */
+const activeTemplate = () => (isMobile() ? TEMPLATE_ID : spec.template);
+/** Un brouillon à ne pas écraser sans demander. Choisir la cible ne suffit pas à en faire un. */
+const hasContent = () =>
+  !!(spec.blocks.length || spec.title || spec.brief || spec.theme || spec.template) ||
+  (!!spec.mobile && JSON.stringify(spec.mobile) !== JSON.stringify(cleanMobile(null)));
+const unsaved = () => hasContent() && statusOf() !== 'saved';
+const renderMobileForm = setupMobileForm($('#main'), {
+  getMobile: () => spec.mobile,
+  onChange: persist,
+  onRemove(list, remove) {
+    const before = structuredClone(spec);
+    remove();
+    persist();
+    withUndo(list === 'slides' ? 'Écran retiré.' : 'Question retirée.', before);
+  },
+});
 const command = () => `/mcp__atlas__build-from-spec ${slugify(spec.name) || 'nom'}`;
 const savedKind = () => (spec.loadedFrom || '').split(':')[0];
 const savedName = () => (spec.loadedFrom || '').split(':')[1] || '';
@@ -97,6 +163,18 @@ function curveSvg(b) {
   return `<svg viewBox="0 0 60 64" aria-hidden="true"><path class="axis" d="M4 52 H56 M4 12 H56" stroke-width=".6" fill="none"/><polyline class="curve" points="${pts.join(' ')}" fill="none" stroke-width="1.6" stroke-linecap="round"/></svg>`;
 }
 
+const KEY_TOKENS = ['--primary', '--background', '--foreground', '--accent', '--secondary', '--muted', '--border', '--card'];
+/** Les couleurs qui distinguent un thème : primaire et fond d'abord, sans doublon. */
+function keyColors(colors = {}, max = 12) {
+  const rank = ([name]) => (KEY_TOKENS.includes(name) ? KEY_TOKENS.indexOf(name) : KEY_TOKENS.length);
+  const seen = new Set();
+  return Object.entries(colors)
+    .filter(([, v]) => !/^var\(/.test(v))
+    .sort((a, b) => rank(a) - rank(b))
+    .filter(([, v]) => !seen.has(v) && seen.add(v))
+    .slice(0, max);
+}
+
 function staticVisual(i) {
   if (i.type === 'template') {
     // Sans capture de page : la première section assez haute pour servir de visuel (pas une barre de navigation).
@@ -112,9 +190,7 @@ function staticVisual(i) {
   if (i.type === 'font')
     return `<div class="font-sample" data-font-css="${esc(i.font?.cssUrl || '')}" data-font="${esc(i.font?.family || i.name)}"><span class="big">Aa Gg</span><span class="line">Le vif zéphyr jubile sur les kumquats</span><span class="line">0123456789 · ${esc((i.font?.styles || []).length)} styles</span></div>`;
   if (i.type === 'theme') {
-    const colors = Object.entries(i._colors || {})
-      .filter(([, v]) => !/^var\(/.test(v))
-      .slice(0, 12);
+    const colors = keyColors(i._colors);
     return colors.length
       ? `<div class="swatches">${colors.map(([k, v]) => `<span data-color="${esc(v)}" title="${esc(k)} : ${esc(v)}"></span>`).join('')}</div>`
       : `<div class="placeholder">${icon('palette')}Tokens du thème</div>`;
@@ -132,8 +208,7 @@ function staticVisual(i) {
     return `<div class="placeholder">${icon('volume')}${esc((i.sound?.names || []).slice(0, 4).join(' · ') || 'Son d’interface')}</div>`;
   if (i.preview.kind === 'live' && !previewsBuilt)
     return `<div class="placeholder">${icon('grid')}Aperçus pas encore compilés<br><code>npm run previews</code></div>`;
-  if (i.framework === 'react-native')
-    return `<div class="placeholder">${icon('device')}React Native (Expo)<br>pas de rendu web, code complet dans Claude Code</div>`;
+  if (i.framework === 'react-native') return `<div class="placeholder">${icon('device')}Composant natif, sans aperçu web</div>`;
   return `<div class="placeholder">${icon('code')}${esc(i.preview.reason || 'Pas d’aperçu web')}</div>`;
 }
 
@@ -144,19 +219,20 @@ function visual(i, extra = '') {
 }
 
 const loadedFonts = new Set();
+function loadFont(css) {
+  if (!css || !/^https:\/\/api\.fontshare\.com\//.test(css) || loadedFonts.has(css)) return;
+  loadedFonts.add(css);
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = css;
+  link.referrerPolicy = 'no-referrer';
+  document.head.append(link);
+}
 const lazy = new IntersectionObserver(
   (entries) => {
     for (const { target, isIntersecting } of entries) {
       if (!isIntersecting) continue;
-      const css = target.dataset.fontCss;
-      if (css && /^https:\/\/api\.fontshare\.com\//.test(css) && !loadedFonts.has(css)) {
-        loadedFonts.add(css);
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = css;
-        link.referrerPolicy = 'no-referrer';
-        document.head.append(link);
-      }
+      loadFont(target.dataset.fontCss);
       lazy.unobserve(target);
     }
   },
@@ -173,13 +249,20 @@ function hydrateVisuals(root) {
 
 const inSpec = (id) =>
   spec.theme === id ||
-  spec.template === id ||
+  activeTemplate() === id ||
   spec.fonts.includes(id) ||
   spec.easings.includes(id) ||
   spec.sounds.includes(id) ||
   spec.blocks.some((b) => b.id === id);
+/** Retirer reste toujours possible ; le squelette imposé ne se retire pas. */
+function locked(i) {
+  if (!isMobile()) return false;
+  return i.type === 'template' || (!inSpec(i.id) && !selectable(i, 'mobile'));
+}
 function actionLabel(i) {
   const yes = inSpec(i.id);
+  if (locked(i)) return i.id === TEMPLATE_ID ? `${icon('check')}Squelette imposé` : 'Indisponible en mobile';
+  if (isMobile() && !yes && !supports(i, 'mobile')) return `${icon('plus')}Ajouter l’intention`;
   if (i.type === 'theme') return yes ? `${icon('check')}Thème choisi` : 'Choisir ce thème';
   if (i.type === 'template') return yes ? `${icon('check')}Template choisi` : 'Partir de ce template';
   return yes ? `${icon('check')}Dans la spec` : `${icon('plus')}Ajouter`;
@@ -193,6 +276,7 @@ function filtered() {
     lic = $('#f-license').value;
   const rows = items.filter(
     (i) =>
+      !!STEP_TYPES[step]?.includes(i.type) &&
       (!typeFilter || i.type === typeFilter) &&
       (!onlyNew || i.isNew) &&
       (!cat || i.category === cat) &&
@@ -212,21 +296,26 @@ function filtered() {
 }
 
 function card(i) {
-  const badge = i.isNew ? '<span class="badge">Nouveau</span>' : '';
-  return `<article class="card ${inSpec(i.id) ? 'in-spec' : ''}" data-card="${esc(i.id)}">
+  const off = isMobile() && !supports(i, 'mobile');
+  const badge = off ? `<span class="badge off">${unsupportedLabel(i)}</span>` : i.isNew ? '<span class="badge">Nouveau</span>' : '';
+  return `<article class="card ${inSpec(i.id) ? 'in-spec' : ''} ${off ? 'is-off' : ''} ${i.framework === 'react-native' ? 'no-preview' : ''}" data-card="${esc(i.id)}">
     ${visual(i, `${badge}<button class="visual-open" data-detail="${esc(i.id)}" aria-label="Détails et code : ${esc(i.name)}">${icon('expand')}</button>`)}
     <div class="card-body">
       <div class="card-meta"><span>${esc(TYPE_LABEL[i.type])}</span>·<span>${esc(i.category)}</span>·<span>${esc(i.source)}</span>${i.framework === 'react-native' ? '·<span>RN</span>' : ''}<span class="lic ${i.licenseStatus}" title="${esc(i.licenseNotes || i.license)}">${esc(shortLicense(i.license))}</span></div>
       <h3>${esc(i.name)}</h3>
       <p>${esc(i.descriptionFr || i.description || '')}</p>
-      <div class="card-actions"><button class="btn small ghost" data-detail="${esc(i.id)}">${icon('code')}Code</button><button class="btn small" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button></div>
+      <div class="card-actions"><button class="btn small ghost" data-detail="${esc(i.id)}">${icon('code')}Code</button><button class="btn small" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}" ${locked(i) ? 'disabled' : ''}>${actionLabel(i)}</button></div>
     </div></article>`;
 }
 
 function render() {
+  if (!STEP_TYPES[step]) return;
   const rows = filtered();
   const active = FILTERS.filter((id) => $(id).value).length;
-  $('#reset').hidden = !active && !typeFilter && !onlyNew;
+  $('#reset').hidden = !active && !onlyNew && (step === 'style' || !typeFilter);
+  const hiddenFilters = FILTERS.slice(1).filter((id) => $(id).value).length;
+  $('#filters-count').textContent = hiddenFilters ? ` (${hiddenFilters})` : '';
+  for (const b of $$('#suggestions [data-q]')) b.setAttribute('aria-pressed', String(b.dataset.q === $('#q').value));
   $('#count').textContent =
     `${plural(rows.length, 'item')}${rows.length > visible ? ` · ${visible} affichés` : ''}${previewsBuilt ? '' : ' · aperçus live non compilés (npm run previews)'}`;
   previews.reset($('#grid'));
@@ -236,7 +325,7 @@ function render() {
   $('#more').hidden = rows.length <= visible;
   hydrateVisuals($('#grid'));
   previews.observe($('#grid'));
-  for (const b of $$('#types button[data-type]')) b.setAttribute('aria-pressed', String(b.dataset.type === typeFilter));
+  for (const b of $$('button[data-type]')) b.setAttribute('aria-pressed', String(b.dataset.type === typeFilter));
   $('#only-new')?.setAttribute('aria-pressed', String(onlyNew));
 }
 
@@ -246,24 +335,32 @@ function syncCards() {
     const i = byId.get(b.dataset.toggle);
     if (i && !b.closest('.token, .theme-token')) {
       b.innerHTML = actionLabel(i);
+      b.disabled = locked(i);
       b.setAttribute('aria-pressed', String(inSpec(i.id)));
     }
   }
 }
 
 function showType(type) {
-  typeFilter = type;
+  const target = type === 'template' ? 'project' : STEP_TYPES.style.includes(type) ? 'style' : 'blocks';
+  typeFilter = target === 'project' ? '' : type;
+  if (target !== step) {
+    goTo(target);
+    return;
+  }
   visible = PAGE;
+  onlyNew = false;
+  buildFilters();
   render();
-  $('#types').scrollIntoView({ block: 'nearest' });
 }
 
 /* ---------- Spec ---------- */
 
 function toggle(id) {
   const i = byId.get(id);
-  if (!i) return;
+  if (!i || locked(i)) return;
   const flip = (list) => (list.includes(id) ? list.filter((x) => x !== id) : [...list, id]);
+  const removed = inSpec(id) ? structuredClone(spec) : null;
   if (i.type === 'theme') spec.theme = spec.theme === id ? null : id;
   else if (i.type === 'template') spec.template = spec.template === id ? null : id;
   else if (i.type === 'font') spec.fonts = flip(spec.fonts);
@@ -271,12 +368,14 @@ function toggle(id) {
   else if (i.type === 'sound') spec.sounds = flip(spec.sounds);
   else if (spec.blocks.some((b) => b.id === id)) spec.blocks = spec.blocks.filter((b) => b.id !== id);
   else {
-    spec.blocks.push({ id, note: '', ...(currentPage() ? { page: currentPage() } : {}) });
-    toast(`${i.name} ajouté en position ${spec.blocks.length}${currentPage() ? ` (page ${currentPage()})` : ''}.`);
+    const page = addPage ?? currentPage();
+    spec.blocks.push({ id, note: '', ...(page ? { page } : {}) });
+    toast(`${i.name} ajouté${page ? ` (${isMobile() ? 'écran' : 'page'} ${page})` : ''}.`);
   }
   persist();
   renderSpec();
   syncCards();
+  if (removed) withUndo(`${i.name} retiré.`, removed);
   if (i.type === 'theme' && $('#f-skin').checked) previews.reload();
 }
 
@@ -284,80 +383,291 @@ function toggle(id) {
 const currentPage = () => spec.blocks.at(-1)?.page || '';
 const pagesOf = () => [...new Set(spec.blocks.map((b) => b.page).filter(Boolean))];
 
-function themeColors(id) {
-  return Object.entries(byId.get(id)?._colors || {})
-    .filter(([, v]) => !/^var\(/.test(v))
-    .slice(0, 6);
+function themeColors(id, max = 4) {
+  return keyColors(byId.get(id)?._colors, max);
 }
+const offNote = (id) => {
+  const i = isMobile() && byId.get(id);
+  return i && !supports(i, 'mobile') ? ` <em class="off-note">${unsupportedLabel(i)}</em>` : '';
+};
 const token = (id, label) =>
-  `<span class="token"><span>${esc(label)}</span><button data-toggle="${esc(id)}" aria-label="Retirer ${esc(label)}">${icon('x')}</button></span>`;
+  `<span class="token"><span>${esc(label)}${offNote(id)}</span><button data-toggle="${esc(id)}" aria-label="Retirer ${esc(label)}">${icon('x')}</button></span>`;
 
 function renderSpec() {
-  $('#s-name').value = spec.name;
-  $('#s-title').value = spec.title;
-  $('#s-brief').value = spec.brief;
-  $('#s-stack').value = spec.stack;
-  $('#s-style').value = spec.style;
-  $('#name-preview').textContent = slugify(spec.name) || 'nom';
-  $('#mcp-command').textContent = command();
-  $('.command').classList.toggle('saved', !!spec.loadedFrom);
-  $('#spec-heading').textContent = spec.title || (spec.loadedFrom ? spec.name : 'Nouvelle spec');
-  $('#spec-state').textContent = spec.loadedFrom
-    ? `${savedKind() === 'preset' ? 'Preset' : 'Spec'} enregistrée : ${savedName()}`
-    : 'Brouillon non enregistré';
-  $('#guide').hidden = !!(spec.blocks.length || spec.theme || spec.name);
+  const mobile = isMobile();
+  for (const b of $$('[data-target]')) b.setAttribute('aria-pressed', String(b.dataset.target === spec.target));
+  for (const el of $$('[data-only]')) el.hidden = el.dataset.only !== spec.target;
+  $('#stack-mobile-text').textContent = MOBILE_STACK_LINE;
+  $('#title-label').textContent = mobile ? 'Nom de l’app' : 'Nom du projet';
+  $('#s-title').maxLength = mobile ? 30 : 120;
+  $('#s-title').placeholder = mobile ? 'Respire' : 'Site de la boulangerie Dupont';
+  $('#s-brief').placeholder = mobile
+    ? 'Ce que fait l’app, pour qui, et ce qui la rend différente…'
+    : 'Pour qui, quelles pages, quel objectif…';
+  $('#add-page-label').textContent = mobile ? 'Ajouter les prochains blocs à l’écran' : 'Ajouter les prochains blocs à la page';
+  $('#add-page').placeholder = mobile ? 'Écran unique' : 'Page unique';
+  if (mobile) renderMobileForm();
+  for (const [selector, value] of [
+    ['#s-title', shownTitle()],
+    ['#s-name', spec.name],
+    ['#s-brief', spec.brief],
+    ['#s-stack', spec.stack],
+    ['#s-style', spec.style],
+    ['#add-page', addPage ?? currentPage()],
+  ]) {
+    const el = $(selector);
+    if (el !== document.activeElement || !el.value) el.value = value;
+  }
+  $('#name-preview').textContent = slugify(spec.name || spec.title) || 'nom';
   for (const b of $$('[data-saved-only]')) b.disabled = !spec.loadedFrom;
-  const template = spec.template && byId.get(spec.template);
-  $('#s-template').innerHTML = template
-    ? `<span class="token"><span>${esc(template.name)}</span><button data-toggle="${esc(template.id)}" aria-label="Retirer le template">${icon('x')}</button></span>`
-    : '<button class="ask" data-show="template">Choisir dans la galerie</button>';
+  renderTemplates();
+
   const theme = spec.theme && byId.get(spec.theme);
+  $('#palette-open span').textContent = theme?.sourceId === 'perso' ? 'Modifier ma palette' : 'Créer ma palette';
   $('#s-theme').innerHTML = theme
     ? `<span class="token theme-token"><span class="mini">${themeColors(theme.id)
         .map(([k, v]) => `<span data-color="${esc(v)}" title="${esc(k)}"></span>`)
         .join(
           '',
-        )}</span><span>${esc(theme.name)}</span><button data-toggle="${esc(theme.id)}" aria-label="Retirer le thème">${icon('x')}</button></span>`
-    : '<button class="ask" data-show="theme">Choisir dans la galerie</button>';
-  for (const [slot, list, type] of [
-    ['#s-fonts', spec.fonts, 'font'],
-    ['#s-easings', spec.easings, 'easing'],
-    ['#s-sounds', spec.sounds, 'sound'],
-  ]) {
-    $(slot).innerHTML = list.length
-      ? list.map((id) => token(id, byId.get(id)?.name || id)).join('')
-      : `<button class="ask" data-show="${type}">Choisir dans la galerie</button>`;
-  }
-  $('#s-count').textContent = spec.blocks.length;
-  $('#jump-count').textContent = spec.blocks.length;
-  $('#preview-page').disabled = !spec.blocks.length;
-  const pages = pagesOf();
-  $('#pages-list').innerHTML = pages.map((p) => `<option value="${esc(p)}">`).join('');
-  let lastPage = null;
-  $('#s-blocks').innerHTML = spec.blocks.length
-    ? spec.blocks
-        .map((b, k) => {
-          const i = byId.get(b.id);
-          const header =
-            pages.length && (b.page || '') !== lastPage
-              ? `<li class="page-break" aria-hidden="true">${icon('page')}${esc(b.page || 'Sans page')}</li>`
-              : '';
-          lastPage = b.page || '';
-          return `${header}<li class="block" draggable="true" data-index="${k}">
-      <div class="block-head"><span class="block-num">${k + 1}</span><span class="handle" aria-hidden="true">${icon('grip')}</span><span class="block-title"><strong>${esc(i?.name || b.id)}</strong><small>${esc(i ? `${TYPE_LABEL[i.type]} · ${i.source}${i.interactive ? '' : i.shot ? ' · capture du template' : ' · sans aperçu web'}` : 'introuvable dans le registre')}</small></span>
-      <span class="block-tools"><button class="btn icon-only ghost" data-move="${k}" data-dir="-1" aria-label="Monter" ${k === 0 ? 'disabled' : ''}>${icon('up')}</button><button class="btn icon-only ghost" data-move="${k}" data-dir="1" aria-label="Descendre" ${k === spec.blocks.length - 1 ? 'disabled' : ''}>${icon('down')}</button><button class="btn icon-only ghost" data-detail="${esc(b.id)}" aria-label="Voir le code">${icon('code')}</button><button class="btn icon-only ghost" data-remove="${k}" aria-label="Retirer">${icon('x')}</button></span></div>
-      <div class="block-fields"><textarea data-note="${k}" rows="1" maxlength="2000" placeholder="Consigne : emplacement, contenu, variante…" aria-label="Consigne pour ${esc(i?.name || b.id)}">${esc(b.note)}</textarea><input data-page="${k}" value="${esc(b.page || '')}" list="pages-list" maxlength="60" placeholder="Page" aria-label="Page de ${esc(i?.name || b.id)}"></div></li>`;
-        })
-        .join('')
-    : '<li class="empty">Ajoutez des composants, sections ou écrans depuis la galerie (ou depuis le catalogue). Glissez-les ensuite pour les ordonner ; la colonne « Page » répartit un site en plusieurs pages.</li>';
+        )}</span><span>${esc(theme.name)}${offNote(theme.id)}</span><button data-toggle="${esc(theme.id)}" aria-label="Retirer le thème">${icon('x')}</button></span>`
+    : mobile
+      ? 'Encre, par défaut'
+      : 'Au choix de Claude Code';
+  for (const [slot, list, empty] of [
+    ['#s-fonts', spec.fonts, mobile ? 'Police du système' : 'Au choix de Claude Code'],
+    ['#s-easings', spec.easings, 'Standard'],
+    ['#s-sounds', spec.sounds, 'Aucun'],
+  ])
+    $(slot).innerHTML = list.length ? list.map((id) => token(id, byId.get(id)?.name || id)).join('') : empty;
+
+  renderBlocks();
+
   const restricted = [spec.template, spec.theme, ...spec.fonts, ...spec.sounds, ...spec.blocks.map((b) => b.id)]
     .map((id) => id && byId.get(id))
     .filter((i) => i && i.licenseStatus === 'restricted');
   const bySource = [...new Map(restricted.map((i) => [i.sourceId, i])).values()];
-  $('#s-attribution').innerHTML = bySource.length
+  const credit = bySource.length
     ? `<div class="attribution"><strong>Licences avec conditions</strong> : à créditer dans le projet (le bundle produit CREDITS.md).<ul>${bySource.map((i) => `<li>${esc(i.source)} : ${esc(i.attribution || i.licenseNotes || i.license)}</li>`).join('')}</ul></div>`
     : '';
-  hydrateVisuals($('.spec'));
+  $('#s-attribution').innerHTML = $('#launch-attribution').innerHTML = credit;
+  hydrateVisuals($('#s-theme'));
+  refresh();
+}
+
+/** Templates de départ. En mobile ils restent visibles, grisés : le squelette est imposé. */
+function renderTemplates() {
+  const mobile = isMobile();
+  const templates = galleries.web.filter((i) => i.type === 'template');
+  const selected = mobile ? null : spec.template;
+  const signature = `${mobile}|${selected}|${templates.length}`;
+  const root = $('#s-template');
+  if (root.dataset.signature === signature) return;
+  root.dataset.signature = signature;
+  $('#templates-fold').open = !mobile;
+  const focused = root.contains(document.activeElement) ? document.activeElement.dataset.template : undefined;
+  const pick = (id, name, cover) =>
+    `<button type="button" class="template-pick" data-template="${esc(id)}" aria-pressed="${(selected || '') === id}" ${mobile ? 'disabled' : ''}><span class="template-cover">${cover}</span><span class="template-name">${esc(name)}</span></button>`;
+  root.innerHTML =
+    (mobile ? '' : `<div class="template-option">${pick('', 'Partir de zéro', `<span class="placeholder">${icon('plus')}</span>`)}</div>`) +
+    templates
+      .map(
+        (i) =>
+          `<div class="template-option">${pick(i.id, i.name, staticVisual(i))}<button type="button" class="link" data-detail="${esc(i.id)}">${mobile ? 'Web only, voir' : 'Voir'}</button></div>`,
+      )
+      .join('');
+  if (focused !== undefined)
+    $$('[data-template]', root)
+      .find((b) => b.dataset.template === focused)
+      ?.focus();
+}
+
+/** Un bloc = une ligne ; sa consigne et sa page s'ouvrent au clic sur son nom. */
+function renderBlocks() {
+  const root = $('#s-blocks');
+  const active = root.contains(document.activeElement) ? document.activeElement : null;
+  const focusKey = active && ['note', 'page', 'open', 'move'].find((k) => active.dataset[k] !== undefined);
+  const focusSelector =
+    focusKey && `[data-${focusKey}="${active.dataset[focusKey]}"]${focusKey === 'move' ? `[data-dir="${active.dataset.dir}"]` : ''}`;
+
+  $('#s-count').textContent = spec.blocks.length;
+  $('#preview-page').disabled = !spec.blocks.length;
+  const pages = pagesOf();
+  const where = isMobile() ? 'Écran' : 'Page';
+  $('#pages-list').innerHTML = pages.map((p) => `<option value="${esc(p)}">`).join('');
+  let lastPage = null;
+  root.innerHTML = spec.blocks.length
+    ? spec.blocks
+        .map((b, k) => {
+          const i = byId.get(b.id);
+          const name = i?.name || b.id;
+          const header =
+            pages.length && (b.page || '') !== lastPage
+              ? `<li class="page-break" aria-hidden="true">${icon('page')}${esc(b.page || `Sans ${where.toLowerCase()}`)}</li>`
+              : '';
+          lastPage = b.page || '';
+          const open = openBlocks.has(b.id);
+          const sub = b.note
+            ? `<small class="has-note">${esc(b.note)}</small>`
+            : `<small>${esc(i ? `${TYPE_LABEL[i.type]} · ${i.source}` : 'introuvable dans le registre')}${offNote(b.id)}</small>`;
+          return `${header}<li class="block" draggable="true" data-index="${k}">
+      <div class="block-head"><span class="handle" aria-hidden="true">${icon('grip')}</span><button type="button" class="block-title" data-open="${k}" aria-expanded="${open}" title="Consigne et ${where.toLowerCase()}"><strong>${esc(name)}</strong>${sub}</button>
+      <span class="block-tools"><button class="btn icon-only ghost" data-move="${k}" data-dir="-1" aria-label="Monter ${esc(name)}" ${k === 0 ? 'disabled' : ''}>${icon('up')}</button><button class="btn icon-only ghost" data-move="${k}" data-dir="1" aria-label="Descendre ${esc(name)}" ${k === spec.blocks.length - 1 ? 'disabled' : ''}>${icon('down')}</button><button class="btn icon-only ghost" data-detail="${esc(b.id)}" aria-label="Code de ${esc(name)}">${icon('code')}</button><button class="btn icon-only ghost" data-remove="${k}" aria-label="Retirer ${esc(name)}">${icon('x')}</button></span></div>
+      <div class="block-fields" ${open ? '' : 'hidden'}><textarea data-note="${k}" rows="2" maxlength="2000" placeholder="Consigne : emplacement, contenu, variante…" aria-label="Consigne pour ${esc(name)}">${esc(b.note)}</textarea><input data-page="${k}" value="${esc(b.page || '')}" list="pages-list" maxlength="60" placeholder="${where}" aria-label="${where} de ${esc(name)}"></div></li>`;
+        })
+        .join('')
+    : `<li class="empty">${isMobile() ? 'Facultatif : sans bloc, Claude Code code la fonctionnalité depuis le brief.' : 'Cliquez sur « Ajouter » sous un élément. Il apparaît ici, à ordonner par glisser-déposer.'}</li>`;
+  if (focusSelector) $(focusSelector, root)?.focus();
+}
+
+/* ---------- Parcours : étapes, état d'enregistrement, contrôles ---------- */
+
+const shownTitle = () => (isMobile() && spec.mobile?.appName) || spec.title;
+
+function statusOf() {
+  if (!spec.loadedFrom) return 'draft';
+  if (baseline === undefined) return 'checking';
+  return baseline !== null && baseline === fingerprint(spec) ? 'saved' : 'dirty';
+}
+
+/** Les items inconnus ne comptent qu'une fois le registre chargé. */
+const lookup = (id) => byId.get(id) ?? (byId.size ? undefined : { name: id, platforms: ['web', 'mobile'] });
+
+/** Les problèmes de la spec, plus une palette saisie mais pas enregistrée. */
+function allIssues(options) {
+  const order = stepsFor(spec.target);
+  return [...(palette?.issues() ?? []), ...issues(spec, lookup, options)].sort((a, b) => order.indexOf(a.step) - order.indexOf(b.step));
+}
+
+/** Tout ce qui dépend de la spec sans reconstruire de champ : appelé à chaque frappe. */
+function refresh() {
+  const status = statusOf();
+  currentIssues = allIssues();
+  const state = { spec, step, status, issues: currentIssues, attempted, touched, lookup, command: command() };
+  renderSteps(state);
+  renderRecap(state);
+  renderFieldErrors(state);
+  renderLaunch(state);
+  const name = shownTitle() || spec.name;
+  $('#spec-heading').textContent = name || (isMobile() ? 'Nouvelle app' : 'Nouvelle spec');
+  const label = status === 'saved' ? `${savedKind() === 'preset' ? 'Preset' : 'Spec'} ${savedName()} : enregistré` : STATUS[status];
+  $('#spec-state').textContent = label;
+  $('#save-state').textContent = STATUS[status];
+  $('#spec-state').dataset.status = $('#save-state').dataset.status = status;
+  $('#jump-label').textContent = step === 'blocks' ? 'Sélection' : 'Récap';
+  $('#jump-count').textContent = step === 'blocks' ? spec.blocks.length : '';
+  if (!isMobile()) return;
+  const theme = byId.get(spec.theme ?? DEFAULT_PALETTE);
+  const font = byId.get(spec.fonts[0]);
+  const native = font && supports(font, 'mobile') ? font.font : null;
+  if (native) loadFont(native.cssUrl);
+  renderPhones({
+    spec,
+    step,
+    slide: slideIndex,
+    look: { colors: theme && supports(theme, 'mobile') ? theme._colors : null, radius: theme?._radius, font: native?.family },
+  });
+}
+
+function showStep(next, { focus = true } = {}) {
+  const steps = stepsFor(spec.target);
+  const changed = step !== next;
+  step = steps.includes(next) ? next : steps[0];
+  store.set(STEP_KEY, step);
+  for (const panel of $$('[data-panel]')) panel.hidden = panel.dataset.panel !== step;
+  const types = STEP_TYPES[step];
+  $('#gallery').hidden = !types;
+  $('#rail-summary').hidden = step === 'blocks';
+  $('#rail-blocks').hidden = step !== 'blocks';
+  document.body.dataset.step = step;
+  setRail(false);
+  if (types) {
+    if (changed) {
+      for (const id of FILTERS) $(id).value = '';
+      onlyNew = false;
+      visible = PAGE;
+    }
+    if (step === 'style' && !types.includes(typeFilter)) typeFilter = 'theme';
+    if (step === 'blocks' && !types.includes(typeFilter)) typeFilter = '';
+    buildFilters();
+    render();
+  } else previews.reset($('#grid'));
+  if (step === 'project') renderStarts();
+  const at = steps.indexOf(step),
+    before = steps[at - 1],
+    after = steps[at + 1];
+  $('#prev-step').hidden = !before;
+  $('#next-step').hidden = !after;
+  if (before) {
+    $('#prev-step span').textContent = STEP_LABEL[before];
+    $('#prev-step').setAttribute('aria-label', `Précédent : ${STEP_LABEL[before]}`);
+  }
+  if (after) {
+    $('#next-step span').textContent = innerWidth < 560 ? 'Continuer' : `Continuer : ${STEP_LABEL[after]}`;
+    $('#next-step').setAttribute('aria-label', `Continuer : ${STEP_LABEL[after]}`);
+  }
+  refresh();
+  if (focus) {
+    scrollTo(0, 0);
+    $(`[data-panel="${step}"] h1`)?.focus({ preventScroll: true });
+    $(`#steps [data-step="${step}"]`)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    // Sur téléphone les variantes défilent : montrer celle qui est choisie.
+    $(`[data-panel="${step}"] .layout-choice[aria-pressed="true"]`)?.scrollIntoView({ block: 'nearest', inline: 'center' });
+  }
+}
+
+/** Navigation de l'utilisateur : une entrée d'historique, pour que Précédent du navigateur suive les étapes. */
+function goTo(next, options) {
+  if ($('#detail').open) $('#detail').close();
+  if (next !== step) history.pushState(null, '', `#step=${next}`);
+  showStep(next, options);
+}
+
+/** Amène au champ d'un problème, en ouvrant les sections qui le cachent. */
+function fix(issue) {
+  if (issue.field) touched.add(issue.field);
+  goTo(issue.step, { focus: !issue.field });
+  if (!issue.field) return;
+  const el = $(issue.field);
+  if (!el) return;
+  for (let d = el.closest('details'); d; d = d.parentElement.closest('details')) d.open = true;
+  el.focus();
+  el.scrollIntoView({ block: 'center' });
+}
+
+function setRail(open) {
+  document.body.classList.toggle('rail-open', open);
+  $('#jump-spec').setAttribute('aria-expanded', String(open));
+}
+
+/** Suppression annulable, jusqu'à la modification suivante. */
+function withUndo(message, before) {
+  undoSpec = before;
+  toast(message, {
+    label: 'Annuler',
+    run: () => {
+      if (!undoSpec) return;
+      spec = undoSpec;
+      persist();
+      if (!applyTarget()) syncCards();
+      renderSpec();
+      toast('Annulé.');
+    },
+  });
+}
+
+function renderStarts() {
+  const empty = !spec.blocks.length && !spec.loadedFrom;
+  const same = specs.filter((s) => (s.target ?? 'web') === spec.target);
+  const own = same
+    .filter((s) => !s.preset)
+    .sort((a, b) => String(b.updatedAt ?? '').localeCompare(String(a.updatedAt ?? '')))
+    .slice(0, 4);
+  const presets = same.filter((s) => s.preset);
+  $('#starts-block').hidden = !empty || !(own.length + presets.length);
+  const button = (kind, s, hint) =>
+    `<button type="button" class="start" data-start="${kind}:${esc(s.name)}"><strong>${esc(s.title || s.name)}</strong><small>${hint}${s.blocks ? `, ${plural(s.blocks, 'bloc')}` : ''}</small></button>`;
+  $('#starts').innerHTML =
+    presets.map((s) => button('preset', s, 'Exemple à adapter')).join('') + own.map((s) => button('spec', s, 'Reprendre')).join('');
 }
 
 function move(from, to) {
@@ -366,6 +676,11 @@ function move(from, to) {
   spec.blocks.splice(to, 0, b);
   persist();
   renderSpec();
+  // Le focus suit le bloc déplacé, pour enchaîner au clavier.
+  const dir = to > from ? 1 : -1;
+  const again = $(`[data-move="${to}"][data-dir="${dir}"]`);
+  if (again && !again.disabled) again.focus();
+  else $(`[data-open="${to}"]`)?.focus();
 }
 
 /* Glisser-déposer des blocs (les boutons monter/descendre restent l'alternative clavier). */
@@ -413,7 +728,6 @@ $('#s-blocks').addEventListener('change', (e) => {
 });
 
 for (const [id, key] of [
-  ['#s-title', 'title'],
   ['#s-brief', 'brief'],
   ['#s-stack', 'stack'],
   ['#s-style', 'style'],
@@ -421,85 +735,213 @@ for (const [id, key] of [
   $(id).addEventListener('input', () => {
     spec[key] = $(id).value;
     persist();
-    if (key === 'title') $('#spec-heading').textContent = spec.title || 'Nouvelle spec';
   });
+$('#s-title').addEventListener('input', () => {
+  const value = $('#s-title').value;
+  spec.name = nameAfterTitle(spec, value);
+  spec.title = value;
+  // Un nom d'app distinct (spec créée par le MCP) suit le champ qui l'affiche.
+  if (isMobile() && spec.mobile?.appName) spec.mobile.appName = value;
+  $('#s-name').value = spec.name;
+  $('#name-preview').textContent = spec.name || 'nom';
+  persist();
+});
 $('#s-name').addEventListener('input', () => {
   spec.name = $('#s-name').value;
   $('#name-preview').textContent = slugify(spec.name) || 'nom';
-  $('#mcp-command').textContent = command();
   persist();
 });
 $('#s-name').addEventListener('change', () => {
   spec.name = slugify($('#s-name').value);
   $('#s-name').value = spec.name;
   persist();
-  renderSpec();
 });
-$('#s-title').addEventListener('change', () => {
-  if (!spec.name && spec.title) {
-    spec.name = slugify(spec.title);
-    persist();
-    renderSpec();
-  }
+$('#add-page').addEventListener('input', () => {
+  addPage = $('#add-page').value.trim().slice(0, 60);
 });
 onDraftChange((next) => {
+  const otherFile = next.loadedFrom !== spec.loadedFrom;
   spec = next;
+  undoSpec = null;
+  applyTarget();
   renderSpec();
   syncCards();
+  if (otherFile) refreshBaseline();
 });
+
+/** Galerie de la cible en cours ; ne reconstruit l'étape que si la cible change. */
+function applyTarget() {
+  if (shownTarget === spec.target) return false;
+  shownTarget = spec.target;
+  items = galleries[spec.target];
+  visible = PAGE;
+  addPage = null;
+  typeFilter = step === 'style' ? 'theme' : '';
+  const next = stepsFor(spec.target).includes(step) ? step : 'style';
+  history.replaceState(null, '', `#step=${next}`);
+  showStep(next, { focus: next !== step });
+  return true;
+}
+
+for (const b of $$('[data-target]'))
+  b.onclick = () => {
+    if (spec.target === b.dataset.target) return;
+    spec.target = b.dataset.target;
+    if (isMobile()) spec.mobile = cleanMobile(spec.mobile);
+    attempted = false;
+    persist();
+    applyTarget();
+    renderSpec();
+  };
+
+$('#vary').onclick = () => {
+  const before = structuredClone(spec);
+  const draw = vary([...byId.values()], spec);
+  spec.theme = draw.theme;
+  spec.fonts = draw.fonts;
+  spec.mobile.layouts = draw.layouts;
+  persist();
+  renderSpec();
+  syncCards();
+  if ($('#f-skin').checked) previews.reload();
+  const names = [byId.get(draw.theme)?.name, byId.get(draw.fonts[0])?.name, ...Object.values(draw.layouts).map((v) => LAYOUT_LABEL[v])];
+  withUndo(names.filter(Boolean).join(' · '), before);
+};
 
 /* ---------- Enregistrer, ouvrir, gérer les specs ---------- */
 
-const specBody = (preset) => ({
-  name: spec.name,
-  title: spec.title,
-  brief: spec.brief,
-  stack: spec.stack,
-  style: spec.style,
-  theme: spec.theme,
-  template: spec.template,
-  fonts: spec.fonts,
-  easings: spec.easings,
-  sounds: spec.sounds,
-  blocks: spec.blocks.map(cleanBlock),
-  preset,
+/** Spec lue sur le disque, dans la forme du brouillon. */
+function fromDisk(data) {
+  const next = Object.assign(blankSpec(), data);
+  delete next.preset;
+  delete next.createdAt;
+  delete next.updatedAt;
+  next.blocks = (next.blocks || []).map(cleanBlock);
+  if (next.mobile || next.target === 'mobile') next.mobile = cleanMobile(next.mobile);
+  return next;
+}
+
+/** Empreinte du fichier : sans elle, la commande copiée pourrait construire une autre version que celle affichée. */
+async function refreshBaseline() {
+  const from = spec.loadedFrom;
+  if (!from) {
+    baseline = null;
+    refresh();
+    return;
+  }
+  if (saving) return;
+  const known = baseline;
+  let next = null,
+    data = null;
+  try {
+    data = await api(`/api/specs/${encodeURIComponent(savedName())}${savedKind() === 'preset' ? '?preset=1' : ''}`);
+    next = fingerprint(fromDisk(data));
+  } catch {
+    /* fichier supprimé ou serveur arrêté : à réenregistrer */
+  }
+  if (spec.loadedFrom !== from || saving || baseline !== known) return;
+  const untouched = statusOf() === 'saved' && next !== null && next !== baseline;
+  baseline = next;
+  if (untouched) {
+    adopt(data, from);
+    toast('La spec a changé sur le disque : sa nouvelle version est affichée.');
+  } else refresh();
+}
+window.addEventListener('focus', () => {
+  if (spec.loadedFrom) refreshBaseline();
 });
 
-async function save(preset) {
+/** Refus du serveur : au champ concerné, sans le message technique du schéma. */
+function serverRefusal(message) {
+  const path = message.match(/^Spec invalide \(([\w.]+)\)/)?.[1];
+  if (!path) return message;
+  if (path.startsWith('mobile.') && isMobile()) {
+    const key = path.slice('mobile.'.length);
+    const el = $$('[data-m]').find((x) => x.dataset.m === key || key.startsWith(`${x.dataset.m}.`));
+    if (el) {
+      fix({ step: el.closest('[data-panel]').dataset.panel, field: `[data-m="${el.dataset.m}"]` });
+      return 'Ce champ a une valeur refusée : corrigez-la puis enregistrez.';
+    }
+  }
+  return `Valeur refusée par le serveur (${path}) : corrigez-la puis enregistrez.`;
+}
+
+/** true si la spec est enregistrée. */
+async function save(preset = false) {
+  if (saving || !byId.size) return false;
+  // Safari et Firefox n'envoient pas « change » au champ actif sur Ctrl+S.
   spec.name = slugify(spec.name || spec.title);
-  if (!spec.name) {
-    toast('Donnez un nom de fichier à la spec (ex. site-boulangerie).');
-    $('#s-name').focus();
-    return;
+  $('#s-name').value = spec.name;
+  persist();
+  const blocking = allIssues({ preset }).filter((i) => i.level === 'error');
+  if (blocking.length) {
+    attempted = true;
+    refresh();
+    fix(blocking[0]);
+    toast(blocking.length > 1 ? `${blocking[0].message} (${plural(blocking.length, 'point')} à corriger)` : blocking[0].message);
+    return false;
   }
-  if (!spec.blocks.length && !preset) {
-    toast('Ajoutez au moins un bloc avant d’enregistrer.');
-    return;
-  }
-  const send = (overwrite) => api('/api/specs', { method: 'POST', body: { spec: specBody(preset), overwrite } });
+  const body = specBody(spec, preset);
+  // L'empreinte de ce qui part : une frappe pendant l'envoi laisse bien l'état « modifié ».
+  const sent = fingerprint(spec);
+  const from = `${preset ? 'preset' : 'spec'}:${spec.name}`;
+  const send = (overwrite) => api('/api/specs', { method: 'POST', body: { spec: body, overwrite } });
+  saving = true;
+  $('#save').disabled = true;
   try {
     let result;
     try {
-      result = await send(spec.loadedFrom === `${preset ? 'preset' : 'spec'}:${spec.name}`);
+      result = await send(spec.loadedFrom === from);
     } catch (error) {
       if (error.status !== 409) throw error;
       if (
         !confirm(
-          `${preset ? 'Le preset' : 'La spec'} « ${spec.name} » existe déjà. La remplacer ? (L’ancienne version reste dans l’historique.)`,
+          `${preset ? 'Le preset' : 'La spec'} « ${body.name} » existe déjà. La remplacer ? (L’ancienne version reste dans l’historique.)`,
         )
       )
-        return;
+        return false;
       result = await send(true);
     }
-    spec.loadedFrom = `${preset ? 'preset' : 'spec'}:${spec.name}`;
+    spec.loadedFrom = from;
+    baseline = sent;
+    attempted = false;
+    touched.clear();
     persist();
     renderSpec();
     await loadSpecList();
-    toast(`Enregistré : ${result.saved}. Copiez la commande pour Claude Code.`);
+    toast(`Enregistré : ${result.saved}`);
+    return true;
   } catch (error) {
-    toast(error.status ? error.message : 'Le serveur ne répond pas. Relancez « npm start ».');
+    toast(error.status ? serverRefusal(error.message) : 'Le serveur ne répond pas. Relancez « npm start ».');
+    return false;
+  } finally {
+    saving = false;
+    $('#save').disabled = false;
   }
 }
+
+async function copyCommand() {
+  await refreshBaseline();
+  if (statusOf() !== 'saved') {
+    toast('La spec a changé : enregistrez-la avant de copier la commande.');
+    return;
+  }
+  toast(
+    (await copyText(command()))
+      ? 'Commande copiée : collez-la dans Claude Code.'
+      : 'Copie impossible : sélectionnez la commande à la main.',
+  );
+}
+
+$('#save-copy').onclick = async () => {
+  if (statusOf() === 'saved') return copyCommand();
+  if (!(await save())) return;
+  toast(
+    (await copyText(command()))
+      ? 'Enregistré, commande copiée : collez-la dans Claude Code.'
+      : 'Enregistré. Copiez la commande affichée ci-dessous.',
+  );
+};
 
 async function loadSpecList() {
   try {
@@ -507,26 +949,28 @@ async function loadSpecList() {
   } catch {
     specs = [];
   }
+  if (step === 'project') renderStarts();
   const own = specs.filter((s) => !s.preset),
     presets = specs.filter((s) => s.preset);
   $('#load-spec').innerHTML =
     '<option value="">Ouvrir…</option>' +
     (own.length
-      ? `<optgroup label="Mes specs">${own.map((s) => `<option value="spec:${esc(s.name)}">${esc(s.title || s.name)} (${s.blocks})</option>`).join('')}</optgroup>`
+      ? `<optgroup label="Mes specs">${own.map((s) => `<option value="spec:${esc(s.name)}">${esc(s.title || s.name)} (${s.blocks})${s.target === 'mobile' ? ' · mobile' : ''}</option>`).join('')}</optgroup>`
       : '') +
     (presets.length
-      ? `<optgroup label="Partir d’un preset">${presets.map((s) => `<option value="preset:${esc(s.name)}">${esc(s.title || s.name)} (${s.blocks})</option>`).join('')}</optgroup>`
+      ? `<optgroup label="Partir d’un preset">${presets.map((s) => `<option value="preset:${esc(s.name)}">${esc(s.title || s.name)} (${s.blocks})${s.target === 'mobile' ? ' · mobile' : ''}</option>`).join('')}</optgroup>`
       : '');
 }
 
 function adopt(data, from) {
-  const next = Object.assign(blankSpec(), data, { loadedFrom: from });
-  delete next.preset;
-  delete next.createdAt;
-  delete next.updatedAt;
-  next.blocks = (next.blocks || []).map(cleanBlock);
-  spec = next;
+  spec = { ...fromDisk(data), loadedFrom: from };
+  addPage = null;
+  slideIndex = 0;
+  attempted = false;
+  touched.clear();
+  openBlocks.clear();
   persist();
+  applyTarget();
   renderSpec();
   syncCards();
   return [spec.theme, ...spec.fonts, ...spec.easings, ...spec.sounds, ...spec.blocks.map((b) => b.id)].filter((id) => id && !byId.has(id))
@@ -534,25 +978,25 @@ function adopt(data, from) {
 }
 
 async function openSpec(kind, name, { confirmReplace = true } = {}) {
-  if (
-    confirmReplace &&
-    spec.blocks.length &&
-    spec.loadedFrom !== `${kind}:${name}` &&
-    !confirm('Remplacer la spec en cours ? (Elle reste dans ce navigateur jusqu’à ce que vous la remplaciez.)')
-  )
-    return;
+  const from = kind === 'preset' ? null : `spec:${name}`;
+  // Un exemple garde ce qui vient d'être saisi : il ne remplace que des blocs, jamais un nom ni un brief.
+  const losing = kind === 'preset' ? spec.blocks.length > 0 && unsaved() : unsaved() && spec.loadedFrom !== from;
+  if (confirmReplace && losing && !confirm('Remplacer la spec en cours ? Ses changements non enregistrés seront perdus.')) return;
   try {
     const data = await api(`/api/specs/${encodeURIComponent(name)}${kind === 'preset' ? '?preset=1' : ''}`);
-    const missing =
-      kind === 'preset'
-        ? adopt({ ...data, name: '', title: data.title ? `${data.title} (copie)` : '' }, null)
-        : adopt(data, `spec:${name}`);
-    toast(
-      kind === 'preset'
-        ? 'Preset chargé : donnez un nom de fichier, puis enregistrez.'
-        : `Spec « ${name} » ouverte.${missing ? ` ${plural(missing, 'item absent', 'items absents')} du registre.` : ''}`,
-    );
-    if (kind === 'preset') $('#s-name').focus();
+    if (kind === 'preset') {
+      const typed = spec.loadedFrom ? null : { title: spec.title, name: spec.name, brief: spec.brief };
+      adopt({ ...data, title: typed?.title || '', name: typed?.name || '', brief: typed?.brief || data.brief }, null);
+      baseline = null;
+      goTo('project', { focus: false });
+      $('#s-title').focus();
+      toast('Exemple chargé : donnez-lui un nom, puis adaptez-le.');
+      return;
+    }
+    baseline = fingerprint(fromDisk(data));
+    const missing = adopt(data, from);
+    goTo('launch');
+    toast(`Spec « ${name} » ouverte.${missing ? ` ${plural(missing, 'item absent', 'items absents')} du registre.` : ''}`);
   } catch {
     toast('Ouverture impossible.');
   }
@@ -571,24 +1015,41 @@ function closeMenu() {
 }
 $('#new-spec').onclick = () => {
   closeMenu();
-  if (spec.blocks.length && !confirm('Vider la spec en cours ?')) return;
-  spec = blankSpec();
+  if (unsaved() && !confirm('Vider la spec en cours ? Ses changements non enregistrés seront perdus.')) return;
+  // La cible reste : on enchaîne souvent plusieurs apps.
+  spec = { ...blankSpec(), target: spec.target, mobile: isMobile() ? cleanMobile(null) : null };
+  baseline = null;
+  attempted = false;
+  addPage = null;
+  slideIndex = 0;
+  touched.clear();
+  openBlocks.clear();
   persist();
   renderSpec();
   syncCards();
+  goTo('project', { focus: false });
+  $('#s-title').focus();
 };
 $('#duplicate-spec').onclick = () => {
   closeMenu();
   spec = {
     ...spec,
+    mobile: spec.mobile && structuredClone(spec.mobile),
     name: spec.name ? `${spec.name}-copie`.slice(0, 64) : '',
     title: spec.title ? `${spec.title} (copie)` : '',
     loadedFrom: null,
   };
+  if (spec.mobile?.appName) spec.mobile.appName = `${spec.mobile.appName} (copie)`.slice(0, 30);
+  // Un bundle id identique désignerait la même app pour Apple.
+  if (spec.mobile) spec.mobile.bundleId = '';
+  baseline = null;
   persist();
   renderSpec();
-  $('#s-name').focus();
-  toast('Copie prête : ajustez le nom puis enregistrez.');
+  goTo('project', { focus: false });
+  $('#s-title').focus();
+  toast(
+    spec.mobile ? 'Copie prête : changez le nom et donnez-lui son propre bundle id.' : 'Copie prête : ajustez le nom puis enregistrez.',
+  );
 };
 $('#rename-spec').onclick = () => {
   closeMenu();
@@ -616,6 +1077,7 @@ $('#rename-spec').onclick = () => {
       spec.loadedFrom = `${savedKind()}:${to}`;
       persist();
       renderSpec();
+      await refreshBaseline();
       await loadSpecList();
       $('#detail').close();
       toast(`Renommée : ${to}.`);
@@ -669,6 +1131,7 @@ $('#delete-spec').onclick = async () => {
   try {
     await api(`/api/specs/${encodeURIComponent(name)}${kind === 'preset' ? '?preset=1' : ''}`, { method: 'DELETE' });
     spec.loadedFrom = null;
+    baseline = null;
     persist();
     renderSpec();
     await loadSpecList();
@@ -677,16 +1140,12 @@ $('#delete-spec').onclick = async () => {
     toast(error.message);
   }
 };
-$('#save').onclick = () => save(false);
-$('#save-preset').onclick = () => save(true);
-$('#copy-command').onclick = async () =>
-  toast(
-    (await copyText(command()))
-      ? spec.loadedFrom
-        ? 'Commande copiée : collez-la dans Claude Code.'
-        : 'Commande copiée. Enregistrez la spec avant de la lancer.'
-      : 'Copie impossible : sélectionnez la commande à la main.',
-  );
+$('#save').onclick = () => save();
+$('#save-preset').onclick = () => {
+  closeMenu();
+  save(true);
+};
+$('#copy-command').onclick = copyCommand;
 document.addEventListener('click', (e) => {
   if (!e.target.closest('#spec-menu')) closeMenu();
 });
@@ -817,7 +1276,7 @@ async function themeTokens(id) {
   }
 }
 
-async function showThemeEditor(baseId = spec.theme) {
+async function showThemeEditor(baseId = spec.theme, seed = null) {
   const themes = items.filter((i) => i.type === 'theme');
   const draftTheme = {
     name: '',
@@ -834,9 +1293,13 @@ async function showThemeEditor(baseId = spec.theme) {
       for (const [k] of THEME_KEYS)
         draftTheme[mode][k] = t?.colors?.[mode]?.[k] && SAFE_VALUE.test(t.colors[mode][k]) ? t.colors[mode][k] : NEUTRAL[mode][k];
     if (t?.radius?.['--radius'] && SAFE_VALUE.test(t.radius['--radius'])) draftTheme.radius = t.radius['--radius'];
-    if (!draftTheme.name && id) draftTheme.name = `${byId.get(id)?.name || 'Thème'} perso`;
+    const from = byId.get(id);
+    if (!draftTheme.name && id) draftTheme.name = from?.sourceId === 'perso' ? from.name : `${from?.name || 'Thème'} perso`;
   };
-  if (baseId && byId.get(baseId)?.type === 'theme') await applyBase(baseId);
+  if (seed) {
+    Object.assign(draftTheme, { name: seed.name, base: '', radius: seed.radius || draftTheme.radius });
+    for (const mode of ['light', 'dark']) for (const [k] of THEME_KEYS) draftTheme[mode][k] = seed[mode][k];
+  } else if (baseId && byId.get(baseId)?.type === 'theme') await applyBase(baseId);
   const samples = EDITOR_SAMPLES.map((id) => byId.get(id))
     .filter((i) => i?.interactive)
     .slice(0, 2);
@@ -880,8 +1343,9 @@ async function showThemeEditor(baseId = spec.theme) {
   $('#token-grid').addEventListener('input', (e) => {
     const k = e.target.dataset.pick || e.target.dataset.value;
     if (!k) return;
-    const value = e.target.value.trim();
-    if (!SAFE_VALUE.test(value) || value.includes('/*')) {
+    const value = hexOf(e.target.value) ?? e.target.value.trim();
+    const isColor = CSS.supports('color', value) || CSS.supports('color', `hsl(${value})`);
+    if (!isColor || !SAFE_VALUE.test(value) || value.includes('/*')) {
       e.target.setCustomValidity('Valeur CSS simple attendue (#hex, oklch(), hsl()…)');
       return;
     }
@@ -923,28 +1387,70 @@ async function showThemeEditor(baseId = spec.theme) {
       radius: draftTheme.radius,
       ...(draftTheme.base ? { base: draftTheme.base } : {}),
     };
-    const send = (overwrite) => api('/api/themes', { method: 'POST', body: { theme: body, overwrite } });
-    try {
-      let result;
-      try {
-        result = await send(false);
-      } catch (error) {
-        if (error.status !== 409 || !confirm(`${error.message}. Le remplacer ?`)) throw error;
-        result = await send(true);
-      }
-      await loadRegistry();
-      spec.theme = result.id;
-      persist();
-      renderSpec();
-      render();
-      $('#detail').close();
-      toast(`Thème « ${body.name} » créé et choisi pour la spec.`);
-    } catch (error) {
-      if (error.status !== 409) toast(error.message);
-    }
+    if (!(await saveTheme(body))) return;
+    if (seed) palette.clear();
+    $('#detail').close();
   };
 }
-$('#create-theme').onclick = () => showThemeEditor();
+
+/** true une fois le thème enregistré et choisi pour la spec. */
+async function saveTheme(body) {
+  const send = (overwrite) => api('/api/themes', { method: 'POST', body: { theme: body, overwrite } });
+  try {
+    let result;
+    try {
+      result = await send(false);
+    } catch (error) {
+      if (error.status !== 409) throw error;
+      if (!confirm(`${error.message}. Le remplacer ? Les specs qui l’utilisent prendront les nouvelles couleurs.`)) return false;
+      result = await send(true);
+    }
+    // Remplacé : loadRegistry garderait sinon les anciennes couleurs en mémoire.
+    const stale = byId.get(result.id);
+    if (stale) stale._colors = undefined;
+    await loadRegistry();
+    spec.theme = result.id;
+    persist();
+    renderSpec();
+    render();
+    if ($('#f-skin').checked) previews.reload();
+    toast(`Thème « ${body.name} » enregistré et choisi pour la spec.`);
+    return true;
+  } catch (error) {
+    toast(error.status ? error.message : 'Le serveur ne répond pas. Relancez « npm start ».');
+    return false;
+  }
+}
+
+/** Un nom libre : une palette neuve ne doit pas remplacer un thème perso existant. */
+function newPaletteName() {
+  const base = `Palette ${shownTitle() || spec.name || 'perso'}`.slice(0, 40).trim();
+  let name = base;
+  for (let n = 2; byId.has(`perso/${slugify(name)}`); n++) name = `${base} ${n}`;
+  return name;
+}
+
+palette = setupPalette({
+  async initial() {
+    const theme = byId.get(spec.theme);
+    const mine = theme?.sourceId === 'perso';
+    const tokens = theme ? await themeTokens(theme.id) : null;
+    const colors = mine && tokens ? paletteList(tokens.colors) : null;
+    const radius = tokens?.radius?.['--radius'];
+    return {
+      colors,
+      tuned: mine && !colors,
+      radius: SAFE_VALUE.test(radius ?? '') ? radius : '',
+      name: colors ? theme.name : newPaletteName(),
+    };
+  },
+  save: ({ radius, ...colors }) => saveTheme(radius ? { ...colors, radius } : colors),
+  fineTune: (seed) => showThemeEditor(spec.theme, seed),
+  onChange: () => {
+    // Le premier rendu a lieu pendant la création du bloc.
+    if (palette) refresh();
+  },
+});
 
 /* ---------- Détail : aperçu, métadonnées, code, installation ---------- */
 
@@ -956,7 +1462,7 @@ function openDialog(html, mode = 'detail') {
   if (!dialog.open) dialog.showModal();
 }
 setupDialog($('#detail'), () => {
-  if (location.hash.startsWith('#item=')) history.replaceState(null, '', location.pathname);
+  if (location.hash.startsWith('#item=')) history.replaceState(null, '', `#step=${step}`);
 });
 
 function equivalents(i) {
@@ -1025,7 +1531,7 @@ function templateAside(i, meta, t) {
   const env = t.env || [];
   const envChips = (list) => list.map((v) => `<li><code>${esc(v)}</code></li>`).join('');
   return `<aside class="tpl-aside" aria-label="Démarrer avec ce template">
-    <div class="tpl-cta-block"><button class="btn primary tpl-cta" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button>
+    <div class="tpl-cta-block"><button class="btn primary tpl-cta" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}" ${locked(i) ? 'disabled' : ''}>${actionLabel(i)}</button>
       <p class="help">Base de la spec : Claude Code part de ce template et y intègre les blocs.</p></div>
     <div class="tpl-block"><h3>Démarrer</h3>
       <div class="command-line"><code><span>npm run scaffold --</span> <span>${esc(i.id)}</span> <span>--out ../mon-projet</span></code><button class="btn icon-only ghost small" id="copy-scaffold" aria-label="Copier la commande" title="Copier">${icon('copy')}</button></div>
@@ -1242,13 +1748,14 @@ async function showDetail(id) {
         ${i.usages?.length ? `<dt>Cas d’usage</dt><dd>${i.usages.map(esc).join(' · ')}</dd>` : ''}
         <dt>Licence</dt><dd><span class="lic ${meta.licenseStatus}">${esc(meta.license)}</span>${meta.licenseNotes ? `<br><span class="help">${esc(meta.licenseNotes)}</span>` : ''}</dd>
         ${meta.attribution ? `<dt>Attribution</dt><dd>${esc(meta.attribution)}</dd>` : ''}
+        <dt>Cibles</dt><dd>${i.platforms.map((p) => (p === 'web' ? 'Web' : 'App mobile')).join(', ') || 'Aucune : dépend d’Uniwind, hors stack'}</dd>
         <dt>Paquets npm</dt><dd>${deps}</dd>
         ${meta.registryDependencies.length ? `<dt>Dépendances du registre</dt><dd>${meta.registryDependencies.map((d) => `<code>${esc(d)}</code>`).join(' ')}</dd>` : ''}
         ${meta.font ? `<dt>Styles</dt><dd>${esc(meta.font.styles.map((s) => s.name).join(', '))}</dd><dt>CSS</dt><dd><code>${esc(meta.font.cssUrl)}</code></dd>` : ''}
         ${installable ? `<dt>Installer dans un projet shadcn</dt><dd><div class="command-line"><code>${esc(shadcnAdd)}</code><button class="btn icon-only ghost small" id="copy-shadcn" aria-label="Copier la commande shadcn">${icon('copy')}</button></div><span class="help">Le serveur Atlas doit tourner ; imports réécrits sur <code>@/</code>.</span></dd>` : ''}
         <dt>Source</dt><dd>${source ? `<a href="${esc(source)}" target="_blank" rel="noopener noreferrer">${esc(meta.source)} ${icon('external')}</a>` : esc(meta.source)}</dd>
         <dt>Importé</dt><dd>${esc(meta.importedAt?.slice(0, 10) || '—')}${meta.updatedAt ? ` · mis à jour le ${esc(meta.updatedAt.slice(0, 10))}` : ''}</dd>
-        <dd class="facts-actions"><button class="btn primary" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}">${actionLabel(i)}</button>${i.sourceId === 'perso' ? `<button class="btn ghost" id="delete-theme">${icon('trash')}Supprimer ce thème</button>` : ''}${i.type === 'theme' ? `<button class="btn ghost" id="derive-theme">${icon('palette')}Créer un thème à partir de celui-ci</button>` : ''}</dd>
+        <dd class="facts-actions"><button class="btn primary" data-toggle="${esc(i.id)}" aria-pressed="${inSpec(i.id)}" ${locked(i) ? 'disabled' : ''}>${actionLabel(i)}</button>${i.sourceId === 'perso' ? `<button class="btn ghost" id="delete-theme">${icon('trash')}Supprimer ce thème</button>` : ''}${i.type === 'theme' ? `<button class="btn ghost" id="derive-theme">${icon('palette')}Créer un thème à partir de celui-ci</button>` : ''}</dd>
       </dl>
     </div>
     ${same.length ? `<section class="equivalents"><h3>${icon('columns')}Équivalents dans d’autres bibliothèques <span class="count">${same.length}</span></h3><div class="eq-grid">${same.map((x) => `<button class="eq" data-detail="${esc(x.id)}"><strong>${esc(x.name)}</strong><small>${esc(x.source)}${inSpec(x.id) ? ' · dans la spec' : ''}</small></button>`).join('')}</div></section>` : ''}
@@ -1285,22 +1792,100 @@ document.body.addEventListener('click', (e) => {
   if (!b) return;
   if (b.dataset.toggle) {
     toggle(b.dataset.toggle);
-    if (b.closest('#detail')) {
+    if (b.closest('#detail') && b.isConnected) {
       b.innerHTML = actionLabel(byId.get(b.dataset.toggle));
       b.setAttribute('aria-pressed', String(inSpec(b.dataset.toggle)));
     }
   } else if (b.dataset.detail) showDetail(b.dataset.detail);
-  else if (b.dataset.show) {
-    $('#detail').close();
-    showType(b.dataset.show);
-  } else if (b.dataset.move !== undefined) move(Number(b.dataset.move), Number(b.dataset.move) + Number(b.dataset.dir));
-  else if (b.dataset.remove !== undefined) {
-    spec.blocks.splice(Number(b.dataset.remove), 1);
+  else if (b.dataset.step) goTo(b.dataset.step);
+  else if (b.dataset.fix !== undefined) fix(currentIssues[Number(b.dataset.fix)]);
+  else if (b.dataset.start) {
+    const at = b.dataset.start.indexOf(':');
+    openSpec(b.dataset.start.slice(0, at), b.dataset.start.slice(at + 1));
+  } else if (b.dataset.template !== undefined) {
+    if (isMobile()) return;
+    spec.template = b.dataset.template || null;
     persist();
     renderSpec();
     syncCards();
+  } else if (b.dataset.layout) {
+    const [key, value] = b.dataset.layout.split(':');
+    spec.mobile.layouts[key] = value;
+    persist();
+  } else if (b.dataset.open !== undefined) {
+    const id = spec.blocks[Number(b.dataset.open)].id;
+    const open = b.getAttribute('aria-expanded') !== 'true';
+    if (open) openBlocks.add(id);
+    else openBlocks.delete(id);
+    b.setAttribute('aria-expanded', String(open));
+    const fields = $('.block-fields', b.closest('.block'));
+    fields.hidden = !open;
+    if (open) $('textarea', fields).focus();
+  } else if (b.dataset.q) {
+    const q = $('#q');
+    q.value = q.value === b.dataset.q ? '' : b.dataset.q;
+    visible = PAGE;
+    render();
+  } else if (b.dataset.move !== undefined) move(Number(b.dataset.move), Number(b.dataset.move) + Number(b.dataset.dir));
+  else if (b.dataset.remove !== undefined) {
+    const before = structuredClone(spec);
+    const [removed] = spec.blocks.splice(Number(b.dataset.remove), 1);
+    persist();
+    renderSpec();
+    syncCards();
+    withUndo(`${byId.get(removed.id)?.name ?? removed.id} retiré.`, before);
   } else if (b.dataset.type !== undefined) showType(b.dataset.type);
 });
+
+// Erreur montrée au champ dès qu'on le quitte ; avant, seulement après une tentative d'enregistrement.
+document.body.addEventListener('change', (e) => {
+  const el = e.target;
+  const field = el.dataset?.m ? `[data-m="${el.dataset.m}"]` : el.id?.startsWith('s-') ? `#${el.id}` : '';
+  if (!field) return;
+  touched.add(field);
+  refresh();
+});
+// L'aperçu suit l'écran d'onboarding en cours d'édition.
+document.body.addEventListener('focusin', (e) => {
+  const m = e.target.dataset?.m?.match(/^(slides|questions)\.(\d+)\./);
+  if (!m || !spec.mobile) return;
+  slideIndex = Number(m[2]) + (m[1] === 'questions' ? spec.mobile.slides.length : 0);
+  refresh();
+});
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && !e.altKey && e.key.toLowerCase() === 's') {
+    e.preventDefault();
+    if (!e.repeat && !$('#detail').open) save();
+  } else if (e.key === 'Escape' && document.body.classList.contains('rail-open') && !$('#detail').open) {
+    setRail(false);
+    $('#jump-spec').focus();
+  }
+});
+window.addEventListener('popstate', () => {
+  const next = new URLSearchParams(location.hash.slice(1)).get('step');
+  if (next && next !== step) showStep(next);
+});
+$('#prev-step').onclick = () => {
+  const steps = stepsFor(spec.target);
+  goTo(steps[steps.indexOf(step) - 1]);
+};
+$('#next-step').onclick = () => {
+  const steps = stepsFor(spec.target);
+  goTo(steps[steps.indexOf(step) + 1]);
+};
+$('#jump-spec').onclick = () => {
+  const open = !document.body.classList.contains('rail-open');
+  setRail(open);
+  if (open) $('#load-spec').focus({ preventScroll: true });
+};
+$('#filters-toggle').onclick = () => {
+  const panel = $('#more-filters');
+  panel.hidden = !panel.hidden;
+  $('#filters-toggle').setAttribute('aria-expanded', String(!panel.hidden));
+};
+$('#copy-mcp').onclick = async () =>
+  toast((await copyText($('#mcp-add').textContent)) ? 'Commande copiée.' : 'Copie impossible : sélectionnez la commande.');
+
 for (const id of [...FILTERS, '#f-sort'])
   $(id).addEventListener('input', () => {
     visible = PAGE;
@@ -1316,7 +1901,7 @@ $('#more').onclick = () => {
 };
 $('#reset').onclick = () => {
   for (const id of FILTERS) $(id).value = '';
-  typeFilter = '';
+  typeFilter = step === 'style' ? typeFilter : '';
   onlyNew = false;
   visible = PAGE;
   render();
@@ -1370,25 +1955,37 @@ async function loadRegistry() {
     if (old?._colors) {
       i._colors = old._colors;
       i._easings = old._easings;
+      i._radius = old._radius;
     }
   }
-  // Galerie : ce qui est interactif, plus thèmes, polices, mouvement et sons. Le reste du registre reste accessible au MCP.
-  const shown = all
-    .filter((i) => STYLE_TYPES.has(i.type) || i.type === 'template' || (i.interactive && i.type !== 'lib'))
-    .sort((a, b) => RANK[a.type] - RANK[b.type] || a.name.localeCompare(b.name, 'fr'));
-  items = Object.keys(RANK).flatMap((t) =>
-    interleave(
-      shown.filter((i) => i.type === t),
-      (i) => i.sourceId,
-    ),
-  );
+  // Galerie web : ce qui est interactif, plus thèmes, polices, mouvement et sons. Le reste du registre reste accessible au MCP.
+  const webShown = (i) => STYLE_TYPES.has(i.type) || i.type === 'template' || (i.interactive && i.type !== 'lib');
+  const order = (list) =>
+    Object.keys(RANK).flatMap((t) =>
+      interleave(
+        list.filter((i) => i.type === t).sort((a, b) => a.name.localeCompare(b.name, 'fr')),
+        (i) => i.sourceId,
+      ),
+    );
+  // Galerie mobile : le natif (sans aperçu) d'abord, puis la galerie web grisée, rien n'est masqué.
+  const mobileShown = all.filter((i) => webShown(i) || (i.framework === 'react-native' && i.type !== 'lib'));
+  galleries = {
+    web: ownFirst(order(all.filter((i) => webShown(i) && supports(i, 'web')))),
+    mobile: [
+      ...palettesFirst(order(mobileShown.filter((i) => supports(i, 'mobile')))),
+      ...order(mobileShown.filter((i) => !supports(i, 'mobile'))),
+    ],
+  };
+  items = galleries[spec.target];
+  shownTarget = spec.target;
   await Promise.all(
-    items
+    mobileShown
       .filter((i) => (i.type === 'theme' || i.type === 'easing') && !i._colors && !i._easings)
       .map(async (i) => {
         try {
           const m = await api(`/api/registry/item?id=${encodeURIComponent(i.id)}`);
           i._colors = m.tokens?.colors?.light || {};
+          i._radius = m.tokens?.radius?.['--radius'];
           i._easings = m.easings || [];
         } catch {
           /* vignette simplifiée */
@@ -1399,9 +1996,12 @@ async function loadRegistry() {
 }
 
 function buildFilters() {
-  const count = (f) =>
+  const scope = items.filter((i) => STEP_TYPES[step]?.includes(i.type));
+  // Au style, les catégories et sources suivent l'onglet ouvert.
+  const listed = step === 'style' ? scope.filter((i) => i.type === typeFilter) : scope;
+  const count = (f, list = listed) =>
     [
-      ...items.reduce((m, i) => {
+      ...list.reduce((m, i) => {
         for (const k of [].concat(f(i))) m.set(k, (m.get(k) || 0) + 1);
         return m;
       }, new Map()),
@@ -1419,28 +2019,39 @@ function buildFilters() {
       .filter(([, n]) => n > 1)
       .map(([k, n]) => `<option value="${esc(k)}">${esc(k)} (${n})</option>`)
       .join('');
-  const names = new Map(
-    items.filter((i) => !STYLE_TYPES.has(i.type)).map((i) => [i.sourceId, i.source + (i.sourceId === 'panelui-web' ? ' (web)' : '')]),
-  );
+  const names = new Map(listed.map((i) => [i.sourceId, i.source + (i.sourceId === 'panelui-web' ? ' (web)' : '')]));
   $('#f-source').innerHTML =
     '<option value="">Toutes les sources</option>' +
     [...names]
       .sort((a, b) => a[1].localeCompare(b[1]))
       .map(([id, name]) => `<option value="${esc(id)}">${esc(name)}</option>`)
       .join('');
-  [$('#f-category').value, $('#f-tag').value, $('#f-source').value] = [cat, tag, src];
-  const types = count((i) => i.type);
-  const fresh = items.filter((i) => i.isNew).length;
-  $('#types').innerHTML =
-    TYPES.filter(([t]) => !t || types.some(([k]) => k === t))
-      .map(
-        ([t, label]) =>
-          `<button class="chip" data-type="${t}" aria-pressed="${t === typeFilter}">${label} <small>${t ? types.find(([k]) => k === t)?.[1] || 0 : items.length}</small></button>`,
-      )
-      .join('') +
-    (fresh
-      ? `<button class="chip new-chip" id="only-new" aria-pressed="${onlyNew}">${icon('sparkle')}Nouveautés <small>${fresh}</small></button>`
-      : '');
+  for (const [id, value] of [
+    ['#f-category', cat],
+    ['#f-tag', tag],
+    ['#f-source', src],
+  ])
+    $(id).value = [...$(id).options].some((o) => o.value === value) ? value : '';
+  const blocksStep = step === 'blocks';
+  const types = count((i) => i.type, scope);
+  const fresh = scope.filter((i) => i.isNew).length;
+  $('#types').innerHTML = blocksStep
+    ? TYPES.filter(([t]) => !t || types.some(([k]) => k === t))
+        .map(
+          ([t, label]) =>
+            `<button class="chip" data-type="${t}" aria-pressed="${t === typeFilter}">${label} <small>${t ? types.find(([k]) => k === t)?.[1] || 0 : scope.length}</small></button>`,
+        )
+        .join('') +
+      (fresh
+        ? `<button class="chip new-chip" id="only-new" aria-pressed="${onlyNew}">${icon('sparkle')}Nouveautés <small>${fresh}</small></button>`
+        : '')
+    : '';
+  $('#suggestions').innerHTML = blocksStep
+    ? SUGGESTIONS[spec.target].map(([label, q]) => `<button class="chip" data-q="${q}" aria-pressed="false">${label}</button>`).join('')
+    : '';
+  $('#q').placeholder = blocksStep
+    ? 'Rechercher un bloc : bouton, graphique, sidebar, tarifs…'
+    : `Rechercher : ${{ theme: 'nom de thème', font: 'nom de police', easing: 'courbe', sound: 'son' }[typeFilter] ?? 'style'}…`;
   $('#only-new')?.addEventListener('click', () => {
     onlyNew = !onlyNew;
     visible = PAGE;
@@ -1449,8 +2060,21 @@ function buildFilters() {
   $('#sounds-row').hidden = !items.some((i) => i.type === 'sound') && !spec.sounds.length;
 }
 
-(async function boot() {
+/** Commande d'installation du MCP pour les autres dossiers (étape Lancer). */
+async function loadMcpHelp() {
   try {
+    const { mcp } = await api('/api/info');
+    $('#mcp-add').textContent = `claude mcp add atlas -s user -- ${mcp.command} ${mcp.args.map((a) => `"${a}"`).join(' ')}`;
+  } catch {
+    $('#mcp-add').textContent = 'claude mcp add atlas -s user -- node --import tsx mcp/index.ts';
+  }
+}
+
+(async function boot() {
+  const hash = new URLSearchParams(location.hash.slice(1));
+  try {
+    setupLayoutChoices();
+    renderSpec();
     await loadRegistry();
     const legacy = new Map([...byId.values()].filter((i) => i.catalogId).map((i) => [i.catalogId, i.id]));
     const moved = migrateLegacy((x) => legacy.get(x) ?? (byId.get(x)?.interactive ? x : undefined));
@@ -1459,17 +2083,21 @@ function buildFilters() {
       toast(`${plural(moved, 'composant')} de l’ancienne sélection du catalogue ${moved > 1 ? 'ont' : 'a'} rejoint la spec.`);
     }
     await loadSpecList();
+    const started = hasContent() || !!spec.loadedFrom;
+    step = hash.get('step') || (hash.get('item') ? 'blocks' : '') || (started ? store.get(STEP_KEY, 'project') : 'project');
+    if (!stepsFor(spec.target).includes(step)) step = 'project';
+    history.replaceState(null, '', `#step=${step}`);
     renderSpec();
-    render();
+    showStep(step, { focus: false });
     syncAutoplay();
-    const hash = new URLSearchParams(location.hash.slice(1));
-    if (hash.get('spec')) {
-      history.replaceState(null, '', location.pathname);
-      await openSpec('spec', hash.get('spec'));
-    } else if (hash.get('item') && byId.has(hash.get('item'))) showDetail(hash.get('item'));
-  } catch {
-    $('#count').textContent = 'Registre introuvable : lancez « npm run import » puis « npm start ».';
-    $('#grid').innerHTML =
-      '<div class="empty"><strong>Registre indisponible.</strong><p>Impossible de charger registry/index.json.</p></div>';
+    loadMcpHelp();
+    await refreshBaseline();
+    if (hash.get('spec')) await openSpec('spec', hash.get('spec'));
+    else if (hash.get('item') && byId.has(hash.get('item'))) showDetail(hash.get('item'));
+  } catch (error) {
+    console.error(error);
+    const box = $('#boot-error');
+    box.hidden = false;
+    box.textContent = 'Registre introuvable. Lancez « npm run import » puis « npm start », et rechargez la page.';
   }
 })();

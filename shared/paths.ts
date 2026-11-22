@@ -45,4 +45,13 @@ export function safeJoin(base: string, rel: string): string {
   return target;
 }
 
+/**
+ * Chemin donné à un script npm, relatif au dossier de l'appelant : avec `npm --prefix <atlas> run …`, le cwd
+ * du script est la racine d'Atlas et `--out .` viserait ce dépôt.
+ */
+export function fromCaller(script: string, target: string): string {
+  const { npm_lifecycle_event: running, INIT_CWD: caller } = process.env;
+  return path.resolve(running === script && caller ? caller : process.cwd(), target);
+}
+
 export const toPosix = (p: string) => p.split(path.sep).join('/');

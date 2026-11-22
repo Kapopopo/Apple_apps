@@ -181,6 +181,44 @@ code {
 }
 
 /* Contrôles */
+.target {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: var(--surface);
+}
+.target > span {
+  padding: 0 6px 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.target button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.target button:hover {
+  color: var(--ink);
+}
+.target button[aria-pressed='true'] {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
 .btn {
   display: inline-flex;
   align-items: center;

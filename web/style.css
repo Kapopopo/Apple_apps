@@ -195,6 +195,27 @@
   color: var(--ink);
   backdrop-filter: blur(4px);
 }
+.badge.off {
+  /* Au-dessus de l'aperçu grisé, que son opacité met dans son propre contexte d'empilement. */
+  z-index: 2;
+  background: rgba(13, 16, 15, 0.9);
+  color: var(--warn);
+}
+.card.is-off .expand {
+  z-index: 2;
+}
+.card.is-off .visual > :not(.badge),
+.card.is-off .choice-reason {
+  filter: grayscale(1);
+  opacity: 0.45;
+}
+.card.is-off:hover .visual > :not(.badge),
+.card.is-off:focus-within .visual > :not(.badge),
+.card.is-off:hover .choice-reason,
+.card.is-off:focus-within .choice-reason {
+  filter: none;
+  opacity: 1;
+}
 .badge.live {
   color: var(--accent);
 }

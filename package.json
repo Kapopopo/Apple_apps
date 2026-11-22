@@ -9,6 +9,7 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "check:authored": "tsc -p authored/tsconfig.json",
+    "check:mobile": "npm --prefix authored/mobile-base ci --ignore-scripts --no-audit --no-fund && npm --prefix authored/mobile-base run typecheck",
     "import": "tsx importers/run.ts",
     "import:github": "tsx importers/run.ts github",
     "import:local": "tsx importers/run.ts local",

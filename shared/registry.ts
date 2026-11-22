@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { REGISTRY, KIND_DIRS, safeJoin, toPosix } from './paths.js';
 import { Meta, type IndexEntry, type ItemType, type RegistryIndex, type SourceInfo } from './schema.js';
+import { platformsOf, uniwindItems } from './platforms.js';
 import { normalize } from './taxonomy.js';
 
 export type Draft = Omit<Meta, 'contentHash' | 'importedAt' | 'updatedAt'>;
@@ -101,13 +102,14 @@ function mostCommon<T>(values: T[]): T | undefined {
   return [...counts.values()].sort((a, b) => b.n - a.n)[0]?.value;
 }
 
-function summarize(meta: Meta, dir: string, root: string): IndexEntry {
+function summarize(meta: Meta, dir: string, root: string, uniwind?: ReadonlySet<string>): IndexEntry {
   const { files, tokens: _t, easings: _e, ...summary } = meta;
   const ui = meta.type === 'component' || meta.type === 'section' || meta.type === 'screen';
   return {
     ...summary,
     dir: toPosix(path.relative(root, dir)),
     fileCount: files.length,
+    platforms: platformsOf(meta, uniwind),
     ...(ui && groupKey(meta.name) ? { group: groupKey(meta.name) } : {}),
   };
 }
@@ -164,10 +166,12 @@ export const indexVersion = (root = REGISTRY) => cachedIndex(root).mtime;
 export function buildIndex(root = REGISTRY): IndexEntry[] {
   const seen = new Set<string>();
   const entries: IndexEntry[] = [];
-  for (const { meta, dir } of allMeta(root)) {
+  const all = allMeta(root);
+  const uniwind = uniwindItems(all.map(({ meta }) => meta));
+  for (const { meta, dir } of all) {
     if (seen.has(meta.id)) throw new Error(`Identifiant en double dans le registre : ${meta.id}`);
     seen.add(meta.id);
-    entries.push(summarize(meta, dir, root));
+    entries.push(summarize(meta, dir, root, uniwind));
   }
   const bySource = new Map<string, IndexEntry[]>();
   for (const e of entries) bySource.set(e.sourceId, [...(bySource.get(e.sourceId) ?? []), e]);

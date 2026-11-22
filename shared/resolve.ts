@@ -43,12 +43,15 @@ export interface ResolveContext {
   files: Map<string, Map<string, FileRef>>;
   /** Par item : ses propres fichiers (prioritaires sur ceux des autres items de la source). */
   items: Map<string, Map<string, FileRef>>;
+  /** Items React Native : jamais de repli sur les primitives web de shadcn. */
+  native: Set<string>;
 }
 
 /** Index des fichiers du registre par source et par item. */
 export function buildContext(metas: { meta: Meta; dir: string }[], aliases = loadAliases()): ResolveContext {
   const files = new Map<string, Map<string, FileRef>>();
   const items = new Map<string, Map<string, FileRef>>();
+  const native = new Set<string>();
   for (const { meta, dir } of metas) {
     const bySource = files.get(meta.sourceId) ?? new Map<string, FileRef>();
     const own = new Map<string, FileRef>();
@@ -57,10 +60,11 @@ export function buildContext(metas: { meta: Meta; dir: string }[], aliases = loa
       own.set(f.path, ref);
       if (!bySource.has(f.path)) bySource.set(f.path, ref);
     }
+    if (meta.framework === 'react-native') native.add(meta.id);
     files.set(meta.sourceId, bySource);
     items.set(meta.id, own);
   }
-  return { aliases, files, items };
+  return { aliases, files, items, native };
 }
 
 export type Resolution =
@@ -78,8 +82,9 @@ function lookup(ctx: ResolveContext, source: string, rel: string): FileRef | und
 export const packageName = (spec: string) => (spec.startsWith('@') ? spec.split('/').slice(0, 2).join('/') : spec.split('/')[0]);
 
 /** Replis communs : helper cn, primitives et hooks shadcn qu'une source importe sans les fournir. */
-function shared(ctx: ResolveContext, target: string): Resolution | undefined {
+function shared(ctx: ResolveContext, target: string, itemId: string): Resolution | undefined {
   if (/(^|\/)lib\/utils$/.test(target)) return { kind: 'cn' };
+  if (ctx.native.has(itemId)) return undefined;
   const primitive = target.match(/(?:^|\/)(ui|hooks)\/([\w.-]+)$/);
   const ref = primitive ? lookup(ctx, 'shadcn', `${primitive[1]}/${primitive[2]}`) : undefined;
   return ref ? { kind: 'file', ref } : undefined;
@@ -159,7 +164,7 @@ export function resolveImport(ctx: ResolveContext, spec: string, from: { itemId:
     ];
     const ref = firstHit(ctx, from.sourceId, candidates, from.itemId);
     if (ref) return { kind: 'file', ref };
-    return shared(ctx, rest) ?? { kind: 'missing', spec };
+    return shared(ctx, rest, from.itemId) ?? { kind: 'missing', spec };
   }
   return { kind: 'package', name: packageName(clean) };
 }
