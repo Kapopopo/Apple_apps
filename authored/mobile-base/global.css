@@ -1,0 +1,4 @@
+/* Les variables du thème viennent de src/config/theme.json (tailwind.config.js). */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

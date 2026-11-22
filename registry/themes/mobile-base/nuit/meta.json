@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/nuit",
+  "name": "Nuit",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Nuit : clair et sombre, rayon 16 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#111225",
+        "--foreground": "#eceafd",
+        "--card": "#1f2032",
+        "--card-foreground": "#eceafd",
+        "--popover": "#1f2032",
+        "--popover-foreground": "#eceafd",
+        "--primary": "#b9a6ff",
+        "--primary-foreground": "#000000",
+        "--secondary": "#27283b",
+        "--secondary-foreground": "#eceafd",
+        "--muted": "#1e1f32",
+        "--muted-foreground": "#cdccdf",
+        "--accent": "#292744",
+        "--accent-foreground": "#eceafd",
+        "--destructive": "#ff8a7a",
+        "--border": "#38394c",
+        "--input": "#38394c",
+        "--ring": "#b9a6ff"
+      },
+      "dark": {
+        "--background": "#090a17",
+        "--foreground": "#eceafd",
+        "--card": "#181925",
+        "--card-foreground": "#eceafd",
+        "--popover": "#181925",
+        "--popover-foreground": "#eceafd",
+        "--primary": "#b9a6ff",
+        "--primary-foreground": "#000000",
+        "--secondary": "#20202e",
+        "--secondary-foreground": "#eceafd",
+        "--muted": "#171725",
+        "--muted-foreground": "#cccbdd",
+        "--accent": "#222037",
+        "--accent-foreground": "#eceafd",
+        "--destructive": "#ff8a7a",
+        "--border": "#323240",
+        "--input": "#323240",
+        "--ring": "#b9a6ff"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "16px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "ed8a4305de6cc311",
+  "importedAt": "2026-11-22T15:21:50.425Z"
+}

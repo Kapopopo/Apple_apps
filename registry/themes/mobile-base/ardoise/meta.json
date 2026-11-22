@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/ardoise",
+  "name": "Ardoise",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Ardoise : clair et sombre, rayon 2 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#eef1f3",
+        "--foreground": "#1c262d",
+        "--card": "#f8f9fa",
+        "--card-foreground": "#1c262d",
+        "--popover": "#f8f9fa",
+        "--popover-foreground": "#1c262d",
+        "--primary": "#3b5565",
+        "--primary-foreground": "#ffffff",
+        "--secondary": "#d9dddf",
+        "--secondary-foreground": "#1c262d",
+        "--muted": "#e1e5e7",
+        "--muted-foreground": "#394249",
+        "--accent": "#d5dbdf",
+        "--accent-foreground": "#1c262d",
+        "--destructive": "#b01e1e",
+        "--border": "#c8cccf",
+        "--input": "#c8cccf",
+        "--ring": "#3b5565"
+      },
+      "dark": {
+        "--background": "#11171b",
+        "--foreground": "#dde5ea",
+        "--card": "#1f2529",
+        "--card-foreground": "#dde5ea",
+        "--popover": "#1f2529",
+        "--popover-foreground": "#dde5ea",
+        "--primary": "#9dbccc",
+        "--primary-foreground": "#000000",
+        "--secondary": "#252c30",
+        "--secondary-foreground": "#dde5ea",
+        "--muted": "#1d2327",
+        "--muted-foreground": "#c0c8cd",
+        "--accent": "#252e34",
+        "--accent-foreground": "#dde5ea",
+        "--destructive": "#ff8a7a",
+        "--border": "#363c40",
+        "--input": "#363c40",
+        "--ring": "#9dbccc"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "2px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "3f17b6b87b2b00ee",
+  "importedAt": "2026-11-22T15:21:50.408Z"
+}

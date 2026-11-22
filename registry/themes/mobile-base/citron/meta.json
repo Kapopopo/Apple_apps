@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/citron",
+  "name": "Citron vert",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Citron vert : clair et sombre, rayon 16 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#fafcf2",
+        "--foreground": "#1b2409",
+        "--card": "#fdfefa",
+        "--card-foreground": "#1b2409",
+        "--popover": "#fdfefa",
+        "--popover-foreground": "#1b2409",
+        "--primary": "#b5e03a",
+        "--primary-foreground": "#000000",
+        "--secondary": "#e4e6db",
+        "--secondary-foreground": "#1b2409",
+        "--muted": "#edefe4",
+        "--muted-foreground": "#3a422a",
+        "--accent": "#f0f8d8",
+        "--accent-foreground": "#1b2409",
+        "--destructive": "#b01e1e",
+        "--border": "#d2d5c8",
+        "--input": "#d2d5c8",
+        "--ring": "#b5e03a"
+      },
+      "dark": {
+        "--background": "#12160a",
+        "--foreground": "#eef6d8",
+        "--card": "#202419",
+        "--card-foreground": "#eef6d8",
+        "--popover": "#202419",
+        "--popover-foreground": "#eef6d8",
+        "--primary": "#c5ef4f",
+        "--primary-foreground": "#000000",
+        "--secondary": "#282c1f",
+        "--secondary-foreground": "#eef6d8",
+        "--muted": "#1f2316",
+        "--muted-foreground": "#cfd7bb",
+        "--accent": "#2b3414",
+        "--accent-foreground": "#eef6d8",
+        "--destructive": "#ff8a7a",
+        "--border": "#3a3e2f",
+        "--input": "#3a3e2f",
+        "--ring": "#c5ef4f"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "16px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "0f16af9d01c57e69",
+  "importedAt": "2026-11-22T15:21:50.415Z"
+}

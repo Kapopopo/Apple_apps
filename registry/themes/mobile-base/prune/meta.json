@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/prune",
+  "name": "Prune",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Prune : clair et sombre, rayon 18 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#faf5f9",
+        "--foreground": "#2c1229",
+        "--card": "#fdfbfd",
+        "--card-foreground": "#2c1229",
+        "--popover": "#fdfbfd",
+        "--popover-foreground": "#2c1229",
+        "--primary": "#7a2370",
+        "--primary-foreground": "#ffffff",
+        "--secondary": "#e5dee4",
+        "--secondary-foreground": "#2c1229",
+        "--muted": "#eee7ed",
+        "--muted-foreground": "#493246",
+        "--accent": "#e8d8e6",
+        "--accent-foreground": "#2c1229",
+        "--destructive": "#b01e1e",
+        "--border": "#d5ccd4",
+        "--input": "#d5ccd4",
+        "--ring": "#7a2370"
+      },
+      "dark": {
+        "--background": "#190d18",
+        "--foreground": "#f6e6f3",
+        "--card": "#271c26",
+        "--card-foreground": "#f6e6f3",
+        "--popover": "#271c26",
+        "--popover-foreground": "#f6e6f3",
+        "--primary": "#e48ad6",
+        "--primary-foreground": "#000000",
+        "--secondary": "#2f232e",
+        "--secondary-foreground": "#f6e6f3",
+        "--muted": "#261a25",
+        "--muted-foreground": "#d7c8d4",
+        "--accent": "#351f33",
+        "--accent-foreground": "#f6e6f3",
+        "--destructive": "#ff8a7a",
+        "--border": "#41343f",
+        "--input": "#41343f",
+        "--ring": "#e48ad6"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "18px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "f13bff49d0c5ae47",
+  "importedAt": "2026-11-22T15:21:50.398Z"
+}

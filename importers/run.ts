@@ -16,6 +16,7 @@ import { importLocal } from './local.js';
 import { importFontshare } from './fontshare.js';
 import { importEasings } from './easings.js';
 import { importAuthored } from './authored.js';
+import { importMobileBase } from './mobile-base.js';
 
 const args = process.argv.slice(2);
 const flag = (name: string) => {
@@ -53,7 +54,7 @@ const steps: Record<string, () => unknown> = {
   local: () => importLocal(),
   fontshare: () => importFontshare(),
   easings: () => importEasings(),
-  authored: () => importAuthored(),
+  authored: () => [...importAuthored(), importMobileBase()],
   templates: () => importTemplates({ only, offline, update }),
   index: () => undefined,
 };

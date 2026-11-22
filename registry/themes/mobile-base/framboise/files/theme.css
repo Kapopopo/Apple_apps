@@ -1,0 +1,44 @@
+/* Skin Atlas : tokens du thème choisi, appliqués par-dessus le thème d'origine du composant. */
+
+:root {
+  --radius: 24px;
+  --background: #fff5f7;
+  --foreground: #3a0d1c;
+  --card: #fffbfc;
+  --card-foreground: #3a0d1c;
+  --popover: #fffbfc;
+  --popover-foreground: #3a0d1c;
+  --primary: #b4164b;
+  --primary-foreground: #ffffff;
+  --secondary: #ebdee1;
+  --secondary-foreground: #3a0d1c;
+  --muted: #f3e7ea;
+  --muted-foreground: #562d3b;
+  --accent: #f5d6df;
+  --accent-foreground: #3a0d1c;
+  --destructive: #b01e1e;
+  --border: #dccbd0;
+  --input: #dccbd0;
+  --ring: #b4164b;
+}
+
+.dark, [data-theme="dark"] {
+  --background: #1e0b12;
+  --foreground: #fde4ec;
+  --card: #2c1a20;
+  --card-foreground: #fde4ec;
+  --popover: #2c1a20;
+  --popover-foreground: #fde4ec;
+  --primary: #ff7aa5;
+  --primary-foreground: #000000;
+  --secondary: #342128;
+  --secondary-foreground: #fde4ec;
+  --muted: #2b181f;
+  --muted-foreground: #dec6cd;
+  --accent: #3e1b27;
+  --accent-foreground: #fde4ec;
+  --destructive: #ff8a7a;
+  --border: #463239;
+  --input: #463239;
+  --ring: #ff7aa5;
+}

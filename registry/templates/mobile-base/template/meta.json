@@ -1,0 +1,295 @@
+{
+  "id": "mobile-base/template",
+  "name": "Mobile Base",
+  "type": "template",
+  "category": "Apps mobiles",
+  "tags": [
+    "apps mobiles",
+    "template",
+    "expo",
+    "abonnement"
+  ],
+  "description": "Squelette d’app mobile à abonnement : onboarding configurable, paywall bloquant (RevenueCat ou secours), contrôle d’accès, réglages, thème par tokens. La fonctionnalité se code dans app/(main)/.",
+  "framework": "react-native",
+  "dependencies": [
+    "@react-native-async-storage/async-storage@2.2.0",
+    "@rn-primitives/portal@~1.4.0",
+    "@rn-primitives/slot@^1.5.2",
+    "class-variance-authority@^0.7.1",
+    "clsx@^2.1.1",
+    "expo-constants@~58.0.16",
+    "expo-dev-client@~58.0.21",
+    "expo-font@~58.0.12",
+    "expo-linking@~58.0.17",
+    "expo-router@~58.0.32",
+    "expo-splash-screen@~58.0.14",
+    "expo-status-bar@~58.0.5",
+    "expo-store-review@~58.0.3",
+    "expo-system-ui@~58.0.7",
+    "expo@~58.0.26",
+    "lucide-react-native@^1.21.0",
+    "nativewind@4.2.7",
+    "react-dom@19.3.0",
+    "react-native-gesture-handler@~3.3.0",
+    "react-native-purchases-ui@11.0.4",
+    "react-native-purchases@11.0.4",
+    "react-native-reanimated@4.7.1",
+    "react-native-safe-area-context@~5.11.1",
+    "react-native-screens@~4.30.1",
+    "react-native-svg@15.16.0",
+    "react-native-web@~0.21.4",
+    "react-native-worklets@0.13.0",
+    "react-native@0.88.1",
+    "react@19.3.0",
+    "tailwind-merge@^3.5.0",
+    "tailwindcss-animate@^1.0.7",
+    "tailwindcss@^3.4.17"
+  ],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": ".env.example",
+      "role": "source"
+    },
+    {
+      "path": ".gitignore",
+      "role": "source"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(main)/_layout.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/(main)/index.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/onboarding.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/paywall.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app/settings.tsx",
+      "role": "source"
+    },
+    {
+      "path": "app.config.ts",
+      "role": "source"
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "role": "source"
+    },
+    {
+      "path": "babel.config.js",
+      "role": "source"
+    },
+    {
+      "path": "components.json",
+      "role": "source"
+    },
+    {
+      "path": "eas.json",
+      "role": "source"
+    },
+    {
+      "path": "env.d.ts",
+      "role": "source"
+    },
+    {
+      "path": "global.css",
+      "role": "style"
+    },
+    {
+      "path": "metro.config.js",
+      "role": "source"
+    },
+    {
+      "path": "nativewind-env.d.ts",
+      "role": "source"
+    },
+    {
+      "path": "package-lock.json",
+      "role": "source"
+    },
+    {
+      "path": "package.json",
+      "role": "source"
+    },
+    {
+      "path": "README.md",
+      "role": "source"
+    },
+    {
+      "path": "scripts/add-ui.js",
+      "role": "source"
+    },
+    {
+      "path": "src/components/illustration.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/button.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/icon.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/components/ui/text.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/config/app.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/config/fonts.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/config/illustrations.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/config/texts.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/config/theme.json",
+      "role": "source"
+    },
+    {
+      "path": "src/config/types.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/onboarding/layouts.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/onboarding/parts.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/onboarding/question.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/paywall/custom-paywall.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/paywall/layouts.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/paywall/parts.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/paywall/revenuecat-paywall.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/premium/index.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/premium/mode.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/premium/plans.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/features/premium/premium-gate.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/features/premium/provider.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/links.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/storage.tsx",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/theme.ts",
+      "role": "source"
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "role": "source"
+    },
+    {
+      "path": "tailwind.config.js",
+      "role": "source"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.txt",
+      "role": "source"
+    },
+    {
+      "path": "tsconfig.json",
+      "role": "source"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "App native : à lancer avec Expo"
+  },
+  "template": {
+    "kind": "App mobile à abonnement",
+    "stack": "Expo, Expo Router, TypeScript strict, NativeWind, react-native-reusables, RevenueCat, AsyncStorage",
+    "demo": "",
+    "pages": [
+      {
+        "path": "/onboarding",
+        "title": "Onboarding"
+      },
+      {
+        "path": "/paywall",
+        "title": "Paywall"
+      },
+      {
+        "path": "/",
+        "title": "Accueil"
+      },
+      {
+        "path": "/settings",
+        "title": "Réglages"
+      }
+    ],
+    "install": "npm ci",
+    "dev": "npx expo start",
+    "env": [
+      "EXPO_PUBLIC_REVENUECAT_IOS_KEY",
+      "EXPO_PUBLIC_REVENUECAT_ANDROID_KEY"
+    ],
+    "skipped": []
+  },
+  "contentHash": "2a7fb0af6ae1f213",
+  "importedAt": "2026-11-22T15:21:50.461Z",
+  "updatedAt": "2026-11-22T16:22:41.008Z"
+}

@@ -1,212 +1,6 @@
 {
   "runs": [
     {
-      "importer": "local",
-      "source": "magic-ui",
-      "at": "2026-11-05T00:18:47.422Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 38,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
-      "importer": "local",
-      "source": "motion-primitives",
-      "at": "2026-11-05T00:18:47.430Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 6,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "rare-ui",
-      "at": "2026-11-05T00:19:19.517Z",
-      "added": [],
-      "updated": [
-        "rare-ui/folder-component",
-        "rare-ui/code-block",
-        "rare-ui/github-activity",
-        "rare-ui/emoji-reaction",
-        "rare-ui/step-player",
-        "rare-ui/task-list",
-        "rare-ui/voice-note",
-        "rare-ui/ai-status"
-      ],
-      "unchanged": 23,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "commit": "67471c37d978ecfcbc3922ad8ad60a2d84174b03",
-      "license": "LicenseRef-MIT-Commons-Clause-Attribution"
-    },
-    {
-      "importer": "github",
-      "source": "easyui",
-      "at": "2026-11-05T00:19:19.749Z",
-      "added": [],
-      "updated": [
-        "easyui/activity-feed",
-        "easyui/ai-agent-activity",
-        "easyui/ai-response",
-        "easyui/airport-matrix-clock",
-        "easyui/chat",
-        "easyui/code-snippet-deck",
-        "easyui/cursor-follower",
-        "easyui/depth-corridor",
-        "easyui/drag-to-confirm",
-        "easyui/earnings",
-        "easyui/evil-eye",
-        "easyui/focus-mode",
-        "easyui/glyph-matrix",
-        "easyui/interactive-timeline",
-        "easyui/morphing-blob",
-        "easyui/package-box",
-        "easyui/payment-receipt-printer",
-        "easyui/payment-status",
-        "easyui/pricing",
-        "easyui/product-tour",
-        "easyui/pull-to-refresh",
-        "easyui/recovery-ledger",
-        "easyui/rocket-party-popper",
-        "easyui/selection-basket",
-        "easyui/wallet-balance"
-      ],
-      "unchanged": 108,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [
-        "easyui/ai-response : import interne non résolu « ./ai-response »"
-      ],
-      "commit": "e1d3baf916c7e8fc19b25b9f82e6bdb3d5bafec5",
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "panelui",
-      "at": "2026-11-05T00:19:20.228Z",
-      "added": [],
-      "updated": [
-        "panelui/activity",
-        "panelui/code-block",
-        "panelui/empty-state",
-        "panelui/flow",
-        "panelui/leaderboard",
-        "panelui/markdown-editor",
-        "panelui/message-scroller",
-        "panelui/message",
-        "panelui/plan",
-        "panelui/qr-code",
-        "panelui/questionnaire",
-        "panelui/rating",
-        "panelui/reasoning",
-        "panelui/response",
-        "panelui/scroll-canvas",
-        "panelui/sketch",
-        "panelui/sortable",
-        "panelui/soundwave",
-        "panelui/sources",
-        "panelui/splitter",
-        "panelui/steps",
-        "panelui/support",
-        "panelui/task",
-        "panelui/timeline",
-        "panelui/tour",
-        "panelui/tree",
-        "panelui/wallet",
-        "panelui-web/canvas",
-        "panelui-web/flow",
-        "panelui-web/lane-board",
-        "panelui-web/message",
-        "panelui-web/not-found",
-        "panelui-web/prompt",
-        "panelui-web/soundwave",
-        "panelui-web/timeline",
-        "panelui-web/usage",
-        "panelui-web/xy-pad"
-      ],
-      "unchanged": 200,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "commit": "a12bb3a35f44f56fc13c4c8aecb6e824f92e2af4",
-      "license": "MIT"
-    },
-    {
-      "importer": "github",
-      "source": "bencho",
-      "at": "2026-11-05T00:19:20.771Z",
-      "added": [],
-      "updated": [
-        "bencho/ascii-wake",
-        "bencho/aspect",
-        "bencho/asset-swap",
-        "bencho/checklist",
-        "bencho/drag-ball",
-        "bencho/emoji-reactions",
-        "bencho/eye-tracker",
-        "bencho/folding-bill",
-        "bencho/generate",
-        "bencho/glass-bubble",
-        "bencho/palette",
-        "bencho/pull",
-        "bencho/slingshot",
-        "bencho/sound",
-        "bencho/step-player",
-        "bencho/todo-tower",
-        "bencho/voice-note"
-      ],
-      "unchanged": 30,
-      "missingUpstream": [],
-      "skipped": [
-        {
-          "item": "assets/",
-          "reason": "Visuels et photos : hors licence ou non nécessaires (exclus)"
-        },
-        {
-          "item": "playground/",
-          "reason": "Application de démonstration du repo (exclue)"
-        },
-        {
-          "item": "sounds/",
-          "reason": "Sons d’interface : type non géré par le registre"
-        }
-      ],
-      "warnings": [],
-      "commit": "27ac3159201fa48eb16ef65faa5d8078963a9a61",
-      "license": "MIT"
-    },
-    {
-      "importer": "local",
-      "source": "magic-ui",
-      "at": "2026-11-05T00:19:22.678Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 38,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
-      "importer": "local",
-      "source": "motion-primitives",
-      "at": "2026-11-05T00:19:22.685Z",
-      "added": [],
-      "updated": [],
-      "unchanged": 6,
-      "missingUpstream": [],
-      "skipped": [],
-      "warnings": [],
-      "license": "MIT"
-    },
-    {
       "importer": "github",
       "source": "easyui",
       "at": "2026-11-05T00:24:12.939Z",
@@ -5846,6 +5640,118 @@
       ],
       "commit": "45362c16c22dc20ccb0c35d7fbc8d91a7b300ffc",
       "license": "LicenseRef-Personnel"
+    },
+    {
+      "importer": "authored",
+      "source": "saas-premium-ui",
+      "at": "2026-11-22T15:21:43.350Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 44,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "mobile-base",
+      "at": "2026-11-22T15:21:50.368Z",
+      "added": [
+        "mobile-base/encre",
+        "mobile-base/braise",
+        "mobile-base/foret",
+        "mobile-base/lagon",
+        "mobile-base/cobalt",
+        "mobile-base/prune",
+        "mobile-base/moutarde",
+        "mobile-base/framboise",
+        "mobile-base/ardoise",
+        "mobile-base/citron",
+        "mobile-base/argile",
+        "mobile-base/menthe",
+        "mobile-base/nuit",
+        "mobile-base/carbone",
+        "mobile-base/ciel",
+        "mobile-base/olive",
+        "mobile-base/template"
+      ],
+      "updated": [],
+      "unchanged": 0,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "saas-premium-ui",
+      "at": "2026-11-22T15:27:25.059Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 44,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "mobile-base",
+      "at": "2026-11-22T15:27:25.678Z",
+      "added": [],
+      "updated": [
+        "mobile-base/template"
+      ],
+      "unchanged": 16,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "saas-premium-ui",
+      "at": "2026-11-22T15:48:26.206Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 44,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "mobile-base",
+      "at": "2026-11-22T15:48:48.387Z",
+      "added": [],
+      "updated": [
+        "mobile-base/template"
+      ],
+      "unchanged": 16,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "saas-premium-ui",
+      "at": "2026-11-22T16:22:15.616Z",
+      "added": [],
+      "updated": [],
+      "unchanged": 44,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
+    },
+    {
+      "importer": "authored",
+      "source": "mobile-base",
+      "at": "2026-11-22T16:22:40.946Z",
+      "added": [],
+      "updated": [
+        "mobile-base/template"
+      ],
+      "unchanged": 16,
+      "missingUpstream": [],
+      "skipped": [],
+      "warnings": []
     }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/framboise",
+  "name": "Framboise",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Framboise : clair et sombre, rayon 24 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#fff5f7",
+        "--foreground": "#3a0d1c",
+        "--card": "#fffbfc",
+        "--card-foreground": "#3a0d1c",
+        "--popover": "#fffbfc",
+        "--popover-foreground": "#3a0d1c",
+        "--primary": "#b4164b",
+        "--primary-foreground": "#ffffff",
+        "--secondary": "#ebdee1",
+        "--secondary-foreground": "#3a0d1c",
+        "--muted": "#f3e7ea",
+        "--muted-foreground": "#562d3b",
+        "--accent": "#f5d6df",
+        "--accent-foreground": "#3a0d1c",
+        "--destructive": "#b01e1e",
+        "--border": "#dccbd0",
+        "--input": "#dccbd0",
+        "--ring": "#b4164b"
+      },
+      "dark": {
+        "--background": "#1e0b12",
+        "--foreground": "#fde4ec",
+        "--card": "#2c1a20",
+        "--card-foreground": "#fde4ec",
+        "--popover": "#2c1a20",
+        "--popover-foreground": "#fde4ec",
+        "--primary": "#ff7aa5",
+        "--primary-foreground": "#000000",
+        "--secondary": "#342128",
+        "--secondary-foreground": "#fde4ec",
+        "--muted": "#2b181f",
+        "--muted-foreground": "#dec6cd",
+        "--accent": "#3e1b27",
+        "--accent-foreground": "#fde4ec",
+        "--destructive": "#ff8a7a",
+        "--border": "#463239",
+        "--input": "#463239",
+        "--ring": "#ff7aa5"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "24px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "68031b5b5d13eeb6",
+  "importedAt": "2026-11-22T15:21:50.406Z"
+}

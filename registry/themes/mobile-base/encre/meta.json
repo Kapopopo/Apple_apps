@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/encre",
+  "name": "Encre",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Encre : clair et sombre, rayon 12 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#ffffff",
+        "--foreground": "#15171c",
+        "--card": "#ffffff",
+        "--card-foreground": "#15171c",
+        "--popover": "#ffffff",
+        "--popover-foreground": "#15171c",
+        "--primary": "#1b1f2a",
+        "--primary-foreground": "#ffffff",
+        "--secondary": "#e8e8e8",
+        "--secondary-foreground": "#15171c",
+        "--muted": "#f1f1f1",
+        "--muted-foreground": "#36373c",
+        "--accent": "#dfe0e1",
+        "--accent-foreground": "#15171c",
+        "--destructive": "#b01e1e",
+        "--border": "#d5d5d6",
+        "--input": "#d5d5d6",
+        "--ring": "#1b1f2a"
+      },
+      "dark": {
+        "--background": "#101216",
+        "--foreground": "#eef0f4",
+        "--card": "#1e2024",
+        "--card-foreground": "#eef0f4",
+        "--popover": "#1e2024",
+        "--popover-foreground": "#eef0f4",
+        "--primary": "#e4e7ee",
+        "--primary-foreground": "#000000",
+        "--secondary": "#26282c",
+        "--secondary-foreground": "#eef0f4",
+        "--muted": "#1d1f23",
+        "--muted-foreground": "#cfd1d5",
+        "--accent": "#2e3034",
+        "--accent-foreground": "#eef0f4",
+        "--destructive": "#ff8a7a",
+        "--border": "#383a3e",
+        "--input": "#383a3e",
+        "--ring": "#e4e7ee"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "12px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "59cbe9a1b9b5a39e",
+  "importedAt": "2026-11-22T15:21:50.372Z"
+}

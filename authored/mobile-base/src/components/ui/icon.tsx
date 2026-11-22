@@ -1,0 +1,22 @@
+// react-native-reusables (MIT, voir THIRD_PARTY_LICENSES.txt).
+import type { LucideIcon, LucideProps } from 'lucide-react-native';
+import { cssInterop } from 'nativewind';
+import * as React from 'react';
+import { TextClassContext } from '@/components/ui/text';
+import { cn } from '@/lib/utils';
+
+type IconProps = LucideProps & { as: LucideIcon } & React.RefAttributes<LucideIcon>;
+
+function IconImpl({ as: IconComponent, ...props }: IconProps) {
+  return <IconComponent {...props} />;
+}
+
+cssInterop(IconImpl, { className: { target: 'style', nativeStyleToProp: { height: 'size', width: 'size', color: true } } });
+
+/** Icône Lucide colorée par className : `<Icon as={Check} className="text-primary" />`. */
+function Icon({ as: IconComponent, className, size = 20, ...props }: IconProps) {
+  const textClass = React.useContext(TextClassContext);
+  return <IconImpl as={IconComponent} className={cn('text-foreground', textClass, className)} size={size} {...props} />;
+}
+
+export { Icon };

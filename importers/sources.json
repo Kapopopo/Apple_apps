@@ -321,7 +321,8 @@
           "framework": "react-native",
           "blockType": "screen",
           "aliases": {
-            "@/": ""
+            "@/": "",
+            "@/components/": ""
           },
           "componentList": {
             "file": "catalogue.json",

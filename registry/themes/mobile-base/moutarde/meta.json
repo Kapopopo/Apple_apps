@@ -1,0 +1,84 @@
+{
+  "id": "mobile-base/moutarde",
+  "name": "Moutarde",
+  "type": "theme",
+  "category": "Thèmes",
+  "tags": [
+    "tokens",
+    "mobile",
+    "dark mode"
+  ],
+  "description": "Palette Moutarde : clair et sombre, rayon 4 px. Tirée par « Varier » en cible mobile.",
+  "framework": "agnostic",
+  "dependencies": [],
+  "registryDependencies": [],
+  "source": "Mobile Base",
+  "sourceId": "mobile-base",
+  "sourceUrl": "",
+  "license": "LicenseRef-Personnel",
+  "licenseStatus": "open",
+  "licenseNotes": "Création personnelle, libre d’usage dans tes projets. Code tiers (MIT) : THIRD_PARTY_LICENSES.txt du template.",
+  "attribution": "Conserver la notice MIT de react-native-reusables : Copyright (c) 2025 Founded Labs (THIRD_PARTY_LICENSES.txt du projet).",
+  "files": [
+    {
+      "path": "theme.css",
+      "role": "theme"
+    }
+  ],
+  "preview": {
+    "kind": "none",
+    "reason": "Palette de couleurs"
+  },
+  "tokens": {
+    "colors": {
+      "light": {
+        "--background": "#fffbea",
+        "--foreground": "#2d2508",
+        "--card": "#fffdf7",
+        "--card-foreground": "#2d2508",
+        "--popover": "#fffdf7",
+        "--popover-foreground": "#2d2508",
+        "--primary": "#e3b108",
+        "--primary-foreground": "#000000",
+        "--secondary": "#eae6d3",
+        "--secondary-foreground": "#2d2508",
+        "--muted": "#f2eedc",
+        "--muted-foreground": "#4a4328",
+        "--accent": "#fbf1ca",
+        "--accent-foreground": "#2d2508",
+        "--destructive": "#b01e1e",
+        "--border": "#d9d4c1",
+        "--input": "#d9d4c1",
+        "--ring": "#e3b108"
+      },
+      "dark": {
+        "--background": "#1a1708",
+        "--foreground": "#f8f0cf",
+        "--card": "#282517",
+        "--card-foreground": "#f8f0cf",
+        "--popover": "#282517",
+        "--popover-foreground": "#f8f0cf",
+        "--primary": "#f2c93a",
+        "--primary-foreground": "#000000",
+        "--secondary": "#302d1c",
+        "--secondary-foreground": "#f8f0cf",
+        "--muted": "#272414",
+        "--muted-foreground": "#d9d2b3",
+        "--accent": "#38300f",
+        "--accent-foreground": "#f8f0cf",
+        "--destructive": "#ff8a7a",
+        "--border": "#423e2c",
+        "--input": "#423e2c",
+        "--ring": "#f2c93a"
+      }
+    },
+    "typography": {},
+    "radius": {
+      "--radius": "4px"
+    },
+    "easings": [],
+    "other": {}
+  },
+  "contentHash": "6a2c930db7503de0",
+  "importedAt": "2026-11-22T15:21:50.402Z"
+}
